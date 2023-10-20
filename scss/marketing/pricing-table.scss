@@ -1,0 +1,152 @@
+/* pricing-table.scss */
+
+
+  
+  .main-head {
+    background: #0D1440;
+    box-shadow: 0px 1px 10px -6px rgba(0, 0, 0, .15);
+    padding: 1rem;
+    margin-bottom: 0;
+    margin-top: 5rem;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .pricing-table {
+    background: #fff;
+    padding: 1.5rem;
+    width:100%;
+    transition: .3s;
+    border:1px solid $grey;
+  
+    &:hover {
+      box-shadow: 0px 1px 10px -4px rgba(0, 0, 0, .15);
+    }
+  
+    .pricing-label {
+      border-radius: 2px;
+      padding: .25rem .5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+
+    }
+  
+
+    .pricing-features {
+      margin-top: 2rem;
+  
+      .feature {
+        font-size: 14px;
+        margin: .5rem 0;
+        color: #B3B3B3;
+  
+        span {
+          display: inline-block;
+          float: right;
+          color: #3b3b3b;
+          font-weight: 500;
+        }
+      }
+    }
+  
+    .price-tag {
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: 500;
+  
+      .symbol {
+        font-size: 24px;
+      }
+  
+      .amount {
+        letter-spacing: -2px;
+        font-size: 64px;
+      }
+  
+      .after {
+        color: #3b3b3b;
+        font-weight: 500;
+      }
+    }
+  
+    .price-button {
+      display: block;
+      color: #fff;
+      margin-top: 2rem;
+      padding: .75rem;
+      border-radius: 2px;
+      text-align: center;
+      font-weight: 500;
+      transition: .3s;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  
+    // Styles for different color variations
+    &.primary {
+      .pricing-label {
+        background: lighten($primary-color, 50%);
+        color: $primary-color;
+      }
+  
+      .price-tag {
+        color: $primary-color;
+      }
+  
+      .price-button {
+        background: $primary-color;
+        ;
+  
+        &:hover {
+          background:  darken($primary-color, 50%);
+        }
+      }
+    }
+  
+    &.cta {
+      .pricing-label {
+        background: lighten($cta-color,30%);
+        color: $cta-color;
+      }
+  
+      .price-tag {
+        color: $cta-color;
+      }
+  
+      .price-button {
+        background: $cta-color;
+  
+        &:hover {
+          background:  darken($cta-color, 100%);
+        }
+      }
+    }
+  
+    &.accent {
+      .pricing-label {
+        background: lighten($accent-color, 45%);
+        color: $accent-color;
+      }
+  
+      .price-tag {
+        color: $accent-color;
+      }
+  
+      .price-button {
+        background: $accent-color;
+  
+        &:hover {
+          background: darken($accent-color, 50%);
+        }
+      }
+    }
+  }
+  
+  /* Additional styles can be added here */
+  

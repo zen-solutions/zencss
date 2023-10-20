@@ -1,0 +1,71 @@
+// Define common styles for all stack z-containers
+@mixin stack-z-container {
+  flex-direction: column !important; //only need cause of important in media query. solve those, remove this. 
+  text-align: center;
+}
+
+// Define alignment variables
+$align-start: start;
+$align-center: center;
+$align-end: end;
+
+// Define justification variables
+$justify-start: flex-start;
+$justify-center: center;
+$justify-end: flex-end;
+
+// Generate Flex z-container classes with different alignments and justifications
+.stack,
+.middle {
+  @include stack-z-container;
+  align-items: $align-center;
+  justify-content: $justify-center;
+}
+
+.stack-left {
+  @include stack-z-container;
+  align-items: $align-start;
+  justify-content: $justify-center;
+}
+
+.stack-right {
+  @include stack-z-container;
+  align-items: $align-end;
+  justify-content: $justify-center;
+}
+
+.stack-top {
+  @include stack-z-container;
+  align-items: $align-center;
+  justify-content: $justify-start;
+}
+
+.stack-top-left {
+  @include stack-z-container;
+  align-items: $align-start;
+  justify-content: $justify-start;
+}
+
+.stack-top-right {
+  @include stack-z-container;
+  align-items: $align-end;
+  justify-content: $justify-start;
+}
+
+.stack-bottom {
+  @include stack-z-container;
+  align-items: $align-center;
+  justify-content: $justify-end;
+}
+
+.stack-bottom-left {
+  @include stack-z-container;
+  align-items: $align-start;
+  justify-content: $justify-end;
+}
+
+.stack-bottom-right {
+  @include stack-z-container;
+  align-items: $align-end;
+  justify-content: $justify-end;
+}

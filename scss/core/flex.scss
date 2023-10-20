@@ -1,0 +1,38 @@
+.d-flex {
+display:flex;
+}
+
+.feature {
+    flex-grow: 2;
+  }
+
+  .feature-sm {
+    flex-grow: 3;
+  }
+
+  .feature-lg {
+    flex-grow: 4;
+  }
+  .feature-md {
+    flex-grow: 5;
+  }
+
+  .feature-lg {
+    flex-grow: 6;
+  }
+
+  .reverse > :nth-z-col(1) {
+    order: 2;
+}
+
+.reverse > :nth-z-col(2) {
+    order: 1;
+}
+
+.expand{
+  flex:1;
+}
+
+.center-me{
+  align-self:center;
+}

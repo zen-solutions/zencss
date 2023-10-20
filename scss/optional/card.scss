@@ -1,0 +1,180 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  --text-color: #000000;
+  --bg-color: #ffffff; /* Change background color to light */
+
+  /*========== Font and typography ==========*/
+  /* ... Your font variables ... */
+}
+
+/*==================== BASE ====================*/
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--normal-font-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--body-font);
+  transition: all 0.2s ease;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.acontainer {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/*==================== SERVICE CARD ====================*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+.card-bx {
+  --dark-color: #eeeeee; /* Change dark background color to a light gray */
+  --dark-alt-color: #777777;
+  --white-color: #000000; /* Change text color to black */
+  --button-color: #333333;
+  --transition: 0.5s ease-in-out;
+
+  font-family: inherit;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-color);
+  transition: var(--transition);
+  border-radius: 8px;
+}
+.card-bx::before,
+.card-bx::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: var(--transition);
+  display: none;
+}
+.card-bx::before {
+  inset: -10px 50px;
+  border-top: 4px solid var(--clr);
+  transform: skewY(15deg);
+  border-bottom: 4px solid var(--clr);
+}
+.card-bx:hover::before {
+  inset: -10px 0;
+  transform: skewY(0deg);
+}
+.card-bx::after {
+  inset: 60px -10px;
+  border-left: 4px solid var(--clr);
+  transform: skew(15deg);
+  border-right: 4px solid var(--clr);
+}
+.card-bx:hover::after {
+  inset: 40px -10px;
+  transform: skew(0deg);
+}
+.card-bx .card-data {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.card-bx .card-data .card-icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  background-color: var(--dark-color);
+  transition: var(--transition);
+}
+.card-bx .card-data .card-icon {
+  color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px var(--clr);
+}
+.card-bx:hover .card-data .card-icon {
+  color: var(--dark-color);
+  background-color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px var(--clr);
+}
+
+.card-bx:hover {
+  background-color: var(--clr); /* Change to the desired background color */
+  transition: var(--transition);
+}
+
+.card-bx .card-data .card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-bx .card-data h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.card-bx:hover .card-data h3 {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+.card-bx .card-data p {
+  font-size: 0.9rem;
+  color: var(--dark-alt-color);
+  transition: var(--transition);
+}
+.card-bx:hover .card-data p {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+.card-bx .card-data a {
+  position: relative;
+  display: inline-flex;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  border: 2px solid var(--clr);
+  color: var(--dark-color);
+  background-color: var(--clr);
+  transition: var(--transition);
+}
+.card-bx:hover .card-data a {
+  color: var(--clr);
+  background-color: var(--dark-color);
+}
+.card-bx:hover .card-data a:hover {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+  background-color: var(--clr);
+}

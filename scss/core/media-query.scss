@@ -1,0 +1,347 @@
+@use "sass:math";
+
+
+
+
+//---------------------------------------------
+// Small devices (landscape phones, 576px and up)
+//---------------------------------------------
+@media (min-width: 576px) {
+   .zen {
+     font-size: 14px; // Override the base font size for mobile 
+   }
+
+  & .z-container,
+  & .header {
+    max-width: 540px;
+  }
+
+  & z-container,
+  & .header {
+    max-width: 540px;
+  }
+
+  & .z-row.stack-mobile {
+    flex-direction: column;
+  }
+
+  & .z-row.stack-tablet {
+    flex-direction: column;
+  }
+
+  & .hide-mobile {
+    display: none;
+  }
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .zen {
+    font-size: 16px; // Override the base font size for tablet 
+  }
+
+  & .z-container,
+  & .header {
+    max-width: 720px;
+  }
+
+  & z-container,
+  & .header {
+    max-width: 720px;
+  }
+
+  & .z-row, z-row {
+    flex-direction: row !important;
+  }
+
+  & .z-row.stack-mobile {
+    flex-direction: row;
+  }
+
+  & .z-row.stack-tablet {
+    flex-direction: column;
+  }
+
+  & .hide-tablet {
+    display: none;
+  }
+
+  & .reverse-tablet {
+    flex-direction: column;
+  }
+
+  & .z-col, z-col {
+    flex-basis: calc(33%) !important;
+    //margin: 10px !important;
+  }
+
+    .z-row .z-col .z-col, z-row z-col z-col {
+    flex-direction: column;
+}
+
+// .one-up-tablet{
+//   display: grid;
+//   grid-template-columns: repeat(1, 1fr);
+// }
+
+// .two-up-tablet{
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+// }
+
+// .three-up-tablet{
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+// }
+
+// .four-up-tablet{
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+// }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .zen {
+    font-size: 18px;  // Override the base font size for desktops
+  }
+
+  & .z-container,
+  & .header {
+    max-width: 960px;
+  }
+
+  & z-container,
+  & .header {
+    max-width: 960px;
+  }
+
+  & .z-row.stack-tablet,
+  & .z-row.stack-mobile {
+    flex-direction: row;
+  }
+
+  & .z-col, z-col {
+    flex-basis: calc(25% - 20px) !important;
+    //margin: 10px !important;
+  }
+
+  ////-------------------
+  /// Grid positioning
+  /// -------------------
+  
+  ///  Unse mobile ones
+//   .one-up-tablet,  .two-up-tablet,  .three-up-tablet,  .four-up-tablet{
+//   grid-template-columns:unset;
+// }
+
+  
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .zen {
+    font-size: 18px;  // Override the base font size for large desktop
+  }
+  & .z-container,
+  & .header {
+    max-width: 1140px;
+  }
+
+  & z-container,
+  & .header {
+    max-width: 1140px;
+  }
+
+  & .z-row.stack-tablet {
+    flex-direction: row;
+  }
+
+  & .z-row.stack-mobile {
+    flex-direction: row !important;
+  }
+  .z-row .z-col .z-col, z-row z-col z-col {
+    flex-direction: column;
+}
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+// @media (min-width: 1400px) { }
+
+
+//---------------------------------------------
+// Experimental
+//---------------------------------------------
+
+// Need to expand on this class. why is it here also.
+.reverse-on-tablet {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap onto the next line */
+}
+
+
+@media (max-width: 768px) {
+
+
+  .reverse-tablet> :nth-z-col(1) {
+    order: 2;
+  }
+
+  .reverse-tablet> :nth-z-col(2) {
+    order: 1;
+  }
+
+  //Grid - convert all rows to columns for sm. tablet/mobile. 
+  //TODO: consider converting to flex for consistency. 
+  
+  .one-up, .two-up, .three-up, .four-up, .five-up, .six-up, .seven-up, .eight-up{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+//everything goes to 1 column, lets fix some left/right alignment
+@media (max-width: 767px) {
+  .z-col, z-col, blockquote{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  blockquote{
+    padding:15px;
+    padding-right: 30px;
+    font-size:.8rem;
+    padding-bottom:0;
+
+  }
+
+
+ blockquote::before {
+top:0;
+left:10px;
+
+}
+
+// TO DOCUMENT
+.mobile-card{
+  margin-left:1.618rem;
+  margin-right:1.618rem;
+}
+
+.mobile-square{
+  border-radius: 0;
+}
+
+
+}
+
+
+
+@media (max-width: 992px) {
+
+
+  .reverse-tablet> :nth-z-col(1) {
+    order: 2;
+  }
+
+  .reverse-tablet> :nth-z-col(2) {
+    order: 1;
+  }
+
+  //Grid - convert all rows to columns for sm. tablet/mobile. 
+  //TODO: consider converting to flex for consistency. 
+  
+  // .one-up, .two-up, .three-up, .four-up, .five-up, .six-up, .seven-up, .eight-up{
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+
+}
+
+
+
+
+
+//itersting idea - not quite working yet
+
+// .layout {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .layout > * {
+//   &:nth-child(-n+3) {
+//     flex: 0 0 33.3333%;
+//   }
+//   &:nth-child(4) {
+//     flex: 0 0 100%;
+//   }
+//   &:nth-child(5),
+//   &:nth-child(6) {
+//     flex: 0 0 50%;
+//   }
+// }
+
+
+
+
+
+
+
+
+//the overrides for one up two etc
+//these are only important bc we havent tracked down why important is need for the calc functions for zcol. 
+//solve for that, and we should be zen to remove importnat from these. 
+//sometimes you have to make a mess to make progress. 
+
+.two-up {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+}
+
+.two-up > * {
+  flex: 0 0 48% !important;
+  margin: .3em;
+}
+
+
+
+.four-up {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+}
+
+.four-up > * {
+  flex: 0 0 25%; //this ones working without important. why? 
+  margin: .5em;
+}
+
+.five-up {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+}
+
+.five-up > * {
+  flex: 0 0 18% !important;
+  margin: 0.3em;
+}
+
+.six-up {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+}
+
+.six-up > * {
+  flex: 0 0 15.7% !important;
+  margin: 0.3em;
+}

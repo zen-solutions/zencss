@@ -1,0 +1,103 @@
+//------------------------------------------ 
+// Text Formatting */
+//------------------------------------------ 
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
+
+//------------------------------------------ 
+// Text Alignment 
+//------------------------------------------ 
+
+.center {
+    text-align: center !important;
+    width: 100%;
+    align-items: unset !important;
+    //align-self: center !important;
+}
+
+.v-center {
+    margin: auto;
+    width: 100%;
+}
+
+//flex centering -horizontal and vertical then do above
+
+.center-flex{
+
+}
+
+.right {
+    text-align: right !important;
+    //width: 100%;
+    //align-items: unset !important;
+
+}
+
+.left {
+    text-align: left !important;
+    //width: 100%;
+    //align-items: unset !important;
+    //align-self: left !important;
+
+}
+
+//------------------------------------------ 
+// Text Size 
+//------------------------------------------ 
+
+
+.small {
+    font-size: .8em;
+    //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
+
+}
+
+.smaller {
+    font-size: .6em;
+    //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
+
+}
+
+.big {
+    font-size: 1.2em;
+}
+
+.bigger {
+    font-size: 1.4em;
+}
+
+.serif{
+    font-family: 'Playfair Display', serif;
+}
+
+// ------------------------------------------ 
+// Icons 
+//------------------------------------------ 
+
+.icon-lg{
+    font-size: 23px;
+}
+
+
+// ------------------------------------------ 
+// Text Type class
+// requires JS in zencss.js
+//------------------------------------------ 
+// #typewriter-container p {
+//     max-width: 1140px;
+//     overflow: hidden;
+//     white-space: pre-wrap; /* Preserve whitespace and line breaks */
+//     border-right: 0.15em solid black; /* Cursor effect */
+//     margin: 0; /* Remove paragraph margin */
+//   }

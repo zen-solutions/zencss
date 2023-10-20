@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after {
+  //
+}
+
+:link {
+  color: #3e79d0;
+  
+}
+
+:visited { color: #551A8B; }
+
+// Reset HTML margin and padding
+html {
+  margin: 0;
+  padding: 0;
+}
+
+// Test dark mode
+.accent-color {
+  background: $accent-color;
+}
+
+// Header styles
+.header {
+  width: 100%;
+  margin: 0 auto;
+  padding: .618rem; // Temp padding
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  min-height: 89px;
+}
+
+.bg-dark {
+  background: $dark-color;
+  color: $light-color;
+
+  button {
+    //background: $light-color;
+    color: $dark-color;
+
+    &:hover {
+      background: darken($light-color, 20%);
+
+    }
+  }
+}
+
+// Hero section styles
+.hero {
+  background-image: $hero-image;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $light-color;
+  min-height: 510px;
+  margin-top: 0 !important;
+}
+
+// Heading styles
+h1,
+.h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+h2,
+.h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+h3,
+.h3 {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.45em;
+}
+
+h4,
+.h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+h5,
+.h5 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.35em;
+}
+
+h6,
+.h6 {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 1em;
+  letter-spacing: .02em;
+  margin: 0;
+  position: relative;
+  font-weight: 300;
+  margin-top: -5px;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+
+}
+
+span {
+  align-self: flex-start;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+hr {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
+hr.top {
+  margin-bottom: 2em;
+  margin-top: .65em;
+}
+
+nav {
+  background: $primary-color;
+}
+
+button {
+  text-wrap: pretty;
+  padding: 0.7em;
+  display: inline-block;
+  text-align: center;
+background:none;
+  border: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border-radius: $border-radius;
+  font-size: 1em;
+  color:$dark-color;
+}
+
+button:hover {
+  color: lighten($dark-color, 20%);
+}
+
+button.bg-cta:hover {
+  background: darken($cta-color, 8%);
+}
+
+.btn-lg {
+  min-width: 200px;
+  max-width: 200px;
+  font-size: 14px;
+  min-height: 45px;
+}
+
+.btn-md {
+  min-width: 150px;
+  max-width: 150px;
+  font-size: 14px;
+  min-height: 35px;
+
+}
+
+.btn-sm {
+  min-width: 75px;
+  max-width: 75px;
+  padding: .3em;
+  font-size: 12px;
+}
+
+z-container,
+z-row,
+z-col,
+.z-row,
+.z-col {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+header :link {
+  text-decoration: none;
+  color: $light-color;
+}
+
+header :link:hover {
+  text-decoration: underline;
+  color: darken($light-color, 20%);
+}
+
+// Normal link styles. replace w :link? deal w specificity
+// a {
+//   color: $cta-color;
+// }
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Links with swap-underline class styles
+a.swap-underline {
+  color: $cta-color;
+  text-decoration: none;
+}
+
+a.swap-underline:hover {
+  text-decoration: underline;
+}
+
+pre {
+  padding: 20px;
+  //margin-bottom: 2em;
+  background: #eee;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  width: 100%;
+  white-space: pre-wrap;
+
+
+  // &:before {
+  //   border-top: 4px solid red;
+  // }
+}
+
+.not-important{
+  color:#aaa !important;
+}
+
+input,
+textarea,
+button[type="submit"] {
+  font-family: $font-family;  
+  width: 100%;  // Ensures fields stretch to the full width of their container
+}
+
+
+
+.tout{
+  width:auto;
+}
+
+//----------------------------------------------
+//Experimental
+//----------------------------------------------
+
+//----------------------------------------------
+//utility - move this to utility.scss
+//----------------------------------------------
+
+
+// Border thickness classes
+.thick {
+  border-width: 2px;
+}
+
+.thicker {
+  border-width: 3px;
+}
+
+.thickest {
+  border-width: 4px;
+  outline-width: 4px;
+}
+
+// Rounded and circle shape classes
+.round {
+  border-radius: 8px;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 56px !important;
+  height: 56px;
+}
+
+.circle-icon {
+  border-radius: 100%;
+  width: 56px !important;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.circle-border {
+  border-radius: 100%;
+}
+
+// Pill shape class
+
+.pill-1 {
+  border-radius: 8px;
+}
+
+.border-0{
+  border:none;
+}

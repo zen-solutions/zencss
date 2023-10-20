@@ -1,0 +1,119 @@
+  //--------------------------------------------------------------
+  // Initialize zenCSS
+  //--------------------------------------------------------------
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display&display=swap');
+
+
+  
+$zen-font-size: 16px;
+$zen-tablet-mobile-font-size: 14px;
+$zen-large-screen-font-size: 18px;
+
+
+.zen {
+background:#d7d7d7; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: $zen-font-size;
+  font-weight: 300;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  * {
+    box-sizing: border-box;
+  }
+ 
+  //--------------------------------------------------------------
+  // Load core files
+  //--------------------------------------------------------------
+
+  @import 'core/user-settings.scss';
+  @import 'core/framework.scss';
+  @import 'core/scaffold.scss';
+  @import 'optional/popover.scss'; 
+  @import 'core/design/themes.scss';
+  @import 'core/components/header.scss';
+  //@import 'core/cards.scss';
+  @import 'core/design/buttons.scss';
+  @import 'core/design/text.scss';
+  @import 'core/flex.scss';
+  @import 'core/formatting.scss';
+  @import 'core/design/color.scss';
+  @import 'core/test.scss';
+  @import 'core/components/blockquote.scss';
+  //@import 'core/footer.scss'; //5k nao ;( redone do not need, bye felecia
+
+
+//--------------------------------------------------------------
+  //optional utilities
+//--------------------------------------------------------------
+
+  @import 'optional/alert.scss';
+  //@import 'opacity.scss';
+  //@import 'optional/card.scss';
+  @import 'optional/decoration.scss';
+  @import 'optional/animation.scss';
+
+  //marketing
+  //@import 'marketing/pricing-table.scss';
+  //@import 'marketing/exit-intent.scss';
+  @import 'marketing/contact-form.scss';
+  //@import 'marketing/promos.scss';
+
+
+
+//--------------------------------------------------------------
+  //experimental features
+  //--------------------------------------------------------------
+
+  //@import 'mode.scss';
+  // @import '/scss/addons/parallax.css';
+
+  @import 'core/media-query.scss'; 
+  @import 'optional/stacking.scss';
+  @import 'core/margin-padding.scss';
+
+//--------------------------------------------------------------
+//  Overrides go here
+//--------------------------------------------------------------
+
+// Import your overrides here. Replace them in future updates. easy. 
+//Ex. @import 'your-overrides.scss';
+
+
+  //--------------------------------------------------------------
+  // Media queries for font size change
+  //--------------------------------------------------------------
+
+
+  @media (max-width: 575.98px) {
+    font-size: $zen-tablet-mobile-font-size;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: $zen-tablet-mobile-font-size;
+  line-height: 1.8;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size:$zen-font-size;  
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: $zen-font-size;  
+  }
+
+  @media (min-width: 1200px) { 
+    font-size: $zen-large-screen-font-size;  
+  }
+
+}
+
+.zen-dark{
+  color:#f0f0f0;
+  background:#252525;
+}

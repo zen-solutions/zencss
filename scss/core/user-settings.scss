@@ -1,0 +1,158 @@
+// ZenCSS Variables - Any updates here may be overwritten with future updates.
+
+//------------------------------------------ 
+// Init
+//------------------------------------------ 
+
+// Test Mode: true for on, false for off */
+$testing-mode: false;
+
+
+// Icon Use: true for on, false for off */
+$site-icons: true;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+//------------------------------------------ 
+// Brand Color Palette 
+//------------------------------------------ 
+$primary-color : hsl(210, 42%, 36%);
+$secondary-color: hsl(200, 45%, 59%);
+$accent-color: hsl(43, 86%, 53%);
+$cta-color: hsl(351, 66%, 59%);
+
+//------------------------------------------ 
+// Generic Color Palette 
+//------------------------------------------ 
+
+$red: #E63946;
+$orange: #ff9653;
+$yellow: #e4c257;
+$green: #0fbd74;
+$blue: #3c8ceb;
+$purple: #9B59B6;
+
+// the final palette
+// $red: #E63946;
+// $orange: #ff9653;
+// $yellow: #e4c257;
+// $green: #0fbd74;
+// $blue: #3c8ceb;
+// $purple: #9B59B6;
+
+
+//------------------------------------------ 
+// Offer these as add ons. diff color schemes. do for all colors. like color packs. could do for fornts too. 
+// color library is built off this. we could add in greys/brand and have like css addon packs. 
+//------------------------------------------ 
+
+
+// $red: #FF0000;
+// $orange: #FF7F00;
+// $yellow: #FFFF00;
+// $green: #00FF00;
+// $blue: #0000FF;
+// $purple: #8B00FF;
+
+// here is a 2nd alternative color scheme
+// $red: #A93226;
+// $orange: #E59866;
+// $yellow: #F7DC6F;
+// $green: #52BE80;
+// $blue: #5499C7;
+// $purple: #7D3C98;
+
+
+
+//other stuff below
+//original
+// $red: hsl(0, 39%, 50%);
+// $orange: hsl(33, 59%, 50%);
+// $yellow: hsl(57, 97%, 45%);
+// $green: hsl(120, 50%, 29%);
+// $blue: hsl(240, 59%, 50%);
+// $purple: hsl(268, 29%, 32%);
+
+//------------------------------------------ 
+// Dark and Light 
+//------------------------------------------ 
+
+$text-white: #eee;
+$text-black: #111;
+$light-color: #f4f4f4;
+$dark-color: #424242;
+$grey: #eee;
+$dark-grey: #666;
+$light-grey: #ccc;
+$bg-default: $dark-color;
+$text-default: $light-color;
+
+
+
+//------------------------------------------ 
+// Rounded corners
+//------------------------------------------ 
+
+$border-radius: 8px; //on
+
+//$border-radius: 0; //off
+
+
+//------------------------------------------ 
+// Site Images 
+//------------------------------------------ 
+
+$hero-image: url("../website/images/hero.jpg");
+
+
+
+
+//------------------------------------------ 
+// Experimental
+//------------------------------------------ 
+
+//------------------------------------------ 
+// Default Spacing
+//------------------------------------------ 
+$site-section-margin-top: 50px;
+$site-section-margin-bottom: 50px;
+
+//set master paddingand margin for all columns
+
+$col-padding: 1.618rem; 
+$col-margin: 1em;
+
+
+// z-row override - considering for parent/child idea. kinda sticky tho with the js and stuff. 
+//------------------------------------------ 
+//$z-row-override: z-row;
+//$z-col-override: z-col;
+
+
+//alternative color palettes 
+//------------------------------------------
+//blue palette
+// $primary-color: #007cc7;
+// $secondary-color: #12232e;
+// $accent-color: #203647;
+// $cta-color: #4da8da;
+// // Dark and Light */
+// $light-color:  #f4f4f4;
+// $dark-color: #202020;
+
+//zen palette
+// $primary-color: #0049b7;
+// $secondary-color: #fff6857a;
+// //$secondary-color: #fff685;
+// $accent-color: #00ddff;
+// $cta-color: #ff1d58cf;
+// // Dark and Light */
+// $light-color:  #f4f4f4;
+// $dark-color: #202020;
+
+//for zencss website
+// $primary-color: #0049b7;
+// $secondary-color: #fff6857a; // Example secondary color with alpha transparency
+// $accent-color: #00ddff;
+// $cta-color: #ff1d58cf; // Example Call-to-Action color with alpha transparency

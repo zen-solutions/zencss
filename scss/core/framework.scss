@@ -1,0 +1,112 @@
+//--------------------------------
+// z-container
+//--------------------------------
+
+z-container, .z-container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+}
+
+z-container-fluid, .z-container-fluid,
+.z-col-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+//--------------------------------
+// z-row
+//--------------------------------
+
+z-row, .z-row {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+width:100%;
+flex-wrap: wrap; //nowrap is interesting too
+
+}
+
+.z-row-vcenter {
+  align-items: center;
+}
+
+.z-row-center {
+  justify-content: center;
+}
+
+z-row > *, .z-row > * {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  // width:100%;
+}
+
+//--------------------------------
+// z-col
+//--------------------------------
+
+z-col, .z-col {
+  flex-basis: calc(25% - 20px) !important;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 1rem;
+  padding: $col-padding;
+  margin: $col-margin;
+}
+
+.z-col > *, z-col > * {
+  gap: 1rem;
+  //display: block;
+  max-width: 100%;
+  width:100%;
+}
+
+.z-col > span, z-col > span {
+  display: inline-block;
+}
+
+z-col :has(z-row), .z-col :has(.z-row) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+//--------------------------------
+// Experimental
+//--------------------------------
+
+
+//fixing for the nexting issue ?
+//do for .row etc.
+// z-container > z-row > z-col > z-row > z-col{
+//   margin-left: 0;
+//   margin-right: 0;
+// }
+
+/* Apply styles to the first child */
+// z-container > z-row > z-col > z-row > z-col:first-child {
+//   margin-left: 0;
+//   padding-left: 0;
+// }
+
+// /* Apply styles to the last child */
+// z-container > z-row > z-col > z-row > z-col:last-child {
+//   margin-right: 0;
+//   padding-right: 0;
+// }
+
+// Add any experimental styles as needed
+
+

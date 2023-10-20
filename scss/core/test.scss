@@ -1,0 +1,106 @@
+//---------------------------------------------------------
+// test classes - for on the fly troubleshooting
+//---------------------------------------------------------
+.test-1 {
+  outline: 2px dotted $green;
+}
+
+.test-2 {
+  outline: 2px solid $red;
+}
+
+.test-3 {
+  outline: 4px solid $blue;
+}
+
+.test-4 {
+  outline: 2px solid $orange;
+}
+
+.test-5 {
+  outline: 2px solid $purple;
+}
+
+//---------------------------------------------------------
+// tStyles for elements when testing mode is on
+//---------------------------------------------------------
+/* inconsistent with toggle button. consider killing and moving to that */
+@if $testing-mode {
+
+  // $redo: rgba($red, 0.10);
+  // $blueo: rgba($blue, 0.10);
+  // $greeno: rgba($green, 0.10);
+
+  .z-container, z-container {
+    outline: 3px dotted $green;
+    //background: $greeno;
+
+  }
+
+  .z-row, z-row {
+    outline: 4px solid $blue;
+    //margin: 0.2em;
+    // background: $blueo;
+
+  }
+
+  .z-col, z-col {
+    outline: 2px solid $red;
+    //background: $redo;
+  }
+
+
+  .z-container-fluid,  z-container-fluid {
+    outline: 3px dotted $violet;
+  }
+}
+
+//---------------------------------------------------------
+//  Testing Working Implementation - works with toggle button, kill above
+//---------------------------------------------------------
+
+/* Define classes for turning on/off styles via button toggle */
+.z-container-outline-on {
+  outline: 4px dashed $green;
+  border-radius:0;
+}
+
+.z-container-fluid-outline-on {
+  outline: 4px dashed $purple;
+  border-radius:0;
+}
+
+.z-row-outline-on {
+  outline: 2px solid $blue;
+  border-radius:0;
+}
+
+.z-col-outline-on {
+  outline: 2px solid $red;
+  border-radius:0;
+}
+
+.p-outline-on{
+  outline: 1px solid $orange;
+
+}
+
+.center-line {
+  display: none;
+}
+
+//---------------------------------------------------------
+//  Experimental
+//---------------------------------------------------------
+
+/* sloppy test in docs to see if its good. its good. need to integrate into testing vs being a div */
+.center-line-outline-on {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 130%;
+  z-index:10000;
+  background-color:rgb(191, 191, 191); 
+}

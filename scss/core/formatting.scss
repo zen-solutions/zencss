@@ -1,0 +1,177 @@
+//----------------------------------------------------
+/* Define variables for gaps, heights, and widths */
+//----------------------------------------------------
+
+$gaps: (0.75em, 1.25em, 1.5em, 2em, 3em, 4em);
+$heights: (10em, 15em, 20em, 25em, 30em, 40em);
+$widths: (4rem, 6rem, 9rem, 12rem, 15rem);
+
+//----------------------------------------------------
+/* Generate classes for gaps */
+//----------------------------------------------------
+
+@for $i from 1 through length($gaps) {
+  .gap-#{$i} {
+    gap: nth($gaps, $i);
+  }
+}
+
+//----------------------------------------------------
+/* Generate classes for heights */
+//----------------------------------------------------
+
+@for $i from 1 through length($heights) {
+  .height-#{$i} {
+    height: nth($heights, $i);
+  }
+}
+
+//----------------------------------------------------
+/* Generate classes for widths */
+//----------------------------------------------------
+
+@for $i from 1 through length($widths) {
+  .width-#{$i} {
+    width: nth($widths, $i);
+  }
+}
+
+//----------------------------------------------
+// Directional modifiers
+//----------------------------------------------
+
+//BUG
+// up 20 should do margin-bottom: 20px; not margin top - 20 for some reason. test this.
+
+.up-5 {
+  position: relative;
+  margin-bottom: 5px;
+
+}
+
+// Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
+@for $i from 1 through 5 {
+  $value: $i * 10; // Multiply the loop variable by 10 to get the desired values
+
+  // Generating classes for negative margin-top (moving up)
+  .up-#{$value} {
+    position: relative;
+    margin-top: -#{$value}px;
+  }
+
+  // Generating classes for positive margin-top (moving down)
+  .down-#{$value} {
+    position: relative;
+    margin-top: #{$value}px;
+  }
+
+  // Generating classes for negative margin-left (moving left)
+  .left-#{$value} {
+    position: relative;
+    margin-left: -#{$value}px;
+  }
+
+  // Generating classes for positive margin-right (moving right)
+  .right-#{$value} {
+    position: relative;
+    margin-right: #{$value}px;
+  }
+}
+
+//----------------------------------------------------
+/* Additional classes */
+//----------------------------------------------------
+
+.w-100 {
+  width: 100%;
+}
+
+.w-sm {
+  width: 50px;
+  height: auto;
+}
+
+// do these for 10-50 for height too prolly
+.w-10 {
+  width: 10px;
+}
+
+.w-20 {
+  width: 20px;
+}
+
+.w-30 {
+  width: 30px;
+}
+
+.w-40 {
+  width: 40px;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+.w-75 {
+  width: 75px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+
+
+
+//----------------------------------------------------
+//card//
+//----------------------------------------------------
+
+.card {
+  background-color: rgba(255, 255, 255, .2);
+  border: 1px solid #d9d9d9;
+  text-align: center !important;
+  align-items: unset !important;
+}
+
+.card>.img {
+  margin: 0;
+  border: 0;
+}
+
+
+//----------------------------------------------------
+//Unset Round
+//----------------------------------------------------
+
+.unset-round {
+  border-radius: 0;
+}
+
+
+//----------------------------------------------
+// Misc Utility classes
+//----------------------------------------------
+
+.row {
+  flex-direction: row;
+  gap: 1em;
+}
+
+.column {
+  flex-direction: column;
+  gap: 1em;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.unzen {
+  display: initial;
+  text-align: left;
+}
+
+.o-hide {
+  overflow: hidden;
+}

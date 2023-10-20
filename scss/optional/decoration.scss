@@ -1,0 +1,81 @@
+@mixin outline($style, $color) {
+  outline: 5px $style $color;
+}
+
+.outline {
+  @include outline(solid, #eee);
+}
+
+.outline-dotted {
+  @include outline(dotted, #eee);
+}
+
+
+//squiggle
+
+// shadow
+
+$shadow-color: rgba(0, 0, 0, 0.25);  // Customize the shadow color
+
+@for $i from 1 through 5 {
+  .shadow-#{$i} {
+    $shadow-amount: $i * 2;
+    box-shadow: 0 #{$shadow-amount}px #{2 * $shadow-amount}px $shadow-color;
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 #{($shadow-amount + 2)}px #{(2 * $shadow-amount + 4)}px $shadow-color;
+    }
+  }
+}
+
+// Usage with a button
+// button {
+//   @extend .shadow-1;  // extending one of the shadow classes
+// }
+
+//fancy borders
+
+
+.border {
+	max-width: 25rem;
+	margin: 2rem;
+
+	&__title {
+		font-size: 2rem;
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		font-size: 1.15rem;
+	}
+
+	// Fist way - background befind the section
+	&-fancy-1 {
+		position: relative;
+		background: white;
+		padding: 2rem 1rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -1rem;
+			left: -1rem;
+			display: block;
+			background-image: linear-gradient(45deg, transparent 49%,
+				$primary-color 50%, transparent 51%);
+			background-size: 5px 5px;
+			right: -1rem;
+			bottom: -1rem;
+			z-index: -1;
+		}
+	}
+
+	
+	// Using border image and repeating gradient
+	&-fancy-2 {
+		padding: 2rem 1rem;
+		border: 1rem solid $primary-color;
+		border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, $primary-color 6px, $primary-color 15px, transparent 16px, transparent 20px) 20/1rem;
+	}
+}

@@ -1,0 +1,172 @@
+/* ------------------------------------------ */
+/* Blink */
+/* ------------------------------------------ */
+.blink {
+    animation: blink 1s infinite;
+    /* Adjust the duration as needed */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ------------------------------------------ */
+/* Slide */
+/* ------------------------------------------ */
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.slide-down {
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-left {
+    animation: slideLeft 0.5s ease-out;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-right {
+    animation: slideRight 0.5s ease-out;
+}
+
+//fade-length 1 thjrough 10
+//this could be deployed, it works. but maybe not 1-10. maybe 1-5? 
+//this generates an animation-length-1 through animation-length-10
+// @keyframes fadeLength {
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+  
+//   @for $i from 1 through 10 {
+//     .fade-length-#{$i} {
+//       animation: fadeLength #{$i}s forwards;
+//     }
+//   }
+
+//fade-in time delays
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  $increment: 0.2;
+  $steps: 10;
+  
+  @for $i from 1 through $steps {
+    $delay: $increment * $i;
+    .fade-in-#{$i} {
+      opacity: 0;
+      animation: fadeIn 1s $delay + s forwards;
+    }
+  }
+  
+
+//-----------------------------------------
+// Button animations
+//-----------------------------------------
+.hover-up-down {
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.hover-up-down:hover {
+    transform: translateY(-10px); 
+}
+
+
+
+//-----------------------------------------
+// Experimental
+//-----------------------------------------
+.fancy {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    will-change: transform;
+  }
+  
+  .fancy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fancy:focus {
+    outline: none;
+  }
+
+  .fancy-ghost {
+
+    cursor: pointer;
+    transition: transform 0.4s ease, color 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform;
+  }
+  
+  .fancy-ghost:hover {
+    transform: translateY(-2px);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2);
+  }
+  
+  .fancy-ghost:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,125 @@
+//DEPENDANCY ON FONT AWESOME
+
+@mixin alert($background-color) {
+  background: $background-color;
+  padding: 2em;
+  filter: grayscale(10%);
+  color: $light-color;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-primary {
+  @include alert($blue);
+}
+
+.alert-danger {
+  @include alert($red);
+}
+
+.alert-success {
+  @include alert($green);
+}
+
+.alert-warning {
+  @include alert($orange);
+}
+
+.alert-dark {
+  @include alert($dark-color);
+}
+
+.alert-light {
+  @include alert($light-color);
+  color: $dark-color;
+}
+
+
+
+//icons
+@if $site-icons {
+  .alert-danger::before {
+    content: '\f071'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; 
+  }
+
+  .alert-danger {
+    line-height: 1.4em;
+
+    padding-left: 50px; 
+  }
+
+
+  .alert-warning::before {
+    content: '\f06a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .alert-warning {
+    padding-left: 50px;
+    line-height: 1.4em;
+  }
+
+  .alert-success::before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .alert-success {
+
+    padding-left: 50px;
+  }
+
+  .alert-primary::before {
+    content: '\f164';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .alert-primary {
+    padding-left: 50px;
+  }
+
+  .alert-dark::before {
+    content: '\f0f3';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .alert-dark {
+
+    padding-left: 50px;
+  }
+}
+

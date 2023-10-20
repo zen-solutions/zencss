@@ -1,0 +1,98 @@
+.dropdownmenu {
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .logo {
+            height: 30px;
+            width: 125px;
+            background: red;
+            //background: url('path-to-your-logo.png') no-repeat center center; // Adjust the path to your logo
+            background-size: contain;  // This will ensure your logo scales to fit within the dimensions of the div
+        }
+    }
+
+    li {
+        position: relative;
+        width: auto;
+
+        &:hover {
+            a { background: $secondary-color; }
+
+            ul#submenu {
+                opacity: 1;
+                top: 40px;
+                visibility: visible;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    a {
+        background: $primary-color;
+        color: $text-white;
+        display: block;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        transition: all .25s ease;
+
+        &:hover { background: $cta-color; }
+    }
+
+    #submenu {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 35px;
+        visibility: hidden;
+        z-index: 1;
+
+        li { width: 100%; }
+
+        a {
+            background: $primary-color;
+            font-size: 0.8rem;
+
+            &:hover { background: $secondary-color; }
+        }
+    }
+}
+
+.dropdownmenu.text {
+    background: none;
+
+    a {
+        background: none !important;
+        color: $primary-color;
+
+        &:hover { color: $secondary-color; }
+
+        #submenu {
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+
+            li { width: 100%; }
+
+            a {
+                background: none;
+                color: $primary-color;
+                font-size: 0.8rem;
+                text-align: left;
+
+                &:hover { color: $secondary-color; }
+            }
+        }
+    }
+}

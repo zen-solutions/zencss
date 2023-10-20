@@ -1,0 +1,214 @@
+///----------------------------------------------
+// Component Themes - Like fortnite skins for UI elements
+//----------------------------------------------
+
+///----------------------------------------------
+// Light
+//----------------------------------------------
+
+.theme-light {
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border-radius: $border-radius;
+
+
+  .z-col, z-col {
+   // margin: 0; // y you in theme class?
+  }
+
+
+  .tout {
+    background: $secondary-color;
+    color: $light-color;
+  }
+
+    //button
+    button{
+      background:$dark-color;
+      color: $light-color;
+
+    }
+  
+    button:hover {
+      background: darken($dark-color, 10%);
+    }
+  
+    
+}
+
+
+///----------------------------------------------
+// Dark
+//----------------------------------------------
+
+.theme-dark {
+  background: #424242;
+  color: #f4f4f4;
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  .z-col, z-col {
+    //margin: 0;
+  }
+
+  //button
+  button{
+    background:$light-color;
+    color:$dark-color;
+  }
+
+  button:hover {
+    background: darken($light-color,10%);
+  }
+  
+
+  .tout {
+    background: $primary-color;
+    color: $light-color;
+  }
+}
+
+
+///----------------------------------------------
+// secondary
+//----------------------------------------------
+
+.theme-secondary {
+  background: $secondary-color;
+  color: #f4f4f4;
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  .z-col, z-col {
+    //margin: 0;
+  }
+
+  //button
+  button{
+    background:$primary-color;
+    color: $light-color;
+
+  }
+
+  button:hover {
+    background: darken($primary-color, 10%);
+  }
+
+
+  .tout {
+    background: $cta-color;
+    color: $light-color;
+  }
+}
+
+
+///----------------------------------------------
+// Accent
+//----------------------------------------------
+
+.theme-accent {
+  background: $accent-color;
+  color: $light-color;
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  .z-col, z-col {
+    //margin: 0;
+  }
+
+  //button
+  button{
+    background:$secondary-color;
+    color: $light-color;
+
+  }
+
+  button:hover {
+    background: darken($secondary-color, 10%);
+  }
+  
+
+  .tout {
+    background: $grey;
+    color: $dark-color;
+    
+  }
+}
+
+
+///----------------------------------------------
+// CTA
+//----------------------------------------------
+
+.theme-cta {
+  background: $cta-color;
+  color: #f4f4f4;
+  overflow: hidden;
+  border-radius: $border-radius;
+  
+
+  .z-col, z-col {
+    //margin: 0;
+  }
+
+  
+  
+
+  .tout {
+    background: $secondary-color;
+    color: $light-color;
+  }
+
+    //button
+    button{
+      background:$accent-color;
+      color: $light-color;
+    }
+  
+    button:hover {
+      background: darken($accent-color, 10%);
+    }
+
+}
+
+///----------------------------------------------
+// Primary
+//----------------------------------------------
+
+.theme-primary   {
+  background: $primary-color;
+  color: $light-color;
+  overflow: hidden;
+  border-radius: $border-radius;
+  
+  h1,h2,h3,h4,h5,h6{
+    color: $light-color;
+  }
+
+  .z-col, z-col {
+    //margin: 0;
+  }
+
+  // p {
+  //   font-size: .8em;
+  // }
+
+////styling for tout component
+  .tout {
+    background: $accent-color;
+    color: $light-color;
+  }
+
+  //button
+  button{
+    background:$cta-color;
+    color: $light-color;
+  }
+
+  button:hover {
+    background: darken($cta-color, 10%);
+  }
+
+
+}
+

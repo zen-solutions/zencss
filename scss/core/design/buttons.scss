@@ -1,0 +1,154 @@
+/* Variables */
+$btn-color: $cta-color;
+$btn-hover-color: darken($cta-color, 20%);
+$border-color:$cta-color;
+
+/* Mixin for hover styles */
+@mixin btn-hover($bg-color, $border-color: $bg-color) {
+  &:hover {
+    background-color: $bg-color;
+    border-color: $border-color;
+  }
+}
+
+/* Button Styles */
+.btn, .btn-ghost, .btn-invert {
+  @include btn-hover($btn-hover-color);
+}
+
+//css stuff
+.btn {
+  background-color: $btn-color;
+}
+
+.btn-ghost {
+  color: $btn-color;
+  border: 2px solid $btn-color;
+  padding: 0.65em;
+  background:rgba(0,0,0,0%);
+}
+
+.btn-ghost:hover {
+
+  color: $light-color;
+  border: 2px solid darken($btn-color, 20%);
+}
+
+.btn-invert {
+  background-color: $btn-color;
+}
+
+//Touts
+.tout{
+  border-radius: 22px;
+  padding: 0.2em 1.1235em;
+  margin: 2px;
+  overflow: hidden; 
+  display: inline-block; 
+  line-height: 10px;
+  background:$accent-color;
+  position: relative;
+  font-size: .6rem;
+  margin-bottom: -1px;
+
+
+}
+
+.corner-top {
+  position: absolute;
+  rotate: -45deg;
+  height: 35px;
+  width: 70px;
+  margin-top: -11px;
+  margin-left: -22px;
+  border-radius: 0;
+  text-align: center;
+}
+
+.corner-top >*{
+  position: relative;
+  bottom: -15px;
+  left: -5px;
+  rotate:(45deg);
+}
+
+.corner-top::before {
+  //content: "\f005"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+
+}
+
+.tout-wrapper{
+ //background: red;
+  position: absolute;
+  margin-top: -27px;
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+
+}
+
+//------------------------------------------------
+// Button version - square
+//------------------------------------------------
+
+.btn-square{
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  text-decoration: none;
+  background: #668ad8;/*Button Color*/
+  color: #FFF;
+  border-bottom: solid 5px #36528c;/*daker than background*/
+  border-right: solid 5px #5375bd;/*darker than background*/
+}
+
+.btn-square:before{    
+  content: " ";
+  position: absolute;
+  bottom: -45px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+.btn-square:after{   
+  content: " "; // wat dis do?
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-color: transparent;
+}
+
+.square_btn:active{ /*on click*/
+  border:none;
+  -ms-transform: translate(6px,6px);
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);/*move LowerRight*/
+}t
+
+.btn-square:active:after,
+.btn-square:active:before {/*on click*/
+  content: none;/*Border disappears*/
+}
+
+
+
+
+

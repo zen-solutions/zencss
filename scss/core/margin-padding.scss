@@ -1,0 +1,71 @@
+/* ------------------------------------------------- */
+/* ----- Padding & Margin 
+/* ------------------------------------------------- */
+
+@for $i from 0 through 5 {
+  $size: $i * 0.25rem;
+
+  .p-#{$i} {
+    padding: $size;
+  }
+
+  .m-#{$i} {
+    margin: $size;
+  }
+}
+
+/* ------------------------------------------------- */
+/* -----  Top/Bottom/Left/Right Margins/Padding 
+/* ------------------------------------------------- */
+
+@for $i from 0 through 5 {
+  $size: $i * 0.75em;
+
+  .mt-#{$i} {
+    margin-top: $size;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $size
+  }
+
+  .ml-#{$i} {
+    margin-left: $size;
+  }
+
+  .mr-#{$i} {
+    margin-right: $size;
+  }
+
+  .pt-#{$i} {
+    padding-top: $size;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $size;
+  }
+
+  .pl-#{$i} {
+    padding-left: $size;
+  }
+
+  .pr-#{$i} {
+    padding-right: $size;
+  }
+}
+
+.p-6 {
+  padding: 2em;
+}
+
+.m-6 {
+  margin: 2em;
+}
+
+.p-7 {
+  padding: 3em;
+}
+
+.m-7 {
+  margin: 3vw;
+}
