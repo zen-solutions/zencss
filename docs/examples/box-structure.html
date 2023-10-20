@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+</head>
+
+<body class="zen">
+    <div class="center-line"></div>
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Hero --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="bg-opaque round">
+                <div class="center circle w-50 p-4 bg-primary">
+                    <img src="../../img/placeholders/logo-stack-white.png" class="w-50" alt="">
+                </div>
+                <h1 class="center">zenCSS Components</h1>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h4> Box structure </h4>
+                    <p> Let's look at the way our <span class="text-green">containers</span>, <span class="text-blue">rows</span> and <span class="text-red">columns</span> work. We've simulated our "zen test" mode to help you visualize our each element. </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+
+    <z-container class="z-container-outline-on center mb-3">
+        <p>this is a container</p>
+    </z-container>
+
+<z-container class="z-container-outline-on mb-3">
+    <z-row class="z-row-outline-on center">
+        <p>This is a nested row.  </p>
+    </z-row>
+</z-container>
+
+<z-container class="z-container-outline-on">
+    <z-row class="z-row-outline-on">
+        <z-col class="z-col-outline-on">
+            this is a nested column.  Columns expand or contract automatically. 100% width by default. 
+          </z-col>
+    </z-row>
+</z-container>
+
+<z-container class="z-container-outline-on">
+    <z-row class="z-row-outline-on">
+        <z-col class="z-col-outline-on">
+            <p class="p-outline-on"> this is a nested paragraph
+            </p>
+        </z-col>
+    </z-row>
+</z-container>
+
+<z-container>
+    <z-row>
+        <z-col>
+            <p>A simple page layout might look something like this. Note: all col widths are dynamic based on how many siblings they have.</p>
+        </z-col>
+    </z-row>
+</z-container>
+
+    <z-container class="z-container-outline-on">
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+              <p class="p-outline-on">1 column. 100% width</p>
+            </z-col>
+        </z-row>
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on">1 column. 50% width, 100% width at mobile</p>
+            </z-col>
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on">1 column. 50% width, 100% width at mobile</p>  
+              </z-col>
+        </z-row>
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+              <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>    
+            </z-col>
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>  
+            </z-col>
+              <z-col class="z-col-outline-on">
+                <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p> 
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+
+        <!----------------------------------------------------------------------->
+    <!--- Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    
+
+    <z-container class="pt-5">
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleDarkModeButton">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+
+
+</body>
+
+</html>

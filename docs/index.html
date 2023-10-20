@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zenCSS - a lightweight CSS library and micro-framework</title>
+        <meta name="description" content='Focus on building content, leverage CSS classes that "just work"'>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile-menu.css">
+        <link rel="stylesheet" href="css/documentation.css">
+        <link rel="stylesheet" href="../css/zen.css">
+
+</head>
+
+<body>
+
+        <nav class="sidebar close">
+                <header>
+                        <div class="image-text"> <a href="#" class="text-logo-a" target="_blank">
+                                        <span class="image">
+                                                <img src="#" alt="">
+                                        </span>
+                                        <div class="text logo-text">
+                                                <img src="../img/logo.png" alt="" class="site-logo">
+                                </a>
+
+                        </div>
+                        </div>
+                        <i class='bx bx-chevron-right toggle'></i>
+                </header>
+                <div class="menu-bar">
+                        <div class="menu">
+
+                                <ul class="menu-links">
+                                        <li class="nav-link">
+                                                <a href="#start">
+                                                        <i class='bx bxs-flag-checkered icon moved '></i>
+                                                        <span class="text nav-text ">Getting Started</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#fundamental">
+                                                        <i class='bx bx-leaf icon moved'></i>
+                                                        <span class="text nav-text">Fundamentals</span>
+                                                </a>
+                                        </li>
+
+                                        <li class="nav-link">
+                                                <a href="#color">
+                                                        <i class='bx bx-palette icon moved'></i>
+                                                        <span class="text nav-text">Color System</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#type">
+                                                        <i class='bx bx-font-color icon moved'></i>
+                                                        <span class="text nav-text">Typography</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#component">
+                                                        <i class='bx bx-book icon moved'></i>
+                                                        <span class="text nav-text">Design Library</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#utility">
+                                                        <i class='bx bx-paint-roll icon moved'></i>
+
+                                                        <span class="text nav-text">UI Utilities</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#test">
+                                                        <i class='bx bx-test-tube icon moved'></i>
+                                                        <span class="text nav-text">Test Mode</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#contribute">
+                                                        <i class='bx bx-group icon moved'></i>
+                                                        <span class="text nav-text">Contribute</span>
+                                                </a>
+                                        </li>
+                                        <li class="nav-link">
+                                                <a href="#license">
+                                                        <i class='bx bx-lock-open-alt icon moved'></i>
+                                                        <span class="text nav-text">License</span>
+                                                </a>
+                                        </li>
+
+                                </ul>
+                        </div>
+                        <!--div class="bottom-content">
+                                <li class="mode">
+                                        <div class="sun-moon">
+                                                <i class='bx bx-moon icon moon'></i>
+                                                <i class='bx bx-sun icon sun'></i>
+                                        </div>
+                                        <span class="mode-text text">Dark mode</span>
+                                        <div class="toggle-switch">
+                                                <span class="switch"></span>
+                                        </div>
+                                </li>
+
+
+                                <br> <br>
+                        </div-->
+                </div>
+        </nav>
+
+        <nav role="navigation" id="mobile-nav">
+                <div class="menu-bar">
+                        <div class="menu">
+                                <div class="mobile-toggle-container">
+                                        <img src="tree-sm-grey.png" class="mobile-logo" alt="">
+                                        <div id="menuToggle">
+                                                <input type="checkbox" />
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+
+                                                <ul class="menu-links" id="menu">
+                                                        <li class="nav-link">
+                                                                <a href="#start">
+
+                                                                        <p class="text nav-text"> <i class='bx bxs-flag-checkered icon moved '></i>
+                                                                                Getting Started</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#fundamental">
+
+                                                                        <p class="text nav-text"> <i class='bx bx-leaf icon moved'></i>
+                                                                                Fundamentals</p>
+                                                                </a>
+                                                        </li>
+
+                                                        <li class="nav-link">
+                                                                <a href="#color">
+
+                                                                        <p class="text nav-text"><i class='bx bx-palette icon moved'></i>
+                                                                                Color System</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#type">
+
+                                                                        <p class="text nav-text"> <i class='bx bx-font-color icon moved'></i>
+                                                                                Typography</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#component">
+
+                                                                        <p class="text nav-text"> <i class='bx bx- icon moved'></i>
+                                                                                Design Library</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#utility">
+
+
+                                                                        <p class="text nav-text"> <i class='bx bx-paint-roll icon moved'></i>
+                                                                                UI Utilities</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#test">
+
+                                                                        <p class="text nav-text"><i class='bx bx-test-tube icon moved'></i>
+                                                                                Test Mode</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#contribute">
+
+                                                                        <p class="text nav-text"> <i class='bx bx-group icon moved'></i>
+                                                                                Contribute</p>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-link">
+                                                                <a href="#license">
+
+                                                                        <p class="text nav-text"> <i class='bx bx-lock-open-alt icon moved'></i>
+                                                                                License</p>
+                                                                </a>
+                                                        </li>
+
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </nav>
+
+        <main class="zen" id="content">
+                <z-container-fluid>
+                        <z-container-fluid>
+
+                                <z-container id="start">
+                                        <z-row>
+                                                <z-col>
+                                                        <div class="center">
+                                                                <p class="mt-1">
+                                                                        &nbsp; <!-- All journeys begin with a breath of space-->
+                                                                </p>
+                                                                <div><img class="w-60 fade-in-1" src="../docs/images/grey-tree.png" alt=""></div>
+                                                                <h1 class="fade-in-2">Getting Started with zenCSS <span class="tout bg-green-light text-white up-5">beta</span>
+                                                                </h1>
+                                                                <p class="subline text fade-in-3">An open-source website authoring and design toolkit that helps you build, style, and debug websites.
+                                                                        Whether harnessing your mastery of a code editor or just beginning your HTML and CSS journey, you're about to build beautiful solutions with our tools. Let's dive in.
+                                                                </p>
+
+                                                        </div>
+                                                </z-col>
+                                        </z-row>
+                                </z-container>
+                        </z-container-fluid>
+
+
+                        <z-container>
+                                <z-row>
+                                        <z-col class="mt-0 pt-2 pl-0 pr-0 ml-0 mr-0">
+                                                <h2 class="center  fade-in-4">What's included? </h2>
+                                                <z-row>
+
+
+                                                    
+
+                                                        <z-col class="theme-secondary slide-up  fade-in-5 mobile-card">
+                                                                <div class="center center-me circle-icon bg-primary"><i class="fa-solid fa-cubes-stacked icon-lg text-white"></i>
+                                                                </div>
+                                                                <div class="center">
+                                                                        <h5>Framework/Design System</h5>
+                                                                        <p>
+                                                                               Ensure your content displays beautifully. 6 UI skins, branded themes, automatic
+                                                                                formatting of content/
+                                                                                text, testing/debugging toolkit, and dark
+                                                                                mode.
+                                                                        </p>
+                                                                </div>
+                                                        </z-col>
+
+                                                        <z-col class="theme-primary  slide-up  fade-in-5  mobile-card">
+                                                                <div class="center center-me circle-icon bg-opaque"><i class="fa-solid fa-screwdriver-wrench icon-lg text-white"></i>
+                                                                </div>
+                                                                <div class="center">
+                                                                        <h4>Utility Toolkit</h4>
+                                                                        <p>
+                                                                                Over 100 utility classes
+                                                                                that allow you to tweak, shape, test,
+                                                                                debug and beautify your
+                                                                                core design. Customize type, color and
+                                                                                form to your heart's content.
+                                                                        </p>
+
+                                                                </div>
+                                                        </z-col>
+
+                                                        <z-col class="theme-dark slide-up  fade-in-5 mobile-card">
+                                                                <div class="tout-wrapper">
+                                                                        <span class="tout corner-top"><i class="fa-solid fa-code text-white"></i></span>
+                                                                </div>
+                                                                <div class="center center-me circle-icon bg-grey-4"><i class="fa-solid fa-wand-magic-sparkles icon-lg text-white"></i>
+                                                                </div>
+                                                                <div class="center">
+                                                                        <h4>UI content library</h4>
+                                                                        <p>A collection of off-the-shelf UI
+                                                                                components you use immediately to
+                                                                                build websites better and faster. Soon,
+                                                                                a marketplace featuring top designers.
+                                                                        </p>
+
+                                                                </div>
+                                                        </z-col>
+                                                </z-row>
+
+
+                                                <z-row>
+                                                        <z-col class="theme-light slide-up  fade-in-6  mobile-card">
+                                                                <div class="center">
+                                                                        <h3>Download zenCSS
+                                                                        </h3>
+                                                                        <p class="p-5"> <!--span> Fastest way to get started: get
+                                                                                the compiled and
+                                                                                minified versions of our CSS, JS, and
+                                                                                examples. full
+                                                                                source code + scss files after. <br></span-->
+                                                                                <span>You're early to the party, we're still setting things up. Try out the current
+                                                                                        <a href="../css/zen.css">zen.css</a>
+                                                                                        file used here or just make some local edits in the browser if you're curious how this all works.</span>
+                                                                        </p>
+                                                                        <button class="btn-md bg-cta center">Coming
+                                                                                Soon</button>
+                                                                        <p class="smallest mt-2">
+                                                                        </p>
+                                                                </div>
+                                                        </z-col>
+                                                </z-row>
+                                        </z-col>
+                                </z-row>
+
+
+                        </z-container>
+
+
+
+                        <z-container id="fundamental">
+                                <z-row>
+                                        <z-col>
+                                                <h2> Finding your zen: An introduction</h2>
+
+
+                                                <p>The zenCSS framework is designed after the philosophical principle of
+                                                        Wu Wei. It's use should entail effortless action. </p>
+
+                                                <blockquote>
+                                                        The efficiency of Wu Wei is like that of water flowing over and
+                                                        around the rocks in its path – not the mechanical, straight-line
+                                                        approach that usually ends up short-circuiting natural laws, but
+                                                        ones that evolves from an inner sensitivity to the natural
+                                                        rhythm of things.” (Hoff, 68). The Tao of Pooh. ”
+                                                </blockquote>
+                                </z-row>
+
+                                <z-row>
+                                        <z-col id="diversion">
+                                                <h2>Getting Started</h2>
+                                                <p>Follow the simple setup steps <a href="#setup">here</a> to
+                                                        activate our
+                                                        toolkit on your website. Then, any time you wish to work
+                                                        with zenCSS you will simply declare a
+                                                        container/row to house your HTML content. Everything stays encapsulated and automatically balances in perfect harmony in terms of color and form. Deploy alongside current solutions like Bootstrap <a href="examples/bootstrap-test.html">without worry.</a>
+                                                </p>
+                                                <h3>zenCSS uses a desktop-first approach</h3>
+                                                <p>
+                                                        That is to say, you build website content for desktop, and zenCSS automatically accounts for it's
+                                                        presentation on tablet and mobile.
+                                                </p>
+                                        </z-col>
+                                </z-row>
+
+                                <z-row class="theme-dark mobile-square">
+                                        <z-col>
+                                                <h4>TLDR... <img src="../img/boring.gif" alt=""></h4>
+                                                <ul>
+
+                                                        <li><b>Containers </b>- This is a section of
+                                                                your website. Think, layers of a cake.
+                                                                Each container is a "works great
+                                                                on all resolutions" box that handles logic for
+                                                                horizontal alignment on mobile, tablet
+                                                                and desktop devices. There is also a full width
+                                                                container - container-fluid. </li>
+                                                        <li> <b>Rows</b> - Rows
+                                                                expand to 100% width of their parent and hold columns.
+                                                                They have no padding or
+                                                                margin. They have fancy pants flex logic applied to them so
+                                                                they "just work"- Of course the default behavior is modifiable using our
+                                                                custom classes.
+                                                        </li>
+                                                        <li><b>Columns</b> - Your content
+                                                                boxes - you put HTML objects in here. an h2? sure. Paragraph and
+                                                                an image? No problem. Want to skin them with a dark theme? We gotchu fam. Columns have
+                                                                margin and padding. Aligned top-left by default,
+                                                                automatically resizing and
+                                                                realigning to accomidate tablet/mobile. </li>
+                                                        <li>We made Zentax, our own HTML micro-language</li>
+                                                </ul>
+                                        </z-col>
+                                </z-row>
+
+                                <z-row>
+                                        <z-col>
+                                                <p>Let's start with a basic example using semantic HTML</p>
+
+                                                <pre class="copy-text bg-opaque not-important">
+                                                        <p>
+&lt;main <span class="text-dark-green">class="z-container"</span> &gt;
+  &lt;section <span class="text-dark-green">class="z-row"</span>&gt;
+    &lt;div <span class="text-dark-green">class="z-col"</span>&gt; ... &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/main&gt;                           </p></pre>
+                                        </z-col>
+                                </z-row>
+
+                                <z-row>
+                                        <z-row>
+                                                <z-col class="mt-0 pt-0">
+                                                        <p>It doesn't matter how many columns you place in a row (2-6 is
+                                                                standard), and it doesn't matter how many html
+                                                                items
+                                                                you place in a column - zenCSS sorts that out for you.
+                                                                Need to
+                                                                add
+                                                                more items to a given content area? Add another row or
+                                                                nest
+                                                                columns inside a column. Simple.</p>
+                                                        <p>Alternatively, you may use Zentax, our shorthand
+                                                                micro-language, and write half the code <span class="tout bg-grey-3 text-white">NEW</span>
+                                                        </p>
+                                                        <pre class="copy-text bg-opaque text-dark-green">
+&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col&gt; ... &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;                                                </pre>
+                                                </z-col>
+                                        </z-row>
+
+                                        </z-col>
+                                </z-row>
+
+                        </z-container>
+
+                        <z-container id="zentax">
+                                <z-row>
+                                        <z-col>
+                                                <h3>What the heck is Zentax? </h3>
+                                                <p>
+                                                        The simplest language you'll ever learn. Actually you already
+                                                        know it. Zentax, our shorthand micro-language consists of only 3
+                                                        tags, and is used for developing
+                                                        website content with zenCSS.
+                                                        We've created custom container, row and column tags to allow for
+                                                        cleaner markup.
+                                                </p>
+                                                <p>
+                                                        You're free to continue using tradional HTML or try out Zenax
+                                                        for our box structure.
+                                                        Either works interchangably depending on which
+                                                        option works best for your project. In future versions, we'll
+                                                        have tools to compile Zentax to standard semantic HTML for
+                                                        deployment.
+                                                </p>
+
+                                                <div class="default-primary"><span class="tout bg-red text-white">new</span> Download our
+                                                        zentax user snippit <a href="../toolkit/user-snippets-shorthand.json">here</a>
+                                                        and you can simply type
+                                                        "z-con" + tab to write the above example in VSCode.
+                                                </div>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+
+
+                        <!--z-container>
+                                <z-row>
+                                        <z-col>
+                                                <h3>these two dont makes ense/dont work Responsive Flex z-container</h3>
+                                                <p>You can create a responsive z-row (flex z-container) to store
+                                                        your "content" boxes for a given row. add or
+                                                        remove items and everything reflows to fill in the
+                                                        space. Pure zen without media query hell. </p>
+                                                <h2>Growing and shrinking boxes</h2>
+                                                <p>The <code>.grow</code> class is used to control the
+                                                        <code>flex-grow</code> property of a flex
+                                                        z-container or flex z-col in a web project. It allows an
+                                                        element to grow and occupy available space
+                                                        within the flex z-container.
+                                                </p>
+                                                </div>
+
+                                        </z-col>
+                                </z-row>
+                        </z-container-->
+
+
+
+                        <z-container id="color">
+                                <z-row>
+                                        <z-col>
+                                                <h2>zenCSS Color System</h2>
+                                                <p>7 unique themes and <a href="#utility">hundreds of classes</a> for
+                                                        applying
+                                                        <span class="text-red">various</span> <span class="text-blue">shades</span> <span class="text-orange">of</span> <span class="text-purple">color</span> <span class="text-blue">and </span><span class="text-green italic">
+                                                                &nbsp;style</span>
+                                                        for <span class="bg-secondary text-white pl-1 pr-1 round">background
+                                                                colors</span> and <span class="text-dark-green">text
+                                                                colors.</span> The zenCSS Color System help you create visually appealing layouts with different levels of contrast.
+                                                </p>
+                                                <h3>Color Themes </h3>
+                                                <p>zenCSS has a default look and feel, and components may be styled at a high level using our color themes. Think Fortnite
+                                                        skins, but for
+                                                        website UI elements. HTML elements with a theme declared will style immediate children accordingly based on your brand colors. This is currently being rolled out to all current components. </p>
+
+                                                <z-row>
+                                                        <z-col class="theme-primary">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-primary</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+
+                                                            <z-col class="theme-secondary">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-secondary</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+                                                
+                                                
+                                                            <z-col class="theme-light">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-light</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+                                                
+                                                
+                                                            <z-col class="theme-dark">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-dark</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+                                                            
+                                                
+                                                            <z-col class="theme-cta">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-cta</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+                                                
+                                                            <z-col class="theme-accent">
+                                                                <span class="tout">new</span>
+                                                                <h3>theme-accent</h3>
+                                                                <p>subtext goes here</p>
+                                                                <button type="button">Hover me</button>
+                                                            </z-col>
+                                                
+
+                                                </z-row>
+                                                <z-row>
+                                                        <z-col>
+                                                                <pre class="copy-text bg-opaque not-important">&lt;z-container&gt;
+  &lt;z-row <span class="text-dark-green">class="default-primary"</span>&gt;
+            ...    
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</pre>
+                                                        </z-col>
+                                                </z-row>
+
+                                                <h3>Brand Colors</h3>
+                                                <p>The color themes are defined by your brand colors. Give zenCSS 4 colors, we'll give you a site-wide color
+                                                        palette tailored to your brand's signature style. The meticulous balance of light and dark options for each of your brand colors ensures each page embodies your brand's ethos, fostering a
+                                                        strong connection with your audience.</p>
+
+                                                <z-row>
+                                                        <z-col class="bg-primary text-white">
+                                                                <div class="center">bg-primary</div>
+                                                                <div class="center bg-primary-dark">bg-primary-dark</div>
+                                                                <div class="center bg-primary-light">bg-primary-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-secondary text-white">
+                                                                <div class="center">bg-secondary</div>
+                                                                <div class="center bg-secondary-dark">bg-secondary-dark</div>
+                                                                <div class="center bg-secondary-light">bg-secondary-light</div>
+                                                        </z-col>
+                                                </z-row>
+                                                <z-row>
+                                                        <z-col class="bg-accent text-white">
+                                                                <div class="center">bg-accent</div>
+                                                                <div class="center bg-accent-dark">bg-accent-dark</div>
+                                                                <div class="center bg-accent-light">bg-accent-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-cta text-white">
+                                                                <div class="center">bg-cta</div>
+                                                                <div class="center bg-cta-dark">bg-cta-dark</div>
+                                                                <div class="center bg-cta-light">bg-cta-light</div>
+                                                        </z-col>
+
+                                                </z-row>
+
+                                                <h3>Shades of Grey</h3>
+                                                <p>Life isn't black and white, amirite? That's why we've created a
+                                                        site-wide color palette based on a sequence of shades from white
+                                                        to
+                                                        black, traversing through a spectrum of greys. This
+                                                        monochromatic scheme echoes the simplicity and sophistication of
+                                                        a grayscale, providing a neutral backdrop that accentuates the
+                                                        content and elements across the site.</p>
+
+                                                <div class="z-row ">
+                                                        <div class="z-col bg-grey-1 ">
+                                                                <div class="center">bg-grey-1</div>
+                                                                <div class="center bg-grey-1-dark">bg-grey-1-dark</div>
+                                                                <div class="center bg-grey-1-light">bg-grey-1-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-2 ">
+                                                                <div class="center">bg-grey-2</div>
+                                                                <div class="center bg-grey-2-dark">bg-grey-2-dark</div>
+                                                                <div class="center bg-grey-2-light">bg-grey-2-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 ">
+                                                                <div class="center">bg-grey-3</div>
+                                                                <div class="center bg-grey-3-dark">bg-grey-3-dark</div>
+                                                                <div class="center bg-grey-3-light">bg-grey-3-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-4 text-white">
+                                                                <div class="center">bg-grey-4</div>
+                                                                <div class="center bg-grey-4-dark">bg-grey-4-dark</div>
+                                                                <div class="center bg-grey-4-light">bg-grey-4-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-5 text-white">
+                                                                <div class="center">bg-grey-5</div>
+                                                                <div class="center bg-grey-5-dark">bg-grey-5-dark</div>
+                                                                <div class="center bg-grey-5-light">bg-grey-5-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-6 text-white">
+                                                                <div class="center">bg-grey-6</div>
+                                                                <div class="center bg-grey-6-dark">bg-grey-6-dark</div>
+                                                                <div class="center bg-grey-6-light">bg-grey-6-light</div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">bg-opaque</div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">bg-blur</div>
+                                                        </div>
+                                                </div>
+
+
+                                                <h3>Universal Colors</h3>
+                                                <p>A site-wide color palette inspired by the ROYGBIV sequence, infusing
+                                                        every page with the vibrant and distinctive hues of a rainbow,
+                                                        creating a lively and engaging visual experience to resonate
+                                                        with any core audience. Want to change the shades? Just update the base color (bg-) and zenCSS will stylize new light and dark colors that interchange at your whim, automatically. </p>
+
+                                                <z-row>
+                                                        <z-col class="bg-red text-white">
+                                                                <div class="center">bg-red</div>
+                                                                <div class="center bg-red-dark">bg-red-dark</div>
+                                                                <div class="center bg-red-light">bg-red-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-orange text-white">
+                                                                <div class="center">bg-orange</div>
+                                                                <div class="center bg-orange-dark">bg-orange-dark</div>
+                                                                <div class="center bg-orange-light text-orange">bg-orange-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-yellow">
+                                                                <div class="center">bg-yellow</div>
+                                                                <div class="center bg-yellow-dark text-white">bg-yellow-dark</div>
+                                                                <div class="center bg-yellow-light">bg-yellow-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-green text-white">
+                                                                <div class="center">bg-green</div>
+                                                                <div class="center bg-green-dark">bg-green-dark</div>
+                                                                <div class="center bg-green-light">bg-green-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-blue text-white">
+                                                                <div class="center">bg-blue</div>
+                                                                <div class="center bg-blue-dark">bg-blue-dark</div>
+                                                                <div class="center bg-blue-light text-black">bg-blue-light</div>
+                                                        </z-col>
+                                                        <z-col class="bg-purple text-white">
+                                                                <div class="center">bg-purple</div>
+                                                                <div class="center bg-purple-dark">bg-purple-dark</div>
+                                                                <div class="center bg-purple-light text-black">bg-purple-light</div>
+                                                        </z-col>
+                                                </z-row>
+
+
+
+
+
+                                                <p class="smaller">Note: bg-opaque triggers a JavaScript function which
+                                                        sets the opacity of all child elements back to 1. bg-blur does
+                                                        this as well,
+                                                        but it can be used in conjunction with other background colors
+                                                        and will blur the background of anything it covers.
+                                                </p>
+                                                <p>Apply these classes to html elements to set their background
+                                                        colors to suit your needs. For example, we can change the
+                                                        background, text or theme of the code snippets by simply setting
+                                                        a class such as theme-dark.
+                                                </p>
+                                                <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</pre>
+
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+
+                        <z-container id="type">
+                                <z-row>
+                                        <z-col>
+                                                <h2>Text Formatting</h2>
+                                                <p>zenCSS provides professional quality type treatment out of the box,
+                                                        ensuring your websites look more beautiful than a model in a
+                                                        godaddy commercial. But for discerning tinkerers and pixel
+                                                        pushers with overdue tasks, we provide a collection of styles
+                                                        for text formatting,
+                                                        alignment, and size. Its sole purpose: help you easily enhance
+                                                        the appearance of text elements on your website. Marvel at the
+                                                        different sections and available styles.
+
+                                                </p>
+
+                                                <h3>Text modifiers</h3>
+                                                <div class="z-row">
+                                                        <div class="z-col bg-grey-3 text-white italic">
+                                                                <div class="center">italic</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white bold">
+                                                                <div class="center">bold</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white semi-bold">
+                                                                <div class="center">semi-bold</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white small">
+                                                                <div class="center">small</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white big">
+                                                                <div class="center">big</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white left">
+                                                                <div class="left">left</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white">
+                                                                <div class="center">center</div>
+                                                        </div>
+                                                        <div class="z-col bg-grey-3 text-white right">
+                                                                <div class="right">right</div>
+                                                        </div>
+                                                </div>
+
+                                                <pre class="copy-text bg-opaque"> &lt;p class="z-col bold center bigger"&gt;bold, centered, bigger text element&lt;/p&gt;</pre>
+
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+                        <z-container>
+                                <z-row>
+                                        <z-col>
+                                                <h2>Dynamic, responsive text resizing</h2>
+                                                <p>zenCSS includes a robust, dynamic, totally amazing, completely
+                                                        automatic, hands free, no subscription required, auto-working,
+                                                        smart response detecting - text scaling solution. This feature
+                                                        automatically scales your website's text to different font
+                                                        sizes at different viewport resolutions.
+
+                                                <p>Out of the box, our standard text sizes are:
+                                                <ul>
+                                                        <li>14px on mobile</li>
+                                                        <li>16 px on tablet</li>
+                                                        <li>18 on desktop screens</li>
+                                                </ul>
+                                                </p>
+
+
+
+                                                <p>
+                                                        The h1 - h6 tags automatically adjust at each break point based
+                                                        on the default font size specified. For the more technically
+                                                        inclined, if you right click and "inspect" an element below,
+                                                        then switch to the computed tab you will see the sizes change as
+                                                        your resize the window. (Note: you will need to have your
+                                                        inspect settings on responsive to view this activity)
+                                                </p>
+
+                                                <div class="z-row">
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h1>h1</h1>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h2>h2</h2>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h3>h3</h3>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h4>h4</h4>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h5>h5</h5>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <h5>h6</h6>
+                                                                </div>
+                                                        </div>
+                                                        <div class="z-col bg-opaque">
+                                                                <div class="center">
+                                                                        <p>paragraph text</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+
+
+
+
+
+                                                <p>This is easily customizable to fit your needs. Simply
+                                                        override the
+                                                        "font-size" in the desired
+                                                        media query once, and all font elements sizes will
+                                                        cascade based on this
+                                                        change.
+                                                </p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+                        <z-container id="component">
+                                <z-row>
+                                        <z-col>
+                                                <h3>Design Library</h3>
+                                                <p>Dive in and get styling with our exclusive UI design components.
+                                                        We're hard
+                                                        at work making more to add to the library. </p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+                        <z-container>
+                                <z-row>
+
+                                        <z-col class="theme-primary feature">
+                                                <div class="tout-wrapper">
+                                                        <span class="tout corner-top"><i class="fa-solid fa-box text-white"></i></span>
+                                                </div>
+                                                <h5>Box System</h5>
+                                                <p>Examples of our container, row and column framework. Test mode simulated on each element so you can visualize our box framework one step at a time. <a class="text-white" href="examples/box-structure.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+                                        <z-col class="theme-secondary">
+                                                <div class="tout-wrapper">
+                                                        <span class="tout corner-top"><i class="fa-solid fa-microscope text-white"></i></span>
+                                                </div>
+                                                <h5>Test Mode</h5>
+                                                <p>Test mode allows you to visualize and troubleshoot any alignment issues you may experience with our box framework. <a class="text-white" href="examples/test-mode.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+                                        <z-col class="theme-cta">
+                                                <div class="tout-wrapper">
+                                                        <span class="tout corner-top"><i class="fa-solid fa-down-left-and-up-right-to-center text-white"></i></span>
+                                                </div>
+                                                <h5>Testing zenCSS + Bootstrap</h5>
+                                                <p>Discover how zen.css beautifully compliments other frameworks like Bootstrap, and build a common web layout with Bootstrap and zenCSS <a class="text-white" href="examples/bootstrap-test.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+
+                                        <z-col class="theme-primary">
+
+                                                <h5>Themes</h5>
+                                                <p>They're like fortnite skins for your UI <a class="text-white" href="examples/themes.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col class="theme-secondary feature">
+                                                <h5>Background Colors</h5>
+                                                <p>Custom background classes for your brand, plus grey and color palettes. <a class="text-white" href="examples/background-colors.html">View
+                                                                Now</a></p>
+
+                                        </z-col>
+
+                                        <z-col class="theme-cta">
+                                                <h5>Font Colors</h5>
+                                                <p>Custom font classes for your brand, plus grey and color palettes. <a class="text-white" href="examples/text-colors.html">View
+                                                                Now</a></p>
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+
+                                </z-row>
+                                <z-row>
+                                        <z-col class="theme-primary one-up">
+                                                <div class="tout-wrapper">
+                                                        <span class="tout corner-top"><i class="fa-solid fa-code text-white blink"></i></span>
+                                                </div>
+                                                <h5>Animations</h5>
+                                                <p>Coming soon. Subtle animation to enhance UX without distracting from your core message. </p>
+                                                <p><!--a class="text-white" href="#">View
+                                                                Now</a--></p>
+
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col class="theme-secondary">
+                                                <h5>Text Modifiers</h5>
+                                                <p>Change the way text presents in a section. <a class="text-white" href="examples/text-modifiers.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+                                        <z-col class="theme-cta">
+
+                                                <h5>Hero Images</h5>
+                                                <p>Make a bold first impression that
+                                                        draws the viewer into the
+                                                        content. <a class="text-white" href="examples/hero-section.html">View&nbsp;Now</a></p>
+
+                                        </z-col>
+
+
+
+                                        <z-col class="theme-primary">
+
+                                                <h5>Image/Text Content Areas</h5>
+                                                <p>Visuals and narratives come together
+                                                        in a balanced layout to achieve
+                                                        perfect harmony. <a class="text-white" href="examples/image-text.html">View&nbsp; Now</a></p>
+
+                                        </z-col>
+
+                                </z-row>
+                                <z-row>
+                                        <z-col class="theme-secondary feature">
+
+                                                <h5>Cards</h5>
+                                                <p>A visually organized way to showcase
+                                                        bite-sized content items to
+                                                        visitors. <a class="text-white" href="examples/cards.html">View
+                                                                Now</a></p>
+
+
+                                        </z-col>
+                                        <z-col class="theme-cta">
+                                                <h5>Buttons</h5>
+                                                <p>Prompt actions with Buttons, your
+                                                        clickable gateway to further
+                                                        interactions. <a class="text-white" href="examples/buttons.html">View
+                                                                Now</a></p>
+
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col class="theme-primary">
+                                                <h5>Alert Messages</h5>
+                                                <p>Keep visitors Informed with Alerts,
+                                                        ensuring no important update
+                                                        goes unnoticed. <a class="text-white" href="examples/alerts.html">View
+                                                                Now</a></p>
+                                        </z-col>
+
+                                        <z-col class="theme-secondary feature">
+                                                <div class="tout-wrapper">
+                                                        <span class="tout corner-top"><i class="fa-solid fa-star text-white"></i></span>
+                                                </div>
+                                                <h5>Decorations</h5>
+                                                <p>Add a little sugar and spice to your content <a class="text-white" href="examples/decorations.html">View
+                                                                Now</a></p>
+
+                                        </z-col>
+
+
+
+
+                                </z-row>
+                        </z-container>
+
+
+
+
+
+                        <z-container id="utility">
+                                <z-row>
+                                        <z-col>
+                                                <h2>UI Utilities</h2>
+                                                <p>zenCSS includes 100+ modifier classes
+                                                        that you may use to modify the appearance of html elements. To
+                                                        demonstrate how they work, let's change the code
+                                                        example UI element of this website to use the brand theme.
+                                                </p>
+                                                <pre class="theme-primary copy-text">&lt;pre class="default-primary"&gt;...&lt;/pre&gt;</pre>
+                                                <p>Remember, themes affect bg color and text color. And zenCSS being
+                                                        the awesome tool that it is lets you override either at the
+                                                        element level. The order is the theme, then any background
+                                                        modifications then any text modifications, then any other
+                                                        styling, animation, etc. Here, we're setting the default theme,
+                                                        then immediately customizing the view. Not that you should, but
+                                                        you can. And all without using !important. </p>
+                                                <pre class="theme-primary bg-secondary text-purple border-0 copy-text">&lt;pre class="theme-primary bg-secondary text-purple border-0"&gt;...&lt;/pre&gt;</pre>
+
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+                        <z-container>
+                                <z-row>
+                                        <z-col>
+                                                <h2>Controlling how content breaks </h2>
+                                                <p>By defauilt zenCSS strives to make your items display and realign
+                                                        beautifully on all devices,
+                                                        but you can use our utilities take control at anytime to fine
+                                                        tune using our
+                                                        cusom classes. The default logic for zenCSS is to display three columns on desktop, two on tablet and one on mobile. If you had 6 children in a row, you
+                                                        could add the class="two-up" to the row, and your children would occupy 50% of the width. SImilarly, use four-up and each child will each take a quarter of the space.</p>
+
+                                                <p>We intend to use the fibonaci sequence to deliver .layout classes in future updates that will make your content display using the principles of this magical number. You may already notice it peppered throughout our framework.
+                                                </p>
+                                                <p class="center"><span class="tout text-white">soon</span> Full documentation coming soon</p>
+
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+                        <z-container id="test" class="mt-3">
+                                <z-row>
+                                        <z-col>
+                                                <h2>Debugging your website just got a whole lot easier</h2>
+
+                                                <p>In practice, debugging stylistic issues related to CSS is not as
+                                                        straightforward as debugging
+                                                        functional JavaScript issues using console.log(). And that's
+                                                        before we even consider mobile/tablet issues, pre-processors,
+                                                        lack of source maps, minification, etc. 
+                                                </p>
+                                                <p><button id="toggleButton" class="theme-primary">Toggle Test Mode</button></p>
+
+                                                <p>With zenCSS "genie mode" we overlay outlines
+                                                        on your content so you
+                                                        can effortlessly pinpoint and fix the source of your bugs. This
+                                                        works in tandem with the inspect element property of your
+                                                        browser's dev tools to quickly
+                                                        isolate the cause of your issues. The purple and green dotted
+                                                        lines indicate the
+                                                        boundaries of your containers, with purple representing fluid
+                                                        containers. The blue solid lines delineate the rows, while red
+                                                        outlines encircle your columns for better visualization.
+                                                        Paragraphs have a thin orange outline. Soon, we'll add a big ol
+                                                        alignment grid. Try it out below.
+                                                </p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+
+                        <z-container id="setup">
+                                <z-row>
+                                        <z-col>
+                                                <h1>File Structure</h1>
+                                                <p>Within the download you'll find the following file structure
+                                                        and contents, logically grouping common assets and providing
+                                                        both compiled and
+                                                        minified variations.
+                                                </p>
+
+                                                <p>Once downloaded, unzip the compressed folder to see the
+                                                        structure of (the compiled) zenCSS. You'll see something like
+                                                        this:
+                                                </p>
+                                                <div class="p-5  bg-opaque">
+                                                        css/<br>
+                                                        ├── zencss.css<br>
+                                                        ├── zencss.min.css<br>
+                                                        js/<br>
+                                                        ├── zencss.js<br>
+                                                        ├── zencss.min.js<br>
+                                                        img/<br>
+                                                        ├── --<br>
+                                                        └── --
+                                                </div>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+                        <z-container>
+                                <z-row>
+                                        <z-col>
+                                                <h2>Installation</h2>
+
+                                                <p>To install zenCSS on your website, Link to our css file in the head
+                                                        section of your HTML document,
+                                                        then include the zencss.js file right before the closing body.
+
+                                                </p>
+                                                <pre class="copy-text bg-opaque not-important">&lt;link rel="stylesheet" <span class="text-dark-green">href="path-to/zen.css"</span>&gt;</pre>
+                                                <pre class="copy-text bg-opaque not-important">&lt;script <span class="text-dark-green">src="path-to/zencss.js"</span>&gt;&lt;/script&gt;</pre>
+
+                                                <h2 class="mt-3">Usage</h2>
+
+                                                <div class="p">There are 2 ways to use zenCSS. directly on the
+                                                        body (globally affecting the site),or on an html
+                                                        element.
+                                                </div>
+
+                                                <p><b>Globally:</b> Simply declare zen on your body.
+                                                </p>
+                                                <pre class="copy-text bg-opaque">
+&lt;body class="zen"&gt; 
+...
+&lt;/body&gt;</pre>
+
+                                                <p class="mt-3"><b>Mix in:</b> Declare zen anywhere on your site to
+                                                        unlock its capabilities without affecting anything else already
+                                                        in production.
+                                                </p>
+                                                <pre class="copy-text bg-opaque">
+&lt;section class="zen"&gt; 
+...
+&lt;/section&gt;
+</pre>
+
+
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col>
+                                                When you write code inside a parent declared as "zen", you are
+                                                considered "in zen" and
+                                                can utilize all our tools and features.
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col>
+                                                <a href="#diversion">Return to where you were when you followed the
+                                                        simple setup steps.</a>
+                                </z-row>
+                        </z-container>
+
+
+
+                        <z-container id="contribute">
+                                <z-row>
+                                        <z-col>
+                                                <h2>Contribute to zenCSS</h2>
+                                                <p>
+                                                        Would you like to report a bug? Do you have suggestions, ideas,
+                                                        or feature requests? Fancy submitting a PR? Feel free to create
+                                                        a new issue on GitHub with the relevant label by clicking here.
+
+                                                        <br>
+                                                        Credit to all the fine souls who helped inspire this project
+                                                        will go here. you know who you are.
+                                                </p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+                        <z-container id="next">
+                                <z-row>
+                                        <z-col>
+                                                <h2>What's next?</h2>
+                                                <p>
+                                                        You use it. Then we make it better. I've used plural throughout the laugage of this page when describing zenCSS. But I'm just one person, building this into a 1.0 after it being a personal css file that has grown along with my career. ChatGPT and I have had a blast working on this project, but the community is ultimately what will help guide the direction from here. Onward, to destiny. 
+                                                </p>
+
+                                                <p>
+                                                        Here's the gameplan for now:
+                                                <ul>
+                                                        <li>1.0 Launch, documentation, and releasing the SCSS code</li>
+                                                        <li>Bunch of bug fixes</li>
+                                                        <li>Marketing, PR, etc - get in sync with the flow of the public response</li>
+                                                        <li>More bug fixes, build out the UI library, refactor and optimize code</li>
+                                                        <li>Fine tune color and typography. Start working on tools to address semantics, accessability and seo</li>
+                                                        <li>Teach my son to use this</li>
+                                                        <li>Iterate until its perfect</li>
+                                                </ul>
+                                                </p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+                        <z-container id="license">
+                                <z-row>
+                                        <z-col>
+                                                <h2>zenCSS is open source using the MIT License</h2>
+
+                                                <p>Copyright (c) 2022-2023 Shaun Mackey</p>
+
+
+                                                <p>Permission is hereby granted, free of charge, to any person obtaining
+                                                        a copy of this software and associated documentation files (the
+                                                        “Software”), to deal in the Software without restriction,
+                                                        including without limitation the rights to use, copy, modify,
+                                                        merge, publish, distribute, sublicense, and/or sell copies of
+                                                        the Software, and to permit persons to whom the Software is
+                                                        furnished to do so, subject to the following conditions:
+
+                                                        The above copyright notice and this permission notice shall be
+                                                        included in all copies or substantial portions of the Software.
+
+                                                        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+                                                        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                                                        OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                                                        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+                                                        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                                                        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+                                                        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                                                        OTHER DEALINGS IN THE SOFTWARE.</p>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+
+
+
+
+                </z-container-fluid>
+        </main>
+        <footer class="zen">
+                <div class="center mb-0"><img class="w-40" src="../docs/images/grey-tree.png" alt=""></div>
+
+                <p class="center smaller mt-0">&copy; 2023 Made using zenCSS. 🤘</p>
+
+        </footer>
+        <script src="js/hp.js"></script>
+        <script src="../js/zencss.js"></script>
+        <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script-->
+
+</body>
+
+</html>

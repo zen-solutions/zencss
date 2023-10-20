@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="zen">
+    <!----------------------------------------------------------------------->
+    <!--- Hero --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="bg-opaque round">
+                <!--div class="center circle w-50 p-4 bg-primary">
+                    <img src="../../img/placeholders/logo-stack-white.png" class="w-50" alt="">
+                </div-->
+                <h1 class="center">zenCSS Components</h1>
+            </z-col>
+        </z-row>
+    </z-container>
+
+        <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h4>Using zenCSS & Bootstrap together</h4>
+                    <p> Let's test something. Let's load zenCSS, then load Bootstrap so they have preference in the cascade, then see how we can work with both tools interchangably. To illustrate, we'll build a common layout on this page using both frameworks.  </p>
+                        <hr>
+                        <p class="mt-5">We'll now close the parent element with the "zen" class. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+</div>
+<div class="text-center mt-5 mb-5">
+    <p>You'll notice our signature background, spacing and styling is gone. we're using pure bootstrap now with default styling and spacing. Text centered for legibility.  </p>
+
+
+<h2>Building a typical web layout in Bootstrap</h2>
+
+<p>Let's use bootstrap to build a test using their container, row, col framework.  The goal, have a container housing one row, which houses 3 columns. They must stack 3 up on desktop, 2 up on tablet and 1 up on mobile. You can change the width of your browser window to see it working. </p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 bg-primary">
+            Lorem
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 bg-success">
+            Ipsum
+        </div>
+        <div class="col-lg-4 col-md-12 bg-danger">
+            Dolor
+        </div>
+    </div>
+</div>
+<p>Now we will move back "in zen", and take a look at what was written. </p>
+
+</div>
+<div class="zen">
+    <z-container>
+        <z-row>
+            <z-col>
+
+                <h2>Here's how their solution was written:</h2>
+<pre class="text-type copy-text bg-opaque">
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-lg-4 col-md-6 col-12 bg-primary"&gt;Lorem&lt;/div&gt;
+    &lt;div class="col-lg-4 col-md-6 col-12 bg-success"&gt;Ipsum&lt;/div&gt;
+    &lt;div class="col-lg-4 col-md-12 bg-danger"&gt;Dolor&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; </pre>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <h2>Let's solve for the same issue in zenCSS</h2>
+
+                <p>Here we'll use zenCSS build a test using our container, row, col framework.  The goal, have a container housing one row, which houses 3 columns. They must stack 3 up on desktop, 2 up on tablet and 1 up on mobile. As a bonus, our solution will account for adding or removing items without needing to modify or write any additional code.</p>
+
+            </z-col>
+        </z-row>
+    </z-container>
+
+<z-container>
+    <z-row>
+        <z-col class="bg-blue">Lorem</z-col>
+        <z-col class="bg-green">Ipsum</z-col>
+        <z-col class="bg-red">Dolor</z-col>
+    </z-row>
+</z-container>
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col>
+                
+                <h2>Here's how our solution was written:</h2>
+                <pre class="copy-text bg-opaque">
+&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="bg-blue"&gt;Lorem&lt;/z-col&gt;
+    &lt;z-col class="bg-green"&gt;Ipsum&lt;/z-col&gt;
+    &lt;z-col class="bg-red"&gt;Dolor&lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</pre>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <p>This is our vision for zenCSS. To be a tool you can use alongside other frameworks, when and where it makes sense for you without ever needing to resort to writing !important again. We're still in beta though so deploy to production with caution. </p>
+            </z-col>
+        </z-row>
+    </z-container>
+
+        <!----------------------------------------------------------------------->
+    <!--- Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton">Test</button>
+                        <button id="toggleDarkModeButton">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS (and Bootstrap). </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    </div>
+</body>
+
+</html>
