@@ -9,7 +9,7 @@
   
 }
 
-:visited { color: #551A8B; }
+//:visited { color: #551A8B; }
 
 // Reset HTML margin and padding
 html {
@@ -40,9 +40,12 @@ html {
   button {
     //background: $light-color;
     color: $dark-color;
+    text-decoration: none;
+    display: inline;
+
 
     &:hover {
-      background: darken($light-color, 20%);
+      background: darken($light-color, 15%);
 
     }
   }
@@ -150,7 +153,7 @@ nav {
 
 button {
   text-wrap: pretty;
-  padding: 0.7em;
+  padding: 11px; /* assuming a 1px border on the other button */
   display: inline-block;
   text-align: center;
 background:none;
@@ -160,6 +163,8 @@ background:none;
   border-radius: $border-radius;
   font-size: 1em;
   color:$dark-color;
+  margin-left:5px;
+  margin-right:5px;
 }
 
 button:hover {
@@ -328,4 +333,9 @@ button[type="submit"] {
 
 .border-0{
   border:none;
+}
+
+//webkit etc stuff
+a:-webkit-any-link {
+  text-decoration: none;
 }
