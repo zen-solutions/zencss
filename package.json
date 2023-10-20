@@ -1,0 +1,12 @@
+{
+  "name": "zencss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-scss": "node-sass scss/zen.scss css/zen.css --style compressed --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
