@@ -40,7 +40,7 @@ FontAwesome - Temporary dependency
 
 ## Using SCSS Files
   
-Installing Sass (Syntactically Awesome Stylesheets) can be done through various methods depending on your system and preferences. Here’s a step-by-step guide covering a couple of common methods:
+Installing Sass (Syntactically Awesome Stylesheets) can be done through various methods depending on your system and preferences. Here’s a step-by-step guide covering a common method:
 
  **Installing via NPM**:
 
