@@ -1,4 +1,31 @@
-/* Reset some default browser styles */
+
+
+// Mixin for styling input fields, textarea, and select elements
+@mixin input-styles {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid $primary-color;
+    border-radius: $border-radius;
+    font-size: 16px;
+    color: dark-color;
+    outline: none;
+}
+
+// Mixin for styling button elements
+@mixin button-styles {
+    padding: 10px 20px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $cta-color;
+    color: $light-color;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background: darken($cta-color, 10%);
+    }
+}
 
 form {
     margin: auto;
@@ -39,13 +66,13 @@ form {
     input[type="range"],
     textarea,
     select {
-        width: 100%;
-        padding: 10px;
-        border: 2px solid $primary-color;
-        border-radius: $border-radius;
-        font-size: 16px;
-        color: $primary-color;
-        outline: none;
+
+        @include input-styles;
+    }
+
+    input[type="color"] {
+        height: 200px;
+
     }
 
     input[type="radio"],
@@ -58,24 +85,14 @@ form {
     input[type="reset"],
     input[type="button"],
     button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: $border-radius;
-        background-color: $cta-color;
-        color: $light-color;
-        font-size: 16px;
-        cursor: pointer;
-        outline: none;
 
-        &:hover {
-            background: darken($cta-color, 10%);
-        }
+        @include button-styles;
     }
 
     input[type="file"] {
-        border: 2px solid $primary-color;
-        padding: 10px;
-        border-radius: $border-radius;
+        @include input-styles;
+        border:none;
+
     }
 
     output {
@@ -84,5 +101,99 @@ form {
         color: $primary-color;
     }
 }
+
+form select, form input[type="date"], form input[type=datetime-local], form input[type=time ], form input[type=week], form input[type=month]{
+    color:$dark-color;
+}
+
+// /* Reset some default browser styles */
+
+// form {
+//     margin: auto;
+//     padding: 20px;
+//     border: 1px solid $primary-color;
+
+//     div, fieldset {
+//         margin-bottom: 20px;
+//         padding: 20px;
+//         border: none;
+//     }
+
+//     p {
+//         margin-bottom: 10px;
+//     }
+
+//     label {
+//         display: block;
+//         margin-bottom: 5px;
+//         color: $primary-color;
+//     }
+
+//     /* Style the input fields, textarea, and select elements */
+//     input[type="text"],
+//     input[type="password"],
+//     input[type="number"],
+//     input[type="email"],
+//     input[type="url"],
+//     input[type="tel"],
+//     input[type="search"],
+//     input[type="date"],
+//     input[type="datetime"],
+//     input[type="datetime-local"],
+//     input[type="month"],
+//     input[type="week"],
+//     input[type="time"],
+//     input[type="color"],
+//     input[type="range"],
+//     textarea,
+//     select {
+//         width: 100%;
+//         padding: 10px;
+//         border: 2px solid $primary-color;
+//         border-radius: $border-radius;
+//         font-size: 16px;
+//         color: $primary-color;
+//         outline: none;
+//     }
+
+//     input[type="color"]{
+//         height:200px;
+//     }
+//     input[type="radio"],
+//     input[type="checkbox"] {
+//         margin-right: 10px;
+//     }
+
+//     /* Style the button elements */
+//     input[type="submit"],
+//     input[type="reset"],
+//     input[type="button"],
+//     button {
+//         padding: 10px 20px;
+//         border: none;
+//         border-radius: $border-radius;
+//         background-color: $cta-color;
+//         color: $light-color;
+//         font-size: 16px;
+//         cursor: pointer;
+//         outline: none;
+
+//         &:hover {
+//             background: darken($cta-color, 10%);
+//         }
+//     }
+
+//     input[type="file"] {
+//         border: 2px solid $primary-color;
+//         padding: 10px;
+//         border-radius: $border-radius;
+//     }
+
+//     output {
+//         display: block;
+//         margin-bottom: 10px;
+//         color: $primary-color;
+//     }
+// }
 
 
