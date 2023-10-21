@@ -13,17 +13,17 @@ alpha-1.0.0 is the current release.
 
 - Design System
 
+- 6 color themes - customize for any brand
+
+- Shorthand HTML syntax for Grid System layouts
+
 - Utility Toolkit
 
 - CSS Test mode
 
-- UI Content Library
+- Design Library
 
 - Auto Type Resizing
-
-- 6 color themes - customize for any brand
-
-- Micro language
 
 
 ### Dependencies
