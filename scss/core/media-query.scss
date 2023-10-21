@@ -316,12 +316,14 @@ left:10px;
 .four-up {
   display: flex;
   flex-wrap: wrap;
-  margin: -1em;
+  //margin: -1em;
 }
 
 .four-up > * {
-  flex: 0 0 25%; //this ones working without important. why? 
-  margin: .5em;
+  //flex: 0 0 25%; //this ones working without important. why? 
+  flex: 1; //changed to this to get the interactive cards working. test other cards. 
+  //margin: .5em;
+  margin:0; // also changed or interactive cards
 }
 
 .five-up {

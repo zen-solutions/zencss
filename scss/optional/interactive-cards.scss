@@ -1,0 +1,85 @@
+
+    $duration: 700ms;
+    $easing: cubic-bezier(0.19, 1, 0.22, 1);
+    
+    z-col {
+        &:nth-child(1) .card:before { background-image: url($interactive-card-image-1); }
+        &:nth-child(2) .card:before { background-image: url($interactive-card-image-2); }
+        &:nth-child(3) .card:before { background-image: url($interactive-card-image-3); }
+        &:nth-child(4) .card:before { background-image: url($interactive-card-image-4); }
+      .card {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        text-align: center;
+        color: whitesmoke;
+        background-color: whitesmoke;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          pointer-events: none;
+          transition: transform $duration $easing;
+        }
+    
+        &:before {
+          height: 110%;
+          background-size: cover;
+          background-position: center;
+          transition: transform calc(#{$duration} * 1.5) $easing;
+        }
+    
+        &:after {
+          height: 200%;
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+          transform: translateY(-50%);
+          transition: transform calc(#{$duration} * 2) $easing;
+        }
+    
+        &:hover {
+          .content {
+            transform: translateY(8%);
+            
+            p, button {
+              opacity: 1;
+            }
+          }
+          &:before { transform: translateY(-8%); }
+          &:after { transform: translateY(0); }
+        }
+      }
+    
+      .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        transform: translateY(80%);
+        transition: transform $duration $easing;
+        z-index: 2;
+    
+        h2, h3 {
+          transform: translateY(-100%);
+          transition: transform $duration $easing;
+        }
+    
+        p, button {
+          opacity: 0;
+          transition: opacity $duration $easing;
+        }
+    
+
+      }
+    }
+    

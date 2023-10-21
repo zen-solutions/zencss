@@ -24,15 +24,14 @@ pre {
   width: 30px;
   min-width: 30px;
   max-width: 30px;
-  background-image: url('../images/ui/copy.png');
-  background-size: 70px auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 0;
-  text-align: center;
+  background-image: url("../images/ui/copy.png") !important;
+  background-size: 70px auto !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border: 0 !important;
+  text-align: center !important;
   position: absolute;
-  cursor: pointer;
-  position: absolute;
+  cursor: pointer !important;
   top: 45%;
   /* Move the button 50% from the top edge of the z-row */
   left: 95%;

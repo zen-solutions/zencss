@@ -176,9 +176,20 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
   overflow: hidden;
 }
 
-.vertical-center {
+.vertical-center-flex {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+}
+
+.vertical-center{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-none{
+  background:none; //!?
 }

@@ -40,6 +40,7 @@ html {
   button {
     //background: $light-color;
     color: $dark-color;
+    background: $light-color;
     text-decoration: none;
     display: inline;
 
@@ -156,20 +157,20 @@ button {
   padding: 11px; /* assuming a 1px border on the other button */
   display: inline-block;
   text-align: center;
-background:none;
   border: none;
   transition: all 0.25s ease;
   cursor: pointer;
   border-radius: $border-radius;
   font-size: 1em;
-  color:$dark-color;
   margin-left:5px;
   margin-right:5px;
+  color: $light-color;
+  background: $dark-color;
 }
 
-button:hover {
-  color: lighten($dark-color, 20%);
-}
+ button:hover {
+   background-color: lighten($dark-color, 15%);
+ }
 
 button.bg-cta:hover {
   background: darken($cta-color, 8%);
@@ -223,9 +224,9 @@ header :link:hover {
 }
 
 // Normal link styles. replace w :link? deal w specificity
-// a {
-//   color: $cta-color;
-// }
+a {
+   color: #3e79d0;
+}
 
 a:hover {
   text-decoration: underline;
@@ -264,7 +265,7 @@ input,
 textarea,
 button[type="submit"] {
   font-family: $font-family;  
-  width: 100%;  // Ensures fields stretch to the full width of their container
+  width: 100%;  
 }
 
 
@@ -338,4 +339,21 @@ button[type="submit"] {
 //webkit etc stuff
 a:-webkit-any-link {
   text-decoration: none;
+}
+
+a{
+  text-decoration: underline;
+
+}
+
+//-----------------------------
+// bg image
+//-----------------------------
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: none;
 }

@@ -151,12 +151,31 @@ elements.forEach((element) => {
   zenElements.forEach(element => {
     element.classList.toggle('zen-dark');
   });
+  
 }
 
 
 
 // Set up event listener on the Toggle Dark Mode button
 document.getElementById('toggleDarkModeButton').addEventListener('click', toggleDarkMode);
+
+
+//-----------------
+//Background image
+//------------------
+window.addEventListener('DOMContentLoaded', function () {
+  var imageContainers = document.querySelectorAll('.image-container');
+  imageContainers.forEach(function (container) {
+      var img = container.querySelector('img');
+      var imgUrl = img.src;
+      container.style.backgroundImage = 'url(' + imgUrl + ')';
+      container.style.backgroundSize = 'cover';
+      container.style.backgroundPosition = 'center center';
+      img.style.display = 'none';  
+
+  });
+});
+
 
 
 

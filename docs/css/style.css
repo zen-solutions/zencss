@@ -20,7 +20,7 @@
 body {
   min-height: 100vh;
   background-color: var(--body-color);
-  transition: var(--tran-05);
+  /* transition: var(--tran-02);*/
 }
 
 body.hp {
@@ -33,7 +33,7 @@ overflow: hidden;
 
 body.zen-dark {
   --body-color: #2e2e2e;
-  --sidebar-color: #242526;
+  --sidebar-color: #1a1a1b;
   --primary-color: #3a3b3c;
   --primary-color-light: #3a3b3c;
   --toggle-color: #fff;

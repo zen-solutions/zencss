@@ -13,6 +13,12 @@ $zen-large-screen-font-size: 18px;
 
 .zen {
 background:#d7d7d7; 
+background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
+  background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
+  background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
+  background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
+  background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
+  background-image: radial-gradient(center center, cover, white, #c7c7c7);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: $zen-font-size;
   font-weight: 300;
@@ -36,7 +42,7 @@ background:#d7d7d7;
   @import 'optional/popover.scss'; 
   @import 'core/design/themes.scss';
   @import 'core/components/header.scss';
-  //@import 'core/cards.scss';
+  @import 'core/components/form.scss';
   @import 'core/design/buttons.scss';
   @import 'core/design/text.scss';
   @import 'core/flex.scss';
@@ -50,10 +56,11 @@ background:#d7d7d7;
 //--------------------------------------------------------------
   //optional utilities
 //--------------------------------------------------------------
-
+  @import 'optional/interactive-cards.scss';
   @import 'optional/alert.scss';
   //@import 'opacity.scss';
   //@import 'optional/card.scss';
+  @import 'optional/table.scss';
   @import 'optional/decoration.scss';
   @import 'optional/animation.scss';
 

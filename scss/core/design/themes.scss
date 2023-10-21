@@ -2,12 +2,26 @@
 // Component Themes - Like fortnite skins for UI elements
 //----------------------------------------------
 
+$themes: (
+  primary: $light-color,
+  dark: $light-color,  // Assuming you have a $dark-color variable
+  secondary: $secondary-color  // Assuming you have a $secondary-color variable
+);
+
+@each $theme, $color in $themes {
+  .theme-#{$theme} {
+    form label {
+      color: $color;
+    }
+  }
+}
+
 ///----------------------------------------------
 // Light
 //----------------------------------------------
 
 .theme-light {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   overflow: hidden;
   border-radius: $border-radius;
 
@@ -30,7 +44,7 @@
     }
   
     button:hover {
-      background: darken($dark-color, 10%);
+      background: darken($dark-color, 20%);
     }
   
     
@@ -42,7 +56,7 @@
 //----------------------------------------------
 
 .theme-dark {
-  background: #424242;
+  background: #505050;
   color: #f4f4f4;
   overflow: hidden;
   border-radius: $border-radius;
@@ -181,21 +195,21 @@
   overflow: hidden;
   border-radius: $border-radius;
   
+  // things that equal light color
   h1,h2,h3,h4,h5,h6{
     color: $light-color;
+
   }
 
-  .accent-text{
+//things tha equal cta color
+
+  .accent-text {
     color:$cta-color;
   }
 
   .z-col, z-col {
     //margin: 0;
   }
-
-  // h1, h2, h3, h4, h5, h6, .h1, .h2,.h3, .h4, .h5, .h6,  p {
-  // color:$text-black;
-  //  }
 
 ////styling for tout component
   .tout {
@@ -204,7 +218,7 @@
   }
 
   //button
-  button{
+  button.btn-primary, button{
     background:$cta-color;
     color: $light-color;
   }
@@ -212,6 +226,34 @@
   button:hover {
     background: darken($cta-color, 10%);
   }
+
+  //form stuff take 2
+
+  form label {
+    color: $light-color;
+}
+
+  // /* New styles for form elements */
+  // input, textarea, select, button {
+  //   border: 1px solid $light-color;
+  //   background-color: $primary-color;
+  //   color: $light-color;
+  //   padding: 10px;
+  //   border-radius: $border-radius;
+  // }
+
+  // input:focus, textarea:focus, select:focus {
+  //   border-color: $cta-color;
+  // }
+
+  // input[type="submit"], button {
+  //   background-color: $cta-color;
+  //   color: $light-color;
+  // }
+
+  // input[type="submit"]:hover, button:hover {
+  //   background-color: darken($cta-color, 10%);
+  // }
 
 
 }

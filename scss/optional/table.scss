@@ -1,0 +1,56 @@
+$responsive-breakpoint: 600px;
+$border-color: #ddd;
+$desktop-header-color: rgb(179, 179, 179);
+$hover-color: rgb(203, 203, 203);
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid $border-color;
+        padding: 8px;
+        text-align: left;
+    }
+
+    thead {
+        th {
+            background-color: $desktop-header-color; 
+        }
+
+        @media (max-width: $responsive-breakpoint) {
+            display: none;  /* Hide original headers */
+            th {
+                background-color: inherit; 
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                background-color: $hover-color; 
+            }
+
+            @media (max-width: $responsive-breakpoint) {
+                &:hover {
+                    background-color: inherit;
+                }
+            }
+        }
+
+        td {
+            @media (max-width: $responsive-breakpoint) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.5rem; 
+
+                &:before {
+                    content: attr(data-label);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

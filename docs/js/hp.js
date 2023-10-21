@@ -9,13 +9,22 @@ toggle.addEventListener("click", () => {
 });
 
 modeSwitch.addEventListener("click", () => {
-  body.classList.toggle("zen-dark");
-  if (body.classList.contains("zen-dark")) {
-    modeText.innerText = "Light mode";
-  } else {
-    modeText.innerText = "Dark mode";
-  }
+  // Get all .zen elements
+  const zenElements = document.querySelectorAll('.zen');
+  
+  // Convert NodeList to array and add the body element to the array
+  const allElements = Array.from(zenElements);
+  allElements.push(document.body);
+  
+  // Toggle the zen-dark class on all elements in the array
+  allElements.forEach(element => {
+    element.classList.toggle('zen-dark');
+  });
+  
+  // Update the modeText based on the body's class
+  modeText.innerText = body.classList.contains('zen-dark') ? "Light mode" : "Dark mode";
 });
+
 
 
   // Select all elements with the copy-text class
@@ -34,11 +43,9 @@ modeSwitch.addEventListener("click", () => {
       navigator.clipboard.writeText(copyText)
         .then(() => {
           // Animate button to acknowledge copy
-          copyButton.style.backgroundColor = '#d33331';
-          copyButton.style.backgroundImage = 'url("images/ui/copied.png")';
+          copyButton.style.cssText = 'background-color: green !important; background-image: url("images/ui/copied.png") !important;';
           setTimeout(function unCopy() {
-            copyButton.style.backgroundColor = '#ccc';
-            copyButton.style.backgroundImage = 'url("images/ui/copy.png")';
+            copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("images/ui/copy.png") !important;';
           }, 2500);
         })
         .catch(err => {
