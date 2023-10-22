@@ -214,3 +214,6 @@ $grey-color-variations: (
   color:$text-black;
 }
 
+.icon-invert{
+  filter: invert(1);
+}

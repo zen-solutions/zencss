@@ -1,0 +1,39 @@
+$primary-color:$primary-color;
+$cta-color:$cta-color;
+
+.promo-banner, .email-signup, .cta-banner, .msg-banner, .icon-banner {
+    width: 100%;
+    height: 100px;
+    background-color: $primary-color;
+    text-align: center;
+    line-height: 100px;
+}
+
+.promo-text, .email-text, .cta-text, .msg-text, .icon-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+.email-text, .email-input, .cta-text, .cta-button, .icon {
+    vertical-align: middle;
+}
+
+.email-text, .email-input {
+    margin-right: 10px;
+}
+
+.email-input {
+    padding: 5px;
+}
+
+.cta-button {
+    background-color: $cta-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+}
