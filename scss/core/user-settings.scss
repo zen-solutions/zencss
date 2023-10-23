@@ -20,7 +20,7 @@ $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
 $primary-color : hsl(210, 42%, 36%);
 $secondary-color: hsl(200, 35%, 59%);
 $accent-color: hsl(43, 86%, 53%);
-$cta-color: hsl(351, 66%, 59%);
+$cta-color: #e45752;
 
 //------------------------------------------ 
 // Generic Color Palette 
@@ -115,8 +115,14 @@ $hero-image: url("../website/images/hero.jpg");
 //------------------------------------------ 
 // Default Spacing
 //------------------------------------------ 
-$site-section-margin-top: 50px;
-$site-section-margin-bottom: 50px;
+//maybe its site, 50 0, then content 0, 50. then you do site-section for the container and content-section for the rows. done. 
+//maybe that is baked into the content and rows in scaffold.
+
+$site-section-padding-top: 50px;
+$site-section-padding-bottom: 50px;
+
+$conent-section-padding-top: 50px;
+$conent-section-padding-bottom: 0;
 
 //set master paddingand margin for all columns
 

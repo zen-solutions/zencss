@@ -35,7 +35,7 @@
             <z-col>
                 <div class="center">
                     <h4> The zen test</h4>
-                      <p>We've automatically enabled the "zen test" mode on this page to help you visualize our <span class="text-green">container</span>, <span class="text-blue">row</span> and <span class="text-red">columns</span>. You can toggle it on and off below. The <span class="text-orange">orange</span> boxes are paragraphs and we've run a <span class="text-grey-4">grey</span> line down the middle.  </p>
+                      <p>We've automatically enabled the "zen test" mode on this page to help you visualize our <span class="text-green">container</span>, <span class="text-blue">row</span> and <span class="text-red">columns</span>. You can toggle it on and off below. The <span class="text-orange">orange</span> boxes are for text, with paragraphs having a 1px solid line. For titles, we move to a 2px outline - h1 has a dotted line and any h2-h6 has a solid orangel line. To top it off, we've run a <span class="text-grey-4">grey</span> line down the middle.  </p>
                     <button class=" theme-dark" id="toggleButton">Test Mode Toggle</button>
                     <hr>
                 </div>
@@ -50,14 +50,17 @@
     <z-container>
         <z-row>
             <z-col>
+                <h1>lorem ipsum</h1>
               <p>1 column. 100% width</p>
             </z-col>
         </z-row>
         <z-row>
             <z-col>
+                <h2>lorem ipsum</h2>
                 <p>1 column. 50% width, 100% width at mobile</p>
             </z-col>
             <z-col>
+                <h2>lorem ipsum</h2>
                 <p>1 column. 50% width, 100% width at mobile</p>
               </z-col>
         </z-row>
@@ -99,8 +102,8 @@
             <z-col>
                 <div class="center">
                     <p>
-                        <button id="toggleDarkModeButton">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost">Docs</button></a>
+                        <button id="toggleDarkModeButton" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

@@ -2,7 +2,7 @@
 /* Define variables for gaps, heights, and widths */
 //----------------------------------------------------
 
-$gaps: (0.75em, 1.25em, 1.5em, 2em, 3em, 4em);
+$gaps: (0.1em, 0.2em, 0.3em, 0.4em, 0.5em, 0.6em);
 $heights: (10em, 15em, 20em, 25em, 30em, 40em);
 $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 
@@ -79,48 +79,27 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 }
 
 //----------------------------------------------------
-/* Additional classes */
+/* Width and height */
 //----------------------------------------------------
 
-.w-100 {
-  width: 100%;
+$sizes: (
+  10: 10px,
+  20: 20px,
+  30: 30px,
+  40: 40px,
+  50: 50px,
+  60: 60px,
+  75: 75px
+);
+
+@each $key, $value in $sizes {
+  .w-#{$key} {
+    width: $value;
+  }
+  .h-#{$key} {
+    height: $value;
+  }
 }
-
-.w-sm {
-  width: 50px;
-  height: auto;
-}
-
-// do these for 10-50 for height too prolly
-.w-10 {
-  width: 10px;
-}
-
-.w-20 {
-  width: 20px;
-}
-
-.w-30 {
-  width: 30px;
-}
-
-.w-40 {
-  width: 40px;
-}
-
-.w-50 {
-  width: 50px;
-}
-
-.w-75 {
-  width: 75px;
-}
-
-.w-60 {
-  width: 60px;
-}
-
-
 
 
 //----------------------------------------------------
@@ -152,6 +131,10 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 //----------------------------------------------
 // Misc Utility classes
 //----------------------------------------------
+
+.serif {
+  font-family: 'Playfair Display', serif;
+}
 
 .row {
   flex-direction: row;
@@ -192,4 +175,13 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 
 .bg-none{
   background:none; //!?
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-sm {
+  width: 50px;
+  height: auto;
 }

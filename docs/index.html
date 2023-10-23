@@ -275,20 +275,20 @@
                                                                 <img src="../img/placeholder/fernando-jorge.jpg" alt="Background Image">
                                                                  
                                                                 <div class="center">
-                                                                        <h3 class="text-black">Download zenCSS <span class="tout bg-green-light text-white up-5">alpha</span>
+                                                                        <h3 class="text-black mt-2">Download zenCSS <span class="tout bg-green-light text-white up-5">alpha</span>
                                                                         </h3>
-                                                                        <p class="p-5"> <!--span> Fastest way to get started: get
+                                                                        <!--p class="p-5"> <span> Fastest way to get started: get
                                                                                 the compiled and
                                                                                 minified versions of our CSS, JS, and
                                                                                 examples. full
-                                                                                source code + scss files after. <br></span-->
-                                                                        </p>
+                                                                                source code + scss files after. <br></span>
+                                                                        </p-->
 
                                                                         <div> <a href="https://zencss.com/releases/alpha-1.0.0.zip"><button class="btn-md  center  btn-primary">Download</button></a>
                                                                                 <a href="#setup"><button class="theme-primary btn-md btn-ghost-dark center">How to Install</button></a>
                                                                         </div>
                                                                         <small>alpha-1.0.0 is the current release</small>
-                                                                        <p class="smaller"> <a href="https://github.com/shaunmackey/zencss">Nightly build + SCSS</a></p>
+                                                                        <p class="smaller"> <a href="https://github.com/shaunmackey/zencss"> <span class="tout text-white up-5">Nightly build + SCSS</span></a></p>
                                                                 </div>
                                                                 </div>
 
@@ -407,7 +407,7 @@
 
     
 
-                                                <z-col class="theme-dark image-container">
+                                                <z-col class="theme-dark image-container mobile-card">
                                                         <img src="../img/interactive-cards/static/2.jpg" alt="Background Image">
 
                                                         <h4>Core Concepts</h4>
@@ -415,7 +415,7 @@
                                                         <a href="examples/core-concepts.html"><button>View Now</button></a>
                                                 </z-col>
 
-                                                <z-col class="theme-dark image-container">
+                                                <z-col class="theme-dark image-container mobile-card">
                                                         <img src="../img/interactive-cards/static/3.jpg" alt="Background Image">
 
                                                         <h4>Design Library</h4>
@@ -423,7 +423,7 @@
                                                         <a href="examples/design-library.html"><button>View Now</button></a>
                                                 </z-col>
 
-                                                <z-col class="theme-dark image-container">
+                                                <z-col class="theme-dark image-container mobile-card">
                                                         <img src="../img/interactive-cards/static/4.jpg" alt="Background Image">
 
                                                         <h4>Modifiers</h4>
@@ -610,7 +610,12 @@
                                                         </div>
                                                 </div>
 
-
+                                                <p class="smaller">Note: bg-opaque triggers a JavaScript function which
+                                                        sets the opacity of all child elements back to 1. bg-blur does
+                                                        this as well,
+                                                        but it can be used in conjunction with other background colors
+                                                        and will blur the background of anything it covers.
+                                                </p>
                                                 <h3 class="mt-2">Universal Colors</h3>
                                                 <p>zenCSS introduces a site-wide color palette drawn from the ROYGBIV sequence, bringing a splash of rainbow hues to every page. This lively palette creates an engaging visual atmosphere. To tweak the shades, simply update the base color (bg-), and zenCSS will auto-generate light and dark variants, allowing easy color adjustments.</p>
 
@@ -645,18 +650,7 @@
                                                                 <div class="center bg-purple-dark round">bg-purple-dark</div>
                                                                 <div class="center bg-purple-light text-black round">bg-purple-light</div>
                                                         </z-col>
-                                                </z-row>
-
-
-
-
-
-                                                <p class="smaller">Note: bg-opaque triggers a JavaScript function which
-                                                        sets the opacity of all child elements back to 1. bg-blur does
-                                                        this as well,
-                                                        but it can be used in conjunction with other background colors
-                                                        and will blur the background of anything it covers.
-                                                </p>
+                                                </z-row>                          
                                                 <p>Utilize zenCSS color classes to easily customize the background colors of HTML elements according to your design requirements. For instance, altering the background, text, or theme of code snippets is as simple as applying a class like theme-dark.
                                                 </p>
                                                 <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</pre>
@@ -796,7 +790,7 @@
                                                 </p>
 
                                                 <p>The "Zen Test" in zenCSS to overlay outlines on content, aiding in bug identification and resolution. This pairs well with your browser's inspect element tool, making issue isolation swift. Outlines indicate container boundaries (purple for fluid containers), rows (blue), and columns (red), while paragraphs get a thin orange outline. An alignment grid is on the horizon. Give it a whirl below.
-                                                <p><button id="toggleButton" class="theme-primary">Toggle Test Mode</button></p>
+                                                <p><button id="toggleButton" class="theme-primary btn-md">Toggle Test Mode</button></p>
 
 
                                                 </p>
@@ -954,7 +948,7 @@
 
                 <p class="center smaller mt-0">&copy; 2023 Made using zenCSS. 🤘</p>
 
-                <p>                        <button id="toggleDarkModeButton">Dark</button>
+                <p>                        <button id="toggleDarkModeButton" class="btn-md">Dark</button>
                 </p>
 
         </footer>

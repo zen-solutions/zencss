@@ -33,68 +33,45 @@ customElements.define('z-col', ZCol);
 //todo - write system to convert these to semanic structure for deployment
 
 
-//--------------------
+//--------------------------------------------------------
 //Toggle  test mode
-//--------------------
-
+//--------------------------------------------------------
 document.getElementById("toggleButton").addEventListener("click", function () {
-  const containers = document.querySelectorAll(".z-container");
-  const containersFluid = document.querySelectorAll(".z-container-fluid");
-  const boxes = document.querySelectorAll(".z-row");
-        const items = document.querySelectorAll(".z-col");
-        const zen_containers = document.querySelectorAll("z-container");
-        const zen_containersFluid = document.querySelectorAll("z-container-fluid");
-        const zen_boxes = document.querySelectorAll("z-row");
-        const zen_items = document.querySelectorAll("z-col");
-        const paragraphs = document.querySelectorAll('p');
-        const centerline = document.querySelectorAll('.center-line');
-      
-        containers.forEach((container) => {
-          container.classList.toggle("z-container-outline-on");
-        });
-
-        containersFluid.forEach((containersFluid) => {
-          containersFluid.classList.toggle("z-container-fluid-outline-on");
-        });
-      
-        centerline.forEach((centerline) => {
-          centerline.classList.toggle("center-line-outline-on");
-        });
-
-        boxes.forEach((box) => {
-          box.classList.toggle("z-row-outline-on");
-        });
-      
-        items.forEach((item) => {
-          item.classList.toggle("z-col-outline-on");
-        });
-
-        zen_containers.forEach((zen_container) => {
-          zen_container.classList.toggle("z-container-outline-on");
-        });
-
-        zen_containersFluid.forEach((zen_containersFluid) => {
-          zen_containersFluid.classList.toggle("z-container-fluid-outline-on");
-        });
-      
-        zen_boxes.forEach((zen_box) => {
-          zen_box.classList.toggle("z-row-outline-on");
-        });
-      
-        zen_items.forEach((zen_item) => {
-          zen_item.classList.toggle("z-col-outline-on");
-        });
-
-        paragraphs.forEach((p) => {
-          p.classList.toggle('p-outline-on');
-        });
+  const toggleClassOnElements = (selector, className) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((element) => {
+          element.classList.toggle(className);
       });
-      
+  };
+
+  const selectorsAndClasses = [
+      ['.z-container', 'z-container-outline-on'],
+      ['.z-container-fluid', 'z-container-fluid-outline-on'],
+      ['.z-row', 'z-row-outline-on'],
+      ['.z-col', 'z-col-outline-on'],
+      ['z-container', 'z-container-outline-on'],
+      ['z-container-fluid', 'z-container-fluid-outline-on'],
+      ['z-row', 'z-row-outline-on'],
+      ['z-col', 'z-col-outline-on'],
+      ['p', 'p-outline-on'],
+      ['h1', 'h1-outline-on'],
+      ['h2', 'h-outline-on'],
+      ['h3', 'h-outline-on'],
+      ['h4', 'h-outline-on'],
+      ['h5', 'h-outline-on'],
+      ['h6', 'h-outline-on'],
+      ['.center-line', 'center-line-outline-on']
+  ];
+
+  selectorsAndClasses.forEach(([selector, className]) => {
+      toggleClassOnElements(selector, className);
+  });
+});
 
 
-// ----------------------------------------
-// Bg-blur and opacity updates
-// ----------------------------------------
+//--------------------------------------------------------
+// Bg-blur and opacity overrides
+//--------------------------------------------------------
 
 const elements = document.querySelectorAll(
   '[class*="bg-opaque"], [class*="bg-blur"]'
@@ -107,22 +84,37 @@ elements.forEach((element) => {
 });
 
 
-// ----------------------------------------
+//--------------------------------------------------------
 // Testing: Dark Mode Toggle
-// ----------------------------------------
-// document.addEventListener("DOMContentLoaded", function () {
-//   const body = document.body;
+//--------------------------------------------------------
 
-//   if (body.classList.contains("zen-dark")) {
-//       // Apply dark theme styles
-//       body.style.backgroundColor = "#222";
-//       body.style.color = "#fff";
-//   // } else {
-//   //     // Apply light theme styles
-//   //     body.style.backgroundColor = "#d33331";
-//   //     body.style.color = "#333";
-//   // }
-// });
+function toggleDarkMode() {
+  const zenElements = document.querySelectorAll('.zen');
+  zenElements.forEach(element => {
+    element.classList.toggle('zen-dark');
+  });
+}
+
+document.getElementById('toggleDarkModeButton').addEventListener('click', toggleDarkMode);
+
+
+//--------------------------------------------------------
+//Background image
+//--------------------------------------------------------
+
+window.addEventListener('DOMContentLoaded', function () {
+  var imageContainers = document.querySelectorAll('.image-container');
+  imageContainers.forEach(function (container) {
+      var img = container.querySelector('img');
+      var imgUrl = img.src;
+      container.style.backgroundImage = 'url(' + imgUrl + ')';
+      container.style.backgroundSize = 'cover';
+      container.style.backgroundPosition = 'center center';
+      img.style.display = 'none';  
+
+  });
+});
+
 
 // ----------------------------------------
 // Experimental/not in use
@@ -144,37 +136,6 @@ elements.forEach((element) => {
 //             image.style.display = 'none';
 //         });
 
-// Toggle dark working. delete above. 
- // Function to toggle dark mode
- function toggleDarkMode() {
-  const zenElements = document.querySelectorAll('.zen');
-  zenElements.forEach(element => {
-    element.classList.toggle('zen-dark');
-  });
-  
-}
-
-
-
-// Set up event listener on the Toggle Dark Mode button
-document.getElementById('toggleDarkModeButton').addEventListener('click', toggleDarkMode);
-
-
-//-----------------
-//Background image
-//------------------
-window.addEventListener('DOMContentLoaded', function () {
-  var imageContainers = document.querySelectorAll('.image-container');
-  imageContainers.forEach(function (container) {
-      var img = container.querySelector('img');
-      var imgUrl = img.src;
-      container.style.backgroundImage = 'url(' + imgUrl + ')';
-      container.style.backgroundSize = 'cover';
-      container.style.backgroundPosition = 'center center';
-      img.style.display = 'none';  
-
-  });
-});
 
 
 
