@@ -217,3 +217,15 @@ $grey-color-variations: (
 .icon-invert{
   filter: invert(1);
 }
+
+// find filter for color here https://codepen.io/sosuke/pen/Pjoqqp
+.icon-gold{
+  width: 10px;
+  filter: invert(92%) sepia(94%) saturate(5500%) hue-rotate(338deg) brightness(93%) contrast(88%);
+}
+
+.icon-silver{
+  width: 10px;
+  filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+}
+
