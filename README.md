@@ -4,7 +4,7 @@
 An open-source, website authoring and design toolkit that helps you build, style, and debug websites.
 
 
-alpha-1.0.0 is the current release.
+beta-1.0.0 is the current release.
 
 
 ## Features
@@ -33,7 +33,7 @@ FontAwesome - Temporary dependency
   
 ### Installation
 
-- Download the alpha-1.0.0 [here](https://zencss.com/releases/alpha-1.0.0.zip) 
+- Download the beta-1.0.0 [here](https://zencss.com/releases/beta-1.0.0.zip) 
 - Follow the instructions [here](https://zencss.com/docs/index.html#setup)
 
   
