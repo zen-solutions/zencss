@@ -164,6 +164,56 @@ if (btn && modal && span) {  // Check if elements exist
         }
     }
 } 
+
+// ----------------------------------------
+// testimonial slider
+// ----------------------------------------
+
+var slideFigure = document.getElementById('z-slide-figure');
+var slides = document.querySelectorAll('.carousel-slide');
+var totalSlides = slides.length;
+var currentSlide = 1;  // Set the initial slide to the first real slide
+var slideWidth = slides[0].offsetWidth;
+
+document.getElementById('prev').addEventListener('click', prevSlide);
+document.getElementById('next').addEventListener('click', nextSlide);
+
+function showSlide(index) {
+    slideFigure.style.transition = 'transform 0.3s ease-in-out';
+    slideFigure.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
+}
+
+function nextSlide() {
+    currentSlide++;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide--;
+    showSlide(currentSlide);
+}
+
+slideFigure.addEventListener('transitionend', function() {
+    slides = document.querySelectorAll('.carousel-slide');  // Update the slides NodeList
+    if (slides[currentSlide].id === 'lastClone') {
+        slideFigure.style.transition = 'none';
+        currentSlide = totalSlides - 1;
+        slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
+        requestAnimationFrame(() => {
+            slideFigure.style.transition = 'transform 0.3s ease-in-out';
+        });
+    } else if (slides[currentSlide].id === 'firstClone') {
+        slideFigure.style.transition = 'none';
+        currentSlide = totalSlides;
+        slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
+        requestAnimationFrame(() => {
+            slideFigure.style.transition = 'transform 0.3s ease-in-out';
+        });
+    }
+});
+
+
+
 // ----------------------------------------
 // Experimental/not in use
 // ----------------------------------------

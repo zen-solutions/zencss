@@ -6,13 +6,13 @@
 $primary-color-dark : hsl(210, 42%, 26%);
 $secondary-color-dark : hsl(200, 65%, 49%);
 $accent-color-dark : hsl(43, 86%, 43%);
-$cta-color-dark : hsl(351, 66%, 49%);
+$cta-color-dark : hsl(351, 66%, 39%);
 
 //brand palette light
 $primary-color-light : hsl(210, 42%, 46%);
 $secondary-color-light : hsl(200, 65%, 69%);
 $accent-color-light : hsl(43, 86%, 63%);
-$cta-color-light : hsl(351, 66%, 69%);
+$cta-color-light : hsl(361, 66%, 64%);
 
 // Generic palette dark
 $red-dark: hsl(0, 59%, 40%);
@@ -63,7 +63,7 @@ $colors: ("primary": $primary-color,
 @each $color,
 $value in $colors {
   .bg-#{$color} {
-    background: $value;
+    background: $value !important;
 
 
     @if $value==white {
@@ -211,7 +211,7 @@ $grey-color-variations: (
 }
 
 .text-black{
-  color:$text-black;
+  color:$text-black !important;
 }
 
 .icon-invert{

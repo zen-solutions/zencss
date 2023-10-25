@@ -48,6 +48,7 @@
 // Accordian Toggle
 //-------------------------------------------------
 
+
 .accordion .toggle {
   display: none;
 }
@@ -55,11 +56,11 @@
 .accordion .title {
   display: block;
   padding: 10px;
-  background-color: $light-color;
+ // background-color: $light-color;
   cursor: pointer;
   margin: 0;  /* Ensure no margin */
   border-top: 1px solid #ccc; 
-  color: $dark-color;
+  //color: $dark-color;
   transition: background-color 0.3s;  
 }
 
@@ -70,8 +71,8 @@
 .accordion .expanded-content {
   display: none;
   padding: 10px;
-  color: $dark-color;
-  background-color: $light-color;
+  //color: $dark-color;
+  //background-color: $light-color;
   margin: 0;  /* Ensure no margin */
   margin-bottom:1px solid red;
 }
@@ -85,7 +86,7 @@
   display: inline-block;
   width: 16px;  /* Adjust width and height according to your image size */
   height: 16px;
-  background-image: url('../img/general-icons/caret-down-solid.svg');
+  background-image: url('../img/general-icons/caret-up-solid.svg');
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;  /* Smooth transition */
@@ -95,7 +96,7 @@
 }
 
 .accordion .toggle:checked + .title::before {
-  background-image: url('../img/general-icons/caret-up-solid.svg');
+  background-image: url('../img/general-icons/caret-down-solid.svg');
 }
 
 //-------------------------------------------------
@@ -205,3 +206,15 @@ blockquote{
         font-style: italic;
       }
       
+
+      //
+      #z-slide-figure {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    

@@ -67,7 +67,7 @@ form {
     input[type="range"],
     textarea,
     select {
-
+        padding-top: 12px !important;
         @include input-styles;
     }
 
@@ -135,7 +135,8 @@ form div {
   /* Shrink and move label on input focus or if there is content in the input field */
   form input:focus + label,
   form input:not(:placeholder-shown) + label {
-    top: -2px;
+    top: -1px;
+    left:10px;
     font-size: 9px;
     color: #b9b9b9 !important;
   }

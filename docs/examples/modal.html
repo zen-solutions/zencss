@@ -1,22 +1,126 @@
-<div class="accordian">
-    <div class="title">
-        this is the title
-        <div class="content">
-            this expands when clicking the title
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="title">
-        this is the title 2
-        <div class="content">
-            this expands when clicking the title 2
-        </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+    <link rel="stylesheet" href="../../css/zen.css">
+</head>
 
-    <div class="title">
-        this is the title 3
-        <div class="content">
-            this expands when clicking the title 3
-        </div>
-    </div>
-</div>
+<body class="zen">
+    <div class="center-line"></div>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1> Modal</h1>
+                    <p>A simple header you can use for your website. Mobile version coming soon. </p>
+                    <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="m-0 p-0">
+
+                <!-- Trigger/Open The Modal -->
+                <button id="modalBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="zModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                </div>
+
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+            <h2>Code Example</h2>
+            <pre class="copy-text bg-opaque">&lt;button id="modalBtn"&gt;Open Modal&lt;/button&gt;
+
+&lt;div id="zModal" class="modal"&gt;
+    &lt;div class="modal-content"&gt;
+        &lt;span class="close"&gt;&times;&lt;/span&gt;
+        &lt;p&gt;Some text in the Modal..&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </pre>
+                    
+        
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkModeButton" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="../js/copy.js"></script>
+</body>
+
+</html>

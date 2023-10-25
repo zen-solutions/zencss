@@ -5,79 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/documentation.css">
+    <link rel="stylesheet" href="../css/documentation.css"> <!-- needed for code snippets only-->
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
-
-
+    <div class="center-line"></div> 
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
     <!----------------------------------------------------------------------->
+
     <z-container>
         <z-row>
-            <z-col>
-                <div class="center">
-                    <h1> Slider</h1>
-                    <p>A simple slider you can use for your website. </p>
-                    <hr>
-                </div>
+            <z-col class="center mb-0 pb-0">
+                <h1>Hello World</h1>
+                <p>What will you create from here?</p>
+                <hr>
             </z-col>
         </z-row>
     </z-container>
 
+
     <!----------------------------------------------------------------------->
-    <!--- Component --->
+    <!--- Code Block  --->
     <!----------------------------------------------------------------------->
 
     <z-container>
         <z-row>
-            <z-col>
-                <div id="z-slider-container">
-                    <div id="z-slider">
-                        <figure id="z-slide-figure">
-                            <img src="../../img/placeholder/CesarCouto.png" alt>
-                            <img src="../../img/placeholder/fernando-jorge.jpg" alt>
-                            <img src="../../img/placeholder/scottwebb.png" alt>
-                            <img src="../../img/placeholder/SimonBerger.png" alt>
-                        </figure>
-                    </div>
-                    <button id="prev"></button>
-                    <button id="next"></button>
-                </div>
+            <z-col class="mt-0 pt-0">
+                <h2>Code Example</h2>
+                <pre class="copy-text bg-opaque">
+&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="center"&gt;
+      &lt;h1&gt;Hello World&lt;/h1&gt;
+      &lt;p&gt;What will you create from here?&lt;/p&gt;
+      &lt;hr&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</pre>
             </z-col>
         </z-row>
     </z-container>
-
-<!----------------------------------------------------------------------->
-<!--- Code Block  --->
-<!----------------------------------------------------------------------->
-<z-container>
-    <z-row>
-        <z-col>
-            <h2>Code Example</h2>
-            <pre class="copy-text bg-opaque">
-&lt;div id="z-slider-container"&gt;
-    &lt;div id="z-slider"&gt;
-        &lt;figure id="z-slide-figure"&gt;
-        &lt;img src="your-image.jpg" alt&gt;
-        &lt;img src="your-image.jpg" alt&gt;
-        ...
-        &lt;/figure&gt;
-    &lt;/div&gt;
-    &lt;button id="prev"&gt;&lt;/button&gt;
-    &lt;button id="next"&gt;&lt;/button&gt;
-&lt;/div&gt;
-            </pre>
-        </z-col>
-    </z-row>
-</z-container>
-
-
-
 
 
     <!----------------------------------------------------------------------->
@@ -86,20 +56,18 @@
 
     <z-container>
         <z-row>
-            <z-col>
-                <div class="center up-20">
+            <z-col class="center">
                     <hr class="top">
                     <h4>The Zen Test</h4>
                     <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
                         any resolution.</p>
                     <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
             </z-col>
         </z-row>
     </z-container>
 
     <z-container>
-        <z-row class="up-40">
+        <z-row>
             <z-col>
                 <div class="center">
                     <p>
@@ -113,18 +81,16 @@
     </z-container>
     </main>
 
+
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
+
     <footer class="zen">
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <!--script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script-->
-    <script src="../../js/slider.js" defer></script>
     <script src="../../js/zencss.js"></script>
-
-  <script src="../js/copy.js"></script>
+    <script src="../js/copy.js"></script> <!-- needed for code snippets only-->
 </body>
-
 </html>

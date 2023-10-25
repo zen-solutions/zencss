@@ -6,7 +6,7 @@
 
 :link {
   color: #3e79d0;
-  text-decoration: underline;
+  //text-decoration: underline;
 
 }
 
@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, h6{
   margin-block-start: 0;
   margin-block-end: 0;
   margin-bottom: 0.15em;
+  padding-top:1em;
 }
 
 p {
@@ -137,7 +138,7 @@ p {
   margin-block-start: 0;
   margin-block-end: 0;
   //margin-top:1em;
-  margin-bottom: 0.25em;
+  //margin-bottom: 1em;
 
 }
 
@@ -156,8 +157,8 @@ li {
 }
 
 hr {
-  margin-top: 2.5em;
-  margin-bottom: 0;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 hr.top {
@@ -189,6 +190,8 @@ button {
 
  button:hover {
    background-color: lighten($dark-color, 15%);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  // transition: box-shadow 0.3s ease-in-out;
  }
 
 button.bg-cta:hover {
@@ -249,17 +252,7 @@ header :link:hover {
   color: darken($light-color, 20%);
 }
 
-// Normal link styles. replace w :link? deal w specificity
-a {
-   color: #3e79d0;
-   cursor: pointer;
-   //font-weight: bold;
 
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 // Links with swap-underline class styles
 a.swap-underline {
@@ -372,12 +365,25 @@ button[type="submit"] {
 
 //webkit etc stuff
 a:-webkit-any-link {
-  text-decoration: underline;
+  text-decoration: none;
+
+
 }
 
-a{
+a:-webkit-any-link :hover{
+  text-decoration: underline;
 
+}
+// Normal link styles. replace w :link? deal w specificity
+a {
+  color: #3e79d0;
+  cursor: pointer;
+  //font-weight: bold;
 
+}
+
+a:hover {
+ text-decoration: underline;
 }
 
 //-----------------------------

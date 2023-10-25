@@ -22,7 +22,7 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: $zen-font-size;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.618; // The golden ratio
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -36,21 +36,21 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
   // Load core files
   //--------------------------------------------------------------
 
-  @import 'core/user-settings.scss';
+  @import 'user-settings.scss';
   @import 'core/framework.scss';
   @import 'core/scaffold.scss';
-  @import 'optional/popover.scss'; 
-  @import 'core/design/themes.scss';
+ // @import 'optional/popover.scss'; 
+  @import 'design/themes.scss';
   @import 'core/header.scss';
-  @import 'core/components/form.scss';
-  @import 'core/components/slider.scss';
-  @import 'core/design/buttons.scss';
-  @import 'core/design/text.scss';
+  @import 'components/form.scss';
+  @import 'components/slider.scss';
+  @import 'design/buttons.scss';
+  @import 'design/text.scss';
   @import 'core/flex.scss';
   @import 'core/formatting.scss';
-  @import 'core/design/color.scss';
-  @import 'core/test.scss';
-  @import 'core/components/components.scss';
+  @import 'design/color.scss';
+  @import 'components/test.scss';
+  @import 'components/components.scss';
   @import 'core/footer.scss'; 
 
 
@@ -83,7 +83,7 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
 
   @import 'core/media-query.scss'; 
   @import 'optional/stacking.scss';
-  @import 'core/margin-padding.scss';
+  @import 'components/margin-padding.scss';
 
 //--------------------------------------------------------------
 //  Overrides go here
