@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slider with Prev/Next Buttons</title>
+<style>
+    body { margin: 0; } 
+    div#slider { overflow: hidden; position: relative; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      transition: left 0.5s ease-in-out; /* Smooth transition */
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button#prev { left: 0; }
+    button#next { right: 0; }
+</style>
+</head>
+<body>
+<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="slider">
+    <figure id="slide-figure">
+        <img src="austin-fireworks.jpg" alt>
+        <img src="taj-mahal_copy.jpg" alt>
+        <img src="ibiza.jpg" alt>
+        <img src="ankor-wat.jpg" alt>
+        <img src="austin-fireworks.jpg" alt>
+    </figure>
+</div>
+
+<button id="prev" onclick="prevSlide()">Previous</button>
+<button id="next" onclick="nextSlide()">Next</button>
+<script>
+    var currentSlide = 0;
+    var totalSlides = document.querySelectorAll('#slide-figure img').length;
+    var slideFigure = document.getElementById('slide-figure');
+
+    function showSlide(index) {
+        var newLeftValue = (-index * 100) + '%';
+        slideFigure.style.left = newLeftValue;
+    }
+
+    function nextSlide() {
+        if(currentSlide < totalSlides - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        } else {
+            // Reset to the first slide without transition
+            slideFigure.style.transition = 'none';
+            slideFigure.style.left = '0%';
+            // Force re-render by accessing offsetWidth, then restore transition
+            slideFigure.offsetWidth;  // trigger reflow
+            slideFigure.style.transition = 'left 0.5s ease-in-out';
+            currentSlide = 1;
+            showSlide(currentSlide);
+        }
+    }
+
+    function prevSlide() {
+        if(currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        } else {
+            // Reset to the last slide without transition
+            slideFigure.style.transition = 'none';
+            slideFigure.style.left = (-((totalSlides - 1) * 100) + '%');
+            // Force re-render by accessing offsetWidth, then restore transition
+            slideFigure.offsetWidth;  // trigger reflow
+            slideFigure.style.transition = 'left 0.5s ease-in-out';
+            currentSlide = totalSlides - 2;
+            showSlide(currentSlide);
+        }
+    }
+</script>
+
+</body>
+</html>

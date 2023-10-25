@@ -4,7 +4,7 @@
 An open-source, website authoring and design toolkit that helps you build, style, and debug websites.
 
 
-beta-1.0.0 is the current release.
+beta-1.0.0 is the current release. Branch: https://github.com/shaunmackey/zencss/tree/beta-1.0.0
 
 
 ## Features
@@ -47,9 +47,7 @@ Installing Sass (Syntactically Awesome Stylesheets) can be done through various 
 -   **Prerequisite:** Ensure you have Node.js installed on your computer. If not, download and install it from the [official website](https://nodejs.org/).
 
 -   **Installation:** Open your terminal or command prompt and run the following command:
-    
-    bashCopy code
-    
+        
     `npm install -g sass`
 
 Then CD to the scss folder

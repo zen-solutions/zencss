@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
@@ -35,18 +36,39 @@
     <z-container>
         <z-row>
             <z-col class="m-0 p-0">
+
                 <header>
                     <div class="pl-2" id="header-logo">
-                      <img src="../../img/logo.png" alt="Logo">
+                        <img src="../../img/logo.png" alt="Logo">
                     </div>
+                    <button id="hamburger-button">☰</button>
                     <nav>
-                      <ul class="pr-2">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                      </ul>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+        
+
+                            <!--div class="dropdown">
+                                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                                <label for="dropdown-toggle" class="dropdown-label theme-dark">Toggle Dropdown</label>
+                                <div class="dropdown-menu theme-dark">
+                                    <div class="item">This is an item</div>
+                                    <div class="item">This is an item</div>
+                                    <div class="item">This is an item</div>
+                                </div>
+                            </div-->
+
+
+                            <li><a href="#home" class="nav-link">Home</a></li>
+                            <li><a href="#services" class="nav-link">Services</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
+                            <li><input class="theme-dark pr-0" type="search" value="Search"></li>
+                            <li class="ml-0"><input  class="theme-dark" type="submit" value="go"> </li>
+                        </ul>
                     </nav>
-                  </header>
+                </header>
+
+
             </z-col>
         </z-row>
     </z-container>
@@ -93,6 +115,7 @@
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
     <script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
 </body>
 
 </html>

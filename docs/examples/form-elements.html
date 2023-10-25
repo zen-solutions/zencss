@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
@@ -19,7 +20,7 @@
             <z-col>
                 <div class="center">
                     <h4> Form Elements</h4>
-                    <p> This is a work in progress but we will soon have complete form support for all themes.</p>
+                    <p> We offer a classic opt-in form. And just about every form field imaginable. </p>
                         <hr>
                 </div>
             </z-col>
@@ -29,10 +30,110 @@
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+          <div class="form-container theme-primary optin">  
+            <form>
+                <h3>Contact Form</h3>
+                <p>An amazing tagline goes here</p>
+                <div>
+                  <input type="text" id="name1" placeholder=" ">
+                  <label for="name1">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email1" placeholder=" ">
+                    <label for="email1">Email</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="tel1" placeholder=" ">
+                    <label for="tel1">Your Phone Number</label>
+                  </div>
+                <button name="submit" type="submit">Submit</button>
+              </form>
+          </div>
+        </z-col>
+        <z-col>
+          <div class="form-container theme-light optin">  
+            <form>
+                <h3>Contact Form</h3>
+                <p>An amazing tagline goes here</p>
+                <div>
+                  <input type="text" id="name2" placeholder=" ">
+                  <label for="name2">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email2" placeholder=" ">
+                    <label for="email2">Email</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="tel2" placeholder=" ">
+                    <label for="tel2">Your Phone Number</label>
+                  </div>
+                <button name="submit" type="submit">Submit</button>
+              </form>
+          </div>
+        </z-col>
+        <z-col>
+          <div class="form-container theme-dark optin">  
+            <form>
+                <h3>Contact Form</h3>
+                <p>An amazing tagline goes here</p>
+                <div>
+                  <input type="text" id="name3" placeholder=" ">
+                  <label for="name3">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email3" placeholder=" ">
+                    <label for="email3">Email</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="tel3" placeholder=" ">
+                    <label for="tel3">Your Phone Number</label>
+                  </div>
+                <button name="submit" type="submit">Submit</button>
+              </form>
+          </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+<!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+<z-container>
+  <z-row>
+      <z-col>
+          <h2>Code Example</h2>
+          <pre class="copy-text bg-opaque">
+&lt;div class="form-container theme-primary"&gt;  
+  &lt;form&gt;
+    &lt;h3&gt;Contact Form&lt;/h3&gt;
+    &lt;p&gt;An amazing tagline goes here&lt;/p&gt;
+    &lt;div&gt;
+      &lt;input type="text" id="name" placeholder=" "&gt;
+      &lt;label for="name"&gt;Name&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="email" id="email" placeholder=" "&gt;
+      &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="tel" id="tel" placeholder=" "&gt;
+      &lt;label for="tel"&gt;Your Phone Number&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button name="submit" type="submit"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+          </pre>
+      </z-col>
+  </z-row>
+</z-container>
+
 
 
     <z-container>
-
+        <z-row>
             <z-col class="theme-primary">
                 <form>
                     <div>
@@ -547,6 +648,173 @@
     <!----------------------------------------------------------------------->
     
     <!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+<z-container>
+  <z-row>
+      <z-col>
+          <h2>Code Example</h2>
+          <pre class="copy-text bg-opaque">
+  &lt;form&gt;
+  &lt;div&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        text&lt;br&gt;
+        &lt;input type="text"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        password&lt;br&gt;
+        &lt;input type="password"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        number&lt;br&gt;
+        &lt;input type="number"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        email&lt;br&gt;
+        &lt;input type="email"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        url&lt;br&gt;
+        &lt;input type="url"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        tel&lt;br&gt;
+        &lt;input type="tel"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        search&lt;br&gt;
+        &lt;input type="search"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        textarea&lt;br&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        date&lt;br&gt;
+        &lt;input type="date"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        datetime&lt;br&gt;
+        &lt;input type="datetime"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        datetime-local&lt;br&gt;
+        &lt;input type="datetime-local"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        month&lt;br&gt;
+        &lt;input type="month"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        week&lt;br&gt;
+        &lt;input type="week"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        time&lt;br&gt;
+        &lt;input type="time"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        select&lt;br&gt;
+        &lt;select&gt;
+          &lt;optgroup label="optgroup"&gt;
+            &lt;option&gt;option 1&lt;/option&gt;
+            &lt;option&gt;option 2&lt;/option&gt;
+            &lt;option&gt;option 3&lt;/option&gt;
+          &lt;/optgroup&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        radio
+        &lt;input type="radio"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        checkbox
+        &lt;input type="checkbox"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        color picker
+        &lt;input type="color"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        range slider&lt;br&gt;
+        &lt;input type="range"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        file upload&lt;br&gt;
+        &lt;input type="file"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        submit&lt;br&gt;
+        &lt;input type="submit"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        reset&lt;br&gt;
+        &lt;input type="reset"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        button (input tag)&lt;br&gt;
+        &lt;input type="button" value="Button"&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label&gt;
+        button (button tag)&lt;br&gt;
+        &lt;button&gt;Button&lt;/button&gt;
+      &lt;/label&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+      </z-col>
+  </z-row>
+</z-container>
+
+
+    <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
     <!----------------------------------------------------------------------->
 
@@ -588,6 +856,7 @@
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
     <script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
 </body>
 
 </html>

@@ -117,11 +117,11 @@ button.btn-ghost:hover {
 .tout-wrapper{
  //background: red;
   position: absolute;
-  margin-top: -27px;
-  margin-left: -27px;
+  margin-top: -26px;
+  margin-left: -25px;
   width: 55px;
   height: 55px;
-  border-top-left-radius: 8px;
+  border-top-left-radius: $border-radius;
   overflow: hidden;
 
 }

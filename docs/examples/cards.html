@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to zenCSS</title>
+    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
@@ -135,7 +136,6 @@
                             </div>
                         </z-col>
                     </z-row>
-
                 </z-container>
             </z-col>
             <z-col class="p-0">
@@ -172,6 +172,65 @@
             </z-col>
         </z-row>
     </z-container>
+
+    <!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+            <h2>Code Example</h2>
+            <p>Card Style 1</p>
+            <pre class="copy-text bg-opaque">
+&lt;z-container class="theme-primary"&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="m-0 p-0"&gt;
+      &lt;img src="your-image.jpg" alt=""&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+  &lt;z-row class="up-20"&gt;
+    &lt;z-col&gt;
+      &lt;div class="center"&gt;
+        &lt;span class="tout"&gt;NEW&lt;/span&gt;
+        &lt;h5&gt;Lorem Ipsum Dolor&lt;/h5&gt;
+        &lt;p&gt; Eos tenetur corrupti, minima doloribus quam eveniet libero. &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</pre>
+
+            <p>Card Style 2</p>
+            <pre class="copy-text bg-opaque">
+&lt;z-col class="theme-dark image-container"&gt;
+  &lt;img src="your-image.jpg" alt="Background Image"&gt;
+  &lt;h4&gt;Lorem Ipsum Dolor&lt;/h4&gt;
+  &lt;p&gt;Eos tenetur corrupti, minima doloribus quam eveniet libero.&lt;/p&gt;
+  &lt;a href="#"&gt;&lt;button&gt;Velit Rerum&lt;/button&gt;&lt;/a&gt;
+&lt;/z-col&gt;</pre>
+
+            <p>Card Style 3</p>
+            <pre class="copy-text bg-opaque">
+&lt;z-container class="theme-cta"&gt;
+  &lt;z-row&gt;
+    &lt;z-col&gt;
+      &lt;div class="bg-opaque w-50 p-4 center center-me circle"&gt;
+        &lt;img src=".your-image.jpg" class="w-50" alt=""&gt;
+      &lt;/div&gt;
+      &lt;div class="center"&gt;
+        &lt;h5&gt;Lorem Ipsum Dolor&lt;/h5&gt;
+        &lt;p&gt; Eos tenetur corrupti, minima doloribus quam eveniet libero. &lt;/p&gt;
+        &lt;a href="#"&gt;&lt;button&gt;Velit Rerum&lt;/button&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt; </pre>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+
     <!----------------------------------------------------------------------->
     <!--- Zen Test --->
     <!----------------------------------------------------------------------->
@@ -214,6 +273,7 @@
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
     <script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
 </body>
 
 </html>

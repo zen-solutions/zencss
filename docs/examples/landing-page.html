@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
@@ -25,12 +26,13 @@
                 <div class="pl-2" id="header-logo">
                     <img src="../../img/logo.png" alt="Logo">
                 </div>
+                <button id="hamburger-button">☰</button>
                 <nav>
+                    <button id="close-button">×</button>
                     <ul class="pr-2">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><button href="#">Contact</button></li>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -46,10 +48,10 @@
             <div class="center">
                 <span class="tout"> NEW</span>
                 <h1 class="serif">Lorem ipsum dolor sit amet, consectetur elit.</h1>
-                <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
+                <p>Pellentesque tempor elementum nisi eget ornare. 
                 <p>
-                    <button class="btn-md">Get Started</button>
-                    <button class="btn-ghost btn-md">Learn More</button>
+                    <button class="btn-md">Dui Purus</button>
+                    <button class="btn-ghost btn-md">Sed Dapibus</button>
                 </p>
             </div>
         </z-col>
@@ -65,8 +67,8 @@
             <z-col class="ml-3">
                 <div class="v-center">
                     <span class="tout"> NEW</span>
-                    <h2 class="h4"> Lorem ipsum dolor sit amet, consectetur adipiscing amalet do elit.</h2>
-                    <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.</p>
+                    <h2 class="h4"> Donec malesuada mauris. </h2>
+                    <p>Vivamus a pellentesque lorem. Phasellus faucibus sed arcu et auctor. Eos tenetur corrupti, minima doloribus quam eveniet libero.</p>
                     <button class="btn-md">Quasi Eius</button>
                 </div>
             </z-col>
@@ -91,7 +93,7 @@
                     <z-col>
                         <div class="center">
                             <span class="tout">NEW</span>
-                            <h5>Lorem Ipsum Dolor</h5>
+                            <h5>Vivamus sed nulla</h5>
                             <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
                         </div>
                     </z-col>
@@ -110,7 +112,7 @@
                     <z-col>
                         <div class="center">
                             <span class="tout">NEW</span>
-                            <h5>Lorem Ipsum Dolor</h5>
+                            <h5>Non porttitor vehicula.</h5>
                             <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
                         </div>
                     </z-col>
@@ -129,7 +131,7 @@
                     <z-col>
                         <div class="center">
                             <span class="tout">NEW</span>
-                            <h5>Lorem Ipsum Dolor</h5>
+                            <h5>Duis lobortis mauris</h5>
                             <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
                         </div>
                     </z-col>
@@ -151,8 +153,8 @@
         </z-col>
         <z-col >
             <div class="v-center">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p > Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
+                <h4>Mattis felis non</h4>
+                <p > Proin ultricies, urna eget rutrum euismod. </p>
             </div>
         </z-col>
     </z-row>
@@ -164,8 +166,8 @@
     <z-row>
         <z-col>
             <div class="center">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p > Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
+                <h4> Ut ornare rutrum euismod</h4>
+                <p >  Et euismod metus tortor ut tortor. Sed dapibus odio at efficitur consectetur. Vivamus tristique varius molestie.  </p>
                 <img src="../../img/placeholder/SimonBerger2.png" alt="">
             </div>
         </z-col>
@@ -225,7 +227,7 @@
                    
 
                 </div>
-                <div><small class="text-grey-2 smallest">Copyright 2023, zenCSS -  <a id="toggleButton">Toggle zen test</a></small></div>
+                <div><small class="text-grey-2 smallest">Copyright 2023, zenCSS -  <a id="toggleButton">Toggle zen test</a> <a id="toggleDarkModeButton">Toggle dark mode</a></small></div>
             </footer>
         </z-col>
     </z-row>
@@ -233,7 +235,8 @@
 
 
 
-    <script src="../../js/zencss.js"></script>
+<script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+</head>
+
+<body class="zen">
+    <div class="center-line"></div>
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1>Responsive HTML Table</h1>
+                    <p>Sometimes you just need a table. For those times, this one works on mobile seamlessly. </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+   <z-container>
+       <z-row>
+           <z-col>
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Header 1">Data 1</td>
+                        <td data-label="Header 2">Data 2</td>
+                        <td data-label="Header 3">Data 3</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Header 1">Data 4</td>
+                        <td data-label="Header 2">Data 5</td>
+                        <td data-label="Header 3">Data 6</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Header 1">Data 7</td>
+                        <td data-label="Header 2">Data 8</td>
+                        <td data-label="Header 3">Data 9</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Header 1">Data 10</td>
+                        <td data-label="Header 2">Data 11</td>
+                        <td data-label="Header 3">Data 12</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Header 1">Data 13</td>
+                        <td data-label="Header 2">Data 14</td>
+                        <td data-label="Header 3">Data 15</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Header 1">Data 16</td>
+                        <td data-label="Header 2">Data 17</td>
+                        <td data-label="Header 3">Data 18</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+           </z-col>
+       </z-row>
+   </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!--- End Component --->
+    <!----------------------------------------------------------------------->
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkModeButton" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+</body>
+
+</html>

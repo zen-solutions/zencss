@@ -116,6 +116,54 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//--------------------------------------------------------
+// Mobile Nav
+//--------------------------------------------------------
+document.addEventListener('DOMContentLoaded', (event) => {
+  const hamburgerButton = document.getElementById('hamburger-button');
+  const closeButton = document.getElementById('close-button');
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const toggleMenu = () => {
+      nav.style.left = nav.style.left === '0px' ? '-250px' : '0px';
+  };
+
+  if(hamburgerButton && closeButton && nav && navLinks.length > 0) {
+      hamburgerButton.addEventListener('click', toggleMenu);
+      closeButton.addEventListener('click', toggleMenu);
+
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              nav.style.left = '-250px';
+          });
+      });
+  } 
+});
+
+//--------------------------------------------------------
+// Modal
+//--------------------------------------------------------
+
+var modal = document.getElementById("zModal");
+var btn = document.getElementById("modalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+if (btn && modal && span) {  // Check if elements exist
+    btn.onclick = function() {
+        modal.style.display = "flex";  /* Change to flex when opening */
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";  /* Change back to none when closing */
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";  /* Change back to none when closing */
+        }
+    }
+} 
 // ----------------------------------------
 // Experimental/not in use
 // ----------------------------------------

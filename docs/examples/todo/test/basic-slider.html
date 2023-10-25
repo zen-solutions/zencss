@@ -55,20 +55,44 @@
     }
 
     function nextSlide() {
-        if(currentSlide < totalSlides - 1) {
-            currentSlide++;
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+    } else {
+        // Clone the first slide and append it to the end
+        var firstSlideClone = document.querySelectorAll('#slide-figure img')[0].cloneNode(true);
+        slideFigure.appendChild(firstSlideClone);
+
+        // Increase the totalSlides count and currentSlide index
+        totalSlides++;
+        currentSlide++;
+
+        // Use a timeout to ensure the transition to the cloned slide completes before resetting
+        setTimeout(function() {
+            // Transition to the cloned slide
             showSlide(currentSlide);
-        } else {
-            // Reset to the first slide without transition
-            slideFigure.style.transition = 'none';
-            slideFigure.style.left = '0%';
-            // Force re-render by accessing offsetWidth, then restore transition
-            slideFigure.offsetWidth;  // trigger reflow
-            slideFigure.style.transition = 'left 0.5s ease-in-out';
-            currentSlide = 1;
-            showSlide(currentSlide);
-        }
+
+            // Use another timeout to ensure the transition completes before resetting
+            setTimeout(function() {
+                // Remove the transition temporarily, reset to the first slide, and remove the cloned slide
+                slideFigure.style.transition = 'none';
+                slideFigure.style.left = '0%';
+                slideFigure.removeChild(firstSlideClone);
+
+                // Reset the totalSlides count and currentSlide index
+                totalSlides--;
+                currentSlide = 0;
+
+                // Restore the transition
+                slideFigure.style.transition = 'left 0.5s ease-in-out';
+
+                // Force a re-render to ensure the transition is properly restored
+                slideFigure.offsetWidth;  // trigger reflow
+            }, 500);  // Match this timeout duration to your transition duration
+        }, 0);
     }
+}
+
 
     function prevSlide() {
         if(currentSlide > 0) {
@@ -87,5 +111,6 @@
     }
 </script>
 
+  <script src="../js/copy.js"></script>
 </body>
 </html>

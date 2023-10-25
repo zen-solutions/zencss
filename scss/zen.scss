@@ -41,22 +41,23 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
   @import 'core/scaffold.scss';
   @import 'optional/popover.scss'; 
   @import 'core/design/themes.scss';
-  @import 'core/components/header.scss';
+  @import 'core/header.scss';
   @import 'core/components/form.scss';
+  @import 'core/components/slider.scss';
   @import 'core/design/buttons.scss';
   @import 'core/design/text.scss';
   @import 'core/flex.scss';
   @import 'core/formatting.scss';
   @import 'core/design/color.scss';
   @import 'core/test.scss';
-  @import 'core/components/blockquote.scss';
+  @import 'core/components/components.scss';
   @import 'core/footer.scss'; 
 
 
 //--------------------------------------------------------------
   //optional utilities
 //--------------------------------------------------------------
-  @import 'optional/interactive-cards.scss';
+  //@import 'optional/interactive-cards.scss';
   @import 'optional/alert.scss';
   //@import 'opacity.scss';
   //@import 'optional/card.scss';
@@ -124,4 +125,6 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
 .zen-dark{
   color:#f0f0f0;
   background:#252525;
+  background-color:#252525 !important;
 }
+

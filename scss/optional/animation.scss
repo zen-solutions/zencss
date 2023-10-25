@@ -123,15 +123,14 @@
 //-----------------------------------------
 // Button animations
 //-----------------------------------------
-.hover-up-down {
-    padding: 10px 20px;
-    transition: transform 0.3s ease;
+.btn-hover {
+    transition: transform 0.3s ease-in-out; 
+    display: inline-block; 
 }
 
-.hover-up-down:hover {
-    transform: translateY(-10px); 
+.btn-hover:hover {
+    transform: translateY(-3px); 
 }
-
 
 
 //-----------------------------------------

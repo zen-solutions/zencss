@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
 
@@ -64,7 +65,48 @@
     <!----------------------------------------------------------------------->
     <!--- End Component --->
     <!----------------------------------------------------------------------->
-    
+<!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+            <h2>Code Example</h2>
+            <pre class="copy-text bg-opaque">
+&lt;footer&gt;
+    &lt;div class="social-icons"&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/facebook.png" alt="Facebook"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/x-twitter.png" alt="Twitter"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/linkedin.png" alt="LinkedIn"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/youtube.png" alt="YouTube"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/discord.png" alt="Discord"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt; 
+            &lt;img src="../../img/social-icons/instagram.png" alt="Instagram"&gt;
+        &lt;/a&gt;
+        &lt;a href="#"&gt;
+            &lt;img src="../../img/social-icons/tiktok.png" alt="TikTok"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;small class="text-grey-2 smallest"&gt;Copyright 2023, your company here - &lt;a id="toggleButton"&gt;Toggle zen test&lt;/a&gt;&lt;/small&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+            </pre>
+        </z-col>
+    </z-row>
+</z-container>
+
+
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
     <!----------------------------------------------------------------------->
@@ -77,7 +119,7 @@
                     <h4>The Zen Test</h4>
                     <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
                         any resolution.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <p> So you can be assured it "just works". Use the link in the footer above to try it out. </p>
                 </div>
             </z-col>
         </z-row>
@@ -88,7 +130,6 @@
             <z-col>
                 <div class="center">
                     <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkModeButton" class="btn-md">Dark</button>
                         <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
                     </p>
@@ -107,6 +148,7 @@
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
     <script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
 </body>
 
 </html>
