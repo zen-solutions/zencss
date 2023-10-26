@@ -24,6 +24,7 @@ $themes: (
   background: rgba(255, 255, 255, 0.4);
   overflow: hidden;
   border-radius: $border-radius;
+  color:$dark-color;
 
 
   .z-col, z-col {
@@ -36,16 +37,15 @@ $themes: (
     color: $light-color;
   }
 
-    //button
-    button{
-      background:$dark-color;
-      color: $light-color;
-
-    }
+    //button not working
+    // button{
+    //   background:$dark-color;
+    //   color: $cta-color;
+    // }
   
-    button:hover {
-      background: darken($dark-color, 20%);
-    }
+    // .theme-light button:hover {
+
+    // }
   
     
 }

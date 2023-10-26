@@ -5,18 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mobile-menu.css">
-    <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../css/documentation.css">
     <link rel="stylesheet" href="../../css/zen.css">
-
 </head>
 
 <body class="zen">
     <div class="center-line"></div>
-
-
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -25,9 +19,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h3> Discovering Zentax
-                    </h3>
-                    <p>Welcome to the effortless world of Zentax. Comprising just three tags, Zentax is your go-to for lightning-fast content creation, offering cleaner markup with custom container, row, and column tags.
+                    <h4> Form Elements</h4>
+                    <p> We offer a classic opt-in form. And just about every form field imaginable. </p>
                         <hr>
                 </div>
             </z-col>
@@ -37,32 +30,68 @@
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+          <div class="form-container optin theme-secondary">  
+            <form>
+                <h3>Contact Form</h3>
+                <p>An amazing tagline goes here</p>
+                <div>
+                  <input type="text" id="name1" placeholder=" ">
+                  <label for="name1">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email1" placeholder=" ">
+                    <label for="email1">Email</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="tel1" placeholder=" ">
+                    <label for="tel1">Your Phone Number</label>
+                  </div>
+                <button name="submit" type="submit">Submit</button>
+              </form>
+          </div>
+          <button class="">test me</button>
 
-    <z-container id="zentax">
-        <z-row>
-                <z-col>
-                        <p>You have the ability to stick with traditional HTML or venture into using Zentax when writing our container structure—both are interchangeable based on what best suits your project. Looking ahead, we’re developing tools to transpile Zentax into standard semantic HTML for deployment, further simplifying your workflow.
-                        </p>
-
-                        <pre class="copy-text bg-opaque">
-&lt;z-container&gt;
-  &lt;z-row&gt;
-    &lt;z-col&gt; ... &lt;/z-col&gt;
-  &lt;/z-row&gt;
-&lt;/z-container&gt;                                                </pre>
-
-                        <div class="default-primary">
-                                <p><span class="tout bg-red text-white">new</span> Get a head start with our <a href="../toolkit/user-snippets-shorthand.json">Zentax user snippet</a>. Just type z-con followed by tab in VSCode to instantly write the above example and place your cursor inside so you can immediately begin writing code.</p>
-                        </div>
-                </z-col>
-        </z-row>
+        </z-col>
+      
+    </z-row>
 </z-container>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<z-container>
+    <z-row class="theme-dark center">
+        <z-col class="bg-opaque">
+            <h2>title</h2>
+            <p>paragraph goes here</p>
+            <button>click me</button>
+            <small>dont miss out</small>
+        </z-col>
+        <z-col class="bg-opaque">
+            <h2>title</h2>
+            <p>paragraph goes here</p>
+            <button>click me</button>
+            <small>dont miss out</small>
+        </z-col>
+        <z-col class="bg-opaque">
+            <h2>title</h2>
+            <p>paragraph goes here</p>
+            <button>click me</button>
+            <small>dont miss out</small>
+        </z-col>
+    </z-row>
+</z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- End Component --->
-    <!----------------------------------------------------------------------->
-    
+<span class=""><span class="tout theme-light">light</span><span class="tout theme-primary">primary</span> <span class="tout theme-cta">cta</span></span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!----------------------------------------------------------------------->
+<!--- Code Block  --->
+<!----------------------------------------------------------------------->
+
+
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
     <!----------------------------------------------------------------------->
@@ -104,7 +133,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../js/copy.js"></script>
     <script src="../../js/zencss.js"></script>
   <script src="../js/copy.js"></script>
 </body>

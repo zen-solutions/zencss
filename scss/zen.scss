@@ -67,7 +67,7 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
 
   //marketing
   @import 'marketing/pricing-table.scss';
-  //@import 'marketing/exit-intent.scss';
+  @import 'marketing/exit-intent.scss';
   @import 'marketing/contact-form.scss';
   //@import 'marketing/promos.scss';
   @import 'marketing/marketing-promos.scss';

@@ -34,7 +34,8 @@ z-row, .z-row {
   box-sizing: border-box;
 width:100%;
 flex-wrap: wrap; //nowrap is interesting too
-
+gap: 1em;
+padding: 1em;
 }
 
 .z-row-vcenter {
@@ -65,7 +66,7 @@ z-col, .z-col {
   align-self: stretch;
   gap: .5rem;
   padding: $col-padding;
-  margin: $col-margin;
+  margin: 0;
   
 }
 

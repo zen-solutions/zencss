@@ -212,6 +212,43 @@ slideFigure.addEventListener('transitionend', function() {
     }
 });
 
+// ----------------------------------------
+// Exit intent
+// ----------------------------------------
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("modalBtn");
+var span = document.getElementsByClassName("close")[0];
+var sevenSecondsPassed = false;  // Flag to check if 7 seconds have passed
+
+function showModal() {
+    modal.style.display = "block";
+    document.removeEventListener('mousemove', checkExitIntent);  // Remove the mousemove event listener once the modal is shown
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Timer to check for 7 seconds
+setTimeout(function() {
+    sevenSecondsPassed = true;  // Set the flag to true after 7 seconds
+}, 7000);
+
+// Exit intent function
+function checkExitIntent(e) {
+    if(e.clientY <= 5 && sevenSecondsPassed) {  // Check for exit intent only if 7 seconds have passed
+        showModal();
+    }
+}
+
+// Exit intent
+document.addEventListener('mousemove', checkExitIntent);
 
 
 // ----------------------------------------

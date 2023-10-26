@@ -16,6 +16,12 @@ $border-color:$cta-color;
   @include btn-hover($btn-hover-color);
 }
 
+.btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
 //css stuff
 .btn {
   background-color: $btn-color;
@@ -90,15 +96,15 @@ button.btn-ghost:hover {
   rotate: -45deg;
   height: 35px;
   width: 70px;
-  margin-top: -11px;
-  margin-left: -22px;
+  margin-top: -14px;
+  margin-left: -26px;
   border-radius: 0;
   text-align: center;
 }
 
 .corner-top >*{
   position: relative;
-  bottom: -15px;
+  bottom: -17px;
   left: -5px;
   rotate:(45deg);
 }
@@ -117,10 +123,10 @@ button.btn-ghost:hover {
 .tout-wrapper{
  //background: red;
   position: absolute;
-  margin-top: -26px;
-  margin-left: -26px;
-  width: 55px;
-  height: 55px;
+  margin-top: -17px;
+  margin-left: -17px;
+  width: 45px;
+  height: 45px;
   border-top-left-radius: $border-radius;
   overflow: hidden;
 
