@@ -227,6 +227,8 @@
 .zen hr {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 .zen hr.top {
   margin-bottom: 2em;
@@ -247,7 +249,9 @@
   background: #ce443f;
 }
 .zen button:hover {
+  cursor: pointer;
   background-color: #686868;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 .zen button.bg-cta:hover {
@@ -381,7 +385,14 @@
   text-decoration: none;
 }
 .zen a:-webkit-any-link :hover {
+  text-decoration: none;
+}
+.zen a:-webkit-any-link :hover {
   text-decoration: underline;
+}
+.zen a {
+  color: #3e79d0;
+  cursor: pointer;
 }
 .zen a {
   color: #3e79d0;
@@ -390,17 +401,20 @@
 .zen a:hover {
   text-decoration: underline;
 }
-.zen .image-container {
+.zen a:hover a:hover {
+  text-decoration: underline;
+}
+.zen a:hover .image-container {
   position: relative;
   overflow: hidden;
 }
-.zen .image-container img {
+.zen a:hover .image-container img {
   display: none;
 }
-.zen .card {
+.zen a:hover .card {
   box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 }
-.zen .testimonials {
+.zen a:hover .testimonials {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -408,13 +422,13 @@
   gap: 0.2em;
   box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 }
-.zen .testimonials .left-group {
+.zen a:hover .testimonials .left-group {
   /* Optional: Margin for spacing between the left and right group */
   margin-right: 20px;
   width: 28%;
   align-self: flex-start;
 }
-.zen .image-text-card {
+.zen a:hover .image-text-card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -422,19 +436,19 @@
   gap: 0.2em;
   box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 }
-.zen .image-text-card .left-group {
+.zen a:hover .image-text-card .left-group {
   /* Optional: Margin for spacing between the left and right group */
   margin-right: 20px;
   width: 28%;
   align-self: center;
 }
-.zen #right-group {
+.zen a:hover #right-group {
   gap: 0.3em;
   display: flex;
   flex-direction: column; /* Stacks the elements inside right-group vertically */
   width: 72%;
 }
-.zen #right-group .signature {
+.zen a:hover #right-group .signature {
   font-size: 0.7em;
   font-style: italic;
 }
@@ -804,7 +818,7 @@
   background-color: #852522;
   border-color: #852522;
 }
-.zen .btn-disabled {
+.zen .btn-inactive {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
@@ -1187,15 +1201,94 @@
 .zen .h-75 {
   height: 75px;
 }
-.zen .card {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #d9d9d9;
-  text-align: center !important;
-  align-items: unset !important;
+.zen .w-100 {
+  width: 100px;
+}
+.zen .h-100 {
+  height: 100px;
+}
+.zen .w-150 {
+  width: 150px;
+}
+.zen .h-150 {
+  height: 150px;
+}
+.zen .w-200 {
+  width: 200px;
+}
+.zen .h-200 {
+  height: 200px;
+}
+.zen .w-250 {
+  width: 250px;
+}
+.zen .h-250 {
+  height: 250px;
+}
+.zen .w-300 {
+  width: 300px;
+}
+.zen .h-300 {
+  height: 300px;
+}
+.zen .w-400 {
+  width: 400px;
+}
+.zen .h-400 {
+  height: 400px;
+}
+.zen .w-500 {
+  width: 500px;
+}
+.zen .h-500 {
+  height: 500px;
+}
+.zen .card h1, .zen .card h2, .zen .card h3, .zen .card h4, .zen .card h5, .zen .card h6, .zen .card p {
+  margin: 0;
+  border: 0;
+}
+.zen .card p {
+  font-size: 0.8em;
+  margin-top: -3px;
+  /* margin-left: 0.2em; */
+  padding-bottom: 0.6em;
 }
 .zen .card > .img {
   margin: 0;
   border: 0;
+}
+.zen .d-block {
+  display: block;
+}
+.zen .d-inline {
+  display: inline;
+}
+.zen .d-inline-block {
+  display: inline-block;
+}
+.zen .d-flex {
+  display: flex;
+}
+.zen .d-inline-flex {
+  display: inline-flex;
+}
+.zen .d-grid {
+  display: grid;
+}
+.zen .d-inline-grid {
+  display: inline-grid;
+}
+.zen .d-table {
+  display: table;
+}
+.zen .d-table-row {
+  display: table-row;
+}
+.zen .d-table-cell {
+  display: table-cell;
+}
+.zen .d-none {
+  display: none;
 }
 .zen .unset-round {
   border-radius: 0;
@@ -1285,43 +1378,43 @@
   background: #eee !important;
 }
 .zen .text-primary {
-  color: hsl(210, 42%, 36%);
+  color: hsl(210, 42%, 36%) !important;
 }
 .zen .text-secondary {
-  color: hsl(200, 35%, 59%);
+  color: hsl(200, 35%, 59%) !important;
 }
 .zen .text-accent {
-  color: hsl(43, 86%, 53%);
+  color: hsl(43, 86%, 53%) !important;
 }
 .zen .text-cta {
-  color: #ce443f;
+  color: #ce443f !important;
 }
 .zen .text-ghost {
-  color: #f4f4f4;
+  color: #f4f4f4 !important;
 }
 .zen .text-red {
-  color: #E63946;
+  color: #E63946 !important;
 }
 .zen .text-orange {
-  color: #ff9653;
+  color: #ff9653 !important;
 }
 .zen .text-yellow {
-  color: #e4c257;
+  color: #e4c257 !important;
 }
 .zen .text-green {
-  color: #0fbd74;
+  color: #0fbd74 !important;
 }
 .zen .text-blue {
-  color: #3c8ceb;
+  color: #3c8ceb !important;
 }
 .zen .text-purple {
-  color: #9B59B6;
+  color: #9B59B6 !important;
 }
 .zen .text-white {
-  color: white;
+  color: white !important;
 }
 .zen .text-grey {
-  color: #eee;
+  color: #eee !important;
 }
 .zen .border-1 {
   border: 1px solid;
@@ -2205,38 +2298,6 @@
 .zen .pricing-table .price-tag .after {
   font-weight: 500;
 }
-.zen .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
-}
-.zen .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-.zen .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.zen .close:hover,
-.zen .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 .zen .form-container {
   max-width: 400px;
   width: 100%;
@@ -2430,7 +2491,7 @@
     top: 0;
     left: 10px;
   }
-  .zen .mobile-card {
+  .zen .card {
     margin-left: 1.618rem;
     margin-right: 1.618rem;
   }

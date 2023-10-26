@@ -134,6 +134,7 @@ p {
   margin-bottom:.3em;
   position: relative;
   font-weight: 300;
+  
   //margin-top: -5px;
   //padding-top: 0.5em !important;
   //padding-bottom: 0.5em !important;
@@ -193,12 +194,14 @@ button {
 }
 
  button:hover {
+  cursor: pointer;
    background-color: lighten($dark-color, 15%);
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   // transition: box-shadow 0.3s ease-in-out;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   // transition: box-shadow 0.3s ease-in-out;
  }
+
 
 button.bg-cta:hover {
   background: darken($cta-color, 8%);
@@ -483,6 +486,6 @@ font-size: .7em;
 font-style: italic;
   }
   
-
+}
 }
 

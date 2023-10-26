@@ -89,7 +89,14 @@ $sizes: (
   40: 40px,
   50: 50px,
   60: 60px,
-  75: 75px
+  75: 75px,
+  100:100px,
+  150:150px,
+  200:200px,
+  250:250px,
+  300:300px,
+  400:400px,
+  500:500px,
 );
 
 @each $key, $value in $sizes {
@@ -107,16 +114,60 @@ $sizes: (
 //----------------------------------------------------
 
 .card {
-  background-color: rgba(255, 255, 255, .2);
-  border: 1px solid #d9d9d9;
-  text-align: center !important;
-  align-items: unset !important;
+  //background-color: rgba(255, 255, 255, .2);
+  //border: 1px solid #d9d9d9;
+  //text-align: center !important;
+  //align-items: unset !important;
+
+  h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    border: 0;
+  }
+
+  p{
+    font-size: .8em;
+    margin-top:-3px;
+  //  padding-left:15px;
+   // margin-left:5px;
+   // padding-right:15px;
+   // padding-right: 0.2em;
+    /* margin-left: 0.2em; */
+    //margin-right: 0.2em;
+    padding-bottom: .6em;
+  }
 }
 
 .card>.img {
   margin: 0;
   border: 0;
 }
+
+
+//----------------------------------------------------
+// Display values - d-block, d-flex, etc. 
+//----------------------------------------------------
+
+$d-values: (
+  block: block,
+  inline: inline,
+  'inline-block': inline-block,
+  flex: flex,
+  'inline-flex': inline-flex,
+  grid: grid,
+  'inline-grid': inline-grid,
+  table: table,
+  'table-row': table-row,
+  'table-cell': table-cell,
+  none: none
+);
+
+@each $name, $value in $d-values {
+  .d-#{$name} {
+    display: $value;
+  }
+}
+
+
 
 
 //----------------------------------------------------

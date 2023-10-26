@@ -16,7 +16,7 @@ $border-color:$cta-color;
   @include btn-hover($btn-hover-color);
 }
 
-.btn-disabled {
+.btn-inactive {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
