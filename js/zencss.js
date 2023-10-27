@@ -3,28 +3,34 @@
 // ----------------------------------------
 
 // Define z-container custom element
-class ZContainer extends HTMLElement {
-  constructor() {
-    super();
-  }
+class ZContainer extends HTMLElement
+{
+	constructor()
+	{
+		super();
+	}
 }
 
 customElements.define('z-container', ZContainer);
 
 // Define z-row custom element
-class ZRow extends HTMLElement {
-  constructor() {
-    super();
-  }
+class ZRow extends HTMLElement
+{
+	constructor()
+	{
+		super();
+	}
 }
 
 customElements.define('z-row', ZRow);
 
 // Define z-col custom element
-class ZCol extends HTMLElement {
-  constructor() {
-    super();
-  }
+class ZCol extends HTMLElement
+{
+	constructor()
+	{
+		super();
+	}
 }
 
 customElements.define('z-col', ZCol);
@@ -36,36 +42,40 @@ customElements.define('z-col', ZCol);
 //--------------------------------------------------------
 //Toggle  test mode
 //--------------------------------------------------------
-document.getElementById("toggleButton").addEventListener("click", function () {
-  const toggleClassOnElements = (selector, className) => {
-      const elements = document.querySelectorAll(selector);
-      elements.forEach((element) => {
-          element.classList.toggle(className);
-      });
-  };
+document.getElementById("toggleButton").addEventListener("click", function ()
+{
+	const toggleClassOnElements = (selector, className) =>
+	{
+		const elements = document.querySelectorAll(selector);
+		elements.forEach((element) =>
+		{
+			element.classList.toggle(className);
+		});
+	};
 
-  const selectorsAndClasses = [
-      ['.z-container', 'z-container-outline-on'],
-      ['.z-container-fluid', 'z-container-fluid-outline-on'],
-      ['.z-row', 'z-row-outline-on'],
-      ['.z-col', 'z-col-outline-on'],
-      ['z-container', 'z-container-outline-on'],
-      ['z-container-fluid', 'z-container-fluid-outline-on'],
-      ['z-row', 'z-row-outline-on'],
-      ['z-col', 'z-col-outline-on'],
-      ['p', 'p-outline-on'],
-      ['h1', 'h1-outline-on'],
-      ['h2', 'h-outline-on'],
-      ['h3', 'h-outline-on'],
-      ['h4', 'h-outline-on'],
-      ['h5', 'h-outline-on'],
-      ['h6', 'h-outline-on'],
-      ['.center-line', 'center-line-outline-on']
-  ];
+	const selectorsAndClasses = [
+		['.z-container', 'z-container-outline-on'],
+		['.z-container-fluid', 'z-container-fluid-outline-on'],
+		['.z-row', 'z-row-outline-on'],
+		['.z-col', 'z-col-outline-on'],
+		['z-container', 'z-container-outline-on'],
+		['z-container-fluid', 'z-container-fluid-outline-on'],
+		['z-row', 'z-row-outline-on'],
+		['z-col', 'z-col-outline-on'],
+		['p', 'p-outline-on'],
+		['h1', 'h1-outline-on'],
+		['h2', 'h-outline-on'],
+		['h3', 'h-outline-on'],
+		['h4', 'h-outline-on'],
+		['h5', 'h-outline-on'],
+		['h6', 'h-outline-on'],
+		['.center-line', 'center-line-outline-on']
+	];
 
-  selectorsAndClasses.forEach(([selector, className]) => {
-      toggleClassOnElements(selector, className);
-  });
+	selectorsAndClasses.forEach(([selector, className]) =>
+	{
+		toggleClassOnElements(selector, className);
+	});
 });
 
 
@@ -74,13 +84,15 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 //--------------------------------------------------------
 
 const elements = document.querySelectorAll(
-  '[class*="bg-opaque"], [class*="bg-blur"]'
+	'[class*="bg-opaque"], [class*="bg-blur"]'
 );
-elements.forEach((element) => {
-  const descendants = element.querySelectorAll("*");
-  descendants.forEach((descendant) => {
-    descendant.style.opacity = "100%";
-  });
+elements.forEach((element) =>
+{
+	const descendants = element.querySelectorAll("*");
+	descendants.forEach((descendant) =>
+	{
+		descendant.style.opacity = "100%";
+	});
 });
 
 
@@ -88,11 +100,13 @@ elements.forEach((element) => {
 // Testing: Dark Mode Toggle
 //--------------------------------------------------------
 
-function toggleDarkMode() {
-  const zenElements = document.querySelectorAll('.zen');
-  zenElements.forEach(element => {
-    element.classList.toggle('zen-dark');
-  });
+function toggleDarkMode()
+{
+	const zenElements = document.querySelectorAll('.zen');
+	zenElements.forEach(element =>
+	{
+		element.classList.toggle('zen-dark');
+	});
 }
 
 document.getElementById('toggleDarkModeButton').addEventListener('click', toggleDarkMode);
@@ -102,43 +116,50 @@ document.getElementById('toggleDarkModeButton').addEventListener('click', toggle
 //Background image
 //--------------------------------------------------------
 
-window.addEventListener('DOMContentLoaded', function () {
-  var imageContainers = document.querySelectorAll('.image-container');
-  imageContainers.forEach(function (container) {
-      var img = container.querySelector('img');
-      var imgUrl = img.src;
-      container.style.backgroundImage = 'url(' + imgUrl + ')';
-      container.style.backgroundSize = 'cover';
-      container.style.backgroundPosition = 'center center';
-      img.style.display = 'none';  
+window.addEventListener('DOMContentLoaded', function ()
+{
+	var imageContainers = document.querySelectorAll('.image-container');
+	imageContainers.forEach(function (container)
+	{
+		var img = container.querySelector('img');
+		var imgUrl = img.src;
+		container.style.backgroundImage = 'url(' + imgUrl + ')';
+		container.style.backgroundSize = 'cover';
+		container.style.backgroundPosition = 'center center';
+		img.style.display = 'none';
 
-  });
+	});
 });
 
 
 //--------------------------------------------------------
 // Mobile Nav
 //--------------------------------------------------------
-document.addEventListener('DOMContentLoaded', (event) => {
-  const hamburgerButton = document.getElementById('hamburger-button');
-  const closeButton = document.getElementById('close-button');
-  const nav = document.querySelector('nav');
-  const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener('DOMContentLoaded', (event) =>
+{
+	const hamburgerButton = document.getElementById('hamburger-button');
+	const closeButton = document.getElementById('close-button');
+	const nav = document.querySelector('nav');
+	const navLinks = document.querySelectorAll('.nav-link');
 
-  const toggleMenu = () => {
-      nav.style.left = nav.style.left === '0px' ? '-250px' : '0px';
-  };
+	const toggleMenu = () =>
+	{
+		nav.style.left = nav.style.left === '0px' ? '-250px' : '0px';
+	};
 
-  if(hamburgerButton && closeButton && nav && navLinks.length > 0) {
-      hamburgerButton.addEventListener('click', toggleMenu);
-      closeButton.addEventListener('click', toggleMenu);
+	if (hamburgerButton && closeButton && nav && navLinks.length > 0)
+	{
+		hamburgerButton.addEventListener('click', toggleMenu);
+		closeButton.addEventListener('click', toggleMenu);
 
-      navLinks.forEach(link => {
-          link.addEventListener('click', () => {
-              nav.style.left = '-250px';
-          });
-      });
-  } 
+		navLinks.forEach(link =>
+		{
+			link.addEventListener('click', () =>
+			{
+				nav.style.left = '-250px';
+			});
+		});
+	}
 });
 
 //--------------------------------------------------------
@@ -149,20 +170,25 @@ var modal = document.querySelector(".modal");
 var btn = document.querySelector(".btn-modal");
 var span = document.querySelector(".close");
 
-if (btn && modal && span) {  // Check if elements exist
-    btn.onclick = function() {
-        modal.style.display = "flex";  /* Change to flex when opening */
-    }
+if (btn && modal && span)
+{ // Check if elements exist
+	btn.onclick = function ()
+	{
+		modal.style.display = "flex"; /* Change to flex when opening */
+	}
 
-    span.onclick = function() {
-        modal.style.display = "none";  /* Change back to none when closing */
-    }
+	span.onclick = function ()
+	{
+		modal.style.display = "none"; /* Change back to none when closing */
+	}
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";  /* Change back to none when closing */
-        }
-    }
+	window.onclick = function (event)
+	{
+		if (event.target == modal)
+		{
+			modal.style.display = "none"; /* Change back to none when closing */
+		}
+	}
 }
 
 // ----------------------------------------
@@ -261,31 +287,32 @@ var prevButton = document.querySelector('.prev');
 var nextButton = document.querySelector('.next');
 
 // Only proceed if all the necessary elements are found
-if (slidesContainer && prevButton && nextButton) {
-    var currentSlide = 0;
-    var totalSlides = document.querySelectorAll('.slides-container img').length;
+if (slidesContainer && prevButton && nextButton)
+{
+	var currentSlide = 0;
+	var totalSlides = document.querySelectorAll('.slides-container img').length;
 
-    prevButton.addEventListener('click', prevSlide);
-    nextButton.addEventListener('click', nextSlide);
+	prevButton.addEventListener('click', prevSlide);
+	nextButton.addEventListener('click', nextSlide);
 
-    function showSlide(index) {
-        var transformValue = 'translateX(' + (-index * 100) + '%)';
-        slidesContainer.style.transform = transformValue;
-    }
+	function showSlide(index)
+	{
+		var transformValue = 'translateX(' + (-index * 100) + '%)';
+		slidesContainer.style.transform = transformValue;
+	}
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
-    }
+	function nextSlide()
+	{
+		currentSlide = (currentSlide + 1) % totalSlides;
+		showSlide(currentSlide);
+	}
 
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
-    }
+	function prevSlide()
+	{
+		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		showSlide(currentSlide);
+	}
 }
-
-
-
 
 // ----------------------------------------
 // Experimental/not in use
@@ -319,7 +346,7 @@ if (slidesContainer && prevButton && nextButton) {
 // lines.forEach(line => {
 //   const text = line.getAttribute('data-text');
 //   let charIndex = 0;
-  
+
 //   setTimeout(() => {
 //     const intervalId = setInterval(() => {
 //       line.textContent += text[charIndex];
@@ -330,6 +357,6 @@ if (slidesContainer && prevButton && nextButton) {
 //       }
 //     }, 100); /* Speed of typing */
 //   }, totalDelay);
-  
+
 //   totalDelay += text.length * 100 + 1000; /* Delay for next line (typing speed * text length + additional delay) */
 // });

@@ -5,7 +5,8 @@
 z-container, .z-container {
   max-width: 1140px;
   width: 100%;
-  margin: $container-margin auto;
+  //margin: $container-margin auto;
+  margin: 0 auto;
   display: block;
   border-radius: $border-radius;
   display: flex;

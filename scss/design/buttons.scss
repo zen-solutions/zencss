@@ -16,7 +16,7 @@ $btn-hover-color: darken($cta-color, 20%);
   @include btn-hover($btn-hover-color);
 }
 
-.btn-inactive {
+.inactive {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
@@ -86,7 +86,9 @@ button.btn-ghost:hover {
   background:$accent-color;
   position: relative;
   font-size: .6rem;
-  margin-top: 1px;
+  margin-top:3px;
+  margin-left: .5rem;
+  margin-right: .5rem;
 
 
 }
@@ -123,8 +125,8 @@ button.btn-ghost:hover {
 .tout-wrapper{
  //background: red;
   position: absolute;
-  margin-top: -17px;
-  margin-left: -17px;
+  margin-top: -18px;
+  margin-left: -18px;
   width: 45px;
   height: 45px;
   border-top-left-radius: $border-radius;

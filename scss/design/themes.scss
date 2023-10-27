@@ -1,10 +1,23 @@
 ///----------------------------------------------
+// TO DO fibonaci-left and fibonaci-right. puts 1.618 break on the row
+//----------------------------------------------
+
+
+
+
+
+
+
+
+
+///----------------------------------------------
 // Component Themes - Like fortnite skins for UI elements
 //----------------------------------------------
 
 $themes: (
   primary: $light-color,
-  dark: $light-color,  // Assuming you have a $dark-color variable
+  dark: $light-color,
+    // Assuming you have a $dark-color variable
   secondary: $secondary-color  // Assuming you have a $secondary-color variable
 );
 
@@ -13,7 +26,24 @@ $themes: (
     form label {
       color: $color;
     }
+    
   }
+}
+
+.theme-dark.accent-left{
+  border-left:10px solid $primary-color;
+}
+
+.theme-secondary.accent-left{
+  border-left:10px solid $cta-color;
+}
+
+.theme-cta.accent-left{
+  border-left:10px solid $secondary-color;
+}
+
+.theme-light.accent-left{
+  border-left:10px solid $accent-color;
 }
 
 ///----------------------------------------------
@@ -25,6 +55,7 @@ $themes: (
   overflow: hidden;
   border-radius: $border-radius;
   color:$dark-color;
+  border: $accent-color;
 
 
   .z-col, z-col {
@@ -33,15 +64,19 @@ $themes: (
 
 
   .tout {
-    background: $secondary-color;
-    color: $light-color;
+    background: $light-grey;
+    color: $dark-color;
   }
 
     //button not working
-    // button{
-    //   background:$dark-color;
-    //   color: $cta-color;
-    // }
+     button{
+       background:$dark-color;
+       color: $light-color;
+     }
+     
+     button:hover {
+      background: darken($primary-color, 10%);
+    }
   
     // .theme-light button:hover {
 
@@ -61,9 +96,7 @@ $themes: (
   overflow: hidden;
   border-radius: $border-radius;
 
-  .z-col, z-col {
-    //margin: 0;
-  }
+
 
   //button
   button{
@@ -77,7 +110,7 @@ $themes: (
   
 
   .tout {
-    background: $primary-color;
+    background: $dark-grey;
     color: $light-color;
   }
 }
@@ -110,7 +143,7 @@ $themes: (
 
 
   .tout {
-    background: $cta-color;
+    background: $primary-color;
     color: $light-color;
   }
 }
@@ -122,7 +155,7 @@ $themes: (
 
 .theme-accent {
   background: $accent-color;
-  color: $light-color;
+  color: $dark-color;
   overflow: hidden;
   border-radius: $border-radius;
 
@@ -132,7 +165,7 @@ $themes: (
 
   //button
   button{
-    background:$secondary-color;
+    background:$cta-color;
     color: $light-color;
 
   }
@@ -143,8 +176,8 @@ $themes: (
   
 
   .tout {
-    background: $grey;
-    color: $dark-color;
+    background: $cta-color;
+    color: $light-color;
     
   }
 }
@@ -169,14 +202,14 @@ $themes: (
   
 
   .tout {
-    background: $secondary-color;
-    color: $light-color;
+    background: $accent-color;
+    color: $dark-color;
   }
 
     //button
     button{
       background:$accent-color;
-      color: $light-color;
+      color: $dark-color;
     }
   
     button:hover {
@@ -213,13 +246,18 @@ $themes: (
 
 ////styling for tout component
   .tout {
-    background: $accent-color;
+   // background: $cta-color;
     color: $light-color;
+  }
+
+  a{
+    color:white;
+    text-decoration: underline;
   }
 
   //button
   button.btn-primary, button{
-    background:$cta-color;
+    background:$secondary-color;
     color: $light-color;
   }
 

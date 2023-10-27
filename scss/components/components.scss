@@ -186,7 +186,7 @@
 .card-split {
   display: flex;
   flex-direction: row;
- font-size: .8em;
+ //font-size: .8em;
   gap: 1em;
 
   .text-group {
@@ -196,7 +196,8 @@
   
   .image-group {
     flex-basis: 110px;
-
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
 }

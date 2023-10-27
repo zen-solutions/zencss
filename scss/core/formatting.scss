@@ -116,14 +116,16 @@ $sizes: (
 .card {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  gap:0;
+  gap:.5rem;
   //padding:0;
   // padding-left:1em;
   // padding-right:1em;
 
   // padding-top:0;
-   padding:.5rem;
-   padding-top: 0.8rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top: 1.8rem;
+  padding-bottom:2.2rem;
 
 
   h1, h2, h3, h4, h5, h6, p{
@@ -134,15 +136,21 @@ $sizes: (
 
   p{
     font-size: .8em;
-    padding-top: .6em;
-    padding-bottom: .6em;
+    //padding-top: .6em;
+    //padding-bottom: .6em;
+    padding-bottom: 1em;
+  }
+
+  a{
+    font-size: .8em;  
+    padding-bottom: .8em;  
   }
 }
 
 
  .card > * {
-  padding-left:1rem;
-  padding-right:1rem;
+  padding-left:.5rem;
+  padding-right:.5rem;
  }
 
  .card>img {

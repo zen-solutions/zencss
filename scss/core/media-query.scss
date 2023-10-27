@@ -329,7 +329,7 @@ left:10px;
 .four-up > * {
   //flex: 0 0 25%; //this ones working without important. why? 
   flex: 1; 
-  margin:0; 
+  //margin:0; 
 }
 
 .five-up {
@@ -350,6 +350,30 @@ left:10px;
 }
 
 .six-up > * {
-  flex: 0 0 14.33% !important;
-    margin: 0.3em;
+  flex: 0 0 15.35% !important;
+   margin: 0;
 }
+
+.seven-up {
+  display: flex;
+  flex-wrap: wrap;
+  //margin: -1em;
+}
+
+.seven-up > * {
+  flex: 1 0 12.93% !important;
+    //margin: 0.3em;
+}
+
+
+.eight-up {
+  display: flex;
+  flex-wrap: wrap;
+  //margin: -1em;
+}
+
+.eight-up > * {
+  flex: 0 0 10.174% !important;
+    //margin: 0.3em;
+}
+

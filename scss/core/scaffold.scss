@@ -10,6 +10,10 @@
 
 }
 
+// svg {
+//     image-rendering: crisp-edges;
+// }
+
 //:visited { color: #551A8B; }
 
 // Reset HTML margin and padding
@@ -146,6 +150,15 @@ li {
   margin-bottom: 20px;
 }
 
+ul li > ul  {
+  list-style-type:circle;
+}
+
+ul li > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 hr {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
@@ -169,10 +182,10 @@ button {
   cursor: pointer;
   border-radius: $border-radius;
   font-size: .8em;
-  margin:5px;
+  // margin:5px;
   color: $light-color;
   background: $cta-color;
-  position: relative;
+  //position: relative;
   z-index: 1000;
 }
 
@@ -202,6 +215,7 @@ img {
   margin: 0;
   border-radius: $border-radius;
 }
+
 
 
 
@@ -238,7 +252,7 @@ margin:10px;
   width: 100%;
   white-space: pre-wrap;
   line-height: 30px;
-
+  font-family: Consolas,Monaco,'Andale Mono',monospace;
 
   // &:before {
   //   border-top: 4px solid red;

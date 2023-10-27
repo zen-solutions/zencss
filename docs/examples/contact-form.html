@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+    <link rel="stylesheet" href="../../css/zen.css">
+</head>
+
+<body class="zen">
+    <div class="center-line"></div>
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h4> Contact form</h4>
+                    <p> We offer a classic opt-in form with a stylish, modern UI/UX.  </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+<z-container>
+    <z-row>
+        <z-col>
+          <div class="form-container theme-primary">  
+            <form>
+                <h3>Contact Form</h3>
+                <p>An amazing tagline goes here</p>
+                <div>
+                  <input type="text" id="name1" placeholder=" ">
+                  <label for="name1">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email1" placeholder=" ">
+                    <label for="email1">Email</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="tel1" placeholder=" ">
+                    <label for="tel1">Your Phone Number</label>
+                  </div>
+                <button name="submit" type="submit">Submit</button>
+                <small class="form-footer"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
+              </form>
+          </div>
+        </z-col>
+       
+      <z-col class="card bg-opaque feature">
+        <h2>Code Example</h2>
+        <pre class="copy-text bg-opaque">
+&lt;div class="form-container theme-primary"&gt;  
+&lt;form&gt;
+  &lt;h3&gt;Contact Form&lt;/h3&gt;
+  &lt;p&gt;An amazing tagline goes here&lt;/p&gt;
+  &lt;div&gt;
+    &lt;input type="text" id="name" placeholder=" "&gt;
+    &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="email" id="email" placeholder=" "&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="tel" id="tel" placeholder=" "&gt;
+    &lt;label for="tel"&gt;Your Phone Number&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button name="submit" type="submit"&gt;Submit&lt;/button&gt;
+  &lt;small class="form-footer"&gt;
+    &lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and
+    &lt;a href="#"&gt;Terms of Service&lt;/a&gt;
+  &lt;/small&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+</pre>
+    </z-col>
+    </z-row>
+</z-container>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkModeButton" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

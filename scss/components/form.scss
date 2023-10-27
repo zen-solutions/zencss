@@ -111,7 +111,9 @@ form select, form input[type="date"], form input[type=datetime-local], form inpu
 
 .form-footer{
     font-size: .7rem;
-    text-align: center;
+    display: block;
+    margin-top: 1em;
+    opacity: .5;
 }
 //-------------------------------
 // SHRINKING FORM LABELS
@@ -133,7 +135,7 @@ form div {
   .form-container form label {
     position: absolute;
     left: 8px;
-    top: 5px;
+    top: 7px;
     font-size: .8em;
     color: $dark-color !important;
     transition: 0.3s all;
