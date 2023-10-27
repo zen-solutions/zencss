@@ -15,7 +15,7 @@
   justify-content: center;  /* Center horizontally */
 }
 
-#modalBtn{
+.btn-modal{
   width:150px;
 }
 
@@ -27,27 +27,55 @@
   width: 80%;
   max-width: 400px;
   border-radius:$border-radius;
+  position: relative;
+}
+
+.modal-content > .text{
+  width:91%;
 }
 
 .close {
-  color: #aaa;
-  float: right;
+  color: $dark-color;
+  //float: right;
   font-size: 28px;
   font-weight: bold;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: $cta-color;
   text-decoration: none;
   cursor: pointer;
 }
 
+.left-child {
+  width: 95%;
+  background-color: lightblue;
+  /* Optional: To allow the content to wrap */
+  white-space: pre-wrap;
+}
+.right-child {
+  width: 5%;
+  background-color: lightcoral;
+}
 
 //-------------------------------------------------
 // Accordian Toggle
 //-------------------------------------------------
 
+
+.accordion {
+  gap:0;
+  font-size: .8rem;
+  > :nth-last-child(2), :last-child {
+    border-bottom: 1px solid $border-color;  }
+}
 
 .accordion .toggle {
   display: none;
@@ -56,10 +84,10 @@
 .accordion .title {
   display: block;
   padding: 10px;
- // background-color: $light-color;
+ background-color: white;
   cursor: pointer;
   margin: 0;  /* Ensure no margin */
-  border-top: 1px solid #ccc; 
+  border-top: 1px solid $border-color; 
   //color: $dark-color;
   transition: background-color 0.3s;  
 }
@@ -71,10 +99,13 @@
 .accordion .expanded-content {
   display: none;
   padding: 10px;
-  //color: $dark-color;
-  //background-color: $light-color;
-  margin: 0;  /* Ensure no margin */
-  margin-bottom:1px solid red;
+  margin: 0; 
+  opacity: .5;
+  padding-left:23px;
+  padding-right:23px;
+  border-left: 1px solid $border-color; 
+  border-right: 1px solid $border-color; 
+
 }
 
 .accordion .toggle:checked + .title + .expanded-content {
@@ -84,19 +115,20 @@
 .accordion .title::before {
   content: "";
   display: inline-block;
-  width: 16px;  /* Adjust width and height according to your image size */
-  height: 16px;
-  background-image: url('../img/general-icons/caret-up-solid.svg');
+  width: 12px;  /* Adjust width and height according to your image size */
+  height: 12px;
+  background-image: url('../img/general-icons/plus-solid.svg');
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;  /* Smooth transition */
   vertical-align: middle;  /* Align with the text */
   margin-right: 10px;  /* Space between the chevron and the text */
   opacity: .7;
+  margin-top:-2px;
 }
 
 .accordion .toggle:checked + .title::before {
-  background-image: url('../img/general-icons/caret-down-solid.svg');
+  background-image: url('../img/general-icons/minus-solid.svg');
 }
 
 //-------------------------------------------------
@@ -148,7 +180,26 @@
 }
 
 
+//-------------------------------------------------
+// testimonials
+//-------------------------------------------------
+.card-split {
+  display: flex;
+  flex-direction: row;
+ font-size: .8em;
+  gap: 1em;
 
+  .text-group {
+    flex-basis: 90%;
+
+  }
+  
+  .image-group {
+    flex-basis: 110px;
+
+  }
+
+}
 //-------------------------------------------------
 // blockquote
 //-------------------------------------------------
@@ -208,7 +259,7 @@ blockquote{
       
 
       //
-      #z-slide-figure {
+      .slide-figure {
         display: flex;
         transition: transform 0.3s ease-in-out;
     }

@@ -121,8 +121,12 @@ $hero-image: url("../website/images/hero.jpg");
 $site-section-padding-top: 50px;
 $site-section-padding-bottom: 50px;
 
-$conent-section-padding-top: 50px;
-$conent-section-padding-bottom: 0;
+//$conent-section-padding-top: 50px;
+//$conent-section-padding-bottom: 0;
+
+//$container-margin: .5em;
+$container-margin: 2em;
+
 
 //set master paddingand margin for all columns
 
@@ -139,7 +143,7 @@ $interactive-card-image-2: "../img/interactive-cards/2.jpg";
 $interactive-card-image-3: "../img/interactive-cards/3.jpg";
 $interactive-card-image-4: "../img/interactive-cards/4.jpg";
 
-
+$border-color:#bbb;
 // z-row override - considering for parent/child idea. kinda sticky tho with the js and stuff. 
 //------------------------------------------ 
 //$z-row-override: z-row;

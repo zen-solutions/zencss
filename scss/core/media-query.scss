@@ -229,11 +229,11 @@ left:10px;
 
 }
 
-// TO DOCUMENT
-.card{
-  margin-left:1.618rem;
-  margin-right:1.618rem;
-}
+// // TO DOCUMENT
+// .card{
+//   margin-left:1.618rem;
+//   margin-right:1.618rem;
+// }
 
 .mobile-square{
   border-radius: 0;
@@ -303,14 +303,20 @@ left:10px;
 .two-up {
   display: flex;
   flex-wrap: wrap;
-  margin: -1em;
 }
 
 .two-up > * {
-  flex: 0 0 48% !important;
-  margin: .3em;
+  flex: 0 0 49.18% !important;
 }
 
+.three-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-up > * {
+  flex: 0 0 32.245% !important
+}
 
 
 .four-up {
@@ -322,29 +328,28 @@ left:10px;
 
 .four-up > * {
   //flex: 0 0 25%; //this ones working without important. why? 
-  flex: 1; //changed to this to get the interactive cards working. test other cards. 
-  //margin: .5em;
-  margin:0; // also changed or interactive cards
+  flex: 1; 
+  margin:0; 
 }
 
 .five-up {
   display: flex;
   flex-wrap: wrap;
-  margin: -1em;
+  //margin: -1em;
 }
 
 .five-up > * {
-  flex: 0 0 18% !important;
-  margin: 0.3em;
+  flex: 0 0 18.69% !important;
+  //margin: 0.3em;
 }
 
 .six-up {
   display: flex;
   flex-wrap: wrap;
-  margin: -1em;
+  //margin: -1em;
 }
 
 .six-up > * {
-  flex: 0 0 15.7% !important;
-  margin: 0.3em;
+  flex: 0 0 14.33% !important;
+    margin: 0.3em;
 }

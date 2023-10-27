@@ -145,9 +145,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // Modal
 //--------------------------------------------------------
 
-var modal = document.getElementById("zModal");
-var btn = document.getElementById("modalBtn");
-var span = document.getElementsByClassName("close")[0];
+var modal = document.querySelector(".modal");
+var btn = document.querySelector(".btn-modal");
+var span = document.querySelector(".close");
 
 if (btn && modal && span) {  // Check if elements exist
     btn.onclick = function() {
@@ -163,92 +163,128 @@ if (btn && modal && span) {  // Check if elements exist
             modal.style.display = "none";  /* Change back to none when closing */
         }
     }
-} 
+}
 
 // ----------------------------------------
 // testimonial slider
 // ----------------------------------------
 
-var slideFigure = document.getElementById('z-slide-figure');
-var slides = document.querySelectorAll('.carousel-slide');
-var totalSlides = slides.length;
-var currentSlide = 1;  // Set the initial slide to the first real slide
-var slideWidth = slides[0].offsetWidth;
+// var slideFigure = document.getElementById('slide-figure');
+// var slides = document.querySelectorAll('.carousel-slide');
+// var totalSlides = slides.length;
+// var currentSlide = 1;  // Set the initial slide to the first real slide
+// var slideWidth = slides[0].offsetWidth;
 
-document.getElementById('prev').addEventListener('click', prevSlide);
-document.getElementById('next').addEventListener('click', nextSlide);
+// document.getElementById('prev').addEventListener('click', prevSlide);
+// document.getElementById('next').addEventListener('click', nextSlide);
 
-function showSlide(index) {
-    slideFigure.style.transition = 'transform 0.3s ease-in-out';
-    slideFigure.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
-}
+// function showSlide(index) {
+//     slideFigure.style.transition = 'transform 0.3s ease-in-out';
+//     slideFigure.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
+// }
 
-function nextSlide() {
-    currentSlide++;
-    showSlide(currentSlide);
-}
+// function nextSlide() {
+//     currentSlide++;
+//     showSlide(currentSlide);
+// }
 
-function prevSlide() {
-    currentSlide--;
-    showSlide(currentSlide);
-}
+// function prevSlide() {
+//     currentSlide--;
+//     showSlide(currentSlide);
+// }
 
-slideFigure.addEventListener('transitionend', function() {
-    slides = document.querySelectorAll('.carousel-slide');  // Update the slides NodeList
-    if (slides[currentSlide].id === 'lastClone') {
-        slideFigure.style.transition = 'none';
-        currentSlide = totalSlides - 1;
-        slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
-        requestAnimationFrame(() => {
-            slideFigure.style.transition = 'transform 0.3s ease-in-out';
-        });
-    } else if (slides[currentSlide].id === 'firstClone') {
-        slideFigure.style.transition = 'none';
-        currentSlide = totalSlides;
-        slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
-        requestAnimationFrame(() => {
-            slideFigure.style.transition = 'transform 0.3s ease-in-out';
-        });
-    }
-});
+// slideFigure.addEventListener('transitionend', function() {
+//     slides = document.querySelectorAll('.carousel-slide');  // Update the slides NodeList
+//     if (slides[currentSlide].id === 'lastClone') {
+//         slideFigure.style.transition = 'none';
+//         currentSlide = totalSlides - 1;
+//         slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
+//         requestAnimationFrame(() => {
+//             slideFigure.style.transition = 'transform 0.3s ease-in-out';
+//         });
+//     } else if (slides[currentSlide].id === 'firstClone') {
+//         slideFigure.style.transition = 'none';
+//         currentSlide = totalSlides;
+//         slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
+//         requestAnimationFrame(() => {
+//             slideFigure.style.transition = 'transform 0.3s ease-in-out';
+//         });
+//     }
+// });
 
 // ----------------------------------------
 // Exit intent
 // ----------------------------------------
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("modalBtn");
-var span = document.getElementsByClassName("close")[0];
-var sevenSecondsPassed = false;  // Flag to check if 7 seconds have passed
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("btn-modal");
+// var span = document.getElementsByClassName("close")[0];
+// var sevenSecondsPassed = false;  // Flag to check if 7 seconds have passed
 
-function showModal() {
-    modal.style.display = "block";
-    document.removeEventListener('mousemove', checkExitIntent);  // Remove the mousemove event listener once the modal is shown
-}
+// function showModal() {
+//     modal.style.display = "block";
+//     document.removeEventListener('mousemove', checkExitIntent);  // Remove the mousemove event listener once the modal is shown
+// }
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// // Timer to check for 7 seconds
+// setTimeout(function() {
+//     sevenSecondsPassed = true;  // Set the flag to true after 7 seconds
+// }, 7000);
+
+// // Exit intent function
+// function checkExitIntent(e) {
+//     if(e.clientY <= 5 && sevenSecondsPassed) {  // Check for exit intent only if 7 seconds have passed
+//         showModal();
+//     }
+// }
+
+// // Exit intent
+// document.addEventListener('mousemove', checkExitIntent);
+
+
+// ----------------------------------------
+// Image Slider/Carousel
+// ---------------------------------------
+
+// Get references to the necessary elements
+var slidesContainer = document.querySelector('.slides-container');
+var prevButton = document.querySelector('.prev');
+var nextButton = document.querySelector('.next');
+
+// Only proceed if all the necessary elements are found
+if (slidesContainer && prevButton && nextButton) {
+    var currentSlide = 0;
+    var totalSlides = document.querySelectorAll('.slides-container img').length;
+
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    function showSlide(index) {
+        var transformValue = 'translateX(' + (-index * 100) + '%)';
+        slidesContainer.style.transform = transformValue;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
     }
 }
 
-// Timer to check for 7 seconds
-setTimeout(function() {
-    sevenSecondsPassed = true;  // Set the flag to true after 7 seconds
-}, 7000);
 
-// Exit intent function
-function checkExitIntent(e) {
-    if(e.clientY <= 5 && sevenSecondsPassed) {  // Check for exit intent only if 7 seconds have passed
-        showModal();
-    }
-}
-
-// Exit intent
-document.addEventListener('mousemove', checkExitIntent);
 
 
 // ----------------------------------------

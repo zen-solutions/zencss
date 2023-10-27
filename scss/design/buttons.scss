@@ -1,7 +1,7 @@
 /* Variables */
 $btn-color: $cta-color;
 $btn-hover-color: darken($cta-color, 20%);
-$border-color:$cta-color;
+
 
 /* Mixin for hover styles */
 @mixin btn-hover($bg-color, $border-color: $bg-color) {
@@ -77,16 +77,16 @@ button.btn-ghost:hover {
 
 //Touts
 .tout{
-  border-radius: 22px;
-  padding: 0.2em 1.1235em;
-  margin: 2px;
+  border-radius: 8px;
+  padding: 0.3em 1em;
+  //margin: 2px;
   overflow: hidden; 
   display: inline-block; 
   line-height: 10px;
   background:$accent-color;
   position: relative;
   font-size: .6rem;
-  margin-bottom: -1px;
+  margin-top: 1px;
 
 
 }
@@ -96,15 +96,15 @@ button.btn-ghost:hover {
   rotate: -45deg;
   height: 35px;
   width: 70px;
-  margin-top: -14px;
-  margin-left: -26px;
+  margin-top: -15px;
+  margin-left: -27px;
   border-radius: 0;
   text-align: center;
 }
 
 .corner-top >*{
   position: relative;
-  bottom: -17px;
+  bottom: -18px;
   left: -5px;
   rotate:(45deg);
 }
@@ -187,5 +187,36 @@ button.btn-ghost:hover {
 
 
 
+//------------------------------------------------
+// Button sizes
+//------------------------------------------------
 
 
+.btn-xl {
+  min-width: 200px;
+  max-width: 200px;
+  font-size: 14px;
+  min-height: 45px;
+}
+
+.btn-lg {
+  min-width: 150px;
+  max-width: 150px;
+  font-size: 14px;
+  min-height: 45px;
+}
+
+.btn-md {
+  min-width: 120px;
+  max-width: 120px;
+  font-size: 14px;
+  min-height: 35px;
+
+}
+
+.btn-sm {
+  min-width: 75px;
+  max-width: 75px;
+  padding: .3em;
+  font-size: 12px;
+}

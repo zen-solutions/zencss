@@ -89,6 +89,25 @@
     font-size: 23px;
 }
 
+// ------------------------------------------ 
+// Special Chars
+//------------------------------------------ 
+
+.tout-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $green;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px; 
+    position:absolute;
+    top:13px;
+    right:13px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
 
 // ------------------------------------------ 
 // Text Type class

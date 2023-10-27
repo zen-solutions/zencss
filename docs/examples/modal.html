@@ -37,18 +37,13 @@
         <z-row>
             <z-col class="m-0 p-0">
 
-                <!-- Trigger/Open The Modal -->
-                <button id="modalBtn">Open Modal</button>
+                <button class="btn-modal">Open Modal</button>
 
-                <!-- The Modal -->
-                <div id="zModal" class="modal">
-
-                    <!-- Modal content -->
+                <div class="modal">
                     <div class="modal-content">
+                        <p class="text">Some text in the Modal..</p>
                         <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
                     </div>
-
                 </div>
 
             </z-col>
@@ -61,15 +56,17 @@
 <z-container>
     <z-row>
         <z-col>
-            <h2>Code Example</h2>
-            <pre class="copy-text bg-opaque">&lt;button id="modalBtn"&gt;Open Modal&lt;/button&gt;
-
-&lt;div id="zModal" class="modal"&gt;
-    &lt;div class="modal-content"&gt;
-        &lt;span class="close"&gt;&times;&lt;/span&gt;
-        &lt;p&gt;Some text in the Modal..&lt;/p&gt;
-    &lt;/div&gt;
+            <h2>Code Examples</h2>
+            <pre class="copy-text bg-opaque">
+&lt;div class="modal"&gt;
+  &lt;div class="modal-content"&gt;
+    &lt;p class="text"&gt;Some text in the Modal..&lt;/p&gt;
+    &lt;span class="close"&gt;&amp;times;&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt; </pre>
+
+           <pre class="copy-text bg-opaque">&lt;button class="btn-modal"&gt;Open Modal&lt;/button&gt;</pre> 
+
                     
         
         </z-col>

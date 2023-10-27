@@ -13,16 +13,16 @@ $zen-large-screen-font-size: 18px;
 
 .zen {
 background:#d7d7d7; 
-background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
-  background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
-  background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
-  background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
-  background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
-  background-image: radial-gradient(center center, cover, white, #c7c7c7);
+// background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
+//   background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
+//   background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
+//   background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
+//   background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
+//   background-image: radial-gradient(center center, cover, white, #c7c7c7);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: $zen-font-size;
   font-weight: 300;
-  line-height: 1.618; // The golden ratio
+  //line-height: 1.618; // The golden ratio. interfered with testimonial/img components
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -100,12 +100,12 @@ background-image: -webkit-gradient(radial, center center, 0, center center, 212,
 
   @media (max-width: 575.98px) {
     font-size: $zen-tablet-mobile-font-size;
-    line-height: 1.6;
+    //line-height: 1.6;
   }
 
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: $zen-tablet-mobile-font-size;
-  line-height: 1.8;
+  //line-height: 1.8;
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {

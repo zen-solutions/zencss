@@ -23,7 +23,6 @@
                 <div class="center">
                     <h1>Accordian</h1>
                     <p>A simple accordian element you can use to display expanded information.</p>
-                    <span class="tout">Dark mode support coming soon</span>
 
                         <hr>
                 </div>
@@ -37,20 +36,19 @@
 
     <z-container>
         <z-row>
-            <z-col >
-                <div class="accordion bg-opaque">
+            <z-col class="accordion">
                     <input type="checkbox" id="toggle1" class="toggle">
                     <label for="toggle1" class="title">This is the title</label>
                     <div class="expanded-content">
                         This expands when clicking the title
                     </div>
-                
+
                     <input type="checkbox" id="toggle2" class="toggle">
                     <label for="toggle2" class="title">This is the title 2</label>
                     <div class="expanded-content">
                         This expands when clicking the title 2
                     </div>
-                
+
                     <input type="checkbox" id="toggle3" class="toggle">
                     <label for="toggle3" class="title">This is the title 3</label>
                     <div class="expanded-content">
@@ -62,9 +60,6 @@
                     <div class="expanded-content">
                         This expands when clicking the title 4
                     </div>
-                </div>
-               
-
             </z-col>
         </z-row>
     </z-container>
@@ -77,29 +72,23 @@
         <z-col>
             <h2>Code Example</h2>
             <pre class="copy-text bg-opaque">
-&lt;div class="accordion bg-opaque"&gt;
+&lt;z-col class="accordion"&gt;
+
     &lt;input type="checkbox" id="toggle1" class="toggle"&gt;
     &lt;label for="toggle1" class="title"&gt;This is the title&lt;/label&gt;
     &lt;div class="expanded-content"&gt;
         This expands when clicking the title
     &lt;/div&gt;
-    
+
     &lt;input type="checkbox" id="toggle2" class="toggle"&gt;
     &lt;label for="toggle2" class="title"&gt;This is the title 2&lt;/label&gt;
     &lt;div class="expanded-content"&gt;
         This expands when clicking the title 2
     &lt;/div&gt;
-    
-    &lt;input type="checkbox" id="toggle3" class="toggle"&gt;
-    &lt;label for="toggle3" class="title"&gt;This is the title 3&lt;/label&gt;
-    &lt;div class="expanded-content"&gt;
-        This expands when clicking the title 3
-    &lt;/div&gt;
-    
-   ...
-   
-&lt;/div&gt;
-            </pre>
+
+    ...
+
+&lt;/z-col&gt;</pre>
         </z-col>
     </z-row>
 </z-container>

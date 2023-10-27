@@ -5,7 +5,7 @@
 z-container, .z-container {
   max-width: 1140px;
   width: 100%;
-  margin: 0 auto;
+  margin: $container-margin auto;
   display: block;
   border-radius: $border-radius;
   display: flex;
@@ -13,14 +13,18 @@ z-container, .z-container {
   flex-grow: 1;
 }
 
+
+
 z-container-fluid, .z-container-fluid,
 .z-col-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-top:$container-margin; //fix
+  padding-bottom:$container-margin; //fix
   display: flex;
   flex-direction: column;
-      flex-grow: 1;
+  flex-grow: 1;
 
 }
 
@@ -35,7 +39,9 @@ z-row, .z-row {
 width:100%;
 flex-wrap: wrap; //nowrap is interesting too
 gap: 1em;
-padding: 1em;
+//padding: 1em;
+padding-top: .5em;
+padding-bottom: .5em;
 }
 
 .z-row-vcenter {

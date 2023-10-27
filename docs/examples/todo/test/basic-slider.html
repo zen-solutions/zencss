@@ -46,7 +46,7 @@
 <button id="next" onclick="nextSlide()">Next</button>
 <script>
     var currentSlide = 0;
-    var totalSlides = document.querySelectorAll('#slide-figure img').length;
+    var totalSlides = document.querySelectorAll('.slide-figure img').length;
     var slideFigure = document.getElementById('slide-figure');
 
     function showSlide(index) {
@@ -60,7 +60,7 @@
         showSlide(currentSlide);
     } else {
         // Clone the first slide and append it to the end
-        var firstSlideClone = document.querySelectorAll('#slide-figure img')[0].cloneNode(true);
+        var firstSlideClone = document.querySelectorAll('.slide-figure img')[0].cloneNode(true);
         slideFigure.appendChild(firstSlideClone);
 
         // Increase the totalSlides count and currentSlide index

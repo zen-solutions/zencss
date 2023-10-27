@@ -1,12 +1,11 @@
-*,
-*::before,
-*::after {
-  //
-}
+// *,
+// *::before,
+// *::after {
+  
+// }
 
 :link {
   color: #3e79d0;
-  //text-decoration: underline;
   //text-decoration: underline;
 
 }
@@ -28,7 +27,7 @@ html {
 .header {
   width: 100%;
   margin: 0 auto;
-  padding: .618rem; // Temp padding
+  padding: .618rem; 
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -40,7 +39,6 @@ html {
   color: $light-color;
 
   button {
-    //background: $light-color;
     color: $dark-color;
     background: $light-color;
     text-decoration: none;
@@ -77,7 +75,6 @@ h1,
 .h1 {
   font-size: 2.2em;
   font-weight: 300;
-  //margin: 0;
   line-height: 1.5em;
 }
 
@@ -100,7 +97,6 @@ h4,
 .h4 {
   font-size: 1.4em;
   font-weight: 300;
- // margin: 0;
   line-height: 1.4em;
 }
 
@@ -108,7 +104,6 @@ h5,
 .h5 {
   font-size: 1.3em;
   font-weight: 300;
-  //margin: 0;
   line-height: 1.35em;
 }
 
@@ -120,10 +115,10 @@ h6,
 }
 
 h1, h2, h3, h4, h5, h6{
-//   margin-block-start: 0;
-//   margin-block-end: 0;
 margin-top:.3em;
 margin-bottom:.3em;
+position: relative;
+z-index: 1000;
 }
 
 p {
@@ -134,14 +129,6 @@ p {
   margin-bottom:.3em;
   position: relative;
   font-weight: 300;
-  
-  //margin-top: -5px;
-  //padding-top: 0.5em !important;
-  //padding-bottom: 0.5em !important;
-  // margin-block-start: 0;
-  // margin-block-end: 0;
-  // //margin-top:1em;
-  // margin-bottom: 1em;
 
 }
 
@@ -171,13 +158,10 @@ hr.top {
   margin-top: .65em;
 }
 
-// nav {
-//   background: $primary-color;
-// }
 
 button {
   text-wrap: pretty;
-  padding: 11px; /* assuming a 1px border on the other button */
+  padding: 11px;
   display: inline-block;
   text-align: center;
   border: none;
@@ -185,55 +169,22 @@ button {
   cursor: pointer;
   border-radius: $border-radius;
   font-size: .8em;
-  //margin:1em;
   margin:5px;
   color: $light-color;
   background: $cta-color;
-  // width: 93%;
-  //   margin: 10px;
+  position: relative;
+  z-index: 1000;
 }
 
  button:hover {
   cursor: pointer;
    background-color: lighten($dark-color, 15%);
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  // transition: box-shadow 0.3s ease-in-out;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  // transition: box-shadow 0.3s ease-in-out;
  }
-
 
 button.bg-cta:hover {
   background: darken($cta-color, 8%);
-}
-
-.btn-xl {
-  min-width: 200px;
-  max-width: 200px;
-  font-size: 14px;
-  min-height: 45px;
-}
-
-.btn-lg {
-  min-width: 150px;
-  max-width: 150px;
-  font-size: 14px;
-  min-height: 45px;
-}
-
-.btn-md {
-  min-width: 120px;
-  max-width: 120px;
-  font-size: 14px;
-  min-height: 35px;
-
-}
-
-.btn-sm {
-  min-width: 75px;
-  max-width: 75px;
-  padding: .3em;
-  font-size: 12px;
 }
 
 z-container,
@@ -247,9 +198,12 @@ z-col,
 img {
   max-width: 100%;
   height: auto;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
+  border-radius: $border-radius;
 }
+
+
 
 header :link {
   text-decoration: none;
@@ -276,14 +230,14 @@ a.swap-underline:hover {
 
 pre {
   padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+margin:10px;
   font-size:.8em;
   background: #eee;
   border-radius: $border-radius;
   box-sizing: border-box;
   width: 100%;
   white-space: pre-wrap;
+  line-height: 30px;
 
 
   // &:before {
@@ -423,7 +377,7 @@ a:hover {
 }
 
 //-----------------------------
-// bg image
+// bg image (old)
 //-----------------------------
 .image-container {
   position: relative;
@@ -440,22 +394,10 @@ a:hover {
 }
 //testimonials
 
-.testimonials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: .7em;
-  gap: 0.2em;
-  box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 
-  .left-group {
-    /* Optional: Margin for spacing between the left and right group */
-    margin-right: 20px;
-    width: 28%;
-    align-self: flex-start;
-  }
-  
-}
+
+
+
 
 .image-text-card {
   display: flex;
@@ -475,11 +417,12 @@ a:hover {
 }
 
 
-#right-group {
+.text-group {
   gap:.3em;
   display: flex;
   flex-direction: column; /* Stacks the elements inside right-group vertically */
-  width: 72%;
+  //width: 72%;
+  flex:4;
 
   .signature{
 font-size: .7em;

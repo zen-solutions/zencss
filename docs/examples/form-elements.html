@@ -33,7 +33,7 @@
 <z-container>
     <z-row>
         <z-col>
-          <div class="form-container theme-primary optin">  
+          <div class="form-container theme-light">  
             <form>
                 <h3>Contact Form</h3>
                 <p>An amazing tagline goes here</p>
@@ -50,92 +50,51 @@
                     <label for="tel1">Your Phone Number</label>
                   </div>
                 <button name="submit" type="submit">Submit</button>
+                <small class="form-footer"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
               </form>
           </div>
         </z-col>
-        <z-col>
-          <div class="form-container theme-light optin">  
-            <form>
-                <h3>Contact Form</h3>
-                <p>An amazing tagline goes here</p>
-                <div>
-                  <input type="text" id="name2" placeholder=" ">
-                  <label for="name2">Name</label>
-                </div>
-                <div>
-                    <input type="email" id="email2" placeholder=" ">
-                    <label for="email2">Email</label>
-                  </div>
-                  <div>
-                    <input type="tel" id="tel2" placeholder=" ">
-                    <label for="tel2">Your Phone Number</label>
-                  </div>
-                <button name="submit" type="submit">Submit</button>
-              </form>
-          </div>
-        </z-col>
-        <z-col>
-          <div class="form-container theme-dark optin">  
-            <form>
-                <h3>Contact Form</h3>
-                <p>An amazing tagline goes here</p>
-                <div>
-                  <input type="text" id="name3" placeholder=" ">
-                  <label for="name3">Name</label>
-                </div>
-                <div>
-                    <input type="email" id="email3" placeholder=" ">
-                    <label for="email3">Email</label>
-                  </div>
-                  <div>
-                    <input type="tel" id="tel3" placeholder=" ">
-                    <label for="tel3">Your Phone Number</label>
-                  </div>
-                <button name="submit" type="submit">Submit</button>
-              </form>
-          </div>
-        </z-col>
+       
+      <z-col class="card bg-opaque feature">
+        <h2>Code Example</h2>
+        <pre class="copy-text bg-opaque">
+&lt;div class="form-container theme-primary"&gt;  
+&lt;form&gt;
+  &lt;h3&gt;Contact Form&lt;/h3&gt;
+  &lt;p&gt;An amazing tagline goes here&lt;/p&gt;
+  &lt;div&gt;
+    &lt;input type="text" id="name" placeholder=" "&gt;
+    &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="email" id="email" placeholder=" "&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="tel" id="tel" placeholder=" "&gt;
+    &lt;label for="tel"&gt;Your Phone Number&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button name="submit" type="submit"&gt;Submit&lt;/button&gt;
+  &lt;small class="form-footer"&gt;
+    &lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and
+    &lt;a href="#"&gt;Terms of Service&lt;/a&gt;
+  &lt;/small&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+</pre>
+    </z-col>
     </z-row>
 </z-container>
 
 <!----------------------------------------------------------------------->
 <!--- Code Block  --->
 <!----------------------------------------------------------------------->
-<z-container>
-  <z-row>
-      <z-col>
-          <h2>Code Example</h2>
-          <pre class="copy-text bg-opaque">
-&lt;div class="form-container theme-primary"&gt;  
-  &lt;form&gt;
-    &lt;h3&gt;Contact Form&lt;/h3&gt;
-    &lt;p&gt;An amazing tagline goes here&lt;/p&gt;
-    &lt;div&gt;
-      &lt;input type="text" id="name" placeholder=" "&gt;
-      &lt;label for="name"&gt;Name&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="email" id="email" placeholder=" "&gt;
-      &lt;label for="email"&gt;Email&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;input type="tel" id="tel" placeholder=" "&gt;
-      &lt;label for="tel"&gt;Your Phone Number&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;button name="submit" type="submit"&gt;Submit&lt;/button&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
-          </pre>
-      </z-col>
-  </z-row>
-</z-container>
-
 
 
     <z-container>
         <z-row>
-            <z-col class="theme-primary">
-                <form>
+            <z-col class="card theme-light">
+                <form class="mt-0">
                     <div>
                     <p>
                       <label>
@@ -185,115 +144,7 @@
                         <textarea></textarea>
                       </label>
                     </p>
-                    <p>
-                      <label>
-                        date<br>
-                      <input type="date">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        datetime<br>
-                      <input type="datetime">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        datetime-local<br>
-                      <input type="datetime-local">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        month<br>
-                      <input type="month">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        week<br>
-                      <input type="week">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        time<br>
-                      <input type="time">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        select<br>
-                        <select>
-                          <optgroup label="optgroup">
-                            <option>option 1</option>
-                            <option>option 2</option>
-                            <option>option 3</option>
-                          </optgroup>
-                        </select>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        radio
-
-                      <input type="radio">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        checkbox
-
-                      <input type="checkbox">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        color picker
-
-                      <input type="color">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        range slider<br>
-
-                      <input type="range">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        file upload<br>
-
-                      <input type="file">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        submit<br>
-                      <input type="submit">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        reset<br>
-                      <input type="reset">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        button (input tag)<br>
-                      <input type="button" value="Button">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        button (button tag)<br>
-                        <button>Button</button>
-                      </label>
-                    </p>
+                    
                     </div>
 
                   </form>
@@ -301,57 +152,10 @@
 
 
 
-            <z-col class="theme-dark">
+            <z-col class="card  theme-light">
                 <form>
                     <div>
-                    <p>
-                      <label>
-                        text<br>
-                      <input type="text">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        password<br>
-                      <input type="password">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        number<br>
-                      <input type="number">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        email<br>
-                      <input type="email">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        url<br>
-                      <input type="url">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        tel<br>
-                      <input type="tel">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        search<br>
-                      <input type="search">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        textarea<br>
-                        <textarea></textarea>
-                      </label>
-                    </p>
+                   
                     <p>
                       <label>
                         date<br>
@@ -416,54 +220,7 @@
                       <input type="checkbox">
                       </label>
                     </p>
-                    <p>
-                      <label>
-
-                        color picker
-
-                      <input type="color">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        range slider<br>
-
-                      <input type="range">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        file upload<br>
-
-                      <input type="file">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        submit<br>
-                      <input type="submit">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        reset<br>
-                      <input type="reset">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        button (input tag)<br>
-                      <input type="button" value="Button">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        button (button tag)<br>
-                        <button>Button</button>
-                      </label>
-                    </p>
+                   
                     </div>
 
                   </form>
@@ -472,121 +229,9 @@
 
 
 
-            <z-col class="theme-light">
+            <z-col class="card theme-light">
                 <form>
-                    <div>
-                    <p>
-                      <label>
-                        text<br>
-                      <input type="text">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        password<br>
-                      <input type="password">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        number<br>
-                      <input type="number">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        email<br>
-                      <input type="email">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        url<br>
-                      <input type="url">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        tel<br>
-                      <input type="tel">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        search<br>
-                      <input type="search">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        textarea<br>
-                        <textarea></textarea>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        date<br>
-                      <input type="date">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        datetime<br>
-                      <input type="datetime">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        datetime-local<br>
-                      <input type="datetime-local">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        month<br>
-                      <input type="month">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        week<br>
-                      <input type="week">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        time<br>
-                      <input type="time">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        select<br>
-                        <select>
-                          <optgroup label="optgroup">
-                            <option>option 1</option>
-                            <option>option 2</option>
-                            <option>option 3</option>
-                          </optgroup>
-                        </select>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        radio
-
-                      <input type="radio">
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-
-                        checkbox
-
-                      <input type="checkbox">
-                      </label>
-                    </p>
+                 
                     <p>
                       <label>
 

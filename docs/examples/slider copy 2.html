@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<style>
+    .slider {
+        overflow: hidden;
+        width: 100%;
+    }
+    .slides-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slides-container img {
+        min-width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides-container">
+        <img src="../../img/placeholder/CesarCouto.png" alt>
+        <img src="../../img/placeholder/fernando-jorge.jpg" alt>
+        <img src="../../img/placeholder/scottwebb.png" alt>
+        <img src="../../img/placeholder/SimonBerger.png" alt>
+    </div>
+</div>
+<button class="prev">Prev</button>
+<button class="next">Next</button>
+
+<script>
+    var currentSlide = 0;
+    var slidesContainer = document.querySelector('.slides-container');
+    var totalSlides = document.querySelectorAll('.slides-container img').length;
+
+    document.querySelector('.prev').addEventListener('click', prevSlide);
+    document.querySelector('.next').addEventListener('click', nextSlide);
+
+    function showSlide(index) {
+        var transformValue = 'translateX(' + (-index * 100) + '%)';
+        slidesContainer.style.transform = transformValue;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+</script>
+
+</body>
+</html>
