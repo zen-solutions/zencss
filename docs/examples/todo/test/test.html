@@ -123,7 +123,7 @@ pre[class*="language-"] > code[data-language]{
         &lt;a data-tabs-tab&gt;Tab Three&lt;/a&gt;  
       &lt;/div&gt;
       &lt;span data-tabs-indicator&gt;
-    &lt;/nav&gt;</code></pre>
+    &lt;/nav&gt;</code></code></pre>
         </p>
         <p>
             Then we add a bit of CSS to the <code>data-tabs</code> and <code>data-tabs-indicator</code>:
@@ -140,7 +140,7 @@ pre[class*="language-"] > code[data-language]{
       background-color: rgb(255,87,34);
       -webkit-transition: all .5s;
       transition: all .5s;
-    }</code></pre>
+    }</code></code></pre>
         </p>
         <p>
             Add this jQuery function to your app:
@@ -194,14 +194,14 @@ pre[class*="language-"] > code[data-language]{
           });
         });
       }
-    }(jQuery));</code></pre>
+    }(jQuery));</code></code></pre>
         </p>
         <p>
             Now it's time to start all the things and relax the rest of the day..:
             <pre class="language-javascript">
     <code>$(document).ready(function(){
       $('[data-tabs]').jTabs();
-    });</code></pre>
+    });</code></code></pre>
         </p>
         <p>
             If you want more than a switching indicator, you could listen to the <code>tabChange</code> event and play around c:
@@ -213,7 +213,7 @@ pre[class*="language-"] > code[data-language]{
         //load data via ajax or make some other cool things
         console.log('load page '+$trigger.attr('href'));
       });
-    });</code></pre>
+    });</code></code></pre>
         </p>
         <p>
             You can also manually update the indicator by <code>jTabs.update()</code> or trigger one tab manually by <code>jtabs.change($newTab)</code>.<br>
@@ -225,7 +225,7 @@ pre[class*="language-"] > code[data-language]{
     
     //we want to change the current tab to the last tab
     $('[data-tabs]').jTabs.change($('a[data-tabs-tab]:last-child'));
-    </code></pre>
+    </code></code></pre>
         </p>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>

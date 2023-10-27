@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/mobile-menu.css">
         <link rel="stylesheet" href="css/documentation.css">
         <link rel="stylesheet" href="../css/zen.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 
 </head>
 
@@ -387,12 +388,11 @@
                                                 Let's begin with a straightforward example of our signature grid layout for a site section using semantic HTML:
                                         </p>
 
-                                        <pre class="copy-text bg-opaque not-important">
-&lt;main <span class="text-dark-green">class="z-container"</span>&gt;
+                                        <pre class="copy-text"><code class="language-html">&lt;main <span class="text-dark-green">class="z-container"</span>&gt;
   &lt;section <span class="text-blue">class="z-row"</span>&gt;
     &lt;div <span class="text-red">class="z-col"</span>&gt; ... &lt;/div&gt;
   &lt;/section&gt;
-&lt;/main&gt;</pre>
+&lt;/main&gt;</code></pre>
                                 </z-col>
                         </z-row>
 
@@ -404,12 +404,11 @@
                                                 <p>
                                                         If brevity appeals to you, meet <a href="examples/zentax.html">Zentax</a>, our shorthand HTML syntax that halves your coding effort:
                                                 </p>
-                                                <pre class="copy-text bg-opaque text-dark-green">
-&lt;z-container&gt;
+                                                <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
   <span class="text-blue">&lt;z-row&gt;</span>
     <span class="text-red">&lt;z-col&gt; <span class="text-grey-3">... </span>&lt;/z-col&gt;</span>
   <span class="text-blue">&lt;/z-row&gt;</span>
-&lt;/z-container&gt;</pre>
+&lt;/z-container&gt;</code></pre>
                                         </z-col>
                                 </z-row>
 
@@ -566,11 +565,11 @@
                                         </z-row>
                                         <z-row>
                                                 <z-col>
-                                                        <pre class="copy-text bg-opaque not-important">&lt;z-container&gt;
+                                                        <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
   &lt;z-row <span class="text-dark-green">class="default-primary"</span>&gt;
             ...    
   &lt;/z-row&gt;
-&lt;/z-container&gt;</pre>
+&lt;/z-container&gt;</code></pre>
                                                 </z-col>
                                         </z-row>
 
@@ -686,7 +685,7 @@
                                         </z-row>
                                         <p>Utilize zenCSS color classes to easily customize the background colors of HTML elements according to your design requirements. For instance, altering the background, text, or theme of code snippets is as simple as applying a class like theme-dark.
                                         </p>
-                                        <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</pre>
+                                        <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</code></pre>
 
                                 </z-col>
                         </z-row>
@@ -792,7 +791,7 @@
                                                 </div>
                                         </div>
 
-                                        <pre class="copy-text bg-opaque"> &lt;p class="z-col bold center bigger"&gt;bold, centered, bigger text element&lt;/p&gt;</pre>
+                                        <pre class="copy-text"><code class="language-html"> &lt;p class="z-col bold center bigger"&gt;bold, centered, bigger text element&lt;/p&gt;</code></pre>
 
                                 </z-col>
                         </z-row>
@@ -864,8 +863,8 @@
                                         <p>Get zenCSS up and running on your site by linking to our CSS file in the HTML head section, and including the zencss.js file just before the closing body tag.
 
                                         </p>
-                                        <pre class="copy-text bg-opaque not-important">&lt;link rel="stylesheet" <span class="text-dark-green">href="path-to/zen.css"</span>&gt;</pre>
-                                        <pre class="copy-text bg-opaque not-important">&lt;script <span class="text-dark-green">src="path-to/zencss.js"</span>&gt;&lt;/script&gt;</pre>
+                                        <pre class="copy-text"><code class="language-html">&lt;link rel="stylesheet" <span class="text-dark-green">href="path-to/zen.css"</span>&gt;</code></pre>
+                                        <pre class="copy-text"><code class="language-html">&lt;script <span class="text-dark-green">src="path-to/zencss.js"</span>&gt;&lt;/script&gt;</code></pre>
 
                                         <h2 class="mt-3">Usage</h2>
 
@@ -874,18 +873,16 @@
 
                                         <p><b>Globally:</b> Declare zen on your body to apply zenCSS site-wide.
                                         </p>
-                                        <pre class="copy-text bg-opaque">
-&lt;body class="zen"&gt; 
+                                        <pre class="copy-text"><code class="language-html">&lt;body class="zen"&gt; 
 ...
-&lt;/body&gt;</pre>
+&lt;/body&gt;</code></pre>
 
                                         <p class="mt-3"><b>Mix in:</b> Invoke zen on any HTML element to harness zenCSS's power locally, without disrupting existing elements.
                                         </p>
-                                        <pre class="copy-text bg-opaque">
-&lt;section class="zen"&gt; 
+                                        <pre class="copy-text"><code class="language-html">&lt;section class="zen"&gt; 
 ...
 &lt;/section&gt;
-</pre>
+</code></pre>
 
 
                                 </z-col>
@@ -992,6 +989,7 @@
         <script src="../docs/js/hp.js"></script>
         <script src="../js/zencss.js"></script>
         <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
         <!--script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script-->
 
 </body>
