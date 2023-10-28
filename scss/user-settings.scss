@@ -94,9 +94,9 @@ $text-default: $light-color;
 // Rounded corners
 //------------------------------------------ 
 
-$border-radius: 4px; //on
+//$border-radius: 4px; //on
 
-//$border-radius: 0; //off
+$border-radius: 4px; //off
 
 
 //------------------------------------------ 
@@ -106,7 +106,7 @@ $border-radius: 4px; //on
 $hero-image: url("../website/images/hero.jpg");
 
 
-
+$light-ui-hover-color:#eee;
 
 //------------------------------------------ 
 // Experimental

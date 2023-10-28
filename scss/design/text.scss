@@ -58,7 +58,8 @@
 
 
 .small {
-    font-size: .8em;
+    line-height: 1.4em;
+    font-size: .8em !important;
     //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
 
 }

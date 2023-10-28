@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6{
 margin-top:.3em;
 margin-bottom:.3em;
 position: relative;
-z-index: 1000;
+z-index: 2;
 }
 
 p {
-  font-size: .9em;
+  //font-size: .9em;
   line-height: 2em;
   letter-spacing: .02em;
   margin-top:.3em;
@@ -175,6 +175,7 @@ hr.top {
 button {
   text-wrap: pretty;
   padding: 11px;
+  margin:.2em;
   display: inline-block;
   text-align: center;
   border: none;
@@ -182,10 +183,8 @@ button {
   cursor: pointer;
   border-radius: $border-radius;
   font-size: .8em;
-  // margin:5px;
   color: $light-color;
   background: $cta-color;
-  //position: relative;
   z-index: 1000;
 }
 
@@ -244,7 +243,6 @@ a.swap-underline:hover {
 
 pre {
   padding: 20px;
-margin:10px;
   font-size:.8em;
   background: #eee;
   border-radius: $border-radius;
@@ -254,9 +252,6 @@ margin:10px;
   line-height: 30px;
   font-family: Consolas,Monaco,'Andale Mono',monospace;
 
-  // &:before {
-  //   border-top: 4px solid red;
-  // }
 }
 
 .not-important{
@@ -268,7 +263,7 @@ textarea,
 button[type="submit"] {
   font-family: $font-family;  
   width: 100%;  
-  min-height: 30px;
+  min-height: 35px;
   border: 0;
   padding: 5px;
 }
@@ -353,41 +348,26 @@ input[type="submit"]{
 
 //webkit etc stuff
 a:-webkit-any-link {
-  text-decoration: none;
-
-
-}
-
-a:-webkit-any-link :hover{
-  text-decoration: none;
-
-
-}
-
-a:-webkit-any-link :hover{
   text-decoration: underline;
 
+
 }
+
+a:-webkit-any-link :none{
+  text-decoration: underline;
+}
+
+
 // Normal link styles. replace w :link? deal w specificity
 a {
-  color: #3e79d0;
+  color: #1f77d5;
   cursor: pointer;
-  //font-weight: bold;
-
-
-}
-// Normal link styles. replace w :link? deal w specificity
-a {
-  color: #3e79d0;
-  cursor: pointer;
-  //font-weight: bold;
-
+  text-decoration: underline;
 }
 
+
 a:hover {
- text-decoration: underline;
-a:hover {
- text-decoration: underline;
+ color: #1f4e81;
 }
 
 //-----------------------------
@@ -403,15 +383,9 @@ a:hover {
 }
 
 
-.card{
-  box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
-}
+
+
 //testimonials
-
-
-
-
-
 
 .image-text-card {
   display: flex;
@@ -422,27 +396,23 @@ a:hover {
   box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 
   .left-group {
-    /* Optional: Margin for spacing between the left and right group */
     margin-right: 20px;
     width: 28%;
     align-self: center;
   }
-  
+
 }
 
 
 .text-group {
   gap:.3em;
   display: flex;
-  flex-direction: column; /* Stacks the elements inside right-group vertically */
-  //width: 72%;
+  flex-direction: column; 
   flex:4;
 
   .signature{
 font-size: .7em;
 font-style: italic;
+margin-top:5px;
   }
-  
 }
-}
-

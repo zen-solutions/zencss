@@ -1,6 +1,77 @@
 @use "sass:math";
 
 
+.two-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-up > * {
+  flex: 0 0 49.18% !important;
+}
+
+.three-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-up > * {
+  flex: 0 0 32.245% !important
+}
+
+
+.four-up {
+  display: flex;
+  flex-wrap: wrap;
+  //margin: -1em;
+  gap: 1em;
+}
+
+.four-up > * {
+  //flex: 0 0 25%; //this ones working without important. why? 
+  flex: 1; 
+  //margin:0; 
+}
+
+.five-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.five-up > * {
+  flex: 0 0 18.737% !important;
+}
+
+.six-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.six-up > * {
+  flex: 0 0 15.35% !important;
+   margin: 0;
+}
+
+.seven-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seven-up > * {
+  flex: 1 0 12.93% !important;
+}
+
+
+.eight-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eight-up > * {
+  flex: 0 0 11.119% !important;
+}
+
+
 
 
 //---------------------------------------------
@@ -230,19 +301,23 @@ left:10px;
 }
 
 // // TO DOCUMENT
-// .card{
-//   margin-left:1.618rem;
-//   margin-right:1.618rem;
-// }
+.card, .card-split{
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 .mobile-square{
   border-radius: 0;
 }
 
-
 }
 
-
+@media (max-width: 1199px) {
+  .eight-up > * {
+    flex: 0 0 23.751% !important;
+  }
+  
+}
 
 @media (max-width: 992px) {
 
@@ -254,13 +329,6 @@ left:10px;
   .reverse-tablet> :nth-z-col(2) {
     order: 1;
   }
-
-  //Grid - convert all rows to columns for sm. tablet/mobile. 
-  //TODO: consider converting to flex for consistency. 
-  
-  // .one-up, .two-up, .three-up, .four-up, .five-up, .six-up, .seven-up, .eight-up{
-  //   grid-template-columns: repeat(1, 1fr);
-  // }
 
 }
 
@@ -290,90 +358,4 @@ left:10px;
 
 
 
-
-
-
-
-
-//the overrides for one up two etc
-//these are only important bc we havent tracked down why important is need for the calc functions for zcol. 
-//solve for that, and we should be zen to remove importnat from these. 
-//sometimes you have to make a mess to make progress. 
-
-.two-up {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.two-up > * {
-  flex: 0 0 49.18% !important;
-}
-
-.three-up {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.three-up > * {
-  flex: 0 0 32.245% !important
-}
-
-
-.four-up {
-  display: flex;
-  flex-wrap: wrap;
-  //margin: -1em;
-  gap: 1em;
-}
-
-.four-up > * {
-  //flex: 0 0 25%; //this ones working without important. why? 
-  flex: 1; 
-  //margin:0; 
-}
-
-.five-up {
-  display: flex;
-  flex-wrap: wrap;
-  //margin: -1em;
-}
-
-.five-up > * {
-  flex: 0 0 18.69% !important;
-  //margin: 0.3em;
-}
-
-.six-up {
-  display: flex;
-  flex-wrap: wrap;
-  //margin: -1em;
-}
-
-.six-up > * {
-  flex: 0 0 15.35% !important;
-   margin: 0;
-}
-
-.seven-up {
-  display: flex;
-  flex-wrap: wrap;
-  //margin: -1em;
-}
-
-.seven-up > * {
-  flex: 1 0 12.93% !important;
-    //margin: 0.3em;
-}
-
-
-.eight-up {
-  display: flex;
-  flex-wrap: wrap;
-  //margin: -1em;
-}
-
-.eight-up > * {
-  flex: 0 0 10.174% !important;
-    //margin: 0.3em;
-}
 

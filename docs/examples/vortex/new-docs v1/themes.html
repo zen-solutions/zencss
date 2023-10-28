@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Documentation - Color</title>
+
+</head>
+<body>
+  <!-- DONT EDIT ABOVE HERE -->
+
+
+    
+<h2>Themes</h2>
+
+<p>ZenCSS offers a range of theme customization options to provide a unique look and feel for your UI. Themes are defined under the <code>$themes</code> map and can be customized further with the provided classes.</p>
+
+<h3>Defining Themes:</h3>
+<p>Define themes using the <code>$themes</code> map and specify colors for each theme.</p>
+<pre class="copy-text"><code class="language-css">
+$themes: (
+  primary: $light-color,
+  dark: $light-color,
+  secondary: $secondary-color
+);
+</code></pre>
+
+<h3>Theme Classes:</h3>
+<p>Use theme classes to apply styles based on the defined themes.</p>
+<pre class="copy-text"><code class="language-css">
+.theme-primary {
+  background: $primary-color;
+  color: $light-color;
+}
+
+.theme-dark {
+  background: #505050;
+  color: #f4f4f4;
+}
+
+.theme-secondary {
+  background: $secondary-color;
+  color: #f4f4f4;
+}
+/* ... and so on for other themes ... */
+</code></pre>
+
+<h3>Accent Classes:</h3>
+<p>Apply accent styles to elements within a theme.</p>
+<pre class="copy-text"><code class="language-css">
+.theme-dark.accent-left {
+  border-left: 10px solid $primary-color;
+}
+
+.theme-secondary.accent-left {
+  border-left: 10px solid $cta-color;
+}
+/* ... and so on for other accent classes ... */
+</code></pre>
+
+<h3>Form Styles within Themes:</h3>
+<p>Style form elements based on the theme applied.</p>
+<pre class="copy-text"><code class="language-css">
+.theme-light form label {
+    color: $light-color;
+}
+
+.theme-dark button {
+    background: $light-color;
+    color: $dark-color;
+}
+/* ... and so on for other form styling within themes ... */
+</code></pre>
+
+
+<!-- DONT EDIT BELOW HERE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+</body>
+</html>

@@ -17,15 +17,22 @@
 $themes: (
   primary: $light-color,
   dark: $light-color,
-    // Assuming you have a $dark-color variable
-  secondary: $secondary-color  // Assuming you have a $secondary-color variable
+  light: $light-color,
+  cta: $light-color,
+  accent: $light-color,
+  secondary: $secondary-color  
 );
 
 @each $theme, $color in $themes {
+
+
   .theme-#{$theme} {
     form label {
       color: $color;
     }
+
+      box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
+
     
   }
 }
@@ -295,4 +302,3 @@ $themes: (
 
 
 }
-

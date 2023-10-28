@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
     <link rel="stylesheet" href="../css/documentation.css">
-    <link rel="stylesheet" href="../../css/zen.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -23,7 +24,7 @@
             <z-col class="pb-0">
                 <div class="center">
                     <h1> Cards</h1>
-                    <p>The card is the basis for many designs. </p>
+                    <p>Image/Text and background image/text cards. </p>
                         <hr>
                 </div>
             </z-col>
@@ -34,64 +35,87 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
-<z-container>
-    <z-row>
-        <z-col class="card theme-light square">
-            <img src="../../img/placeholders/16x9.jpg" class=" square">
-           <h2>card title</h2>
-           <p>lorem ipsum dolor</p>
-        </z-col>
 
-        <z-col class="feature">
-            <h2>Code Example</h2>
-           <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-primary"&gt;
+    <z-container>
+        <z-row>
+            <z-col class="card theme-primary">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+
+              <z-col class="card theme-light">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+
+              <z-col class="card theme-dark">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="card">
+                <h2>Code Example</h2>
+                <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-primary"&gt;
   &lt;img src="16x9.jpg"&gt;
-  &lt;h2&gt;card title&lt;/h2&gt;
-  &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
-&lt;/z-col&gt;</code></pre></z-col>
-       </z-col>
-   </z-row>
-</z-container>
-
-<z-container>
-    <z-row>
-        <z-col class="card square">
-            <img src="../../img/placeholders/16x9.jpg" class="img-bg square">
-           <h2>card title</h2>
-           <p>lorem ipsum dolor</p>
-        </z-col>
-
-        <z-col class="feature">
-            <h2>Code Example</h2>
-           <pre class="copy-text"><code class="language-html">&lt;z-col class="card"&gt;
-  &lt;img src="16x9.jpg" class="img-bg"&gt;
-  &lt;h2&gt;card title&lt;/h2&gt;
+  &lt;h4&gt;card title&lt;/h4&gt;
   &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
 &lt;/z-col&gt;</code></pre>
-       </z-col>
-   </z-row>
-</z-container>
-
-<z-container>
-    <z-row>
-        <z-col class="card theme-light  square">
-            <img src="../../img/placeholders/16x9.jpg" class="img-full square">
-            <img src="../../img/placeholders/16x9.jpg"> <!-- temp hack -->
-           <h2>card title</h2>
-           <p>lorem ipsum dolor</p>
-        </z-col>
-
-       <z-col class="feature">
-           <h2>Code Example</h2>
-           <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-light"&gt;
+            </z-col>
+        </z-row>
+<z-row>
+    <z-col><hr>
+    </z-col>
+</z-row>
+        <!--z-row>
+            <z-col class="card theme-light square">
+                <img src="../../img/placeholders/16x9.jpg" class="img-full square">
+               <h4>card title</h4>
+               <p>lorem ipsum dolor</p>
+            </z-col>
+           
+            <z-col class="card">
+                <h2>Code Example</h2>
+                <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-light"&gt;
   &lt;img src="16x9.jpg" class="img-full"&gt;
-  &lt;img src="16x9.jpg"&gt; &lt;!-- temp hack --&gt;
-  &lt;h2&gt;card title&lt;/h2&gt;
+  &lt;h4&gt;card title&lt;/h4&gt;
   &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
 &lt;/z-col&gt;</code></code></pre>
-       </z-col>
-   </z-row>
-</z-container>
+            </z-col>
+        </z-row-->
+        <z-row>
+            <z-col class="card theme-light square">
+                <img src="../../img/placeholders/16x9.jpg" class="img-bg square">
+                <h4>card title</h4>
+                <p>lorem ipsum dolor</p>
+            </z-col>
+            <z-col class="card theme-light square">
+                <img src="../../img/placeholders/16x9.jpg" class="img-bg square">
+                <h4>card title</h4>
+                <p>lorem ipsum dolor</p>
+            </z-col>
+            <z-col class="card theme-light square">
+                <img src="../../img/placeholders/16x9.jpg" class="img-bg square">
+                <h4>card title</h4>
+                <p>lorem ipsum dolor</p>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="card">
+                <h2>Code Example</h2>
+                <pre class="copy-text"><code class="language-html">&lt;z-col class="card"&gt;
+  &lt;img src="16x9.jpg" class="img-bg"&gt;
+  &lt;h4&gt;card title&lt;/h4&gt;
+  &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
+&lt;/z-col&gt;</code></pre>
+            </z-col>
+        </z-row>
+    </z-container>
+
+
 
 
 

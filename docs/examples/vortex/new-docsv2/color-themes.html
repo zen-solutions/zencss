@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Documentation - Color</title>
+
+</head>
+<body>
+    
+<h1>Color Themes</h1>
+
+<p>The Color Themes section introduces a mechanism to easily switch between different color schemes in your project. These themes affect various UI elements including forms, buttons, and more. The themes are defined using a Sass map and are applied using classes.</p>
+
+<h2>Theme Definition</h2>
+<p>Themes are defined in the <code>$themes</code> map. Each theme has a name and associated color. Here’s an example of how themes are defined:</p>
+<pre class="copy-text"><code class="language-html">
+$themes: (
+  primary: $light-color,
+  dark: $light-color,  // Assuming you have a $dark-color variable
+  secondary: $secondary-color  // Assuming you have a $secondary-color variable
+);
+</code></pre>
+
+<h2>Applying Themes</h2>
+<p>Themes are applied using classes. The class name is prefixed with <code>.theme-</code> followed by the theme name. For example, <code>.theme-primary</code>, <code>.theme-dark</code>, and <code>.theme-secondary</code>.</p>
+
+<h2>Form Label Styling</h2>
+<p>Form labels are styled based on the applied theme:</p>
+<pre class="copy-text"><code class="language-html">
+@each $theme, $color in $themes {
+  .theme-#{$theme} {
+    form label {
+      color: $color;
+    }
+  }
+}
+</code></pre>
+
+<h2>Accent Border</h2>
+<p>Accent borders can be applied on the left side of elements using the <code>.accent-left</code> class along with the theme class. Here are examples of how these classes are defined:</p>
+<pre class="copy-text"><code class="language-html">
+.theme-dark.accent-left{
+  border-left:10px solid $primary-color;
+}
+
+.theme-secondary.accent-left{
+  border-left:10px solid $cta-color;
+}
+
+.theme-cta.accent-left{
+  border-left:10px solid $secondary-color;
+}
+
+.theme-light.accent-left{
+  border-left:10px solid $accent-color;
+}
+</code></pre>
+
+<h2>Background and Text Color</h2>
+<p>Background and text colors are styled based on the applied theme:</p>
+<pre class="copy-text"><code class="language-html">
+.theme-light {
+  background: rgba(255, 255, 255, 0.4);
+  color:$dark-color;
+  border: $accent-color;
+}
+
+.theme-dark {
+  background: #505050;
+  color: #f4f4f4;
+}
+
+.theme-secondary {
+  background: $secondary-color;
+  color: #f4f4f4;
+}
+
+.theme-accent {
+  background: $accent-color;
+  color: $dark-color;
+}
+
+.theme-cta {
+  background: $cta-color;
+  color: #f4f4f4;
+}
+
+.theme-primary {
+  background: $primary-color;
+  color: $light-color;
+}
+</code></pre>
+
+
+<!-- More sections follow, describing each variable and providing examples where necessary. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+</body>
+</html>
