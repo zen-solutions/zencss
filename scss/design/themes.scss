@@ -37,37 +37,17 @@ $themes: (
   }
 }
 
-.theme-dark.accent-left{
-  border-left:10px solid $primary-color;
-}
-
-.theme-secondary.accent-left{
-  border-left:10px solid $cta-color;
-}
-
-.theme-cta.accent-left{
-  border-left:10px solid $secondary-color;
-}
-
-.theme-light.accent-left{
-  border-left:10px solid $accent-color;
-}
 
 ///----------------------------------------------
 // Light
 //----------------------------------------------
 
 .theme-light {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   overflow: hidden;
   border-radius: $border-radius;
-  color:$dark-color;
+  //color:$dark-color;
   border: $accent-color;
-
-
-  .z-col, z-col {
-   // margin: 0; // y you in theme class?
-  }
 
 
   .tout {
@@ -75,23 +55,35 @@ $themes: (
     color: $dark-color;
   }
 
-    //button not working
-     button{
-       background:$dark-color;
-       color: $light-color;
-     }
-     
-     button:hover {
-      background: darken($primary-color, 10%);
-    }
+  //for buttons inside theme light
+  button {
+    background:$cta-color;
+    color: $light-color;
+  }
   
-    // .theme-light button:hover {
+  button:hover {
+   background: darken($cta-color, 10%);
+   color: $light-color;
+ }
 
-    // }
-  
-    
 }
+  //for buttons specified w class theme light - messy
+button.theme-light {
+      background:$cta-color;
+      color: $light-color;
+    }
+    
+    button.theme-light:hover {
+     background: darken($cta-color, 10%);
+     color: $light-color;
+   }
 
+   //dark theme variation per theme
+//not for light but might need for when you need to switch font color by default, 
+  //  body.zen.zen-dark .theme-light, 
+  //  body.zen.zen-dark .theme-light * {
+  //      color: #f0f0f0 !important;
+  //  }
 
 ///----------------------------------------------
 // Dark
@@ -302,3 +294,24 @@ $themes: (
 
 
 }
+
+///----------------------------------------------
+// WIP/Experimental - Accents
+//----------------------------------------------
+
+.theme-dark.accent-left{
+  border-left:10px solid $primary-color;
+}
+
+.theme-secondary.accent-left{
+  border-left:10px solid $cta-color;
+}
+
+.theme-cta.accent-left{
+  border-left:10px solid $secondary-color;
+}
+
+.theme-light.accent-left{
+  border-left:10px solid $accent-color;
+}
+

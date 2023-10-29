@@ -21,47 +21,13 @@
   outline: 2px solid $purple;
 }
 
-//---------------------------------------------------------
-// tStyles for elements when testing mode is on
-//---------------------------------------------------------
-/* inconsistent with toggle button. consider killing and moving to that */
-@if $testing-mode {
-
-  // $redo: rgba($red, 0.10);
-  // $blueo: rgba($blue, 0.10);
-  // $greeno: rgba($green, 0.10);
-
-  .z-container, z-container {
-    outline: 3px dotted $green;
-    //background: $greeno;
-
-  }
-
-  .z-row, z-row {
-    outline: 4px solid $blue;
-    //margin: 0.2em;
-    // background: $blueo;
-
-  }
-
-  .z-col, z-col {
-    outline: 2px solid $red;
-    //background: $redo;
-  }
-
-
-  .z-container-fluid,  z-container-fluid {
-    outline: 3px dotted $violet;
-  }
-}
 
 //---------------------------------------------------------
-//  Testing Working Implementation - works with toggle button, kill above
+//  For Toggle button & Chrome Extension
 //---------------------------------------------------------
 
-/* Define classes for turning on/off styles via button toggle */
 .z-container-outline-on {
-  outline: 4px dashed $green;
+  outline: 4px dashed $blue;
   border-radius:0;
 }
 
@@ -71,7 +37,7 @@
 }
 
 .z-row-outline-on {
-  outline: 2px solid $blue;
+  outline: 2px solid $green;
   border-radius:0;
 }
 
@@ -100,7 +66,7 @@
 //  Experimental
 //---------------------------------------------------------
 
-/* sloppy test in docs to see if its good. its good. need to integrate into testing vs being a div */
+/*  test in docs to see if its good. need to integrate into testing vs being a div */
 .center-line-outline-on {
   display: block;
   position: absolute;

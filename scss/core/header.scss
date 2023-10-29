@@ -1,6 +1,52 @@
 
 
+
+//-----------------------------------------
+// Header - Moved from footer (ie the new header)
+//-----------------------------------------
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-color;
+    padding: 10px 20px;
+    }
+    
+    #header-logo, #header-logo img {
+    max-height: 43px;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%; 
+    }
+    
+    nav li {
+      margin-left: 20px;
+      height: 4%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+    
+    nav a {
+    color: $light-color;
+    text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+      }
+      
+//-----------------------------------------
+// Mobile/Old header. Cnnflicts/overwriting here, need to rectify. 
+//-----------------------------------------
+
+    header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,11 +92,11 @@ nav a {
     text-decoration: none;
     padding: 10px;
     display: block;
-    transition: color 0.3s;  /* Smooth color transition */
+    transition: color 0.3s; 
 }
 
 nav a:hover {
-    color: grey;  /* Change color on hover */
+    color: grey; 
 }
 
 /* Mobile & Tablet Styles */
@@ -62,17 +108,17 @@ nav a:hover {
     nav {
         position: fixed;
         top: 0;
-        left: -250px;  /* Start off the screen */
+        left: -250px;  
         width: 250px;
         height: 100%;
         background-color: #333;
-        transition: left 0.3s;  /* Slide in/out */
-        display: block;  /* Override flex */
+        transition: left 0.3s;  
+        display: block; 
     }
 
     nav ul {
         flex-direction: column;        
-        padding-top: 10px;  /* Adjust as needed to align to top */
+        padding-top: 10px;  
     }
 
     nav li {

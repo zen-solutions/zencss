@@ -1,0 +1,25 @@
+z-container,.z-container {
+  outline: 4px dashed #3c8ceb;
+  border-radius: 0;
+}
+z-container-fluid, .z-container-fluid {
+  outline: 4px dashed #9B59B6;
+  border-radius: 0;
+}
+z-row, .z-row {
+  outline: 2px solid #0fbd74;
+  border-radius: 0;
+}
+z-col, .z-col  {
+  outline: 2px solid #E63946;
+  border-radius: 0;
+}
+.zen p {
+  outline: 1px solid #ff9653;
+}
+.zen .h1, .zen h1 {
+  outline: 2px dotted #ff9653;
+}
+.zen .h2 ,.zen .h3 ,.zen .h4 ,.zen .h5 ,.zen .h6, .zen h2, .zen h3, .zen h4, .zen h5, .zen h6 {
+  outline: 2px solid #ff9653;
+}

@@ -15,7 +15,6 @@ z-container, .z-container {
 }
 
 
-
 z-container-fluid, .z-container-fluid,
 .z-col-fluid {
   width: 100%;
@@ -26,7 +25,6 @@ z-container-fluid, .z-container-fluid,
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-
 }
 
 //--------------------------------
@@ -57,7 +55,6 @@ z-row > *, .z-row > * {
   flex: 1;
   align-items: flex-start;
   justify-content: space-between;
-  // width:100%;
 }
 
 //--------------------------------
@@ -74,12 +71,10 @@ z-col, .z-col {
   gap: .5rem;
   padding: $col-padding;
   margin: 0;
-  
 }
 
 .z-col > *, z-col > * {
   gap: 1rem;
-  //display: block;
   max-width: 100%;
   width:100%;
 }
@@ -97,7 +92,6 @@ z-col :has(z-row), .z-col :has(.z-row) {
 //--------------------------------
 // Experimental
 //--------------------------------
-
 
 //fixing for the nexting issue ?
 //do for .row etc.
@@ -117,7 +111,3 @@ z-col :has(z-row), .z-col :has(.z-row) {
 //   margin-right: 0;
 //   padding-right: 0;
 // }
-
-// Add any experimental styles as needed
-
-

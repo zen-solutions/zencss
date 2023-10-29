@@ -148,6 +148,7 @@ ul {
 
 li {
   margin-bottom: 20px;
+  line-height: 2em;
 }
 
 ul li > ul  {
@@ -368,6 +369,8 @@ a {
 
 a:hover {
  color: #1f4e81;
+ text-decoration: none;
+
 }
 
 //-----------------------------

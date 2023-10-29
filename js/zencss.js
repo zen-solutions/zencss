@@ -35,10 +35,6 @@ class ZCol extends HTMLElement
 
 customElements.define('z-col', ZCol);
 
-
-//todo - write system to convert these to semanic structure for deployment
-
-
 //--------------------------------------------------------
 //Toggle  test mode
 //--------------------------------------------------------
@@ -109,8 +105,12 @@ function toggleDarkMode()
 	});
 }
 
-document.getElementById('toggleDarkModeButton').addEventListener('click', toggleDarkMode);
-
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleDarkModeButton = document.getElementById('toggleDarkModeButton');
+    if(toggleDarkModeButton) {  // Check if the element exists
+        toggleDarkModeButton.addEventListener('click', toggleDarkMode);
+    }
+});
 
 //--------------------------------------------------------
 //Background image
@@ -166,31 +166,94 @@ document.addEventListener('DOMContentLoaded', (event) =>
 // Modal
 //--------------------------------------------------------
 
-var modal = document.querySelector(".modal");
-var btn = document.querySelector(".btn-modal");
-var span = document.querySelector(".close");
+class ZModal extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.render();
+    }
 
-if (btn && modal && span)
-{ // Check if elements exist
-	btn.onclick = function ()
-	{
-		modal.style.display = "flex"; 
+	connectedCallback() {
+		this.shadowRoot.querySelector('.close').addEventListener('click', () => {
+			this.close();
+		});
+		document.querySelector('.btn-modal').addEventListener('click', () => {
+			this.open();
+		});
+		this.shadowRoot.querySelector('.modal').addEventListener('click', (event) => {
+			if (event.target === event.currentTarget) {
+				this.close();
+			}
+		});
 	}
+	
 
-	span.onclick = function ()
-	{
-		modal.style.display = "none"; 
-	}
+    open() {
+        this.shadowRoot.querySelector('.modal').style.display = 'flex';
+    }
 
-	window.onclick = function (event)
-	{
-		if (event.target == modal)
-		{
-			modal.style.display = "none"; 
-		}
-	}
+    close() {
+        this.shadowRoot.querySelector('.modal').style.display = 'none';
+    }
+
+    render() {
+        this.shadowRoot.innerHTML = `
+            <style>
+                .modal {
+                    position: fixed;
+                    z-index: 10000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .modal-content {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    color: #212121;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                    max-width: 400px;
+                    border-radius: var(--border-radius, 8px);
+                    position: relative;
+                }
+                .modal-content>.text {
+                    width: 91%;
+                }
+                .close {
+                    color: var(--dark-color, #000);
+                    font-size: 28px;
+                    font-weight: bold;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 45%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+                .close:hover,
+                .close:focus {
+                    color: var(--cta-color, #f00);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            </style>
+            <div class="modal">
+                <div class="modal-content">
+                    <p class="text"><slot></slot></p>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        `;
+    }
 }
 
+customElements.define('z-modal', ZModal);
 
 
 // ----------------------------------------
@@ -226,7 +289,7 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement('img');
-            halfStarImg.src = '../../img/general-icons/star-half-stroke-regular.svg';  // Assume you have a half star SVG image
+            halfStarImg.src = '../../img/general-icons/star-half-stroke-regular.svg';  
             halfStarImg.alt = '';
             halfStarImg.className = 'icon icon-gold';
             fragment.appendChild(halfStarImg);
@@ -254,6 +317,59 @@ class StarComponent extends HTMLElement {
 }
 
 customElements.define('star-component', StarComponent);
+
+// ----------------------------------------
+// Image Slider/Carousel
+// ---------------------------------------
+
+// Get references to the necessary elements
+var slidesContainer = document.querySelector('.slides-container');
+var prevButton = document.querySelector('.prev');
+var nextButton = document.querySelector('.next');
+
+// Only proceed if all the necessary elements are found
+if (slidesContainer && prevButton && nextButton)
+{
+	var currentSlide = 0;
+	var totalSlides = document.querySelectorAll('.slides-container img').length;
+
+	prevButton.addEventListener('click', prevSlide);
+	nextButton.addEventListener('click', nextSlide);
+
+	function showSlide(index)
+	{
+		var transformValue = 'translateX(' + (-index * 100) + '%)';
+		slidesContainer.style.transform = transformValue;
+	}
+
+	function nextSlide()
+	{
+		currentSlide = (currentSlide + 1) % totalSlides;
+		showSlide(currentSlide);
+	}
+
+	function prevSlide()
+	{
+		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		showSlide(currentSlide);
+	}
+}
+
+// ----------------------------------------
+// Hack for card with full screen image ;) dont @ me
+// ----------------------------------------
+document.addEventListener("DOMContentLoaded", function() {
+	var cards = document.querySelectorAll('.card');
+  
+	cards.forEach(function(card) {
+	  var image = card.querySelector('.img-full');
+	  if (image) {
+		var imageHeight = image.offsetHeight + 5;  
+		card.style.paddingTop = imageHeight + 'px';
+	  }
+	});
+  });
+  
 
 // ----------------------------------------
 // testimonial slider
@@ -341,58 +457,6 @@ customElements.define('star-component', StarComponent);
 // document.addEventListener('mousemove', checkExitIntent);
 
 
-// ----------------------------------------
-// Image Slider/Carousel
-// ---------------------------------------
-
-// Get references to the necessary elements
-var slidesContainer = document.querySelector('.slides-container');
-var prevButton = document.querySelector('.prev');
-var nextButton = document.querySelector('.next');
-
-// Only proceed if all the necessary elements are found
-if (slidesContainer && prevButton && nextButton)
-{
-	var currentSlide = 0;
-	var totalSlides = document.querySelectorAll('.slides-container img').length;
-
-	prevButton.addEventListener('click', prevSlide);
-	nextButton.addEventListener('click', nextSlide);
-
-	function showSlide(index)
-	{
-		var transformValue = 'translateX(' + (-index * 100) + '%)';
-		slidesContainer.style.transform = transformValue;
-	}
-
-	function nextSlide()
-	{
-		currentSlide = (currentSlide + 1) % totalSlides;
-		showSlide(currentSlide);
-	}
-
-	function prevSlide()
-	{
-		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-		showSlide(currentSlide);
-	}
-}
-
-// ----------------------------------------
-// Hack for card with full screen image
-// ----------------------------------------
-document.addEventListener("DOMContentLoaded", function() {
-	var cards = document.querySelectorAll('.card');
-  
-	cards.forEach(function(card) {
-	  var image = card.querySelector('.img-full');
-	  if (image) {
-		var imageHeight = image.offsetHeight + 5;  
-		card.style.paddingTop = imageHeight + 'px';
-	  }
-	});
-  });
-  
 // ----------------------------------------
 // Experimental/not in use
 // ----------------------------------------

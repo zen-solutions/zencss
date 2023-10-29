@@ -6,7 +6,6 @@ $input-border-hover: 1px solid #AAA;
 $btn-bg-hover: #09C;
 $placeholder-color: #888;
 
-// Placeholder for Input Styles
 %input-styles {
   width: 100%;
   border: 0;
@@ -53,7 +52,6 @@ $placeholder-color: #888;
   }
 }
 
-// Placeholder styles
 ::placeholder,
 ::-webkit-input-placeholder,
 :-ms-input-placeholder {

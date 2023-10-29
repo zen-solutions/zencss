@@ -1,3 +1,6 @@
+//dont think this is used anymore. need to circle back to the whole dark mode implementation
+//few different solutions in play. condense.
+
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 

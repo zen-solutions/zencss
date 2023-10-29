@@ -4,127 +4,147 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display&display=swap');
 
+  //font 
+  $zen-font-size: 16px;
+  $zen-tablet-mobile-font-size: 14px;
+  $zen-large-screen-font-size: 18px;
+  $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  
-$zen-font-size: 16px;
-$zen-tablet-mobile-font-size: 14px;
-$zen-large-screen-font-size: 18px;
-
-
-.zen {
-background:#d7d7d7; 
-// background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
-//   background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
-//   background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
-//   background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
-//   background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
-//   background-image: radial-gradient(center center, cover, white, #c7c7c7);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: $zen-font-size;
-  font-weight: 300;
-  //line-height: 1.618; // The golden ratio. interfered with testimonial/img components
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  * {
+  .zen {
+    background: #d7d7d7;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
+    background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
+    background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
+    background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
+    background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
+    background-image: radial-gradient(center center, cover, white, #c7c7c7);
+    font-family: $font-family;
+    font-size: $zen-font-size;
+    font-weight: 300;
+    //line-height: 1.618; // The golden ratio. interfered with testimonial/img components
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    //--------------------------------------------------------------
+    // Load core files
+    //--------------------------------------------------------------
+
+    @import 'user-settings.scss';
+    @import 'core/framework.scss';
+    @import 'core/scaffold.scss';
+    // @import 'optional/popover.scss'; 
+    @import 'design/themes.scss';
+    @import 'core/header.scss';
+    @import 'components/form.scss';
+    @import 'components/slider.scss';
+    @import 'design/buttons.scss';
+    @import 'design/text.scss';
+    @import 'core/flex.scss';
+    @import 'core/formatting.scss';
+    @import 'design/color.scss';
+    @import 'components/test.scss';
+    @import 'components/components.scss';
+    @import 'core/footer.scss';
+
+
+    //--------------------------------------------------------------
+    //optional utilities
+    //--------------------------------------------------------------
+
+    //@import 'optional/interactive-cards.scss';
+    @import 'optional/alert.scss';
+    //@import 'opacity.scss';
+    //@import 'optional/card.scss';
+    @import 'optional/table.scss';
+    @import 'optional/decoration.scss';
+    @import 'optional/animation.scss';
+
+    //marketing
+    @import 'marketing/pricing-table.scss';
+    //@import 'marketing/exit-intent.scss';
+    @import 'marketing/contact-form.scss';
+    @import 'marketing/marketing-promos.scss';
+
+
+    //--------------------------------------------------------------
+    //experimental features
+    //--------------------------------------------------------------
+
+    //@import 'mode.scss';
+    // @import '/scss/addons/parallax.css';
+
+
+    //--------------------------------------------------------------
+    //  Things that should go last
+    //--------------------------------------------------------------
+    @import 'core/media-query.scss';
+    @import 'optional/stacking.scss';
+    @import 'components/margin-padding.scss';
+
+    //--------------------------------------------------------------
+    //  Overrides go here
+    //--------------------------------------------------------------
+
+    // Import your overrides here. Replace them in future updates. easy. 
+    //Ex. @import 'your-overrides.scss';
+
+
+    //--------------------------------------------------------------
+    // Media queries for font size change
+    //--------------------------------------------------------------
+
+    @media (max-width: 575.98px) {
+      font-size: $zen-tablet-mobile-font-size;
+      //line-height: 1.6;
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      font-size: $zen-tablet-mobile-font-size;
+      //line-height: 1.8;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      font-size: $zen-font-size;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      font-size: $zen-font-size;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: $zen-large-screen-font-size;
+    }
+
   }
- 
+
   //--------------------------------------------------------------
-  // Load core files
+  // Dark Mode Settings
   //--------------------------------------------------------------
 
-  @import 'user-settings.scss';
-  @import 'core/framework.scss';
-  @import 'core/scaffold.scss';
- // @import 'optional/popover.scss'; 
-  @import 'design/themes.scss';
-  @import 'core/header.scss';
-  @import 'components/form.scss';
-  @import 'components/slider.scss';
-  @import 'design/buttons.scss';
-  @import 'design/text.scss';
-  @import 'core/flex.scss';
-  @import 'core/formatting.scss';
-  @import 'design/color.scss';
-  @import 'components/test.scss';
-  @import 'components/components.scss';
-  @import 'core/footer.scss'; 
+  $zen-dark-text-color: #f0f0f0;
+  $zen-dark-link-color: #f0f0f0;
+.zen-dark {
+    color:   $zen-dark-text-color;
+    background: #252525;
+    background-color: #252525 ;
 
-
-//--------------------------------------------------------------
-  //optional utilities
-//--------------------------------------------------------------
-  //@import 'optional/interactive-cards.scss';
-  @import 'optional/alert.scss';
-  //@import 'opacity.scss';
-  //@import 'optional/card.scss';
-  @import 'optional/table.scss';
-  @import 'optional/decoration.scss';
-  @import 'optional/animation.scss';
-
-  //marketing
-  @import 'marketing/pricing-table.scss';
-  //@import 'marketing/exit-intent.scss';
-  @import 'marketing/contact-form.scss';
-  //@import 'marketing/promos.scss';
-  @import 'marketing/marketing-promos.scss';
-
-
-
-//--------------------------------------------------------------
-  //experimental features
-  //--------------------------------------------------------------
-
-  //@import 'mode.scss';
-  // @import '/scss/addons/parallax.css';
-
-  @import 'core/media-query.scss'; 
-  @import 'optional/stacking.scss';
-  @import 'components/margin-padding.scss';
-
-//--------------------------------------------------------------
-//  Overrides go here
-//--------------------------------------------------------------
-
-// Import your overrides here. Replace them in future updates. easy. 
-//Ex. @import 'your-overrides.scss';
-
-
-  //--------------------------------------------------------------
-  // Media queries for font size change
-  //--------------------------------------------------------------
-
-
-  @media (max-width: 575.98px) {
-    font-size: $zen-tablet-mobile-font-size;
-    //line-height: 1.6;
-  }
-
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: $zen-tablet-mobile-font-size;
-  //line-height: 1.8;
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size:$zen-font-size;  
-  }
-
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: $zen-font-size;  
-  }
-
-  @media (min-width: 1200px) { 
-    font-size: $zen-large-screen-font-size;  
-  }
-
+    a {
+      color:  $zen-dark-text-color !important;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    
+    
+    a:hover {
+     color: darken( $zen-dark-text-color, 10%);
+     text-decoration: none;
+    
+    }
 }
-
-.zen-dark{
-  color:#f0f0f0;
-  background:#252525;
-  background-color:#252525 !important;
-}
-

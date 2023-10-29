@@ -19,7 +19,7 @@ $hover-color: rgb(203, 203, 203);
         }
 
         @media (max-width: $responsive-breakpoint) {
-            display: none;  /* Hide original headers */
+            display: none; 
             th {
                 background-color: inherit; 
             }

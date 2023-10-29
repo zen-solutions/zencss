@@ -21,21 +21,20 @@
 
 .center {
     text-align: center !important;
-    width: 100%;
     align-items: unset !important;
     //align-self: center !important;
 }
 
-.v-center {
+.center-vertical {
     margin: auto;
     width: 100%;
 }
 
 //flex centering -horizontal and vertical then do above
 
-.center-flex{
+// .center-flex{
 
-}
+// }
 
 .right {
     text-align: right !important;
@@ -94,7 +93,7 @@
 // Special Chars
 //------------------------------------------ 
 
-.tout-circle {
+.tout-circle-floated {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -106,6 +105,19 @@
     position:absolute;
     top:19px;
     right:19px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.tout-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $green;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px; 
     padding-left:0 !important;
     padding-right:0 !important;
 }

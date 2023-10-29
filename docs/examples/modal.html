@@ -24,7 +24,7 @@
             <z-col>
                 <div class="center">
                     <h1> Modal</h1>
-                    <p>A simple header you can use for your website. Mobile version coming soon. </p>
+                    <p>A modal component whose syntax you can remember in your sleep. </p>
                     <hr>
                 </div>
             </z-col>
@@ -36,6 +36,17 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
+        <z-row>
+            <z-col>
+                <z-modal>
+                    Modal text
+                </z-modal>
+                <button class="btn-modal">Open Modal</button>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!--z-container>
         <z-row>
             <z-col class="m-0 p-0">
 
@@ -50,7 +61,7 @@
 
             </z-col>
         </z-row>
-    </z-container>
+    </z-container-->
 
     <!----------------------------------------------------------------------->
 <!--- Code Block  --->
@@ -59,12 +70,10 @@
     <z-row>
         <z-col>
             <h2>Code Examples</h2>
-            <pre class="copy-text"><code class="language-html">&lt;div class="modal"&gt;
-  &lt;div class="modal-content"&gt;
-    &lt;p class="text"&gt;Some text in the Modal..&lt;/p&gt;
-    &lt;span class="close"&gt;&amp;times;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt; </code></pre>
+            <pre class="copy-text"><code class="language-html">&lt;z-modal&gt;
+    Modal text
+&lt;/z-modal&gt;
+</code></pre>
 
            <pre class="copy-text"><code class="language-html">&lt;button class="btn-modal"&gt;Open Modal&lt;/button&gt;</code></pre> 
 

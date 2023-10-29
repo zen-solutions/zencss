@@ -4,8 +4,9 @@
 An open-source, website authoring and design toolkit that helps you build, style, and debug websites.
 
 
-beta-1.0.0 is the current release. Branch: https://github.com/shaunmackey/zencss/tree/beta-1.0.0
+beta-1.1.0 is the current release. Branch: https://github.com/shaunmackey/zencss/tree/beta-1.1.0
 
+Use the CSS/JS in the root directory here for the latest functionality.     
 
 ## Features
 
@@ -28,21 +29,18 @@ beta-1.0.0 is the current release. Branch: https://github.com/shaunmackey/zencss
 
 ### Dependencies
 
-FontAwesome - Temporary dependency
+None. Just pure CSS and Vanilla JavaScript. If you want to work with our SASS files, read on.
+
+FontAwesome is an optional temporary enhancement for alerts (configurable in user settings).
 
   
 ### Installation
 
-- Download the beta-1.0.0 [here](https://zencss.com/releases/beta-1.0.0.zip) 
+- Download the beta-1.1.0 [here](https://zencss.com/releases/beta-1.1.0.zip) 
 - Follow the instructions [here](https://zencss.com/docs/index.html#setup)
 
   
-
-## Using SCSS Files
-  
-Installing Sass (Syntactically Awesome Stylesheets) can be done through various methods depending on your system and preferences. Here’s a step-by-step guide covering a common method:
-
- **Installing via NPM**:
+ **Installing SASS via NPM**:
 
 -   **Prerequisite:** Ensure you have Node.js installed on your computer. If not, download and install it from the [official website](https://nodejs.org/).
 

@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="css/mobile-menu.css">
         <link rel="stylesheet" href="css/documentation.css">
         <link rel="stylesheet" href="../css/zen.css">
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -203,7 +204,7 @@
                         </z-row>
                 </z-container>
 
-                <z-container>
+                <z-container id="start">
                         <z-row>
                                 <z-col>
                                         <h2 class="center  fade-in-4">What's included? </h2>
@@ -252,13 +253,13 @@
 
                                         <img src="../img/placeholder/fernando-jorge.jpg" alt="Background Image">
 
-                                        <div class="center">
-                                                <h3 class="text-black mt-2">Download zenCSS
+                                        <div class="center pt-2 pb-1">
+                                                <h3 class="text-black mt-2">Download zenCSS <small>beta 1.1</small>
                                                 </h3>
-                                                <div class="p-3"> <a href="https://zencss.com/releases/beta-1.0.0.zip"><button class="btn-md  center  btn-primar  btn-hover mr-1">Download</button></a>
+                                                <div class="p-3"> <a href="https://zencss.com/releases/beta-1.1.0.zip"><button class="btn-md  center  btn-primar  btn-hover mr-1">Download</button></a>
                                                         <a href="#setup"><button class="theme-primary btn-md btn-ghost-dark center ">How to Install</button></a>
                                                 </div>
-                                                <p class="smaller"> <a href="https://github.com/shaunmackey/zencss"> <span class="tout bg-primary text-white up-5">Nightly build + SCSS</span></a></p>
+                                                <p class="smaller"> <a href="https://github.com/shaunmackey/zencss"> <span class="tout bg-primary text-white up-5">or try our nightly build + SCSS</span></a></p>
                                         </div>
                                         </div>
 
@@ -288,135 +289,129 @@
                         <z-row>
                                 <z-col id="diversion">
                                         <h2>Getting Started</h2>
-                                        <p>Begin by following the setup instructions <a href="#setup">here</a> to enable zenCSS on your site.
-                                                Once activated, working with our system is as simple as declaring a container and row to encapsulate your HTML content. Experience a seamless blend of color and form as everything self-adjusts to maintain a balanced aesthetic. Rest easy deploying zenCSS alongside established frameworks like Bootstrap.
-                                        </p>
-                                        <h3 class="mt-2">Desktop-First Design Philosophy</h3>
-                                        <p>
-                                                Embrace a desktop-centric workflow. Craft your website's content for desktop interfaces, and trust zenCSS to adeptly translate the design for tablet and mobile presentations, ensuring a harmonious user experience across all device landscapes.
-                                        </p>
+                                        <p>Kick things off by hopping over to the setup instructions <a href="#setup">here</a> to get ZenCSS rolling on your site. Once it's up and running, you’re just a container and row declaration away from wrapping your HTML content in ZenCSS goodness. Dive into a world where color and form come together seamlessly, and everything just falls into place to keep the vibes balanced. And don’t sweat it if you’re already rocking Bootstrap—ZenCSS plays nice and makes it a breeze to get them working together.
+                                                </p>
+                                      
                                 </z-col>
                         </z-row>
 
+                       </z-container>
+                       <z-container>
                         <z-row class="theme-primary mobile-square">
                                 <z-col>
-                                        <h4>Quick Overview - The zenCSS Grid System</h4>
+                                        <h4>Quick Overview - The zenCSS Framework</h4>
 
-                                        <z-container class="gap-0">
+                                        <z-container>
                                                 <z-row>
-                                                        <z-col class="card-split pb-0 pt-0">
-                                                                <div class="image-group">
-                                                                        <img src="images/misc/framework-container.png" class="w-200" alt="zenCSS framework">
-                                                                </div>
-                                                                <div class="text-group">
-                                                                        <p></span><b>Containers </b>- Containers are distinct sections of your webpage such as a header or hero section. Each container is a resolution-friendly box, adept at managing horizontal alignment across mobile, tablet, and desktop devices.
-                                                                        </p>
 
-                                                                </div>
+                                                        <z-col class="card theme-light">
+                                                                <img src="images/misc/framework-container.png" class="w-200" alt="">
+                                                                <h4>Containers</h4>
+                                                                <p>Containers are individual sections on your webpage, like this blue one right here. They're all about keeping things tidy and aligned, no matter if someone’s checking out your site on a mobile, tablet, or desktop.</p>
+                                                                <p> Dive into the details below, and feel free to come back to tweak this container—add or remove some columns or rows. We think you'll find our setup simple, effective, and classy.</p>
                                                         </z-col>
-                                                </z-row>
-                                                <z-row>
-                                                        <z-col class="card-split pb-0 pt-0">
-                                                                <div class="image-group">
-                                                                        <img src="images/misc/framework-row.png" class="w-200" alt="zenCSS framework">
-                                                                </div>
-                                                                <div class="text-group">
-                                                                        <p>
-                                                                                <b>Rows</b> - Rows provide the scaffolding for a section, and are stacked like cake layers. Add as many or few as you need to a container — we've baked in smart flex logic to ensure they work beautifully. Rows house any number of columns, which in turn contain a collection of HTML elements.
-                                                                        </p>
-                                                                </div>
+
+                                                        <z-col class="card theme-light">
+                                                                <img src="images/misc/framework-row.png" class="w-200" alt="">
+                                                                <h4>Rows</h4>
+                                                               <p> Think of rows as the building blocks within a container, stackable like layers on a cake. Add as many or as few as you need—the smart flex logic in ZenCSS makes sure they play nice together.
+                                                                </p>
+                                                                <p>Rows hold any number of columns (three in this case), which in turn are the place for your HTML elements to live.</p>
                                                         </z-col>
-                                                </z-row>
-                                                <z-row>
-                                                        <z-col class="card-split pb-0 pt-0">
-                                                                <div class="image-group">
-                                                                        <img src="images/misc/framework.png" class="w-200" alt="zenCSS framework">
-                                                                </div>
-                                                                <div class="text-group">
-                                                                        <p>
-                                                                                <b>Columns</b> - Whether it's a section heading, a paragraph paired with an image, or even a themed design based on the fibonaci sequence, columns are up for the task. They auto-adjust for siblings as well as tablet and mobile views. They can also "be" things, such as a card. Columns align perfectly at all resolutions — even in separate rows. </li>
-                                                                        </p>
-                                                                </div>
+                                                        
+                                                        <z-col class="card theme-light">
+                                                                <img src="images/misc/framework.png" class="w-200" alt="">
+                                                                <h4>Columns</h4>
+                                                                <p>Columns are where the magic happens. Whether they’re showcasing an image with a section heading and text, or a themed layout inspired by the Fibonacci sequence, they’re up for it. </p>
+                                                                <p>Columns auto-adjust width based on their neighbors and align flawlessly on both tablet and mobile views, even if in different rows Here, they act as themed cards, marrying form and function.</p>
                                                         </z-col>
+
+
+
+
                                                 </z-row>
                                         </z-container>
                                 </z-col>
                         </z-row>
+                       </z-container>
+                       <z-container>
                         <z-row>
                                 <z-col>
                                         <h3>Kickstarting with a Basic Example
                                         </h3>
                                         <p>
-                                                Let's begin with a straightforward example of our signature grid layout for a site section using semantic HTML:
+                                                Let's begin with a straightforward example of defining a container, row and column using semantic HTML:
                                         </p>
                                         <pre class="copy-text"><code class="language-html">&lt;main class="z-container"&gt;
-&lt;section <span class="text-blue">class="z-row"</span>&gt;
-&lt;div <span class="text-red">class="z-col"</span>&gt; ... &lt;/div&gt;
-&lt;/section&gt;
+  &lt;section <span class="text-blue">class="z-row"</span>&gt;
+    &lt;div <span class="text-red">class="z-col"</span>&gt; ... &lt;/div&gt;
+  &lt;/section&gt;
 &lt;/main&gt;</code></pre>
                                 </z-col>
                         </z-row>
                         <z-row>
                                 <z-col class="mt-0 pt-0">
-                                        <p>The flexibility of zenCSS shines through as the number of columns per row (typically 2-6) or HTML items per column is irrelevant—zenCSS manages the layout gracefully. Enrich a content area by adding more rows or columns. It’s that simple.</p>
-                                        <p>
-                                                If brevity appeals to you, meet <a href="examples/zentax.html">Zentax</a>, our shorthand HTML syntax that halves your coding effort:
+
+                                        <p>The beauty of ZenCSS is in its go-with-the-flow nature. Whether you're packing a row with 2 or 6 columns, or filling a column with a medley of HTML items, ZenCSS handles the layout with grace. Want to jazz up a content area? Just toss in more rows or columns. Yep, it’s that straightforward.
+                                          </p>
+            
+                                         <p> If you're all about keeping things snappy, say hello to <a href="examples/zentax.html">Zentax</a>—our sleek shorthand HTML syntax that'll slash your coding effort in half: 
                                         </p>
-                                        <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
-<span class="text-blue">&lt;z-row&gt;</span>
-<span class="text-red">&lt;z-col&gt; <span class="text-grey-3">... </span>&lt;/z-col&gt;</span>
-<span class="text-blue">&lt;/z-row&gt;</span>
+                                        <pre class="copy-text mb-4 mt-3"><code class="language-html">&lt;z-container&gt;
+  <span class="text-blue">&lt;z-row&gt;</span>
+    <span class="text-red">&lt;z-col&gt; <span class="text-grey-3">... </span>&lt;/z-col&gt;</span>
+  <span class="text-blue">&lt;/z-row&gt;</span>
 &lt;/z-container&gt;</code></pre>
                                 </z-col>
                         </z-row>
                 </z-container>
                 <z-container-fluid class="bg-dark text-white">
-                <z-container id="component" class="mb-3">
-                        <z-row>
-                                <z-col>
-                                        <h3>zenCSS Resources</h3>
-                                        <p>Dive into our resources and start styling with our exclusive selection of tools, Design/UI components and CSS modifier classes. More being added regularly. Or read on to learn about our color and typography systems, testing mode and more.
-                                        </p>
-                                </z-col>
-                        </z-row>
-                        <z-row>
-                                <z-col class="card image-container theme-dark">
-                                        <img src="../img/interactive-cards/static/2.jpg" alt="Core Concepts">
-                                        <h4>Core Concepts</h4>
-                                        <p>Examples of our grid system, test mode, Zentax, Bootstrap demo & Figma > zenCSS demo</p>
-                                        <a href="examples/core-concepts.html"><button>View Now</button></a>
-                                </z-col>
-                                <z-col class="card image-container theme-dark">
-                                        <img src="../img/interactive-cards/static/3.jpg" alt="Design Components">
+                        <z-container id="component" class="mb-3">
+                                <z-row>
+                                        <z-col>
+                                                <h3>zenCSS Resources</h3>
+                                                <p>Dive into our resources to start styling with our curated selection of tools, Design/UI components, and CSS modifier classes. We're constantly adding new gems to keep your toolkit fresh. Read on to learn about our color and typography systems, testing mode, and more. Your journey into mastering zenCSS is just getting started. </p>
+                                        </z-col>
+                                </z-row>
+                                <z-row>
+                                        <z-col class="card image-container theme-dark">
+                                                <img src="../img/interactive-cards/static/2.jpg" alt="Core Concepts">
+                                                <h4>Core Concepts</h4>
+                                                <p>Examples of our grid system, test mode, Zentax, Bootstrap demo & Figma > zenCSS demo</p>
+                                                <a href="examples/core-concepts.html"><button>View Now</button></a>
+                                        </z-col>
+                                        <z-col class="card image-container theme-dark">
+                                                <img src="../img/interactive-cards/static/3.jpg" alt="Design Components">
 
-                                        <h4>Design Components</h4>
-                                        <p>A built-in design system, color palette, typography, site sections, section components and more.</p>
-                                        <a href="examples/design-library.html"><button>View Now</button></a>
-                                </z-col>
-                                <z-col class="card image-container theme-dark">
-                                        <img src="../img/interactive-cards/static/4.jpg" alt="Modifiers">
+                                                <h4>Design Components</h4>
+                                                <p>A built-in design system, color palette, typography, site sections, section components and more.</p>
+                                                <a href="examples/design-library.html"><button>View Now</button></a>
+                                        </z-col>
+                                        <z-col class="card image-container theme-dark">
+                                                <img src="../img/interactive-cards/static/4.jpg" alt="Modifiers">
 
-                                        <h4>Modifiers</h4>
-                                        <p>Over 100, dead simple classes you'll use to modify shape, color and form.</p>
-                                        <a href="examples/css-classes.html"><button>View Now</button></a>
-                                </z-col>
+                                                <h4>Modifiers</h4>
+                                                <p>Over 100, dead simple classes you'll use to modify shape, color and form.</p>
+                                                <a href="examples/css-classes.html"><button>View Now</button></a>
+                                        </z-col>
+                                </z-row>
+                        </z-container>
+                </z-container-fluid>
+                <z-container id="color">
+                        <z-row>
+                            <z-col>
+                                <h3 class="mt-2">Desktop-First Design Philosophy</h3>
+                                <p>
+                                        Embrace the desktop-first ethos. Begin crafting your site's content for desktop interfaces and let zenCSS take the wheel in fine-tuning the design for tablet and mobile vistas, ensuring a consistent user experience across all device realms.                                </p>
+                            </z-col>
                         </z-row>
-                </z-container>
-        </z-container-fluid>
-                <z-container>
                         <z-row>
                                 <z-col>
                                         <h2>zenCSS Color System</h2>
-                                        <p>7 unique themes and <a href="#utility">hundreds of classes</a> for
-                                                applying
-                                                <span class="text-red">various</span> <span class="text-blue">shades</span> <span class="text-orange">of</span> <span class="text-purple">color</span> <span class="text-blue">and </span><span class="text-green italic">
-                                                        &nbsp;style</span>
-                                                for <span class="bg-secondary text-white pl-1 pr-1 round">background
-                                                        colors</span> and <span class="text-dark-green">text
-                                                        colors.</span> The zenCSS Color System help you create visually appealing layouts with different levels of contrast.
+                                        <p>Step into a palette of possibilities with 6 unique themes and a myriad of classes dedicated to rendering various hues and styles for background and text colors. The zenCSS Color System is your ally in concocting visually captivating layouts with diverse degrees of contrast.
                                         </p>
                                         <h3 class="mt-2">Color Themes: Tailoring Your UI </h3>
-                                        <p>zenCSS comes with a default style, but you can easily tweak the appearance using our color themes. It's like having different skins for your website UI elements. Apply a theme to HTML elements, and it will style immediate children based on your brand colors. We're rolling out this feature across all current components. </p>
+                                        <p>zenCSS sports a classic default style, but why stop there? Our color themes are here to let you dress up the appearance of your UI. It’s akin to having a wardrobe of skins for your website’s elements. Just slap a theme on your HTML elements, and watch as it styles the immediate children in sync with your brand colors. We’re rolling this feature out across all current website parts, making it a breeze to keep your UI in vogue. </p>
 
                                 </z-col>
                         </z-row>
@@ -474,10 +469,10 @@
                         <z-row>
                                 <z-col>
                                         <h3>Brand Colors</h3>
-                                        <p>With zenCSS, defining color themes is a breeze. Provide your primary brand colors, and zenCSS will generate a site-wide color palette aligned with your brand's signature style. The balanced mix of light and dark variants for each color ensures a consistent brand representation across pages, aiding in building a cohesive connection with your audience.</p>
+                                        <p>With zenCSS, defining color themes is straightforward. Input your primary brand colors, and zenCSS will generate a site-wide color palette tailored to your brand's signature style. The balanced mix of light and dark variants for each color ensures a consistent brand representation across pages, aiding in fostering a cohesive connection with your audience.</p>
                                 </z-col>
                         </z-row>
-                        <z-row class="four-up">
+                        <z-row>
                                 <z-col class="theme-primary">
                                         <div class="center">bg-primary</div>
                                         <div class="center bg-primary-dark round">bg-primary-dark</div>
@@ -502,7 +497,7 @@
                         <z-row>
                                 <z-col>
                                         <h3 class="mt-2">Shades of Grey</h3>
-                                        <p>Life indeed has a spectrum, much like our range of greys. zenCSS offers a site-wide color palette transitioning from white to black, cruising through various shades of grey. This grayscale palette provides a simple yet sophisticated backdrop, allowing your content and other elements to take center stage.</p>
+                                        <p>Life is a spectrum, much like our nuanced range of greys. zenCSS lays out a site-wide color palette transitioning from white to black, smoothly sailing through various shades of grey. This grayscale palette provides a minimalist yet sophisticated backdrop, letting your content and other elements shine.</p>
                                 </z-col>
                         </z-row>
                         <div class="z-row">
@@ -552,7 +547,7 @@
                                                 and will blur the background of anything it covers.
                                         </p>
                                         <h3 class="mt-2">Universal Colors</h3>
-                                        <p>zenCSS introduces a site-wide color palette drawn from the ROYGBIV sequence, bringing a splash of rainbow hues to every page. This lively palette creates an engaging visual atmosphere. To tweak the shades, simply update the base color (bg-), and zenCSS will auto-generate light and dark variants, allowing easy color adjustments.</p>
+                                        <p>zenCSS rolls out a site-wide color palette inspired by the ROYGBIV sequence, injecting a splash of rainbow hues across your pages. This vibrant palette sparks an engaging visual vibe. To fine-tune the shades, just tweak the base color (bg-), and zenCSS will auto-generate light and dark variants, making color adjustments a breeze.</p>
                                 </z-col>
                         </z-row>
                         <z-row>
@@ -588,12 +583,12 @@
                                 </z-col>
                         </z-row>
                         <z-row>
-                            <z-col>
-                                <p>Utilize zenCSS color classes to easily customize the background colors of HTML elements according to your design requirements. For instance, altering the background, text, or theme of code snippets is as simple as applying a class like theme-dark.
-                                </p>
-                                <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</code></pre>
+                                <z-col>
+                                        <p>Employ zenCSS color classes to easily tailor the background colors of HTML elements to your design whims. For instance, switching up the background, text, or theme of code snippets is a no-brainer—just apply a class like theme-dark.
+                                        </p>
+                                        <pre class="copy-text theme-dark not-important"> &lt;pre <span class="text-dark-green">class="theme-dark"</span>&gt; Dark theme &lt;/pre&gt;</code></pre>
 
-                            </z-col>
+                                </z-col>
                         </z-row>
                 </z-container>
 
@@ -601,9 +596,11 @@
                         <z-row>
                                 <z-col>
                                         <h2>zenCSS Text System - Automatic, dynamic, responsive resizing</h2>
-                                        <p>zenCSS ships with a dynamic text scaling feature, auto-adjusting font sizes across varying viewport resolutions to ensure readability and aesthetic consistency.
+                                        <p>zenCSS comes with a dynamic text scaling feature that takes the guesswork out of font sizing across varying viewport resolutions, ensuring readability and aesthetic consistency are always in check.
 
-                                        <p>Out of the box, our standard text sizes are:
+                                        <p>Right out of the gate, our standard text sizes are set as follows:
+
+
                                         <ul>
                                                 <li>14px on mobile</li>
                                                 <li>16 px on tablet</li>
@@ -614,8 +611,7 @@
 
 
                                         <p>
-                                                The heading tags (h1 - h6) are smartly configured to resize at each breakpoint, based on the default font size. For a deeper dive, inspect an element below and switch to the computed tab in your browser's developer tools while toggling the responsive view. As you resize the window, you'll observe the font sizes adapting to the changing viewport dimensions.
-                                        </p>
+                                                The heading tags (h1 - h6) are cleverly set up to resize at each breakpoint, based on the default font size. For a closer look, inspect an element below and switch to the computed tab in your browser's developer tools while toggling the responsive view. As you resize the window, you'll see the font sizes gracefully adapting to the changing viewport dimensions.                                        </p>
 
                                         <div class="z-row">
                                                 <div class="z-col bg-opaque round">
@@ -661,39 +657,198 @@
                         </z-row>
                 </z-container>
 
+                <z-container>
+                        <z-row>
+                                <z-col>
+                                        <h2>Controlling how content breaks </h2>
+                                        <p>zenCSS is all about ensuring a graceful display and realignment of items across devices. Yet, if you fancy some extra control, our utility classes are here to let you fine-tune the layout. By default, zenCSS rolls out four columns on desktop, two on tablet, and one on mobile. For example, with six children in a row, tossing in the class two-up to the row will have each child cozying up to half the width. Similarly, throw in three-up and each child will claim a third of the space.</p>
+
+                                        <p class="center"><span class="tout text-white">soon</span> Full documentation coming soon</p>
+
+                                </z-col>
+                        </z-row>
+                        <z-row id="test">
+                                <z-col>
+                                        <h2>Debugging Stylistic Issues <span class="tout bg-green text-white">chrome extension available</span></h2>
+                                        <div>
+
+                                                <img src="..//docs/images/misc/zentest.png" alt="" class="image-left">
+                                                <p>
+                                                        Navigating through CSS debugging can get knotty with mobile/tablet variations, pre-processors, absent source maps, and minification in the mix.
+                                                    </p>
+                                                    
+                                                    <p class="pt-2">
+                                                        Enter "Zen Test" in zenCSS—a handy tool that overlays outlines on content, making bug identification and resolution a lot more intuitive. It pairs well with your browser's inspect element tool, simplifying the task of isolating issues.
+                                                    </p>
+                                                    
+                                                    <p class="pt-2">
+                                                        Mobile troubleshooting becomes a breeze when you can quickly pinpoint where bugs are cropping up.
+                                                    </p>
+                                                    
+                                                    <p class="pt-2">
+                                                        Outlines draw the element boundaries with blue dotted lines for containers (purple for -fluid), rows (green), and columns (red), while paragraphs and headings sport varying shades of orange outlines. An alignment grid is brewing on our end.
+                                                    </p>
+                                                    
+                                                    <p class="pt-2">
+                                                        And hey, while you're here, can you spot the easter egg tucked in an extraneous paragraph on this page? There’s also an empty paragraph or two for the truly curious. Dive in below and have fun exploring!
+                                                    </p>
+                                                    
+                                               
+                                                                <p class="pt-2"><button id="toggleButton" class="theme-primary btn-xl">Toggle Test Mode Here</button></p>
+                                                </p>
+                                        </div>
+                                </z-col>
+                        </z-row>
+                </z-container>
+
+                <z-container id="setup">
+                        <z-row>
+                                <z-col>
+                                        <h1>File Structure</h1>
+                                        <p>
+                                                Download the latest build <a href="https://zencss.com/releases/beta-1.1.0.zip">here</a>. Once you've downloaded and unzipped the folder, you'll find a file structure housing zenCSS.
+                                            </p>
+                                    
+                                        <div class="p-5  bg-opaque">
+                                                css/<br>
+                                                &nbsp; &nbsp;├── zencss.css<br>
+                                                &nbsp; &nbsp;├── zencss.min.css<br>
+                                                js/<br>
+                                                &nbsp; &nbsp;├── zencss.js<br>
+                                                img/<br>
+                                                &nbsp; &nbsp;├── --<br>
+                                                &nbsp; &nbsp;└── --<br>
+                                                docs/<br>
+                                                &nbsp; &nbsp;├── index.html<br>
+
+                                        </div>
+                                </z-col>
+                        </z-row>
+                </z-container>
 
 
 
 
 
+                <z-container>
+                        <z-row>
+                                <z-col>
+                                        <h2>Installation</h2>
+
+                                        <p>Get zenCSS up and running on your site by linking to our CSS file in the HTML head section, and including the zencss.js file just before the closing body tag.
+
+                                        </p>
+                                        <pre class="copy-text"><code class="language-html">&lt;link rel="stylesheet" href="path-to/zen.css"&gt;</code></pre>
+                                        <pre class="copy-text"><code class="language-html">&lt;script src="path-to/zencss.js"&gt;&lt;/script&gt;</code></pre>
+
+                                        <h2 class="mt-3">Usage</h2>
+
+                                        <div class="p">Deploy zenCSS in two ways: globally across the site, or selectively on specific HTML elements.
+                                        </div>
+
+                                        <p><b>Globally:</b> Declare zen on your body to apply zenCSS site-wide.
+                                        </p>
+                                        <pre class="copy-text"><code class="language-html">&lt;body class="zen"&gt; 
+...
+&lt;/body&gt;</code></pre>
+
+                                        <p class="mt-3"><b>Mix in:</b> Invoke zen on any HTML element to harness zenCSS's power locally, without disrupting existing elements.
+                                        </p>
+                                        <pre class="copy-text"><code class="language-html">&lt;section class="zen"&gt; 
+...
+&lt;/section&gt;
+</code></pre>
+                                </z-col>
+                        </z-row>
+                        <z-row>
+                                <z-col>
+                                        While coding within a parent tagged as zen, you're "in zen", granting access to all zenCSS tools and features.
+                                </z-col>
+                        </z-row>
+                        <z-row>
+                                <z-col>
+                                        <a href="#diversion">Return to where you were when you followed the simple setup steps.</a>
+                        </z-row>
+                </z-container>
 
 
 
+                <z-container id="contribute">
+                        <z-row>
+                                <z-col>
+                                        <h2>Contribute to zenCSS</h2>
+                                        <p>
+                                                We're all ears for contributions! Spotted a bug, got some neat ideas, suggestions, or itching to submit a PR? We’d love to hear from you. Kick things off by creating a new issue on GitHub with the appropriate label <a href="https://github.com/shaunmackey/zencss/issues">here</a>.
+                                        </p>
+                                        <p>A massive shoutout to the stellar folks who've helped inspire my career. Joe Dauz, Paolo, Carrot, Niko and Hilary, Tyler Olli, Mike V, the creative team at Interval, the dev/design team at Spectrum, every SolGats holder and my web3 homies. A growing list of folks I borrowed code, inspiration or ideas from: Lucas Calloch, Chris Smith, Kevin Powell, Hyperplexed...
+                                        </p>
+                                </z-col>
+                        </z-row>
+                </z-container>
+
+                <z-container id="next">
+                        <z-row>
+                                <z-col>
+                                        <h2>What's next?</h2>
+                                        <p>
+                                                The adventure is just getting warmed up. As you groove with zenCSS, your feedback is the golden ticket to refining it further. While the language here may be plural, it’s just one guy and chatGPT, morphing a personal CSS file into a full-featured toolkit. It’s the community that will chart the course from here. So, here’s to the journey ahead. Onward, to destiny!
+                                        </p>
+                                        <p>
+                                                Here's the gameplan for now:
+                                        <ul>
+                                                <li>Documentation   <span class="tout-circle bg-green" >&#10003;</span>
+                                                </li>
+                                                <li>Bunch of bug fixes  <span class="tout-circle bg-green" >&#10003;</span></li>
+                                                <li>Marketing, PR, etc - get in sync with the flow of the public response <span class="tout-circle bg-red" >&#10003;</span></li>
+                                                <li>More bug fixes, build out the UI library, refactor and optimize code  <span class="tout-circle bg-orange" >&#10003;</span></li>
+                                                <li>A 1.0 release <span class="tout-circle bg-orange" >&#10003;</span></li>
+                                                <li>Fine tune color and typography. Start working on tools to address semantics, accessability and SEO <span class="tout-circle bg-red" >&#10003;</span></li>
+                                                <li>Iterate until its perfect <span class="tout-circle bg-red" >&#10003;</span></li>
+                                        </ul>
+                                        </p>
+                                </z-col>
+                        </z-row>
+                </z-container>
+
+                <z-container id="license">
+                        <z-row>
+                                <z-col>
+                                        <h2>zenCSS is open source using the MIT License</h2>
+
+                                        <p>Copyright (c) 2022-2023 Shaun Mackey</p>
 
 
+                                        <p>Permission is hereby granted, free of charge, to any person obtaining
+                                                a copy of this software and associated documentation files (the
+                                                “Software”), to deal in the Software without restriction,
+                                                including without limitation the rights to use, copy, modify,
+                                                merge, publish, distribute, sublicense, and/or sell copies of
+                                                the Software, and to permit persons to whom the Software is
+                                                furnished to do so, subject to the following conditions:
 
+                                                The above copyright notice and this permission notice shall be
+                                                included in all copies or substantial portions of the Software.
 
-
-
+                                                THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+                                                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                                                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                                                NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+                                                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                                                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+                                                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                                                OTHER DEALINGS IN THE SOFTWARE.</p>
+                                </z-col>
+                        </z-row>
+                </z-container>
         </main>
         <footer class="zen">
                 <div class="center mb-0"><img class="w-40" src="../docs/images/grey-tree.png" alt=""></div>
-
                 <p class="center smaller mt-0">&copy; 2023 Made using zenCSS. 🤘</p>
-                <p><button id="toggleButton" class="theme-primary btn-xl">Toggle Test Mode</button></p>
-
-                <p>
-                        <a id="toggleDarkModeButton" class="btn-md"></a>
-                </p>
-
         </footer>
         <script src="../docs/js/copy.js"></script>
         <script src="../docs/js/hp.js"></script>
         <script src="../js/zencss.js"></script>
         <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script-->
-
 </body>
-
 </html>
