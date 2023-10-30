@@ -13,10 +13,10 @@ preElements.forEach(function (textBox)
 			.then(() =>
 			{
 
-				copyButton.style.cssText = 'background-color: green !important; background-image: url("https://zencss.com/docs/images/ui/copied.png") !important;';
+				copyButton.style.cssText = 'background-color: green !important; background-image: url("../images/ui/copied.png") !important;';
 				setTimeout(function unCopy()
 				{
-					copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("https://zencss.com/docs/images/ui/copy.png") !important;';
+					copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
 				}, 1500);
 			})
 			.catch(err =>

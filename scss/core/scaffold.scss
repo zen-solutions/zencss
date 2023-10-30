@@ -53,8 +53,6 @@ html {
 
     &:hover {
       background: darken($light-color, 15%);
-      transform: scale(1.05); 
-
     }
   }
 }
@@ -129,11 +127,12 @@ p {
   //font-size: .9em;
   line-height: 2em;
   letter-spacing: .02em;
-  margin-top:.3em;
-  margin-bottom:.3em;
+  //margin-top:.3em;
+  //margin-bottom:.3em;
   position: relative;
   font-weight: 300;
-
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 span {
@@ -194,6 +193,9 @@ button {
    background-color: lighten($dark-color, 15%);
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+   background: darken($grey, 50%) !important;
+   color:$light-color;
+
  }
 
 button.bg-cta:hover {
@@ -252,6 +254,7 @@ pre {
   white-space: pre-wrap;
   line-height: 30px;
   font-family: Consolas,Monaco,'Andale Mono',monospace;
+  border: 1px solid  $body-bg-color;
 
 }
 
@@ -361,14 +364,14 @@ a:-webkit-any-link :none{
 
 // Normal link styles. replace w :link? deal w specificity
 a {
-  color: #1f77d5;
+  color: #295CA8;
   cursor: pointer;
   text-decoration: underline;
 }
 
 
 a:hover {
- color: #1f4e81;
+ color: #224d8d;
  text-decoration: none;
 
 }

@@ -93,24 +93,40 @@ elements.forEach((element) =>
 
 
 //--------------------------------------------------------
-// Testing: Dark Mode Toggle
+//  Dark Mode Option
 //--------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    function toggleDarkMode() {
+        const zenElements = document.querySelectorAll('.zen');
 
-function toggleDarkMode()
-{
-	const zenElements = document.querySelectorAll('.zen');
-	zenElements.forEach(element =>
-	{
-		element.classList.toggle('zen-dark');
-	});
-}
+        zenElements.forEach(element => {
+            element.classList.toggle('zen-dark');
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleDarkModeButton = document.getElementById('toggleDarkModeButton');
-    if(toggleDarkModeButton) {  // Check if the element exists
-        toggleDarkModeButton.addEventListener('click', toggleDarkMode);
+            // If you want to store the dark mode state for each zen element, 
+            // you might use a data attribute or a more complex storage scheme.
+        });
+
+        // Update: Store a general dark mode state in localStorage
+        // This will store whether any element has the zen-dark class
+        const isDarkModeEnabled = Array.from(zenElements).some(element => element.classList.contains('zen-dark'));
+        localStorage.setItem('darkMode', isDarkModeEnabled);
+    }
+
+    const toggleButton = document.getElementById('toggleDarkMode');
+    if (toggleButton) {
+        toggleButton.addEventListener('click', toggleDarkMode);
+    }
+
+    // Update: Apply the zen-dark class based on stored preference
+    const storedDarkMode = localStorage.getItem('darkMode');
+    if (storedDarkMode === 'true') {
+        const zenElements = document.querySelectorAll('.zen');
+        zenElements.forEach(element => {
+            element.classList.add('zen-dark');
+        });
     }
 });
+
 
 //--------------------------------------------------------
 //Background image

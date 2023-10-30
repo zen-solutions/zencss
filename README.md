@@ -6,25 +6,25 @@ An open-source, website authoring and design toolkit that helps you build, style
 
 beta-1.1.0 is the current release. Branch: https://github.com/shaunmackey/zencss/tree/beta-1.1.0
 
-Use the CSS/JS in the root directory here for the latest functionality.     
+But... Use the CSS/JS in the main branch for the latest functionality.     
 
 ## Features
 
 - Website Framework
 
-- Design System
+- Design System 
 
 - 6 color themes - customize for any brand
 
-- Shorthand HTML syntax for Grid System layouts
+- Shorthand HTML syntax - write less code
 
-- Utility Toolkit
+- Utility Toolkit 
 
 - CSS Test mode
 
-- Design Library
+- Design Library + components
 
-- Auto Type Resizing
+- Typography design system (with resolution-based, auto-resizing)
 
 
 ### Dependencies

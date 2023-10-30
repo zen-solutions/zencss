@@ -376,3 +376,6 @@ body.dark .home .text {
   align-items: center;
 }
 
+.mode-toggle-align{
+  margin-left: 7px;
+}

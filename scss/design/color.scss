@@ -3,33 +3,35 @@
 //------------------------------------------ 
 
 //brand palette dark
-$primary-color-dark : hsl(210, 42%, 26%);
-$secondary-color-dark : hsl(200, 65%, 49%);
-$accent-color-dark : hsl(43, 86%, 43%);
-$cta-color-dark : hsl(351, 66%, 39%);
+$primary-color-dark: darken($primary-color, 10%); 
+$secondary-color-dark: darken($secondary-color, 10%); 
+$accent-color-dark: darken($accent-color, 10%); 
+$cta-color-dark: darken($cta-color, 10%); 
 
 //brand palette light
-$primary-color-light : hsl(210, 42%, 46%);
-$secondary-color-light : hsl(200, 65%, 69%);
-$accent-color-light : hsl(43, 86%, 63%);
-$cta-color-light : hsl(361, 66%, 64%);
+$primary-color-light: lighten($primary-color, 10%); 
+$secondary-color-light: lighten($secondary-color, 10%); 
+$accent-color-light: lighten($accent-color, 10%); 
+$cta-color-light: lighten($cta-color, 10%); 
 
 // Generic palette dark
-$red-dark: hsl(0, 59%, 40%);
-$orange-dark: hsl(30, 105%, 30%);
-$yellow-dark: hsl(51, 69%, 20%);
-$green-dark: hsl(120, 50%, 19%);
-$blue-dark: hsl(240, 59%, 40%);
-$purple-dark: hsl(268, 29%, 22%);
+$red-dark: darken($red, 10%); 
+$orange-dark: darken($orange, 12%); 
+$yellow-dark: darken($yellow, 10%); 
+$green-dark: darken($green, 10%); 
+$blue-dark: darken($blue, 10%); 
+$purple-dark: darken($purple, 10%); 
+
 
 
 // Generic palette light
-$red-light: hsl(0, 120%, 73%);
-$orange-light: hsl(33, 89%, 85%);
-$yellow-light: hsl(60, 59%, 60%);
-$green-light: hsl(120, 50%, 39%);
-$blue-light: hsl(190,95%, 56%);
-$purple-light: hsl(268, 92%, 92%);
+$red-light: lighten($red, 10%); 
+$orange-light: lighten($orange, 10%); 
+$yellow-light: lighten($yellow, 10%); 
+$green-light: lighten($green, 10%); 
+$blue-light: lighten($blue, 10%); 
+$purple-light: lighten($purple, 10%); 
+
 
 /* Generate border color classes */
 $colors: (1: #F7F7F7,

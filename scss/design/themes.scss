@@ -1,3 +1,21 @@
+//To explore, for darkining buttons color by 10% on rollover, even if we dont know which theme is defining the color val for the button
+
+// @mixin darken-color($color) {
+//   background: darken($color, 10%) !important;
+// }
+
+// // Usage:
+// .some-element {
+//   @include darken-color($cta-color);
+// }
+
+// .another-element {
+//   @include darken-color($primary-color);
+// }
+// In this setup, you define a darken-color mixin that takes a color variable ($color) as an argument. You then use the @include directive to apply this mixin to different elements, passing in the relevant color variable ($cta-color or $primary-color) each time.
+
+// This way, you can reuse the darken-color mixin for various color variables and elements, achieving the desired darkening effect regardless of the variable name used to hold the color.
+
 ///----------------------------------------------
 // TO DO fibonaci-left and fibonaci-right. puts 1.618 break on the row
 //----------------------------------------------
@@ -61,10 +79,10 @@ $themes: (
     color: $light-color;
   }
   
-  button:hover {
-   background: darken($cta-color, 10%);
-   color: $light-color;
- }
+//   button:hover {
+//    background: darken($cta-color, 10%);
+//    color: $light-color;
+//  }
 
 }
   //for buttons specified w class theme light - messy
@@ -73,10 +91,10 @@ button.theme-light {
       color: $light-color;
     }
     
-    button.theme-light:hover {
-     background: darken($cta-color, 10%);
-     color: $light-color;
-   }
+  //   button.theme-light:hover {
+  //    background: darken($cta-color, 10%);
+  //    color: $light-color;
+  //  }
 
    //dark theme variation per theme
 //not for light but might need for when you need to switch font color by default, 
@@ -103,9 +121,9 @@ button.theme-light {
     color:$dark-color;
   }
 
-  button:hover {
-    background: darken($light-color,10%);
-  }
+  // button:hover {
+  //   background: darken($light-color,10%);
+  // }
   
 
   .tout {
@@ -125,9 +143,7 @@ button.theme-light {
   overflow: hidden;
   border-radius: $border-radius;
 
-  .z-col, z-col {
-    //margin: 0;
-  }
+
 
   //button
   button{
@@ -136,9 +152,9 @@ button.theme-light {
 
   }
 
-  button:hover {
-    background: darken($primary-color, 10%);
-  }
+  // button:hover {
+  //   background: darken($primary-color, 10%);
+  // }
 
 
   .tout {
@@ -169,9 +185,9 @@ button.theme-light {
 
   }
 
-  button:hover {
-    background: darken($secondary-color, 10%);
-  }
+  // button:hover {
+  //   background: darken($secondary-color, 10%);
+  // }
   
 
   .tout {
@@ -211,9 +227,9 @@ button.theme-light {
       color: $dark-color;
     }
   
-    button:hover {
-      background: darken($accent-color, 10%);
-    }
+    // button:hover {
+    //   background: darken($accent-color, 10%);
+    // }
 
 }
 
@@ -260,9 +276,9 @@ button.theme-light {
     color: $light-color;
   }
 
-  button:hover {
-    background: darken($cta-color, 10%);
-  }
+  // button:hover {
+  //   background: darken($cta-color, 10%);
+  // }
 
   //form stuff take 2
 

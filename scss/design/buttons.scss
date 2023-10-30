@@ -50,9 +50,9 @@ button.btn-ghost-dark {
 
 button.btn-ghost-dark:hover {
 
-  color: lighten($dark-color, 10%);
+  color: lighten($light-color, 10%);
   border: 2px solid darken($dark-color, 10%);
-  background:darken($light-color, 4%);
+  background:darken($dark-color, 4%);
   opacity: .5;
 }
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+    <div class="center-line"></div>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1> Flex</h1>
+
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+<z-container>
+    <z-row>
+        <z-col>
+
+            <section id="flex-classes">
+                <h2>FLEX</h2>
+            
+                <section id="flex-container-class">
+                    <h3>1. Flex Container Class</h3>
+                    
+                        <p>
+                            <code>.d-flex</code> - This class sets the display property to flex, making the element a flex container.
+                        </p>
+                
+                </section>
+            
+                <section id="flex-grow-classes">
+                    <h3>2. Flex Grow Classes</h3>
+                    <p>
+                        These classes are used to set the flex-grow property of flex items, which determines how much a flex item will grow relative to the rest of the flex items in the flex container.
+                    </p>
+                    
+                        <p>
+                            <code>.feature</code>:
+                            <code>flex-grow is set to 2</code>
+                        </p>
+                        <p>
+                            <code>.feature-sm</code>:
+                            <code>flex-grow is set to 3</code>
+                        </p>
+                        <p>
+                            <code>.feature-md</code>:
+                            <code>flex-grow is set to 5</code>
+                        </p>
+                        <p>
+                            <code>.feature-lg</code>:
+                            <code>flex-grow is set to 6</code>
+                            <br>Dev notice: <code>.feature-lg</code> is defined twice, to fix
+                        </p>
+                
+                </section>
+            
+                
+        </z-col>
+    </z-row>
+</z-container>
+
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>
