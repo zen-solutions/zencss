@@ -23,9 +23,9 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1> Slider</h1>
-                    <p>A simple slider you can use for your website. </p>
-                    <hr>
+                    <h1> best practices</h1>
+                    <p>A simple header you can use for your website. Mobile version coming soon. </p>
+                        <hr>
                 </div>
             </z-col>
         </z-row>
@@ -37,52 +37,50 @@
 
     <z-container>
         <z-row>
-            <z-col>
-                <div class="slider">
-                    <div class="slides-container">
-                        <img src="../../img/placeholder/CesarCouto.png" alt>
-                        <img src="../../img/placeholder/fernando-jorge.jpg" alt>
-                        <img src="../../img/placeholder/scottwebb.png" alt>
-                        <img src="../../img/placeholder/SimonBerger.png" alt>
+            <z-col class="m-0 p-0">
+
+                <header>
+                    <div class="pl-2" id="header-logo">
+                        <img src="../../img/logo.png" alt="Logo">
                     </div>
-                </div>
-                <button class="prev">Prev</button>
-                <button class="next">Next</button>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+        
+
+                            <!--div class="dropdown">
+                                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                                <label for="dropdown-toggle" class="dropdown-label theme-dark">Toggle Dropdown</label>
+                                <div class="dropdown-menu theme-dark">
+                                    <div class="item">This is an item</div>
+                                    <div class="item">This is an item</div>
+                                    <div class="item">This is an item</div>
+                                </div>
+                            </div-->
+
+
+                            <li><a href="#home" class="nav-link">Home</a></li>
+                            <li><a href="#services" class="nav-link">Services</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
+                            <li><input class="theme-dark pr-0" type="search" value="Search"></li>
+                            <li class="ml-0"><input  class="theme-dark" type="submit" value="go"> </li>
+                        </ul>
+                    </nav>
+                </header>
+
+
             </z-col>
         </z-row>
     </z-container>
-
-<!----------------------------------------------------------------------->
-<!--- Code Block  --->
-<!----------------------------------------------------------------------->
-<z-container>
-    <z-row>
-        <z-col>
-            <h2>Code Example</h2>
-            <pre class="copy-text"><code class="language-html">&lt;div class="slider"&gt;
-    &lt;div class="slides-container"&gt;
-        &lt;img src="../../img/placeholder/CesarCouto.png" alt&gt;
-        &lt;img src="../../img/placeholder/fernando-jorge.jpg" alt&gt;
-        &lt;img src="../../img/placeholder/scottwebb.png" alt&gt;
-        &lt;img src="../../img/placeholder/SimonBerger.png" alt&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="prev"&gt;Prev&lt;/button&gt;
-&lt;button class="next"&gt;Next&lt;/button&gt;</code></pre>
-        </z-col>
-    </z-row>
-</z-container>
-
-
-
-
-
+    
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row>
+        <z-row >
             <z-col>
                 <div class="center up-20">
                     <hr class="top">
@@ -98,12 +96,7 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="center">
-                    <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
-                    </p>
+               rewrite this https://getbootstrap.com/docs/4.0/getting-started/theming/
                 </div>
             </z-col>
         </z-row>
@@ -117,10 +110,9 @@
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <!--script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script-->
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
     <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
 
   <script src="../js/copy.js"></script>
 </body>

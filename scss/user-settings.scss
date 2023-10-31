@@ -11,17 +11,17 @@ $site-icons: true;
 // Brand Color Palette 
 //------------------------------------------ 
 
-$primary-color : #1f77d5;
-$secondary-color: #16426c;
+$primary-color : #004e88; 
+$secondary-color: #bc2624;
 $accent-color: hsl(43, 86%, 53%);
-$cta-color: #bc2624;
+$cta-color: #1f77d5;
 
 
 //------------------------------------------ 
 // Generic Color Palette 
 //------------------------------------------ 
 
-$red: #d5322f;
+$red: #c22a27;
 $orange: #ef7b02;
 $yellow: #ecc500;
 $green: #599d03;
@@ -66,7 +66,9 @@ $hero-image: url("../website/images/hero.jpg");
 //------------------------------------------ 
 
 $light-ui-hover-color:#eee;
-$border-color:#bbb;
+$border-color:rgba(79, 78, 78, 0.25);
+$dual-mode-bg-color:rgba(79, 78, 78, 0.125);
+
 //------------------------------------------ 
 // Default Spacing
 //------------------------------------------ 

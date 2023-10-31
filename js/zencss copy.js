@@ -173,6 +173,9 @@ class ZModal extends HTMLElement {
             .addEventListener("click", () => {
                 this.close();
             });
+        document.querySelector(".btn-modal").addEventListener("click", () => {
+            this.open();
+        });
         this.shadowRoot
             .querySelector(".modal")
             .addEventListener("click", (event) => {
@@ -181,19 +184,11 @@ class ZModal extends HTMLElement {
                 }
             });
         document.addEventListener("click", (event) => {
-            if (event.target.classList.contains("modal-close")) {
+            if (event.target.closest('.modal-button')) {
                 this.close();
             }
         });
-    
-        const openModalButton = document.querySelector(".modal-open");
-        if (openModalButton) {
-            openModalButton.addEventListener("click", () => {
-                this.open();
-            });
-        }
     }
-        
 
     open() {
         this.shadowRoot.querySelector(".modal").style.display = "flex";
@@ -205,86 +200,92 @@ class ZModal extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-            <style>
-            .modal {
-                position: fixed;
-                z-index: 10000;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.8);
-                display: none;
-                align-items: center;
-                justify-content: center;
-            }
-            .modal-wrapper {
-                position: relative;
-                width: 80%;
-                max-width: 500px;
-                background-color: rgba(255, 255, 255, 0.9);
-                border: 1px solid #bbb;
-                border-radius: var(--border-radius, 8px);
-                box-sizing: border-box;
-            }
-            .modal-header {
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 20px;
-                border-bottom: 1px solid #bbb;
-            }
-            .modal-title {
-                margin: 0;
-                font-size: 1.5em;
-            }
-            .close {
-                color: var(--dark-color, #aaa);
-                font-size: 28px;
-                font-weight: bold;
-                cursor: pointer;
-                border: none;
-                background-color: transparent;
-            }
-            .close:hover,
-            .close:focus {
-                color: var(--cta-color, #f00);
-            }
-            .modal-body {
-                padding: 20px;
-                max-height: 300px;
-                overflow-y: auto;
-            }
-            .modal-footer {
-                display: flex;
-                justify-content: flex-end;
-                padding: 10px 20px;
-                border-top: 1px solid #bbb;
-            }
-        </style>
-        <div class="modal">
-            <div class="modal-wrapper">
-                <div class="modal-header">
-                    <slot name="title"></slot>
-                    <div class="title-spacer"></div>
-                    <button class="close">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <slot></slot>
-                </div>
-                <div class="modal-footer">
-                    <slot name="footer">
-                        <button class="modal-close">Close</button>
-                        <button class="modal-save">Save</button>
-                    </slot>
-                </div>
-            </div>
+        <style>
+        .modal {
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-wrapper {
+            position: relative;
+            width: 80%;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #888;
+            border-radius: var(--border-radius, 8px);
+            box-sizing: border-box;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #888;
+            position: relative;
+        }
+        .modal-header::before {
+            content: '';
+            display: inline-block;
+        }
+        .title-spacer {
+            flex-grow: 1;
+        }
+        .modal-title {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .close {
+            color: var(--dark-color, #000);
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+        .close:hover,
+        .close:focus {
+            color: var(--cta-color, #f00);
+        }
+        .modal-body {
+            padding: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            border-top: 1px solid #888;
+        }
+    </style>
+    <div class="modal">
+    <div class="modal-wrapper">
+        <div class="modal-header">
+            <slot name="title"></slot>
+            <div class="title-spacer"></div>
+            <button class="close">&times;</button>
         </div>
+        <div class="modal-body">
+            <slot name="body"></slot>
+        </div>
+        <div class="modal-footer">
+            <slot name="footer"></slot>
+        </div>
+    </div>
+</div>
         `;
     }
-    
 }
 
 customElements.define("z-modal", ZModal);
+
 
 // ----------------------------------------
 // Star component
@@ -351,7 +352,7 @@ customElements.define("star-component", StarComponent);
 
 // ----------------------------------------
 // Image Slider/Carousel
-// // ---------------------------------------
+// ---------------------------------------
 
 // Get references to the necessary elements
 var slidesContainer = document.querySelector(".slides-container");
@@ -381,8 +382,6 @@ if (slidesContainer && prevButton && nextButton) {
         showSlide(currentSlide);
     }
 }
-
-
 
 // ----------------------------------------
 // Hack for card with full screen image ;) dont @ me

@@ -1,7 +1,7 @@
 $responsive-breakpoint: 600px;
-$border-color: #ddd;
-$desktop-header-color: rgb(179, 179, 179);
-$hover-color: rgb(203, 203, 203);
+$border-color: $border-color;
+//$desktop-header-color: rgb(179, 179, 179);
+//$hover-color: rgb(203, 203, 203);
 
 .responsive-table {
     width: 100%;
@@ -11,11 +11,13 @@ $hover-color: rgb(203, 203, 203);
         border: 1px solid $border-color;
         padding: 8px;
         text-align: left;
+       // color:  $responsive-text-color;
     }
 
     thead {
         th {
-            background-color: $desktop-header-color; 
+            background-color:  darken($dual-mode-bg-color, 40%);
+            @include hover-state;
         }
 
         @media (max-width: $responsive-breakpoint) {
@@ -28,14 +30,12 @@ $hover-color: rgb(203, 203, 203);
 
     tbody {
         tr {
-            &:hover {
-                background-color: $hover-color; 
-            }
+            @include default-state;
+            @include hover-state;
 
             @media (max-width: $responsive-breakpoint) {
-                &:hover {
-                    background-color: inherit;
-                }
+                @include default-state;
+                @include hover-state;
             }
         }
 

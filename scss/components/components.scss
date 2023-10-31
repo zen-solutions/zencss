@@ -157,17 +157,20 @@
   .dropdown-label {
     padding: 10px;
     cursor: pointer;
-    color: $dark-color;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: $border-radius;
+    //color: $dark-color;
+    //background-color: #f9f9f9;
+    //border: 1px solid #ccc;
 
+    //this is how we default style all the ui stuff moving forward
+    @include default-state;
+    @include hover-state;
   }
+
 
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 11px);
     left: 0;
     z-index: 1;
     background-color: #f9f9f9;
@@ -175,17 +178,14 @@
     border: 1px solid $border-color;
     z-index: 1000;
     border-radius: $border-radius;
+   
+
 
     .item {
       padding: 1em 1.2em;
-
       cursor: pointer;
-      color: $dark-color;
-
-
-      &:hover {
-        background-color: $light-ui-hover-color;
-      }
+      @include default-state;
+      @include hover-state;
     }
   }
 
@@ -202,7 +202,7 @@
   transform: translateX(-50%);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #f9f9f9;
+  border-bottom: 10px solid #e4e4e4;
 }
 
 

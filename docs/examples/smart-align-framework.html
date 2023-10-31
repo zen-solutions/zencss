@@ -20,25 +20,12 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row>
-            <z-col class="bg-opaque round">
-                <div class="center-me circle w-50 p-4 bg-primary">
-                    <img src="../../img/placeholders/logo-stack-white.png" class="w-50" alt="">
-                </div>
-                <h1 class="center">zenCSS Components</h1>
-            </z-col>
-        </z-row>
-    </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
         <z-row>
             <z-col>
                 <div class="center">
-                    <h4> Box structure </h4>
-                    <p> Let's look at the way our <span class="text-green">containers</span>, <span class="text-blue">rows</span> and <span class="text-red">columns</span> work. We've simulated our "zen test" mode to help you visualize our each element. </p>
+                    <h1 class="center">zenCSS Smart Align System</h1>
+                    <p> Let's look at the way our <span class="text-blue">containers</span>, <span class="text-green">rows</span> and <span class="text-red">columns</span> work. We've simulated our "zen test" mode to help you visualize each element. </p>
                         <hr>
                 </div>
             </z-col>
@@ -50,7 +37,10 @@
     <!----------------------------------------------------------------------->
 
 
-    <z-container class="z-container-outline-on center mb-3">
+    <z-container-fluid class="z-container-fluid-outline-on center mb-3">
+        <p>this is a container-fluid</p>
+    </z-container-fluid>
+        <z-container class="z-container-outline-on center mb-3">
         <p>this is a container</p>
     </z-container>
 
@@ -62,7 +52,7 @@
 
 <z-container class="z-container-outline-on">
     <z-row class="z-row-outline-on">
-        <z-col class="z-col-outline-on">
+        <z-col class="z-col-outline-on center">
             this is a nested column.  Columns expand or contract automatically. 100% width by default. 
           </z-col>
     </z-row>
@@ -71,7 +61,7 @@
 <z-container class="z-container-outline-on mt-3">
     <z-row class="z-row-outline-on">
         <z-col class="z-col-outline-on">
-            <p class="p-outline-on"> this is a nested paragraph
+            <p class="p-outline-on center"> this is a nested paragraph
             </p>
         </z-col>
     </z-row>
@@ -81,6 +71,7 @@
     <z-row>
         <z-col>
             <p>A simple page layout might look something like this. Note: all col widths are dynamic based on how many siblings they have.</p>
+            <p>Rows and colums align in perfect harmony at all resolutions.</p>
         </z-col>
     </z-row>
 </z-container>
@@ -150,7 +141,6 @@
             <z-col>
                 <div class="center">
                     <p>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
                     </p>
                 </div>
@@ -172,7 +162,7 @@
 
 
 
-  <script src="../js/copy.js"></script>
+    <script src="../js/copy.js"></script>
 </body>
 
 </html>

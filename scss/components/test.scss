@@ -29,6 +29,7 @@
 .z-container-outline-on {
   outline: 4px dashed $blue;
   border-radius:0;
+  //outline-offset: 2px;
 }
 
 .z-container-fluid-outline-on {
@@ -37,13 +38,17 @@
 }
 
 .z-row-outline-on {
-  outline: 2px solid $green;
+ // outline: 3px solid $green;
   border-radius:0;
+  box-shadow: inset 0 0 0 3px green; /* Creates a 1px inset 'outline' */
+
 }
 
 .z-col-outline-on {
-  outline: 2px solid $red;
+  //outline: 2px solid $red;
   border-radius:0;
+  box-shadow: inset 0 0 0 3px red; /* Creates a 1px inset 'outline' */
+
 }
 
 .p-outline-on{

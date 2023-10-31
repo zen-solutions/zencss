@@ -77,7 +77,7 @@
     font-size: 1.4em;
 }
 
-.serif{
+.serif {
     font-family: 'Playfair Display', serif;
 }
 
@@ -85,7 +85,7 @@
 // Icons 
 //------------------------------------------ 
 
-.icon-lg{
+.icon-lg {
     font-size: 23px;
 }
 
@@ -101,12 +101,12 @@
     color: white;
     font-size: 14px;
     text-align: center;
-    line-height: 20px; 
-    position:absolute;
-    top:19px;
-    right:19px;
-    padding-left:0 !important;
-    padding-right:0 !important;
+    line-height: 20px;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .tout-circle {
@@ -117,10 +117,190 @@
     color: white;
     font-size: 14px;
     text-align: center;
-    line-height: 20px; 
-    padding-left:0 !important;
-    padding-right:0 !important;
+    line-height: 20px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
+
+
+// ------------------------------------------ 
+// Tooltips
+//------------------------------------------ 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px 9px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -120px;
+    opacity: 0;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+//-----------------------------------------------------
+//breadcrumb
+//-----------------------------------------------------
+
+.breadcrumb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumb li+li:before {
+    content: ">  ";
+    margin-left: 2px;
+    color: $dark-grey;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: $cta-color;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+//-----------------------------------------------------
+//list groups
+//-----------------------------------------------------
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    border: 1px solid $border-color;
+}
+
+/* Active Items */
+.list-group-item.active {
+    color: #fff;
+    background-color: $cta-color;
+    border-color: $cta-color;
+}
+
+/* Disabled Items */
+.list-group-item.disabled {
+    color: #6c757d;
+    background-color: #f8f9fa;
+    pointer-events: none;
+}
+
+/* Flush */
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+/* Horizontal */
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+
+/* Contextual Classes */
+.list-group-item-success {
+    background-color: #d4edda;
+}
+
+.list-group-item-danger {
+    background-color: #f8d7da;
+}
+
+.list-group-item-warning {
+    background-color: #fff3cd;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: none;
+}
+
+.list-group-horizontal .list-group-item {
+    border-bottom: 1px solid $border-color;
+}
+
+.list-group .list-group-item-action:hover {
+    background-color: $cta-color;
+    color: $light-color;
+}
+
+//-----------------------------------------------------
+// Pagination
+//-----------------------------------------------------
+
+.pagination-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    .item {
+        padding: 0.75rem 1.25rem;
+        border: 1px solid $border-color;
+        text-decoration: none !important;
+    //this is how we default style all the ui stuff moving forward
+    @include default-state;
+    @include hover-state;
+    }
+    
+
+    
+    .current {
+        background-color: $cta-color;
+        color: $light-color;
+        border-color: $cta-color;
+    }
+
+    .item+.item {
+        margin-left: 4px;
+    }
+    
+}
+
+
+
+
 
 // ------------------------------------------ 
 // Text Type class
