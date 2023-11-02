@@ -10,7 +10,7 @@ $cta-color-dark: darken($cta-color, 10%);
 
 //brand palette light
 $primary-color-light: lighten($primary-color, 10%); 
-$secondary-color-light: lighten($secondary-color, 10%); 
+$secondary-color-light: lighten($secondary-color, 4%); 
 $accent-color-light: lighten($accent-color, 10%); 
 $cta-color-light: lighten($cta-color, 4%); 
 
@@ -30,7 +30,7 @@ $orange-light: lighten($orange, 10%);
 $yellow-light: lighten($yellow, 10%); 
 $green-light: lighten($green, 10%); 
 $blue-light: lighten($blue, 10%); 
-$purple-light: lighten($purple, 10%); 
+$purple-light: lighten($purple, 5%); 
 
 
 /* Generate border color classes */

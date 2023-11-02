@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
     <link rel="stylesheet" href="../css/documentation.css">
-   <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/zen.css">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -29,10 +29,10 @@
             <z-col>
                 <div class="center">
                     <h1>UI Themes</h1>
-                    <p>Think Fortnite skins, but for UI components and their children. The six themes can be used to skin columns, rows, containers, components, and individual HTML elements. Override background and text colors on any element using our modifier classes.
+                    <p>Think Fortnite skins, but for UI components and their children. The seven themes can be used to skin columns, rows, containers, components, and individual HTML elements. Override background and text colors on any element using our modifier classes.
 
                     </p>
-                        <hr>
+                    <hr>
                 </div>
             </z-col>
         </z-row>
@@ -45,14 +45,15 @@
 
     <z-container>
         <z-row>
-            <z-col class="card theme-primary">
+            <z-col class="card">
                 <span class="tout bg-opaque">new</span>
-                <h2>theme-primary</h2>
+                <h2>Default Card</h2>
                 <p>Magni dolores tempore libero odit, unde id vitae, doloribus eius! Iste, mollitia sequi?</p>
                 <div>
                     <button>Lorem Ipsum</button>
                 </div>
             </z-col>
+
 
             <z-col class="card theme-light">
                 <span class="tout">new</span>
@@ -62,7 +63,7 @@
                     <button>Lorem Ipsum</button>
                 </div>
             </z-col>
-            
+
             <z-col class="card theme-dark">
                 <span class="tout">new</span>
                 <h2>theme-dark</h2>
@@ -73,7 +74,14 @@
             </z-col>
         </z-row>
         <z-row>
-
+            <z-col class="card theme-primary feature-md">
+                <span class="tout bg-opaque">new</span>
+                <h2>theme-primary</h2>
+                <p>Magni dolores tempore libero odit, unde id vitae, doloribus eius! Iste, mollitia sequi?</p>
+                <div>
+                    <button>Lorem Ipsum</button>
+                </div>
+            </z-col>
             <z-col class="card theme-secondary">
                 <span class="tout">new</span>
                 <h2>theme-secondary</h2>
@@ -83,6 +91,9 @@
                 </div>
             </z-col>
 
+            </z-row>
+            <z-row>
+   
             <z-col class="card theme-accent">
                 <span class="tout">new</span>
                 <h2>theme-accent</h2>
@@ -91,7 +102,7 @@
                     <button>Lorem Ipsum</button>
                 </div>
             </z-col>
-            
+
             <z-col class="card theme-cta">
                 <span class="tout">new</span>
                 <h2>theme-cta</h2>
@@ -101,77 +112,77 @@
                 </div>
             </z-col>
         </z-row>
-    </z-column>
+        </z-column>
 
 
-    <!----------------------------------------------------------------------->
-<!--- Code Block  --->
-<!----------------------------------------------------------------------->
-<z-container>
-    <z-row>
-        <z-col>
-            <h2>Code Example</h2>
-            <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-primary"&gt;
+        <!----------------------------------------------------------------------->
+        <!--- Code Block  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <h2>Code Example</h2>
+                    <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-primary"&gt;
   &lt;span class="tout"&gt;new&lt;/span&gt;
   &lt;h2&gt;headline&lt;/h2&gt;
   &lt;p&gt;subtext&lt;/p&gt;
   &lt;button&gt;CTA&lt;/button&gt;
 &lt;/z-col&gt; </code></pre>
-        </z-col>
-    </z-row>
-</z-container>
+                </z-col>
+            </z-row>
+        </z-container>
 
 
         <!----------------------------------------------------------------------->
-    <!--- Zen Test --->
-    <!----------------------------------------------------------------------->
+        <!--- Zen Test --->
+        <!----------------------------------------------------------------------->
 
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center up-20">
-                    <hr class="top">
-                    <h4>The Zen Test</h4>
-                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
-                        any resolution.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center up-20">
+                        <hr class="top">
+                        <h4>The Zen Test</h4>
+                        <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                            any resolution.</p>
+                        <p> So you can be assured it "just works". Try it out below. </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
-                <div class="center">
-                    <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
-                    </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-
+        <z-container>
+            <z-row class="up-40">
+                <z-col>
+                    <div class="center">
+                        <p>
+                            <button id="toggleButton" class="btn-md">Test</button>
+                            <button id="toggleDarkMode" class="btn-md">Dark</button>
+                            <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
 
 
-    </main>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer class="zen">
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
-    </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        </main>
 
-  <script src="../js/copy.js"></script>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer class="zen">
+            <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+        <script src="../../js/zencss.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+        <script src="../js/copy.js"></script>
 </body>
 
 </html>

@@ -426,3 +426,25 @@ margin-top:5px;
 // .modal-title {
 //   text-align: left;
 // }
+
+//cookie consent
+
+#cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $dual-mode-bg-color;
+  //color: $dark-color;
+  text-align: center;
+  padding: 15px;
+  z-index: 1100;
+  display: none; 
+
+  p {
+      margin: 0;
+      margin-right: 10px;
+      display: inline-block;
+  }
+
+}

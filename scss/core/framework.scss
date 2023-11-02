@@ -88,7 +88,30 @@ z-col :has(z-row), .z-col :has(.z-row) {
   margin-right: 0;
 }
 
+.col-square{
 
+  flex: 1 1 auto; /* Allows the item to grow and shrink */
+  background-color: #3498db; /* For visualization */
+
+}
+.leader-container {
+  flex: 0 0 auto; /* Prevents the leader-container from growing or shrinking */
+  width: 570px; /* Half of 1140px */
+  height: 570px; /* Same as width to maintain square shape */
+  display: flex; /* Establishes a flexbox context for the leader item */
+}
+
+.leader {
+  flex-grow: 1; /* Allows the leader item to fill the leader-container */
+  background-color: #e74c3c; /* For visualization, different color to distinguish */
+}
+
+.fib-container{
+  .flex-container {
+
+    align-items: stretch; 
+}
+}
 //--------------------------------
 // Experimental
 //--------------------------------

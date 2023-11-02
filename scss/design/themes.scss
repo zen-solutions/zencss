@@ -75,7 +75,7 @@ $themes: (
 
   //for buttons inside theme light
   button {
-    background:$cta-color;
+    background:$dark-color;
     color: $light-color;
   }
   
@@ -147,8 +147,8 @@ button.theme-light {
 
   //button
   button{
-    background:$primary-color;
-    color: $light-color;
+    background:$accent-color;
+    color: $dark-color;
 
   }
 
@@ -158,8 +158,8 @@ button.theme-light {
 
 
   .tout {
-    background: $primary-color;
-    color: $light-color;
+    background: $accent-color;
+    color: $dark-color;
   }
 }
 
@@ -217,14 +217,14 @@ button.theme-light {
   
 
   .tout {
-    background: $accent-color;
-    color: $dark-color;
+    background: $primary-color;
+    color: $light-color;
   }
 
     //button
     button{
-      background:$accent-color;
-      color: $dark-color;
+      background:$primary-color;
+      color: $light-color;
     }
   
     // button:hover {
@@ -255,14 +255,11 @@ button.theme-light {
     color:$cta-color;
   }
 
-  .z-col, z-col {
-    //margin: 0;
-  }
 
 ////styling for tout component
   .tout {
-   // background: $cta-color;
-    color: $light-color;
+    background: $light-color;
+    color: $dark-color;
   }
 
   a{

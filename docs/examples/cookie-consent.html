@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+    <div class="center-line"></div>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1> Cookie consent</h1>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <p class="center">Consent form will display at the bottom of the page</p>
+
+                <div id="cookie-consent-banner">
+                    <p>This website uses cookies and other tracking technologies to enhance user experience and to analyze performance and traffic on our website. We also share information about your use of our site with our social media, advertising and analytics partners. If we have detected an opt-out preference signal then it will be honored. Further information is available in our:
+                         <a href="#">Privacy & Cookie Policy</a></p>
+                    <button id="accept-cookies">Accept</button>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="../../js/optional/cookie-consent.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

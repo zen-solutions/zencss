@@ -79,11 +79,40 @@
 
 .accordion {
   gap: 0;
-  font-size: .8rem;
+  //font-size: .8rem;
 
   > :nth-last-child(2),
   :last-child {
     border-bottom: 1px solid $border-color;
+  }
+
+  p{
+    margin:0;
+  }
+
+  .expanded-content {
+    
+    margin: 0;
+    visibility: hidden; 
+    opacity: 0;  
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out; 
+
+    p{
+      border-bottom:0;
+    }
+  }
+
+  .toggle:checked + .title + .expanded-content {
+    max-height: 16em;  
+    padding: 30px;
+    opacity: 0.5; 
+    visibility: visible;
   }
 }
 
@@ -94,32 +123,18 @@
 .accordion .title {
   display: block;
   padding: 10px;
-  background-color: white;
+  //background-color: white;
   cursor: pointer;
   margin: 0;
   border-top: 1px solid $border-color;
   transition: background-color 0.3s;
+  @include default-state;
+  @include hover-state;
 }
 
-.accordion .title:hover {
-  background-color: $light-grey;
-}
 
-.accordion .expanded-content {
-  display: none;
-  padding: 10px;
-  margin: 0;
-  opacity: .5;
-  padding-left: 23px;
-  padding-right: 23px;
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
 
-}
 
-.accordion .toggle:checked+.title+.expanded-content {
-  display: block;
-}
 
 .accordion .title::before {
   content: "";

@@ -28,18 +28,18 @@
     box-sizing: border-box;
     overflow-x: hidden;
 
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
-    }
+  }
 
     //--------------------------------------------------------------
     // Load core files
     //--------------------------------------------------------------
 
     @import 'user-settings.scss';
+    @import 'core/mixins.scss';
     @import 'core/framework.scss';
     @import 'core/scaffold.scss';
-    @import 'core/mixins.scss';
     // @import 'optional/popover.scss'; 
     @import 'design/themes.scss';
     @import 'core/header.scss';

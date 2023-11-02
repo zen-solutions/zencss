@@ -400,6 +400,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ----------------------------------------
+// Accordian - autoclose when choosing a new option
+// ----------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const accordion = document.querySelector('.accordion');
+    
+    if (accordion) { 
+        const toggles = accordion.querySelectorAll('.toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('change', () => {
+                toggles.forEach(t => {
+                    if (t !== toggle) {
+                        t.checked = false;
+                    }
+                });
+            });
+        });
+    }
+});
+
+// ----------------------------------------
 // testimonial slider
 // ----------------------------------------
 
