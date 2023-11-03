@@ -35,7 +35,7 @@
 $themes: (
   primary: $light-color,
   dark: $light-color,
-  light: $light-color,
+  light: $dark-color,
   cta: $light-color,
   accent: $light-color,
   secondary: $secondary-color  
@@ -180,7 +180,7 @@ button.theme-light {
 
   //button
   button{
-    background:$cta-color;
+    background:$secondary-color;
     color: $light-color;
 
   }
@@ -191,7 +191,7 @@ button.theme-light {
   
 
   .tout {
-    background: $cta-color;
+    background: $secondary-color;
     color: $light-color;
     
   }
@@ -258,8 +258,8 @@ button.theme-light {
 
 ////styling for tout component
   .tout {
-    background: $light-color;
-    color: $dark-color;
+    background: $cta-color;
+    color: $light-color;
   }
 
   a{
@@ -269,7 +269,7 @@ button.theme-light {
 
   //button
   button.btn-primary, button{
-    background:$secondary-color;
+    background:$cta-color;
     color: $light-color;
   }
 

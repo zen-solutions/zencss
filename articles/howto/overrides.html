@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+<main>
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <section id="customizing-zenCSS">
+                    <h1>Customizing zenCSS: A User’s Guide</h1>
+                    
+                    <p>
+                        zenCSS is engineered to be a comprehensive yet flexible toolkit for modern web development. 
+                        While the library comes with a well-thought-out set of styles, we understand the necessity for 
+                        customization to meet specific project requirements. This document outlines the workflow for 
+                        customizing zenCSS classes without modifying the original SCSS files.
+                    </p>
+                
+                    <h2>1. Importing zenCSS</h2>
+                    <p>
+                        Begin by integrating zenCSS into your project. Depending on your preference, you can either 
+                        link the compiled CSS file in your HTML or import the main SCSS file if you're using SCSS.
+                    </p>
+                    <pre>
+&lt;!-- If using CSS --&gt;
+&lt;link rel="stylesheet" href="path-to-zenCSS.css"&gt;</pre>
+                    <pre>
+// If using SCSS
+@import 'path-to-zen.scss';</pre>
+                
+                    <h2>2. Creating Custom Styles</h2>
+                    <p>
+                        Create a new CSS or SCSS file for your custom styles. In this file, you can override the 
+                        styles of zenCSS by specifying new rules for the classes you wish to customize.
+                    </p>
+                    <pre>
+// custom-styles.scss
+.class-to-override {
+    property: new-value;
+}  </pre>
+                
+                    <h2>3. Importing Custom Styles</h2>
+                    <p>
+                        Ensure your custom styles are loaded after zenCSS so that your overrides take precedence. 
+                        In the case of CSS, add a new link element after the link to zenCSS. In the case of SCSS, 
+                        import your custom styles file after importing zenCSS.
+                    </p>
+                    <pre>
+&lt;!-- If using CSS --&gt;
+&lt;link rel="stylesheet" href="path-to-zenCSS.css"&gt;
+&lt;link rel="stylesheet" href="custom-styles.css"&gt; </pre>
+                    <pre>
+// If using SCSS
+@import 'path-to-zen.scss';
+@import 'custom-styles'; </pre>
+                
+                    <h2>4. Compiling SCSS (if necessary)</h2>
+                    <p>
+                        If you're working with SCSS, compile your SCSS files into CSS using a tool like Sass, Gulp, or Webpack.
+                    </p>
+                
+                    <h2>5. Testing and Iteration</h2>
+                    <p>
+                        Test your overrides in the browser to ensure they are working as intended. Iterate on your 
+                        custom styles, re-compiling your SCSS as necessary, until you achieve the desired aesthetics 
+                        and functionality.
+                    </p>
+                
+                    <h2>6. Additional Best Practices</h2>
+                    <p>
+                        Maintain a separate file for overriding styles to keep customizations organized and easier 
+                        to manage. This separation also facilitates smoother updates to zenCSS in the future without 
+                        losing your customizations.
+                    </p>
+                    <p>
+                        As you venture into customizing zenCSS, this structured approach will ensure a streamlined 
+                        process, aligning with the efficient and precise ethos of the zenCSS toolkit.
+                    </p>
+                </section>
+                
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src=".././docs/js/copy.js"></script>
+</body>
+
+</html>

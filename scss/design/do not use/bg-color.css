@@ -1,0 +1,228 @@
+
+/* THIS IS STATIC-BUT ITS THE LATEST WORKING COPY
+consider giving this if we cnt make maps
+Background and Text Color Classes */
+
+/* Background: primary, Text: white */
+.bg-primary {
+  background: #024477 !important;
+  color: white !important;
+}
+.bg-primary-dark {
+  background: #012745;
+  color: white !important;
+}
+.bg-primary-light {
+  background: #0361a9;
+  color: white !important;
+}
+
+/* Background: secondary, Text: white */
+.bg-secondary {
+  background: #426b2f !important;
+  color: white !important;
+}
+.bg-secondary-dark {
+  background: #2c481f;
+  color: white !important;
+}
+.bg-secondary-light {
+  background: #4b7935;
+  color: white !important;
+}
+
+/* Background: accent, Text: black */
+.bg-accent {
+  background: #ffb12b !important;
+  color: black !important;
+}
+.bg-accent-dark {
+  background: #f79c00;
+  color: black !important;
+}
+.bg-accent-light {
+  background: #ffc45e;
+  color: black !important;
+}
+
+/* Background: cta, Text: white */
+.bg-cta {
+  background: #1b64b2 !important;
+  color: white !important;
+}
+.bg-cta-dark {
+  background: #144b86;
+  color: white !important;
+}
+.bg-cta-light {
+  background: #1e6ec4;
+  color: white !important;
+}
+
+/* Background: red, Text: white */
+.bg-red {
+  background: #c22a27 !important;
+  color: white !important;
+}
+.bg-red-dark {
+  background: #98211e;
+  color: white !important;
+}
+.bg-red-light {
+  background: #d5312e;
+  color: white !important;
+}
+
+/* Background: orange, Text: black */
+.bg-orange {
+  background: #ef7b02 !important;
+  color: black !important;
+}
+.bg-orange-dark {
+  background: #c76602;
+  color: black !important;
+}
+.bg-orange-light {
+  background: #fd9427;
+  color: black !important;
+}
+
+/* Background: yellow, Text: black */
+.bg-yellow {
+  background: #ecc500 !important;
+  color: black !important;
+}
+.bg-yellow-dark {
+  background: #b99a00;
+  color: black !important;
+}
+.bg-yellow-light {
+  background: #ffda20;
+  color: black !important;
+}
+
+/* Background: green, Text: black */
+.bg-green {
+  background: #599d03 !important;
+  color: black !important;
+}
+.bg-green-dark {
+  background: #4b8403;
+  color: black !important;
+}
+.bg-green-light {
+  background: #75cf04;
+  color: black !important;
+}
+
+/* Background: blue, Text: white */
+.bg-blue {
+  background: #1252a9 !important;
+  color: white !important;
+}
+.bg-blue-dark {
+  background: #0d3c7b;
+  color: white !important;
+}
+.bg-blue-light {
+  background: #1768d7;
+  color: white !important;
+}
+
+/* Background: purple, Text: white */
+.bg-purple {
+  background: #6d45dc !important;
+  color: white !important;
+}
+.bg-purple-dark {
+  background: #5126c8;
+  color: white !important;
+}
+.bg-purple-light {
+  background: #7e5ae0;
+  color: white !important;
+}
+
+/* Background: grey-1, Text: grey-1 */
+.bg-grey-1 {
+  background-color: #F7F7F7;
+  color: black !important;
+}
+.bg-grey-1-dark {
+  background: #d1d1d1;
+  color: black !important;
+}
+.bg-grey-1-light {
+  background: #ffffff;
+  color: black !important;
+}
+
+/* Background: grey-2, Text: grey-2 */
+.bg-grey-2 {
+  background-color: #c7c6c6;
+  color: black !important;
+}
+.bg-grey-2-dark {
+  background: #a5a4a4;
+  color: black !important;
+}
+.bg-grey-2-light {
+  background: #d9d8d8;
+  color: black !important;
+}
+
+/* Background: grey-3, Text: grey-3 */
+.bg-grey-3 {
+  background-color: #A6A6A6;
+  color: black !important;
+}
+.bg-grey-3-dark {
+  background: #7b7979;
+  color: black !important;
+}
+.bg-grey-3-light {
+  background: #b5b3b3;
+  color: black !important;
+}
+
+/* Background: grey-4, Text: grey-4 */
+.bg-grey-4 {
+  background-color: #616161;
+  color: white !important;
+}
+.bg-grey-4-dark {
+  background: #4d4d4d;
+  color: white !important;
+}
+.bg-grey-4-light {
+  background: #6f6f6f;
+  color: white !important;
+}
+
+/* Background: grey-5, Text: grey-5 */
+.bg-grey-5 {
+  background-color: #404040;
+  color: white !important;
+}
+.bg-grey-5-dark {
+  background: #1e1e1e;
+  color: white !important;
+}
+.bg-grey-5-light {
+  background: #575757;
+  color: white !important;
+}
+
+/* Background: grey-6, Text: grey-6 */
+.bg-grey-6 {
+  background-color: #0D0D0D;
+  color: white !important;
+}
+.bg-grey-6-dark {
+  background: #000000;
+  color: white !important;
+}
+.bg-grey-6-light {
+  background: #1e1e1e;
+  color: white !important;
+}

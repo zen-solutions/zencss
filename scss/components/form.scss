@@ -7,7 +7,7 @@
     border: 1px solid $light-color;
     border-radius: $border-radius;
     color: dark-color;
-    outline: none;
+   // outline: none;
 }
 
 // Mixin for styling button elements
@@ -19,7 +19,7 @@
     color: $light-color;
     font-size: 16px;
     cursor: pointer;
-    outline: none;
+    //outline: none;
 
     &:hover {
         background: darken($cta-color, 10%);
@@ -150,3 +150,8 @@ form div {
     color: #b9b9b9 !important;
   }
   
+  input[type=checkbox], input[type=radio] {
+    width: 12px;
+    height: 12px;
+    min-height: 12px;
+}

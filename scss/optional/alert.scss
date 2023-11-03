@@ -1,123 +1,42 @@
-//DEPENDANCY ON FONT AWESOME
-
-@mixin alert($background-color) {
+// Define the alert mixin and common alert styles
+@mixin alert($background-color, $icon-url) {
   background: $background-color;
-  padding: 2em;
+  padding: 2em 2em 2em 50px;  // Move padding-left from individual classes here
   filter: grayscale(10%);
   color: $light-color;
   width: 100%;
   box-sizing: border-box;
   border-radius: $border-radius;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  margin: 1rem 0;  // Combine margin-top and margin-bottom
+  position: relative;  // Added position relative here for absolute positioning of ::before pseudo-element
 
-.alert-primary {
-  @include alert($blue);
-}
-
-.alert-danger {
-  @include alert($red);
-}
-
-.alert-success {
-  @include alert($green);
-}
-
-.alert-warning {
-  @include alert($orange);
-}
-
-.alert-dark {
-  @include alert($dark-color);
-}
-
-.alert-light {
-  @include alert($light-color);
-  color: $dark-color;
-}
-
-
-
-//icons
-@if $site-icons {
-  .alert-danger::before {
-    content: '\f071'; 
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
+  &::before {
+    background: url($icon-url) no-repeat center center;
+    background-size: contain;
+    content: '';
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; 
+    width: 20px;  
+    height: 20px;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
   }
 
-  .alert-danger {
-    line-height: 1.4em;
-    padding-left: 50px; 
-  }
+  // Override color for light alert
+  &.alert-light {
+    color: $dark-color;
 
-
-  .alert-warning::before {
-    content: '\f06a';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-  }
-
-  .alert-warning {
-    padding-left: 50px;
-    line-height: 1.4em;
-  }
-
-  .alert-success::before {
-    content: '\f058';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-  }
-
-  .alert-success {
-
-    padding-left: 50px;
-  }
-
-  .alert-primary::before {
-    content: '\f164';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-  }
-
-  .alert-primary {
-    padding-left: 50px;
-  }
-
-  .alert-dark::before {
-    content: '\f0f3';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-  }
-
-  .alert-dark {
-    padding-left: 50px;
+    &::before {
+      filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    }
   }
 }
 
+// Apply the alert mixin to each alert class, passing the background color and icon url
+.alert-primary { @include alert($blue, '../img/general-icons/thumbs-up-solid.png'); }
+.alert-danger { @include alert($red, '../img/general-icons/triangle-exclamation-solid.png'); }
+.alert-success { @include alert($green, '../img/general-icons/circle-check-solid.png'); }
+.alert-warning { @include alert($orange, '../img/general-icons/circle-exclamation-solid.png'); }
+.alert-dark { @include alert($dark-color, '../img/general-icons/bell-solid.png'); }
+.alert-light { @include alert($light-color, '../img/general-icons/star-solid.png'); }

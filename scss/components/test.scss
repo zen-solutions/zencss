@@ -26,40 +26,40 @@
 //  For Toggle button & Chrome Extension
 //---------------------------------------------------------
 
-.z-container-outline-on:hover {
-  outline: 4px dashed $blue;
+.z-container-outline-on {
+  outline: 2px dashed $blue;
   border-radius:0;
   //outline-offset: 2px;
 }
 
-.z-container-fluid-outline-on:hover {
-  outline: 4px dashed $purple;
+.z-container-fluid-outline-on {
+  outline: 2px dashed $purple;
   border-radius:0;
 }
 
-.z-row-outline-on:hover {
+.z-row-outline-on {
  // outline: 3px solid $green;
   border-radius:0;
-  box-shadow: inset 0 0 0 3px green; /* Creates a 1px inset 'outline' */
+  box-shadow: inset 0 0 0 1px green; /* Creates a 1px inset 'outline' */
 
 }
 
-.z-col-outline-on:hover {
+.z-col-outline-on {
   //outline: 2px solid $red;
   border-radius:0;
-  box-shadow: inset 0 0 0 3px red; /* Creates a 1px inset 'outline' */
+  box-shadow: inset 0 0 0 1px red; /* Creates a 1px inset 'outline' */
 
 }
 
-.p-outline-on:hover{
+.p-outline-on{
   outline: 1px solid $orange;
 }
 
-.h1-outline-on:hover{
+.h1-outline-on{
   outline: 2px dotted $orange;
 }
 
-.h-outline-on:hover{
+.h-outline-on{
   outline: 2px solid $orange;
 }
 

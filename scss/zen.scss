@@ -49,10 +49,12 @@
     @import 'core/flex.scss';
     @import 'core/formatting.scss';
     @import 'optional/alert.scss';
-    @import 'design/color.scss';
+    @import 'design/bg-color.scss';
+    @import 'design/text-color.scss';
     @import 'design/text.scss';
     @import 'components/test.scss';
     @import 'components/components.scss';
+    @import 'design/layouts.scss';
     @import 'core/footer.scss';
 
 

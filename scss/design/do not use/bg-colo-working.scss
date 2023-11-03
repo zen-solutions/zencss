@@ -1,0 +1,147 @@
+//------------------------------------------ 
+// Background and Text Color Maps
+//------------------------------------------ 
+
+// Default Background Colors
+$bg-default-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "accent": $accent-color,
+  "cta": $cta-color,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "blue": $blue,
+  "purple": $purple,
+  "grey-1": #F7F7F7,
+  "grey-2": #c7c6c6,
+  "grey-3": #A6A6A6,
+  "grey-4": #616161,
+  "grey-5": #404040,
+  "grey-6": #0D0D0D,
+);
+
+// Dark Background Colors
+$bg-dark-colors: (
+  "primary-dark": #012745,
+  "secondary-dark": #2c481f,
+  "accent-dark": #f79c00,
+  "cta-dark": #144b86,
+  "red-dark": #98211e,
+  "orange-dark": #c76602,
+  "yellow-dark": #b99a00,
+  "green-dark": #4b8403,
+  "blue-dark": #0d3c7b,
+  "purple-dark": #5126c8,
+  "grey-1-dark": #d1d1d1,
+  "grey-2-dark": #a5a4a4,
+  "grey-3-dark": #7b7979,
+  "grey-4-dark": #4d4d4d,
+  "grey-5-dark": #1e1e1e,
+  "grey-6-dark": #000000,
+);
+
+// Light Background Colors
+$bg-light-colors: (
+  "primary-light": #0361a9,
+  "secondary-light": #4b7935,
+  "accent-light": #ffc45e,
+  "cta-light": #1e6ec4,
+  "red-light": #d5312e,
+  "orange-light": #fd9427,
+  "yellow-light": #ffda20,
+  "green-light": #75cf04,
+  "blue-light": #1768d7,
+  "purple-light": #7e5ae0,
+  "grey-1-light": #ffffff,
+  "grey-2-light": #d9d8d8,
+  "grey-3-light": #b5b3b3,
+  "grey-4-light": #6f6f6f,
+  "grey-5-light": #575757,
+  "grey-6-light": #1e1e1e,
+);
+
+// Default Text Colors
+$text-default-colors: (
+  "primary": white,
+  "secondary": white,
+  "accent": black,
+  "cta": white,
+  "red": white,
+  "orange": black,
+  "yellow": black,
+  "green": black,
+  "blue": white,
+  "purple": white,
+  "grey-1": black,
+  "grey-2": black,
+  "grey-3": black,
+  "grey-4": white,
+  "grey-5": white,
+  "grey-6": white,
+);
+
+// Dark Text Colors
+$text-dark-colors: (
+  "primary-dark": white,
+  "secondary-dark": white,
+  "accent-dark": black,
+  "cta-dark": white,
+  "red-dark": white,
+  "orange-dark": black,
+  "yellow-dark": black,
+  "green-dark": black,
+  "blue-dark": white,
+  "purple-dark": white,
+  "grey-1-dark": black,
+  "grey-2-dark": black,
+  "grey-3-dark": black,
+  "grey-4-dark": white,
+  "grey-5-dark": white,
+  "grey-6-dark": white,
+);
+
+// Light Text Colors
+$text-light-colors: (
+  "primary-light": white,
+  "secondary-light": white,
+  "accent-light": black,
+  "cta-light": white,
+  "red-light": white,
+  "orange-light": black,
+  "yellow-light": black,
+  "green-light": black,
+  "blue-light": white,
+  "purple-light": white,
+  "grey-1-light": black,
+  "grey-2-light": black,
+  "grey-3-light": black,
+  "grey-4-light": white,
+  "grey-5-light": white,
+  "grey-6-light": white,
+);
+
+//------------------------------------------ 
+// Background and Text Color Classes
+//------------------------------------------ 
+
+@each $bg-key in map-keys($bg-default-colors) {
+  .bg-#{$bg-key} {
+    background: map-get($bg-default-colors, $bg-key) !important;
+    
+    @if map-has-key($text-default-colors, $bg-key) {
+      color: map-get($text-default-colors, $bg-key) !important;
+    }
+  }
+
+  .bg-#{$bg-key}-dark {
+    background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+  }
+
+  .bg-#{$bg-key}-light {
+    background: map-get($bg-light-colors, $bg-key + "-light") !important;
+    color: map-get($text-light-colors, $bg-key + "-light") !important;
+  }
+}

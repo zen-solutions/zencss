@@ -222,3 +222,34 @@ button.btn-ghost:hover {
   padding: .3em;
   font-size: 12px;
 }
+
+
+.btn-primary{
+  background: $primary-color;
+  color: $text-white;
+}
+
+.btn-secondary{
+  background: $secondary-color;
+  color: $text-white;
+}
+
+.btn-dark{
+  background: $dark-color;
+  color: $text-white;
+}
+
+.btn-light{
+  background: $light-color;
+  color: $text-black;
+}
+
+.btn-cta{
+  background: $cta-color;
+  color: $text-white;
+}
+
+.btn-accent{
+  background: $accent-color;
+  color: $text-black;
+}

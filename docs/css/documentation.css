@@ -39,7 +39,7 @@ code[class*=language-], pre[class*=language-] {
   cursor: pointer !important;
   top: 45%;
   /* Move the button 50% from the top edge of the z-row */
-  left: 99%;
+  left: 95%;
   /* Move the button 50% from the left edge of the z-row */
   transform: translate(-50%, -50%);
   margin-top: -.1px;

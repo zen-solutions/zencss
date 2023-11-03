@@ -31,8 +31,6 @@ But... Use the CSS/JS in the main branch for the latest functionality.
 
 None. Just pure CSS and Vanilla JavaScript. If you want to work with our SASS files, read on.
 
-FontAwesome is an optional temporary enhancement for alerts (configurable in user settings).
-
   
 ### Installation
 
