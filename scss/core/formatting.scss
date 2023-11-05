@@ -148,6 +148,7 @@ $sizes: (
   padding-right:1rem;
   padding-top: 1rem;
   padding-bottom:1rem;
+  font-size: .8em;
 
 
   h1, h2, h3, h4, h5, h6, p{
@@ -156,14 +157,14 @@ $sizes: (
   }
 
   p{
-    font-size: .8em;
-    padding-bottom: 1em;
+    //font-size: .8em;
+    padding-top: .5em;
+    padding-bottom: .5em;
   }
 
-  a{
-    font-size: .8em;
-    padding-bottom: .8em;  
-  }
+  //  a{
+  //   font-size: .8em;
+  // }
 }
 
 

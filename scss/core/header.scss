@@ -1,6 +1,3 @@
-
-
-
 //-----------------------------------------
 // Header - Moved from footer (ie the new header)
 //-----------------------------------------
@@ -8,8 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $dark-color;
+    background-color: $bg-header-footer;
     padding: 10px 20px;
+    width: 100%;
     }
     
     #header-logo, #header-logo img {
@@ -43,14 +41,10 @@ header {
       }
       
 //-----------------------------------------
-// Mobile/Old header. Cnnflicts/overwriting here, need to rectify. 
+// Mobile
 //-----------------------------------------
 
     header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
     padding: 10px;
     z-index: 1001;
 }
@@ -69,7 +63,7 @@ header {
     background: none;
     border: none;
     color: #808080;
-    display: none; /* Hide by default */
+    display: none;
 }
 
 nav {
@@ -118,29 +112,17 @@ nav a:hover {
 
     nav ul {
         flex-direction: column;        
-        padding-top: 10px;  
+        padding-top: 20px;  
     }
 
     nav li {
-        margin: 0;  /* Reset margin */
-        height: 40px;  /* Set height */
-        display: flex;
-        align-items: center;  /* Center text vertically */
-        justify-content: flex-start;  /* Align text to the left */
+        margin: 0; 
+        height: 40px;  
+        display: block;
+        width: 100%;
+        margin-left: 1.5em;
     }
 
-    nav li:hover {
-        background-color: grey;
-    }
-
-    nav a {
-        color: #d33331;
-        width: 100%;  /* Make anchor fill the list item */
-        height: 100%;  /* Make anchor fill the list item */
-        display: flex;
-        align-items: center;  /* Center text vertically */
-        padding-left: 10px;  /* Add some padding to the left */
-    }
 
     #close-button {
         display: block;

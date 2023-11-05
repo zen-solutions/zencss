@@ -19,16 +19,23 @@
         <!--- Hero --->
         <!----------------------------------------------------------------------->
 
-        <z-container>
-            <z-row>
-                <z-col class="bg-opaque round">
-                    <!--div class="center circle w-50 p-4 bg-primary">
-                    <img src="../../img/placeholders/logo-stack-white.png" class="w-50" alt="">
-                </div-->
-                    <h1 class="center">zenCSS Components</h1>
-                </z-col>
-            </z-row>
-        </z-container>
+        <header>
+            <div class="pl-2" id="header-logo">
+               <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+            </div>
+            <button id="hamburger-button">☰</button>
+            <nav>
+                <button id="close-button">×</button>
+                <ul class="pr-2">
+                    <li><a href="/docs/" class="nav-link">Docs</a></li>
+                    <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                    <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                    <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                    <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                </ul>
+            </nav>
+        </header>
 
         <!----------------------------------------------------------------------->
         <!--- Page Title  --->
@@ -82,6 +89,11 @@
 &lt;/div&gt; </code></pre>
                 </z-col>
             </z-row>
+            <z-row>
+                <z-col>
+                    <p>it's worth noting, to add or remove columns you need to adjust the col classes to allocate space for the columns that will be in the final composition.. Not the case with zenCSS.</p>
+                </z-col>
+            </z-row>
         </z-container>
 
         <!----------------------------------------------------------------------->
@@ -93,7 +105,7 @@
             <z-row>
                 <z-col>
                     <h4>zenCSS Equivalent Layout</h4>
-                    <p> Having transitioned back to zenCSS, let's resolve the same layout challenge using zenCSS's container, row, and column framework. Similar to the Bootstrap example, the goal is to have a container housing a single row with three columns. They should stack in the same manner based on the device screen size. Moreover, zenCSS's solution accommodates adding or removing items without necessitating any additional code modification.
+                    <p> Let's resolve the same layout challenge using zenCSS's container, row, and column framework. Similar to the Bootstrap example, the goal is to have a container housing a single row with three columns. They should stack in the same manner based on the device screen size. zenCSS's solution automatically accommodates adding or removing items without the need to update col-x classes, as well as WCAG-compliance.
                     </p>
                 </z-col>
             </z-row>
@@ -155,7 +167,7 @@
                     <div class="center">
                         <p>
                             <button id="toggleButton" class="btn-md">Test</button>
-                            <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                            <a href="../index.html"><button class="btn-md">Docs</button></a>
                         </p>
                     </div>
                 </z-col>

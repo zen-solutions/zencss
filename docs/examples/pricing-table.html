@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -38,25 +58,38 @@
 <z-container>
     <z-row>
       <z-col>
-        <div class="item  theme-primary">
+        <div class="pricing-table-container theme-primary">
           <div class="pricing-table accent">
-            <div class="tout">Fixed Price</div>
-            <h4>Your Plan Name</h4>
-            <h5>Description or Plan Type</h5>
-            <div class="pricing-features">
-              <div class="feature">Feature 1<span>Value 1</span></div>
-              <div class="feature">Feature 2<span>Value 2</span></div>
-              <div class="feature">Feature 3<span>Value 3</span></div>
-              <!-- Add more features as needed -->
-            </div>
-            <div class="price-tag">
-              <span class="symbol">$</span>
-              <span class="amount">9.99</span>
-              <span class="after">/month</span>
-            </div>
-            <button>Get Started</button>
+              <div class="header">
+                  <div class="title">Your Plan Name</div>
+                  <div class="subtitle">Description or Plan Type</div>
+                  <div class="price">
+                      <span class="currency">$</span>
+                      <span class="amount">9.99</span>
+                      <span class="frequency">/month</span>
+                  </div>
+              </div>
+              <div class="features">
+                  <div class="feature">
+                      <span class="feature-name">Feature 1</span>
+                      <span class="feature-value">Value 1</span>
+                  </div>
+                  <div class="feature">
+                      <span class="feature-name">Feature 2</span>
+                      <span class="feature-value">Value 2</span>
+                  </div>
+                  <div class="feature">
+                      <span class="feature-name">Feature 3</span>
+                      <span class="feature-value">Value 3</span>
+                  </div>
+                  <!-- Add more features as needed -->
+              </div>
+              <div class="action">
+                  <button class="get-started-btn">Get Started</button>
+              </div>
           </div>
-        </div>
+      </div>
+      
         
       </z-col>
         <z-col>
@@ -199,7 +232,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

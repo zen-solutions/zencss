@@ -1,1 +1,19 @@
-add borders + anything else that was incolor before separation
+/* Generate border color classes */
+$colors: (1: #F7F7F7,
+  2: #D9D9D9,
+  3: #A6A6A6,
+  4: #737373,
+  5: #404040,
+  6: #0D0D0D
+);
+
+@for $i from 1 through 6 {
+    .border-#{$i} {
+      border: 1px solid map-get($colors, $i);
+    }
+  }
+  
+  .border {
+    border: 1px solid #c2c2c2;
+  }
+  

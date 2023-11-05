@@ -12,7 +12,33 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+<z-container-fluid class="mt-0 pt-0">
+        <z-row class="pt-0">
+            <z-col class="m-0 p-0">
+
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
+       
+</z-container-fluid>
 
 
 
@@ -24,8 +50,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1>The zenCSS Design System</h1>
-                    <p>Revolutionize your web design workflow with the zenCSS Design System. Designed for developers and creative minds alike, our system provides a powerful set of tools to simplify the process of creating stunning web layouts. With ready-made content sections and customizable components, you'll have the freedom to craft unique and stylish designs that resonate with your audience. </p>
+                    <h1>Smart Design System</h1>
+                    <p>Revolutionize your web design workflow with the zenCSS Smart Design System. Designed for developers and creative minds alike, we offer a powerful set of tools to simplify the process of creating stunning web layouts. With ready-made content sections and customizable components, you'll have the freedom to craft unique and stylish designs that resonate with your core audience. </p>
                     <hr>
                 </div>
             </z-col>
@@ -36,6 +62,7 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
+    
     <z-container>
 
         <z-row>
@@ -46,14 +73,14 @@
         <z-row>
 
             <z-col class="card theme-light ">
-                <h5>Background/Fonts<span class="tout">WCAG 2.1 AA &check;</span></h5>
-                <p>Custom background classes for your brand, plus grey and color palettes. Each with their own WCAG 2.1 AA Compliant text color applied automatically.  </p>
+                <h5>Background/Font pairings<span class="tout">WCAG 2.1 AA &check;</span></h5>
+                <p>Custom background color classes for your brand, plus grey and color palettes. Each with their own WCAG-compliant text color applied automatically.  </p>
                 <a  href="background-colors.html">View&nbsp;Now</a>
 
             </z-col>
             <z-col class="card theme-light accent-left">
                 <h5>Themes <span class="tout">WCAG 2.1 AA  &check;</span></h5>
-                <p>They're like fortnite skins for your UI </p>
+                <p>They're like fortnite skins for your UI. Skin sections, containers or individual elements quickly and efficiently.  </p>
                 <a  href="themes.html">View&nbsp;Now</a>
             </z-col>
 
@@ -61,6 +88,15 @@
                 <h5>Type Color System</h5>
                 <p>Custom font classes for your brand, plus grey and color palettes. </p>
                 <a  href="text-colors.html">View&nbsp;Now</a>
+            </z-col>
+            <z-col class="card theme-light ">
+                <h5>Font Treatments</h5>
+           
+                <p>We have 8 seperate font treatments, including serif, san-serif, script, handwriting, mono, headlines and more.  </p>
+                        <a  href="text-classes.html">View
+                            Now</a>
+        </z-col>
+
         </z-row>
 
         <z-row>
@@ -107,18 +143,19 @@
 
         <z-row>
             <z-col>
-                <h4>Site Parts <span class="tout bg-green text-white">In progress</span></h4>
+                <h4>Site Parts </h4>
             </z-col>
         </z-row>
         <z-row >
-            <z-col class="card theme-light ">
-                <h5>Cards</h5>
-                <span class="tout-circle-floated">&#10003;</span>
-                <p>A visually organized way to showcase
-                         content items. </p>
-                        <a  href="cards.html">View
-                            Now</a>
-        </z-col>
+
+        <z-col class="card theme-light ">
+            <h5>Cards</h5>
+       
+            <p>A visually organized way to showcase
+                     content items. </p>
+                    <a  href="cards.html">View
+                        Now</a>
+    </z-col>
 
         <!--z-col class="theme-light">
             <h5>Interactive Cards</h5>
@@ -128,7 +165,7 @@
                             Now</a></p>
     </z-col-->
         <z-col class="card theme-light ">
-            <span class="tout-circle-floated">&#10003;</span>
+       
                 <h5>Buttons</h5>
                 <p>Prompt actions with Buttons, your
                         clickable gateway to the web. </p>
@@ -139,21 +176,18 @@
 
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>Contact Form</h5>
     <p>A battle-tested opt-in form, with a modern UI/UX </p>
     <a  href="contact-form.html">View&nbsp;Now</a>
 </z-col>
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>Form elements</h5>
     <p>Form elements for every need, styled for any of our themes.  </p>
     <a  href="form-elements.html">View&nbsp;Now</a>
 </z-col>
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>Testimonials</h5>
     <p>A few kind words can make all the difference. </p>
     <a  href="testimonials.html">View&nbsp;Now</a>
@@ -161,7 +195,6 @@
 </z-col>
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>Image/text card</h5>
     <p>Cards with an image on the left, and text on the right </p>
     <a  href="image-text-card.html">View&nbsp;Now</a>
@@ -169,23 +202,20 @@
 </z-col>
 
 
-<z-col class="card theme-light ">
-    <h5>Image Carousel</h5>
-    <span class="tout-circle-floated bg-orange"></span>
+<!--z-col class="card theme-light ">
+    <h5>Image Carousel <span class="tout">WIP</span></h5>
     <p>Displays multiple images, navigate using left and right buttons. </p>
     <a  href="slider.html">View&nbsp;Now</a>
-</z-col>
+</z-col-->
 
 <z-col class="card theme-light ">
 
-    <h5>Modal    <span class="tout">Nightly Build Feature</span>
-    </h5>
+    <h5>Modal </h5>
     <p>A modal overlay - click anywhere to close.  </p>
     <a  href="modal.html">View&nbsp;Now</a>
 </z-col>
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>Accordian</h5>
     <p>An accordian, because sometimes you need to share more info.  </p>
     <a  href="toggle.html">View&nbsp;Now</a>
@@ -198,7 +228,6 @@
 </z-col>
 
 <z-col class="card theme-light ">
-    <span class="tout-circle-floated">&#10003;</span>
     <h5>HTML Table</h5>
     <p>For when you need a table, this one's responsive. </p>
     <a  href="responsive-table.html">View&nbsp;Now</a>
@@ -208,8 +237,7 @@
 
 <z-col class="card theme-light ">
     <h5>Alert Messages</h5>
-    <p> Inform visitors  with alerts,
-            ensuring no important update i  s missed. </p>
+    <p> Inform visitors  with alerts, ensuring no important update is missed. </p>
             <a  href="alerts.html">View&nbsp;Now</a>
 </z-col>
 
@@ -217,15 +245,6 @@
     <h5>Site Icons</h5>
     <p>A small set of common UI icons, social icons and touts. </p>
     <a  href="decorations.html">View&nbsp;Now</a>
-</z-col>
-
-
-<z-col class="card theme-light ">
-    <h5>Animations</h5>
-    <p>Coming soon. Subtle animation to enhance UX without distracting from your core message. </p>
-    <p><!--a  href="#">View
-                    Now</a--></p>
-
 </z-col>
 
 
@@ -260,12 +279,12 @@
 </z-col>
 
 
-<z-col class="card theme-light ">
+<!--z-col class="card theme-light ">
     <h5>Pricing Tables</h5>
     <p>List your items for sale on your website </p>
     <a  href="pricing-table.html">View&nbsp;Now</a>
 
-</z-col>
+</z-col-->
 
 
         </z-row>
@@ -300,12 +319,12 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>
         </z-row>
-    </z-container>
+    </z-container>  
     </main>
 
     <!----------------------------------------------------------------------->

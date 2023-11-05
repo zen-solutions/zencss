@@ -32,7 +32,7 @@ $purple: #6d45dc;
 //brand palette dark
 $primary-color-dark: darken($primary-color, 10%); 
 $secondary-color-dark: darken($secondary-color, 10%); 
-$accent-color-dark: darken($accent-color, 15%); 
+$accent-color-dark: darken($accent-color,7%); 
 $cta-color-dark: darken($cta-color, 10%); 
 
 //brand palette light
@@ -43,8 +43,8 @@ $cta-color-light: lighten($cta-color, 4%);
 
 // Generic palette dark
 $red-dark: darken($red, 10%); 
-$orange-dark: darken($orange, 8%); 
-$yellow-dark: darken($yellow, 7%); 
+$orange-dark: darken($orange, 6%); 
+$yellow-dark: darken($yellow, 4%); 
 $green-dark: darken($green, 5%); 
 $blue-dark: darken($blue, 10%); 
 $purple-dark: darken($purple, 10%); 
@@ -52,8 +52,8 @@ $purple-dark: darken($purple, 10%);
 // Generic palette light
 $red-light: lighten($red, 5%); 
 $orange-light: lighten($orange, 10%); 
-$yellow-light: lighten($yellow, 10%); 
-$green-light: lighten($green, 10%); 
+$yellow-light: lighten($yellow, 5%); 
+$green-light: lighten($green, 6%); 
 $blue-light: lighten($blue, 10%); 
 $purple-light: lighten($purple, 5%); 
 
@@ -136,6 +136,10 @@ $light-grey: #ccc;
 $bg-default: $dark-color;
 $text-default: $light-color;
 
+.light-color{
+  color:$light-color;
+}
+
 //------------------------------------------ 
 // Rounded corners
 //------------------------------------------ 
@@ -159,7 +163,7 @@ $hero-image: url("../website/images/hero.jpg");
 $light-ui-hover-color:#eee;
 $border-color:rgba(79, 78, 78, 0.25);
 $dual-mode-bg-color:rgba(79, 78, 78, 0.06);
-
+$bg-header-footer: #313131;
 //------------------------------------------ 
 // Default Spacing
 //------------------------------------------ 

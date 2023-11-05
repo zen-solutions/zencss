@@ -1,8 +1,17 @@
 footer {
-    background: $dark-color; 
+    background:$bg-header-footer; 
     color:$light-color;
     padding: 20px;
     text-align: center;
+    width: 100%;
+
+    a{
+        color:$light-color;
+    }
+
+    a:hover{
+        color: darken($light-color, 10%);
+    }
 }
 
 .social-icons {
@@ -28,7 +37,8 @@ footer {
 }
 
 .social-icons a:hover {
-    background-color: $cta-color; 
+    background-color: darken($light-color, 20%);
+
 }
 
 .social-icons a img {

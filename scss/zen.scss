@@ -1,24 +1,49 @@
   //--------------------------------------------------------------
   // Initialize zenCSS
   //--------------------------------------------------------------
+ //regular
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display&display=swap');
+  //script
+  @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+  //headline
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  //mono
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+  //display
+  @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+  //handwriting
+  @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+    //blackletter
+  @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
   //init
   $zen-font-size: 16px;
   $zen-tablet-mobile-font-size: 14px;
   $zen-large-screen-font-size: 18px;
-  $font-family:  "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $zen-font-family:  "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   $body-bg-color:#d7d7d7;
-  $responsive-text-color:black;
+  //$zen-responsive-text-color:black;
   .zen {
-    background:  $body-bg-color;
-    // background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(white), to(#c7c7c7));
-    // background-image: -webkit-radial-gradient(center center, cover, white, #c7c7c7);
-    // background-image: -moz-radial-gradient(center center, cover, white, #c7c7c7);
-    // background-image: -o-radial-gradient(center center, cover, white, #c7c7c7);
-    // background-image: -ms-radial-gradient(center center, cover, white, #c7c7c7);
-    // background-image: radial-gradient(center center, cover, white, #c7c7c7);
-    font-family: $font-family;
+      background: 
+          radial-gradient(
+              circle, 
+              #f0f0f0 0%, 
+              #d7d7d7 50%, 
+              #bfbfbf 100%
+          ),
+          linear-gradient(
+              344deg,
+              #bfbfbf,
+              #d7d7d7 25%,
+              #f0f0f0 50%,
+              #d7d7d7 75%,
+              #bfbfbf
+          );
+      display: grid;
+      //height: 100vh;
+      place-items: center;
+
+    font-family: $zen-font-family;
     font-size: $zen-font-size;
     font-weight: 300;
     //line-height: 1.618; // The golden ratio. interfered with testimonial/img components
@@ -49,9 +74,9 @@
     @import 'core/flex.scss';
     @import 'core/formatting.scss';
     @import 'optional/alert.scss';
+    @import 'design/text.scss';
     @import 'design/bg-color.scss';
     @import 'design/text-color.scss';
-    @import 'design/text.scss';
     @import 'components/test.scss';
     @import 'components/components.scss';
     @import 'design/layouts.scss';
@@ -70,33 +95,17 @@
     @import 'optional/animation.scss';
 
     //marketing
-    @import 'marketing/pricing-table.scss';
+    //@import 'marketing/pricing-table.scss';
     //@import 'marketing/exit-intent.scss';
     @import 'marketing/contact-form.scss';
     @import 'marketing/marketing-promos.scss';
-
-
-    //--------------------------------------------------------------
-    //experimental features
-    //--------------------------------------------------------------
-
-    //@import 'mode.scss';
-    // @import '/scss/addons/parallax.css';
-
 
     //--------------------------------------------------------------
     //  Things that should go last
     //--------------------------------------------------------------
     @import 'core/media-query.scss';
-    @import 'optional/stacking.scss';
+   // @import 'optional/stacking.scss';
     @import 'components/margin-padding.scss';
-
-    //--------------------------------------------------------------
-    //  Overrides go here
-    //--------------------------------------------------------------
-
-    // Import your overrides here. Replace them in future updates. easy. 
-    //Ex. @import 'your-overrides.scss';
 
 
     //--------------------------------------------------------------

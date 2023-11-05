@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
     <!----------------------------------------------------------------------->
@@ -42,7 +62,7 @@
             </z-col>
         </z-row>
     </z-container>
-        <z-container class="theme-light">
+        <z-container>
             <z-row>
                 <z-col class="ml-3">
                     <div class="center-vertical">
@@ -83,7 +103,7 @@
             <z-col>
                 <h3>Code Example</h3>
                 <pre class="copy-text"><code class="language-html">
-    &lt;z-container class="theme-light"&gt;
+    &lt;z-container&gt;
       &lt;z-row&gt;
         &lt;z-col class="ml-3"&gt;
           &lt;div class="center-vertical"&gt;
@@ -316,7 +336,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

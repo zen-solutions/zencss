@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <a href="/docs/" class="nav-link">Docs</a>
+                            <a href="/articles/howto/" class="nav-link">Acticles   </a>
+                            <a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a>
+                            <a href="/docs/examples/design-library.html" class="nav-link">Design System</a>
+                            <a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
 
@@ -37,36 +57,68 @@
 <z-container>
     <z-row>
         <z-col>
-            <section id="text-formatting-classes">
+            <div id="text-formatting-utilities">
+            
+    <p>
+        zenCSS provides a robust set of text formatting utilities, enabling you to style and align text with ease. Whether you are aiming for a bold statement or subtle emphasis, these classes have got you covered.
+    </p>
+
                 <h2>Text Formatting Classes</h2>
-            
-                    <p><code>.italic</code>: Applies italic style to text.</p>
-                    <p><code>.bold</code>: Makes text bold with a font weight of 700.</p>
-                    <p><code>.semi-bold</code>: Applies a semi-bold font weight of 500 to text.</p>
+
+                    <code>.italic</code>: Applies italic style to text.<br><br>
+                    <code>.bold</code>: Makes text bold with a font weight of <code>700</code>. (obsolete)<br><br>
+                    <code>.semi-bold</code>: Applies a semi-bold font weight of <code>500</code> to text. (obsolete)<br><br>
                 
-            </section>
             
-            <section id="text-alignment-classes">
                 <h2>Text Alignment Classes</h2>
+              
+                    <code>.center</code>: Centers text horizontally within its container.<br><br>
+                    <code>.center-vertical</code>: Centrally aligns the element vertically.<br><br>
+                    <code>.center-flex</code>: (Not defined, possibly for centering content using Flexbox.)<br><br>
+                    <code>.right</code>: Aligns text to the right within its container.<br><br>
+                    <code>.left</code>: Aligns text to the left within its container.<br><br>
                
-                    <p><code>.center</code>: Centers text horizontally within its container.</p>
-                    <p><code>.center-vertical</code>: Centrally aligns the element vertically.</p>
-                    <p><code>.center-flex</code>: (Not defined, possibly for centering content using Flexbox.)</p>
-                    <p><code>.right</code>: Aligns text to the right within its container.</p>
-                    <p><code>.left</code>: Aligns text to the left within its container.</p>
-                
-            </section>
+
+                <h2>Text Thickness</h2>
+
+             
+                <code>.thinnest</code> - <span class="thinnest">This text is the thinnest.</span><br><br>
+                <code>.thinner</code> - <span class="thinner">This text is thinner.</span><br><br>
+                <code>.thin</code> - <span class="thin">This text is thin.</span><br><br>
+                <code>.regular</code> - <span class="regular">This text is regular.</span><br><br>
+                <code>.medium</code> - <span class="medium">This text is medium.</span><br><br>
+                <code>.semibold</code> - <span class="semibold">This text is semi-bold.</span><br><br>
+                <code>.bold</code> - <span class="bold">This text is bold.</span><br><br>
+                <code>.bolder</code> - <span class="bolder">This text is bolder.</span><br><br>
+                <code>.thickest</code> - <span class="thickest">This text is the thickest.</span><br><br>
+     
             
-            <section id="text-size-classes">
                 <h2>Text Size Classes</h2>
                 
-                    <p><code>.small</code>: Sets the font size to 0.8em.</p>
-                    <p><code>.smaller</code>: Decreases font size to 0.6em.</p>
-                    <p><code>.big</code>: Increases font size to 1.2em.</p>
-                    <p><code>.bigger</code>: Increases font size to 1.4em.</p>
-                    <p><code>.serif</code>: Sets the font family to 'Playfair Display', serif.</p>
+                    <code>.small</code>: Sets the font size to <code>0.8em</code>.<br><br>
+                    <code>.smaller</code>: Decreases font size to <code>0.6em</code>.<br><br>
+                    <code>.big</code>: Increases font size to <code>1.2em</code>.<br><br>
+                    <code>.bigger</code>: Increases font size to <code>1.4em</code>.<br><br>
+                    <code>.serif</code>: Sets the font family to 'Playfair Display', serif.<br><br>
                
-            </section>
+
+                  
+            
+                <h2>Usage Examples</h2>
+                <p>
+                    Here are some examples showcasing how you might use these utilities in your HTML:
+                </p>
+                <pre class="copy-text"><code class="language-html">
+                    &lt;!-- Example 1: Apply italic style to text --&gt;
+                    &lt;p class="italic"&gt;This text is italic.&lt;/p&gt;
+            
+                    &lt;!-- Example 2: Center align text --&gt;
+                    &lt;p class="center"&gt;This text is center aligned.&lt;/p&gt;
+            
+                    &lt;!-- Example 3: Set font size to bigger --&gt;
+                    &lt;p class="bigger"&gt;This text has a font size of 1.4em.&lt;/p&gt;
+                </code></pre>
+            </div>
             
         </z-col>
     </z-row>
@@ -98,7 +150,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

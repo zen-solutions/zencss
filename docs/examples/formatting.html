@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1> Formatting</h1>
+                    <p>A simple header you can use for your website. Mobile version coming soon. </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="m-0 p-0">
+                <div class="content">
+                    <h2 id="formatting-utilities">Formatting Utilities</h2>
+                    <p>
+                        Formatting utilities in zenCSS allow for a wide range of styling adjustments pertaining to dimensions, alignment, and more. Below are the classes available under formatting utilities:
+                    </p>
+                
+                    <!-- Gap Classes -->
+                    <section>
+                        <h3>Gap Classes</h3>
+                        <p>
+                            These classes are used to set the gap property for an element, ranging from <code>.gap-0</code> (no gap) to <code>.gap-6</code> (0.6em gap).
+                        </p>
+                        <div class="code">
+                            <code>
+                                .gap-0 { gap: 0; }<br>
+                                .gap-1 { gap: 0.1em; }<br>
+                                .gap-2 { gap: 0.2em; }<br>
+                                .gap-3 { gap: 0.3em; }<br>
+                                .gap-4 { gap: 0.4em; }<br>
+                                .gap-5 { gap: 0.5em; }<br>
+                                .gap-6 { gap: 0.6em; }
+                            </code>
+                        </div>
+                    </section>
+                
+                    <!-- Height Classes -->
+                    <section>
+                        <h3>Height Classes</h3>
+                        <p>
+                            These classes set a specific height on an element, ranging from <code>.height-1</code> (10em) to <code>.height-6</code> (40em).
+                        </p>
+                        <div class="code">
+                            <code>
+                                .height-1 { height: 10em; }<br>
+                                .height-2 { height: 15em; }<br>
+                                .height-3 { height: 20em; }<br>
+                                .height-4 { height: 25em; }<br>
+                                .height-5 { height: 30em; }<br>
+                                .height-6 { height: 40em; }
+                            </code>
+                        </div>
+                    </section>
+                
+                    <!-- Width Classes -->
+                    <section>
+                        <h3>Width Classes</h3>
+                        <p>
+                            These classes set a specific width on an element, ranging from <code>.width-1</code> (4rem) to <code>.width-5</code> (15rem).
+                        </p>
+                        <div class="code">
+                            <code>
+                                .width-1 { width: 4rem; }<br>
+                                .width-2 { width: 6rem; }<br>
+                                .width-3 { width: 9rem; }<br>
+                                .width-4 { width: 12rem; }<br>
+                                .width-5 { width: 15rem; }
+                            </code>
+                        </div>
+                    </section>
+                
+                    <!-- Directional Modifiers -->
+                    <section>
+                        <h3>Directional Modifiers</h3>
+                        <p>
+                            These classes adjust the margin of an element in specific directions. The classes range from <code>.up-10</code> to <code>.right-50</code>, incrementing by 10.
+                        </p>
+                        <div class="code">
+                            <code>
+                                .up-10 { margin-top: -10px; }<br>
+                                .down-10 { margin-top: 10px; }<br>
+                                .left-10 { margin-left: -10px; }<br>
+                                .right-10 { margin-right: 10px; }<br>
+                                <!-- ... -->
+                                .up-50 { margin-top: -50px; }<br>
+                                .down-50 { margin-top: 50px; }<br>
+                                .left-50 { margin-left: -50px; }<br>
+                                .right-50 { margin-right: 50px; }
+                            </code>
+                        </div>
+                    </section>
+                
+                    <!-- Width and Height Classes -->
+                    <section>
+                        <h3>Width and Height Classes</h3>
+                        <p>
+                            These classes set specific width and height values on an element, ranging from <code>.w-10</code> to <code>.w-500</code> and <code>.h-10</code> to <code>.h-500</code>.
+                        </p>
+                        <div class="code">
+                            <code>
+                                .w-10 { width: 10px; }<br>
+                                .h-10 { height: 10px; }<br>
+                                <!-- ... -->
+                                .w-500 { width: 500px; }<br>
+                                .h-500 { height: 500px; }
+                            </code>
+                        </div>
+                    </section>
+                
+                    <!-- Card -->
+                    <section>
+                
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

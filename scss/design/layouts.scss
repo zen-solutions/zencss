@@ -1,4 +1,30 @@
+//------------------------------
 //fibonacci spiral
+//------------------------------
+
+.col-square{
+    flex: 1 1 auto; 
+  //  background-color: #3498db;
+  
+  }
+  .leader-container {
+    flex: 0 0 auto; 
+    width: 570px; 
+    height: 570px;
+    display: flex; 
+  }
+  
+  .leader {
+    flex-grow: 1; 
+    //background-color: #e74c3c; 
+  }
+  
+  .fib-container{
+    .flex-container {
+  
+      align-items: stretch; 
+  }
+  }
 
 @media  (max-width: 991.98px){
 .leader-container {

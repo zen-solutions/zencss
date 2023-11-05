@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
 
@@ -22,8 +42,10 @@
     <z-container>
         <z-row>
             <z-col>
+              
         
                 <h3>Basic Example</h3>
+                
 <!-- Basic Example -->
 <ul class="list-group">
     <li class="list-group-item">Cras justo odio</li>
@@ -32,31 +54,7 @@
     <li class="list-group-item">Porta ac consectetur ac</li>
     <li class="list-group-item">Vestibulum at eros</li>
   </ul>
-  <h3>Active Items</h3>
-  <!-- Active Items -->
-  <ul class="list-group">
-    <li class="list-group-item active">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-  </ul>
-  
-  <h3>Inactive Items</h3>
-  <!-- Disabled Items -->
-  <ul class="list-group">
-    <li class="list-group-item inactive" aria-disabled="true">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-  </ul>
-  
-  <h3>Links</h3>
-  <!-- Links  -->
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-  </div>
-  
-  <h3>Flush</h3>
+  <h3 class="pt-3">Flush</h3>
   <!-- Flush -->
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Cras justo odio</li>
@@ -64,7 +62,32 @@
     <li class="list-group-item">Morbi leo risus</li>
   </ul>
   
-  <h3>Horizontal</h3>
+  <h3 class="pt-3">Active Items</h3>
+  <!-- Active Items -->
+  <ul class="list-group">
+    <li class="list-group-item active">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+  </ul>
+  
+  <h3 class="pt-3">Inactive Items</h3>
+  <!-- Disabled Items -->
+  <ul class="list-group">
+    <li class="list-group-item inactive" aria-disabled="true">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+  </ul>
+  
+  <h3 class="pt-3">Links</h3>
+  <!-- Links  -->
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  </div>
+  
+
+  <h3 class="pt-3">Horizontal</h3>
   <!-- Horizontal -->
   <ul class="list-group list-group-horizontal">
     <li class="list-group-item">Cras justo odio</li>
@@ -72,7 +95,7 @@
     <li class="list-group-item">Morbi leo risus</li>
   </ul>
   
-  <h3>Contextual Classes</h3>
+  <h3 class="pt-3"  >Contextual Classes</h3>
   <!-- Contextual Classes -->
   <ul class="list-group">
     <li class="list-group-item bg-grey-3-dark">Cras justo odio</li>
@@ -115,7 +138,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

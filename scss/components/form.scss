@@ -27,9 +27,9 @@
 }
 
 form {
-    margin: auto;
+   // margin: auto;
     padding: 1em;
-    padding-top:10px;
+    //padding-top:10px;
     //border: 1px solid $primary-color;
 
      fieldset {
@@ -45,7 +45,7 @@ form {
     label {
         display: block;
         margin-top: 2px;
-        color: $primary-color;
+        //color: $primary-color;
     }
 
     /* Style the input fields, textarea, and select elements */

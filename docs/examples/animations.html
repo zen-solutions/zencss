@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Animations</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1> Animation Utilities</h1>
+                    <p>
+                        The Animation Utilities in zenCSS provide a way to easily add animations to your elements. These utilities include predefined keyframes and classes for common animations such as blinking, sliding, and fading. Below is a list of the available animation utilities along with a brief explanation of each.
+                    </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="m-0 p-0">
+
+
+    
+    <!-- Slide Animations -->
+    <section>
+        <h3>Slide Animations</h3>
+        <p>
+            Slide animations can be applied to move elements up, down, left, or right. The corresponding classes are <code>.slide-up</code>, <code>.slide-down</code>, <code>.slide-left</code>, and <code>.slide-right</code>.
+        </p>
+       
+    </section>
+    
+    <!-- Fade Animations -->
+    <section>
+        <h3>Fade Animations</h3>
+        <p>
+            The fade animations create a series of classes with different animation delays. The classes range from <code>.fade-in-1</code> to <code>.fade-in-10</code>, each with increasing delay intervals.
+        </p>
+       
+    </section>
+    
+    <!-- Button Hover Animation -->
+    <section>
+        <h3>Button Hover Animation</h3>
+        <p>
+            The <code>.btn-hover</code> class applies a slight upward translation to a button element when hovered.
+        </p>
+      
+    </section>
+    
+    <!-- Fancy Animations -->
+    <section>
+        <h3>Fancy Animations</h3>
+        <p>
+            The <code>.fancy</code> and <code>.fancy-ghost</code> classes apply a set of transitions and transformations to create a lifted effect when the element is hovered or focused.
+        </p>
+      
+    </section>
+                   <!-- Blink Animation -->
+                   <section>
+                    <h3>Blink Animation</h3>
+                    <p>
+                        The <code>.blink</code> class applies a blinking animation to the element. The animation makes the element alternate between fully opaque and fully transparent.
+                    </p>
+                
+                </section>
+            </z-col>
+        </z-row>
+
+        
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

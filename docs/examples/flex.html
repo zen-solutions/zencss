@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
 
@@ -39,43 +59,48 @@
     <z-row>
         <z-col>
 
-            <section id="flex-classes">
-                <h2>FLEX</h2>
+            <div id="flex-utilities">
+                <h1>Flex Utilities</h1>
             
-                <section id="flex-container-class">
-                    <h3>1. Flex Container Class</h3>
-                    
-                        <p>
-                            <code>.d-flex</code> - This class sets the display property to flex, making the element a flex container.
-                        </p>
-                
-                </section>
+                <p>
+                    Leverage the power of the Flexbox layout model with zenCSS's flex utilities. Effortlessly create complex layouts, align elements, and control the dimensions of your flex items with these intuitive classes.
+                </p>
             
-                <section id="flex-grow-classes">
-                    <h3>2. Flex Grow Classes</h3>
-                    <p>
-                        These classes are used to set the flex-grow property of flex items, which determines how much a flex item will grow relative to the rest of the flex items in the flex container.
-                    </p>
-                    
-                        <p>
-                            <code>.feature</code>:
-                            <code>flex-grow is set to 2</code>
-                        </p>
-                        <p>
-                            <code>.feature-sm</code>:
-                            <code>flex-grow is set to 3</code>
-                        </p>
-                        <p>
-                            <code>.feature-md</code>:
-                            <code>flex-grow is set to 5</code>
-                        </p>
-                        <p>
-                            <code>.feature-lg</code>:
-                            <code>flex-grow is set to 6</code>
-                            <br>Dev notice: <code>.feature-lg</code> is defined twice, to fix
-                        </p>
+                <h2>1. Flex Container Class</h2>
+                <ul>
+                    <li><code>.d-flex</code>: This class sets the display property to flex, making the element a flex container.</li>
+                </ul>
+            
+                <h2>2. Flex Grow Classes</h2>
+                <p>
+                    These classes are used to set the <code>flex-grow</code> property of flex items, which determines how much a flex item will grow relative to the rest of the flex items in the flex container.
+                </p>
+                <ul>
+                    <li><code>.feature</code>: <code>flex-grow</code> is set to <code>2</code></li>
+                    <li><code>.feature-sm</code>: <code>flex-grow</code> is set to <code>3</code></li>
+                    <li><code>.feature-md</code>: <code>flex-grow</code> is set to <code>5</code></li>
+                    <li><code>.feature-lg</code>: <code>flex-grow</code> is set to <code>6</code></li>
+                </ul>
                 
-                </section>
+                <h2>Developer Notice</h2>
+                <p>
+                    Be advised, the <code>.feature-lg</code> class is defined twice. This issue will be resolved in the upcoming release.
+                </p>
+            
+                <h2>Usage Examples</h2>
+                <p>
+                    Here are some examples showcasing how you might use these utilities in your HTML:
+                </p>
+                <pre><code>
+                    &lt;!-- Example 1: Create a flex container --&gt;
+                    &lt;div class="d-flex"&gt;
+                        &lt;div class="feature"&gt;Item 1&lt;/div&gt;
+                        &lt;div class="feature-sm"&gt;Item 2&lt;/div&gt;
+                        &lt;div class="feature-md"&gt;Item 3&lt;/div&gt;
+                        &lt;div class="feature-lg"&gt;Item 4&lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
             
                 
         </z-col>
@@ -108,7 +133,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

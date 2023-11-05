@@ -20,12 +20,12 @@ $colors: (
   .text-#{$color-name} {
     color: $color-value;
   }
-  // .text-#{$color-name}-dark {
-  //   color: darken($color-value, 10%);
-  // }
-  // .text-#{$color-name}-light {
-  //   color: lighten($color-value, 10%);
-  // }
+  .text-#{$color-name}-dark {
+    color: darken($color-value, 10%);
+  }
+  .text-#{$color-name}-light {
+    color: lighten($color-value, 10%);
+  }
 }
 
 /* Generate text color classes for all colors */

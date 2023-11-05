@@ -1,330 +1,63 @@
-//To explore, for darkining buttons color by 10% on rollover, even if we dont know which theme is defining the color val for the button
+@mixin theme($bg-color, $text-color, $button-bg-color, $button-text-color, $tout-bg-color, $tout-text-color) {
+  background: $bg-color;
+  color: $text-color;
+  overflow: hidden;
+  border-radius: $border-radius;
 
-// @mixin darken-color($color) {
-//   background: darken($color, 10%) !important;
-// }
+  button {
+      background: $button-bg-color;
+      color: $button-text-color;
 
-// // Usage:
-// .some-element {
-//   @include darken-color($cta-color);
-// }
+      &:hover{
+        background: darken($button-bg-color, 20%);
+     
+      }
+  }
 
-// .another-element {
-//   @include darken-color($primary-color);
-// }
-// In this setup, you define a darken-color mixin that takes a color variable ($color) as an argument. You then use the @include directive to apply this mixin to different elements, passing in the relevant color variable ($cta-color or $primary-color) each time.
-
-// This way, you can reuse the darken-color mixin for various color variables and elements, achieving the desired darkening effect regardless of the variable name used to hold the color.
-
-///----------------------------------------------
-// TO DO fibonaci-left and fibonaci-right. puts 1.618 break on the row
-//----------------------------------------------
-
-
-
-
-
-
-
-
-
-///----------------------------------------------
-// Component Themes - Like fortnite skins for UI elements
-//----------------------------------------------
+  
+  .tout {
+      background: $tout-bg-color;
+      color: $tout-text-color;
+  }
+}
 
 $themes: (
-  primary: $light-color,
-  dark: $light-color,
-  light: $dark-color,
-  cta: $light-color,
-  accent: $light-color,
-  secondary: $secondary-color  
+  primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
+  dark: (#414040, #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
+  light: (rgba(255, 255, 255, 0.2), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
+  cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
+  accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
+  secondary: ($secondary-color, $light-color, $accent-color, $dark-color, $accent-color, $dark-color)
 );
 
-@each $theme, $color in $themes {
-
-
+@each $theme, $colors in $themes {
   .theme-#{$theme} {
-    form label {
-      color: $color;
-    }
-
-      box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
-
-    
+      @include theme(nth($colors, 1), nth($colors, 2), nth($colors, 3), nth($colors, 4), nth($colors, 5), nth($colors, 6));
   }
 }
 
-
-///----------------------------------------------
-// Light
-//----------------------------------------------
-
-.theme-light {
-  background: rgba(255, 255, 255, 0.2);
-  overflow: hidden;
-  border-radius: $border-radius;
-  //color:$dark-color;
-  border: $accent-color;
-
-
-  .tout {
-    background: $light-grey;
-    color: $dark-color;
-  }
-
-  //for buttons inside theme light
-  button {
-    background:$dark-color;
-    color: $light-color;
-  }
-  
-//   button:hover {
-//    background: darken($cta-color, 10%);
-//    color: $light-color;
-//  }
-
+.theme-light{
+  color:unset;
 }
-  //for buttons specified w class theme light - messy
-button.theme-light {
-      background:$cta-color;
-      color: $light-color;
-    }
-    
-  //   button.theme-light:hover {
-  //    background: darken($cta-color, 10%);
-  //    color: $light-color;
-  //  }
 
-   //dark theme variation per theme
-//not for light but might need for when you need to switch font color by default, 
-  //  body.zen.zen-dark .theme-light, 
-  //  body.zen.zen-dark .theme-light * {
-  //      color: #f0f0f0 !important;
-  //  }
-
-///----------------------------------------------
-// Dark
-//----------------------------------------------
-
-.theme-dark {
-  background: #505050;
-  color: #f4f4f4;
-  overflow: hidden;
-  border-radius: $border-radius;
-
-
-
-  //button
-  button{
-    background:$light-color;
-    color:$dark-color;
-  }
-
-  // button:hover {
-  //   background: darken($light-color,10%);
-  // }
-  
-
-  .tout {
-    background: $dark-grey;
-    color: $light-color;
-  }
+.theme-primary a{
+color:white;  
 }
 
 
-///----------------------------------------------
-// secondary
-//----------------------------------------------
-
-.theme-secondary {
-  background: $secondary-color;
-  color: #f4f4f4;
-  overflow: hidden;
-  border-radius: $border-radius;
-
-
-
-  //button
-  button{
-    background:$accent-color;
-    color: $dark-color;
-
-  }
-
-  // button:hover {
-  //   background: darken($primary-color, 10%);
-  // }
-
-
-  .tout {
-    background: $accent-color;
-    color: $dark-color;
-  }
+.theme-dark.accent-left {
+  border-left: 10px solid $primary-color;
 }
 
-
-///----------------------------------------------
-// Accent
-//----------------------------------------------
-
-.theme-accent {
-  background: $accent-color;
-  color: $dark-color;
-  overflow: hidden;
-  border-radius: $border-radius;
-
-  .z-col, z-col {
-    //margin: 0;
-  }
-
-  //button
-  button{
-    background:$secondary-color;
-    color: $light-color;
-
-  }
-
-  // button:hover {
-  //   background: darken($secondary-color, 10%);
-  // }
-  
-
-  .tout {
-    background: $secondary-color;
-    color: $light-color;
-    
-  }
+.theme-secondary.accent-left {
+  border-left: 10px solid $cta-color;
 }
 
-
-///----------------------------------------------
-// CTA
-//----------------------------------------------
-
-.theme-cta {
-  background: $cta-color;
-  color: #f4f4f4;
-  overflow: hidden;
-  border-radius: $border-radius;
-  
-
-  .z-col, z-col {
-    //margin: 0;
-  }
-
-  
-  
-
-  .tout {
-    background: $primary-color;
-    color: $light-color;
-  }
-
-    //button
-    button{
-      background:$primary-color;
-      color: $light-color;
-    }
-  
-    // button:hover {
-    //   background: darken($accent-color, 10%);
-    // }
-
+.theme-cta.accent-left {
+  border-left: 10px solid $secondary-color;
 }
 
-///----------------------------------------------
-// Primary
-//----------------------------------------------
-
-.theme-primary   {
-  background: $primary-color;
-  color: $light-color;
-  overflow: hidden;
-  border-radius: $border-radius;
-  
-  // things that equal light color
-  h1,h2,h3,h4,h5,h6{
-    color: $light-color;
-
-  }
-
-//things tha equal cta color
-
-  .accent-text {
-    color:$cta-color;
-  }
-
-
-////styling for tout component
-  .tout {
-    background: $cta-color;
-    color: $light-color;
-  }
-
-  a{
-    color:white;
-    text-decoration: underline;
-  }
-
-  //button
-  button.btn-primary, button{
-    background:$cta-color;
-    color: $light-color;
-  }
-
-  // button:hover {
-  //   background: darken($cta-color, 10%);
-  // }
-
-  //form stuff take 2
-
-  form label {
-    color: $light-color;
-}
-
-  // /* New styles for form elements */
-  // input, textarea, select, button {
-  //   border: 1px solid $light-color;
-  //   background-color: $primary-color;
-  //   color: $light-color;
-  //   padding: 10px;
-  //   border-radius: $border-radius;
-  // }
-
-  // input:focus, textarea:focus, select:focus {
-  //   border-color: $cta-color;
-  // }
-
-  // input[type="submit"], button {
-  //   background-color: $cta-color;
-  //   color: $light-color;
-  // }
-
-  // input[type="submit"]:hover, button:hover {
-  //   background-color: darken($cta-color, 10%);
-  // }
-
-
-}
-
-///----------------------------------------------
-// WIP/Experimental - Accents
-//----------------------------------------------
-
-.theme-dark.accent-left{
-  border-left:10px solid $primary-color;
-}
-
-.theme-secondary.accent-left{
-  border-left:10px solid $cta-color;
-}
-
-.theme-cta.accent-left{
-  border-left:10px solid $secondary-color;
-}
-
-.theme-light.accent-left{
-  border-left:10px solid $accent-color;
+.theme-light.accent-left {
+  border-left: 10px solid $accent-color;
 }
 

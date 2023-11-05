@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1>Text Classes</h1>
+                    <p>
+                        These classes are designed for on-the-fly styling.
+                    </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="m-0 p-0">
+                <p>Our typography is organized into eight distinct types. Each type has been associated with a specific font family to ensure consistency in style and readability in your website creations.
+                </p>
+               <h2> Sans-serif</h2>
+                <p>Noto Sans is the default font applied throughout the application, and doesn't require a specific class to be applied. "Noto" means "I write, I mark, I note" in Latin. The name is also short for "no tofu", as the project aims to eliminate 'tofu': blank rectangles shown when no font is available for your text.
+                </p>
+
+                <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"> <p>The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                  </z-col>
+                  </z-row>
+                  <z-row>
+                    <z-col class="m-0 p-0">
+
+                  <h2> Serif</h2>
+                  <p>Playfair is our serif font - use class <code>.serif</code> to style content with this look and feel.
+                  </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="serif">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                </z-col>
+            </z-row>
+            <z-row>
+              <z-col class="m-0 p-0">
+                  <h2> Script</h2>
+                  <p>Style Script is our script font - use class <code>.script</code> to style content with this look and feel.
+                  </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="script">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                </z-col>
+            </z-row>
+            <z-row>
+              <z-col class="m-0 p-0">
+                  <h2>Headline</h2>
+                  <p>Anton is our headline font - use class <code>.headline</code> to style content with this bold look and feel.
+                </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="headline">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                  
+                  <h2>Mono</h2>
+                  <p>Roboto Mono is our mono font - use class <code>.headline</code> to style content with this look and feel.
+                </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="mono">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                  
+                  <h2>Display</h2>
+                  <p>Bungee is our display font - use class <code>.display</code> to style content with this look and feel.
+                </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="display">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                  <h2>Handwriting</h2>
+                  <p>Just Another Hand is our handwriting font - use class <code>.handwriting</code> to style content with this look and feel.
+                </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="handwriting">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+                  
+                  <h2>Blackletter</h2>
+                  <p>UnifrakturMaguntia is our blackletter font - use class <code>.blackletter</code> to style content with this look and feel.
+                </p>
+
+                  <ul class="list-group list-group-flush bg-grey-2">
+                    <li class="list-group-item"><p class="blackletter">The quick brown fox jumps over the lazy dog</p></li>
+                  </ul>
+
+
+                </p>
+                  
+                  
+
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

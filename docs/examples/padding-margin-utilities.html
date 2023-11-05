@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
 
@@ -37,36 +57,120 @@
 <z-container>
     <z-row>
         <z-col>
-            <section id="padding-margin-utilities">
-                <h2>General Padding and Margin:</h2>
-                <p> The size increases by 0.25rem for each level starting from 0.</p>
+            <div id="padding-margin-utilities">
+                <h1>Padding & Margin Utilities</h1>
+            
+                <p>
+                    zenCSS provides a range of utility classes to control the padding and margin of elements. These utilities offer a consistent spacing system to help maintain a well-structured and visually balanced layout.
+                </p>
+            
+                <h2>General Padding and Margin</h2>
+                <p>
+                    The general padding and margin utilities allow you to apply spacing around all sides of an element. The size increments by <code>0.25rem</code> for each level, starting from <code>0</code>.
+                </p>
                 <ul>
-                    <li>.p-0 to .p-5: Applies padding around an element. </li>
-                    <li>.m-0 to .m-5: Applies margin around an element.</li>
+                    <li><strong>Padding Utilities:</strong>
+                        <ul>
+                            <li><code>.p-0</code>: No padding</li>
+                            <li><code>.p-1</code>: Padding of <code>0.25rem</code> around the element</li>
+                            <li><code>.p-2</code>: Padding of <code>0.5rem</code> around the element</li>
+                            <li><code>.p-3</code>: Padding of <code>0.75rem</code> around the element</li>
+                            <li><code>.p-4</code>: Padding of <code>1rem</code> around the element</li>
+                            <li><code>.p-5</code>: Padding of <code>1.25rem</code> around the element</li>
+                        </ul>
+                    </li>
+                    <li><strong>Margin Utilities:</strong>
+                        <ul>
+                            <li><code>.m-0</code>: No margin</li>
+                            <li><code>.m-1</code>: Margin of <code>0.25rem</code> around the element</li>
+                            <li><code>.m-2</code>: Margin of <code>0.5rem</code> around the element</li>
+                            <li><code>.m-3</code>: Margin of <code>0.75rem</code> around the element</li>
+                            <li><code>.m-4</code>: Margin of <code>1rem</code> around the element</li>
+                            <li><code>.m-5</code>: Margin of <code>1.25rem</code> around the element</li>
+                        </ul>
+                    </li>
                 </ul>
-                <h3>Specific Side Padding and Margin: </h3>
-                <p>The size increases by 0.75em for each level starting from 0.</p>
+            
+                <h2>Specific Side Padding and Margin</h2>
+                <p>
+                    Apply spacing to a specific side of an element with these utilities. The size increments by <code>0.75em</code> for each level, starting from <code>0</code>.
+                </p>
+                <!-- List of specific side padding and margin utilities -->
                 <ul>
-                    <li>.mt-0 to .mt-5: Applies top margin to an element. </li>
-                    <li>.mb-0 to .mb-5: Applies bottom margin to an element.</li>
-                    <li>.ml-0 to .ml-5: Applies left margin to an element.</li>
-                    <li>.mr-0 to .mr-5: Applies right margin to an element.</li>
-                    <li>.pt-0 to .pt-5: Applies top padding to an element. </li>
-                    <li>.pb-0 to .pb-5: Applies bottom padding to an element. </li>
-                    <li>.pl-0 to .pl-5: Applies left padding to an element. </li>
-                    <li>.pr-0 to .pr-5: Applies right padding to an element. </li>
+                    <li><strong>Top Margin Utilities:</strong>
+                        <ul>
+                            <li><code>.mt-0</code> to <code>.mt-5</code>: Apply top margin to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bottom Margin Utilities:</strong>
+                        <ul>
+                            <li><code>.mb-0</code> to <code>.mb-5</code>: Apply bottom margin to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Left Margin Utilities:</strong>
+                        <ul>
+                            <li><code>.ml-0</code> to <code>.ml-5</code>: Apply left margin to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Right Margin Utilities:</strong>
+                        <ul>
+                            <li><code>.mr-0</code> to <code>.mr-5</code>: Apply right margin to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <!-- ... repeat for padding utilities -->
+                    <li><strong>Top Padding Utilities:</strong>
+                        <ul>
+                            <li><code>.pt-0</code> to <code>.pt-5</code>: Apply top padding to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bottom Padding Utilities:</strong>
+                        <ul>
+                            <li><code>.pb-0</code> to <code>.pb-5</code>: Apply bottom padding to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Left Padding Utilities:</strong>
+                        <ul>
+                            <li><code>.pl-0</code> to <code>.pl-5</code>: Apply left padding to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Right Padding Utilities:</strong>
+                        <ul>
+                            <li><code>.pr-0</code> to <code>.pr-5</code>: Apply right padding to an element, increasing by <code>0.75em</code> per level.</li>
+                        </ul>
+                    </li>
                 </ul>
-                <h3>Extended Padding and Margin Classes:</h3>
+            
+                <h2>Extended Padding and Margin Classes</h2>
+                <p>
+                    For larger spacing requirements, extended padding and margin classes are available:
+                </p>
                 <ul>
-                    <li>.p-6: Applies 2em padding around an element.</li>
-                    <li>.m-6: Applies 2em margin around an element.</li>
-                    <li>.p-7: Applies 3em padding around an element.</li>
-                    <li>.m-7: Applies 3vw margin around an element.</li>
+                    <li><code>.p-6</code>: Applies <code>2em</code> padding around an element.</li>
+                    <li><code>.m-6</code>: Applies <code>2em</code> margin around an element.</li>
+                    <li><code>.p-7</code>: Applies <code>3em</code> padding around an element.</li>
+                    <li><code>.m-7</code>: Applies <code>3vw</code> margin around an element.</li>
                 </ul>
-            </section>
+            
+                <h2>Usage Examples</h2>
+                <p>
+                    Here are some examples showcasing how you might use these utilities in your HTML:
+                </p>
+                <pre class="copy-text"><code class="language-html">&lt;!-- Example 1: Apply padding around an element --&gt;
+&lt;div class="p-3"&gt;
+    This element has a padding of 0.75rem around all sides.
+&lt;/div&gt;
+
+&lt;!-- Example 2: Apply margin to the top and bottom of an element --&gt;
+&lt;div class="mt-2 mb-2"&gt;
+    This element has a margin of 1.5em at the top and bottom.
+&lt;/div&gt; </code></pre>
+            </div>
+            
             
         </z-col>
     </z-row>
+
+
 </z-container>
 
     
@@ -95,7 +199,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

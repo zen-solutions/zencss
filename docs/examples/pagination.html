@@ -12,7 +12,27 @@
 </head>
 
 <body class="zen">
-    <div class="center-line"></div>
+                <header>
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+
+
+
+
+                            <li><a href="/docs/" class="nav-link">Docs</a></li>
+                            <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                            <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
+                            <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
+                            <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
+
+                        </ul>
+                    </nav>
+                </header>
 
 
 
@@ -23,7 +43,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1> Pagination <span class="tout bg-orange">Mobile Support Pending</span></h1>
+                    <h1> Pagination </h1>
                     <hr>
                 </div>
             </z-col>
@@ -39,13 +59,13 @@
             <z-col>
 
                 <!-- Pagination -->
-                <nav class="pagination-nav center-flex">
+                <div class="pagination-nav center-flex">
                     <a href="#" class="item">Previous</a>
                     <a href="#" class="item">1</a>
                     <a href="#" class="item current">2</a>
                     <a href="#" class="item">3</a>
                     <a href="#" class="item">Next</a>
-                </nav>
+                </div>
 
             </z-col>
         </z-row>
@@ -58,7 +78,7 @@
     <z-container>
         <z-row>
             <z-col>
-                <div class="center up-20">
+                <div class="center">
                     <hr class="top">
                     <h4>The Zen Test</h4>
                     <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
@@ -70,13 +90,13 @@
     </z-container>
 
     <z-container>
-        <z-row class="up-40">
+        <z-row>
             <z-col>
                 <div class="center">
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class=" btn-ghost btn-md">Docs</button></a>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
                     </p>
                 </div>
             </z-col>

@@ -1,3 +1,43 @@
+//----------------------
+//fonts /base, script, serif, headline
+//----------------------
+.script{
+  font-family: 'Style Script', cursive;
+  font-size: 1.8rem;
+}
+
+.headline{
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+
+}
+.mono{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.display{
+  font-family: 'Bungee', cursive;
+  font-size: 1.5rem;
+
+}
+
+.handwriting{
+  font-family: 'Just Another Hand', cursive;
+  font-size:2rem;
+
+}
+
+.blackletter{
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+
+
+
+
+
+
+
+
 // *,
 // *::before,
 // *::after {
@@ -121,6 +161,7 @@ margin-top:.3em;
 margin-bottom:.3em;
 position: relative;
 z-index: 2;
+padding-top:1rem;
 }
 
 p {
@@ -191,8 +232,8 @@ button {
  button:hover {
   cursor: pointer;
    //background-color: lighten($dark-color, 15%);
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
+   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
    background: $dark-grey;
    color:$light-color;
 
@@ -220,16 +261,6 @@ img {
 
 
 
-
-header :link {
-  text-decoration: none;
-  color: $light-color;
-}
-
-header :link:hover {
-  text-decoration: underline;
-  color: darken($light-color, 20%);
-}
 
 
 
@@ -265,7 +296,7 @@ pre {
 input,
 textarea,
 button[type="submit"] {
-  font-family: $font-family;  
+  font-family: $zen-font-family;  
   width: 100%;  
   min-height: 35px;
   border: 0;
@@ -376,6 +407,17 @@ a:hover {
 
 }
 
+
+header :link {
+  text-decoration: none;
+  color: $light-color;
+}
+
+header :link:hover {
+  text-decoration: underline;
+  color: darken($light-color, 20%);
+}
+
 //-----------------------------
 // bg image (old)
 //-----------------------------
@@ -434,7 +476,7 @@ margin-top:5px;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: $dual-mode-bg-color;
+  background-color: $light-color;
   //color: $dark-color;
   text-align: center;
   padding: 15px;
@@ -442,9 +484,11 @@ margin-top:5px;
   display: none; 
 
   p {
+    
       margin: 0;
       margin-right: 10px;
       display: inline-block;
   }
 
 }
+
