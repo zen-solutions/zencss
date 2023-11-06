@@ -3,10 +3,7 @@
 
 An open-source, website authoring and design toolkit that helps you build, style, and debug websites.
 
-
-beta-1.1.0 is the current release. Branch: https://github.com/shaunmackey/zencss/tree/beta-1.1.0
-
-But... Use the CSS/JS in the main branch for the latest functionality.     
+Download or clone this repo and use the CSS/JS for the latest functionality. 
 
 ## Features
 
@@ -34,7 +31,7 @@ None. Just pure CSS and Vanilla JavaScript. If you want to work with our SASS fi
   
 ### Installation
 
-- Download the beta-1.1.0 [here](https://zencss.com/releases/beta-1.1.0.zip) 
+- Download or clone the files here
 - Follow the instructions [here](https://zencss.com/docs/index.html#setup)
 
   

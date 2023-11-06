@@ -74,7 +74,7 @@ button.btn-ghost:hover {
 }
 
 //Touts
-.tout{
+.tout {
   border-radius: 8px;
   padding: 0.3em 1em;
   //margin: 2px;
@@ -85,11 +85,43 @@ button.btn-ghost:hover {
   position: relative;
   font-size: .6rem;
   margin-top:3px;
-  margin-left: .5rem;
+  margin-bottom:3px;
   margin-right: .5rem;
-
-
 }
+
+.eyebrow {
+  overflow: hidden; 
+  display: inline-block; 
+  line-height: 10px;
+  position: relative;
+  background: $accent-color;
+  padding: 0.3em 1em;
+  box-shadow: 2px 2px 0 darken($accent-color, 10%);
+  font-size: .8rem;
+}
+
+.eyebrow-2 {
+  overflow: hidden; 
+  display: inline-block; 
+  line-height: 10px;
+  position: relative;
+
+  padding: 0.3em 1em;
+  offset: 1px;
+  font-size: .8rem;
+}
+
+
+.eyebrow-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; /* offset 1px down */
+  border-bottom: 2px solid $accent-color;
+}
+
+
 
 .corner-top {
   position: absolute;

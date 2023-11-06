@@ -27,9 +27,15 @@
 
 }
 
-.blackletter{
-  font-family: 'UnifrakturMaguntia', cursive;
+.emoji{
+  font-family: 'Noto Color Emoji', sans-serif;
 }
+
+.flashy{
+  font-family: 'Shrikhand', serif;
+  font-size: 1.5rem;
+}
+
 
 
 
@@ -226,7 +232,7 @@ button {
   font-size: .8em;
   color: $light-color;
   background: $cta-color;
-  z-index: 1000;
+  z-index: 3;
 }
 
  button:hover {
@@ -285,7 +291,7 @@ pre {
   white-space: pre-wrap;
   line-height: 30px;
   font-family: Consolas,Monaco,'Andale Mono',monospace;
-  border: 1px solid  $body-bg-color;
+  border: 1px solid  $border-color;
 
 }
 
@@ -411,6 +417,7 @@ a:hover {
 header :link {
   text-decoration: none;
   color: $light-color;
+  font-size: .9rem;
 }
 
 header :link:hover {

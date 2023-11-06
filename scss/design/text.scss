@@ -2,17 +2,16 @@
 // Text Formatting */
 //------------------------------------------ 
 
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.semi-bold {
-    font-weight: 500;
-}
+.italic {font-style: italic;}
+.thinnest { font-weight: 100; }
+.thinner { font-weight: 200; }
+.thin { font-weight: 300; }
+.regular { font-weight: 400; }
+.medium { font-weight: 500; }
+.semibold { font-weight: 600; }
+.bold { font-weight: 700; }
+.bolder { font-weight: 800; }
+.boldest { font-weight: 900; }
 
 
 //------------------------------------------ 
@@ -174,11 +173,13 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .breadcrumb li {
     display: inline;
     margin-right: 5px;
+    text-wrap: nowrap;
 }
 
 .breadcrumb li+li:before {
@@ -274,6 +275,8 @@
     display: flex;
     list-style-type: none;
     padding: 0;
+    flex-wrap: wrap;
+    gap: 0.5em;
 
     .item {
         padding: 0.75rem 1.25rem;
@@ -315,15 +318,3 @@
 //   }
 
 
-// ------------------------------------------ 
-// Text Thickness
-//------------------------------------------ 
-.thinnest { font-weight: 100; }
-.thinner { font-weight: 200; }
-.thin { font-weight: 300; }
-.regular { font-weight: 400; }
-.medium { font-weight: 500; }
-.semibold { font-weight: 600; }
-.bold { font-weight: 700; }
-.bolder { font-weight: 800; }
-.thickest { font-weight: 900; }

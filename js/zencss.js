@@ -260,6 +260,18 @@ class ZModal extends HTMLElement {
                 padding: 10px 20px;
                 border-top: 1px solid #bbb;
             }
+
+            @media only screen and (max-width: 767px) {
+                .modal-body {
+                    padding: 10px;
+                    max-height: 220px;
+
+                }
+                .modal-wrapper {
+                    width: 100%;
+                }
+
+            }
         </style>
         <div class="modal">
             <div class="modal-wrapper">

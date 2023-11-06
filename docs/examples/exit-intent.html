@@ -10,44 +10,44 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 
-    <style>
-        .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+  <style>
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px; /* Location of the box */
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
     </style>
+    
 </head>
 
 <body class="zen">
@@ -98,13 +98,12 @@
         <z-row>
             <z-col class="m-0 p-0">
                 wait 2 seconds then move twords the url bar to trigger the exit intent. WIP. 
-                <div id="myModal" class="modal">
+                <div class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <p>Some text in the Modal...</p>
                     </div>
                 </div>
-                
 
 
             </z-col>
@@ -158,35 +157,50 @@
   <script src="../js/copy.js"></script>
 
   <script>
-    var modal = document.getElementById("myModal");
-var btn = document.getElementById("btn-modal");
-var span = document.getElementsByClassName("close")[0];
-
-function showModal() {
-    modal.style.display = "block";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
+    // Get the modal
+    var modal = document.querySelector(".modal");
+    
+    // Get the button that opens the modal
+    // Make sure your HTML has a button with id="btn-modal" if you want to use a button to trigger the modal
+    // var btn = document.getElementById("btn-modal");
+    
+    // Get the <span> element that closes the modal
+    var span = document.querySelector(".close");
+    
+    // When the user clicks on the button, open the modal 
+    // Uncomment the next lines if you have a button for opening the modal
+    // btn.onclick = function() {
+    //   modal.style.display = "block";
+    // }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
         modal.style.display = "none";
     }
-}
-
-// Timer to check for 7 seconds
-setTimeout(showModal, 7000);
-
-// Exit intent
-document.addEventListener('mousemove', function(e) {
-    if(e.clientY <= 5) {
-        showModal();
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
-});
-
-  </script>
+    
+    // Timer to automatically show the modal after 7 seconds
+    setTimeout(function() {
+        modal.style.display = "block";
+    }, 7000);
+    
+    // Trigger the modal when the user moves the mouse to the top of the page, as if to leave
+    document.addEventListener('mousemove', function(e) {
+        if(e.clientY <= 5) {
+            // Avoid opening the modal if it's already displayed
+            if(modal.style.display !== "block") {
+                modal.style.display = "block";
+            }
+        }
+    });
+    </script>
+    
 </body>
 
 </html>

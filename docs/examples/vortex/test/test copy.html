@@ -2,26 +2,73 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Collapse Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seamless Slider</title>
 <style>
-  .collapse {
-    max-height: 0;
+  #slider {
+    position: relative;
+    width: 100%;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
   }
-  input:checked + .collapse {
-    max-height: 10em;
+  #slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  #slides img {
+    width: 100%;
+     flex-shrink: 0;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #prev {
+    left: 1%;
+  }
+  #next {
+    right: 1%;
   }
 </style>
 </head>
 <body>
 
-<input type="checkbox" id="toggle">
-<label for="toggle">Toggle</label>
-<div class="collapse">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div id="slider">
+  <div id="slides">
+    <img src="https://via.placeholder.com/300x200.png?text=1" alt="Slide 1">
+    <img src="https://via.placeholder.com/300x200.png?text=2" alt="Slide 1">
+    <img src="https://via.placeholder.com/300x200.png?text=3" alt="Slide 1">
+    <img src="https://via.placeholder.com/300x200.png?text=4" alt="Slide 1">
+    <img src="https://via.placeholder.com/300x200.png?text=5" alt="Slide 1">
+
+  </div>
+  <div id="prev" class="arrow">&lt;</div>
+  <div id="next" class="arrow">&gt;</div>
 </div>
+
+<script>
+  const slides = document.getElementById('slides');
+  const totalSlides = document.querySelectorAll('#slides img').length;
+  let currentIndex = 0;
+
+  document.getElementById('prev').addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+    updateSlidePosition();
+  });
+
+  document.getElementById('next').addEventListener('click', () => {
+    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+    updateSlidePosition();
+  });
+
+  function updateSlidePosition() {
+    slides.style.transform = `translateX(${-100 * currentIndex}%)`;
+  }
+</script>
 
 </body>
 </html>
+

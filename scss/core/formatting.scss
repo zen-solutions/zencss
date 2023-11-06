@@ -6,21 +6,19 @@
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
-  padding-top:14px; //perfection is important
+  margin-top:13px; //perfection is important
 }
 
 .image-right{
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
-  padding-top:14px; //perfection is important
+  margin-top:13px; //perfection is important
 }
 
 
 //----------------------------------------------------
-//----------------------------------------------------
 /* gaps, heights, and widths */
-//----------------------------------------------------
 //----------------------------------------------------
 
 $gaps: (0.1em, 0.2em, 0.3em, 0.4em, 0.5em, 0.6em);
@@ -62,9 +60,7 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 }
 
 //----------------------------------------------
-//----------------------------------------------
 // Directional modifiers
-//----------------------------------------------
 //----------------------------------------------
 
 //BUG
@@ -136,9 +132,7 @@ $sizes: (
 }
 
 //----------------------------------------------------
-//----------------------------------------------------
 //card//
-//----------------------------------------------------
 //----------------------------------------------------
 
 .card {
@@ -154,6 +148,7 @@ $sizes: (
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     border: 0;
+    padding-top: 0.5rem;
   }
 
   p{
@@ -177,7 +172,6 @@ $sizes: (
   margin: 0;
   border: 0;
   padding: 0;
- // padding: 1rem;
 }
 
 .img-full {
@@ -200,6 +194,7 @@ $sizes: (
   height: 100%;
   padding: 0;
 }
+
 
 
 
@@ -296,4 +291,9 @@ $d-values: (
 
 .unset-round {
   border-radius: 0;
+}
+
+.squeeze > * {
+  margin-top: .3em;
+  margin-bottom: .3em;
 }

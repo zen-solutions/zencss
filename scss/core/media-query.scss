@@ -260,6 +260,9 @@
 
 @media (max-width: 768px) {
 
+  .card{
+    font-size: 1em;
+  }
 
   .reverse-tablet> :nth-z-col(1) {
     order: 2;
@@ -316,6 +319,18 @@ left:10px;
   .eight-up > * {
     flex: 0 0 23.751% !important;
   }
+
+  .five-up > * {
+    flex: 0 0 32.223% !important;
+  }
+//every 4th/5th kid make them half
+  .five-up > :nth-child(4n+4), .five-up > :nth-child(4n+5) {
+    flex: 0 0 49.168% !important;
+}
+
+.six-up > * {
+  flex: 0 0 32.223% !important;
+}
   
 }
 
@@ -329,6 +344,23 @@ left:10px;
   .reverse-tablet> :nth-z-col(2) {
     order: 1;
   }
+
+  .eight-up > * {
+    flex: 0 0 23.335% !important;
+  }
+
+  .five-up > * {
+    flex: 0 0 31.853% !important;
+  }
+
+  //every 4th/5th kid make them half
+  .five-up > :nth-child(4n+4), .five-up > :nth-child(4n+5) {
+    flex: 0 0 48.891% !important;
+}
+
+.six-up > * {
+  flex: 0 0 31.853% !important;
+}
 
 }
 

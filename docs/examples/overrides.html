@@ -81,6 +81,15 @@
 // If using SCSS
 @import 'scss/zen.scss';
 @import 'custom-styles.scss'; </code></pre>
+
+<h2>Inserting SCSS into the zenCSS build</h2>
+<p>
+    You may want to override specific files in the zenCSS build file by specifying overrides for the classes you wish to customize. Note that these will be overwritten in future updates so you will need to reapply these modifications if you choose this route.
+</p>
+<pre class="copy-text"><code class="language-html">// in zen.scss
+@import 'user-settings.scss';
+@import 'your-user-settings-overrides.scss';
+</code></pre>
                 
                     <h2>Compiling SCSS (if necessary)</h2>
                     <p>

@@ -5,7 +5,6 @@
 z-container, .z-container {
   max-width: 1140px;
   width: 100%;
-  //margin: $container-margin auto;
   margin: 0 auto;
   display: block;
   border-radius: $border-radius;
@@ -20,8 +19,8 @@ z-container-fluid, .z-container-fluid,
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top:$container-margin; //fix
-  padding-bottom:$container-margin; //fix
+  padding-top:$container-margin; //to fix
+  padding-bottom:$container-margin; //to fix
   display: flex;
   flex-direction: column;
   flex-grow: 1;

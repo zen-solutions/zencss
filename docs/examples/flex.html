@@ -71,35 +71,25 @@
                     <li><code>.d-flex</code>: This class sets the display property to flex, making the element a flex container.</li>
                 </ul>
             
-                <h2>2. Flex Grow Classes</h2>
+                <h2>2. Featured Cards</h2>
                 <p>
-                    These classes are used to set the <code>flex-grow</code> property of flex items, which determines how much a flex item will grow relative to the rest of the flex items in the flex container.
+                    These classes are used to set the width of cards, allowing you to feature one or multiple cards in a row.
                 </p>
                 <ul>
-                    <li><code>.feature</code>: <code>flex-grow</code> is set to <code>2</code></li>
-                    <li><code>.feature-sm</code>: <code>flex-grow</code> is set to <code>3</code></li>
-                    <li><code>.feature-md</code>: <code>flex-grow</code> is set to <code>5</code></li>
-                    <li><code>.feature-lg</code>: <code>flex-grow</code> is set to <code>6</code></li>
+                    <li><code>.feature</code></li>
+                    <li><code>.feature-sm</code></li>
+                    <li><code>.feature-md</code></li>
+                    <li><code>.feature-lg</code></li>
                 </ul>
                 
-                <h2>Developer Notice</h2>
-                <p>
-                    Be advised, the <code>.feature-lg</code> class is defined twice. This issue will be resolved in the upcoming release.
-                </p>
-            
                 <h2>Usage Examples</h2>
                 <p>
                     Here are some examples showcasing how you might use these utilities in your HTML:
                 </p>
-                <pre><code>
-                    &lt;!-- Example 1: Create a flex container --&gt;
-                    &lt;div class="d-flex"&gt;
-                        &lt;div class="feature"&gt;Item 1&lt;/div&gt;
-                        &lt;div class="feature-sm"&gt;Item 2&lt;/div&gt;
-                        &lt;div class="feature-md"&gt;Item 3&lt;/div&gt;
-                        &lt;div class="feature-lg"&gt;Item 4&lt;/div&gt;
-                    &lt;/div&gt;
-                </code></pre>
+                <pre><code>&lt;z-row&gt;
+    &lt;z-col class="card"&gt;Item 1&lt;/z-col&gt;
+    &lt;z-col class="card feature-lg"&gt;Item 2&lt;/z-col&gt;
+&lt;/z-row&gt; </code></pre>
             </div>
             
                 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Image Slider</title>
+<style>
+  .slider {
+    position: relative;
+    width: 500px; /* Adjust as needed */
+    height: 500px;
+    overflow: hidden;
+  }
+  .slides-container {
+    display: flex;
+
+  }
+  .slide {
+    width: 500px; /* Adjust as needed */
+    height: 500px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 100;
+    background-color: #FFF;
+    cursor: pointer;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slides-container">
+    <!-- Original slides -->
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=1');"></div>
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=2');"></div>
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=3');"></div>
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=4');"></div>
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=5');"></div>
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=6');"></div>
+    <!-- Duplicate of first image for seamless transition -->
+    <div class="slide" style="background-image: url('https://via.placeholder.com/500x300?text=1');"></div>
+  </div>
+  <div class="prev arrow">&#10094;</div>
+  <div class="next arrow">&#10095;</div>
+</div>
+
+<script>
+  let index = 0;
+  const slidesContainer = document.querySelector('.slides-container');
+  const slides = Array.from(slidesContainer.children);
+  const totalSlides = slides.length;
+  
+  document.querySelector('.next').addEventListener('click', () => {
+    if (index < totalSlides - 1) {
+      index++;
+    } else {
+      index = 1; // Skip duplicate slide
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = 'translateX(0)'; // Reset to first slide without animation
+    }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        slidesContainer.style.transform = `translateX(-${index * 500}px)`; // Adjust based on slide width
+      });
+    });
+  });
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+    } else {
+      index = totalSlides - 2; // Move to the last original slide
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = `translateX(-${(totalSlides - 1) * 500}px)`; // Adjust based on slide width
+    }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        slidesContainer.style.transform = `translateX(-${index * 500}px)`; // Adjust based on slide width
+      });
+    });
+  });
+
+  // Reset transition when resizing window
+  window.addEventListener('resize', () => {
+    slidesContainer.style.transition = 'none';
+    slidesContainer.style.transform = `translateX(-${index * 500}px)`; // Adjust based on slide width
+  });
+</script>
+
+</body>
+</html>
