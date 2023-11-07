@@ -12,7 +12,7 @@
 </head>
 
 <body class="zen">
-    <header>
+    <header class="header-sticky">
         <div class="pl-2" id="header-logo">
            <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
         </div>
@@ -21,7 +21,7 @@
             <button id="close-button">×</button>
             <ul class="pr-2">
                 <li><a href="/docs/" class="nav-link">Docs</a></li>
-                <li><a href="/articles/howto/" class="nav-link">Acticles   </a></li>
+                
                 <li><a href="/docs/examples/core-concepts.html" class="nav-link">Concepts</a></li>
                 <li><a href="/docs/examples/design-library.html" class="nav-link">Design System</a></li>
                 <li><a href="/docs/examples/css-classes.html" class="nav-link">Modifiers</a></li>
@@ -112,6 +112,7 @@
                     <p>
                        Your workflow may necessitate you inserting override files into the zen.scss build script. This is understandable but not ideal as In future updates,  these declarations may be overwritten so you would need to redo them. 
                     </p>
+                    <p>For the smallest possible production build, you may consider minifying your CSS with a tool like <a href="https://cssnano.co/">cssnano</a>, and compressing your CSS with <a href="https://en.wikipedia.org/wiki/Brotli">Brotli</a>.</p>
                     <p>
                         As you venture into customizing zenCSS, this structured approach will ensure a streamlined 
                         process, aligning with the efficient and precise ethos of the zenCSS toolkit.

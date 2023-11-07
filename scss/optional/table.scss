@@ -7,17 +7,24 @@ $border-color: $border-color;
     width: 100%;
     border-collapse: collapse;
 
+    tr:nth-child(odd) td {
+        background-color:  rgba(111,111,111,.07); //dark mode top color
+    }
+
     th, td {
         border: 1px solid $border-color;
         padding: 8px;
         text-align: left;
+        
        // color:  $responsive-text-color;
     }
 
+
+
     thead {
         th {
-            background-color:  darken($dual-mode-bg-color, 40%);
-            @include hover-state;
+            background-color:  rgba(111,111,111,.3); //dark mode top color
+            font-weight: 400;
         }
 
         @media (max-width: $responsive-breakpoint) {
@@ -31,12 +38,21 @@ $border-color: $border-color;
     tbody {
         tr {
             @include default-state;
-            @include hover-state;
+           // @include hover-state;
+
+           background-color:  rgba(111,111,111,.1); //dark mode top color new dual-mode-bg-color?
 
             @media (max-width: $responsive-breakpoint) {
                 @include default-state;
-                @include hover-state;
+               // @include hover-state;
             }
+            @media (max-width: $responsive-breakpoint) {
+
+            display: block;
+            margin-bottom: 20px;
+
+            }
+      
         }
 
         td {
@@ -45,6 +61,7 @@ $border-color: $border-color;
                 justify-content: space-between;
                 align-items: center;
                 //margin-bottom: 0.5rem; 
+
 
                 &:before {
                     content: attr(data-label);

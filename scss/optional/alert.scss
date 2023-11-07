@@ -1,14 +1,14 @@
-// Define the alert mixin and common alert styles
+
 @mixin alert($background-color, $icon-url) {
   background: $background-color;
-  padding: 2em 2em 2em 50px;  // Move padding-left from individual classes here
+  padding: 2em 2em 2em 50px;  
   filter: grayscale(10%);
   color: $light-color;
   width: 100%;
   box-sizing: border-box;
   border-radius: $border-radius;
-  margin: 1rem 0;  // Combine margin-top and margin-bottom
-  position: relative;  // Added position relative here for absolute positioning of ::before pseudo-element
+  margin: 1rem 0;  
+  position: relative; 
 
   &::before {
     background: url($icon-url) no-repeat center center;

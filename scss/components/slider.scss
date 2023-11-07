@@ -1,11 +1,36 @@
 .slider {
+  position: relative;
+  width: 100%; /* Full width */
   overflow: hidden;
-  width: 100%;
 }
 .slides-container {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
-.slides-container img {
-  min-width: 100%;
+.slide {
+  min-width: 100%; /* Each slide is full width */
+  transition: transform 0.5s ease;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 100;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+/* Make arrows bigger on smaller screens for easier clicking */
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 30px;
+    padding: 15px;
+  }
 }

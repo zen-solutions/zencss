@@ -3,72 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seamless Slider</title>
+<title>Responsive Image Slider</title>
 <style>
-  #slider {
+  .slider {
     position: relative;
-    width: 100%;
+    width: 100%; /* Full width */
     overflow: hidden;
   }
-  #slides {
+  .slides-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
   }
-  #slides img {
-    width: 100%;
-     flex-shrink: 0;
+  .slide {
+    min-width: 100%; /* Each slide is full width */
+    transition: transform 0.5s ease;
   }
   .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 24px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    z-index: 1000;
+    padding: 10px;
+    border-radius: 30px;
   }
-  #prev {
-    left: 1%;
+  .prev {
+    left: 10px;
   }
-  #next {
-    right: 1%;
+  .next {
+    right: 10px;
+  }
+  /* Make arrows bigger on smaller screens for easier clicking */
+  @media (max-width: 768px) {
+    .arrow {
+      font-size: 30px;
+      padding: 15px;
+    }
   }
 </style>
 </head>
 <body>
 
-<div id="slider">
-  <div id="slides">
-    <img src="https://via.placeholder.com/300x200.png?text=1" alt="Slide 1">
-    <img src="https://via.placeholder.com/300x200.png?text=2" alt="Slide 1">
-    <img src="https://via.placeholder.com/300x200.png?text=3" alt="Slide 1">
-    <img src="https://via.placeholder.com/300x200.png?text=4" alt="Slide 1">
-    <img src="https://via.placeholder.com/300x200.png?text=5" alt="Slide 1">
-
+<div class="slider">
+  <div class="slides-container">
+    <!-- Original slides -->
+    <div class="slide"><img src="https://via.placeholder.com/800x400?text=1" alt="Slide 1" style="width: 100%;"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x400?text=2" alt="Slide 2" style="width: 100%;"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x400?text=3" alt="Slide 3" style="width: 100%;"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x400?text=4" alt="Slide 4" style="width: 100%;"></div>
+    <!-- Duplicate of first image for seamless transition -->
+    <div class="slide"><img src="https://via.placeholder.com/800x400?text=1" alt="Slide 1" style="width: 100%;"></div>
   </div>
-  <div id="prev" class="arrow">&lt;</div>
-  <div id="next" class="arrow">&gt;</div>
+  <div class="prev arrow">&#10094;</div>
+  <div class="next arrow">&#10095;</div>
 </div>
 
 <script>
-  const slides = document.getElementById('slides');
-  const totalSlides = document.querySelectorAll('#slides img').length;
-  let currentIndex = 0;
+  let index = 0;
+  const slidesContainer = document.querySelector('.slides-container');
+  const slides = Array.from(slidesContainer.children);
+  const totalSlides = slides.length;
+  let slideWidth = document.querySelector('.slide').clientWidth;
 
-  document.getElementById('prev').addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-    updateSlidePosition();
+  document.querySelector('.next').addEventListener('click', () => {
+    if (index < totalSlides - 1) {
+      index++;
+    } else {
+      index = 1; // Skip duplicate slide
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = 'translateX(0)'; // Reset to first slide without animation
+    }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+      });
+    });
   });
 
-  document.getElementById('next').addEventListener('click', () => {
-    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-    updateSlidePosition();
+  document.querySelector('.prev').addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+    } else {
+      index = totalSlides - 2; // Move to the last original slide
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = `translateX(-${(totalSlides - 1) * slideWidth}px)`;
+    }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+      });
+    });
   });
 
-  function updateSlidePosition() {
-    slides.style.transform = `translateX(${-100 * currentIndex}%)`;
-  }
+  // Update slide width on resize
+  window.addEventListener('resize', () => {
+    slideWidth = document.querySelector('.slide').clientWidth;
+    slidesContainer.style.transition = 'none';
+    slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+  });
 </script>
 
 </body>
 </html>
-

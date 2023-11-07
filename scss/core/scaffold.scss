@@ -295,9 +295,6 @@ pre {
 
 }
 
-.not-important{
-  color:#aaa !important;
-}
 
 input,
 textarea,
@@ -498,4 +495,38 @@ margin-top:5px;
   }
 
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a1a1a1 #e8e8e8;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #e8e8e8;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 8px;
+    border: 1px solid #b0b0b0;
+  }
+
+
+
+  //sticky header
+  .header-sticky {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for better visual separation */
+  }
+
 

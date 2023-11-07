@@ -364,36 +364,96 @@ customElements.define("star-component", StarComponent);
 // ----------------------------------------
 // Image Slider/Carousel
 // // ---------------------------------------
+// Flag to indicate if the animation is in progress
+let isAnimating = false;
+let index1 = 0; // Current index of the slide
 
-// Get references to the necessary elements
-var slidesContainer = document.querySelector(".slides-container");
-var prevButton = document.querySelector(".prev");
-var nextButton = document.querySelector(".next");
+// Cache DOM elements
+const slider = document.querySelector('.slider');
+const slidesContainer = document.querySelector('.slides-container');
+const slides = Array.from(slidesContainer.children);
+const totalSlides = slides.length; // The actual total is minus one because the last is a duplicate
+let slideWidth = slides[0].clientWidth; // Width of a single slide
 
-// Only proceed if all the necessary elements are found
-if (slidesContainer && prevButton && nextButton) {
-    var currentSlide = 0;
-    var totalSlides = document.querySelectorAll(".slides-container img").length;
-
-    prevButton.addEventListener("click", prevSlide);
-    nextButton.addEventListener("click", nextSlide);
-
-    function showSlide(index) {
-        var transformValue = "translateX(" + -index * 100 + "%)";
-        slidesContainer.style.transform = transformValue;
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
-    }
+// Function to move to a specific slide
+function moveToSlide(slideIndex) {
+  slidesContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
 }
 
+// Event listener for when a transition ends on the slides container
+slidesContainer.addEventListener('transitionend', () => {
+  // If we're at the duplicate of the first slide, reset to the true first slide
+  if (index1 === totalSlides - 1) {
+    slidesContainer.style.transition = 'none';
+    index1 = 0;
+    moveToSlide(index1);
+  }
+  // If we've moved to the first slide and we are animating backwards, jump to the last slide
+  else if (index1 === 0 && isAnimating) {
+    slidesContainer.style.transition = 'none';
+    index1 = totalSlides - 2;
+    moveToSlide(index1);
+  }
+});
+
+// Update slide width on window resize
+window.addEventListener('resize', () => {
+  slideWidth = slides[0].clientWidth;
+  slidesContainer.style.transition = 'none';
+  moveToSlide(index1);
+});
+
+// Click event delegation on the parent element
+slider.addEventListener('click', (event) => {
+  // Next button logic
+  if (event.target.classList.contains('next') && !isAnimating) {
+    isAnimating = true;
+
+    // Move to the next slide
+    if (index1 < totalSlides - 1) {
+      index1++;
+    } else {
+      // If at the end, wrap around to the first slide
+      index1 = 0;
+    }
+
+    // Animate to the next slide
+    slidesContainer.style.transition = 'transform 0.5s ease-out';
+    moveToSlide(index1);
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
+  }
+
+  // Prev button logic
+  if (event.target.classList.contains('prev') && !isAnimating) {
+    isAnimating = true;
+
+    // If at the first slide, wrap to the 'fake' last slide (duplicate of the first)
+    if (index1 === 0) {
+      slidesContainer.style.transition = 'none';
+      index1 = totalSlides - 1;
+      moveToSlide(index1);
+
+      // Allow a frame re-draw to apply the 'none' transition, then apply the transition
+      requestAnimationFrame(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        index1 = totalSlides - 2;
+        moveToSlide(index1);
+      });
+    } else {
+      // Move to the previous slide
+      index1--;
+      slidesContainer.style.transition = 'transform 0.5s ease-out';
+      moveToSlide(index1);
+    }
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
+  }
+});
 
 
 // ----------------------------------------
@@ -432,130 +492,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+ 
 // ----------------------------------------
-// testimonial slider
+// Exit Intent
 // ----------------------------------------
+// Get the modal
+var modal = document.querySelector(".exit");
 
-// var slideFigure = document.getElementById('slide-figure');
-// var slides = document.querySelectorAll('.carousel-slide');
-// var totalSlides = slides.length;
-// var currentSlide = 1;  // Set the initial slide to the first real slide
-// var slideWidth = slides[0].offsetWidth;
+// Function to show the modal if conditions are met
+function tryToShowModal() {
+    if (modal && shouldShowModal() && !modalIsDisplayed()) {
+        modal.style.display = "block";
+    }
+}
 
-// document.getElementById('prev').addEventListener('click', prevSlide);
-// document.getElementById('next').addEventListener('click', nextSlide);
+// Function to hide modal and set a flag in local storage
+function closeModal() {
+    if (modal) {
+        modal.style.display = "none";
+        // Set the flag in local storage with the current timestamp
+        localStorage.setItem('modalClosed', new Date().getTime());
+    }
+}
 
-// function showSlide(index) {
-//     slideFigure.style.transition = 'transform 0.3s ease-in-out';
-//     slideFigure.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
-// }
+// Check if the modal is currently displayed
+function modalIsDisplayed() {
+    return modal.style.display === "block";
+}
 
-// function nextSlide() {
-//     currentSlide++;
-//     showSlide(currentSlide);
-// }
+// Get the <span> element that closes the modal
+var span = document.querySelector(".close");
 
-// function prevSlide() {
-//     currentSlide--;
-//     showSlide(currentSlide);
-// }
+// When the user clicks on <span> (x), close the modal
+if (span) {
+    span.onclick = closeModal;
+}
 
-// slideFigure.addEventListener('transitionend', function() {
-//     slides = document.querySelectorAll('.carousel-slide');  // Update the slides NodeList
-//     if (slides[currentSlide].id === 'lastClone') {
-//         slideFigure.style.transition = 'none';
-//         currentSlide = totalSlides - 1;
-//         slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
-//         requestAnimationFrame(() => {
-//             slideFigure.style.transition = 'transform 0.3s ease-in-out';
-//         });
-//     } else if (slides[currentSlide].id === 'firstClone') {
-//         slideFigure.style.transition = 'none';
-//         currentSlide = totalSlides;
-//         slideFigure.style.transform = 'translateX(' + (-currentSlide * slideWidth) + 'px)';
-//         requestAnimationFrame(() => {
-//             slideFigure.style.transition = 'transform 0.3s ease-in-out';
-//         });
-//     }
-// });
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+};
 
-// ----------------------------------------
-// Exit intent
-// ----------------------------------------
-// var modal = document.getElementById("myModal");
-// var btn = document.getElementById("btn-modal");
-// var span = document.getElementsByClassName("close")[0];
-// var sevenSecondsPassed = false;  // Flag to check if 7 seconds have passed
+// Check local storage to see if we should show the modal
+function shouldShowModal() {
+    var modalClosedTime = localStorage.getItem('modalClosed');
+    if (modalClosedTime) {
+        var now = new Date();
+        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
+        return daysPassed >= 7;
+    }
+    return true;
+}
 
-// function showModal() {
-//     modal.style.display = "block";
-//     document.removeEventListener('mousemove', checkExitIntent);  // Remove the mousemove event listener once the modal is shown
-// }
+// Trigger the modal after 8 seconds if the user hasn't closed it already
+setTimeout(function() {
+    document.addEventListener('mousemove', function(e) {
+        if (e.clientY <= 5) {
+            tryToShowModal();
+        }
+    });
+}, 8000);
 
-// span.onclick = function() {
-//     modal.style.display = "none";
-// }
 
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
 
-// // Timer to check for 7 seconds
-// setTimeout(function() {
-//     sevenSecondsPassed = true;  // Set the flag to true after 7 seconds
-// }, 7000);
 
-// // Exit intent function
-// function checkExitIntent(e) {
-//     if(e.clientY <= 5 && sevenSecondsPassed) {  // Check for exit intent only if 7 seconds have passed
-//         showModal();
-//     }
-// }
 
-// // Exit intent
-// document.addEventListener('mousemove', checkExitIntent);
 
-// ----------------------------------------
-// Experimental/not in use
-// ----------------------------------------
 
-// // bg image swap
-//         // Get all elements with the class "background-image"
-//         const backgroundImages = document.querySelectorAll('.background-image');
-
-//         // Loop through each image
-//         backgroundImages.forEach(image => {
-//             // Get the parent div (child)
-//             const parentDiv = image.parentElement;
-
-//             // Set the background image of the parent div
-//             parentDiv.style.backgroundImage = `url(${image.src})`;
-
-//             // Hide the image
-//             image.style.display = 'none';
-//         });
-
-// Text Type class
-
-// const lines = document.querySelectorAll('#typewriter-container p');
-// let totalDelay = 0;
-
-// lines.forEach(line => {
-//   const text = line.getAttribute('data-text');
-//   let charIndex = 0;
-
-//   setTimeout(() => {
-//     const intervalId = setInterval(() => {
-//       line.textContent += text[charIndex];
-//       charIndex += 1;
-//       if (charIndex === text.length) {
-//         clearInterval(intervalId);
-//         line.style.borderRight = 'none'; /* Hide cursor after typing */
-//       }
-//     }, 100); /* Speed of typing */
-//   }, totalDelay);
-
-//   totalDelay += text.length * 100 + 1000; /* Delay for next line (typing speed * text length + additional delay) */
-// });
