@@ -24,7 +24,12 @@
                         <button id="close-button">×</button>
                         <z-container>
                             <z-row>
-                                <z-col class="accordion">
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
                                     <input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
@@ -48,24 +53,27 @@
                                     <input type="checkbox" id="toggle2" class="toggle">
                                     <label for="toggle2" class="title">Site Parts</label>
                                     <div class="expanded-content d-flex flex-col">
-                                         <a href="buttons.html">Buttons</a>
-                                         <a href="breadcrumb.html">Breadcrumbs</a>
-                                         <a href="cards.html">Cards</a>
-                                         <a href="contact-form.html">Contact Form</a>
-                                         <a href="form-elements.html">Form Elements</a>
-                                         <a href="testimonials.html">Testimonials</a>
-                                         <a href="image-text-card.html">Image/Text Card</a>
-                                         <a href="slider.html">Image Carousel</a>
-                                         <a href="list-group.html">List Groups</a>
-                                         <a href="modal.html">Modal</a>
-                                         <a href="toggle.html">Accordian</a>
-                                         <a href="dropdown.html">Dropdown</a>
-                                         <a href="responsive-table.html">HTML Table</a>
-                                         <a href="alerts.html">Alert Messages</a>
-                                         <a href="decorations.html">Site Icons</a>
-                                         <a href="tooltip.html">Tool Tips</a>
-                                         <a href="pagination.html">Pagination</a>
-                                         <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
                                     </div>
                     
                                  
@@ -85,10 +93,10 @@
                                     <input type="checkbox" id="toggle5" class="toggle">
                                     <label for="toggle5" class="title">CSS Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="text-formatting-alignment-and-size-classes.html">Text Formatting, Alignment, and Size Classes</a>
-                                        <a href="padding-margin-utilities.html">Padding & Margin Utilities</a>
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
                                         <a href="animations.html">Animation Utilities</a>
-                                        <a href="formatting.html">Gap, Height, and Width Classes</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
                                         <a href="flex.html">Flex</a>
                                         <a href="test-classes.html">Test Classes</a>
                                         <a href="border-utilities.html">Border Classes</a>
@@ -109,6 +117,7 @@
                         </ul>
                     </nav>
                 </header>
+<main class="docs-content">
 
 
 
@@ -119,10 +128,10 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h3> The ZEN (Zero Effort Nomenclature) Ideoligy
-                    </h3>
-                    <p>    ZEN, standing for Zero Effort Nomenclature, amalgamates BEM, utility-first CSS, and atomic design ideologies into a singular, modular CSS organization method.
-                    </p>
+                    <h1>ZEN (Zero Effort Nomenclature) CSS Framework Documentation</h1>
+                    <p>
+                        The zenCSS Framework encapsulates a unified approach to styling web applications, integrating the best practices from BEM, utility-first CSS, and atomic design. This system is designed for modularity, scalability, and clarity.
+                      </p>
                         <hr>
                 </div>
             </z-col>
@@ -136,45 +145,63 @@
 <z-container>
     <z-row>
         <z-col>
-            <div class="alert-primary bg-blue-light" role="alert">
-          TLDR: Style elements from the outside in. .theme-x .bg-x .text-x .any-other-style-stuff-here. Put type and state classes up front. .card .inactive .style-stuff-here
-        </div>
-        </z-col>
-    </z-row>
-    <z-row>
-        <z-col>
-            <h2>1. Elements, Components and Sections</h2>
-            <ul>
-                <li>We structure individual website elements such as an image or paragraph, inside components (z-col -> card or modal), inside a framework to develop sections of a website.</li>
-                <li>Each item is globally themable and/or modifiable at any level via background, text, style, and state properties.</li>
-                <b>Example: </b> <span class="italic">A paragraph and button element in an z-col card component, which generates the text portion of an image/text section</span>
-            </ul>
-            
-            <h2>2. Modifiers</h2>
-            <ul>
-                <li>Classes used to modify elements, components, sections, or the zenCSS framework. 
-                    <ul><li>Order of operations: Type, State, Theme, Background, Text, Style.</li></ul>
-                </li>
-               <b>Example: </b><span class="italic">card inactive theme-dark bg-white text-black italic</span>
-            </ul>
-            
-            <h2>3. State <span class="tout">WIP</span></h2>
-            <ul>
-                <li> Active (default), Inactive, Hidden, Visible, Block, Inline-block, Inline, Flex.</li>
-            </ul>
-            
-            <h2>4. Structural Layout</h2>
-            <ul>
-                <li>Elements/Components are placed within Columns.</li>
-                <li>Columns are organized in Rows within a Container.</li>
-                <li>Rows and/or containers are stacked to create horizontal sections of a web page.</li>
-                <li>Container-fluid is used for vertical section spacing, section backgrounds or full screen content areas.</li>
-            </ul>
-            
-            <p>ZEN facilitates a structured yet flexible styling convention, simplifying UI development while ensuring a cohesive design language.</p>
-            
-    
-    
+     
+                <section class="zen-introduction">
+                    <div class="alert-primary" role="alert">
+                        <strong>TL;DR:</strong> Layer styles from the most generic to the most specific, starting with type and state classes, followed by thematic and stylistic customizations.
+                      </div>
+                </section>
+              
+                <section class="zen-core-principles">
+                  <h2>Core Principles:</h2>
+              
+                  <article class="zen-hierarchical-structure">
+                    <h3>1. Hierarchical Structure:</h3>
+                    <ul>
+                      <li><strong>Elements:</strong> Basic building blocks such as images and buttons.</li>
+                      <li><strong>Components:</strong> Patterns like <code>z-col</code> that encapsulate elements.</li>
+                      <li><strong>Sections:</strong> Groupings of components to form parts of a webpage.</li>
+                    </ul>
+                    <p>Each layer is individually themable and customizable for consistent yet flexible styling.</p>
+                    <p><strong>Example:</strong> A <code>z-col</code> card component with text and buttons forming a section.</p>
+                  </article>
+              
+                  <article class="zen-modifiers">
+                    <h3>2. Modifiers:</h3>
+                    <p>Classes that define the appearance and behavior of the framework components.</p>
+                    <p><strong>Order of application:</strong> Type → State → Theme → Background → Text → Style.</p>
+                    <p><strong>Example:</strong> <code>.card .inactive .theme-dark .bg-white .text-black .italic</code></p>
+                  </article>
+              
+                  <article class="zen-state-management">
+                    <h3>3. State Management (WIP):</h3>
+                    <p>Control the display and visibility of elements through state classes.</p>
+                    <p><strong>States include:</strong> Active, Inactive, Hidden, Visible, and display types like Block, Inline-block, etc.</p>
+                  </article>
+              
+                  <article class="zen-structural-layout">
+                    <h3>4. Structural Layout:</h3>
+                    <p>Organize layouts with a clear structural hierarchy.</p>
+                    <ul>
+                      <li><strong>Elements/Components:</strong> Within Columns for organization.</li>
+                      <li><strong>Columns:</strong> Within Rows for horizontal flow.</li>
+                      <li><strong>Rows/Containers:</strong> Stack to form vertical sections of a page.</li>
+                      <li><strong>Container-fluid:</strong> For full-width sections or vertical spacing.</li>
+                    </ul>
+                  </article>
+                </section>
+              
+                <section class="zen-practice">
+                  <h2>ZEN in Practice:</h2>
+                  <p>
+                    ZEN's structured yet adaptable framework simplifies the UI development process while ensuring consistency across the design. The "theme first" strategy facilitates easy theme switches without overhauling foundational styles. Intuitive nomenclature reduces maintenance effort.
+                  </p>
+                  <p>
+                    ZEN is ideal for both individual developers and teams, streamlining workflows and promoting efficiency and predictability. Adopt ZEN for a perfect blend of structure and flexibility in your UI development.
+                  </p>
+                </section>
+           
+              
     
     
         </z-col>

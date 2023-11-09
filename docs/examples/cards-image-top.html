@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+                <header class="header-sticky">
+                    <div class="pl-2" id="header-logo">
+                       <a href="/index.html"> <img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <button id="hamburger-button">☰</button>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <z-container>
+                            <z-row>
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
+                                    <input type="checkbox" id="toggle1" class="toggle">
+                                    <label for="toggle1" class="title">Design System</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="themes.html">Themes</a>
+                                        <a href="background-colors.html">Background/Font Pairings</a>
+                                        <a href="text-classes.html">Font Styles</a>
+                                        <a href="text-colors.html">Font Color System</a>
+                                     
+                                    </div>
+                    
+                                    <input type="checkbox" id="toggle3" class="toggle">
+                                    <label for="toggle3" class="title">Site Sections</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="header.html">Header</a>
+                                         <a href="hero-section.html">Hero</a>
+                                         <a href="image-text.html">Site Sections</a>
+                                         <a href="footer.html">Footer</a>
+                            
+                                    </div>
+                    
+                                    <input type="checkbox" id="toggle2" class="toggle">
+                                    <label for="toggle2" class="title">Site Parts</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
+                                    </div>
+                    
+                                 
+                                 
+                                    <input type="checkbox" id="toggle4" class="toggle">
+                                    <label for="toggle4" class="title">Core Concepts</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+                                        <a href="zentax.html">Intro to Zentax</a>
+                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
+                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
+                                        <a href="landing-page-example.html">Go from wires to development</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+                                    </div>
+                    
+                    
+                                    <input type="checkbox" id="toggle5" class="toggle">
+                                    <label for="toggle5" class="title">CSS Modifiers</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
+                                        <a href="animations.html">Animation Utilities</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
+                                        <a href="flex.html">Flex</a>
+                                        <a href="test-classes.html">Test Classes</a>
+                                        <a href="border-utilities.html">Border Classes</a>
+                                    </div>
+                    
+                                    <input type="checkbox" id="toggle6" class="toggle">
+                                    <label for="toggle6" class="title">General Info</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="breakpoints.html">Breakpoints</a>
+                                        <a href="browser-support.html">Browser Support</a>
+                                        <a href="overrides.html">Initialization Settings and ZenCSS Variables</a>
+                                    </div>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                        <ul class="pr-2">
+                            <li><a href="" class="nav-link"></a></li>
+                        </ul>
+                    </nav>
+                </header>
+<main class="docs-content">
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container class="mb-0">
+        <z-row>
+            <z-col class="pb-0">
+                <div class="center">
+                    <h1> Cards - Image Top</h1>
+                    <p>A card with a hero image and supporting text. </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="card theme-primary">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+
+              <z-col class="card theme-light">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+
+              <z-col class="card theme-dark">
+                <img src="16x9.jpg">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
+
+        </z-row>
+        <z-row>
+            <z-col class="card">
+                <h2>Code Example</h2>
+                <pre class="copy-text"><code class="language-html">&lt;z-col class="card theme-dark"&gt;
+    &lt;img src="16x9.jpg"&gt;
+    &lt;h4&gt;A title goes here&lt;/h4&gt;
+    &lt;p&gt;Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? &lt;/p&gt;
+&lt;/z-col&gt;</code></pre>
+            </z-col>
+        </z-row>
+<z-row>
+
+</z-row>
+    </z-container>
+
+
+
+
+
+
+
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
+                        any resolution.</p>
+                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html"><button class="btn-md">Docs</button></a>
+                    </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

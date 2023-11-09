@@ -10,11 +10,11 @@
   $size: $i * 0.25rem;
 
   .p-#{$i} {
-    padding: $size;
+    padding: $size !important;
   }
 
   .m-#{$i} {
-    margin: $size;
+    margin: $size !important;
   }
 }
 
@@ -26,50 +26,50 @@
   $size: $i * 0.75em;
 
   .mt-#{$i} {
-    margin-top: $size;
+    margin-top: $size !important;
   }
 
   .mb-#{$i} {
-    margin-bottom: $size
+    margin-bottom: $size !important;
   }
 
   .ml-#{$i} {
-    margin-left: $size;
+    margin-left: $size !important;
   }
 
   .mr-#{$i} {
-    margin-right: $size;
+    margin-right: $size !important;
   }
 
   .pt-#{$i} {
-    padding-top: $size;
+    padding-top: $size !important;
   }
 
   .pb-#{$i} {
-    padding-bottom: $size;
+    padding-bottom: $size !important;
   }
 
   .pl-#{$i} {
-    padding-left: $size;
+    padding-left: $size !important;
   }
 
   .pr-#{$i} {
-    padding-right: $size;
+    padding-right: $size !important;
   }
 }
 
 .p-6 {
-  padding: 2em;
+  padding: 2em !important;
 }
 
 .m-6 {
-  margin: 2em;
+  margin: 2em !important;
 }
 
 .p-7 {
-  padding: 3em;
+  padding: 3em !important;
 }
 
 .m-7 {
-  margin: 3vw;
+  margin: 3em !important;
 }

@@ -4,60 +4,39 @@
 
 .image-left{
   float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-top:13px; //perfection is important
+  margin-right: 15px;
+  margin-bottom: 7px;
+  margin-top: 5px;
 }
 
 .image-right{
   float: right;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-bottom: 10px;
-  margin-top:13px; //perfection is important
+  margin-top: 5px;
 }
 
 
-//----------------------------------------------------
-/* gaps, heights, and widths */
-//----------------------------------------------------
 
-$gaps: (0.1em, 0.2em, 0.3em, 0.4em, 0.5em, 0.6em);
-$heights: (10em, 15em, 20em, 25em, 30em, 40em);
-$widths: (4rem, 6rem, 9rem, 12rem, 15rem);
+// //----------------------------------------------------
+// /* Generate classes for heights */
+// //----------------------------------------------------
 
-//----------------------------------------------------
-/* Generate classes for gaps */
-//----------------------------------------------------
+// @for $i from 1 through length($heights) {
+//   .height-#{$i} {
+//     height: nth($heights, $i);
+//   }
+// }
 
-@for $i from 1 through length($gaps) {
-  .gap-#{$i} {
-    gap: nth($gaps, $i);
-  }
-}
+// //----------------------------------------------------
+// /* Generate classes for widths */
+// //----------------------------------------------------
 
-.gap-0{
-  gap:0;
-}
-
-//----------------------------------------------------
-/* Generate classes for heights */
-//----------------------------------------------------
-
-@for $i from 1 through length($heights) {
-  .height-#{$i} {
-    height: nth($heights, $i);
-  }
-}
-
-//----------------------------------------------------
-/* Generate classes for widths */
-//----------------------------------------------------
-
-@for $i from 1 through length($widths) {
-  .width-#{$i} {
-    width: nth($widths, $i);
-  }
-}
+// @for $i from 1 through length($widths) {
+//   .width-#{$i} {
+//     width: nth($widths, $i);
+//   }
+// }
 
 //----------------------------------------------
 // Directional modifiers
@@ -66,10 +45,24 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 //BUG
 // up 20 should do margin-bottom: 20px; not margin top - 20 for some reason. test this.
 
+.up-1 {
+  position: relative;
+  bottom: 1px;
+}
+
+.down-1 {
+  position: relative;
+  top: 1px;
+}
+
 .up-5 {
   position: relative;
-  margin-bottom: 5px;
+  bottom: 5px;
+}
 
+.down-5 {
+  position: relative;
+  top: 5px;
 }
 
 // Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
@@ -79,25 +72,25 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
   // Generating classes for negative margin-top (moving up)
   .up-#{$value} {
     position: relative;
-    margin-top: -#{$value}px;
+    top: -#{$value}px !important;
   }
 
   // Generating classes for positive margin-top (moving down)
   .down-#{$value} {
     position: relative;
-    margin-top: #{$value}px;
+    top: #{$value}px !important;
   }
 
   // Generating classes for negative margin-left (moving left)
   .left-#{$value} {
     position: relative;
-    margin-left: -#{$value}px;
+    left: -#{$value}px !important;
   }
 
   // Generating classes for positive margin-right (moving right)
   .right-#{$value} {
     position: relative;
-    margin-right: #{$value}px;
+    right: #{$value}px !important;
   }
 }
 
@@ -108,17 +101,27 @@ $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 $sizes: (
   10: 10px,
   20: 20px,
+  25: 25px,
   30: 30px,
   40: 40px,
   50: 50px,
   60: 60px,
   75: 75px,
-  100:100px,
+  80: 80px,
+  85: 85px,
+  90: 90px,
+  125:125px,
   150:150px,
+  175:175px,
   200:200px,
+  225:225px,
   250:250px,
   300:300px,
+  325:325px,
+  350:350px,
+  375:375px,
   400:400px,
+  450:450px,
   500:500px,
 );
 
@@ -137,29 +140,37 @@ $sizes: (
 
 .card {
   position: relative;
-  gap:.5rem;
+  gap:0;
   padding-left:1rem;
   padding-right:1rem;
   padding-top: 1rem;
   padding-bottom:1rem;
-  font-size: .8em;
+  font-size: .95em;
 
 
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     border: 0;
-    padding-top: 0.5rem;
+    padding:0;
   }
 
-  p{
+  p, div{
     //font-size: .8em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+   // padding-top: .5em;
+    //padding-bottom: .5em;
+    padding:0;
+    line-height: 2rem;
   }
+
+  //    p{
+  //     //margin-bottom: 1em;
+  // }
 
   //  a{
   //   font-size: .8em;
   // }
+
+
 }
 
 
@@ -172,6 +183,8 @@ $sizes: (
   margin: 0;
   border: 0;
   padding: 0;
+  //margin-bottom: 1em;
+
 }
 
 .img-full {
@@ -231,9 +244,6 @@ $d-values: (
 // Misc Utility classes
 //----------------------------------------------
 
-.serif {
-  font-family: 'Playfair Display', serif;
-}
 
 .row {
   flex-direction: row;
@@ -296,4 +306,60 @@ $d-values: (
 .squeeze > * {
   margin-top: .3em;
   margin-bottom: .3em;
+}
+
+
+// .w-half{
+//   width:50%;
+// }
+
+// .w-three-quarter{
+//   width:75%;
+// }
+
+// .w-quarter{
+//   width:25%;
+// }
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-44 {
+  position: relative;
+  z-index: 4;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+//----------------------------------------------------
+/* gaps, heights, and widths */
+//----------------------------------------------------
+
+$gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
+// $heights: (10em, 15em, 20em, 25em, 30em, 40em);
+// $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
+
+//----------------------------------------------------
+/* Generate classes for gaps */
+//----------------------------------------------------
+
+@for $i from 1 through length($gaps) {
+  .gap-#{$i} {
+    gap: nth($gaps, $i);
+  }
+}
+
+.gap-0{
+  gap:0;
 }

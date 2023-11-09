@@ -7,7 +7,7 @@
   //script
   @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
   //headline
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
   //mono
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
   //display
@@ -18,11 +18,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
     //flashy
     @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+    //pixel
+    // @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
   //vars
-  $zen-font-size: 16px;
-  $zen-tablet-mobile-font-size: 15px;
-  $zen-large-screen-font-size: 17px;
+  $zen-font-size: 15px;
+  $zen-tablet-mobile-font-size: 14px;
+  $zen-large-screen-font-size: 16px;
   $zen-font-family:  "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   $zen-body-bg-color:#d7d7d7;
   $zen-dark-text-color: #f0f0f0;
@@ -36,6 +38,7 @@
     background: $zen-body-bg-color;
     font-family: $zen-font-family;
     font-size: $zen-font-size;
+    color: #4a4a4a;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -44,7 +47,18 @@
     overflow-x: hidden;
     *, *::before, *::after {
       box-sizing: border-box;
+      -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+      -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+      text-rendering: optimizeLegibility; /* Improves text rendering */
   }
+
+  //color
+  background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
+  background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
 
     //--------------------------------------------------------------
     // Load core files
@@ -55,6 +69,7 @@
     @import 'core/framework.scss';
     @import 'core/scaffold.scss';
     // @import 'optional/popover.scss'; 
+    @import 'marketing/marketing-promos.scss';
     @import 'design/themes.scss';
     @import 'core/header.scss';
     @import 'components/form.scss';
@@ -65,11 +80,13 @@
     @import 'optional/alert.scss';
     @import 'design/text.scss';
     @import 'design/bg-color.scss';
+    @import 'design/border-color.scss';
     @import 'design/text-color.scss';
     @import 'components/test.scss';
     @import 'components/components.scss';
     @import 'design/layouts.scss';
     @import 'core/footer.scss';
+    @import 'core/wip.scss';
 
 
     //--------------------------------------------------------------
@@ -88,7 +105,7 @@
     //@import 'marketing/exit-intent.scss';
     @import 'marketing/exit-intent.scss';
     @import 'marketing/contact-form.scss';
-    @import 'marketing/marketing-promos.scss';
+//looking to move this above the core stuff, this markeitng stuff. so we can style. testing with banners
 
     //--------------------------------------------------------------
     //  Things that should go last
@@ -132,9 +149,19 @@
 
 .zen-dark {
     color:   $zen-dark-text-color;
-    background: #252525 !important;
+    background: #252525;
     background-color: #252525 ;
     $responsive-text-color:white;
+
+    nav{
+      background: #1e1e1e ;
+    }
+
+    header,footer{
+      background: #1e1e1e ;
+    }
+
+
 
     td, th{
       //how to get text changing color for dark mode
@@ -157,3 +184,4 @@
      text-decoration: none;
     }
 }
+

@@ -21,7 +21,12 @@
                         <button id="close-button">×</button>
                         <z-container>
                             <z-row>
-                                <z-col class="accordion">
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
                                     <input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
@@ -45,24 +50,27 @@
                                     <input type="checkbox" id="toggle2" class="toggle">
                                     <label for="toggle2" class="title">Site Parts</label>
                                     <div class="expanded-content d-flex flex-col">
-                                         <a href="buttons.html">Buttons</a>
-                                         <a href="breadcrumb.html">Breadcrumbs</a>
-                                         <a href="cards.html">Cards</a>
-                                         <a href="contact-form.html">Contact Form</a>
-                                         <a href="form-elements.html">Form Elements</a>
-                                         <a href="testimonials.html">Testimonials</a>
-                                         <a href="image-text-card.html">Image/Text Card</a>
-                                         <a href="slider.html">Image Carousel</a>
-                                         <a href="list-group.html">List Groups</a>
-                                         <a href="modal.html">Modal</a>
-                                         <a href="toggle.html">Accordian</a>
-                                         <a href="dropdown.html">Dropdown</a>
-                                         <a href="responsive-table.html">HTML Table</a>
-                                         <a href="alerts.html">Alert Messages</a>
-                                         <a href="decorations.html">Site Icons</a>
-                                         <a href="tooltip.html">Tool Tips</a>
-                                         <a href="pagination.html">Pagination</a>
-                                         <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
                                     </div>
                     
                                  
@@ -82,10 +90,10 @@
                                     <input type="checkbox" id="toggle5" class="toggle">
                                     <label for="toggle5" class="title">CSS Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="text-formatting-alignment-and-size-classes.html">Text Formatting, Alignment, and Size Classes</a>
-                                        <a href="padding-margin-utilities.html">Padding & Margin Utilities</a>
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
                                         <a href="animations.html">Animation Utilities</a>
-                                        <a href="formatting.html">Gap, Height, and Width Classes</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
                                         <a href="flex.html">Flex</a>
                                         <a href="test-classes.html">Test Classes</a>
                                         <a href="border-utilities.html">Border Classes</a>
@@ -106,6 +114,7 @@
                         </ul>
                     </nav>
                 </header>
+<main class="docs-content">
 
 
 
@@ -127,16 +136,48 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
+
     <z-container>
         <z-row>
             <z-col>
-                <img src="../../img/placeholders/16x9.jpg" class="w-50">
-                </z-col>
-        </z-row>
 
+  <h2>Image Styles</h2>
+  <p>Enhance your images with these easy-to-apply classes to fit the needs of your layout and design.</p>
+
+  <h3>.img-responsive</h3>
+  <p>Makes an image scale nicely to the parent element. The image will scale down if it has to, but never scale up to be larger than its original size.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="img-responsive"&gt;</code></pre>
+
+  <h3>.img-round</h3>
+  <p>Shapes the image into a perfect circle. The element must have equal width and height dimensions to create a circle rather than an ellipse.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="img-responsive img-round"&gt;</code></pre>
+
+  <h3>.img-rounded</h3>
+  <p>Applies a small, uniform border-radius to create rounded corners on an image.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="img-responsive img-rounded"&gt;</code></pre>
+
+  <h3>.img-round-outline</h3>
+  <p>Gives the image a full circular shape with a solid white outline and a subtle drop shadow for depth. The image must have equal width and height for the outline to appear even.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="img-responsive img-round-outline"&gt;</code></pre>
+  <h3>.image-left</h3>
+  <p>Floats the image to the left of the parent element and applies margins for spacing around the image.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="image-left"&gt;</code></pre>
+
+  <h3>.image-right</h3>
+  <p>Floats the image to the right of the parent element and applies margins for spacing around the image.</p>
+  <pre><code>&lt;img src="path-to-image.jpg" alt="..." class="image-right"&gt;</code></pre>
+
+            </z-col>
+        </z-row>
+    </z-container>
+    <z-container>
         <z-row>
-            <z-col>
-                <img src="../../img/placeholders/16x9.jpg" class="w-150">
+            <z-col class="flex-row gap-5">
+                <img src="../../img/placeholders/sq.jpg" alt="..." class="img-responsive w-150">
+                <img src="../../img/placeholders/sq.jpg" alt="..." class="img-responsive img-round w-150">
+                <img src="../../img/placeholders/sq.jpg" alt="..." class="img-responsive img-rounded w-150">
+                <img src="../../img/placeholders/sq.jpg" alt="..." class="img-responsive img-round-outline w-150">
+
                 </z-col>
         </z-row>
 

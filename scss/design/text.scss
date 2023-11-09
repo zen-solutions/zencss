@@ -1,4 +1,58 @@
-//------------------------------------------ 
+//----------------------
+//fonts /base, script, serif, headline
+//----------------------
+.serif {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+
+.script{
+    font-family: 'Style Script', cursive;
+    font-size:3.5rem;
+  }
+  
+  .headline{
+    font-family: 'Inter', sans-serif;
+    //font-size: 2.5rem;
+  font-weight: 900;
+  }
+  .mono{
+    font-family: 'Roboto Mono', monospace;
+    font-size:2.5rem;
+  }
+  
+  .display{
+    font-family: 'Bungee', cursive;
+    font-size:2rem;
+  }
+  
+  .handwriting{
+    font-family: 'Just Another Hand', cursive;
+    font-size:3.5rem;
+    letter-spacing: .02em;
+  
+  }
+  
+  .emoji{
+    font-family: 'Noto Color Emoji', sans-serif;
+  }
+  
+  .flashy{
+    font-family: 'Shrikhand', serif;
+    font-size:2.6rem;
+  }
+
+//    .pixel{
+//      font-family: 'Press Start 2P', sans-serif;
+//   }
+
+  .lead{
+    font-size: 1.3em;
+    margin-top: -0.8em;
+  }
+  
+  //------------------------------------------ 
 // Text Formatting */
 //------------------------------------------ 
 
@@ -56,7 +110,7 @@
 
 
 .small {
-    line-height: 1.4em;
+    //line-height: 1.4em;
     font-size: .8em !important;
     //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
 
@@ -74,10 +128,6 @@
 
 .bigger {
     font-size: 1.4em;
-}
-
-.serif {
-    font-family: 'Playfair Display', serif;
 }
 
 // ------------------------------------------ 
@@ -267,43 +317,97 @@
     color: $light-color;
 }
 
-//-----------------------------------------------------
-// Pagination
-//-----------------------------------------------------
 
-.pagination-nav {
+//Pagination and nav
+// Mixin for common nav styles
+@mixin nav-style($item-margin-left: 4px, $gap: 0) {
     display: flex;
     list-style-type: none;
     padding: 0;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: $gap;
 
     .item {
-        padding: 0.75rem 1.25rem;
+        padding: 0.5rem 1.25rem;
         border: 1px solid $border-color;
+        border-right: none;
         text-decoration: none !important;
-    //this is how we default style all the ui stuff moving forward
-    @include default-state;
-    @include hover-state;
-    }
-    
+        @include default-state;
+        @include hover-state;
 
-    
+        position: relative; 
+        z-index: 10;
+
+        &:hover{
+            box-shadow:  1px 0 0 0 lighten($border-color, 20%), 
+             -1px 0 0 0  lighten($border-color, 20%);
+             z-index: 11;
+                }
+
+        // & + .item {
+        //     margin-left: $item-margin-left;
+        // }
+        &:last-child { border-right: 1px solid $border-color; }
+    }
+
     .current {
         background-color: $cta-color;
         color: $light-color;
         border-color: $cta-color;
     }
+}
 
-    .item+.item {
-        margin-left: 4px;
+// Pagination Nav
+.pagination-nav {
+    @include nav-style; // Uses the default parameters
+}
+
+// Tab Nav
+.tab-nav {
+    @include nav-style($item-margin-left: 0, $gap: 0); // Overrides the default parameters
+}
+
+// Tab Nav Thin
+.tab-nav-thin {
+    @extend .tab-nav;
+    .item {
+        padding: 0.25rem 1.25rem
     }
-    
+
 }
 
 
+// Styles for .tab-nav-round
+.tab-nav-round {
+    @extend .tab-nav;
 
+    .item:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
 
+    .item:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+// Styles for .tab-nav-round
+.tab-nav-round-thin {
+    @extend .tab-nav;
+    .item {
+        padding: 0.25rem 1.25rem
+    }
+    .item:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .item:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
 
 // ------------------------------------------ 
 // Text Type class

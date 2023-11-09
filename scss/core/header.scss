@@ -32,7 +32,7 @@ header {
     }
     
     nav a {
-    color: $light-color;
+    //color: $light-color;
     text-decoration: none;
     }
     
@@ -68,6 +68,7 @@ header {
 
 nav {
     display: flex;
+    background-color: #c2c2c2;
 }
 
 nav ul {
@@ -82,7 +83,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    //color: #fff;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -105,7 +106,7 @@ nav a:hover {
         left: -250px;  
         width: 250px;
         height: 100%;
-        background-color: #333;
+       // background-color: #333;
         transition: left 0.3s;  
         display: block; 
     }

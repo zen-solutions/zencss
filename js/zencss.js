@@ -32,37 +32,42 @@ customElements.define("z-col", ZCol);
 //--------------------------------------------------------
 //Toggle  test mode
 //--------------------------------------------------------
-document.getElementById("toggleButton").addEventListener("click", function () {
-    const toggleClassOnElements = (selector, className) => {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach((element) => {
-            element.classList.toggle(className);
+// Check if the toggleButton exists
+var toggleButton = document.getElementById("toggleButton");
+
+if (toggleButton) {
+    toggleButton.addEventListener("click", function () {
+        const toggleClassOnElements = (selector, className) => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach((element) => {
+                element.classList.toggle(className);
+            });
+        };
+
+        const selectorsAndClasses = [
+            // Presuming these are custom elements, the selectors are correct
+            ["z-container", "z-container-outline-on"],
+            ["z-container-fluid", "z-container-fluid-outline-on"],
+            ["z-row", "z-row-outline-on"],
+            ["z-col", "z-col-outline-on"],
+            ["p", "p-outline-on"],
+            ["h1", "h1-outline-on"],
+            ["h2", "h2-outline-on"],
+            ["h3", "h3-outline-on"],
+            ["h4", "h4-outline-on"],
+            ["h5", "h5-outline-on"],
+            ["h6", "h6-outline-on"],
+            [".center-line", "center-line-outline-on"],
+        ];
+
+        selectorsAndClasses.forEach(([selector, className]) => {
+            toggleClassOnElements(selector, className);
         });
-    };
-
-    const selectorsAndClasses = [
-        [".z-container", "z-container-outline-on"],
-        [".z-container-fluid", "z-container-fluid-outline-on"],
-        [".z-row", "z-row-outline-on"],
-        [".z-col", "z-col-outline-on"],
-        ["z-container", "z-container-outline-on"],
-        ["z-container-fluid", "z-container-fluid-outline-on"],
-        ["z-row", "z-row-outline-on"],
-        ["z-col", "z-col-outline-on"],
-        ["p", "p-outline-on"],
-        ["h1", "h1-outline-on"],
-        ["h2", "h-outline-on"],
-        ["h3", "h-outline-on"],
-        ["h4", "h-outline-on"],
-        ["h5", "h-outline-on"],
-        ["h6", "h-outline-on"],
-        [".center-line", "center-line-outline-on"],
-    ];
-
-    selectorsAndClasses.forEach(([selector, className]) => {
-        toggleClassOnElements(selector, className);
     });
-});
+} else {
+    // If toggleButton does not exist, you can handle it accordingly here
+    console.log('Toggle button not found.');
+}
 
 //--------------------------------------------------------
 // Bg-blur and opacity overrides
@@ -141,17 +146,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const navLinks = document.querySelectorAll(".nav-link");
 
     const toggleMenu = () => {
+        // Assuming "0px" is the open state and "-250px" is the closed state
         nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
     };
 
-    if (hamburgerButton && closeButton && nav && navLinks.length > 0) {
+    if (hamburgerButton && closeButton && nav) {
         hamburgerButton.addEventListener("click", toggleMenu);
         closeButton.addEventListener("click", toggleMenu);
 
         navLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                nav.style.left = "-250px";
-            });
+            link.addEventListener("click", toggleMenu); // Use toggleMenu to close the menu
         });
     }
 });
@@ -257,7 +261,7 @@ class ZModal extends HTMLElement {
             .modal-footer {
                 display: flex;
                 justify-content: flex-end;
-                padding: 10px 20px;
+                padding: 10px 10px;
                 border-top: 1px solid #bbb;
             }
 
@@ -367,97 +371,102 @@ customElements.define("star-component", StarComponent);
 // Flag to indicate if the animation is in progress
 let isAnimating = false;
 let index1 = 0; // Current index of the slide
+let slideWidth;
 
 // Cache DOM elements
 const slider = document.querySelector('.slider');
-const slidesContainer = document.querySelector('.slides-container');
-const slides = Array.from(slidesContainer.children);
+const slidesContainer = slider ? document.querySelector('.slides-container') : null;
+const slides = slidesContainer ? Array.from(slidesContainer.children) : [];
 const totalSlides = slides.length; // The actual total is minus one because the last is a duplicate
-let slideWidth = slides[0].clientWidth; // Width of a single slide
 
-// Function to move to a specific slide
-function moveToSlide(slideIndex) {
-  slidesContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
-}
+// Only proceed if there are slides
+if (slides.length > 0) {
+  slideWidth = slides[0].clientWidth; // Width of a single slide
 
-// Event listener for when a transition ends on the slides container
-slidesContainer.addEventListener('transitionend', () => {
-  // If we're at the duplicate of the first slide, reset to the true first slide
-  if (index1 === totalSlides - 1) {
-    slidesContainer.style.transition = 'none';
-    index1 = 0;
-    moveToSlide(index1);
-  }
-  // If we've moved to the first slide and we are animating backwards, jump to the last slide
-  else if (index1 === 0 && isAnimating) {
-    slidesContainer.style.transition = 'none';
-    index1 = totalSlides - 2;
-    moveToSlide(index1);
-  }
-});
-
-// Update slide width on window resize
-window.addEventListener('resize', () => {
-  slideWidth = slides[0].clientWidth;
-  slidesContainer.style.transition = 'none';
-  moveToSlide(index1);
-});
-
-// Click event delegation on the parent element
-slider.addEventListener('click', (event) => {
-  // Next button logic
-  if (event.target.classList.contains('next') && !isAnimating) {
-    isAnimating = true;
-
-    // Move to the next slide
-    if (index1 < totalSlides - 1) {
-      index1++;
-    } else {
-      // If at the end, wrap around to the first slide
-      index1 = 0;
-    }
-
-    // Animate to the next slide
-    slidesContainer.style.transition = 'transform 0.5s ease-out';
-    moveToSlide(index1);
-
-    setTimeout(() => {
-      isAnimating = false;
-    }, 500);
+  // Function to move to a specific slide
+  function moveToSlide(slideIndex) {
+    slidesContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
   }
 
-  // Prev button logic
-  if (event.target.classList.contains('prev') && !isAnimating) {
-    isAnimating = true;
-
-    // If at the first slide, wrap to the 'fake' last slide (duplicate of the first)
-    if (index1 === 0) {
+  // Event listener for when a transition ends on the slides container
+  slidesContainer.addEventListener('transitionend', () => {
+    // If we're at the duplicate of the first slide, reset to the true first slide
+    if (index1 === totalSlides - 1) {
       slidesContainer.style.transition = 'none';
-      index1 = totalSlides - 1;
+      index1 = 0;
       moveToSlide(index1);
+    }
+    // If we've moved to the first slide and we are animating backwards, jump to the last slide
+    else if (index1 === 0 && isAnimating) {
+      slidesContainer.style.transition = 'none';
+      index1 = totalSlides - 2;
+      moveToSlide(index1);
+    }
+  });
 
-      // Allow a frame re-draw to apply the 'none' transition, then apply the transition
-      requestAnimationFrame(() => {
-        slidesContainer.style.transition = 'transform 0.5s ease-out';
-        index1 = totalSlides - 2;
-        moveToSlide(index1);
-      });
-    } else {
-      // Move to the previous slide
-      index1--;
+  // Update slide width on window resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].clientWidth;
+    slidesContainer.style.transition = 'none';
+    moveToSlide(index1);
+  });
+
+  // Click event delegation on the parent element
+  slider.addEventListener('click', (event) => {
+    // Next button logic
+    if (event.target.classList.contains('next') && !isAnimating) {
+      isAnimating = true;
+
+      // Move to the next slide
+      if (index1 < totalSlides - 1) {
+        index1++;
+      } else {
+        // If at the end, wrap around to the first slide
+        index1 = 0;
+      }
+
+      // Animate to the next slide
       slidesContainer.style.transition = 'transform 0.5s ease-out';
       moveToSlide(index1);
+
+      setTimeout(() => {
+        isAnimating = false;
+      }, 500);
     }
 
-    setTimeout(() => {
-      isAnimating = false;
-    }, 500);
-  }
-});
+    // Prev button logic
+    if (event.target.classList.contains('prev') && !isAnimating) {
+      isAnimating = true;
+
+      // If at the first slide, wrap to the 'fake' last slide (duplicate of the first)
+      if (index1 === 0) {
+        slidesContainer.style.transition = 'none';
+        index1 = totalSlides - 1;
+        moveToSlide(index1);
+
+        // Allow a frame re-draw to apply the 'none' transition, then apply the transition
+        requestAnimationFrame(() => {
+          slidesContainer.style.transition = 'transform 0.5s ease-out';
+          index1 = totalSlides - 2;
+          moveToSlide(index1);
+        });
+      } else {
+        // Move to the previous slide
+        index1--;
+        slidesContainer.style.transition = 'transform 0.5s ease-out';
+        moveToSlide(index1);
+      }
+
+      setTimeout(() => {
+        isAnimating = false;
+      }, 500);
+    }
+  });
+}
 
 
 // ----------------------------------------
-// Hack for card with full screen image ;) dont @ me
+// Hack for card with full screen image ;)
 // ----------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     var cards = document.querySelectorAll(".card");
@@ -465,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cards.forEach(function (card) {
         var image = card.querySelector(".img-full");
         if (image) {
-            var imageHeight = image.offsetHeight + 5;
+            var imageHeight = image.offsetHeight + 13;
             card.style.paddingTop = imageHeight + "px";
         }
     });
@@ -476,22 +485,41 @@ document.addEventListener("DOMContentLoaded", function () {
 // ----------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
     const accordion = document.querySelector('.accordion');
-    
-    if (accordion) { 
-        const toggles = accordion.querySelectorAll('.toggle');
-
-        toggles.forEach(toggle => {
-            toggle.addEventListener('change', () => {
-                toggles.forEach(t => {
-                    if (t !== toggle) {
-                        t.checked = false;
-                    }
-                });
-            });
+  
+    if (accordion) {
+      const toggles = accordion.querySelectorAll('.toggle');
+  
+      toggles.forEach(toggle => {
+        toggle.addEventListener('change', () => {
+          // Define the expanded content area
+          const contentArea = document.getElementById(toggle.id).nextElementSibling.nextElementSibling;
+  
+          if (toggle.checked) {
+            // When the toggle is checked, set overflow to hidden to prevent scrollbar
+            contentArea.style.overflow = 'hidden';
+  
+            // Set a timeout that matches your CSS transition time
+            setTimeout(() => {
+              // After the transition, set overflow to auto if content is taller than the container
+              contentArea.style.overflow = 'auto';
+            }, 500); // Adjust the time to match your CSS transition-duration
+          } else {
+            // When the toggle is not checked, immediately set overflow to hidden
+            contentArea.style.overflow = 'hidden';
+          }
+  
+          toggles.forEach(t => {
+            if (t !== toggle) {
+              t.checked = false;
+              // Reset the overflow for other content areas that are not active
+              t.nextElementSibling.nextElementSibling.style.overflow = 'hidden';
+            }
+          });
         });
+      });
     }
-});
-
+  });
+  
 
  
 // ----------------------------------------
@@ -557,8 +585,195 @@ setTimeout(function() {
 }, 8000);
 
 
+// ----------------------------------------
+// Wizard
+// ----------------------------------------
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const steps = document.querySelectorAll(".wizard-step");
+    const navItems = document.querySelectorAll(".wizard-nav");
+
+    if (steps.length > 0 && navItems.length > 0) {
+        let currentStep = 1;
+        const totalSteps = steps.length;
+
+        function goToStep(stepNumber) {
+            steps.forEach(step => {
+                step.style.display = 'none'; // Hide all steps
+            });
+            document.getElementById(`step-${stepNumber}`).style.display = 'block'; // Show the desired step
+
+            // Update the current class on pagination
+            navItems.forEach(item => {
+                if (item.dataset.step == stepNumber.toString()) {
+                    item.classList.add('current');
+                } else {
+                    item.classList.remove('current');
+                }
+            });
+        }
+
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                let direction = item.dataset.direction;
+                if (direction) {
+                    if (direction === 'next' && currentStep < totalSteps) {
+                        currentStep++;
+                    } else if (direction === 'prev' && currentStep > 1) {
+                        currentStep--;
+                    }
+                } else if (item.dataset.step) {
+                    currentStep = parseInt(item.dataset.step);
+                }
+                goToStep(currentStep);
+            });
+        });
+
+        // Initialize the wizard to the first step
+        goToStep(currentStep);
+    }
+});
+
+// ----------------------------------------
+// Tabs
+// ----------------------------------------
+ document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab-nav .item');
+
+    if(tabs.length > 0) {
+        function removeCurrentClass() {
+            tabs.forEach(tab => {
+                tab.classList.remove('current');
+            });
+        }
+
+        function setCurrentClass(event) {
+            event.preventDefault();
+            removeCurrentClass();
+            event.target.classList.add('current');
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', setCurrentClass);
+        });
+    }
+});
 
 
+//-------------------------------------
+//Spin
+  //-------------------------------------
+
+// This function will apply the spinning effect to the spinner if it exists
+function startSpinning() {
+    // Select the spinner element
+    var spinner = document.querySelector('.rotate-spinner');
+    
+    // Check if the spinner exists to avoid errors
+    if (spinner) {
+      // Apply the CSS animation using inline styles
+      spinner.style.animation = 'spin 2s linear infinite';
+    }
+  }
+  
+  // This function will start the spinning when the document is loaded, if the spinner exists
+  document.addEventListener('DOMContentLoaded', startSpinning);
 
 
+  //-------------------------------------
+  //Poll
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentStep = 1;
+    var results = { a: 0, b: 0, c: 0, d: 0 };
+    
+    function updateStepDisplay(step) {
+      var steps = document.querySelectorAll('.wizard-step');
+      steps.forEach(function(stepDiv) {
+        stepDiv.classList.remove('active');
+      });
+      document.querySelector('#step-' + step).classList.add('active');
+    }
+  
+    function handleOptionSelect(event) {
+      var selectedOption = event.target.value;
+      results[selectedOption]++;
+      if(currentStep < 4) {
+        currentStep++;
+        updateStepDisplay(currentStep);
+      } else {
+        // Call the showResult function immediately after the last selection
+        showResult();
+      }
+    }
+  
+    function showResult() {
+        // Remove the active class from all steps
+        var steps = document.querySelectorAll('.wizard-step');
+        steps.forEach(function(step) {
+          step.classList.remove('active');
+        });
+      
+        // Calculate the most chosen answer
+        var max = Math.max(...Object.values(results));
+        var mostChosenResults = Object.keys(results).filter(function(key) {
+          return results[key] === max;
+        });
+      
+        // Take the first result if there's a tie
+        var mostChosen = mostChosenResults[0];
+        var resultElement = document.querySelector('#result-types [data-result="' + mostChosen + '"]');
+        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
+      
+        // Update the result div and make the result visible
+        var resultDiv = document.getElementById('result-text');
+        if(resultDiv) {
+          resultDiv.innerHTML = resultContent;
+        }
+        var resultContainer = document.getElementById('result');
+        if(resultContainer) {
+          resultContainer.classList.add('active'); // Ensure this class makes the element visible
+        }
+      }
+      
+    // Attaching change event listeners to radio buttons
+    var wizard = document.querySelector('.wizard');
+    if(wizard) {
+      var radioButtons = wizard.querySelectorAll('input[type="radio"]');
+      radioButtons.forEach(function(radioButton) {
+        radioButton.addEventListener('change', handleOptionSelect);
+      });
+    }
+  });
+  
 
+  //-------------------------------------
+  // Dynamic year in footer
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+    }
+  });
+  
+  //-------------------------------------
+  // Heart toggle
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    var heartToggle = document.querySelector('.heart-toggle');
+    
+    if (heartToggle) {
+        heartToggle.addEventListener('click', function () {
+            var emptyHeart = this.querySelector('.heart-empty');
+            var filledHeart = this.querySelector('.heart-filled');
+
+            if (emptyHeart && filledHeart) {
+                emptyHeart.classList.toggle('show');
+                filledHeart.classList.toggle('show');
+            }
+        });
+    }
+});

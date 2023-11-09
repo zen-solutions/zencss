@@ -21,7 +21,12 @@
                         <button id="close-button">×</button>
                         <z-container>
                             <z-row>
-                                <z-col class="accordion">
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
                                     <input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
@@ -45,24 +50,27 @@
                                     <input type="checkbox" id="toggle2" class="toggle">
                                     <label for="toggle2" class="title">Site Parts</label>
                                     <div class="expanded-content d-flex flex-col">
-                                         <a href="buttons.html">Buttons</a>
-                                         <a href="breadcrumb.html">Breadcrumbs</a>
-                                         <a href="cards.html">Cards</a>
-                                         <a href="contact-form.html">Contact Form</a>
-                                         <a href="form-elements.html">Form Elements</a>
-                                         <a href="testimonials.html">Testimonials</a>
-                                         <a href="image-text-card.html">Image/Text Card</a>
-                                         <a href="slider.html">Image Carousel</a>
-                                         <a href="list-group.html">List Groups</a>
-                                         <a href="modal.html">Modal</a>
-                                         <a href="toggle.html">Accordian</a>
-                                         <a href="dropdown.html">Dropdown</a>
-                                         <a href="responsive-table.html">HTML Table</a>
-                                         <a href="alerts.html">Alert Messages</a>
-                                         <a href="decorations.html">Site Icons</a>
-                                         <a href="tooltip.html">Tool Tips</a>
-                                         <a href="pagination.html">Pagination</a>
-                                         <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
                                     </div>
                     
                                  
@@ -82,10 +90,10 @@
                                     <input type="checkbox" id="toggle5" class="toggle">
                                     <label for="toggle5" class="title">CSS Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="text-formatting-alignment-and-size-classes.html">Text Formatting, Alignment, and Size Classes</a>
-                                        <a href="padding-margin-utilities.html">Padding & Margin Utilities</a>
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
                                         <a href="animations.html">Animation Utilities</a>
-                                        <a href="formatting.html">Gap, Height, and Width Classes</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
                                         <a href="flex.html">Flex</a>
                                         <a href="test-classes.html">Test Classes</a>
                                         <a href="border-utilities.html">Border Classes</a>
@@ -106,6 +114,7 @@
                         </ul>
                     </nav>
                 </header>
+<main class="docs-content">
 
 
     <!----------------------------------------------------------------------->
@@ -113,7 +122,44 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
+<z-row>
+    <z-col>
+        <section class="zencss-docs">
+ 
+              <h2>Introducing the ZenCSS Smart Align System</h2>
+              <p>Welcome to ZenCSS, where our Smart Align System is a testament to our commitment to responsive design. It's smart, it's straightforward, and it respects your content's need for both freedom and order.</p>
 
+            <article>
+              <h3>Containers: Your Layout's Foundation</h3>
+              <p>Containers are the backbone of your layout in ZenCSS. Like a masterful organizer, they keep your site's layout crisp and adaptable across devices. Think of them as the stage upon which your content performs, regardless of the screen size.</p>
+          
+              <h3>Rows: The Rhythm Section</h3>
+              <p>Rows work within containers like the beats in a bar of music, providing rhythm and structure to your content. They're the horizontal threads that weave through the fabric of your design, keeping everything in line and in tune with any device's screen.</p>
+          
+              <h3>Columns: Versatile and Adaptive</h3>
+              <p>Columns are the vertical strokes in the art of your layout. Whether you're framing a heading, a paragraph, or a complete custom component, columns flex and fit content with ease, ensuring a consistent and beautiful display across all viewing mediums.</p>
+              
+              <h3>Your Blueprint to Responsive Design</h3>
+              <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
+  &lt;div class="z-row"&gt;
+    &lt;div class="z-col"&gt;...&lt;/div&gt;
+    &lt;div class="z-col"&gt;...&lt;/div&gt;
+    &lt;div class="z-col"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <p>With ZenCSS, this simple structure is the starting point for layouts that are as functional as they are aesthetically pleasing.</p>
+              
+              <h3>See It in Action: Zen Test Mode</h3>
+              <p>But don't just take our word for it. Activate the Zen Test mode to experience the Smart Align System in real-time. Watch as your layout dynamically aligns and re-aligns itself, showcasing our framework's ability to handle and present your content with precision on any device.</p>
+            </article>
+          </section>
+          
+              <h3>Zen Test Mode</h3>
+              <p>Experience our framework in motion with the Zen Test mode. This hands-on feature allows you to witness the interplay of the Smart Align System's elements, giving you a comprehensive understanding of their functionality within your projects.</p>
+            </article>
+          </section>
+    </z-col>
+</z-row>
         <z-row>
             <z-col>
                 <div class="center">

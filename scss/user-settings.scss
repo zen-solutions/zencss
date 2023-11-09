@@ -5,7 +5,7 @@
 // Brand Color Palette 
 //------------------------------------------ 
 
-$primary-color : #00406e; 
+$primary-color : #034d81; 
 //$secondary-color: #bc2624;
 $secondary-color:#426b2f;
 $accent-color: #ffb12b;
@@ -127,7 +127,7 @@ $text-light-colors: (
 //------------------------------------------ 
 
 $text-white: #eee;
-$text-black: #111;
+$text-black: #4a4a4a;
 $light-color: #f4f4f4;
 $dark-color: #424242;
 $grey: #eee;
@@ -161,9 +161,10 @@ $hero-image: url("../website/images/hero.jpg");
 //------------------------------------------ 
 
 $light-ui-hover-color:#eee;
-$border-color:rgba(79, 78, 78, 0.15);
+$border-color:rgba(111, 111, 111, 0.35);
 $dual-mode-bg-color:rgba(79, 78, 78, 0.01);
-$bg-header-footer: #313131;
+//$bg-header-footer: #2e2e2e;
+$bg-header-footer: #303030;
 //------------------------------------------ 
 // Default Spacing
 //------------------------------------------ 

@@ -21,7 +21,12 @@
                         <button id="close-button">×</button>
                         <z-container>
                             <z-row>
-                                <z-col class="accordion">
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
                                     <input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
@@ -45,24 +50,27 @@
                                     <input type="checkbox" id="toggle2" class="toggle">
                                     <label for="toggle2" class="title">Site Parts</label>
                                     <div class="expanded-content d-flex flex-col">
-                                         <a href="buttons.html">Buttons</a>
-                                         <a href="breadcrumb.html">Breadcrumbs</a>
-                                         <a href="cards.html">Cards</a>
-                                         <a href="contact-form.html">Contact Form</a>
-                                         <a href="form-elements.html">Form Elements</a>
-                                         <a href="testimonials.html">Testimonials</a>
-                                         <a href="image-text-card.html">Image/Text Card</a>
-                                         <a href="slider.html">Image Carousel</a>
-                                         <a href="list-group.html">List Groups</a>
-                                         <a href="modal.html">Modal</a>
-                                         <a href="toggle.html">Accordian</a>
-                                         <a href="dropdown.html">Dropdown</a>
-                                         <a href="responsive-table.html">HTML Table</a>
-                                         <a href="alerts.html">Alert Messages</a>
-                                         <a href="decorations.html">Site Icons</a>
-                                         <a href="tooltip.html">Tool Tips</a>
-                                         <a href="pagination.html">Pagination</a>
-                                         <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
                                     </div>
                     
                                  
@@ -82,10 +90,10 @@
                                     <input type="checkbox" id="toggle5" class="toggle">
                                     <label for="toggle5" class="title">CSS Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="text-formatting-alignment-and-size-classes.html">Text Formatting, Alignment, and Size Classes</a>
-                                        <a href="padding-margin-utilities.html">Padding & Margin Utilities</a>
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
                                         <a href="animations.html">Animation Utilities</a>
-                                        <a href="formatting.html">Gap, Height, and Width Classes</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
                                         <a href="flex.html">Flex</a>
                                         <a href="test-classes.html">Test Classes</a>
                                         <a href="border-utilities.html">Border Classes</a>
@@ -106,6 +114,7 @@
                         </ul>
                     </nav>
                 </header>
+<main class="docs-content">
 
 
     <!----------------------------------------------------------------------->
@@ -121,7 +130,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1>UI Themes</h1>
+                    <h1>UI Themes <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span></h1>
                     <p>Think Fortnite skins, but for UI components and their children. The seven themes can be used to skin columns, rows, containers, components, and individual HTML elements. Override background and text colors on any element using our modifier classes.
 
                     </p>
@@ -141,9 +150,11 @@
             <z-col class="card">
                 <span class="tout bg-opaque">new</span>
                 <h2>Default Card</h2>
-                <p>Magni dolores tempore libero odit, unde id vitae, doloribus eius! Iste, mollitia sequi?</p>
+                <p>Magni dolores tempore libero odit, unde Iste, mollitia sequi? <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Lorem Ipsum</button>
+                    
                 </div>
             </z-col>
 
@@ -151,36 +162,46 @@
             <z-col class="card theme-light">
                 <span class="tout">new</span>
                 <h2>theme-light</h2>
-                <p> Quia totam laborum optio deleniti dolores tempore libero porro sed, eaque ratione</p>
+                <p> Quia totam laborum optio deleniti, eaque ratione <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                    
+
                 </div>
             </z-col>
 
             <z-col class="card theme-dark">
                 <span class="tout">new</span>
                 <h2>theme-dark</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque incidunt quidem.</p>
+                <p>Lorem ipsum dolor sit amet conse quidem.  <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                   
+
                 </div>
             </z-col>
         </z-row>
         <z-row>
             <z-col class="card theme-primary feature-md">
                 <span class="tout bg-opaque">new</span>
-                <h2>theme-primary</h2>
-                <p>Magni dolores tempore libero odit, unde id vitae, doloribus eius! Iste, mollitia sequi?</p>
+                <h2 class="headline">theme-primary</h2>
+                <p>Magni dolores tempore libero odit, unde id vitaei?   <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                  
                 </div>
             </z-col>
             <z-col class="card theme-secondary">
                 <span class="tout">new</span>
-                <h2>theme-secondary</h2>
-                <p>Magni dolores tempore libero odit, unde id vitae, doloribus eius! Iste, mollitia sequi?</p>
+                <h3 class="headline">theme-secondary</h3>
+                <p>Magni dolores tempore libero odit. <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                    
                 </div>
             </z-col>
 
@@ -190,23 +211,28 @@
             <z-col class="card theme-accent">
 
                 <span class="tout">new</span>
-                <h2>theme-accent</h2>
-                <p > Quia totam laborum optio deleniti dolores tempore libero porro sed, eaque ratione</p>
+                <h2 class="headline">theme-accent</h2>
+                <p > Quia totam laborum optio deleniti <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                    
                 </div>
             </z-col>
 
             <z-col class="card theme-cta">
                 <span class="tout">new</span>
                 <h2>theme-cta</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque incidunt quidem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur <a href="#">Lorem</a></p>
                 <div>
                     <button>Lorem Ipsum</button>
+                    <button class="btn-fill">Dolor Vitae</button>
+                    
                 </div>
             </z-col>
         </z-row>
         </z-column>
+
 
 
         <!----------------------------------------------------------------------->
@@ -220,7 +246,10 @@
   &lt;span class="tout"&gt;new&lt;/span&gt;
   &lt;h2&gt;headline&lt;/h2&gt;
   &lt;p&gt;subtext&lt;/p&gt;
-  &lt;button&gt;CTA&lt;/button&gt;
+  &lt;div&gt;
+    &lt;button&gt;CTA&lt;/button&gt;
+    &lt;button class="btn-fill"&gt;CTA&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/z-col&gt; </code></pre>
                 </z-col>
             </z-row>

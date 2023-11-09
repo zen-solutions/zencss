@@ -41,82 +41,39 @@
                 <section id="customizing-zenCSS">
                     <h1>Customizing zenCSS: A User’s Guide</h1>
                     
-                    <p>
-                        zenCSS is engineered to be a comprehensive yet flexible toolkit for modern web development. 
-                        While the library comes with a well-thought-out set of styles, we understand the necessity for 
-                        customization to meet specific project requirements. This document outlines the workflow for 
-                        customizing zenCSS classes without modifying the original SCSS files.
-                    </p>
-                
-                    <h2>How to override zenCSS</h2>
-                    <p>
-                        Begin by integrating zenCSS into your project. Depending on your preference, you can either 
-                        link the compiled CSS file in your HTML or import the main SCSS file if you're using SCSS.
-                    </p>
-                    <pre class="copy-text"><code class="language-html">&lt;!-- If using CSS --&gt;
-&lt;link rel="stylesheet" href="path-to/zen.css"&gt;</code></pre>
-<pre class="copy-text"><code class="language-html">// If using SCSS
-@import 'scss/zen.scss';</code></pre>
-                
-                    <h2>Creating Custom Styles</h2>
-                    <p>
-                        Create a new CSS or SCSS file for your custom styles. In this file, you can override the 
-                        styles of zenCSS by specifying new rules for the classes you wish to customize.
-                    </p>
-                    <pre class="copy-text"><code class="language-html">// custom-styles.scss
-.class-to-override {
-    property: new-value;
-}  </code></pre>
-                
-                    <h2>Importing Custom Styles</h2>
-                    <p>
-                        Ensure your custom styles are loaded after zenCSS so that your overrides take precedence. 
-                        In the case of CSS, add a new link element after the link to zenCSS. In the case of SCSS, 
-                        import your custom styles file after importing zenCSS.
-                    </p>
-                    <pre class="copy-text"><code class="language-html">&lt;!-- If using CSS --&gt;
-&lt;link rel="stylesheet" href="path-to/zen.css"&gt;
-&lt;link rel="stylesheet" href="custom-styles.css"&gt; </code></pre>
-<pre class="copy-text"><code class="language-html">
-// If using SCSS
-@import 'scss/zen.scss';
-@import 'custom-styles.scss'; </code></pre>
-
-<h2>Inserting SCSS into the zenCSS build</h2>
-<p>
-    You may want to override specific files in the zenCSS build file by specifying overrides for the classes you wish to customize. Note that these will be overwritten in future updates so you will need to reapply these modifications if you choose this route.
-</p>
-<pre class="copy-text"><code class="language-html">// in zen.scss
-@import 'user-settings.scss';
-@import 'your-user-settings-overrides.scss';
-</code></pre>
-                
-                    <h2>Compiling SCSS (if necessary)</h2>
-                    <p>
-                        If you're working with SCSS, compile your SCSS files into CSS using a tool like Sass, Gulp, or Webpack.
-                    </p>
-                
-                    <h2>Testing and Iteration</h2>
-                    <p>
-                        Test your overrides in the browser to ensure they are working as intended. Iterate on your 
-                        custom styles, re-compiling your SCSS as necessary, until you achieve the desired aesthetics 
-                        and functionality.
-                    </p>
-                
-                    <h2>Additional Best Practices</h2>
-                    <p>
-                        Maintain a separate file for overriding styles to keep customizations organized and easier 
-                        to manage. This separation also facilitates smoother updates to zenCSS in the future without 
-                        losing your customizations.
-                    </p>
-                    <p>
-                       Your workflow may necessitate you inserting override files into the zen.scss build script. This is understandable but not ideal as In future updates,  these declarations may be overwritten so you would need to redo them. 
-                    </p>
-                    <p>For the smallest possible production build, you may consider minifying your CSS with a tool like <a href="https://cssnano.co/">cssnano</a>, and compressing your CSS with <a href="https://en.wikipedia.org/wiki/Brotli">Brotli</a>.</p>
-                    <p>
-                        As you venture into customizing zenCSS, this structured approach will ensure a streamlined 
-                        process, aligning with the efficient and precise ethos of the zenCSS toolkit.
-                    </p>
+                    <div class="content">
+                        <p>zenCSS provides a robust user settings file allowing control over everything from the color system to your preferred border radius setting. It's worth noting any changes made to this file will be lost in future software updates. To safely customize your settings and ensure they are preserved across updates to the zenCSS framework, follow these steps:</p>
+                        
+                        <ol>
+                            <li>
+                                <strong>Create a Custom Settings File:</strong>
+                                Create a new file named <code>custom-settings.scss</code> in a separate directory, such as a <code>custom</code> directory within your project's root.
+                            </li>
+                            <li>
+                                <strong>Set Your Custom Variables:</strong>
+                                Inside <code>custom-settings.scss</code>, define your custom variables such as colors, fonts, and others. For example:
+                                <pre class="copy-text"><code class="language-scss">$primary-color: #yourColorValue;</code></pre>
+                            </li>
+                            <li>
+                                <strong>Import Custom Settings:</strong>
+                                In the main SCSS file (<code>zen.scss</code>), import your <code>custom-settings.scss</code> right after the default settings to override them. Ensure the path to your custom file is correct based on its location. For example:
+                                <pre class="copy-text"><code class="language-scss">@import 'core/user-settings';
+@import '../custom/custom-settings'; // Path to your custom overrides
+// ... rest of the SCSS imports</code></pre>
+                            </li>
+                            <li>
+                                <strong>Review Documentation:</strong>
+                                Always refer to the official documentation for detailed examples and guidelines on creating custom variables.
+                            </li>
+                            <li>
+                                <strong>Use Version Control:</strong>
+                                Employ a version control system like Git to manage your customizations, which will also facilitate easy updating when new versions of the framework are released.
+                            </li>
+                        </ol>
+                    
+                        <p>Following these steps will allow you to customize the framework to fit your needs while keeping your changes intact through updates.</p>
+                    </div>
+                    
                 </section>
                 
             </z-col>

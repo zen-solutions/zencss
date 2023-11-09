@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/documentation.css">
    <link rel="stylesheet" href="../../css/zen.css">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -45,28 +44,46 @@
                     <nav>
                         <button id="close-button">×</button>
                         <ul class="pr-2">
-
-        
-
-                            <!--div class="dropdown">
-                                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
-                                <label for="dropdown-toggle" class="dropdown-label theme-dark">Toggle Dropdown</label>
-                                <div class="dropdown-menu theme-dark">
-                                    <div class="item">This is an item</div>
-                                    <div class="item">This is an item</div>
-                                    <div class="item">This is an item</div>
+                            <li><a href="#" class="nav-link">Home</a></li>
+                            <li><a href="#" class="nav-link">Services</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                            <!--li>
+                                <div class="dropdown down-1 small">
+                                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                                    <label for="dropdown-toggle" class="dropdown-label theme-dark">Submenu</label>
+                                    <div class="dropdown-menu theme-dark">
+                                        <div class="item">This is an item</div>
+                                        <div class="item">This is an item</div>
+                                        <div class="item">This is an item</div>
+                                    </div>
                                 </div>
-                            </div-->
-
-
-                            <li><a href="#home" class="nav-link">Home</a></li>
-                            <li><a href="#services" class="nav-link">Services</a></li>
-                            <li><a href="#contact" class="nav-link">Contact</a></li>
+                            </li-->
                         </ul>
                     </nav>
                 </header>
 
 
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <pre><code class="language-html">&lt;header class="header-sticky"&gt;
+    &lt;div class="pl-2" id="header-logo"&gt;
+        &lt;img src="logo.png" alt="logo"&gt;
+    &lt;/div&gt;
+    &lt;button id="hamburger-button" aria-label="Open menu"&gt;☰&lt;/button&gt;
+    &lt;nav&gt;
+        &lt;button id="close-button" aria-label="Close menu"&gt;×&lt;/button&gt;
+        &lt;ul class="pr-2"&gt;
+            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
             </z-col>
         </z-row>
     </z-container>

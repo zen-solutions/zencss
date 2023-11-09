@@ -1,31 +1,41 @@
 
 @mixin alert($background-color, $icon-url) {
-  background: $background-color;
-  padding: 2em 2em 2em 50px;  
+  background: lighten($background-color,65%);
+  border: 1px solid lighten($background-color,15%);
+  border-spacing: 1px;
+  padding: 1em 1em 1em 16px;  
   filter: grayscale(10%);
-  color: $light-color;
+  color: $background-color;
   width: 100%;
   box-sizing: border-box;
   border-radius: $border-radius;
   margin: 1rem 0;  
   position: relative; 
+  opacity: .9;
+  border-left: 60px solid lighten($background-color,15%);
+  line-height: 1.6em;
+  font-size: .8em;
 
   &::before {
+    margin-left: -56px;
     background: url($icon-url) no-repeat center center;
     background-size: contain;
     content: '';
     position: absolute;
-    left: 15px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;  
-    height: 20px;
+    width: 15px;  
+    height: 15px;
     filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
   }
 
   // Override color for light alert
   &.alert-light {
     color: $dark-color;
+    border: 1px solid darken($background-color,15%);
+    border-left: 60px solid darken($background-color,15%);
+
 
     &::before {
       filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
@@ -36,7 +46,12 @@
 // Apply the alert mixin to each alert class, passing the background color and icon url
 .alert-primary { @include alert($blue, '../img/general-icons/thumbs-up-solid.png'); }
 .alert-danger { @include alert($red, '../img/general-icons/triangle-exclamation-solid.png'); }
-.alert-success { @include alert($green, '../img/general-icons/circle-check-solid.png'); }
+.alert-success { @include alert($secondary-color, '../img/general-icons/circle-check-solid.png'); }
 .alert-warning { @include alert($orange, '../img/general-icons/circle-exclamation-solid.png'); }
-.alert-dark { @include alert($dark-color, '../img/general-icons/bell-solid.png'); }
-.alert-light { @include alert($light-color, '../img/general-icons/star-solid.png'); }
+.alert-dark { @include alert($dark-color, '../img/general-icons/circle-check-regular.png'); }
+.alert-light { @include alert($light-color, '../img/general-icons/circle-check-regular.png'); }
+
+//override
+
+
+//filter: invert(0%) sepia(95%) saturate(7474%) hue-rotate(188deg) brightness(90%) contrast(99%);

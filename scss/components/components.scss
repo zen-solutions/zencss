@@ -98,7 +98,7 @@
     margin: 0;
     visibility: hidden; 
     opacity: 0;  
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 30px;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
@@ -113,13 +113,14 @@
 
   .toggle:checked + .title + .expanded-content {
     max-height: 16em;  
-    padding: 30px;
+    padding: 15px;
     opacity: 1; 
     visibility: visible;
+    overflow: auto;
   }
 
   a{
-    padding-top:.5em;
+   // padding-top:.5em;
     padding-bottom:.5em;
     text-decoration: none;
     padding-left:10px;
@@ -165,10 +166,21 @@ background-color: rgba(111,111,111,.07); //dark mode top color
   margin-right: 10px;
   opacity: .7;
   margin-top: -2px;
+  filter: invert(60%) sepia(7%) saturate(0%) hue-rotate(259deg) brightness(83%) contrast(79%);
 }
 
 .accordion .toggle:checked+.title::before {
   background-image: url('../img/general-icons/minus-solid.svg');
+}
+
+.expanded-content {
+  max-height: 0;
+  transition: max-height 0.5s ease, overflow 0.5s step-end;
+  overflow: hidden;
+}
+
+.toggle:checked + .title + .expanded-content {
+  max-height: 1000px; /* or an appropriate value */
 }
 
 //-------------------------------------------------
@@ -189,26 +201,34 @@ background-color: rgba(111,111,111,.07); //dark mode top color
     padding: 10px;
     cursor: pointer;
     //color: $dark-color;
-    //background-color: #f9f9f9;
+
     //border: 1px solid #ccc;
 
     //this is how we default style all the ui stuff moving forward
     @include default-state;
     @include hover-state;
+        background-color: $cta-color;
+
+        &:hover{
+          background-color: darken($cta-color, 10%);
+        }
   }
+
+
 
 
   .dropdown-menu {
     display: none;
     position: absolute;
     top: calc(100% + 11px);
-    left: 0;
+    right: 0;
     z-index: 1;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border: 1px solid $border-color;
     z-index: 1000;
     border-radius: $border-radius;
+    min-width: 300px;
    
 
 
@@ -253,6 +273,8 @@ background-color: rgba(111,111,111,.07); //dark mode top color
       margin-top: 0;
       margin-bottom: 0;
       padding-top:0;
+      line-height: 1.7em;
+           letter-spacing: normal;
     }
   }
 
@@ -361,3 +383,91 @@ blockquote em {
 //   height: auto;
 //   display: block; /* remove space below image */
 // }
+
+//wizard
+.wizard-step {
+  border: 1px solid $border-color;
+  display: none;
+  padding: 1em;
+  margin-top:1em;
+}
+
+.wizard-step.active {
+  display: block; 
+}
+
+//wizard step used as form
+.wizard-step {
+  label{
+    display: block;
+    padding: .45em;
+  }
+}
+
+//spinner
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-spinner {
+  animation: spin 2s linear infinite;
+}
+
+
+//testing fs image card
+.card-split {
+  position: relative; /* Ensure the positioning context is set for children */
+  overflow: hidden; /* Let the child image be visible outside the bounds */
+}
+
+.image-group {
+  position: absolute; /* Position absolutely to break out of the flow */
+  top: 0; /* Align with the top of the card-split */
+  left: 0; /* Align with the left of the card-split */
+  height: 100%; /* Full height of the parent */
+  width: 100px; /* Fixed width as per your requirement */
+}
+
+.image-group img {
+  height: 101%; /* Stretch to the full height of the image-group */
+  width: 100%; /* The image will naturally take the width of the image-group */
+  object-fit: cover; /* Cover the area, may crop the image */
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.text-group {
+  margin-left: 105px; /* Add left margin to push the text to the right */
+}
+
+
+
+//-------------------------------------------------
+// Image classes - responsive/round/rounded/outline
+//-------------------------------------------------
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.img-rounded {
+  border-radius: 15px;
+}
+
+.img-round-outline {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
+}

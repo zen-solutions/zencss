@@ -313,6 +313,11 @@ left:10px;
   border-radius: 0;
 }
 
+.z-col > .z-container > .z-row > .z-col, z-col > z-container > z-row > z-col {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 }
 
 @media (max-width: 1199px) {

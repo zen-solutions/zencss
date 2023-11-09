@@ -21,7 +21,12 @@
                         <button id="close-button">×</button>
                         <z-container>
                             <z-row>
-                                <z-col class="accordion">
+                                  <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
+                                    <h5>Documentation</h5>
+                                </z-col>
+                            </z-row>
+                            <z-row>
+                                <z-col class="accordion pt-0">
                                     <input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
@@ -45,24 +50,27 @@
                                     <input type="checkbox" id="toggle2" class="toggle">
                                     <label for="toggle2" class="title">Site Parts</label>
                                     <div class="expanded-content d-flex flex-col">
-                                         <a href="buttons.html">Buttons</a>
-                                         <a href="breadcrumb.html">Breadcrumbs</a>
-                                         <a href="cards.html">Cards</a>
-                                         <a href="contact-form.html">Contact Form</a>
-                                         <a href="form-elements.html">Form Elements</a>
-                                         <a href="testimonials.html">Testimonials</a>
-                                         <a href="image-text-card.html">Image/Text Card</a>
-                                         <a href="slider.html">Image Carousel</a>
-                                         <a href="list-group.html">List Groups</a>
-                                         <a href="modal.html">Modal</a>
-                                         <a href="toggle.html">Accordian</a>
-                                         <a href="dropdown.html">Dropdown</a>
-                                         <a href="responsive-table.html">HTML Table</a>
-                                         <a href="alerts.html">Alert Messages</a>
-                                         <a href="decorations.html">Site Icons</a>
-                                         <a href="tooltip.html">Tool Tips</a>
-                                         <a href="pagination.html">Pagination</a>
-                                         <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="toggle.html">Accordian</a>
+                                                        <a href="alerts.html">Alert Messages</a>
+                                                        <a href="buttons.html">Buttons</a>
+                                                        <a href="breadcrumb.html">Breadcrumbs</a>
+                                                        <a href="cards.html">Cards</a>
+                                                        <a href="cookie-consent.html">Cookie Consent</a>
+                                                        <a href="contact-form.html">Contact Form</a>
+                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="form-elements.html">Form Elements</a>
+                                                        <a href="responsive-table.html">HTML Table</a>
+                                                        <a href="image.html">Images</a>
+                                                        <a href="slider.html">Image Carousel</a>
+                                                        <a href="list-group.html">List Groups</a>
+                                                        <a href="modal.html">Modal</a>
+                                                        <a href="pagination.html">Pagination</a>
+                                                        <a href="quiz.html">Quiz</a>
+                                                        <a href="decorations.html">Site Icons</a>
+                                                        <a href="testimonials.html">Testimonials</a>
+                                                        <a href="tooltip.html">Tool Tips</a>
+                                                        <a href="tabs.html">Tabs</a>
+                                                        <a href="wizard.html">Wizard</a>
                                     </div>
                     
                                  
@@ -82,10 +90,10 @@
                                     <input type="checkbox" id="toggle5" class="toggle">
                                     <label for="toggle5" class="title">CSS Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="text-formatting-alignment-and-size-classes.html">Text Formatting, Alignment, and Size Classes</a>
-                                        <a href="padding-margin-utilities.html">Padding & Margin Utilities</a>
+                                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                                        <a href="padding-margin-utilities.html">Padding & Margin</a>
                                         <a href="animations.html">Animation Utilities</a>
-                                        <a href="formatting.html">Gap, Height, and Width Classes</a>
+                                        <a href="formatting.html">Gap, Height, and Width</a>
                                         <a href="flex.html">Flex</a>
                                         <a href="test-classes.html">Test Classes</a>
                                         <a href="border-utilities.html">Border Classes</a>
@@ -106,6 +114,7 @@
                         </ul>
                     </nav>
                 </header>
+<main class="docs-content">
 
 
     <!----------------------------------------------------------------------->
@@ -134,29 +143,28 @@
     <!----------------------------------------------------------------------->
 <z-container>
     <z-row>
-        <z-col class="m-0 p-0">
+        <z-col>
             <div class="promo-banner">
-                <span class="text">Save 25% on your first order! Use code: <b>FIRST25</b></span>
+                <span>Save 25% on your first order! Use code: <b>FIRST25</b></span>
             </div>
             
             <div class="promo-banner">
-                <span class="text">Sign up for our newsletter to receive exclusive offers:</span>
-                <input type="email" placeholder="Enter your email">
+                        <div class="center">Sign up for exclusive offers: <div class="d-inline-block m-3"><div class="d-flex"><input class="w-150" type="email" placeholder="Enter your email"><button class="w-60 m-0 square">Go</button></div></div></div>
             </div>
             
             <div class="promo-banner">
-                <span class="text">Create an account to enjoy more free downloads</span>
-                <button>Shop Now</button>
+                <span class="m-1">Create an account to enjoy more free downloads</span>
+                <button class="m-1">Shop Now</button>
             </div>
             
             <div class="promo-banner">
-                <span class="text">Free shipping on all orders over $50!</span>
+                <span>Free shipping on all orders over $50!</span>
             </div>
             
             <div class="promo-banner">
-                <img src="../../img/general-icons/cloud-bolt-solid.svg" alt="Sale Icon" class="icon w-30 icon-invert">
-                <span class="pl-1 icon-text">End of Season Sale!</span>
-                <button class="cta-button">Shop Now</button>
+                <img src="../../img/general-icons/tag-solid.svg" alt="Sale Icon" class="icon w-30 icon-invert down-5">
+                <span class="p-2">End of Season Sale!</span>
+                <a href="#">Shop Now</a>
             </div>
             
         </z-col>
@@ -172,11 +180,35 @@
 <z-container>
     <z-row>
         <z-col>
-            <h2>Code Example</h2>
+            <h2>Code Examples</h2>
             <pre class="copy-text"><code class="language-html">&lt;div class="promo-banner"&gt;
-  &lt;span class="text"&gt;Create an account to enjoy more
-  free downloads&lt;/span&gt;
-  &lt;button&gt;Shop Now&lt;/button&gt;
+    &lt;span&gt;Save 25% on your first order! Use code: &lt;b&gt;FIRST25&lt;/b&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre class="copy-text"><code class="language-html">&lt;div class="promo-banner"&gt;
+    &lt;div class="center"&gt;Sign up for exclusive offers: 
+        &lt;div class="d-inline-block m-3"&gt;
+            &lt;div class="flex"&gt;
+                &lt;input class="w-150" type="email" placeholder="Enter your email"&gt;
+                &lt;button class="w-60 m-0 square"&gt;Go&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre class="copy-text"><code class="language-html">&lt;div class="promo-banner"&gt;
+    &lt;span class="m-1"&gt;Create an account to enjoy more free downloads&lt;/span&gt;
+    &lt;button class="m-1"&gt;Shop Now&lt;/button&gt;
+&lt;/div&gt; </code></pre>
+
+            <pre class="copy-text"><code class="language-html">&lt;div class="promo-banner"&gt;
+    &lt;span&gt;Free shipping on all orders over $50!&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+            <pre class="copy-text"><code class="language-html">&lt;div class="promo-banner"&gt;
+    &lt;img src="tag-solid.svg" alt="" class="icon w-30 icon-invert down-5"&gt;
+    &lt;span class="p-2"&gt;End of Season Sale!&lt;/span&gt;
+    &lt;a href="#"&gt;Shop Now&lt;/a&gt;
 &lt;/div&gt;</code></pre>
         </z-col>
     </z-row>

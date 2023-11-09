@@ -1,66 +1,7 @@
-//----------------------
-//fonts /base, script, serif, headline
-//----------------------
-.script{
-  font-family: 'Style Script', cursive;
-  font-size: 1.8rem;
-}
-
-.headline{
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2rem;
-
-}
-.mono{
-  font-family: 'Roboto Mono', monospace;
-}
-
-.display{
-  font-family: 'Bungee', cursive;
-  font-size: 1.5rem;
-
-}
-
-.handwriting{
-  font-family: 'Just Another Hand', cursive;
-  font-size:2rem;
-
-}
-
-.emoji{
-  font-family: 'Noto Color Emoji', sans-serif;
-}
-
-.flashy{
-  font-family: 'Shrikhand', serif;
-  font-size: 1.5rem;
-}
-
-
-
-
-
-
-
-
-
-// *,
-// *::before,
-// *::after {
-  
-// }
-
 :link {
   color: #3e79d0;
-  //text-decoration: underline;
 
 }
-
-// svg {
-//     image-rendering: crisp-edges;
-// }
-
-//:visited { color: #551A8B; }
 
 // Reset HTML margin and padding
 html {
@@ -121,43 +62,42 @@ html {
 // Heading styles
 h1,
 .h1 {
-  font-size: 2.2em;
+  font-size: 2.7em;
   font-weight: 300;
   line-height: 1.5em;
 }
 
 h2,
 .h2 {
-  font-size: 1.8em;
+  font-size: 2.4em;
   font-weight: 300;
-  //margin: 0;
   line-height: 1.5em;
 }
 
 h3,
 .h3 {
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1.45em;
 }
 
 h4,
 .h4 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.4em;
 }
 
 h5,
 .h5 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.35em;
 }
 
 h6,
 .h6 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 300;
   line-height: 1.25em;
 }
@@ -171,13 +111,9 @@ padding-top:1rem;
 }
 
 p {
-  //font-size: .9em;
   line-height: 2em;
   letter-spacing: .02em;
-  //margin-top:.3em;
-  //margin-bottom:.3em;
   position: relative;
-  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -211,6 +147,8 @@ hr {
   margin-bottom: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+  height: 1px;
+  opacity: .25;
 }
 
 hr.top {
@@ -237,10 +175,9 @@ button {
 
  button:hover {
   cursor: pointer;
-   //background-color: lighten($dark-color, 15%);
    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
-   background: $dark-grey;
+   background: darken($cta-color, 10%);
    color:$light-color;
 
  }
@@ -265,12 +202,6 @@ img {
   border-radius: $border-radius;
 }
 
-
-
-
-
-
-
 // Links with swap-underline class styles
 a.swap-underline {
   color: $cta-color;
@@ -292,7 +223,6 @@ pre {
   line-height: 30px;
   font-family: Consolas,Monaco,'Andale Mono',monospace;
   border: 1px solid  $border-color;
-
 }
 
 
@@ -311,8 +241,6 @@ input[type="submit"]{
   padding-right:10px;
 }
 
-
-
 .tout{
   width:auto;
 }
@@ -321,9 +249,6 @@ input[type="submit"]{
 //Experimental
 //----------------------------------------------
 
-//----------------------------------------------
-//utility - move this to utility.scss
-//----------------------------------------------
 
 
 // Border thickness classes
@@ -385,15 +310,13 @@ input[type="submit"]{
 }
 
 //webkit etc stuff
-a:-webkit-any-link {
-  text-decoration: underline;
+// a:-webkit-any-link {
+//   text-decoration: underline;
+// }
 
-
-}
-
-a:-webkit-any-link :none{
-  text-decoration: underline;
-}
+// a:-webkit-any-link :none{
+//   text-decoration: underline;
+// }
 
 
 // Normal link styles. replace w :link? deal w specificity
@@ -410,16 +333,14 @@ a:hover {
 
 }
 
-
 header :link {
   text-decoration: none;
-  color: $light-color;
   font-size: .9rem;
 }
 
 header :link:hover {
   text-decoration: underline;
-  color: darken($light-color, 20%);
+  color: darken(#224d8d, 10%);
 }
 
 //-----------------------------
@@ -434,11 +355,7 @@ header :link:hover {
   display: none;
 }
 
-
-
-
 //testimonials
-
 .image-text-card {
   display: flex;
   flex-direction: row;
@@ -452,9 +369,7 @@ header :link:hover {
     width: 28%;
     align-self: center;
   }
-
 }
-
 
 .text-group {
   gap:.3em;
@@ -469,19 +384,14 @@ margin-top:5px;
   }
 }
 
-// .modal-title {
-//   text-align: left;
-// }
-
 //cookie consent
-
 #cookie-consent-banner {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: $light-color;
-  //color: $dark-color;
+  //color:$dark-color;
   text-align: center;
   padding: 15px;
   z-index: 1100;
@@ -496,7 +406,8 @@ margin-top:5px;
 
 }
 
-/* ===== Scrollbar CSS ===== */
+// custom scrollbars
+
   /* Firefox */
   * {
     scrollbar-width: thin;
@@ -518,15 +429,12 @@ margin-top:5px;
     border: 1px solid #b0b0b0;
   }
 
-
-
   //sticky header
   .header-sticky {
     position: -webkit-sticky; 
     position: sticky;
     top: 0; 
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for better visual separation */
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
-
 

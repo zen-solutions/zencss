@@ -57,8 +57,8 @@ button.btn-ghost-dark:hover {
 
 
 button.btn-ghost {
-  color: $primary-color;
-  border: 2px solid $primary-color;
+  color: #d8d8d8;
+  border: 2px solid  #d8d8d8;
   padding: 0.65em;
   background:none;
 }
@@ -76,17 +76,18 @@ button.btn-ghost:hover {
 //Touts
 .tout {
   border-radius: 8px;
-  padding: 0.3em 1em;
+  padding: 0.6em 1em .5em 1em;
   //margin: 2px;
   overflow: hidden; 
   display: inline-block; 
-  line-height: 10px;
+  line-height: 6px;
   background:$accent-color;
   position: relative;
   font-size: .6rem;
-  margin-top:3px;
-  margin-bottom:3px;
-  margin-right: .5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 .eyebrow {
@@ -232,3 +233,267 @@ button.btn-ghost:hover {
   background: $accent-color;
   color: $text-black;
 }
+
+//for poll. misc placement
+#result-types{
+  display:none;
+}
+
+
+
+//------------------------------------------ 
+// New button styles to test
+//------------------------------------------ 
+
+// SCSS Variables for colors
+$bg-primary: $primary-color; // Example primary color
+$text-cta: $cta-color;
+
+// Mixin for transitions
+@mixin transition($properties: all, $duration: 0.3s, $timing-function: ease) {
+  transition: $properties $duration $timing-function;
+}
+
+// Placeholder selector for basic button styles
+%button-basic {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: $bg-primary;
+  color: $text-cta;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-size: .8em;
+  @include transition;
+}
+
+// 2. Slide-in underline
+.btn-slide-underline {
+  @extend %button-basic;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: $text-cta;
+    bottom: 0;
+    left: 0;
+    @include transition(width);
+  }
+  &:hover:after { width: 100%; }
+}
+
+// // 4. Icon pop
+// .btn-icon-pop {
+//   @extend %button-basic;
+//   i {
+//     margin-right: 8px;
+//     display: inline-block;
+//     @include transition(transform);
+//   }
+//   &:hover i { transform: scale(1.5); }
+// }
+
+
+// 9. Shake
+.btn-shake {
+  @extend %button-basic;
+  &:hover {
+    @include transition(transform 0.5s);
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
+    animation: shake 0.5s;
+  }
+}
+
+// // 10. Fill up
+// .btn-fill-up {
+//   @extend %button-basic;
+//   background-color: transparent;
+//   border: 2px solid $bg-primary;
+//   &:hover { background-color: $bg-primary; }
+// }
+
+
+
+
+// /* CSS */
+// .button-63 {
+//   align-items: center;
+//   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+//   border: 0;
+//   border-radius: $border-radius;
+//   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+//   box-sizing: border-box;
+//   color: #FFFFFF;
+//   display: flex;
+//   justify-content: center;
+//   line-height: 1em;
+//   padding: 19px 24px;
+//   text-decoration: none;
+//   user-select: none;
+//   -webkit-user-select: none;
+//   touch-action: manipulation;
+//   white-space: nowrap;
+//   cursor: pointer;
+// }
+
+// .button-63:active,
+// .button-63:hover {
+//   outline: 0;
+// }
+
+// // Additional SCSS for buttons with right arrows and color blocks
+// .btn-right-arrow {
+//   @extend %button-basic;
+//   &:after {
+//     content: '→';
+//     opacity: 0;
+//     margin-left: 10px;
+//     @include transition(opacity 0.3s, margin-left 0.3s);
+//   }
+//   &:hover:after {
+//     opacity: 1;
+//     margin-left: 5px;
+//   }
+// }
+
+// .btn-color-block-arrow {
+//   @extend %button-basic;
+//   position: relative;
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 0;
+//     height: 100%;
+//     background-color: darken($bg-primary, 10%);
+//     @include transition(width);
+//     z-index: 0;
+//   }
+//   &:after {
+//     content: '→';
+//     position: absolute;
+//     right: 10px;
+//     z-index: 1;
+//     @include transition(right);
+//   }
+//   &:hover:before {
+//     width: 100%;
+//   }
+//   &:hover:after {
+//     right: 20px;
+//   }
+// }
+
+// Adjust the .btn-fill-up to have the text same as the outline
+.btn-fill {
+  @extend %button-basic;
+  background-color: transparent;
+  border: 2px solid $bg-primary;
+  color: $bg-primary; // Text color is now same as border
+  &:hover {
+    background-color: $primary-color;
+    color: white; // Text color is now same as border
+  }
+}
+
+
+
+//text
+
+/* Right Arrow Effect */
+.right-arrow {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  padding-left: 30px;
+
+}
+.right-arrow::after {
+  content: '→';
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.right-arrow:hover::after {
+  opacity: 1;
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+
+//--------------------------
+// new new button stuff to test, mixins for ghost button
+//----------------------------
+
+// Define theme color variables for bg and text - use for buttons and reuse for stuff
+$theme-primary-bg: $cta-color; 
+$theme-primary-text: $light-color; 
+
+$theme-secondary-bg: $accent-color; 
+$theme-secondary-text: $dark-color; 
+
+$theme-cta-bg: $primary-color; 
+$theme-cta-text: $light-color; 
+
+$theme-accent-bg: $secondary-color; 
+$theme-accent-text: $light-color; 
+
+$theme-dark-bg: $light-color; 
+$theme-dark-text:$dark-color ; 
+
+$theme-light-bg: $dark-color; 
+$theme-light-text: $light-color; 
+
+
+// Define a mixin for theme button styles
+@mixin theme-button-styles($bg-color, $text-color) {
+  background-color: transparent;
+  border: 2px solid $bg-color;
+  color: $bg-color; // Text color matches border
+  font-size: .9rem;
+
+  &:hover {
+    background-color: $bg-color;
+    color: $text-color;
+  }
+}
+
+// Extend .btn-fill with theme styles
+.btn-fill {
+  @extend %button-basic;
+  
+  // Apply theme styles
+  &.theme-primary {
+    @include theme-button-styles($theme-primary-bg, $theme-primary-text);
+  }
+  &.theme-secondary {
+    @include theme-button-styles($theme-secondary-bg, $theme-secondary-text);
+  }
+  &.theme-accent {
+    @include theme-button-styles($theme-accent-bg, $theme-accent-text);
+  }
+  &.theme-dark {
+    @include theme-button-styles($theme-dark-bg, $theme-dark-text);
+  }
+  &.theme-light {
+    @include theme-button-styles($theme-light-bg, $theme-light-text);
+  }
+  &.theme-cta {
+    @include theme-button-styles($theme-cta-bg, $theme-cta-text);
+  }
+}
+
+
+
