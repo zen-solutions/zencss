@@ -198,7 +198,6 @@ class ZModal extends HTMLElement {
         }
     }
         
-
     open() {
         this.shadowRoot.querySelector(".modal").style.display = "flex";
     }
@@ -226,16 +225,17 @@ class ZModal extends HTMLElement {
                 position: relative;
                 width: 80%;
                 max-width: 500px;
-                background-color: rgba(255, 255, 255, 0.9);
-                border: 1px solid #bbb;
+                border: 1px solid rgba(111,111,111,.35);
                 border-radius: var(--border-radius, 8px);
+                background-color: #f4f4f4;
+                color: #424242;
                 box-sizing: border-box;
             }
             .modal-header {
                 display: flex;
                 justify-content: space-between;
                 padding: 10px 20px;
-                border-bottom: 1px solid #bbb;
+                border-bottom: 1px solid rgba(111,111,111,.35);
             }
             .modal-title {
                 margin: 0;
@@ -262,7 +262,7 @@ class ZModal extends HTMLElement {
                 display: flex;
                 justify-content: flex-end;
                 padding: 10px 10px;
-                border-top: 1px solid #bbb;
+                border-top: 1px solid rgba(111,111,111,.35);
             }
 
             @media only screen and (max-width: 767px) {
@@ -327,7 +327,7 @@ class StarComponent extends HTMLElement {
 
         for (let i = 0; i < starCount; i++) {
             const starImg = document.createElement("img");
-            starImg.src = "../../img/general-icons/star-solid.svg";
+            starImg.src = "../../img/general-icons/essential/star-solid.svg";
             starImg.alt = "";
             starImg.className = "icon icon-gold";
             fragment.appendChild(starImg);
@@ -336,7 +336,7 @@ class StarComponent extends HTMLElement {
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
             halfStarImg.src =
-                "../../img/general-icons/star-half-stroke-regular.svg";
+                "../../img/general-icons/essential/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);
@@ -777,3 +777,48 @@ function startSpinning() {
         });
     }
 });
+
+  //-------------------------------------
+  // Nested containers - kill parent padding
+  // BUG: Adding this functionality breaks convention with support for zentax and semantic. fix for semantic.
+  //-------------------------------------
+//   document.addEventListener('DOMContentLoaded', function () {
+//     var columns = document.querySelectorAll('z-col');
+
+//     columns.forEach(function (column) {
+//         if (column.querySelector('z-container')) {
+//             column.style.padding = '0';
+//         }
+//     });
+// });
+
+  //-------------------------------------
+  // Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
+  // BUG: Adding this functionality breaks convention with support for zentax and semantic. fix for semantic.
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    // Handle the padding for <z-col> elements
+    var cols = document.querySelectorAll('z-col');
+
+    cols.forEach(function (col) {
+        if (col.querySelector('z-container')) {
+            col.style.padding = '0';
+        }
+    });
+
+    // Handle the margin for <z-row> elements within <z-container> inside <z-col>
+    var rows = document.querySelectorAll('z-row');
+
+    rows.forEach(function (row) {
+        // Use closest to check if <z-row> is inside <z-container> and that <z-container> is inside <z-col>
+        var container = row.closest('z-container');
+        if (container && container.parentElement.tagName.toLowerCase() === 'z-col') {
+            // Set the top and bottom padding of <z-row> to 0
+            row.style.paddingTop = '0';
+            row.style.paddingBottom = '0';
+            console.log("There are no mistakes, only happy accidents. ");
+        }
+    });
+});
+
+

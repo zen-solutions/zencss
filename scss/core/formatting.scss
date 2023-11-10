@@ -2,18 +2,16 @@
 // undocumented
 //-------------------------------------------------
 
-.image-left{
+.img-left{
   float: left;
   margin-right: 15px;
   margin-bottom: 7px;
-  margin-top: 5px;
 }
 
-.image-right{
+.img-right{
   float: right;
   margin-left: 15px;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 7px;
 }
 
 
@@ -99,17 +97,23 @@
 //----------------------------------------------------
 
 $sizes: (
+  5: 5px,
   10: 10px,
+  15: 15px,
+  16: 16px,
   20: 20px,
   25: 25px,
   30: 30px,
+  32: 32px,
   40: 40px,
   50: 50px,
   60: 60px,
+  64: 64px,
   75: 75px,
   80: 80px,
   85: 85px,
   90: 90px,
+ 110: 110px,
   125:125px,
   150:150px,
   175:175px,
@@ -127,10 +131,10 @@ $sizes: (
 
 @each $key, $value in $sizes {
   .w-#{$key} {
-    width: $value;
+    max-width: $value !important;
   }
   .h-#{$key} {
-    height: $value;
+    max-height: $value !important;
   }
 }
 
@@ -140,7 +144,7 @@ $sizes: (
 
 .card {
   position: relative;
-  gap:0;
+  //gap:.7em;
   padding-left:1rem;
   padding-right:1rem;
   padding-top: 1rem;
@@ -159,12 +163,12 @@ $sizes: (
    // padding-top: .5em;
     //padding-bottom: .5em;
     padding:0;
-    line-height: 2rem;
+    //line-height: 2rem;
   }
 
-  //    p{
-  //     //margin-bottom: 1em;
-  // }
+     p{
+      margin-bottom: .7em;
+  }
 
   //  a{
   //   font-size: .8em;
@@ -180,7 +184,7 @@ $sizes: (
 //  }
 
  .card>img {
-  margin: 0;
+  //margin: 0;
   border: 0;
   padding: 0;
   //margin-bottom: 1em;
@@ -264,7 +268,7 @@ $d-values: (
   text-align: left;
 }
 
-.o-hide {
+.overflow-hidden {
   overflow: hidden;
 }
 
@@ -363,3 +367,24 @@ $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
 .gap-0{
   gap:0;
 }
+
+
+//----------------------------------------------------
+//Refactoring for js efficiency
+//----------------------------------------------------
+// .bg-opaque, .bg-blur {
+//   position: relative;
+// }
+
+// .bg-opaque::before, .bg-blur::before  {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: inherit;
+//   opacity: 0.7;
+//   z-index: -1;
+// }

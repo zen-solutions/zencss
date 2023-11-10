@@ -18,7 +18,6 @@
                     </div>
                     <button id="hamburger-button">☰</button>
                     <nav>
-                        <button id="close-button">×</button>
                         <z-container>
                             <z-row>
                                   <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
@@ -27,7 +26,17 @@
                             </z-row>
                             <z-row>
                                 <z-col class="accordion pt-0">
-                                    <input type="checkbox" id="toggle1" class="toggle">
+                                                                     
+                                    <input type="checkbox" id="toggle4" class="toggle">
+                                    <label for="toggle4" class="title">Core Concepts</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+                                        <a href="zentax.html">Intro to Zentax</a>
+                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
+                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
+                                        <a href="landing-page-example.html">Go from wires to development</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+                                    </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
@@ -60,7 +69,9 @@
                                                         <!--a href="dropdown.html">Dropdown</a-->
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
-                                                        <a href="image.html">Images</a>
+                                                        <a href="icon.html">Icon Container</a>
+
+                                                                                              <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
                                                         <a href="list-group.html">List Groups</a>
                                                         <a href="modal.html">Modal</a>
@@ -71,19 +82,6 @@
                                                         <a href="tooltip.html">Tool Tips</a>
                                                         <a href="tabs.html">Tabs</a>
                                                         <a href="wizard.html">Wizard</a>
-                                    </div>
-                    
-                                 
-                                 
-                                    <input type="checkbox" id="toggle4" class="toggle">
-                                    <label for="toggle4" class="title">Core Concepts</label>
-                                    <div class="expanded-content d-flex flex-col">
-                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
-                                        <a href="zentax.html">Intro to Zentax</a>
-                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
                                     </div>
                     
                     
@@ -127,62 +125,61 @@
               
         
                 <h3>Basic Example</h3>
-                
 <!-- Basic Example -->
 <ul class="list-group">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Lorem ipsum dolor</li>
+    <li class="list-group-item">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item">Abore incidunt quam</li>
+    <li class="list-group-item">Totam nulla earum nobis sequi</li>
+    <li class="list-group-item">Nulla earum nobis tenetur </li>
   </ul>
   <h3 class="pt-3">Flush</h3>
   <!-- Flush -->
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Lorem ipsum dolor</li>
+    <li class="list-group-item">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item">Abore incidunt quam</li>
   </ul>
   
-  <h3 class="pt-3">Active Items</h3>
+  <h3 class="pt-3">Active Item</h3>
   <!-- Active Items -->
   <ul class="list-group">
-    <li class="list-group-item active">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item active">Lorem ipsum dolor</li>
+    <li class="list-group-item">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item">Abore incidunt quam</li>
   </ul>
   
-  <h3 class="pt-3">Inactive Items</h3>
+  <h3 class="pt-3">Inactive Item</h3>
   <!-- Disabled Items -->
   <ul class="list-group">
-    <li class="list-group-item inactive" aria-disabled="true">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item inactive" aria-disabled="true">Lorem ipsum dolor</li>
+    <li class="list-group-item">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item">Abore incidunt quam</li>
   </ul>
   
   <h3 class="pt-3">Links</h3>
   <!-- Links  -->
   <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item list-group-item-action">Lorem ipsum dolor</a>
+    <a href="#" class="list-group-item list-group-item-action">Suscipit, eaque ab fugit</a>
+    <a href="#" class="list-group-item list-group-item-action">Uam praesentium velit ad alias</a>
   </div>
   
 
   <h3 class="pt-3">Horizontal</h3>
   <!-- Horizontal -->
   <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Lorem ipsum dolor</li>
+    <li class="list-group-item">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item">Abore incidunt quam</li>
   </ul>
   
   <h3 class="pt-3"  >Contextual Classes</h3>
   <!-- Contextual Classes -->
   <ul class="list-group">
-    <li class="list-group-item bg-grey-3-dark">Cras justo odio</li>
-    <li class="list-group-item bg-grey-3">Dapibus ac facilisis in</li>
-    <li class="list-group-item bg-grey-3-light">Morbi leo risus</li>
+    <li class="list-group-item bg-grey-3-dark">Lorem ipsum dolor</li>
+    <li class="list-group-item bg-grey-3">Suscipit, eaque ab fugit</li>
+    <li class="list-group-item bg-grey-3-light">Abore incidunt quam</li>
   </ul>
   
  
@@ -205,9 +202,7 @@
                 <div class="center up-20">
                     <hr class="top">
                     <h4>The Zen Test</h4>
-                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
-                        any resolution.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <p>Every part, section, and modifier we ship pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
             </z-col>
         </z-row>
@@ -216,13 +211,11 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="center">
-                    <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class="btn-md">Docs</button></a>
-                    </p>
-                </div>
+                <div class="tab-nav-round">
+                        <a class="item"  id="toggleButton" >Test Mode</a>
+                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
+                        <a href="../index.html" class="item">Docs</a>
+                    </div>
             </z-col>
         </z-row>
     </z-container>

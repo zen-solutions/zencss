@@ -44,12 +44,12 @@
 }
 
 // Apply the alert mixin to each alert class, passing the background color and icon url
-.alert-primary { @include alert($blue, '../img/general-icons/thumbs-up-solid.png'); }
-.alert-danger { @include alert($red, '../img/general-icons/triangle-exclamation-solid.png'); }
-.alert-success { @include alert($secondary-color, '../img/general-icons/circle-check-solid.png'); }
-.alert-warning { @include alert($orange, '../img/general-icons/circle-exclamation-solid.png'); }
-.alert-dark { @include alert($dark-color, '../img/general-icons/circle-check-regular.png'); }
-.alert-light { @include alert($light-color, '../img/general-icons/circle-check-regular.png'); }
+.alert-primary { @include alert($blue, '../img/general-icons/essential/thumbs-up-solid.png'); }
+.alert-danger { @include alert($red, '../img/general-icons/essential/triangle-exclamation-solid.png'); }
+.alert-success { @include alert($secondary-color, '../img/general-icons/essential/circle-check-solid.png'); }
+.alert-warning { @include alert($orange, '../img/general-icons/essential/circle-exclamation-solid.png'); }
+.alert-dark { @include alert($dark-color, '../img/general-icons/essential/circle-check-regular.png'); }
+.alert-light { @include alert($light-color, '../img/general-icons/essential/circle-check-regular.png'); }
 
 //override
 

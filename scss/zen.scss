@@ -76,6 +76,7 @@
     @import 'components/slider.scss';
     @import 'design/buttons.scss';
     @import 'core/flex.scss';
+    @import 'optional/table.scss';
     @import 'core/formatting.scss';
     @import 'optional/alert.scss';
     @import 'design/text.scss';
@@ -96,7 +97,6 @@
     //@import 'optional/interactive-cards.scss';
     //@import 'opacity.scss';
     //@import 'optional/card.scss';
-    @import 'optional/table.scss';
     @import 'optional/decoration.scss';
     @import 'optional/animation.scss';
 
@@ -152,6 +152,9 @@
     background: #252525;
     background-color: #252525 ;
     $responsive-text-color:white;
+    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    // background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    // opacity 0.55s ease;
 
     nav{
       background: #1e1e1e ;

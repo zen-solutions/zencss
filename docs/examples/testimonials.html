@@ -18,7 +18,6 @@
                     </div>
                     <button id="hamburger-button">☰</button>
                     <nav>
-                        <button id="close-button">×</button>
                         <z-container>
                             <z-row>
                                   <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
@@ -27,7 +26,17 @@
                             </z-row>
                             <z-row>
                                 <z-col class="accordion pt-0">
-                                    <input type="checkbox" id="toggle1" class="toggle">
+                                                                     
+                                    <input type="checkbox" id="toggle4" class="toggle">
+                                    <label for="toggle4" class="title">Core Concepts</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+                                        <a href="zentax.html">Intro to Zentax</a>
+                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
+                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
+                                        <a href="landing-page-example.html">Go from wires to development</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+                                    </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
@@ -60,7 +69,9 @@
                                                         <!--a href="dropdown.html">Dropdown</a-->
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
-                                                        <a href="image.html">Images</a>
+                                                        <a href="icon.html">Icon Container</a>
+
+                                                                                              <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
                                                         <a href="list-group.html">List Groups</a>
                                                         <a href="modal.html">Modal</a>
@@ -71,19 +82,6 @@
                                                         <a href="tooltip.html">Tool Tips</a>
                                                         <a href="tabs.html">Tabs</a>
                                                         <a href="wizard.html">Wizard</a>
-                                    </div>
-                    
-                                 
-                                 
-                                    <input type="checkbox" id="toggle4" class="toggle">
-                                    <label for="toggle4" class="title">Core Concepts</label>
-                                    <div class="expanded-content d-flex flex-col">
-                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
-                                        <a href="zentax.html">Intro to Zentax</a>
-                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
                                     </div>
                     
                     
@@ -126,7 +124,7 @@
             <z-col>
                 <div class="center">
                     <h1> Testimonials</h1>
-                    <p>The right words can go a long way. </p>
+                    <p>The right words can go a long way. To do half stars, set <code>half="true"</code> in the <code>star-component</code>  </p>
                     <hr>
                 </div>
             </z-col>
@@ -141,20 +139,20 @@
             <z-col class="card-split theme-primary small">
                 <div class="image-group">
                     <star-component stars="4" half="true"></star-component>
-                    <img src="../../img/placeholders/sq.jpg" alt="" class="w-75">
+                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" alt="" class="w-75">
                 </div>
          
                 <div class="text-group">
                     <h6> Ex error nobis possimus  </h6>
                     <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</small>
-                    <small class="signature">-Jane Doe</small>
+                    <small class="signature">-John Doe</small>
                   </div>
             </z-col>
 
             <z-col class="card-split theme-light small">
                 <div class="image-group">
                     <star-component stars="5"></star-component>
-                    <img src="../../img/placeholders/sq.jpg" alt="" class="w-75">
+                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" alt="" class="w-75">
                 </div>
          
                 <div class="text-group">
@@ -166,14 +164,14 @@
 
             <z-col class="card-split theme-dark small">
                 <div class="image-group">
-                    <star-component stars="2"></star-component>
-                    <img src="../../img/placeholders/sq.jpg" alt="" class="w-75">
+                    <star-component stars="2" half="true"></star-component>
+                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-75">
                 </div>
          
                 <div class="text-group">
                     <h6> Ex error nobis possimus  </h6>
                     <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</small>
-                    <small class="signature">-Jane Doe</small>
+                    <small class="signature">-John Doe</small>
                   </div>
             </z-col>
 
@@ -218,9 +216,7 @@
                 <div class="center up-20">
                     <hr class="top">
                     <h4>The Zen Test</h4>
-                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
-                        any resolution.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <p>Every part, section, and modifier we ship pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
             </z-col>
         </z-row>
@@ -229,13 +225,11 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="center">
-                    <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class="btn-md">Docs</button></a>
-                    </p>
-                </div>
+                <div class="tab-nav-round">
+                        <a class="item"  id="toggleButton" >Test Mode</a>
+                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
+                        <a href="../index.html" class="item">Docs</a>
+                    </div>
             </z-col>
         </z-row>
     </z-container>

@@ -37,9 +37,9 @@ z-row, .z-row {
 width:100%;
 flex-wrap: wrap; //nowrap is interesting too
 gap: 1em;
-//padding: 1em;
-padding-top: .5em;
-padding-bottom: .5em;
+padding-top: .5em; // removed via js when nesting logic applied
+padding-bottom: .5em;// removed via js when nesting logic applied
+flex-grow: 1; // added for nesting logic. testing to make sure it doesnt break anything
 }
 
 .z-row-vcenter {
@@ -67,7 +67,7 @@ z-col, .z-col {
   justify-content: flex-start;
   flex-direction: column;
   align-self: stretch;
-  gap: .5rem;
+  gap: .4rem;
   padding: $col-padding;
   margin: 0;
 }
@@ -75,7 +75,7 @@ z-col, .z-col {
 .z-col > *, z-col > * {
   //gap: 1rem;
   max-width: 100%;
-  width:100%;
+  width:100%; // for the next time you circle back to this. last time you took this out it broke nav, colors, etc. so leave it. 
 }
 
 .z-col > span, z-col > span {

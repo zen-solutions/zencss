@@ -3,9 +3,9 @@
 /* custom nav mods */
 .zen nav {
   position: fixed;
-  top: 91px;
-  left: -250px;
-  width: 250px;
+  top: 63px;
+  left: -230px;
+  width: 230px;
   height: 100%;
   transition: left 0.3s;
   display: block !important;
@@ -16,9 +16,11 @@
   align-items: center;
 }
 
-
-
-
+  
+header{
+  max-height: 63px;
+  height: 63px;
+}
 
 
 .zen #close-button {
@@ -139,13 +141,14 @@ zen .accordion > :nth-last-child(2), .zen .accordion :last-child {
 
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .zen nav {
     left:0;
   }
 
-  .docs-content{
+  .docs-content, #content{
   margin-left:250px;
+  
   }
 }
 
@@ -160,4 +163,6 @@ zen .accordion > :nth-last-child(2), .zen .accordion :last-child {
     display:none !important;
   }
 
-} */
+}nav{
+  background-color: #c3c3c3;
+}

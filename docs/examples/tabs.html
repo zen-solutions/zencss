@@ -119,7 +119,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1> Tabs </h1>
+                    <h1> Tab Nav </h1>
                     <hr>
                 </div>
             </z-col>
@@ -135,22 +135,19 @@
             <z-col class="center">
 
                 <!-- tabs -->
-                <h2>Square</h2> 
-                <p>use class <code>.tab-nav</code></p>
-                <div class="tab-nav center-flex">
-                    <a href="#" class="item current">item 1</a>
+
+                <h2>Round/Thin</h2>
+                <p>use class <code>.tab-nav-round-thin</code></p>
+                <div class="tab-nav-round-thin center-flex">
+                    <a href="#" class="item">item 1</a>
                     <a href="#" class="item">item 2</a>
                     <a href="#" class="item">item 3</a>
-                    <a href="#" class="item">item 4</a>
+                    <a href="#" class="item current">item 4</a>
                 </div>
 
-                <h2>Round</h2>
-                <p>use class <code>.tab-nav-round</code></p>
-                <div class="tab-nav-round center-flex">
-                    <a href="#" class="item">item 1</a>
-                    <a href="#" class="item current">item 2</a>
-                    <a href="#" class="item">item 3</a>
-                    <a href="#" class="item">item 4</a>
+                <div class="tab-nav-round-thin center-flex">
+                    <a href="#" class="item current">Left Item</a>
+                    <a href="#" class="item">Right Item</a>
                 </div>
 
                 <h2>Thin</h2>
@@ -162,15 +159,27 @@
                     <a href="#" class="item">item 4</a>
                 </div>
 
-                <h2>Round/Thin</h2>
-                <p>use class <code>.tab-nav-round-thin</code></p>
-                <div class="tab-nav-round-thin center-flex">
+
+
+                <h2>Round</h2>
+                <p>use class <code>.tab-nav-round</code></p>
+                <div class="tab-nav-round center-flex">
                     <a href="#" class="item">item 1</a>
-                    <a href="#" class="item">item 2</a>
+                    <a href="#" class="item current">item 2</a>
                     <a href="#" class="item">item 3</a>
-                    <a href="#" class="item current">item 4</a>
+                    <a href="#" class="item">item 4</a>
                 </div>
 
+
+                <h2>Square</h2> 
+                <p>use class <code>.tab-nav</code></p>
+                <div class="tab-nav center-flex">
+                    <a href="#" class="item current">item 1</a>
+                    <a href="#" class="item">item 2</a>
+                    <a href="#" class="item">item 3</a>
+                    <a href="#" class="item">item 4</a>
+                </div>
+          
 
             </z-col>
         </z-row>
@@ -207,8 +216,7 @@
                 <div class="center">
                     <hr class="top">
                     <h4>The Zen Test</h4>
-                    <p>Every component we ship will pass alignment tests and work beautifully in light and dark mode, at
-                        any resolution.</p>
+                    <p>Every part, section, and modifier we ship will pass alignment, styling, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                     <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
             </z-col>
@@ -218,13 +226,11 @@
     <z-container>
         <z-row>
             <z-col>
-                <div class="center">
-                    <p>
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html"><button class="btn-md">Docs</button></a>
-                    </p>
-                </div>
+                <div class="tab-nav-round">
+                        <a class="item"  id="toggleButton" >Test Mode</a>
+                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
+                        <a href="../index.html" class="item">Docs</a>
+                    </div>
             </z-col>
         </z-row>
     </z-container>

@@ -18,7 +18,6 @@
                     </div>
                     <button id="hamburger-button">☰</button>
                     <nav>
-                        <button id="close-button">×</button>
                         <z-container>
                             <z-row>
                                   <z-col class="p-0 pl-1 mt-2 up-5 ml-1">
@@ -27,7 +26,17 @@
                             </z-row>
                             <z-row>
                                 <z-col class="accordion pt-0">
-                                    <input type="checkbox" id="toggle1" class="toggle">
+                                                                     
+                                    <input type="checkbox" id="toggle4" class="toggle">
+                                    <label for="toggle4" class="title">Core Concepts</label>
+                                    <div class="expanded-content d-flex flex-col">
+                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+                                        <a href="zentax.html">Intro to Zentax</a>
+                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
+                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
+                                        <a href="landing-page-example.html">Go from wires to development</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+                                    </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
@@ -60,7 +69,9 @@
                                                         <!--a href="dropdown.html">Dropdown</a-->
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
-                                                        <a href="image.html">Images</a>
+                                                        <a href="icon.html">Icon Container</a>
+
+                                                                                              <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
                                                         <a href="list-group.html">List Groups</a>
                                                         <a href="modal.html">Modal</a>
@@ -71,19 +82,6 @@
                                                         <a href="tooltip.html">Tool Tips</a>
                                                         <a href="tabs.html">Tabs</a>
                                                         <a href="wizard.html">Wizard</a>
-                                    </div>
-                    
-                                 
-                                 
-                                    <input type="checkbox" id="toggle4" class="toggle">
-                                    <label for="toggle4" class="title">Core Concepts</label>
-                                    <div class="expanded-content d-flex flex-col">
-                                        <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
-                                        <a href="zentax.html">Intro to Zentax</a>
-                                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
                                     </div>
                     
                     
@@ -125,6 +123,11 @@
 <z-row>
     <z-col>
         <section class="zencss-docs">
+
+            todo: 1 show to 8
+            then show to 12 (explan multiple rows and perect alignment/formatting)
+            then show to 16 (explain smart logic to handle nesting containers in columns)
+            then show 32. not that you would, but you can.
  
               <h2>Introducing the ZenCSS Smart Align System</h2>
               <p>Welcome to ZenCSS, where our Smart Align System is a testament to our commitment to responsive design. It's smart, it's straightforward, and it respects your content's need for both freedom and order.</p>
@@ -142,8 +145,6 @@
               <h3>Your Blueprint to Responsive Design</h3>
               <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
   &lt;div class="z-row"&gt;
-    &lt;div class="z-col"&gt;...&lt;/div&gt;
-    &lt;div class="z-col"&gt;...&lt;/div&gt;
     &lt;div class="z-col"&gt;...&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

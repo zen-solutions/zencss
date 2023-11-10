@@ -120,11 +120,10 @@
   }
 
   a{
-   // padding-top:.5em;
     padding-bottom:.5em;
     text-decoration: none;
     padding-left:10px;
-    margin-left:-10px;
+    margin-left: -24px;
   }
 
   a:hover{
@@ -140,7 +139,6 @@ background-color: rgba(111,111,111,.07); //dark mode top color
 .accordion .title {
   display: block;
   padding: 10px;
-  //background-color: white;
   cursor: pointer;
   margin: 0;
   border: 1px solid $border-color;
@@ -158,7 +156,7 @@ background-color: rgba(111,111,111,.07); //dark mode top color
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url('../img/general-icons/plus-solid.svg');
+  background-image: url('../img/general-icons/essential/plus-solid.svg');
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
@@ -170,7 +168,7 @@ background-color: rgba(111,111,111,.07); //dark mode top color
 }
 
 .accordion .toggle:checked+.title::before {
-  background-image: url('../img/general-icons/minus-solid.svg');
+  background-image: url('../img/general-icons/essential/minus-solid.svg');
 }
 
 .expanded-content {
@@ -180,7 +178,7 @@ background-color: rgba(111,111,111,.07); //dark mode top color
 }
 
 .toggle:checked + .title + .expanded-content {
-  max-height: 1000px; /* or an appropriate value */
+  max-height: 1000px; 
 }
 
 //-------------------------------------------------
@@ -200,9 +198,6 @@ background-color: rgba(111,111,111,.07); //dark mode top color
   .dropdown-label {
     padding: 10px;
     cursor: pointer;
-    //color: $dark-color;
-
-    //border: 1px solid #ccc;
 
     //this is how we default style all the ui stuff moving forward
     @include default-state;
@@ -419,31 +414,31 @@ blockquote em {
 }
 
 
-//testing fs image card
+//do we need this anymore?
 .card-split {
   position: relative; /* Ensure the positioning context is set for children */
   overflow: hidden; /* Let the child image be visible outside the bounds */
 }
+// //testing fs image card
+// .image-group {
+//   position: absolute; /* Position absolutely to break out of the flow */
+//   top: 0; /* Align with the top of the card-split */
+//   left: 0; /* Align with the left of the card-split */
+//   height: 100%; /* Full height of the parent */
+//   width: 100px; /* Fixed width as per your requirement */
+// }
 
-.image-group {
-  position: absolute; /* Position absolutely to break out of the flow */
-  top: 0; /* Align with the top of the card-split */
-  left: 0; /* Align with the left of the card-split */
-  height: 100%; /* Full height of the parent */
-  width: 100px; /* Fixed width as per your requirement */
-}
+// .image-group img {
+//   height: 101%; /* Stretch to the full height of the image-group */
+//   width: 100%; /* The image will naturally take the width of the image-group */
+//   object-fit: cover; /* Cover the area, may crop the image */
+//   border-radius: 0;
+//   margin-left: -1px;
+// }
 
-.image-group img {
-  height: 101%; /* Stretch to the full height of the image-group */
-  width: 100%; /* The image will naturally take the width of the image-group */
-  object-fit: cover; /* Cover the area, may crop the image */
-  border-radius: 0;
-  margin-left: -1px;
-}
-
-.text-group {
-  margin-left: 105px; /* Add left margin to push the text to the right */
-}
+// .text-group {
+//   margin-left: 105px; /* Add left margin to push the text to the right */
+// }
 
 
 
@@ -451,13 +446,17 @@ blockquote em {
 // Image classes - responsive/round/rounded/outline
 //-------------------------------------------------
 .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  max-width: 100%; /* Ensures the image is no wider than its container */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: contain; /* Ensures the image scales correctly within its bounds */
+
 }
 
 .img-round {
   border-radius: 50%;
+   max-width:100%;
+  height:auto;
 }
 
 .img-rounded {
@@ -466,8 +465,17 @@ blockquote em {
 
 .img-round-outline {
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px !important;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
+}
+
+//-------------------------------------------------
+// Icon classes
+//-------------------------------------------------
+
+//circle - duplicate class declaration - needed as workaround for border radius being set in themes
+.icon-circle {
+  border-radius: 50%;
 }
