@@ -30,29 +30,34 @@
                                     <input type="checkbox" id="toggle4" class="toggle">
                                     <label for="toggle4" class="title">Core Concepts</label>
                                     <div class="expanded-content d-flex flex-col">
+                                        <a href="getting-started.html">Getting Started</a>
                                         <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+
                                         <a href="zentax.html">Intro to Zentax</a>
                                         <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
+                                        <a href="zen-system.html">ZEN Ideology</a>
                                     </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
-                                        <a href="background-colors.html">Background/Font Pairings</a>
+                                        <a href="background-colors.html">Smart-Color System</a>
                                         <a href="text-classes.html">Font Styles</a>
                                         <a href="text-colors.html">Font Color System</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+
                                      
                                     </div>
                     
                                     <input type="checkbox" id="toggle3" class="toggle">
                                     <label for="toggle3" class="title">Site Sections</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="header.html">Header</a>
-                                         <a href="hero-section.html">Hero</a>
-                                         <a href="image-text.html">Site Sections</a>
-                                         <a href="footer.html">Footer</a>
+<a href="header.html">Header</a>
+<a href="jumbotron.html">Hero Section</a>
+<a href="optin-form.html">Optin-Form/Text Section</a>
+<a href="hero-section.html">Image/Text Section</a>
+<a href="layout-grids.html">Layout Grids</a>
+<a href="footer.html">Footer</a>
+
                             
                                     </div>
                     
@@ -66,14 +71,16 @@
                                                         <a href="cards.html">Cards</a>
                                                         <a href="cookie-consent.html">Cookie Consent</a>
                                                         <a href="contact-form.html">Contact Form</a>
-                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="dropdown.html">Dropdown</a>                            
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
                                                         <a href="icon.html">Icon Container</a>
 
                                                                                               <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
+                                                        <a href="image-gallery.html">Image Gallery</a>
                                                         <a href="list-group.html">List Groups</a>
+                                                        <a href="logos.html">Logo Bar</a>
                                                         <a href="modal.html">Modal</a>
                                                         <a href="pagination.html">Pagination</a>
                                                         <a href="quiz.html">Quiz</a>
@@ -86,7 +93,7 @@
                     
                     
                                     <input type="checkbox" id="toggle5" class="toggle">
-                                    <label for="toggle5" class="title">CSS Modifiers</label>
+                                    <label for="toggle5" class="title">Site Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                                         <a href="padding-margin-utilities.html">Padding & Margin</a>
@@ -103,7 +110,7 @@
                                         <a href="breakpoints.html">Breakpoints</a>
                                         <a href="browser-support.html">Browser Support</a>
                                         <a href="overrides.html">Initialization Settings and ZenCSS Variables</a>
-                                    </div>
+                                        <a href="landing-page-example.html">Go from wires to development</a>                                    </div>
                                 </z-col>
                             </z-row>
                         </z-container>
@@ -123,8 +130,11 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1> Flex</h1>
-
+                    <h1 class="headline">Flex Utilities</h1>
+                    <p>
+                        Leverage the power of the Flexbox layout model with zenCSS's flex utilities. Effortlessly create complex layouts, align elements, and control the dimensions of your flex items with these intuitive classes.
+                    </p>
+                
                         <hr>
                 </div>
             </z-col>
@@ -138,9 +148,105 @@
 <z-container>
     <z-row>
         <z-col>
-
             <div id="flex-utilities">
-                <h1>Flex Utilities</h1>
+                <h2>1. Flex Container Classes</h2>
+                <ul>
+                    <li><code>.d-flex</code>: Sets the display property to flex, making the element a flex container.</li>
+                    <li><code>.flex-inline</code>: Uses inline-flex display.</li>
+                </ul>
+            
+                <h2>2. Flex Direction Classes</h2>
+                <ul>
+                    <li><code>.flex-direction-row</code>: Sets the flex direction to row.</li>
+                    <li><code>.flex-direction-row-reverse</code>: Sets the flex direction to row reverse.</li>
+                    <li><code>.flex-direction-column</code>: Sets the flex direction to column.</li>
+                    <li><code>.flex-direction-column-reverse</code>: Sets the flex direction to column reverse.</li>
+                </ul>
+            
+                <h2>3. Wrap and No-Wrap Classes</h2>
+                <ul>
+                    <li><code>.flex-wrap</code>: Enables wrapping of items.</li>
+                    <li><code>.flex-nowrap</code>: Disables wrapping of items.</li>
+                    <li><code>.flex-wrap-reverse</code>: Items wrap in reverse order.</li>
+                </ul>
+            
+                <h2>4. Justify Content Classes</h2>
+                <ul>
+                    <li><code>.justify-content-start</code>: Items aligned to the start of the container.</li>
+                    <li><code>.justify-content-end</code>: Items aligned to the end of the container.</li>
+                    <li><code>.justify-content-center</code>: Items centered in the container.</li>
+                    <li><code>.justify-content-between</code>: Space distributed between items.</li>
+                    <li><code>.justify-content-around</code>: Space distributed around items.</li>
+                    <li><code>.justify-content-evenly</code>: Space distributed evenly.</li>
+                </ul>
+            
+                <h2>5. Align Items Classes</h2>
+                <ul>
+                    <li><code>.align-items-start</code>: Items aligned to the start of the cross axis.</li>
+                    <li><code>.align-items-end</code>: Items aligned to the end of the cross axis.</li>
+                    <li><code>.align-items-center</code>: Items centered along the cross axis.</li>
+                    <li><code>.align-items-baseline</code>: Items aligned along the baseline.</li>
+                    <li><code>.align-items-stretch</code>: Items stretched to fill the container.</li>
+                </ul>
+            
+                <h2>6. Align Content Classes</h2>
+                <ul>
+                    <li><code>.align-content-start</code>: Lines aligned to the start of the container.</li>
+                    <li><code>.align-content-end</code>: Lines aligned to the end of the container.</li>
+                    <li><code>.align-content-center</code>: Lines centered in the container.</li>
+                    <li><code>.align-content-between</code>: Space distributed between lines.</li>
+                    <li><code>.align-content-around</code>: Space distributed around lines.</li>
+                    <li><code>.align-content-stretch</code>: Lines stretched to fill the container.</li>
+                </ul>
+            
+                <h2>7. Align Self Classes</h2>
+                <ul>
+                    <li><code>.align-self-start</code>: Individual item aligned to start.</li>
+                    <li><code>.align-self-end</code>: Individual item aligned to end.</li>
+                    <li><code>.align-self-center</code>: Individual item centered.</li>
+                    <li><code>.align-self-baseline</code>: Individual item aligned to baseline.</li>
+                    <li><code>.align-self-stretch</code>: Individual item stretched to fill the container.</li>
+                </ul>
+            
+                <h2>8. Flex Grow and Shrink Classes</h2>
+                <ul>
+                    <li><code>.flex-grow-0</code>: Disable flex grow.</li>
+                    <li><code>.flex-grow-1</code>: Enable flex grow.</li>
+                    <li><code>.flex-shrink-0</code>: Disable flex shrink.</li>
+                    <li><code>.flex-shrink-1</code>: Enable flex shrink.</li>
+                </ul>
+            
+                <h2>9. Order Classes</h2>
+                <ul>
+                    <li><code>.order-0</code>: Sets the order of a flex item to 0.</li>
+                    <li><code>.order-1</code>: Sets the order of a flex item to 1.</li>
+                    <li><code>.order-2</code>: Sets the order of a flex item to 2.</li>
+                    <!-- Continue listing order classes up to .order-10 -->
+                </ul>
+            
+                <h2>10. Featured Cards</h2>
+                <p>
+                    These classes are used to set the width of cards, allowing you to feature one or multiple cards in a row.
+                </p>
+                <ul>
+                    <li><code>.feature</code></li>
+                    <li><code>.feature-sm</code></li>
+                    <li><code>.feature-md</code></li>
+                    <li><code>.feature-lg</code></li>
+                </ul>
+                
+                <h2>Usage Examples</h2>
+                <p>
+                    Here are some examples showcasing how you might use these utilities in your HTML:
+                </p>
+                <pre><code>&lt;z-row&gt;
+                &lt;z-col class="card"&gt;Item 1&lt;/z-col&gt;
+                &lt;z-col class="card feature-lg"&gt;Item 2&lt;/z-col&gt;
+            &lt;/z-row&gt; </code></pre>
+            </div>
+            
+            <div id="flex-utilities">
+                <h1 class="headline">Flex Utilities - OLD</h1>
             
                 <p>
                     Leverage the power of the Flexbox layout model with zenCSS's flex utilities. Effortlessly create complex layouts, align elements, and control the dimensions of your flex items with these intuitive classes.
@@ -210,7 +316,7 @@
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
-    <footer class="zen">
+    <footer>
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 

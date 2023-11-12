@@ -26,7 +26,7 @@ html {
 }
 
 .bg-dark {
-  background: $dark-color;
+  background: $dark-color !important;
   color: $light-color;
 
   button {
@@ -216,7 +216,7 @@ a.swap-underline:hover {
 pre {
   padding: 20px;
   font-size:.8em;
-  background: #eee;
+  background: rgba(0, 0, 0, 0.1); //good for dark/light mode
   border-radius: $border-radius;
   box-sizing: border-box;
   width: 100%;

@@ -1,4 +1,15 @@
-// ZenCSS Variables - Any updates here may be overwritten with future updates.
+//User settings - override as needed. See overrides documentation. A 1 time retest of WCAG compliance will be necessary if modifying any of the bg/text ratios.
+// all settings are configured for simple modification by end users for this process. After that, everything works seamlessly. 
+
+//------------------------------------------ 
+//baseline
+//------------------------------------------ 
+$text-white: #eee;
+$text-black: #4a4a4a;
+$light-color: #f4f4f4;
+$dark-color: #424242;
+$var-white-text:white; // for wcag compliance - can combine w text-white or override as needed
+$var-black-text: black; // same 
 
 
 //------------------------------------------ 
@@ -6,10 +17,10 @@
 //------------------------------------------ 
 
 $primary-color : #034d81; 
-//$secondary-color: #bc2624;
 $secondary-color:#426b2f;
 $accent-color: #ffb12b;
 $cta-color: #1b64b2;
+$nav-link-color: $light-color;
 
 
 //------------------------------------------ 
@@ -56,10 +67,6 @@ $yellow-light: lighten($yellow, 5%);
 $green-light: lighten($green, 6%); 
 $blue-light: lighten($blue, 10%); 
 $purple-light: lighten($purple, 5%); 
-
-//text
-$var-white-text:white;
-$var-black-text: black;
 
 // Default Text Colors
 $text-default-colors: (
@@ -126,10 +133,6 @@ $text-light-colors: (
 // Misc Dark and Light 
 //------------------------------------------ 
 
-$text-white: #eee;
-$text-black: #4a4a4a;
-$light-color: #f4f4f4;
-$dark-color: #424242;
 $grey: #eee;
 $dark-grey: #666;
 $light-grey: #ccc;
@@ -144,8 +147,8 @@ $text-default: $light-color;
 // Rounded corners
 //------------------------------------------ 
 
-//$border-radius: 4px; //on
-$border-radius: 4px; //off
+$border-radius: 4px; //on
+//$border-radius: 0; //off
 
 
 //------------------------------------------ 
@@ -154,44 +157,33 @@ $border-radius: 4px; //off
 
 $hero-image: url("../website/images/hero.jpg");
 
-
-
 //------------------------------------------ 
 // Below is experimental
 //------------------------------------------ 
-
 $light-ui-hover-color:#eee;
 $border-color:rgba(111, 111, 111, 0.35);
 $dual-mode-bg-color:rgba(79, 78, 78, 0.01);
 $dual-mode-text-color:#808080;
-//$bg-header-footer: #2e2e2e;
 $bg-header-footer: #303030;
-//------------------------------------------ 
-// Default Spacing
-//------------------------------------------ 
-//maybe its site, 50 0, then content 0, 50. then you do site-section for the container and content-section for the rows. done. 
-//maybe that is baked into the content and rows in scaffold.
-
-$site-section-padding-top: 50px;
-$site-section-padding-bottom: 50px;
-
-//$conent-section-padding-top: 50px;
-//$conent-section-padding-bottom: 0;
-
 $container-margin: 2em;
+
+//------------------------------------------ 
+// Default Spacing - wip
+//------------------------------------------ 
+
+$site-section-padding-top: 0;
+$site-section-padding-bottom: 2em;
 
 
 //set master paddingand margin for all columns
-
 $col-padding: 1em; 
 $col-margin: 1em;
 
 //------------------------------------
 // Interactive cards
-// set images for your interactive cards. 
-// todo: make images updatable from component html
+// Note: depricated
 //------------------------------------
-$interactive-card-image-1: "../img/interactive-cards/1.jpg";
-$interactive-card-image-2: "../img/interactive-cards/2.jpg";
-$interactive-card-image-3: "../img/interactive-cards/3.jpg";
-$interactive-card-image-4: "../img/interactive-cards/4.jpg";
+// $interactive-card-image-1: "../img/interactive-cards/1.jpg";
+// $interactive-card-image-2: "../img/interactive-cards/2.jpg";
+// $interactive-card-image-3: "../img/interactive-cards/3.jpg";
+// $interactive-card-image-4: "../img/interactive-cards/4.jpg";

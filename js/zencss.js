@@ -65,8 +65,7 @@ if (toggleButton) {
         });
     });
 } else {
-    // If toggleButton does not exist, you can handle it accordingly here
-    console.log('Toggle button not found.');
+    //console.log('Toggle button not found.');
 }
 
 //--------------------------------------------------------
@@ -148,6 +147,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const toggleMenu = () => {
         // Assuming "0px" is the open state and "-250px" is the closed state
         nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
+        console.log("clicked");
     };
 
     if (hamburgerButton && closeButton && nav) {
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         closeButton.addEventListener("click", toggleMenu);
 
         navLinks.forEach((link) => {
-            link.addEventListener("click", toggleMenu); // Use toggleMenu to close the menu
+        //    link.addEventListener("click", toggleMenu); // Use toggleMenu to close the menu
         });
     }
 });
@@ -821,4 +821,94 @@ function startSpinning() {
     });
 });
 
+  
+  //-------------------------------------
+  // Dropdown
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    var dropdownLinks = document.querySelectorAll('.dropdown-link');
 
+    dropdownLinks.forEach(function(link) {
+        // Create and insert the caret
+        var caret = document.createElement('div');
+        caret.className = 'caret-up';
+        link.parentNode.insertBefore(caret, link.nextSibling);
+
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            // Check if the current dropdown is already open
+            var isCurrentDropdownOpen = link.nextElementSibling.nextElementSibling.style.display === "block";
+            // Close all dropdowns
+            closeAllDropdowns();
+            // Toggle the current dropdown if it was not open
+            if (!isCurrentDropdownOpen) {
+                toggleDropdown(link.nextElementSibling.nextElementSibling, caret);
+            }
+        });
+    });
+});
+
+function toggleDropdown(dropdownContent, caret) {
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    caret.style.display = caret.style.display === "block" ? "none" : "block";
+}
+
+function closeAllDropdowns() {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var carets = document.getElementsByClassName("caret-up");
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none";
+        carets[i].style.display = "none";
+    }
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-link')) {
+        closeAllDropdowns();
+    }
+};
+
+
+
+//   document.addEventListener('DOMContentLoaded', function () {
+//     var dropdownLinks = document.querySelectorAll('.dropdown-link');
+
+//     dropdownLinks.forEach(function(link) {
+//         // Create and insert the caret
+//         var caret = document.createElement('div');
+//         caret.className = 'caret-up';
+//         link.parentNode.insertBefore(caret, link.nextSibling);
+
+//         link.addEventListener('click', function (event) {
+//             toggleDropdown(event, link, caret);
+//         });
+//     });
+// });
+
+// function toggleDropdown(event, link, caret) {
+//     event.stopPropagation();
+//     var dropdownContent = link.nextElementSibling.nextElementSibling;
+
+//     if (dropdownContent) {
+//         var isDropdownVisible = dropdownContent.style.display === "block";
+//         dropdownContent.style.display = isDropdownVisible ? "none" : "block";
+//         caret.style.display = isDropdownVisible ? "none" : "block";
+//     }
+// }
+
+// window.onclick = function(event) {
+//     if (!event.target.matches('.dropdown-link')) {
+//         var dropdowns = document.getElementsByClassName("dropdown-content");
+//         var carets = document.getElementsByClassName("caret-up");
+//         for (var i = 0; i < dropdowns.length; i++) {
+//             var openDropdown = dropdowns[i];
+//             if (openDropdown && openDropdown.style.display === "block") {
+//                 openDropdown.style.display = "none";
+//                 if (carets[i]) {
+//                     carets[i].style.display = "none";
+//                 }
+//             }
+//         }
+//     }
+// }

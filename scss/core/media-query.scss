@@ -1,6 +1,5 @@
 @use "sass:math";
 
-
 .two-up {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +38,7 @@
 }
 
 .five-up > * {
-  flex: 0 0 18.737% !important;
+  flex: 0 0 18.876% !important;
 }
 
 .six-up {
@@ -48,7 +47,7 @@
 }
 
 .six-up > * {
-  flex: 0 0 15.35% !important;
+  flex: 0 0 15.49% !important;
    margin: 0;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .seven-up > * {
-  flex: 1 0 12.93% !important;
+  flex: 1 0 13.083% !important;
 }
 
 
@@ -144,32 +143,13 @@
 
   & .z-col, z-col {
     flex-basis: calc(33%) !important;
-    //margin: 10px !important;
   }
 
     .z-row .z-col .z-col, z-row z-col z-col {
     flex-direction: column;
 }
 
-// .one-up-tablet{
-//   display: grid;
-//   grid-template-columns: repeat(1, 1fr);
-// }
 
-// .two-up-tablet{
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-// }
-
-// .three-up-tablet{
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-// }
-
-// .four-up-tablet{
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-// }
 
 }
 
@@ -196,22 +176,7 @@
 
   & .z-col, z-col {
     flex-basis: calc(25% - 20px) !important;
-    //margin: 10px !important;
   }
-
-  ////-------------------
-  /// Grid positioning
-  /// -------------------
-  
-  ///  Unse mobile ones
-//   .one-up-tablet,  .two-up-tablet,  .three-up-tablet,  .four-up-tablet{
-//   grid-template-columns:unset;
-// }
-
-  
-
-
-
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -272,16 +237,8 @@
     order: 1;
   }
 
-  //Grid - convert all rows to columns for sm. tablet/mobile. 
-  //TODO: consider converting to flex for consistency. 
-  
-  .one-up, .two-up, .three-up, .four-up, .five-up, .six-up, .seven-up, .eight-up{
-    grid-template-columns: repeat(1, 1fr);
-  }
-
 }
 
-//everything goes to 1 column, lets fix some left/right alignment
 @media (max-width: 767px) {
   .z-col, z-col, blockquote{
     margin-left:0;
@@ -326,7 +283,7 @@ left:10px;
   }
 
   .five-up > * {
-    flex: 0 0 32.223% !important;
+    flex: 0 0 32.293% !important;
   }
 //every 4th/5th kid make them half
   .five-up > :nth-child(4n+4), .five-up > :nth-child(4n+5) {
@@ -366,33 +323,4 @@ left:10px;
 .six-up > * {
   flex: 0 0 31.853% !important;
 }
-
 }
-
-
-
-
-
-//itersting idea - not quite working yet
-
-// .layout {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .layout > * {
-//   &:nth-child(-n+3) {
-//     flex: 0 0 33.3333%;
-//   }
-//   &:nth-child(4) {
-//     flex: 0 0 100%;
-//   }
-//   &:nth-child(5),
-//   &:nth-child(6) {
-//     flex: 0 0 50%;
-//   }
-// }
-
-
-
-

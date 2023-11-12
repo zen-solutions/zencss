@@ -16,7 +16,18 @@
   align-items: center;
 }
 
+nav{
+  top: 63px;
+}
+
+.zen nav ul {
+  background-color: #c3c3c3 !important;
+  height: unset !important;
+}
   
+.zen-dark nav ul {
+  background-color: #1e1e1e !important;
+}
 header{
   max-height: 63px;
   height: 63px;
@@ -41,7 +52,7 @@ header{
 }
 
 .zen #hamburger-button {
-  display: block !important;
+  display: block;
 }
 
 .zen .accordion .expanded-content {
@@ -63,6 +74,7 @@ header{
 .zen .accordion a {
   padding-left: 28px !important;
   font-size: .8em;
+  font-weight: 400;
 }
 
 pre {
@@ -141,6 +153,18 @@ zen .accordion > :nth-last-child(2), .zen .accordion :last-child {
 
 }
 
+.zen .accordion .title {
+border-radius: 8px;
+}
+
+.zen nav a {
+  color: #4a4a4a !important;
+}
+
+.zen-dark nav a {
+  color: white !important;
+}
+
 @media (min-width: 992px) {
   .zen nav {
     left:0;
@@ -148,8 +172,13 @@ zen .accordion > :nth-last-child(2), .zen .accordion :last-child {
 
   .docs-content, #content{
   margin-left:250px;
-  
+  margin-right:1em;
   }
+
+  footer  p{
+    margin-left:250px;
+    }
+
 }
 
 
@@ -159,10 +188,15 @@ zen .accordion > :nth-last-child(2), .zen .accordion :last-child {
     left: 0;
   } 
 
-  .zen #hamburger-button {
-    display:none !important;
-  }
+
 
 }nav{
   background-color: #c3c3c3;
+}
+
+@media (max-width: 992px){
+  .zen #hamburger-button, .zen #close-button {
+    display: block !important;
+}
+
 }

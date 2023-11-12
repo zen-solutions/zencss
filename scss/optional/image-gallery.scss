@@ -1,0 +1,49 @@
+  /* Image Gallery Styles */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;    /*$border-radius when implementing*/
+}
+
+/* Pagination Styles */
+.pagination-nav {
+    text-align: center;
+    padding: 20px;
+}
+
+.pagination-nav .item {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-nav .current {
+    font-weight: bold;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 80vh;
+
+}
+
+.modal-body img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.modal-body p {
+    text-align: center;
+    margin-top: 0;        }

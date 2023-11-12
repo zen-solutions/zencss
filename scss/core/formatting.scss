@@ -131,10 +131,10 @@ $sizes: (
 
 @each $key, $value in $sizes {
   .w-#{$key} {
-    max-width: $value !important;
+   width: $value !important;
   }
   .h-#{$key} {
-    max-height: $value !important;
+    height: $value !important;
   }
 }
 
@@ -145,10 +145,7 @@ $sizes: (
 .card {
   position: relative;
   //gap:.7em;
-  padding-left:1rem;
-  padding-right:1rem;
-  padding-top: 1rem;
-  padding-bottom:1rem;
+  padding: 1.2rem;
   font-size: .95em;
 
 

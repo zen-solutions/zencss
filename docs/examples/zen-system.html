@@ -30,33 +30,36 @@
                             <z-row>
                                 <z-col class="accordion pt-0">
                                                                      
-                                    <input type="checkbox" id="toggle4" class="toggle">
+                                    <input type="checkbox" id="toggle4" class="toggle" checked="true">
                                     <label for="toggle4" class="title">Core Concepts</label>
                                     <div class="expanded-content d-flex flex-col">
+                                        <a href="getting-started.html">Getting Started</a>
                                         <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+
                                         <a href="zentax.html">Intro to Zentax</a>
                                         <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
+                                        <a href="zen-system.html">ZEN Ideology</a>
                                     </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
-                                        <a href="background-colors.html">Background/Font Pairings</a>
+                                        <a href="background-colors.html">Smart-Color System</a>
                                         <a href="text-classes.html">Font Styles</a>
                                         <a href="text-colors.html">Font Color System</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+
                                      
                                     </div>
                     
                                     <input type="checkbox" id="toggle3" class="toggle">
                                     <label for="toggle3" class="title">Site Sections</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="header.html">Header</a>
-                                         <a href="hero-section.html">Hero</a>
-                                         <a href="image-text.html">Site Sections</a>
-                                         <a href="footer.html">Footer</a>
-                            
+<a href="header.html">Header</a>
+<a href="jumbotron.html">Hero Section</a>
+<a href="optin-form.html">Optin-Form/Text Section</a>
+<a href="hero-section.html">Image/Text Section</a>
+<a href="layout-grids.html">Layout Grids</a>
+<a href="footer.html">Footer</a>
                                     </div>
                     
                                     <input type="checkbox" id="toggle2" class="toggle">
@@ -69,14 +72,16 @@
                                                         <a href="cards.html">Cards</a>
                                                         <a href="cookie-consent.html">Cookie Consent</a>
                                                         <a href="contact-form.html">Contact Form</a>
-                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="dropdown.html">Dropdown</a>                            
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
                                                         <a href="icon.html">Icon Container</a>
 
                                                                                               <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
+                                                        <a href="image-gallery.html">Image Gallery</a>
                                                         <a href="list-group.html">List Groups</a>
+                                                        <a href="logos.html">Logo Bar</a>
                                                         <a href="modal.html">Modal</a>
                                                         <a href="pagination.html">Pagination</a>
                                                         <a href="quiz.html">Quiz</a>
@@ -89,7 +94,7 @@
                     
                     
                                     <input type="checkbox" id="toggle5" class="toggle">
-                                    <label for="toggle5" class="title">CSS Modifiers</label>
+                                    <label for="toggle5" class="title">Site Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                                         <a href="padding-margin-utilities.html">Padding & Margin</a>
@@ -106,7 +111,7 @@
                                         <a href="breakpoints.html">Breakpoints</a>
                                         <a href="browser-support.html">Browser Support</a>
                                         <a href="overrides.html">Initialization Settings and ZenCSS Variables</a>
-                                    </div>
+                                        <a href="landing-page-example.html">Go from wires to development</a>                                    </div>
                                 </z-col>
                             </z-row>
                         </z-container>
@@ -126,9 +131,9 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1>ZEN (Zero Effort Nomenclature) CSS Framework Documentation</h1>
+                    <h1 class="headline">ZEN (Zero Effort Nomenclature)</h1>
                     <p>
-                        The zenCSS Framework encapsulates a unified approach to styling web applications, integrating the best practices from BEM, utility-first CSS, and atomic design. This system is designed for modularity, scalability, and clarity.
+                        The ZEN (Zero Effort Nomenclature) ideology presents a unified approach to styling web applications, integrating the best practices from BEM, utility-first CSS, and atomic design. This system is designed for modularity, scalability, and cross-team clarity.
                       </p>
                         <hr>
                 </div>
@@ -144,11 +149,15 @@
     <z-row>
         <z-col>
      
-                <section class="zen-introduction">
-                    <div class="alert-primary" role="alert">
-                        <strong>TL;DR:</strong> Layer styles from the most generic to the most specific, starting with type and state classes, followed by thematic and stylistic customizations.
-                      </div>
-                </section>
+          <section class="zen-practice">
+            <h2>Why practice ZEN? </h2>
+            <p>
+              ZEN's structured yet adaptable process simplifies UI development while ensuring consistency across the design. The "form before function" strategy facilitates easy design modification without overhauling foundational styles. Intuitive nomenclature reduces maintenance effort.
+            </p>
+            <p>
+              ZEN is ideal for both individual developers and teams, streamlining workflows and promoting efficiency and predictability. Adopt ZEN for a perfect blend of structure and flexibility in your web projects.
+            </p>
+          </section>
               
                 <section class="zen-core-principles">
                   <h2>Core Principles:</h2>
@@ -157,18 +166,23 @@
                     <h3>1. Hierarchical Structure:</h3>
                     <ul>
                       <li><strong>Elements:</strong> Basic building blocks such as images and buttons.</li>
-                      <li><strong>Components:</strong> Patterns like <code>z-col</code> that encapsulate elements.</li>
+                      <li><strong>Components:</strong> Items like a <code>card, modal or z-col</code> that encapsulate a series of elements.</li>
                       <li><strong>Sections:</strong> Groupings of components to form parts of a webpage.</li>
                     </ul>
-                    <p>Each layer is individually themable and customizable for consistent yet flexible styling.</p>
-                    <p><strong>Example:</strong> A <code>z-col</code> card component with text and buttons forming a section.</p>
+                    <p>Each unit above is individually themable and customizable for consistent yet flexible styling.</p>
+                    <p><strong>Example:</strong> A headline and text (elements), inside a z-col card (components), making up the right portion of a page content area (section). </p>
                   </article>
               
                   <article class="zen-modifiers">
-                    <h3>2. Modifiers:</h3>
-                    <p>Classes that define the appearance and behavior of the framework components.</p>
+                    <h3>2. Site Modifiers:</h3>
+                    <p>6 distinct types of classes that define the appearance and behavior of your website content.</p>
                     <p><strong>Order of application:</strong> Type → State → Theme → Background → Text → Style.</p>
-                    <p><strong>Example:</strong> <code>.card .inactive .theme-dark .bg-white .text-black .italic</code></p>
+
+                    <pre class="copy-text"><code class="language-html">&lt;z-col class="card inactive theme-dark bg-white text-black italic"&gt;
+    &lt;!-- Your content goes here --&gt;
+&lt;/z-col&gt;</code></pre>
+
+                    <small>Note: you'd rarely use all types of modifiers on the same piece of content. This example is for illustration purposes only.</small>
                   </article>
               
                   <article class="zen-state-management">
@@ -189,15 +203,7 @@
                   </article>
                 </section>
               
-                <section class="zen-practice">
-                  <h2>ZEN in Practice:</h2>
-                  <p>
-                    ZEN's structured yet adaptable framework simplifies the UI development process while ensuring consistency across the design. The "theme first" strategy facilitates easy theme switches without overhauling foundational styles. Intuitive nomenclature reduces maintenance effort.
-                  </p>
-                  <p>
-                    ZEN is ideal for both individual developers and teams, streamlining workflows and promoting efficiency and predictability. Adopt ZEN for a perfect blend of structure and flexibility in your UI development.
-                  </p>
-                </section>
+
            
               
     
@@ -244,7 +250,7 @@
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
-    <footer class="zen">
+    <footer>
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 

@@ -64,7 +64,6 @@ button.btn-ghost {
 }
 
 button.btn-ghost:hover {
-//color: $light-color;
   border: 2px solid darken($primary-color, 1%);
   background: none;
 }
@@ -76,14 +75,13 @@ button.btn-ghost:hover {
 //Touts
 .tout {
   border-radius: 8px;
-  padding: 0.6em 1em .5em 1em;
-  //margin: 2px;
+  padding: 0.3em 1em .3em 1em;
   overflow: hidden; 
   display: inline-block; 
-  line-height: 6px;
   background:$accent-color;
   position: relative;
   font-size: .6rem;
+  line-height: 9px;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   font-family: 'Inter', sans-serif;

@@ -30,29 +30,34 @@
                                     <input type="checkbox" id="toggle4" class="toggle">
                                     <label for="toggle4" class="title">Core Concepts</label>
                                     <div class="expanded-content d-flex flex-col">
+                                        <a href="getting-started.html">Getting Started</a>
                                         <a href="smart-align-framework.html">zenCSS Smart Align Framework</a>
+
                                         <a href="zentax.html">Intro to Zentax</a>
                                         <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
-                                        <a href="zen-system.html">Zero Effort Nomenclature</a>
-                                        <a href="landing-page-example.html">Go from wires to development</a>
-                                        <a href="test-mode.html">Visual Test Mode</a>
+                                        <a href="zen-system.html">ZEN Ideology</a>
                                     </div><input type="checkbox" id="toggle1" class="toggle">
                                     <label for="toggle1" class="title">Design System</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="themes.html">Themes</a>
-                                        <a href="background-colors.html">Background/Font Pairings</a>
+                                        <a href="background-colors.html">Smart-Color System</a>
                                         <a href="text-classes.html">Font Styles</a>
                                         <a href="text-colors.html">Font Color System</a>
+                                        <a href="test-mode.html">Visual Test Mode</a>
+
                                      
                                     </div>
                     
                                     <input type="checkbox" id="toggle3" class="toggle">
                                     <label for="toggle3" class="title">Site Sections</label>
                                     <div class="expanded-content d-flex flex-col">
-                                        <a href="header.html">Header</a>
-                                         <a href="hero-section.html">Hero</a>
-                                         <a href="image-text.html">Site Sections</a>
-                                         <a href="footer.html">Footer</a>
+<a href="header.html">Header</a>
+<a href="jumbotron.html">Hero Section</a>
+<a href="optin-form.html">Optin-Form/Text Section</a>
+<a href="hero-section.html">Image/Text Section</a>
+<a href="layout-grids.html">Layout Grids</a>
+<a href="footer.html">Footer</a>
+
                             
                                     </div>
                     
@@ -66,14 +71,16 @@
                                                         <a href="cards.html">Cards</a>
                                                         <a href="cookie-consent.html">Cookie Consent</a>
                                                         <a href="contact-form.html">Contact Form</a>
-                                                        <!--a href="dropdown.html">Dropdown</a-->
+                                                        <a href="dropdown.html">Dropdown</a>                            
                                                         <a href="form-elements.html">Form Elements</a>
                                                         <a href="responsive-table.html">HTML Table</a>
                                                         <a href="icon.html">Icon Container</a>
 
                                                                                               <a href="image.html">Images</a>
                                                         <a href="slider.html">Image Carousel</a>
+                                                        <a href="image-gallery.html">Image Gallery</a>
                                                         <a href="list-group.html">List Groups</a>
+                                                        <a href="logos.html">Logo Bar</a>
                                                         <a href="modal.html">Modal</a>
                                                         <a href="pagination.html">Pagination</a>
                                                         <a href="quiz.html">Quiz</a>
@@ -86,7 +93,7 @@
                     
                     
                                     <input type="checkbox" id="toggle5" class="toggle">
-                                    <label for="toggle5" class="title">CSS Modifiers</label>
+                                    <label for="toggle5" class="title">Site Modifiers</label>
                                     <div class="expanded-content d-flex flex-col">
                                         <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                                         <a href="padding-margin-utilities.html">Padding & Margin</a>
@@ -103,7 +110,7 @@
                                         <a href="breakpoints.html">Breakpoints</a>
                                         <a href="browser-support.html">Browser Support</a>
                                         <a href="overrides.html">Initialization Settings and ZenCSS Variables</a>
-                                    </div>
+                                        <a href="landing-page-example.html">Go from wires to development</a>                                    </div>
                                 </z-col>
                             </z-row>
                         </z-container>
@@ -123,7 +130,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1> Animation Utilities</h1>
+                    <h1 class="headline"> Animation Utilities</h1>
                     <p>
                         The Animation Utilities in zenCSS provide a way to easily add animations to your elements. These utilities include predefined keyframes and classes for common animations such as blinking, sliding, and fading. Below is a list of the available animation utilities along with a brief explanation of each.
                     </p>
@@ -144,7 +151,7 @@
 
     
     <!-- Slide Animations -->
-    <section>
+    <section class="slide-up">
         <h3>Slide Animations</h3>
         <p>
             Slide animations can be applied to move elements up, down, left, or right. The corresponding classes are <code>.slide-up</code>, <code>.slide-down</code>, <code>.slide-left</code>, and <code>.slide-right</code>.
@@ -153,7 +160,7 @@
     </section>
     
     <!-- Fade Animations -->
-    <section>
+    <section class="fade-in-2">
         <h3>Fade Animations</h3>
         <p>
             The fade animations create a series of classes with different animation delays. The classes range from <code>.fade-in-1</code> to <code>.fade-in-10</code>, each with increasing delay intervals.
@@ -162,30 +169,33 @@
     </section>
     
     <!-- Button Hover Animation -->
-    <section>
+    <section class="fade-in-3">
         <h3>Button Hover Animation</h3>
         <p>
             The <code>.btn-hover</code> class applies a slight upward translation to a button element when hovered.
         </p>
+        <p><button class="btn-hover">Hover Me</button></p>
       
     </section>
+                       <!-- Blink Animation -->
+                       <section>
+                        <h3>Blink Animation</h3>
+                        <p>
+                            The <code class="blink">.blink</code> class applies a blinking animation to the element. The animation makes the element alternate between fully opaque and fully transparent.
+                        </p>
     
+    
+                    </section>
     <!-- Fancy Animations -->
     <section>
-        <h3>Fancy Animations</h3>
+        <h3>Fancy Animations - Depricated</h3>
         <p>
             The <code>.fancy</code> and <code>.fancy-ghost</code> classes apply a set of transitions and transformations to create a lifted effect when the element is hovered or focused.
         </p>
-      
+        <p><button class="fancy">Hover Me</button></p>
+
     </section>
-                   <!-- Blink Animation -->
-                   <section>
-                    <h3>Blink Animation</h3>
-                    <p>
-                        The <code>.blink</code> class applies a blinking animation to the element. The animation makes the element alternate between fully opaque and fully transparent.
-                    </p>
-                
-                </section>
+
             </z-col>
         </z-row>
 
@@ -224,7 +234,7 @@
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
-    <footer class="zen">
+    <footer>
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 

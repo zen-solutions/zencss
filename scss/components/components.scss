@@ -89,45 +89,45 @@
     border-bottom: 1px solid $border-color;
   }
 
-  p{
-    margin:0;
+  p {
+    margin: 0;
   }
 
   .expanded-content {
     background-color: rgba(255, 255, 255, 0.1);
     margin: 0;
-    visibility: hidden; 
-    opacity: 0;  
+    visibility: hidden;
+    opacity: 0;
     padding-left: 15px;
     padding-right: 30px;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     max-height: 0;
     overflow: auto;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out; 
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
 
-    p{
-      border-bottom:0;
+    p {
+      border-bottom: 0;
     }
   }
 
-  .toggle:checked + .title + .expanded-content {
-    max-height: 16em;  
+  .toggle:checked+.title+.expanded-content {
+    max-height: 19em;
     padding: 15px;
-    opacity: 1; 
+    opacity: 1;
     visibility: visible;
     overflow: auto;
   }
 
-  a{
-    padding-bottom:.5em;
+  a {
+    padding-bottom: .5em;
     text-decoration: none;
-    padding-left:10px;
+    padding-left: 10px;
     margin-left: -24px;
   }
 
-  a:hover{
-background-color: rgba(111,111,111,.07); //dark mode top color
+  a:hover {
+    background-color: rgba(111, 111, 111, .07); //dark mode top color
 
   }
 }
@@ -143,6 +143,7 @@ background-color: rgba(111,111,111,.07); //dark mode top color
   margin: 0;
   border: 1px solid $border-color;
   transition: background-color 0.3s;
+  font-weight: 400;
   @include default-state;
   @include hover-state;
 }
@@ -177,79 +178,186 @@ background-color: rgba(111,111,111,.07); //dark mode top color
   overflow: hidden;
 }
 
-.toggle:checked + .title + .expanded-content {
-  max-height: 1000px; 
+.toggle:checked+.title+.expanded-content {
+  max-height: 1000px;
 }
 
 //-------------------------------------------------
 // dropdown menu
 //-------------------------------------------------
+
 .dropdown {
   position: relative;
   display: inline-block;
-  height: 32px;
-  margin-top: 10px;
-
-
-  .dropdown-toggle {
-    display: none;
-  }
-
-  .dropdown-label {
-    padding: 10px;
-    cursor: pointer;
-
-    //this is how we default style all the ui stuff moving forward
-    @include default-state;
-    @include hover-state;
-        background-color: $cta-color;
-
-        &:hover{
-          background-color: darken($cta-color, 10%);
-        }
-  }
-
-
-
-
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 11px);
-    right: 0;
-    z-index: 1;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border: 1px solid $border-color;
-    z-index: 1000;
-    border-radius: $border-radius;
-    min-width: 300px;
-   
-
-
-    .item {
-      padding: 1em 1.2em;
-      cursor: pointer;
-      @include default-state;
-      @include hover-state;
-    }
-  }
-
-  .dropdown-toggle:checked+.dropdown-label+.dropdown-menu {
-    display: block;
-  }
 }
 
-.dropdown-menu::before {
-  content: "";
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  left: -50px;
+  top: calc(100% + 40px);
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: $border-radius;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: .9em;
+}
+
+.dropdown-content.megamenu {
+  min-width: 750px;
+}
+
+
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  border-radius: $border-radius;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.dropdown-link-container {
+  position: absolute;
+  display: inline-block;
+  color: $dark-color;
+}
+
+.megamenu {
+  color: $var-black-text;
+  padding: 0;
+
+  a {
+    // background-color: $light-ui-hover-color;
+    padding: 5px;
+
+  }
+
+  a:hover {
+    // background-color: $light-ui-hover-color;
+    color: $var-black-text;
+    //text-decoration: underline;
+  }
+
+  h6 {
+    padding-left: 4px;
+  }
+
+}
+
+
+
+.caret-up {
+  width: 0;
+  height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #e4e4e4;
+  border-bottom: 10px solid #f9f9f9;
+  position: absolute;
+  top: calc(100% + 10px);
+  /* Adjust if needed */
+  left: 20px;
+  /* Adjust to align with the dropdown link */
+  transform: translateY(-100%);
+  z-index: 10;
+
+  left: 20px;
+  /* Adjust this value to align the caret as needed */
+  transform: translateY(-100%);
+  display: none;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 140%;
+  /* Adjust if needed, considering the caret size */
+
+}
+
+.dropdown-content a:hover {
+  //background-color: $light-ui-hover-color;
+  text-decoration: underline;
+
+}
+
+/* Style to show the dropdown menu */
+
+// .dropdown .dropdown-toggle:checked ~ .dropdown-menu {
+//   display: block;
+// }
+
+// .dropdown {
+//   position: relative;
+//   display: inline-block;
+//   height: 32px;
+//   margin-top: 10px;
+
+
+//   .dropdown-toggle {
+//     display: none;
+//   }
+
+//   .dropdown-label {
+//     padding: 10px;
+//     cursor: pointer;
+//     position: relative;
+//     //this is how we default style all the ui stuff moving forward
+//     @include default-state;
+//     @include hover-state;
+//         //background-color: $cta-color;
+
+//         &:hover{
+//           background-color: darken($cta-color, 10%);
+//         }
+//   }
+
+
+
+
+//   .dropdown-menu {
+//     display: none;
+//     position: absolute;
+//     top: 100%; 
+//     left: 0;
+//     z-index: 1000;
+//     background-color: #f9f9f9;
+//     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//     border: 1px solid rgba(111,111,111,0.35);
+//     border-radius: 4px;
+//     min-width: 300px;
+
+
+
+//     .item {
+//       padding: 1em 1.2em;
+//       cursor: pointer;
+//       @include default-state;
+//       @include hover-state;
+//     }
+//   }
+
+//   .dropdown-toggle:checked+.dropdown-label+.dropdown-menu {
+//     display: block;
+//   }
+// }
+
+// .dropdown-menu::before {
+//   content: "";
+//   position: absolute;
+//   top: -10px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   border-left: 10px solid transparent;
+//   border-right: 10px solid transparent;
+//   border-bottom: 10px solid #e4e4e4;
+// }
 
 
 //-------------------------------------------------
@@ -264,12 +372,18 @@ background-color: rgba(111,111,111,.07); //dark mode top color
     flex-basis: 95%;
     gap: 1;
 
-    p, h1, h2, h3, h4, h5, h6 {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin-top: 0;
       margin-bottom: 0;
-      padding-top:0;
+      padding-top: 0;
       line-height: 1.7em;
-           letter-spacing: normal;
+      letter-spacing: normal;
     }
   }
 
@@ -342,9 +456,10 @@ blockquote em {
 .slider {
   position: relative;
   width: 100%;
-  height:auto;
+  height: auto;
   overflow: hidden;
 }
+
 .slides-container {
   display: flex;
 
@@ -357,6 +472,7 @@ blockquote em {
   background-size: cover;
   background-position: center;
 }
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -366,9 +482,11 @@ blockquote em {
   cursor: pointer;
   opacity: .4;
 }
+
 .prev {
   left: 10px;
 }
+
 .next {
   right: 10px;
 }
@@ -384,16 +502,16 @@ blockquote em {
   border: 1px solid $border-color;
   display: none;
   padding: 1em;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 .wizard-step.active {
-  display: block; 
+  display: block;
 }
 
 //wizard step used as form
 .wizard-step {
-  label{
+  label {
     display: block;
     padding: .45em;
   }
@@ -404,6 +522,7 @@ blockquote em {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -416,9 +535,12 @@ blockquote em {
 
 //do we need this anymore?
 .card-split {
-  position: relative; /* Ensure the positioning context is set for children */
-  overflow: hidden; /* Let the child image be visible outside the bounds */
+  position: relative;
+  /* Ensure the positioning context is set for children */
+  overflow: hidden;
+  /* Let the child image be visible outside the bounds */
 }
+
 // //testing fs image card
 // .image-group {
 //   position: absolute; /* Position absolutely to break out of the flow */
@@ -446,17 +568,21 @@ blockquote em {
 // Image classes - responsive/round/rounded/outline
 //-------------------------------------------------
 .img-responsive {
-  flex-shrink: 0; /* Prevents the image from shrinking */
-  max-width: 100%; /* Ensures the image is no wider than its container */
-  height: auto; /* Maintains the aspect ratio */
-  object-fit: contain; /* Ensures the image scales correctly within its bounds */
+  flex-shrink: 0;
+  /* Prevents the image from shrinking */
+  max-width: 100%;
+  /* Ensures the image is no wider than its container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  object-fit: contain;
+  /* Ensures the image scales correctly within its bounds */
 
 }
 
 .img-round {
   border-radius: 50%;
-   max-width:100%;
-  height:auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-rounded {
@@ -478,4 +604,12 @@ blockquote em {
 //circle - duplicate class declaration - needed as workaround for border radius being set in themes
 .icon-circle {
   border-radius: 50%;
+}
+
+.hidden, .d-none{
+  display: none !important;
+}
+
+.visible{
+  display:block !important;
 }

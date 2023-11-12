@@ -39,7 +39,6 @@ body.zen-dark {
   --primary-color-light: #3a3b3c;
   --toggle-color: #fff;
   --text-color: #ccc !important;
-  color: #c9c9c9;
 }
 
 .sidebar {
@@ -414,50 +413,13 @@ nav {
   color: #dddddd !important;
 }
 
-.image-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(77, 136, 1, 0.2);
-  z-index: 1;
-}
-
 
 
 .hp-down-arrow {
   position: relative;
-  top: 87px;
-  left: 397px;
-}
+  top: 31px;
+  left: -12px;
 
-@media (max-width: 1199px) {
-  .hp-down-arrow {
-    top: 87px;
-    left: 320px;
-  }
-}
-
-@media (max-width: 992px) {
-  .hp-down-arrow {
-    top: 91px;
-    left: 199px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hp-down-arrow {
-    top: 85px;
-    left: 117px;
-  }
-}
-
-@media (max-width: 592px) {
-  .hp-down-arrow {
-    display: none;
-  }
 }
 
 

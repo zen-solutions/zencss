@@ -26,6 +26,7 @@ z-container-fluid, .z-container-fluid,
   flex-grow: 1;
 }
 
+
 //--------------------------------
 // z-row
 //--------------------------------
@@ -39,7 +40,7 @@ flex-wrap: wrap; //nowrap is interesting too
 gap: 1em;
 padding-top: .5em; // removed via js when nesting logic applied
 padding-bottom: .5em;// removed via js when nesting logic applied
-flex-grow: 1; // added for nesting logic. testing to make sure it doesnt break anything
+flex-grow: 1; 
 }
 
 .z-row-vcenter {
@@ -55,6 +56,7 @@ z-row > *, .z-row > * {
   align-items: flex-start;
   justify-content: space-between;
 }
+
 
 //--------------------------------
 // z-col
@@ -73,9 +75,9 @@ z-col, .z-col {
 }
 
 .z-col > *, z-col > * {
-  //gap: 1rem;
+  //gap: 1rem; // same as below but for framework
   max-width: 100%;
-  width:100%; // for the next time you circle back to this. last time you took this out it broke nav, colors, etc. so leave it. 
+  width:100%; // for the next time you circle back to this. last time you took this out it broke nav, colors, etc. so leave it and workaround whatever issue brought you here. 
 }
 
 .z-col > span, z-col > span {
@@ -86,7 +88,3 @@ z-col :has(z-row), .z-col :has(.z-row) {
   margin-left: 0;
   margin-right: 0;
 }
-
-
-
-

@@ -1,25 +1,9 @@
-  //--------------------------------------------------------------
-  // Initialize zenCSS
-  //--------------------------------------------------------------
+//--------------------------------------------------------------
+// Initialize zenCSS
+//--------------------------------------------------------------
 
- //regular
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display&display=swap');
-  //script
-  @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-  //headline
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
-  //mono
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-  //display
-  @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-  //handwriting
-  @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
-    //emoji
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
-    //flashy
-    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-    //pixel
-    // @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+// All fonts imported for demo purposes - only import the few you use
+@import 'core/fonts.scss';
 
   //vars
   $zen-font-size: 15px;
@@ -52,13 +36,13 @@
       text-rendering: optimizeLegibility; /* Improves text rendering */
   }
 
-  //color
-  background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
-  background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  //color - need to refine so it looks good on new pages before rolling out
+  // background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
+  // background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
 
     //--------------------------------------------------------------
     // Load core files
@@ -99,6 +83,7 @@
     //@import 'optional/card.scss';
     @import 'optional/decoration.scss';
     @import 'optional/animation.scss';
+    @import 'optional/image-gallery.scss';
 
     //marketing
     //@import 'marketing/pricing-table.scss';
@@ -161,7 +146,7 @@
     }
 
     header,footer{
-      background: #1e1e1e ;
+      background: #191919 ;
     }
 
 
@@ -173,7 +158,7 @@
     }
 
     a {
-      color:  $zen-dark-text-color !important;
+      color:  $zen-dark-text-color;
       cursor: pointer;
       text-decoration: underline;
     }
@@ -183,7 +168,7 @@
     }
     
     a:hover {
-     color: darken( $zen-dark-text-color, 10%);
+     color: #808080;
      text-decoration: none;
     }
 }

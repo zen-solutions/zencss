@@ -75,6 +75,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: $bg-header-footer;
 }
 
 nav li {
@@ -82,7 +83,7 @@ nav li {
 }
 
 nav a {
-    //color: #fff;
+    color: $nav-link-color;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -131,8 +132,3 @@ nav a:hover {
         right: 10px;
     }
 }
-
-nav{
-    top: 63px;
-  }
-  
