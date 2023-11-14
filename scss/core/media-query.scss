@@ -1,4 +1,10 @@
-@use "sass:math";
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  @use "sass:math";
 
 .two-up {
   display: flex;
@@ -67,7 +73,7 @@
 }
 
 .eight-up > * {
-  flex: 0 0 11.119% !important;
+  flex: 0 0 11.27% !important;
 }
 
 
@@ -266,6 +272,7 @@ left:10px;
     margin-right: 1em;
 }
 
+
 .mobile-square{
   border-radius: 0;
 }
@@ -323,4 +330,10 @@ left:10px;
 .six-up > * {
   flex: 0 0 31.853% !important;
 }
+}
+
+
+.col-nested{
+  margin-left: 0;
+  margin-right: 0;
 }

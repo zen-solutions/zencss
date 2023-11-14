@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 //--------------------------------------------------------------
 // Initialize zenCSS
 //--------------------------------------------------------------
@@ -9,7 +15,7 @@
   $zen-font-size: 15px;
   $zen-tablet-mobile-font-size: 14px;
   $zen-large-screen-font-size: 16px;
-  $zen-font-family:  "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $zen-font-family:  "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   $zen-body-bg-color:#d7d7d7;
   $zen-dark-text-color: #f0f0f0;
   $zen-dark-link-color: #f0f0f0;
@@ -24,6 +30,7 @@
     font-size: $zen-font-size;
     color: #4a4a4a;
     font-weight: 300;
+  
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -37,12 +44,12 @@
   }
 
   //color - need to refine so it looks good on new pages before rolling out
-  // background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
-  // background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
+  background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
 
     //--------------------------------------------------------------
     // Load core files
@@ -56,8 +63,8 @@
     @import 'marketing/marketing-promos.scss';
     @import 'design/themes.scss';
     @import 'core/header.scss';
-    @import 'components/form.scss';
-    @import 'components/slider.scss';
+    @import 'vortex/form.scss';
+    @import 'vortex/slider.scss';
     @import 'design/buttons.scss';
     @import 'core/flex.scss';
     @import 'optional/table.scss';
@@ -67,8 +74,8 @@
     @import 'design/bg-color.scss';
     @import 'design/border-color.scss';
     @import 'design/text-color.scss';
-    @import 'components/test.scss';
-    @import 'components/components.scss';
+    @import 'vortex/test.scss';
+    @import 'vortex/components.scss';
     @import 'design/layouts.scss';
     @import 'core/footer.scss';
     @import 'core/wip.scss';
@@ -97,7 +104,7 @@
     //--------------------------------------------------------------
     @import 'core/media-query.scss';
    // @import 'optional/stacking.scss';
-    @import 'components/margin-padding.scss';
+    @import 'vortex/margin-padding.scss';
 
 
     //--------------------------------------------------------------
@@ -141,9 +148,9 @@
     // background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     // opacity 0.55s ease;
 
-    nav{
-      background: #1e1e1e ;
-    }
+    // nav{
+    //   //background: #1e1e1e ;
+    // }
 
     header,footer{
       background: #191919 ;

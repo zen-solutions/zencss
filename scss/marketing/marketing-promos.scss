@@ -1,5 +1,11 @@
 
-$primary-color: $primary-color;
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  $primary-color: $primary-color;
 $cta-color: $cta-color;
 
 .promo-banner {
@@ -11,7 +17,7 @@ $cta-color: $cta-color;
     line-height: normal;
     word-wrap: break-word;
     white-space: normal;
-    padding: 20px;
+    padding: 5px;
 
     &-text {
         color: #fff;

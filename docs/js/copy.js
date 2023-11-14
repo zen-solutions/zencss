@@ -27,15 +27,6 @@ preElements.forEach(function (textBox)
 });
 
 
-//fix for the code formatter breaking alignment on mobile
-document.addEventListener('DOMContentLoaded', function() {
-	if (window.matchMedia('(max-width: 767px)').matches) {
-		var elements = document.querySelectorAll('.language-html');
-		for (var i = 0; i < elements.length; i++) {
-			elements[i].classList.remove('language-html');
-		}
-	}
-  });
 
 
   //fix for hamburger broken on docs

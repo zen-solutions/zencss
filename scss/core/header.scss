@@ -1,6 +1,10 @@
-//-----------------------------------------
-// Header - Moved from footer (ie the new header)
-//-----------------------------------------
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+
 header {
     display: flex;
     justify-content: space-between;
@@ -31,14 +35,29 @@ header {
       align-self: center;
     }
     
-    nav a {
-    //color: $light-color;
+    nav :link {
+    color: $light-color;
     text-decoration: none;
     }
     
     nav a:hover {
       text-decoration: underline;
       }
+
+      .nav-dropdown{
+        padding:1em .5em;
+        .dropdown-content{
+            top:115%;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .caret-up{
+            top: calc(100% + 12px);
+        }
+      }s
       
 //-----------------------------------------
 // Mobile
@@ -75,7 +94,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: $bg-header-footer;
+    //background-color: $bg-header-footer;
 }
 
 nav li {

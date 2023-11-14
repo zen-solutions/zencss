@@ -1,0 +1,14 @@
+<z-container>
+    <z-row>
+        <z-col>
+            <div class="accordion">
+                <a href="#" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Code Example</a>
+                <div id="content1" class="expanded-content" aria-hidden="true">
+                    <pre class="copy-text"><code class="language-html">
+
+                    </code></pre>
+                </div>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>

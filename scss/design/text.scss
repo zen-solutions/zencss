@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 //----------------------
 //fonts /base, script, serif, headline
 //----------------------
@@ -48,7 +54,7 @@
 //   }
 
   .lead{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: -0.8em;
   }
   
@@ -401,6 +407,15 @@
         border-bottom-right-radius: 8px;
     }
 }
+
+
+//underlines
+.text-gradient {
+    background-image: linear-gradient(120deg,   #1b64b2 0%, rgb(18, 56, 121) 100%);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make the text color transparent */
+  }
 
 // ------------------------------------------ 
 // Text Type class

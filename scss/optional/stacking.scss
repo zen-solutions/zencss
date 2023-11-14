@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 // Define common styles for all stack z-containers
 @mixin stack-z-container {
   flex-direction: column !important; //only need cause of important in media query. solve those, remove this. 

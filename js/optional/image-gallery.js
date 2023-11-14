@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+
 document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.querySelector('.image-gallery');
     const modal = document.querySelector('z-modal');
@@ -70,12 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updatePaginationNav() {
-        paginationNav.innerHTML = '<a href="#" class="item" data-page="prev">Previous</a>';
+        paginationNav.innerHTML = '<a href="#" class="item" data-page="prev">&laquo;</a>';
         for (let i = 1; i <= totalPages; i++) {
             const classCurrent = i === currentPage ? 'current' : '';
             paginationNav.innerHTML += `<a href="#" class="item ${classCurrent}" data-page="${i}">${i}</a>`;
         }
-        paginationNav.innerHTML += '<a href="#" class="item" data-page="next">Next</a>';
+        paginationNav.innerHTML += '<a href="#" class="item" data-page="next">&raquo;</a>';
     }
 
     paginationNav.addEventListener('click', function (event) {

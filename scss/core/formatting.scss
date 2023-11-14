@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 //-------------------------------------------------
 // undocumented
 //-------------------------------------------------
@@ -43,25 +49,25 @@
 //BUG
 // up 20 should do margin-bottom: 20px; not margin top - 20 for some reason. test this.
 
-.up-1 {
-  position: relative;
-  bottom: 1px;
-}
+// .up-1 {
+//   position: relative;
+//   bottom: 1px;
+// }
 
-.down-1 {
-  position: relative;
-  top: 1px;
-}
+// .down-1 {
+//   position: relative;
+//   top: 1px;
+// }
 
-.up-5 {
-  position: relative;
-  bottom: 5px;
-}
+// .up-5 {
+//   position: relative;
+//   bottom: 5px;
+// }
 
-.down-5 {
-  position: relative;
-  top: 5px;
-}
+// .down-5 {
+//   position: relative;
+//   top: 5px;
+// }
 
 // Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
 @for $i from 1 through 5 {
@@ -91,6 +97,37 @@
     right: #{$value}px !important;
   }
 }
+
+// Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
+@for $i from 1 through 9 {
+  $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
+
+  // Generating classes for negative margin-top (moving up)
+  .up-#{$value} {
+    position: relative;
+    top: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-top (moving down)
+  .down-#{$value} {
+    position: relative;
+    top: #{$value}px !important;
+  }
+
+  // Generating classes for negative margin-left (moving left)
+  .left-#{$value} {
+    position: relative;
+    left: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-right (moving right)
+  .right-#{$value} {
+    position: relative;
+    right: #{$value}px !important;
+  }
+}
+
+
 
 //----------------------------------------------------
 /* Width and height */
@@ -127,6 +164,11 @@ $sizes: (
   400:400px,
   450:450px,
   500:500px,
+  600:600px,
+  700:700px,
+  800:800px,
+  900:900px,
+  1000:1000px,
 );
 
 @each $key, $value in $sizes {

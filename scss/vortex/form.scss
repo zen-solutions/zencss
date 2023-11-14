@@ -1,0 +1,161 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+ 
+  // Mixin for styling input fields, textarea, and select elements
+@mixin input-styles {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $light-color;
+    border-radius: $border-radius;
+    color: dark-color;
+   // outline: none;
+}
+
+// Mixin for styling button elements
+@mixin button-styles {
+    padding: 10px 20px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $cta-color;
+    color: $light-color;
+    font-size: 16px;
+    cursor: pointer;
+    //outline: none;
+
+    &:hover {
+        background: darken($cta-color, 10%);
+    }
+}
+
+form {
+   // margin: auto;
+    padding: 1em;
+    //padding-top:10px;
+    //border: 1px solid $primary-color;
+
+     fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: none;
+    }
+
+    p {
+        margin-bottom:1em;
+    }
+
+    label {
+        display: block;
+        margin-top: 2px;
+        //color: $primary-color;
+    }
+
+    /* Style the input fields, textarea, and select elements */
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="color"],
+    input[type="range"],
+    textarea,
+    select {
+        @include input-styles;
+    }
+
+input[type=text],input[type="email"], input[type="tel"]{
+    padding-top: 12px !important;
+}
+
+    input[type="color"] {
+        height: 200px;
+
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    /* Style the button elements */
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button {
+        margin-left:-1px;
+        @include button-styles;
+    }
+
+    input[type="file"] {
+        @include input-styles;
+        border:none;
+
+    }
+
+    output {
+        display: block;
+        margin-bottom: 10px;
+        color: $primary-color;
+    }
+}
+
+form select, form input[type="date"], form input[type=datetime-local], form input[type=time ], form input[type=week], form input[type=month]{
+    color:$dark-color;
+}
+
+.form-footer{
+    font-size: .7rem;
+    display: block;
+    margin-top: 1em;
+    opacity: .5;
+}
+//-------------------------------
+// SHRINKING FORM LABELS
+//-------------------------------
+
+form div {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $border-color;
+    color: $dual-mode-text-color;
+
+  }
+  
+  .form-container form label {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    font-size: .8em;
+    color: $dark-color !important;
+    transition: 0.3s all;
+  }
+  
+  /* Shrink and move label on input focus or if there is content in the input field */
+  form input:focus + label,
+  form input:not(:placeholder-shown) + label {
+    top: -1px;
+    left:6px;
+    font-size: 9px;
+    color: #b9b9b9 !important;
+  }
+  
+  input[type=checkbox], input[type=radio] {
+    width: 12px;
+    height: 12px;
+    min-height: 12px;
+}

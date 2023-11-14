@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 // Define the transition mixin
 @mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
   transition: $properties $duration $ease;
@@ -46,14 +52,13 @@
     color: red !important;
   }
 
-  // Your existing .tout class styles would go here
 }
 
 // Your themes map
 //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $tout-bg-color, $tout-text-color
 $themes: (
   primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
-  dark: (#4a4a4a, #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
+  dark: (#5d5d5d, #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
   light: (rgba(255, 255, 255, 0.25), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
   cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
   accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
@@ -83,10 +88,16 @@ $themes: (
   color: unset;
 }
 
-//--------- OVERRIDES FOR TEXT NEEDING TO BE SWITCHED
-.theme-primary a, .theme-dark a, .theme-primary .btn-fill , .theme-cta .btn-fill {
+//--------- OVERRIDES FOR TEXT NEEDING TO BE SWITCHED/WCAG COMPLIANCE
+.theme-primary a,.theme-secondary a, .theme-dark a, .theme-primary .btn-fill , .theme-cta .btn-fill,.theme-secondary .btn-fill {
   color: white;
 }
+
+.theme-accent a,.theme-accent .btn-fill{
+  color:$dark-color;
+}
+
+
 
 .theme-dark.accent-left {
   border-left: 10px solid $primary-color;

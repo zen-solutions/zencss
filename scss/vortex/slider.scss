@@ -1,0 +1,42 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  .slider {
+  position: relative;
+  width: 100%; 
+  overflow: hidden;
+}
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%; 
+  transition: transform 0.5s ease;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+// Make arrows bigger on smaller screens for easier tapping 
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 30px;
+    padding: 15px;
+  }
+}

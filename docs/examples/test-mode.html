@@ -5,14 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/documentation.css">
+
    <link rel="stylesheet" href="../../css/zen.css">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
-
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <img src="../../img/logo.png" alt="Logo">
+        </div>
+        <div class="docs-nav">
+            <button id="hamburger-button">☰</button>
+        </div>
+        <nav>
+            <button id="close-button">×</button>
+            <ul class="pr-2">
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Concepts</a>
+                    <div class="dropdown-content">
+                        <a href="what-is-zencss.html">What Is zenCSS?</a>
+                    <a href="getting-started.html">Installation</a>
+                        <a href="zen-system.html">ZEN Ideology</a>
+                        <a href="zentax.html">Intro to Zentax</a>
+                        <a href="bootstrap-test.html">zenCSS + Bootstrap</a>
+                        <a href="breakpoints.html">Breakpoints</a>
+                        <a href="browser-support.html">Browser Support</a>
+                        <a href="landing-page-example.html">From Wires to Dev</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Design System</a>
+                    <div class="dropdown-content">
+                        <a href="smart-align-framework.html">Smart-Align Framework</a>
+                        <a href="smart-color-system.html">Smart-Color System</a>
+                        <a href="themes.html">Themes</a>
+                        <a href="smart-text.html">Smart-Text System</a>                        
+                        <a href="text-classes.html">Font Styles</a>
+                      <a href="text-colors.html">Font Colors</a>
+                        <a href="test-mode.html">Visual Test Mode</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Modifiers</a>
+                    <div class="dropdown-content">
+                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                        <a href="padding-margin-utilities.html">Padding & Margin</a>
+                        <a href="animations.html">Animation Utilities</a>
+                        <a href="formatting.html">Gap, Height, and Width</a>
+                        <a href="flex.html">Flex</a>
+                        <a href="test-classes.html">Test Classes</a>
+                        <a href="border-utilities.html">Border Classes</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Site Sections</a>
+                    <div class="dropdown-content">
+                        <a href="header.html">Header</a>
+                        <a href="jumbotron.html">Hero Section</a>
+                        <a href="optin-form.html">Optin-Form/Text Section</a>
+                        <a href="hero-section.html">Image/Text Section</a>
+                        <a href="layout-grids.html">Layout Grids</a>
+                        <a href="footer.html">Footer</a>
+                    </div>
+                </div>
+                <div class="dropdown p-4">
+                    <a href="#" class="dropdown-link">Site Parts</a>
+                    <div class="dropdown-content megamenu">
+                        <z-container class="ml-3">
+                            <z-row>
+                                <z-col class="small">
+                                    <a href="toggle.html">Accordian</a>
+                                    <a href="alerts.html">Alert Messages</a>
+                                    <a href="buttons.html">Buttons</a>
+                                    <a href="breadcrumb.html">Breadcrumbs</a>
+                                    <a href="cards.html">Cards</a>
+                                    <a href="cookie-consent.html">Cookie Consent</a>
+                                    <a href="contact-form.html">Contact Form</a>
+                                    <a href="dropdown.html">Dropdown</a>
+                                </z-col>
+                                <z-col class="small">
+                                    <a href="form-elements.html">Form Elements</a>
+                                    <a href="responsive-table.html">HTML Table</a>
+                                    <a href="icon.html">Icon Container</a>
+                                    <a href="image.html">Images</a>
+                                    <a href="slider.html">Image Carousel</a>
+                                    <a href="image-gallery.html">Image Gallery</a>
+                                    <a href="list-group.html">List Groups</a>
+                                    <a href="logos.html">Logo Bar</a>
+                                </z-col>
+                                <z-col class="small">
+                                    <a href="modal.html">Modal</a>
+                                    <a href="pagination.html">Pagination</a>
+                                    <a href="quiz.html">Quiz</a>
+                                    <a href="decorations.html">Site Icons</a>
+                                    <a href="testimonials.html">Testimonials</a>
+                                    <a href="tooltip.html">Tool Tips</a>
+                                    <a href="tabs.html">Tabs</a>
+                                    <a href="wizard.html">Wizard</a>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
 
 
     <!----------------------------------------------------------------------->
@@ -69,35 +168,73 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
-    <z-container>
-        <z-row>
-            <z-col>
-                <h1 class="headline">lorem ipsum</h1>
-              <p>1 column. 100% width</p>
+    <z-container-fluid class="z-container-fluid-outline-on center mb-3">
+        <p>this is a container-fluid</p>
+    </z-container-fluid>
+        <z-container class="z-container-outline-on center mb-3">
+        <p>this is a container</p>
+    </z-container>
+
+<z-container class="z-container-outline-on mb-3">
+    <z-row class="z-row-outline-on center">
+        <p>This is a nested row.  </p>
+    </z-row>
+</z-container>
+
+<z-container class="z-container-outline-on">
+    <z-row class="z-row-outline-on">
+        <z-col class="z-col-outline-on center">
+            this is a nested column.  Columns expand or contract automatically. 100% width by default. 
+          </z-col>
+    </z-row>
+</z-container>
+
+<z-container class="z-container-outline-on mt-3">
+    <z-row class="z-row-outline-on">
+        <z-col class="z-col-outline-on">
+            <p class="p-outline-on center"> this is a nested paragraph
+            </p>
+        </z-col>
+    </z-row>
+</z-container>
+
+<z-container>
+    <z-row>
+        <z-col>
+            <p>A simple page layout might look something like this. Note: all col widths are dynamic based on how many siblings they have.</p>
+            <p>Rows and colums align in perfect harmony at all resolutions.</p>
+        </z-col>
+    </z-row>
+</z-container>
+
+    <z-container class="z-container-outline-on">
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+              <p class="p-outline-on">1 column. 100% width</p>
             </z-col>
         </z-row>
-        <z-row>
-            <z-col>
-                <h2>lorem ipsum</h2>
-                <p>1 column. 50% width, 100% width at mobile</p>
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on">1 column. 50% width, 100% width at mobile</p>
             </z-col>
-            <z-col>
-                <h2>lorem ipsum</h2>
-                <p>1 column. 50% width, 100% width at mobile</p>
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on">1 column. 50% width, 100% width at mobile</p>  
               </z-col>
         </z-row>
-        <z-row>
-            <z-col>
-             <p> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>
+        <z-row class="z-row-outline-on">
+            <z-col class="z-col-outline-on">
+              <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>    
             </z-col>
-            <z-col>
-                <p>1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>
+            <z-col class="z-col-outline-on">
+                <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>  
             </z-col>
-              <z-col>
-                <p>1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p>
+              <z-col class="z-col-outline-on">
+                <p class="p-outline-on"> 1 column. 33% width, 50/100% width on tablet, 100% width on mobile</p> 
             </z-col>
         </z-row>
     </z-container>
+
+
 <!----------------------------------------------------------------------->
     <!--- Zen Test --->
     <!----------------------------------------------------------------------->

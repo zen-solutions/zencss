@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 //--------------------------------
 // z-container
 //--------------------------------
@@ -75,7 +81,6 @@ z-col, .z-col {
 }
 
 .z-col > *, z-col > * {
-  //gap: 1rem; // same as below but for framework
   max-width: 100%;
   width:100%; // for the next time you circle back to this. last time you took this out it broke nav, colors, etc. so leave it and workaround whatever issue brought you here. 
 }

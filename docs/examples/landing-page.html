@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-   <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/zen.css">
+
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
@@ -27,7 +28,9 @@
                 <div class="pl-2" id="header-logo">
                     <img src="../../img/logo.png" alt="Logo">
                 </div>
-                <button id="hamburger-button">☰</button>
+                <div class="docs-nav" >
+<button id="hamburger-button">☰</button>
+</div>
                 <nav>
                     <button id="close-button">×</button>
                     <ul class="pr-2">
@@ -59,7 +62,23 @@
 </z-container>
 
 <!-- b spot - logos -->
+<z-container class="theme-light square">
+    <z-row>
 
+        <z-col>
+            <img src="../../docs/images/logos/1.svg" class="flex-grow-1 w-150 center-me opacity-50 logo-bar-logo" alt="">
+        </z-col>
+        <z-col>
+            <img src="../../docs/images/logos/2.svg"class="flex-grow-1 w-150 center-me opacity-50 logo-bar-logo"  alt="">
+        </z-col>
+        <z-col>
+            <img src="../../docs/images/logos/5.svg"class="flex-grow-1 w-150 center-me opacity-50 logo-bar-logo"  alt="">
+        </z-col>
+        <z-col>
+            <img src="../../docs/images/logos/6.svg"class="flex-grow-1 w-150 center-me opacity-50 logo-bar-logo"  alt="">
+        </z-col>
+    </z-row>
+</z-container>
 <!-- c spot - text/image section -->
 
 <z-container class="theme-light site-section square">
@@ -72,7 +91,7 @@
                 </div>
             </z-col>
             <z-col>
-                <img src="../../img/placeholder/scottwebb.png" alt="">
+                <img src="../../img/placeholder/16x9/bailey-burton.jpg" alt="">
             </z-col>
         </z-row>
 </z-container>
@@ -82,19 +101,19 @@
 <z-container class="theme-light site-section pt-0 p-5">
     <z-row>
   
-            <z-col class="card theme-primary">
+            <z-col class="card theme-cta">
                 <img src="../../img/placeholder/crop/c.jpg">
                 <h4>A title goes here</h4>
                 <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
               </z-col>
 
-              <z-col class="card theme-primary">
+              <z-col class="card theme-cta">
                 <img src="../../img/placeholder/crop/a.jpg">
                 <h4>A title goes here</h4>
                 <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
               </z-col>
 
-              <z-col class="card theme-primary">
+              <z-col class="card theme-cta">
                 <img src="../../img/placeholder/crop/b.jpg">
                 <h4>A title goes here</h4>
                 <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
@@ -187,7 +206,7 @@
                    
 
                 </div>
-                <div><small class="text-grey-2 smallest">Copyright 2023, zenCSS -  <a id="toggleButton">Toggle zen test</a> <a id="toggleDarkModeButton">Toggle dark mode</a></small></div>
+                <div><small class="text-grey-2 smallest">Copyright 2023, zenCSS -  <a id="toggleButton">Toggle zen test</a> </small></div>
             </footer>
         </z-col>
     </z-row>

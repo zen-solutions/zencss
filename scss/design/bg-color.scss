@@ -1,3 +1,9 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
 // Default Background Colors
 $bg-default-colors: (
   "primary": $primary-color,
@@ -65,21 +71,21 @@ $bg-light-colors: (
 
 @each $bg-key in map-keys($bg-default-colors) {
   .bg-#{$bg-key} {
-    background: map-get($bg-default-colors, $bg-key);
+    background: map-get($bg-default-colors, $bg-key) !important;
     
     @if map-has-key($text-default-colors, $bg-key) {
-      color: map-get($text-default-colors, $bg-key);
+      color: map-get($text-default-colors, $bg-key) !important;
     }
   }
 
   .bg-#{$bg-key}-dark {
-    background: map-get($bg-dark-colors, $bg-key + "-dark");
-    color: map-get($text-dark-colors, $bg-key + "-dark");
+    background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
   }
 
   .bg-#{$bg-key}-light {
-    background: map-get($bg-light-colors, $bg-key + "-light");
-    color: map-get($text-light-colors, $bg-key + "-light");
+    background: map-get($bg-light-colors, $bg-key + "-light") !important;
+    color: map-get($text-light-colors, $bg-key + "-light") !important;
   }
 }
 

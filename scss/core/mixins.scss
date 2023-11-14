@@ -1,4 +1,10 @@
-@mixin default-state {
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  @mixin default-state {
     //color: $text-black;
     background-color: $dual-mode-bg-color;
 }

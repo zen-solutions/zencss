@@ -1,0 +1,8 @@
+$opacity-levels: 0.85, 0.70, 0.50, 0.25, 0.10, 0.5;
+
+@for $i from 1 through length($opacity-levels) {
+  .opacity-#{$i} {
+    opacity: nth($opacity-levels, $i);
+  }
+}
+
