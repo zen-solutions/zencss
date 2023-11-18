@@ -183,6 +183,8 @@
   & .z-col, z-col {
     flex-basis: calc(25% - 20px) !important;
   }
+
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -303,9 +305,17 @@ left:10px;
   
 }
 
+.narrow{
+  padding-left:20%;
+  padding-right:20%;
+}
+
 @media (max-width: 992px) {
 
-
+  .narrow{
+    padding-left:unset;
+    padding-right:unset;
+  }
   .reverse-tablet> :nth-z-col(1) {
     order: 2;
   }
@@ -330,6 +340,11 @@ left:10px;
 .six-up > * {
   flex: 0 0 31.853% !important;
 }
+
+.border-right{
+  border-right: 0;
+}
+
 }
 
 
@@ -337,3 +352,5 @@ left:10px;
   margin-left: 0;
   margin-right: 0;
 }
+
+

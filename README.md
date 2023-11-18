@@ -4,8 +4,6 @@ An open-source, website authoring and design toolkit that helps you build, style
 
 Download or clone this repo and use the CSS/JS for the latest functionality. 
 
-Current Version: Beta-RC1
-
 ## Features
 
 - Website Framework
@@ -34,23 +32,23 @@ When working with zenCSS, we recommend using override files instead of directly 
 - Download or clone the files [from the zencss repository](https://github.com/zencss/zencss).
 - Follow the instructions in the [zenCSS setup documentation](https://zencss.com/docs/index.html#setup).
 
-#### Installing SASS via NPM
+#### Installing Dart Sass via NPM
 
 - **Prerequisite:** Ensure you have Node.js installed on your computer. If not, download and install it from the [official website](https://nodejs.org/).
 - **Installation:** Open your terminal or command prompt and run the following command:
   
-    `npm install -g sass`
+    `npm install sass --save-dev`
 
 Then CD to the scss folder
 
 # For compressed CSS
 
-`sass --style compressed zen.scss ../css/zen.css`
+`sass --style=compressed zen.scss ../css/zen.css`
 
 
-# For uncompressed CSS
+# For expanded CSS
 
-`sass --style expanded zen.scss ../css/zen.css`
+`sass --style=expanded zen.scss ../css/zen.css`
 
 # Webpack Setup Guide for JavaScript modules
 
@@ -75,7 +73,7 @@ When configuring your `webpack.config.js`, set up separate entry points for the 
 This approach allows you to keep the original source intact and manage your custom scripts separately. Here's an updated example configuration:
 
 javascript
-`const path = require('path');
+const path = require('path');
 
 module.exports = {
   entry: {
@@ -83,11 +81,11 @@ module.exports = {
     custom: ['./js/custom/custom-module1.js', './js/custom/custom-module2.js'] // Your custom modules
   },
   output: {
-    filename: '[name].bundle.js', // This will create separate bundles for core and custom modules
+    filename: 'zencss.bundle.js', // This will create separate bundles for core and custom modules
     path: path.resolve(__dirname, 'dist/js'),
   },
   mode: 'development' // Change to 'production' for minified output
-};`
+}
 
 ## To run: 
 ` npx webpack`

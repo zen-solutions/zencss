@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Filters</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+</head>
+<body class="zen">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Filters</title>
+</head>
+<body>
+    <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="text" id="filterHeader1" placeholder="Filter Header 1">
+                </th>
+                <th>
+                    <input type="text" id="filterHeader2" placeholder="Filter Header 2">
+                </th>
+                <th>
+                    <input type="text" id="filterHeader3" placeholder="Filter Header 3">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Header 1">Data 1A</td>
+                <td data-label="Header 2">Data 2A</td>
+                <td data-label="Header 3">Data 3A</td>
+            </tr>
+            <tr>
+                <td data-label="Header 1">Data 1B</td>
+                <td data-label="Header 2">Data 2B</td>
+                <td data-label="Header 3">Data 3B</td>
+            </tr>
+            <tr>
+                <td data-label="Header 1">Data 1C</td>
+                <td data-label="Header 2">Data 2C</td>
+                <td data-label="Header 3">Data 3C</td>
+            </tr>
+            <tr>
+                <td data-label="Header 1">Data 1D</td>
+                <td data-label="Header 2">Data 2D</td>
+                <td data-label="Header 3">Data 3D</td>
+            </tr>
+            <tr>
+                <td data-label="Header 1">Data 1E</td>
+                <td data-label="Header 2">Data 2E</td>
+                <td data-label="Header 3">Data 3E</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Get references to the input fields
+        const filterHeader1Input = document.getElementById('filterHeader1');
+        const filterHeader2Input = document.getElementById('filterHeader2');
+        const filterHeader3Input = document.getElementById('filterHeader3');
+
+        // Get the table rows (excluding the header rows)
+        const rows = document.querySelectorAll('.responsive-table tbody tr');
+
+        // Add event listeners to the input fields
+        filterHeader1Input.addEventListener('input', filterTable);
+        filterHeader2Input.addEventListener('input', filterTable);
+        filterHeader3Input.addEventListener('input', filterTable);
+
+        // Define the filterTable function
+        function filterTable() {
+            const filterHeader1Value = filterHeader1Input.value.toLowerCase();
+            const filterHeader2Value = filterHeader2Input.value.toLowerCase();
+            const filterHeader3Value = filterHeader3Input.value.toLowerCase();
+
+            rows.forEach(row => {
+                const data1 = row.querySelector('[data-label="Header 1"]').textContent.toLowerCase();
+                const data2 = row.querySelector('[data-label="Header 2"]').textContent.toLowerCase();
+                const data3 = row.querySelector('[data-label="Header 3"]').textContent.toLowerCase();
+
+                if (
+                    data1.includes(filterHeader1Value) &&
+                    data2.includes(filterHeader2Value) &&
+                    data3.includes(filterHeader3Value)
+                ) {
+                    row.style.display = ''; // Show the row
+                } else {
+                    row.style.display = 'none'; // Hide the row
+                }
+            });
+        }
+    </script>
+
+
+<script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+<script src="../../js/zencss.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+<script src="../js/copy.js"></script>
+</body>
+</html>

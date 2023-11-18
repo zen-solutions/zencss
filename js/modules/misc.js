@@ -63,3 +63,61 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
       }, 500); // Match this with your CSS transition duration
   });
 });
+
+
+  //-------------------------------------
+  // Corner Popup
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function() {
+    var button = document.querySelector('.corner-popup-button');
+    var popup = document.querySelector('.corner-popup-window');
+
+    if (button && popup) {
+        button.addEventListener('click', function() {
+            popup.classList.toggle('hidden');
+            console.log("Button clicked");
+        });
+    }
+});
+
+
+//   //-------------------------------------
+//   // Video Player
+//   //-------------------------------------
+
+
+
+//   class VideoPlayer extends HTMLElement {
+//     constructor() {
+//         super();
+//         const shadowRoot = this.attachShadow({ mode: 'open' });
+
+//         const style = document.createElement('style');
+//         style.textContent = `
+       
+//         `;
+
+//         const container = document.createElement('div');
+//         container.className = 'video-container';
+
+//         const video = document.createElement('video');
+//         video.className = 'video-player';
+//         video.controls = true;
+
+//         const src = this.getAttribute('src');
+//         if (src) {
+//             const source = document.createElement('source');
+//             source.src = src;
+//             source.type = 'video/mp4';
+//             video.appendChild(source);
+//         } else {
+//             console.error('Video source not provided for <video-player>.');
+//         }
+
+//         container.appendChild(video);
+//         shadowRoot.appendChild(style);
+//         shadowRoot.appendChild(container);
+//     }
+// }
+
+// customElements.define('video-player', VideoPlayer);

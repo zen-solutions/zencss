@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Across HTML Files</title>
+</head>
+<body>
+    <header>
+        <h1>Search Across HTML Files</h1>
+        <input type="text" id="search-input" placeholder="Search...">
+    </header>
+    <main>
+        <div id="search-results"></div>
+    </main>
+
+    <script>
+        // JavaScript code for searching and displaying results
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("search-input");
+            const searchResults = document.getElementById("search-results");
+
+            // Function to perform the search
+            function performSearch(query) {
+                searchResults.innerHTML = ""; // Clear previous results
+
+                // Fetch and search content from multiple HTML files
+                const htmlFiles = ["core-concepts.html", "desogn-system.html"]; // Add more files as needed
+
+                htmlFiles.forEach((file) => {
+                    const xhr = new XMLHttpRequest();
+                    xhr.open("GET", file, true);
+
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            const content = xhr.responseText.toLowerCase();
+
+                            if (content.includes(query)) {
+                                // Display search result
+                                const resultItem = document.createElement("div");
+                                resultItem.innerHTML = `<h3>${file}</h3><p>${content}</p>`;
+                                searchResults.appendChild(resultItem);
+                            }
+                        }
+                    };
+
+                    xhr.send();
+                });
+            }
+
+            // Function to display search results
+            function renderResults(results) {
+                results.forEach((result) => {
+                    const resultItem = document.createElement("p");
+                    resultItem.textContent = result;
+                    searchResults.appendChild(resultItem);
+                });
+            }
+
+            // Event listener for search input
+            searchInput.addEventListener("input", () => {
+                const query = searchInput.value.toLowerCase();
+                performSearch(query);
+            });
+        });
+    </script>
+</body>
+</html>

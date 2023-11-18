@@ -70,7 +70,7 @@ class ZModal extends HTMLElement {
               width: 80%;
               max-width: 500px;
               border: 1px solid rgba(111,111,111,.35);
-              border-radius: var(--border-radius, 8px);
+              border-radius: var(--border-radius, 4px);
               background-color: #f4f4f4;
               color: #424242;
               box-sizing: border-box;

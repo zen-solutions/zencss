@@ -86,12 +86,12 @@ button.btn-ghost:hover {
   display: inline-block; 
   background:$accent-color;
   position: relative;
-  font-size: .6rem;
+  font-size: .63rem;
   line-height: 9px;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  // margin-top: 0.25rem;
+  // margin-bottom: 0.25rem;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .eyebrow {
@@ -99,10 +99,10 @@ button.btn-ghost:hover {
   display: inline-block; 
   line-height: 10px;
   position: relative;
-  background: $accent-color;
-  padding: 0.3em 1em;
-  box-shadow: 2px 2px 0 darken($accent-color, 10%);
+  color: $primary-color;
+  padding: 0;
   font-size: .8rem;
+  font-weight: 800;
 }
 
 .eyebrow-2 {
@@ -253,43 +253,43 @@ button.btn-ghost:hover {
 $bg-primary: $primary-color; // Example primary color
 $text-cta: $cta-color;
 
-// Mixin for transitions
-@mixin transition($properties: all, $duration: 0.3s, $timing-function: ease) {
-  transition: $properties $duration $timing-function;
-}
+// // Mixin for transitions
+// @mixin transition($properties: all, $duration: 0.3s, $timing-function: ease) {
+//   transition: $properties $duration $timing-function;
+// }
 
-// Placeholder selector for basic button styles
-%button-basic {
-  padding: 9px 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: $bg-primary;
-  color: $text-cta;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  font-size: .8em;
-  @include transition;
-}
+// // Placeholder selector for basic button styles
+// %button-basic {
+//   padding: 9px 12px;
+//   border: none;
+//   border-radius: 4px;
+//   background-color: $bg-primary;
+//   color: $text-cta;
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   position: relative;
+//   font-size: .8em;
+//   @include transition;
+// }
 
-// 2. Slide-in underline
-.btn-slide-underline {
-  @extend %button-basic;
-  position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: $text-cta;
-    bottom: 0;
-    left: 0;
-    @include transition(width);
-  }
-  &:hover:after { width: 100%; }
-}
+// // 2. Slide-in underline
+// .btn-slide-underline {
+//   @extend %button-basic;
+//   position: relative;
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 0;
+//     height: 2px;
+//     background-color: $text-cta;
+//     bottom: 0;
+//     left: 0;
+//     @include transition(width);
+//   }
+//   &:hover:after { width: 100%; }
+// }
 
 // // 4. Icon pop
 // .btn-icon-pop {
@@ -415,30 +415,30 @@ $text-cta: $cta-color;
 //text
 
 /* Right Arrow Effect */
-.right-arrow {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  transition: all 0.3s ease-in-out;
-  padding-left: 30px;
+// .right-arrow {
+//   position: relative;
+//   text-decoration: none;
+//   color: white;
+//   transition: all 0.3s ease-in-out;
+//   padding-left: 30px;
 
-}
-.right-arrow::after {
-  content: '→';
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  margin-left: 10px;
-  text-decoration: none;
-}
-.right-arrow:hover::after {
-  opacity: 1;
-  transform: translateX(5px);
-  text-decoration: none;
-}
+// }
+// .right-arrow::after {
+//   content: '→';
+//   opacity: 0;
+//   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+//   margin-left: 10px;
+//   text-decoration: none;
+// }
+// .right-arrow:hover::after {
+//   opacity: 1;
+//   transform: translateX(5px);
+//   text-decoration: none;
+// }
 
 
 //--------------------------
-// new new button stuff to test, mixins for ghost button
+// new  button stuff to test, mixins for ghost button
 //----------------------------
 
 // Define theme color variables for bg and text - use for buttons and reuse for stuff

@@ -5,8 +5,8 @@
   */
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const banner = document.getElementById('cookie-consent-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
+    const banner = document.querySelector('.cookie-consent-banner');
+    const acceptBtn = document.querySelector('.accept-cookies');
     banner.style.zIndex = '1100';
 
     // Check if cookies are already accepted

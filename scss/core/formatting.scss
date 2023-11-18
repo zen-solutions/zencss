@@ -70,7 +70,7 @@
 // }
 
 // Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
   $value: $i * 10; // Multiply the loop variable by 10 to get the desired values
 
   // Generating classes for negative margin-top (moving up)
@@ -174,9 +174,12 @@ $sizes: (
 @each $key, $value in $sizes {
   .w-#{$key} {
    width: $value !important;
+   max-width:$value;
   }
   .h-#{$key} {
     height: $value !important;
+    max-height:$value;
+
   }
 }
 
@@ -189,7 +192,7 @@ $sizes: (
   //gap:.7em;
   padding: 1.2rem;
   font-size: .95em;
-
+  gap: 1em;
 
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -213,7 +216,10 @@ $sizes: (
   //   font-size: .8em;
   // }
 
-
+  ul{
+  margin-block-start:0;
+    margin-block-end: 0;
+  }
 }
 
 

@@ -6,8 +6,30 @@
     <title>zenCSS - Hello World</title>
     <link rel="stylesheet" href="../../css/zen.css">
 </head>
-
 <body class="zen">
+    
+    <z-container-fluid class="pt-0">
+        <z-row class="pt-0">
+            <z-col class="m-0 p-0">
+                <header class="header-sticky">
+                    <div class="pl-2" id="header-logo">
+                        <img src="../../img/logo.png" alt="Logo">
+                    </div>
+                    <div class="docs-nav">
+                        <button id="hamburger-button">☰</button>
+                    </div>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+                            <li><a href="#" class="nav-link">Section 1</a></li>
+                            <li><a href="#" class="nav-link">Section 2</a></li>
+                            <li><a href="#" class="nav-link">Section 3</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </z-col>
+        </z-row>
+    </z-container-fluid>
 
     <main class="container-fluid page-title-here">
 
@@ -16,22 +38,6 @@
                 <z-col class="center">
                     <h1 class="headline">Hello World</h1>
                     <p>What will you create from here?</p>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <z-container class="site-section">
-            <z-row>
-                <z-col class="mt-0 pt-0">
-                    <h2>Code Example</h2>
-                    <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
-&lt;z-row&gt;
-    &lt;z-col class="center"&gt;
-    &lt;h1 class="headline"&gt;Hello World&lt;/h1&gt;
-    &lt;p&gt;What will you create from here?&lt;/p&gt;
-    &lt;/z-col&gt;
-&lt;/z-row&gt;
-&lt;/z-container&gt;</code></pre>
                 </z-col>
             </z-row>
         </z-container>
@@ -51,7 +57,7 @@
     </main>
 
     <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        <p class="center smaller">&copy; <span id="current-year"></span>. Built using zenCSS. </p>
     </footer>
 
     <script src="../../js/zencss.js"></script>

@@ -3,47 +3,50 @@
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 //--------------------------------------------------------------
 // Initialize zenCSS
 //--------------------------------------------------------------
 
-// All fonts imported for demo purposes - only import the few you use
 @import 'core/fonts.scss';
 
-  //vars
-  $zen-font-size: 15px;
-  $zen-tablet-mobile-font-size: 14px;
-  $zen-large-screen-font-size: 16px;
-  $zen-font-family:  "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  $zen-body-bg-color:#d7d7d7;
-  $zen-dark-text-color: #f0f0f0;
-  $zen-dark-link-color: #f0f0f0;
-  //$zen-responsive-text-color:black;
+//vars
+$zen-font-size: 15px;
+$zen-tablet-mobile-font-size: 14px;
+$zen-large-screen-font-size: 16px;
+$zen-font-family: "Inter",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+$zen-body-bg-color:#d7d7d7;
+$zen-dark-text-color: #f0f0f0;
+$zen-dark-link-color: #f0f0f0;
 
-  //lessgo
-  .zen {
 
-    //base stuff
-    background: $zen-body-bg-color;
-    font-family: $zen-font-family;
-    font-size: $zen-font-size;
-    color: #4a4a4a;
-    font-weight: 300;
-  
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+.zen {
+  //base stuff
+  background: $zen-body-bg-color;
+  font-family: $zen-font-family;
+  font-size: $zen-font-size;
+  color: #4a4a4a;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
-    overflow-x: hidden;
-    *, *::before, *::after {
-      box-sizing: border-box;
-      -webkit-font-smoothing: antialiased; /* For WebKit browsers */
-      -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
-      text-rendering: optimizeLegibility; /* Improves text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
-  //color - need to refine so it looks good on new pages before rolling out
+  //color tweak
   background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
   background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
   background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
@@ -51,132 +54,111 @@
   background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
   background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
 
-    //--------------------------------------------------------------
-    // Load core files
-    //--------------------------------------------------------------
+  //--------------------------------------------------------------
+  // Import core files
+  //--------------------------------------------------------------
 
-    @import 'user-settings.scss';
-    @import 'core/mixins.scss';
-    @import 'core/framework.scss';
-    @import 'core/scaffold.scss';
-    // @import 'optional/popover.scss'; 
-    @import 'marketing/marketing-promos.scss';
-    @import 'design/themes.scss';
-    @import 'core/header.scss';
-    @import 'vortex/form.scss';
-    @import 'vortex/slider.scss';
-    @import 'design/buttons.scss';
-    @import 'core/flex.scss';
-    @import 'optional/table.scss';
-    @import 'core/formatting.scss';
-    @import 'optional/alert.scss';
-    @import 'design/text.scss';
-    @import 'design/bg-color.scss';
-    @import 'design/border-color.scss';
-    @import 'design/text-color.scss';
-    @import 'vortex/test.scss';
-    @import 'vortex/components.scss';
-    @import 'design/layouts.scss';
-    @import 'core/footer.scss';
-    @import 'core/wip.scss';
+  @import 'user-settings.scss';
+  @import 'core/mixins.scss';
+  @import 'core/framework.scss';
+  @import 'core/scaffold.scss';
+  @import 'marketing/marketing-promos.scss';
+  @import 'design/themes.scss';
+  @import 'core/header.scss';
+  @import 'general/form.scss';
+  @import 'general/slider.scss';
+  @import 'design/buttons.scss';
+  @import 'core/flex.scss';
+  @import 'optional/table.scss';
+  @import 'core/formatting.scss';
+  @import 'optional/alert.scss';
+  @import 'design/text.scss';
+  @import 'design/bg-color.scss';
+  @import 'design/border-color.scss';
+  @import 'design/text-color.scss';
+  @import 'general/test.scss';
+  @import 'general/components.scss';
+  @import 'design/layouts.scss';
+  @import 'core/footer.scss';
+  @import 'core/wip.scss';
+  @import 'optional/decoration.scss';
+  @import 'optional/animation.scss';
+  @import 'optional/image-gallery.scss';
 
+  //marketing
+  //@import 'marketing/pricing-table.scss';
+  @import 'marketing/exit-intent.scss';
+  @import 'marketing/contact-form.scss';
 
-    //--------------------------------------------------------------
-    //moar utilities
-    //--------------------------------------------------------------
-
-    //@import 'optional/interactive-cards.scss';
-    //@import 'opacity.scss';
-    //@import 'optional/card.scss';
-    @import 'optional/decoration.scss';
-    @import 'optional/animation.scss';
-    @import 'optional/image-gallery.scss';
-
-    //marketing
-    //@import 'marketing/pricing-table.scss';
-    //@import 'marketing/exit-intent.scss';
-    @import 'marketing/exit-intent.scss';
-    @import 'marketing/contact-form.scss';
-//looking to move this above the core stuff, this markeitng stuff. so we can style. testing with banners
-
-    //--------------------------------------------------------------
-    //  Things that should go last
-    //--------------------------------------------------------------
-    @import 'core/media-query.scss';
-   // @import 'optional/stacking.scss';
-    @import 'vortex/margin-padding.scss';
+  //--------------------------------------------------------------
+  //  Things that should go last
+  //--------------------------------------------------------------
+  @import 'core/media-query.scss';
+  // @import 'optional/stacking.scss';
+  @import 'general/margin-padding.scss';
 
 
-    //--------------------------------------------------------------
-    // Media queries for font size change
-    //--------------------------------------------------------------
+  //--------------------------------------------------------------
+  // Media queries for font size change
+  //--------------------------------------------------------------
 
-    @media (max-width: 575.98px) {
-      font-size: $zen-tablet-mobile-font-size;
-      //line-height: 1.6;
-    }
-
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      font-size: $zen-tablet-mobile-font-size;
-      //line-height: 1.8;
-    }
-
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      font-size: $zen-font-size;
-    }
-
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      font-size: $zen-font-size;
-    }
-
-    @media (min-width: 1200px) {
-      font-size: $zen-large-screen-font-size;
-    }
-
+  @media (max-width: 575.98px) {
+    font-size: $zen-tablet-mobile-font-size;
+    //line-height: 1.6;
   }
 
-  //--------------------------------------------------------------
-  // Dark Mode Settings
-  //--------------------------------------------------------------
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: $zen-tablet-mobile-font-size;
+    //line-height: 1.8;
+  }
 
-.zen-dark {
-    color:   $zen-dark-text-color;
-    background: #252525;
-    background-color: #252525 ;
-    $responsive-text-color:white;
-    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    // background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    // opacity 0.55s ease;
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: $zen-font-size;
+  }
 
-    // nav{
-    //   //background: #1e1e1e ;
-    // }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: $zen-font-size;
+  }
 
-    header,footer{
-      background: #191919 ;
-    }
-
-
-
-    td, th{
-      //how to get text changing color for dark mode
-      //add the element here give it this
-      color:  $zen-dark-text-color;
-    }
-
-    a {
-      color:  $zen-dark-text-color;
-      cursor: pointer;
-      text-decoration: underline;
-    }
-    
-  label {
-      color:  $zen-dark-text-color !important;
-    }
-    
-    a:hover {
-     color: #808080;
-     text-decoration: none;
-    }
+  @media (min-width: 1200px) {
+    font-size: $zen-large-screen-font-size;
+  }
 }
 
+//--------------------------------------------------------------
+// Dark Mode Settings
+//--------------------------------------------------------------
+
+.zen-dark {
+  color: $zen-dark-text-color;
+  background: #252525;
+  background-color: #252525;
+  $responsive-text-color: white;
+
+  header,
+  footer {
+    background: #191919;
+  }
+
+
+
+  td,
+  th {
+    color: $zen-dark-text-color;
+  }
+
+  a {
+    color: $zen-dark-text-color;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  label {
+    color: $zen-dark-text-color !important;
+  }
+
+  a:hover {
+    color: #808080;
+    text-decoration: none;
+  }
+}

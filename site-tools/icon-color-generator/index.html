@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../css/zen.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+    </head>
+    <body class="zen">
+
+
+        <z-container-fluid class="theme-cta">
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">zenCSS Icons -  Companion Class Generator</h1>
+                        <p class="lead">Use this tool to generate companion CSS classes to colorize zenCSS icons</p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container-fluid>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <p>                     zenCSS icons are black  but you may want to colorize them for your website. Since they are SVG files, you can't apply normal CSS color to them, you need to specify a filter. This tool will generate a CSS class for you similar to, and compatible with your source color. 
+                    </p>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <h3>Step 1: Enter your desired color in hex format.</h3>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <section class="card border-3">
+                        <p class="mb-2">
+                          <label>Target color</label> <input class="target" type="text" placeholder="target hex" value="#00a4d6"/>
+                        </p>
+                        <button class="execute d-inline-block mr-2">Generate CSS</button>
+                        <span class="label-color">target</span>
+                        <div class="pixel realPixel"></div>
+                        <span class="label-color">render</span>
+
+                        <div class="pixel filterPixel"></div>
+                        <span class="lossDetail d-inline-block"></span>
+                    </section>                   
+
+
+
+
+                </z-col>
+            </z-row>
+            <z-row id="results-1">
+                <z-col>
+                    <h3>Step 2: Copy the CSS and use for your icons</h3>
+                </z-col>
+            </z-row>
+            <z-row id="results-2">
+                <z-col class="card theme-dark">
+                    <span class="p-0 m-0">.your-icon {</span>
+                        <span class="filterDetail"></span>
+                        <span >}</span>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <p> This tool is alpha. Rerun as needed. This may not work for all values. Use a slightly different value if you are getting inconsistent results. </p>
+                    <p>For this code to generate a valid class the icon color needs to be black. If your icon set isn't black you can prepend "brightness(0) saturate(100%)" to your filter property which will first turn the icon set to black.</p>
+                <small>credit to X and x for original work on the logic behind this idea.</small>
+                </z-col>
+            </z-row>
+        </z-container>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+          <script src="script.js" async defer></script>
+          <script src="../../js/zencss.js" async defer></script>
+        </body>
+</html>

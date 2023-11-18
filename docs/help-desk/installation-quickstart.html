@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+   <link rel="stylesheet" href="../../css/zen.css">
+   <link rel="stylesheet" href="../../docs/css/documentation.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body class="zen">
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <img src="../../img/logo.png" alt="Logo">
+        </div>
+        <div class="docs-nav">
+            <button id="hamburger-button">☰</button>
+        </div>
+        <nav>
+            <button id="close-button">×</button>
+            <ul class="pr-2">
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Help Desk</a>
+                    <div class="dropdown-content">
+<a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/design-system.html">Design System</a>
+<a href="../help-desk/site-sections.html">Site Sections</a>
+<a href="../help-desk/site-parts.html">Site Parts</a>
+<a href="../help-desk/site-modifiers.html">Site Modifiers</a>
+<a href="../help-desk/core-concepts.html">Core Concepts</a>
+</div></div>
+
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Design System</a>
+                    <div class="dropdown-content">
+                        <a href="../examples/smart-align-framework.html">Smart-Align Framework</a>
+                        <a href="../examples/smart-color-system.html">Smart-Color System</a>
+                        <a href="../examples/smart-text.html">Smart-Text System</a>  
+                        <a href="../examples/themes.html">Content Themes</a>                      
+                        <a href="../examples/text-classes.html">Font Styles</a>
+                      <a href="../examples/text-colors.html">Font Colors</a>
+                        <a href="../examples/test-mode.html">Visual Test Mode</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Site Sections</a>
+                    <div class="dropdown-content">
+                        <a href="../examples/header.html">Header</a>
+                        <a href="../examples/jumbotron.html">Hero Section</a>
+                        <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
+                        <a href="../examples/hero-section.html">Image/Text Section</a>
+                        <a href="../examples/layout-grids.html">Layout Grids</a>
+                        <a href="../examples/footer.html">Footer</a>
+                    </div>
+                </div>
+                <div class="dropdown p-4">
+                    <a href="#" class="dropdown-link">Site Parts</a>
+                    <div class="dropdown-content megamenu">
+                        <z-container class="ml-3">
+                            <z-row>
+                                <z-col class="small">
+                                    <a href="../examples/toggle.html">Accordian</a>
+                                    <a href="../examples/alerts.html">Alert Messages</a>
+                                    <a href="../examples/buttons.html">Buttons</a>
+                                    <a href="../examples/breadcrumb.html">Breadcrumbs</a>
+                                    <a href="../examples/cards.html">Cards</a>
+                                    <a href="../examples/cookie-consent.html">Cookie Consent</a>
+                                    <a href="../examples/corner-popup.html">Corner Popup</a>
+                                    <a href="../examples/dropdown.html">Dropdown</a>
+                                    <a href="../examples/exit-intent.html">Exit Popup</a>
+                                    <a href="../examples/form-elements.html">Form Elements</a>
+      </z-col>
+                                <z-col class="small">
+                                    <a href="../examples/contact-form.html">Form - Sign Up</a>
+                                    <a href="../examples/sign-in-form.html">Form - Sign In</a>
+                                    <a href="../examples/responsive-table.html">HTML Table</a>
+                                    <a href="../examples/icons.html">Icons</a>
+                                    <a href="../examples/icon.html">Icon Container</a>
+                                    <a href="../examples/image.html">Image Styling</a>
+                                    <a href="../examples/image-carousel.html">Image Carousel</a>
+                                    <a href="../examples/image-gallery.html">Image Gallery</a>
+                                    <a href="../examples/list-group.html">List Groups</a>
+                                    <a href="../examples/logos.html">Logo Bar</a>
+                                </z-col>
+                                <z-col class="small">
+                                    <a href="../examples/modal.html">Modal</a>
+                                    <a href="../examples/pagination.html">Pagination</a>
+                                    <a href="../examples/pricing-table.html">Pricing Tables</a>
+                                    <a href="../examples/quiz.html">Quiz</a>
+                                    <a href="../examples/decorations.html">Site Icons</a>
+                                    <a href="../examples/testimonials.html">Testimonials</a>
+                                    <a href="../examples/tooltip.html">Tool Tips</a>
+                                    <a href="../examples/tabs.html">Tabs</a>
+                                      <a href="../examples/video-player.html">Video Player</a>
+                                      <a href="../examples/wizard.html">Wizard/Multi-Step</a>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </div>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <a href="#" class="dropdown-link">Modifiers</a>
+                    <div class="dropdown-content left-100">
+                        <a href="../examples/text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
+                        <a href="../examples/padding-margin-utilities.html">Padding & Margin</a>
+                        <a href="../examples/animations.html">Animation Utilities</a>
+                        <a href="../examples/formatting.html">Gap, Height, and Width</a>
+                        <a href="../examples/flex.html">Flex</a>
+                        <a href="../examples/test-classes.html">Test Classes</a>
+                        <a href="../examples/border-utilities.html">Border Classes</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="main-navigation">
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container-fluid class="theme-cta">
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1 class="headline">Install Compiled zenCSS</h1>
+                    <p>Get started with zenCSS, the world’s newest framework for building responsive, auto-formatting websites.</p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container-fluid>
+
+<z-container>
+    <z-row>
+        <z-col>
+            <h2>Installation</h2>
+
+            <z-container>
+                <z-row>
+                    <z-col class="card theme-light w-350">
+                        <h3>Download </h3>
+                        <p>Download the compiled zenCSS here.</p>
+                        <a href="" class="button btn-md">Download</a>
+                    </z-col>
+                </z-row>
+            </z-container>
+            <h3>File Structure Overview</h3>
+            <p>Familiarize yourself with the core files:</p>
+            <pre class="copy-text mt-3"><code class="language-html">css/
+├── zencss.css
+├── zencss.min.css
+             
+js/
+├── zencss.js
+├── zencss.min.js
+
+hello-world.html
+
+img/
+├── [various images]
+</code></pre>
+          
+        </z-col>
+    </z-row>
+    <z-row>
+        <z-col>
+
+            <h3>Manual Installation</h3>
+            <ol>
+                <li><strong>CSS Linking</strong>: Add the minified stylesheet in your HTML's head section before all other stylesheets.
+                    <pre class="copy-text mt-3"><code class="language-html">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;</code></pre>
+                </li>
+                <li><strong>JavaScript Inclusion</strong>: Include the minified script before the closing <code>&lt;/body&gt;</code> tag.
+                    <pre class="copy-text mt-3"><code class="language-html">&lt;script src="path-to/zencss.min.js"&gt;&lt;/script&gt;</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Usage</h2>
+            <h3>Applying zenCSS</h3>
+            <p>You can integrate zenCSS either globally or selectively:</p>
+            <ul>
+                <li><strong>Globally</strong>: To apply zenCSS styles throughout your website, add the <code>zen</code> class to the <code>&lt;body&gt;</code> tag.
+                    <pre class="copy-text mt-3"><code class="language-html">&lt;body class="zen"&gt; 
+&lt;!-- Your content here --&gt;
+&lt;/body&gt;</code></pre>
+                </li>
+                <li><strong>Selectively</strong>: For specific sections, use the <code>zen</code> class on individual elements. This method allows zenCSS styling without affecting the rest of your website.
+                    <pre class="copy-text mt-3"><code class="language-html">&lt;section class="zen"&gt; 
+&lt;!-- Your content here --&gt;
+&lt;/section&gt;</code></pre>
+                </li>
+            </ul>
+            <h3 class="mt-3">Working with our <a href="../../docs/examples/smart-align-framework.html">Smart-Align Framework</a></h3>
+            <p>We suggest using the following structure where you wrap your page content in a <code>container-fluid</code>. This way you can use <code>container</code> or <code>container-fluid</code> interchangably on any section of the page.  The <code>page-name</code> class is optional but useful to target specific pages. The <code>site-section</code> class is also optional and sets spacing between sections. The default is 2em at the top and bottom of every site-section. This value is defined in user-settings.scss, overwrite as needed. </p>
+            <p><strong>Basic Layout Example</strong>:</p>
+            <pre class="copy-text mt-3"><code class="language-html">&lt;main class="z-container-fluid page-name"&gt;
+    &lt;section class="z-container site-section"&gt;
+        &lt;div class="z-row"&gt;
+            &lt;div class="z-col"&gt; ... &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+            <p><strong>Zentax Shorthand Syntax</strong>: Use our streamlined syntax for quicker coding. A shortcut user snippet file and a converter for semantic HTML are available.</p>
+            <pre class="copy-text mt-3"><code class="language-html">&lt;z-container-fluid class="page-name"&gt;
+    &lt;z-container class="site-section"&gt;
+        &lt;z-row&gt;
+            &lt;z-col&gt; ... &lt;/z-col&gt;
+        &lt;/z-row&gt;
+    &lt;/z-container&gt;
+&lt;/z-container-fluid&gt;</code></pre>
+        </section>
+
+        
+
+              <section class="mt-3">
+                <h2>Starter Template</h2>
+                <p>Be sure to have your pages set up with the latest design and development standards...</p>
+                <pre class="copy-text square up-10"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;zenCSS - Hello World&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../../css/zen.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;zen&quot;&gt;
+    
+    &lt;z-container-fluid class=&quot;pt-0&quot;&gt;
+        &lt;z-row class=&quot;pt-0&quot;&gt;
+            &lt;z-col class=&quot;m-0 p-0&quot;&gt;
+                &lt;header class=&quot;header-sticky&quot;&gt;
+                    &lt;div class=&quot;pl-2&quot; id=&quot;header-logo&quot;&gt;
+                        &lt;img src=&quot;../../img/logo.png&quot; alt=&quot;Logo&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;docs-nav&quot;&gt;
+                        &lt;button id=&quot;hamburger-button&quot;&gt;☰&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;nav&gt;
+                        &lt;button id=&quot;close-button&quot;&gt;×&lt;/button&gt;
+                        &lt;ul class=&quot;pr-2&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                &lt;/header&gt;
+            &lt;/z-col&gt;
+        &lt;/z-row&gt;
+    &lt;/z-container-fluid&gt;
+
+    &lt;main class=&quot;container-fluid page-title-here&quot;&gt;
+
+        &lt;z-container class=&quot;site-section&quot;&gt;
+            &lt;z-row&gt;
+                &lt;z-col class=&quot;center&quot;&gt;
+                    &lt;h1 class=&quot;headline&quot;&gt;Hello World&lt;/h1&gt;
+                    &lt;p&gt;What will you create from here?&lt;/p&gt;
+                &lt;/z-col&gt;
+            &lt;/z-row&gt;
+        &lt;/z-container&gt;
+
+        &lt;z-container class=&quot;site-section&quot;&gt;
+            &lt;z-row&gt;
+                &lt;z-col&gt;
+                    &lt;div class=&quot;tab-nav-round&quot;&gt;
+                        &lt;a class=&quot;item&quot; id=&quot;toggleButton&quot;&gt;Test Mode&lt;/a&gt;
+                        &lt;a class=&quot;item&quot; id=&quot;toggleDarkMode&quot;&gt;Dark Mode&lt;/a&gt;
+                        &lt;a href=&quot;../index.html&quot; class=&quot;item&quot;&gt;Docs&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/z-col&gt;
+            &lt;/z-row&gt;
+        &lt;/z-container&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p class=&quot;center smaller&quot;&gt;&amp;copy; &lt;span id=&quot;current-year&quot;&gt;&lt;/span&gt;. Built using zenCSS. &lt;/p&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;../../js/zencss.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+             </section>
+          
+             <section id="customizing-zenCSS">
+                <h2>Customizing zenCSS</h2>
+                
+                <div class="content">
+                    <p>It's worth noting any changes you make to our source files may be overwritten in future software updates. To safely customize your settings and ensure they are preserved across updates to the zenCSS framework, follow these steps:</p>
+                    
+                    <ol>
+                        <li>
+                            <strong>Create an Override File:</strong>
+                            Create a new file named <code>zencss-overrides.css</code> in a separate directory, such as a <code>custom</code> directory within your project's root.
+                        </li>
+                        <li>
+                            <strong>Set Your Override Variables:</strong>
+                            Inside <code>zencss-overrides.css</code>, define your custom variables such as colors, fonts, and others. For example:
+                            <pre class="copy-text"><code class="language-scss">.primary-color: #yourColorValue;</code></pre>
+                        </li>
+                        <li>
+                            <strong>Load Overrides File:</strong>
+                            In your HTML file, add your <code>zencss-overrides.css</code> right after the zencss.min.css fie . Ensure the path to your custom file is correct based on its location. For example:
+                            <pre class="copy-text"><code class="language-scss">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;
+&lt;link rel="stylesheet" href="path-to/zencss-overrides.css"&gt;
+</code></pre>
+                        </li>
+
+                    </ol>
+                
+                    <p>Following these steps will allow you to customize the framework to fit your needs while keeping your changes intact through updates.</p>
+                </div>
+                
+            </section>
+          
+              <section>
+                <h2>Community</h2>
+                <p>Stay up to date on the development of zenCSS and reach out to the community...</p>
+              </section>
+          
+        
+          
+              <footer>
+                <p>Follow @zen_css on Twitter for the latest updates.</p>
+              </footer>
+        </z-col>
+    </z-row>
+</z-container>
+    
+ 
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+</main>
+<footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

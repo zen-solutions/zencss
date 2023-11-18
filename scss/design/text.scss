@@ -56,6 +56,7 @@
   .lead{
     font-size: 1.2em;
     margin-top: -0.8em;
+    padding: .8em 0;
   }
   
   //------------------------------------------ 
@@ -89,25 +90,13 @@
     width: 100%;
 }
 
-//flex centering -horizontal and vertical then do above
 
-// .center-flex{
-
-// }
-
-.right {
+.text-right {
     text-align: right !important;
-    //width: 100%;
-    //align-items: unset !important;
-
 }
 
-.left {
+.text-left {
     text-align: left !important;
-    //width: 100%;
-    //align-items: unset !important;
-    //align-self: left !important;
-
 }
 
 //------------------------------------------ 
@@ -116,18 +105,14 @@
 
 
 .small {
-    //line-height: 1.4em;
     font-size: .8em !important;
 
 
-    //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
 
 }
 
 .smaller {
     font-size: .6em;
-    //     font-size: calc(0.8 * #{$base-font-size}); // Decrease font size by 20%
-
 }
 
 .big {
@@ -149,7 +134,6 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    //background: $green;
     color: white;
     font-size: 14px;
     text-align: center;
@@ -162,6 +146,7 @@
 }
 
 .tout-circle {
+    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -409,24 +394,11 @@
 }
 
 
-//underlines
+//gradients
+
 .text-gradient {
-    background-image: linear-gradient(120deg,   #1b64b2 0%, rgb(18, 56, 121) 100%);
-    -webkit-background-clip: text; /* For WebKit browsers */
-    background-clip: text; /* Clip the background to the text */
-    color: transparent; /* Make the text color transparent */
+    background-image: linear-gradient(120deg, #1b64b2 0%, rgb(0 93 252) 100%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
   }
-
-// ------------------------------------------ 
-// Text Type class
-// requires JS in zencss.js
-//------------------------------------------ 
-// #typewriter-container p {
-//     max-width: 1140px;
-//     overflow: hidden;
-//     white-space: pre-wrap; /* Preserve whitespace and line breaks */
-//     border-right: 0.15em solid black; /* Cursor effect */
-//     margin: 0; /* Remove paragraph margin */
-//   }
-
-

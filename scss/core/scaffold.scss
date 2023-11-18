@@ -84,14 +84,21 @@ h3,
   font-size: 2em;
   font-weight: 300;
   line-height: 1.45em;
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: 1.4em;
 }
 
 h4,
 .h4 {
-  font-size: 1.5em;
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 1.4em;
+  font-size: 1.7em;
   font-weight: 300;
   line-height: 1.4em;
 }
+
 
 h5,
 .h5 {
@@ -117,7 +124,7 @@ font-weight: 400;
 }
 
 p {
-  line-height: 2em;
+  line-height: $line-height;
   letter-spacing: .0;
   position: relative;
   margin-top: 1rem;
@@ -126,7 +133,7 @@ p {
 
 span {
   align-self: flex-start;
-  display: inline-block;
+  display: inline;
 }
 
 ul {
@@ -163,7 +170,7 @@ hr.top {
 }
 
 
-button {
+button, .button{
   text-wrap: pretty;
   padding: 11px;
   margin:.2em;
@@ -177,9 +184,10 @@ button {
   color: $light-color;
   background: $cta-color;
   z-index: 3;
+  text-decoration: none;
 }
 
- button:hover {
+ button:hover, .button:hover {
   cursor: pointer;
    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.10);
@@ -231,6 +239,9 @@ pre {
   border: 1px solid  $border-color;
 }
 
+small{
+  line-height: calc($line-height / 1.5);
+}
 
 input,
 textarea,
@@ -388,8 +399,8 @@ margin-top:5px;
   }
 }
 
-//cookie consent
-#cookie-consent-banner {
+//cookie consent 
+.cookie-consent-banner {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -457,8 +468,6 @@ margin-top:5px;
   border-radius: 50%; 
   background: $dual-mode-text-color;
   color: white; 
-  font-size: 16px; /* size of the icon */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .nav-dropdown{
@@ -474,4 +483,59 @@ margin-top:5px;
   white-space: pre-wrap; 
   word-wrap: break-word; 
 
+}
+
+.border-right{
+  border-right: 1px solid lighten($border-color, 24%);
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+#skip-navigation {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  z-index: 999;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  aspect-ratio: 16 / 9;
+}
+
+.video-container video {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+}
+
+/*
+Box-sizinghttps://getbootstrap.com/docs/4.6/getting-started/introduction/#css-files
+For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+
+On the rare occasion you need to override it, use something like the following:
+*/
+.content-box {
+  box-sizing: content-box;
+}
+
+.superscript {
+  vertical-align: super;
+  font-size: .75em; 
+  position: relative;
+  bottom: -4px;
 }

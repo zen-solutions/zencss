@@ -153,7 +153,7 @@ $text-default: $light-color;
 // Rounded corners
 //------------------------------------------ 
 
-$border-radius: 8px; //on
+$border-radius: 4px; //on
 //$border-radius: 0; //off
 
 
@@ -167,21 +167,23 @@ $hero-image: url("../website/images/hero.jpg");
 // Below is experimental
 //------------------------------------------ 
 $light-ui-hover-color:#eee;
-$border-color:rgba(111, 111, 111, 0.15);
+$border-color:rgba(111, 111, 111, 0.50);
 $dual-mode-bg-color:rgba(79, 78, 78, 0.03);
 $dual-mode-text-color:#808080;
 $bg-header-footer: #303030;
 $container-margin: 2em;
+$shadow-color:rgba(0,0,0,0.2);
+$line-height: 2rem;
 
 //------------------------------------------ 
 // Default Spacing - wip
 //------------------------------------------ 
 
-$site-section-padding-top: 0;
-$site-section-padding-bottom: 2em;
+$site-section-padding-top: 2.75em;
+$site-section-padding-bottom: 2.75em;
 
 
-//set master paddingand margin for all columns
+//set master padding and margin for all columns
 $col-padding: 1em; 
 $col-margin: 1em;
 

@@ -46,6 +46,7 @@ header {
 
       .nav-dropdown{
         padding:1em .5em;
+
         .dropdown-content{
             top:115%;
             border-top-right-radius: 0;
@@ -57,7 +58,7 @@ header {
         .caret-up{
             top: calc(100% + 12px);
         }
-      }s
+      }
       
 //-----------------------------------------
 // Mobile
@@ -94,7 +95,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    //background-color: $bg-header-footer;
+    background-color: $bg-header-footer;
+    //#303030
 }
 
 nav li {

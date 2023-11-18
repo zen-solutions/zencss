@@ -24,13 +24,13 @@ $colors: (
 /* Mixin to generate text color classes */
 @mixin text-color-classes($color-name, $color-value) {
   .text-#{$color-name} {
-    color: $color-value;
+    color: $color-value !important;
   }
   .text-#{$color-name}-dark {
-    color: darken($color-value, 10%);
+    color: darken($color-value, 10%) !important;
   }
   .text-#{$color-name}-light {
-    color: lighten($color-value, 10%);
+    color: lighten($color-value, 10%) !important;
   }
 }
 
@@ -58,7 +58,7 @@ $grey-colors: (
 @each $color-name, $color-value in $grey-colors {
 
   .text-#{$color-name} {
-    color: $color-value;
+    color: $color-value !important;
   }
 
 }
@@ -67,10 +67,10 @@ $grey-colors: (
 /* Define a mixin to generate text color classes for dark and light variations */
 @mixin generate-color-classes($color-name, $color-dark, $color-light) {
   .text-#{$color-name}-dark {
-    color: $color-dark;
+    color: $color-dark !important;
   }
   .text-#{$color-name}-light {
-    color: $color-light;
+    color: $color-light !important;
   }
 }
 

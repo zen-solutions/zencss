@@ -59,7 +59,7 @@
 $themes: (
   primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
   dark: (#5d5d5d, #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
-  light: (rgba(255, 255, 255, 0.25), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
+  light: (rgba(255, 255, 255, 0.40), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
   cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
   accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
   secondary: ($secondary-color, $light-color, $accent-color, $dark-color, $accent-color, $dark-color)
@@ -137,3 +137,7 @@ $themes: (
 // Note: We don't need to repeat the .btn-fill styles
  //here if they are already defined within the mixin above
 // If there are any generic styles for .btn-fill not dependent on themes, they can be added here
+.bg-accent-hover:hover{
+  background: darken($accent-color, 10%) !important;
+
+}

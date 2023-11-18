@@ -28,47 +28,47 @@ toggle.addEventListener("click", () => {
 
 
 
-  //mobile menu stuff
-  document.addEventListener("DOMContentLoaded", function() {
-    let menuLinks = document.querySelectorAll("#menu a");
-    let checkbox = document.querySelector("#menuToggle input[type='checkbox']");
+//   //mobile menu stuff
+//   document.addEventListener("DOMContentLoaded", function() {
+//     let menuLinks = document.querySelectorAll("#menu a");
+//     let checkbox = document.querySelector("#menuToggle input[type='checkbox']");
 
-    menuLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            checkbox.checked = false;
-        });
-    });
-});
+//     menuLinks.forEach(link => {
+//         link.addEventListener("click", function() {
+//             checkbox.checked = false;
+//         });
+//     });
+// });
 
 
-//mobile correction for nav bar
-document.addEventListener("DOMContentLoaded", function() {
-  // Get all the anchor tags
-  const anchors = document.querySelectorAll("a[href^='#']");
+// //mobile correction for nav bar
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get all the anchor tags
+//   const anchors = document.querySelectorAll("a[href^='#']");
   
-  anchors.forEach(anchor => {
-      anchor.addEventListener("click", function(event) {
-          // Prevent default behavior
-          event.preventDefault();
+//   anchors.forEach(anchor => {
+//       anchor.addEventListener("click", function(event) {
+//           // Prevent default behavior
+//           event.preventDefault();
 
-          // Get  target element
-          const targetId = anchor.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
+//           // Get  target element
+//           const targetId = anchor.getAttribute("href");
+//           const targetElement = document.querySelector(targetId);
 
-          if (targetElement) {
-              // Calculate scroll position
-              let yPos = targetElement.getBoundingClientRect().top + window.pageYOffset;
+//           if (targetElement) {
+//               // Calculate scroll position
+//               let yPos = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-              // Offset by the nav height on mobile
-              if (window.innerWidth <= 768) { 
-                  yPos -= 125; // height of top nav
-              }
+//               // Offset by the nav height on mobile
+//               if (window.innerWidth <= 768) { 
+//                   yPos -= 125; // height of top nav
+//               }
 
-              window.scrollTo({ top: yPos, behavior: 'smooth' });
-          }
-      });
-  });
-});
+//               window.scrollTo({ top: yPos, behavior: 'smooth' });
+//           }
+//       });
+//   });
+// });
 
 // workaround for zen not on body and menu not changing
 // document.addEventListener('DOMContentLoaded', () => {
