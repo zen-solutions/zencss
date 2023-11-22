@@ -21,7 +21,7 @@
   .headline{
     font-family: 'Inter', sans-serif;
     //font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 800;
   }
   .mono{
     font-family: 'Roboto Mono', monospace;
@@ -54,8 +54,8 @@
 //   }
 
   .lead{
-    font-size: 1.2em;
-    margin-top: -0.8em;
+    font-size: 1.1em;
+    margin-top: -1.8em;
     padding: .8em 0;
   }
   
@@ -81,7 +81,6 @@
 
 .center {
     text-align: center !important;
-    align-items: unset !important;
     //align-self: center !important;
 }
 
@@ -217,7 +216,6 @@
 .breadcrumb li {
     display: inline;
     margin-right: 5px;
-    text-wrap: nowrap;
 }
 
 .breadcrumb li+li:before {

@@ -13,7 +13,8 @@ $btn-hover-color: darken($cta-color, 20%);
 @mixin btn-hover($bg-color, $border-color: $bg-color) {
   &:hover {
     background-color: $bg-color;
-    border-color: $border-color;
+
+   // border-color: $border-color;
   }
 }
 
@@ -31,6 +32,7 @@ $btn-hover-color: darken($cta-color, 20%);
 //css stuff
 .btn {
   background-color: $btn-color;
+  display: inline-flex !important;
 }
 
 button.btn-ghost-light {
@@ -101,8 +103,8 @@ button.btn-ghost:hover {
   position: relative;
   color: $primary-color;
   padding: 0;
-  font-size: .8rem;
-  font-weight: 800;
+  font-size: .62rem;
+  font-weight: 600;
 }
 
 .eyebrow-2 {
@@ -110,9 +112,7 @@ button.btn-ghost:hover {
   display: inline-block; 
   line-height: 10px;
   position: relative;
-
   padding: 0.3em 1em;
-  offset: 1px;
   font-size: .8rem;
 }
 
@@ -122,40 +122,11 @@ button.btn-ghost:hover {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px; /* offset 1px down */
+  bottom: -1px; 
   border-bottom: 2px solid $accent-color;
 }
 
 
-
-.corner-top {
-  position: absolute;
-  rotate: -45deg;
-  height: 35px;
-  width: 70px;
-  margin-top: -15px;
-  margin-left: -27px;
-  border-radius: 0;
-  text-align: center;
-}
-
-.corner-top >*{
-  position: relative;
-  bottom: -18px;
-  left: -5px;
-  rotate:(45deg);
-}
-
-.corner-top::before {
-  //content: "\f005"; 
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: relative;
-  top: 0;
-  left: 0;
-  font-size: 11px;
-
-}
 
 .tout-wrapper{
  //background: red;
@@ -181,22 +152,19 @@ button.btn-ghost:hover {
 .btn-xl {
   min-width: 200px;
   max-width: 200px;
-  font-size: 14px;
-  min-height: 45px;
+  //min-height: 45px;
 }
 
 .btn-lg {
   min-width: 150px;
   max-width: 150px;
-  font-size: 14px;
-  min-height: 45px;
+  //min-height: 45px;
 }
 
 .btn-md {
   min-width: 120px;
   max-width: 120px;
-  font-size: 14px;
-  min-height: 35px;
+  //min-height: 35px;
 
 }
 
@@ -209,33 +177,39 @@ button.btn-ghost:hover {
 
 
 .btn-primary{
-  background: $primary-color;
-  color: $text-white;
+  background: $primary-color !important;
+  color: $text-white !important;
+  @include hover-darken($primary-color);
 }
 
 .btn-secondary{
-  background: $secondary-color;
-  color: $text-white;
+  background: $secondary-color !important;
+  color: $text-white !important;
+  @include hover-darken($secondary-color);
 }
 
 .btn-dark{
-  background: $dark-color;
-  color: $text-white;
+  background: $dark-color !important;
+  color: $text-white !important;
+  @include hover-darken($dark-color);
 }
 
 .btn-light{
-  background: $light-color;
-  color: $text-black;
+  background: $light-color !important;
+  color: $text-black !important;
+  @include hover-darken($light-color);
 }
 
 .btn-cta{
-  background: $cta-color;
-  color: $text-white;
+  background: $cta-color !important;
+  color: $text-white !important;
+  @include hover-darken($cta-color);
 }
 
 .btn-accent{
-  background: $accent-color;
-  color: $text-black;
+  background: $accent-color !important;
+  color: $text-black !important;
+  @include hover-darken($accent-color);
 }
 
 //for poll. misc placement
@@ -304,18 +278,18 @@ $text-cta: $cta-color;
 
 
 // 9. Shake
-.btn-shake {
-  @extend %button-basic;
-  &:hover {
-    @include transition(transform 0.5s);
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      25% { transform: translateX(-5px); }
-      75% { transform: translateX(5px); }
-    }
-    animation: shake 0.5s;
-  }
-}
+// .btn-shake {
+//   @extend %button-basic;
+//   &:hover {
+//     @include transition(transform 0.5s);
+//     @keyframes shake {
+//       0%, 100% { transform: translateX(0); }
+//       25% { transform: translateX(-5px); }
+//       75% { transform: translateX(5px); }
+//     }
+//     animation: shake 0.5s;
+//   }
+// }
 
 // // 10. Fill up
 // .btn-fill-up {
@@ -402,11 +376,12 @@ $text-cta: $cta-color;
 .btn-fill {
   @extend %button-basic;
   background-color: transparent;
-  border: 2px solid $bg-primary;
-  color: $bg-primary; // Text color is now same as border
+  border: 2px solid $cta-color;
+  color: $bg-primary; 
   &:hover {
-    background-color: $primary-color;
-    color: white; // Text color is now same as border
+    background-color: $cta-color;
+
+    color: white;
   }
 }
 
@@ -466,7 +441,8 @@ $theme-light-text: $light-color;
   background-color: transparent;
   border: 2px solid $bg-color;
   color: $bg-color; // Text color matches border
-  font-size: .9rem;
+  //font-size: .9rem;
+  padding:0.85em;
 
   &:hover {
     background-color: $bg-color;
@@ -498,6 +474,3 @@ $theme-light-text: $light-color;
     @include theme-button-styles($theme-cta-bg, $theme-cta-text);
   }
 }
-
-
-

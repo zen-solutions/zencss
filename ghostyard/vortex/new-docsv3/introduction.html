@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Documentation - Introduction</title>
+</head>
+<body>
+
+<h1 class="headline">Introduction</h1>
+
+<p>Welcome to the documentation for zenCSS. zenCSS is a custom CSS framework designed to provide a solid foundation for building user interfaces with ease and consistency. It offers a range of utilities, components, and themes to accelerate the development process while ensuring a visually appealing and user-friendly experience.</p>
+
+<p>This documentation aims to provide a comprehensive guide to all the features, classes, and utilities available in zenCSS. Whether you are just getting started or looking to explore advanced features, this documentation will serve as a reliable reference.</p>
+
+<p>Let's dive into the various aspects of zenCSS and explore how it can help streamline your frontend development workflow.</p>
+<section id="gap-classes">
+    <h2>1. Gap Classes</h2>
+    
+        <p><code>.gap-0</code>: Sets the gap property to 0.</p>
+        <p><code>.gap-1</code> to <code>.gap-6</code>:
+            
+                <p><code>.gap-1</code>: gap: 0.1em;</p>
+                <p><code>.gap-2</code>: gap: 0.2em;</p>
+                <p><code>.gap-3</code>: gap: 0.3em;</p>
+                <p><code>.gap-4</code>: gap: 0.4em;</p>
+                <p><code>.gap-5</code>: gap: 0.5em;</p>
+                <p><code>.gap-6</code>: gap: 0.6em;</p>
+        
+        </p>
+
+</section>
+
+<section id="height-classes">
+    <h2>2. Height Classes: <code>.height-1</code> to <code>.height-6</code></h2>
+    
+        <p><code>.height-1</code>: height: 10em;</p>
+        <p><code>.height-2</code>: height: 15em;</p>
+        <p><code>.height-3</code>: height: 20em;</p>
+        <p><code>.height-4</code>: height: 25em;</p>
+        <p><code>.height-5</code>: height: 30em;</p>
+        <p><code>.height-6</code>: height: 40em;</p>
+
+</section>
+
+<section id="width-classes">
+    <h2>3. Width Classes: <code>.width-1</code> to <code>.width-5</code></h2>
+    
+        <p><code>.width-1</code>: width: 4rem;</p>
+        <p><code>.width-2</code>: width: 6rem;</p>
+        <p><code>.width-3</code>: width: 9rem;</p>
+        <p><code>.width-4</code>: width: 12rem;</p>
+        <p><code>.width-5</code>: width: 15rem;</p>
+
+</section>
+
+<section id="directional-modifiers">
+    <h2>4. Directional Modifiers</h2>
+    
+        <p><code>.up-5</code>: margin-bottom: 5px;</p>
+        <p><code>.up-10</code> to <code>.up-50</code> (increments of 10):
+            
+                <p>Example: <code>.up-10</code>: margin-top: -10px;</p>
+        
+        </p>
+        <p><code>.down-10</code> to <code>.down-50</code> (increments of 10):
+            
+                <p>Example: <code>.down-10</code>: margin-top: 10px;</p>
+        
+        </p>
+        <p><code>.left-10</code> to <code>.left-50</code> (increments of 10):
+            
+                <p>Example: <code>.left-10</code>: margin-left: -10px;</p>
+        
+        </p>
+        <p><code>.right-10</code> to <code>.right-50</code> (increments of 10):
+            
+                <p>Example: <code>.right-10</code>: margin-right: 10px;</p>
+        
+        </p>
+
+</section>
+
+<section id="width-height-classes">
+    <h2>5. Width and Height Classes</h2>
+    
+        <p><code>.w-10</code> to <code>.w-500</code> and <code>.h-10</code> to <code>.h-500</code>
+            
+                <p>Example: <code>.w-10</code>: width: 10px;, <code>.h-10</code>: height: 10px;</p>
+        
+        </p>
+
+</section>
+
+<section id="card">
+    <h2>6. Card</h2>
+    
+        <p><code>.card</code>: Styled container with specific box-shadow, position, gap, and padding properties along with text and image styles.</p>
+        <p><code>.img-full</code>: Styles an element to fill its parent container.</p>
+        <p><code>.img-bg</code>: Styles an element to cover its parent container while maintaining aspect ratio.</p>
+
+</section>
+
+<section id="display-classes">
+    <h2>7. Display Classes</h2>
+    
+        <p><code>.d-block</code>: display: block;</p>
+        <p><code>.d-inline</code>: display: inline;</p>
+        <p><code>.d-inline-block</code>: display: inline-block;</p>
+        <p><code>.d-flex</code>: display: flex;</p>
+        <p><code>.d-inline-flex</code>: display: inline-flex;</p>
+        <p><code>.d-grid</code>: display: grid;</p>
+        <p><code>.d-inline-grid</code>: display: inline-grid;</p>
+        <p><code>.d-table</code>: display: table;</p>
+        <p><code>.d-table-row</code>: display: table-row;</p>
+        <p><code>.d-table-cell</code>: display: table-cell;</p>
+        <p><code>.d-none</code>: display: none;</p>
+
+</section>
+
+<section id="misc-utility-classes">
+    <h2>8. Misc Utility Classes</h2>
+    
+        <p><code>.unset-round</code>: border-radius: 0;</p>
+        <p><code>.serif</code>: font-family: 'Playfair Display', serif;</p>
+        <p><code>.row</code>: flex-direction: row; gap: 1em;</p>
+        <p><code>.column</code>: flex-direction: column; gap: 1em;</p>
+        <p><code>.reverse</code>: flex-direction: row-reverse !important;</p>
+        <p><code>.unzen</code>: display: initial; text-align: left;</p>
+        <p><code>.o-hide</code>: overflow: hidden;</p>
+        <p><code>.vertical-center-flex</code>: Centers content both vertically and horizontally using flexbox.</p>
+        <p><code>.vertical-center</code>: Centers content both vertically and horizontally using absolute positioning.</p>
+        <p><code>.bg-none</code>: background: none;</p>
+        <p><code>.w-100</code>: width: 100%;</p>
+        <p><code>.w-sm</code>: width: 50px; height: auto;</p>
+
+</section>
+
+<section id="experimental-classes">
+    <h2>Experimental Classes</h2>
+    
+    <section id="multi-column-layout-classes">
+        <h3>1. Multi-Column Layout Classes</h3>
+        <p>
+            These classes allow you to create flexible multi-column layouts. They utilize the flex container property to organize child elements into columns, with each class name indicating the number of columns in the layout.
+        </p>
+        
+            <p><code>.two-up</code>: Creates a layout with 2 columns.</p>
+            <p><code>.three-up</code>: Creates a layout with 3 columns.</p>
+            <p><code>.four-up</code>: Creates a layout with 4 columns. (Redundant as this is default)</p>
+            <p><code>.five-up</code>: Creates a layout with 5 columns.</p>
+            <p><code>.six-up</code>: Creates a layout with 6 columns.</p>
+            <p><code>.seven-up</code>: Creates a layout with 7 columns.</p>
+            <p><code>.eight-up</code>: Creates a layout with 8 columns.</p>
+    
+        <p>
+            Each of these classes utilizes the flexbox layout model to arrange child elements into the specified number of columns. The flex property values for child elements ensure that they occupy the correct proportion of the container's width, thereby achieving the desired multi-column layout. Mobile/Tablet support is WIP.
+        </p>
+    </section>
+    
+    <section id="tablet-support">
+        <h3>2. Tablet Support</h3>
+        
+            <p>
+                <code>.tablet-reverse</code> applied to <code>z-col</code>, this swaps two children for tablet. Useful for image/text when you want to control which shows first when stacking for tablet/mobile view.
+            </p>
+    
+    </section>
+    
+</section>
+
+<section id="border-shape-classes">
+    <h2>Border and Shape Classes</h2>
+    <p>
+        These classes provide a simple and effective way to control the appearance of elements with respect to border thickness and shape modification. They allow for a range of common design patterns, from rounded or square edges to circular and pill-shaped elements, enabling developers to quickly apply these styles as needed.
+    </p>
+
+    <section id="border-thickness-classes">
+        <h3>1. Border Thickness Classes</h3>
+        <p>
+            These classes are used to control the thickness of borders for elements.
+        </p>
+        
+            <p><code>.thick</code>: border-width: 2px;</p>
+            <p><code>.thicker</code>: border-width: 3px;</p>
+            <p><code>.thickest</code>: border-width: 4px;</p>
+    
+    </section>
+    
+    <section id="shape-modifier-classes">
+        <h3>2. Shape Modifier Classes (WIP)</h3>
+        <p>
+            These classes are used to modify the border radius of elements to create different shapes.
+        </p>
+        <h4>Rounded and Square Shapes:</h4>
+        
+            <p><code>.round</code>:</p>
+            <p><code>.square</code>:</p>
+    
+        
+        <h4>Circle Shapes:</h4>
+        
+            <p><code>.circle</code>:</p>
+            <p><code>.circle-icon</code>:</p>
+            <p><code>.circle-border</code>:</p>
+    
+        
+        <h4>Pill Shape:</h4>
+        
+            <p><code>.pill-1</code>:</p>
+    
+    </section>
+    
+    <section id="border-removal-class">
+        <h3>3. Border Removal Class</h3>
+        
+            <p><code>.border-0</code>:</p>
+    
+    </section>
+    
+</section>
+
+
+    <section id="order-modification-classes">
+        <h3>3. Order Modification Classes</h3>
+        <p>
+            These classes are used within a flex container to change the order of flex items.
+        </p>
+        
+            <p>
+                <code>.reverse > :nth-z-col(1)</code>:
+                <code>order: 2;</code> - This sets the order of the first flex item to 2.
+            </p>
+            <p>
+                <code>.reverse > :nth-z-col(2)</code>:
+                <code>order: 1;</code> - This sets the order of the second flex item to 1.
+            </p>
+    
+    </section>
+
+    <section id="flex-expansion-class">
+        <h3>4. Flex Expansion Class</h3>
+        
+            <p>
+                <code>.expand</code>:
+                <code>flex: 1;</code> - This class allows a flex item to grow and shrink in order to fit the space available in a flex container.
+            </p>
+    
+    </section>
+
+    <section id="alignment-class">
+        <h3>5. Alignment Class</h3>
+        
+            <p>
+                <code>.center-me</code> - This class vertically centers a flex item within a flex container.
+            </p>
+    
+    </section>
+
+    <p>
+        These classes provide various utilities for working with the CSS Flexbox layout model. They offer convenient ways to control the growth, order, and alignment of flex items within a flex container.
+    </p>
+
+</section>
+
+
+
+
+<section id="color-palettes-utility-classes">
+    <h2>Color Palettes and Utility Classes</h2>
+    <p>
+        These classes and Sass logic are designed to manage color schemes and create utility classes for background colors, text colors, and borders, among others.
+    </p>
+
+    <section id="brand-generic-color-palettes">
+        <h3>Brand and Generic Color Palettes:</h3>
+        
+            <p>Two sets of color palettes: one for the brand (<code>brand-color-variations</code>) and another for generic usage (<code>generic-color-variations</code>).</p>
+            <p>Each palette has dark and light variations.</p>
+    
+    </section>
+
+    
+
+    <section id="border-classes">
+        <h3>Border Classes:</h3>
+        
+            <p><code>.border</code>: A class for a solid border with color #c2c2c2.</p>
+    
+    </section>
+
+    <section id="button-classes-continued">
+        <h3>Button Classes (Continued from previous input):</h3>
+        
+            <p><code>.tout</code>: A class for styled containers with border-radius, padding, and background color.</p>
+    
+    </section>
+
+    <section id="miscellaneous">
+        <h3>Misc:</h3>
+        
+            <p>Variables for border colors (<code>$colors</code> with 6 shades from light to dark).</p>
+            <p>Various button styles like <code>.btn-ghost</code>, <code>.btn-invert</code>, and <code>.btn-square</code>.</p>
+            <p>Button size classes like <code>.btn-xl</code>, <code>.btn-lg</code>, <code>.btn-md</code>, and <code>.btn-sm</code>.</p>
+    
+    </section>
+
+    <p>
+        These classes provide a broad range of utilities and styles to manage the appearance and color schemes of elements within a web project. The color palettes and maps offer a structured way to handle colors, while the utility classes provide quick ways to apply common styles. The button and border classes extend the styling options further, offering more variety and flexibility in design.
+    </p>
+
+</section>
+<section id="color-classes-documentation">
+    <h2>Color Classes Documentation</h2>
+
+    <section id="background-color-classes">
+        <h3>Background Color Classes:</h3>
+        <p>
+            These classes are perfect for setting the background color of your HTML elements according to our brand and generic color palettes.
+        </p>
+        <h4>Brand Palette:</h4>
+        
+            <p><code>.bg-primary-dark, .bg-primary-light</code> - Primary color shades for dark and light themes.</p>
+            <p><code>.bg-secondary-dark, .bg-secondary-light</code> - Secondary color shades for dark and light themes.</p>
+            <p><code>.bg-accent-dark, .bg-accent-light</code> - Accent color shades for dark and light themes.</p>
+            <p><code>.bg-cta-dark, .bg-cta-light</code> - Call to Action color shades for dark and light themes.</p>
+    
+        <h4>Generic Palette:</h4>
+        
+            <p><code>.bg-red-dark, .bg-red-light</code> - Red color shades for dark and light themes.</p>
+            <p><code>.bg-orange-dark, .bg-orange-light</code> - Orange color shades for dark and light themes.</p>
+            <p><code>.bg-yellow-dark, .bg-yellow-light</code> - Yellow color shades for dark and light themes.</p>
+            <p><code>.bg-green-dark, .bg-green-light</code> - Green color shades for dark and light themes.</p>
+            <p><code>.bg-blue-dark, .bg-blue-light</code> - Blue color shades for dark and light themes.</p>
+            <p><code>.bg-purple-dark, .bg-purple-light</code> - Purple color shades for dark and light themes.</p>
+    
+        <h4>Grey Color Variations:</h4>
+        
+            <p><code>.bg-grey-1-dark, .bg-grey-1-light</code> - Shades of grey, from light to dark.</p>
+            <p><code>.bg-grey-2-dark, .bg-grey-2-light</code> - Shades of grey, from light to dark.</p>
+            <p><code>.bg-grey-3-dark, .bg-grey-3-light</code> - Shades of grey, from light to dark.</p>
+            <p><code>.bg-grey-4-dark, .bg-grey-4-light</code> - Shades of grey, from light to dark.</p>
+            <p><code>.bg-grey-5-dark, .bg-grey-5-light</code> - Shades of grey, from light to dark.</p>
+            <p><code>.bg-grey-6-dark, .bg-grey-6-light</code> - Shades of grey, from light to dark.</p>
+    
+    </section>
+
+    <section id="text-color-classes">
+        <h3>Text Color Classes:</h3>
+        <p>
+            These classes allow you to change the text color of your elements to any of the grey shades defined in our palette.
+        </p>
+        
+            <p><code>.text-grey-1</code></p>
+            <p><code>.text-grey-2</code></p>
+            <p><code>.text-grey-3</code></p>
+            <p><code>.text-grey-4</code></p>
+            <p><code>.text-grey-5</code></p>
+            <p><code>.text-grey-6</code></p>
+    
+    </section>
+
+    <section id="border-color-classes">
+        <h3>Border Color Classes:</h3>
+        <p>
+            These classes will help you set border colors for your elements with predefined grey shades.
+        </p>
+        
+            <p><code>.border-1</code> with color #F7F7F7</p>
+            <p><code>.border-2</code> with color #D9D9D9</p>
+            <p><code>.border-3</code> with color #A6A6A6</p>
+            <p><code>.border-4</code> with color #737373</p>
+            <p><code>.border-5</code> with color #404040</p>
+            <p><code>.border-6</code> with color #0D0D0D</p>
+    
+    </section>
+
+    <p>
+        Utilize these classes to easily style your HTML elements with the designated color schemes from our library.
+    </p>
+
+</section>
+
+
+<section id="icon-size-class">
+    <h2>Icon Size Class:</h2>
+    
+        <p><code>.icon-lg</code>: Sets the font size to 23px for large icons.</p>
+
+</section>
+
+<section id="special-characters-class">
+    <h2>Special Characters Class:</h2>
+    
+        <p><code>.tout-circle-floated</code>: Creates a circular element with a diameter of 20px, green background, white text, and a font size of 14px. Positioned absolutely with coordinates top:19px and right:19px.</p>
+
+</section>
+
+<section id="text-type-class">
+    <h2>Text Type Class (Requires JavaScript in zencss.js):</h2>
+    <p>
+        The commented-out <code>#typewriter-container p</code> selector suggests a typewriter effect with a moving cursor, although the rules are commented out and would not be applied without JavaScript interaction. The max-width is set to 1140px, and text overflow is hidden. The white-space property is set to pre-wrap to preserve whitespace and line breaks, and a right border simulates a cursor.
+    </p>
+</section>
+
+
+
+<section id="user-settings-zencss-variables">
+    <h2>User Settings and ZenCSS Variables Documentation</h2>
+
+    <section id="initialization-settings">
+        <h3>Initialization Settings:</h3>
+        
+            <p>Site Icons (<code>$site-icons</code>): Set to true to enable site icons, false to disable. (depricated, will be removed. Used for alert icons only)</p>
+            <p>Font Family (<code>$font-family</code>): Sets the font family for the website.</p>
+    
+    </section>
+
+    <section id="brand-color-palette">
+        <h3>Brand Color Palette:</h3>
+        
+            <p>Primary Color (<code>$primary-color</code>): Set the primary color.</p>
+            <p>Secondary Color (<code>$secondary-color</code>): Set the secondary color.</p>
+            <p>Accent Color (<code>$accent-color</code>): Set the accent color.</p>
+            <p>CTA Color (<code>$cta-color</code>): Set the Call To Action color.</p>
+    
+    </section>
+
+    <section id="generic-color-palette">
+        <h3>Generic Color Palette:</h3>
+        <p>
+            Defines the basic color scheme. Users can switch between alternative color schemes as provided, to suit their preferences.
+        </p>
+        <h4>Dark and Light Colors:</h4>
+        
+            <p>Text White (<code>$text-white</code>), Text Black (<code>$text-black</code>): Set text colors.</p>
+            <p>Light Color (<code>$light-color</code>), Dark Color (<code>$dark-color</code>): Set light and dark colors.</p>
+            <p>Grey Colors (<code>$grey, $dark-grey, $light-grey</code>): Set grey shades.</p>
+            <p>Default Background (<code>$bg-default</code>): Set the default background color.</p>
+            <p>Default Text (<code>$text-default</code>): Set the default text color.</p>
+    
+    </section>
+
+    <section id="rounded-corners">
+        <h3>Rounded Corners:</h3>
+        
+            <p>Border Radius (<code>$border-radius</code>): Set the border radius for elements.</p>
+    
+    </section>
+
+    <section id="site-images">
+        <h3>Site Images:</h3>
+        
+            <p>Hero Image (<code>$hero-image</code>): Set the hero image URL.</p>
+            <p>Light UI Hover Color (<code>$light-ui-hover-color</code>): Set the hover color for light UI.</p>
+    
+    </section>
+
+    <section id="default-spacing">
+        <h3>Default Spacing:</h3>
+        
+            <p>Site Section Padding (<code>$site-section-padding-top, $site-section-padding-bottom</code>): Set padding for site sections.</p>
+            <p>Container Margin (<code>$container-margin</code>): Set the margin for containers.</p>
+            <p>Column Padding and Margin (<code>$col-padding, $col-margin</code>): Set padding and margin for columns.</p>
+    
+    </section>
+
+    <section id="interactive-cards">
+        <h3>Interactive Cards:</h3>
+        
+            <p>Interactive Card Images (<code>$interactive-card-image-1, $interactive-card-image-2, $interactive-card-image-3, $interactive-card-image-4</code>): Set images for interactive cards.</p>
+    
+    </section>
+
+    <section id="border-color">
+        <h3>Border Color:</h3>
+        
+            <p>Border Color (<code>$border-color</code>): Set the border color.</p>
+    
+    </section>
+
+    <section id="overrides-experimental">
+        <h3>Overrides (Experimental):</h3>
+        
+            <p>Z-row Override (<code>$z-row-override</code>): Override the default z-row class.</p>
+            <p>Z-col Override (<code>$z-col-override</code>): Override the default z-col class.</p>
+    
+    </section>
+
+    <section id="alternative-color-palettes">
+        <h3>Alternative Color Palettes:</h3>
+        <!-- Your content for Alternative Color Palettes goes here -->
+    </section>
+
+</section>
+
+<section id="alternative-color-palettes">
+    <h2>Alternative Color Palettes:</h2>
+    <p>
+        Provided are alternative color palettes for customizing the look and feel of the website. Examples include a blue palette, zen palette, and a special palette for the ZenCSS website.
+    </p>
+    <h3>Notes:</h3>
+    
+        <p>Settings for offering different color schemes as add-ons, and for setting master padding and margin for all columns are included.</p>
+        <p>Some experimental settings and to-do items are mentioned for further development.</p>
+
+</section>
+
+<section id="test-classes">
+    <h2>Test Classes</h2>
+    <p>
+        These classes are designed for on-the-fly troubleshooting, especially useful during the development phase to highlight elements on the page.
+    </p>
+    
+        <p>.test-1: Adds a 2px dotted outline around the element with a green color.</p>
+        <p>.test-2: Adds a 2px solid outline around the element with a red color.</p>
+        <p>.test-3: Adds a 4px solid outline around the element with a blue color.</p>
+        <p>.test-4: Adds a 2px solid outline around the element with an orange color.</p>
+        <p>.test-5: Adds a 2px solid outline around the element with a purple color.</p>
+
+    <p>
+        Utilizing these test classes makes it easier to visually identify elements and their dimensions on the page, aiding in debugging and layout adjustments.
+    </p>
+</section>
+
+</body>
+</html>

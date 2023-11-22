@@ -174,6 +174,8 @@
 
 .expanded-content.show {
   max-height: 300px; /* Adjust as needed */
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
 }
 
 .expanded-content.full-height.show {
@@ -201,16 +203,14 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 0;
   left: -50px;
-  top: calc(100% + 40px);
+  //top: calc(100% + 40px);
   background-color: #f9f9f9;
   min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
   z-index: 1001;
   border-radius: $border-radius;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 10px 15px;
   font-size: .9em;
 }
 
@@ -254,7 +254,7 @@
 
   a:hover {
     // background-color: $light-ui-hover-color;
-    color: $var-black-text;
+    color: gray;
     //text-decoration: underline;
   }
 
@@ -273,8 +273,8 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid #f9f9f9;
   position: absolute;
-  top: calc(100% + 12px);
-  left: 45px;
+  top: calc(100% + 19px);
+  left: 20px;
   transform: translateY(-100%);
   z-index: 10;
 
@@ -286,8 +286,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  left: -2px;
-  top: 140%;
+  left: 2px;
+  top: 120%;
   /* Adjust if needed, considering the caret size */
 
 }
@@ -303,16 +303,18 @@
 @media screen and (max-width: 768px) {
   .dropdown-content {
     background-color: unset;
-    position: static; /* Resets the absolute positioning */
-    display: block; /* Show content by default */
-    left: auto; /* Reset positioning */
-    top: auto; /* Reset positioning */
-    box-shadow: none; /* Optionally remove the shadow */
-    z-index: auto; /* Reset z-index */
-    max-height: 300px; /* Adjust as needed for max height */
-    overflow-y: auto; /* Adds vertical scrollbar if needed */
-    overflow-x: hidden; /* Hides horizontal scrollbar */
+    position: static; 
+    display: block; 
+    left: auto;
+    top: auto;
+    box-shadow: none; 
+    z-index: auto; 
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: auto; 
+    min-width: 225px !important;
+    border-radius:unset;
 
     a{
       color:$text-white;
@@ -467,7 +469,7 @@ blockquote em {
 
 //wizard
 .wizard-step {
-  border: 1px solid $border-color;
+  border: 1px solid lighten($border-color, 20%);
   display: none;
   padding: 1em;
   margin-top: 1em;
@@ -569,10 +571,6 @@ blockquote em {
 // Icon classes
 //-------------------------------------------------
 
-//circle - duplicate class declaration - needed as workaround for border radius being set in themes
-.icon-circle {
-  border-radius: 50%;
-}
 
 .hidden, .d-none{
   display: none !important;
@@ -596,7 +594,7 @@ blockquote em {
 
 // feature one col and one col only
 .single{
-  max-width:33%;
+  max-width: 390px;
   min-width: 330px;
 }
 

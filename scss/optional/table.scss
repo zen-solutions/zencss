@@ -30,7 +30,7 @@ $border-color: $border-color;
     thead {
         th {
             background-color:  rgba(111,111,111,.3); //dark mode top color
-            font-weight: 400;
+            font-weight: 600;
         }
 
         @media (max-width: $responsive-breakpoint) {

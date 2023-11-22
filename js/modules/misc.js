@@ -80,6 +80,21 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
     }
 });
 
+  //-------------------------------------
+  // Dynamic Navigation
+  //-------------------------------------
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const header = document.querySelector('.header-sticky.slide-down');
+//     console.log("Script running");
+//     if (header) {
+//       fetch('../docs/navigation.html')  // Assuming navigation.html is in the /docs folder
+//         .then(response => response.text())
+//         .then(data => {
+//           header.innerHTML = data;
+//         })
+//         .catch(error => console.error('Error loading navigation:', error));
+//     }
+//   });
 
 //   //-------------------------------------
 //   // Video Player

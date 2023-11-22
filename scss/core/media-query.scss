@@ -6,6 +6,11 @@
   
   @use "sass:math";
 
+  .megamenu z-col, .megamenu .z-col{
+    flex-basis: calc(30.94%) !important;
+  
+  }
+
 .two-up {
   display: flex;
   flex-wrap: wrap;
@@ -78,13 +83,14 @@
 
 
 
-
 //---------------------------------------------
 // Small devices (landscape phones, 576px and up)
 //---------------------------------------------
 @media (min-width: 576px) {
    .zen {
      font-size: 14px; // Override the base font size for mobile 
+
+
    }
 
   & .z-container,
@@ -113,6 +119,8 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  
   .zen {
     font-size: 16px; // Override the base font size for tablet 
   }
@@ -148,7 +156,9 @@
   }
 
   & .z-col, z-col {
-    flex-basis: calc(33%) !important;
+ flex-basis: calc(33%) !important;
+//flex-basis: calc(31.94%) !important;
+
   }
 
     .z-row .z-col .z-col, z-row z-col z-col {
@@ -224,12 +234,23 @@
 //---------------------------------------------
 
 // Need to expand on this class. why is it here also.
-.reverse-on-tablet {
+.tablet-reverse {
   display: flex;
   flex-wrap: wrap;
+ flex-direction: column-reverse;
   /* Allow items to wrap onto the next line */
 }
 
+@media (max-width: 991px) {
+z-col, .z-col {
+  padding: .8rem !important;
+}
+
+ul,ol {
+  padding-left: 20px;
+}
+
+}
 
 @media (max-width: 768px) {
 
@@ -243,6 +264,11 @@
 
   .reverse-tablet> :nth-z-col(2) {
     order: 1;
+  }
+
+  z-container-fluid z-col, .z-container-fluid .z-col{
+    margin-left:0 !important;
+    margin-right:0 !important;
   }
 
 }
@@ -306,13 +332,47 @@ left:10px;
 }
 
 .narrow{
-  padding-left:20%;
-  padding-right:20%;
+  padding-left:.5em;
+  padding-right:.5em;
+}
+
+.narrow-left{
+  padding-left:.5em;
+}
+
+.narrow-left-sm{
+  padding-left:2em;
+}
+
+.narrow-left-md{
+  padding-left:4em;
+}
+
+.narrow-left-lg{
+  padding-left:6em;
+}
+.narrow-right{
+  padding-left:.5em;
+}
+
+.narrow-sm{
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.narrow-md{
+  padding-left:1.5em;
+  padding-right:1.5em;
+}
+
+.narrow-lg{
+  padding-left:2em;
+  padding-right:2em;
 }
 
 @media (max-width: 992px) {
 
-  .narrow{
+  .narrow, .narrow-sm, .narrow-md, .narrow-lg, .narrow-left, .narrow-left-sm, .narrow-left-md, .narrow-left-lg, .narrow-right{
     padding-left:unset;
     padding-right:unset;
   }
@@ -323,6 +383,10 @@ left:10px;
   .reverse-tablet> :nth-z-col(2) {
     order: 1;
   }
+
+//   .center-tablet{
+//   text-align: center;
+// }
 
   .eight-up > * {
     flex: 0 0 23.335% !important;
@@ -341,9 +405,20 @@ left:10px;
   flex: 0 0 31.853% !important;
 }
 
-.border-right{
+.border-right::after {
+content: "";
+  position: relative;
+  top: 15px;
+  right: 0px;
+  width: 100%;
+ height: 1px;
   border-right: 0;
+  border-bottom: 1px solid lighten($border-color, 24%);
 }
+
+h1, h2, h3, h4, h5, h6{
+line-height: 2.75rem !important;
+} 
 
 }
 
@@ -353,4 +428,35 @@ left:10px;
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+.dropdown-content.megamenu .z-col, .dropdown-content.megamenu z-col  {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+header {
+  padding: 0;
+  height: 50px;
+}
+
+#hamburger-button{
+  padding: 0;
+  padding-right: 10px;
+}
+
+}
+
+@media (max-width: 767px) {
+  .mobile-thin{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .mobile-max-up{
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  }
 

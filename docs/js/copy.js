@@ -72,3 +72,23 @@ preElements.forEach(function (textBox)
 //     //     link.addEventListener("click", toggleMenu);
 //     // });
 // });
+
+
+//dupe hamburger for header page
+document.addEventListener("DOMContentLoaded", (event) => {
+	const hamburgerButton2 = document.getElementById("hamburger-button-2");
+	const closeButton = document.getElementById("close-button");
+	const nav = document.querySelector("nav");
+  
+	const toggleMenu = () => {
+		nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
+	};
+  
+	if (hamburgerButton2) {
+		hamburgerButton2.addEventListener("click", toggleMenu);
+
+  
+
+	}
+  });
+  

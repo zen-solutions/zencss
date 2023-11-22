@@ -69,10 +69,10 @@
 //   top: 5px;
 // }
 
-// Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
-@for $i from 1 through 10 {
-  $value: $i * 10; // Multiply the loop variable by 10 to get the desired values
-
+// Loop through to generate classes for 1 to 50, incrementing by 1
+@for $i from 1 through 11 {
+  $value: $i * 10; 
+  
   // Generating classes for negative margin-top (moving up)
   .up-#{$value} {
     position: relative;
@@ -94,7 +94,7 @@
   // Generating classes for positive margin-right (moving right)
   .right-#{$value} {
     position: relative;
-    right: #{$value}px !important;
+    right: -#{$value}px !important;
   }
 }
 

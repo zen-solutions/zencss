@@ -14,9 +14,11 @@
   color: $text-color;
   overflow: hidden;
   border-radius: $border-radius;
+//  border: 2px solid $button-bg-color;
+
 
   // Regular buttons inside the theme
-  button {
+  button, .btn {
     background: $button-bg-color;
     color: $button-text-color;
     @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
@@ -38,6 +40,7 @@
   .btn-fill {
     background: transparent;
     border: 2px solid $button-bg-color;
+   
     color: $button-bg-color;
     @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
 
@@ -58,8 +61,8 @@
 //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $tout-bg-color, $tout-text-color
 $themes: (
   primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
-  dark: (#5d5d5d, #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
-  light: (rgba(255, 255, 255, 0.40), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
+  dark: (rgba(25,25,25, 0.9), #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
+  light: (rgba(255, 255, 255, 0.5), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
   cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
   accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
   secondary: ($secondary-color, $light-color, $accent-color, $dark-color, $accent-color, $dark-color)
@@ -123,21 +126,21 @@ $themes: (
 
 // Basic button style placeholder
 %button-basic {
-  padding: 12px 20px;
-  border: none;
   border-radius: $border-radius; 
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+
 }
+
+
 
 // Apply .btn-fill styles
 // Note: We don't need to repeat the .btn-fill styles
  //here if they are already defined within the mixin above
 // If there are any generic styles for .btn-fill not dependent on themes, they can be added here
-.bg-accent-hover:hover{
-  background: darken($accent-color, 10%) !important;
+// .bg-accent-hover:hover{
+//   background: darken($accent-color, 10%) !important;
 
-}
+// }

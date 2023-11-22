@@ -25,7 +25,7 @@ $var-black-text: black; // same
 $primary-color : #1b66bb; 
 $secondary-color:#426b2f;
 $accent-color: #ffb12b;
-$cta-color: #0b4485;
+$cta-color: #044384;
 $nav-link-color: $light-color;
 
 
@@ -173,14 +173,14 @@ $dual-mode-text-color:#808080;
 $bg-header-footer: #303030;
 $container-margin: 2em;
 $shadow-color:rgba(0,0,0,0.2);
-$line-height: 2rem;
-
+$line-height: 1.8rem;
+$nav-color: #303030;
 //------------------------------------------ 
 // Default Spacing - wip
 //------------------------------------------ 
 
 $site-section-padding-top: 2.75em;
-$site-section-padding-bottom: 2.75em;
+$site-section-padding-bottom: 0;
 
 
 //set master padding and margin for all columns

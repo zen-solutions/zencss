@@ -32,6 +32,12 @@ class ZModal extends HTMLElement {
           if (event.target.classList.contains("modal-close")) {
               this.close();
           }
+
+          document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+              this.close();
+            }
+          });
       });
   
       const openModalButton = document.querySelector(".modal-open");
@@ -68,13 +74,14 @@ class ZModal extends HTMLElement {
           .modal-wrapper {
               position: relative;
               width: 80%;
-              max-width: 500px;
               border: 1px solid rgba(111,111,111,.35);
               border-radius: var(--border-radius, 4px);
               background-color: #f4f4f4;
               color: #424242;
               box-sizing: border-box;
+              max-width:500px;
           }
+          
           .modal-header {
               display: flex;
               justify-content: space-between;
@@ -116,7 +123,8 @@ class ZModal extends HTMLElement {
 
               }
               .modal-wrapper {
-                  width: 100%;
+                  width: 99%;
+                  max-width:100% !important;
               }
 
           }

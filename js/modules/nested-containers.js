@@ -1,3 +1,8 @@
+/*
+  * zenCSS v1.0.0 (https://zencss.com/)
+  * Copyright 2023-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
 
   //-------------------------------------
   // Nested containers - kill parent padding
@@ -37,7 +42,6 @@
             // Set the top and bottom padding of <z-row> to 0
             row.style.paddingTop = '0';
             row.style.paddingBottom = '0';
-            console.log("There are no mistakes, only happy accidents. ");
         }
     });
 });

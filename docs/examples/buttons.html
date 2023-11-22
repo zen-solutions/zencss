@@ -18,7 +18,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -30,6 +30,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -45,7 +46,6 @@
                         <a href="smart-text.html">Smart-Text System</a>  
                         <a href="themes.html">Content Themes</a>                      
                         <a href="text-classes.html">Font Styles</a>
-                      <a href="text-colors.html">Font Colors</a>
                         <a href="test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
                         <a href="jumbotron.html">Hero Section</a>
+                       <a href="image-text.html">Image/Text Section</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="hero-section.html">Image/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="toggle.html">Accordian</a>
@@ -121,7 +121,7 @@
             </ul>
         </nav>
     </header>
-<main id="main-navigation">
+<main id="main-content">
 
 
     <!----------------------------------------------------------------------->
@@ -138,90 +138,58 @@
                 <div class="center">
                     <h1 class="headline"> Themed buttons</h1>
                     <p>Copy/Paste examples of zenCSS components - style to your liking. </p>
-                        <hr>
+              
                 </div>
             </z-col>
         </z-row>
+
     </z-container>
 
     <!----------------------------------------------------------------------->
     <!---  Component  --->
     <!----------------------------------------------------------------------->
-<p class="center">you can use button for your themed button, or you can do btn-ghost for a white version (in any theme) or you can do btn-fill for the fill version for your current parent theme. We matched them up here to present but each theme would use the CTA color for the fill. </p>
 
     <z-container>
+        <z-row>
+            <z-col>
+                <h2 class="headline"> Buttons & Ghost Buttons</h2>
+            </z-col>
+        </z-row>
         <z-row class="six-up">
             <z-col>
                 <button  class="btn-primary">btn-primary</button>
-                <button class="theme-cta btn-fill">Dolor Vitae</button>
+                <button class="theme-cta btn-fill">theme-cta btn-fill</button>
 
             </z-col>
 
             <z-col>
                 <button  class="btn-secondary">btn-secondary</button>
-                <button class="theme-accent btn-fill">Dolor Vitae</button>
+                <button class="theme-accent btn-fill">theme-accent btn-fill</button>
 
             </z-col>
             <z-col>
                 <button  class="btn-cta">btn-cta</button>
-                <button class="theme-primary btn-fill">Dolor Vitae</button>
+                <button class="theme-primary btn-fill">theme-primary btn-fill</button>
 
             </z-col>
             <z-col>
                 <button  class="btn-accent">btn-accent</button>
-                <button class="theme-secondary btn-fill">Dolor Vitae</button>
+                <button class="theme-secondary btn-fill">theme-secondary btn-fill</button>
 
             </z-col>
             <z-col>
                 <button  class="btn-dark">btn-dark</button>
-                <button class="theme-light btn-fill">btn-dark</button>
+                <button class="theme-light btn-fill">theme-light btn-fill</button>
             </z-col>
             <z-col>
                 <button  class="btn-light">btn-light</button>
-                <button class="theme-dark btn-fill">Dolor Vitae</button>
+                <button class="theme-dark btn-fill">theme-dark btn-fill</button>
 
             </z-col>
         </z-row>
     </z-container>
 
 
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h4> Button sizes</h4>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <button  class="btn-sm theme-primary">btn-sm</button>
-            </z-col>
-
-            <z-col>
-                <button  class="btn-md theme-primary">btn-md</button>
-            </z-col>
-
-            <z-col>
-                <button  class="btn-lg theme-primary">btn-lg</button>
-            </z-col>
-
-
-            <z-col>
-                <button  class="btn-xl theme-primary">btn-xl</button>
-            </z-col>
-
-           
-
-
-        </z-row>
-    </z-container>
 
     <!--z-container>
         <z-row>
@@ -261,12 +229,104 @@
 <z-container>
     <z-row>
         <z-col>
-            <h2>Code Example</h2>
-            <pre class="copy-text"><code class="language-html">&lt;button class="btn-md btn-primary"&gt;Medium button, primary color theme&lt;/button&gt;</code></pre>
+            <p>Code Example</p>
+            <pre class="copy-text"><code class="language-html">&lt;button class="btn-md btn-primary"&gt;Medium button, primary color theme&lt;/button&gt;
+&lt;button class="theme-cta btn-fill"&gt;Ghost button, primary color theme&lt;/button&gt;</code></pre>
         </z-col>
     </z-row>
 </z-container>
 
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <h2 class="headline">Links as buttons</h2>
+
+        </z-col>
+    </z-row>
+    <z-row class="six-up">
+        <z-col>
+            <a  class="btn btn-primary">btn btn-primary</a>
+            <a  class="btn theme-cta btn-fill">btn theme-cta btn-fill</a>
+        </z-col>
+
+        <z-col>
+            <a  class="btn btn-secondary">btn btn-secondary</a>
+            <a  class="btn theme-accent btn-fill">btn theme-accent btn-fill</a>
+
+        </z-col>
+        <z-col>
+            <a  class="btn btn-cta">btn btn-cta</a>
+            <a  class="btn theme-primary btn-fill">btn theme-primary btn-fill</a>
+
+        </z-col>
+        <z-col>
+            <a  class="btn btn-accent">btn btn-accent</a>
+            <a  class="btn theme-secondary btn-fill">btn theme-secondary btn-fill</a>
+
+        </z-col>
+        <z-col>
+            <a  class="btn btn-dark">btn btn-dark</a>
+            <a  class="btn theme-light btn-fill">btn theme-light btn-fill</a>
+        </z-col>
+        <z-col>
+            <a  class="btn btn-light">btn btn-light</a>
+            <a  class="btn theme-dark btn-fill">btn theme-dark btn-fill</a>
+
+        </z-col>
+    </z-row>
+</z-container>
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <p>Code Example</p>
+            <pre class="copy-text"><code class="language-html">&lt;a class="btn btn-primary"&gt;Standard button, primary color theme&lt;/a&gt;
+&lt;a class="btn theme-cta btn-fill"&gt;Ghost button, primary color theme&lt;/a&gt;</code></pre>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <div>
+                <h2 class="headline"> Button sizes</h2>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <button  class="btn-sm theme-primary">btn-sm</button>
+        </z-col>
+
+        <z-col>
+            <button  class="btn-md theme-primary">btn-md</button>
+        </z-col>
+
+        <z-col>
+            <button  class="btn-lg theme-primary">btn-lg</button>
+        </z-col>
+
+
+        <z-col>
+            <button  class="btn-xl theme-primary">btn-xl</button>
+        </z-col>
+
+       
+
+
+    </z-row>
+</z-container>
 
 
     <!----------------------------------------------------------------------->
@@ -288,11 +348,13 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="tab-nav-round">
-                        <a class="item"  id="toggleButton" >Test Mode</a>
-                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
-                        <a href="../index.html" class="item">Docs</a>
-                    </div>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md">Docs</a>
+                    </p>
+                </div>
             </z-col>
         </z-row>
     </z-container>
@@ -306,7 +368,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

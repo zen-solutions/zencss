@@ -18,7 +18,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -30,6 +30,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -45,7 +46,6 @@
                         <a href="smart-text.html">Smart-Text System</a>  
                         <a href="themes.html">Content Themes</a>                      
                         <a href="text-classes.html">Font Styles</a>
-                      <a href="text-colors.html">Font Colors</a>
                         <a href="test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
                         <a href="jumbotron.html">Hero Section</a>
+                       <a href="image-text.html">Image/Text Section</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="hero-section.html">Image/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="toggle.html">Accordian</a>
@@ -131,7 +131,7 @@
     <z-container>
         <z-row>
             <z-col class="center">
-                <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-90 down-20">
+                <img src="/docs/images/logos/zencss/smartalign.png" class="center-me w-90 down-20">
                     <h1 class="headline">The zenCSS Smart-Align Framework</h1>
                     <p class="lead">Dive into a world where shape and form align, and everything magically falls into place. 
                     </p>
@@ -139,44 +139,44 @@
     </z-row>
     </z-container>
 
-<z-container class="theme-dark">
+<z-container class="bg-grey-4">
     <z-row>
         <z-col class="center">
-            <p>Our journey begins with a  container.</p>
+            <p>Your journey begins with a container.</p>
             <p>Imagine containers as the foundational blocks of your webpage, holding your content with precision and care. For example, this grey section is a container,  a self-contained universe of your design. </p>
-            <p>Their mission? To ensure your layouts stay sharp and consistent, adapting seamlessly to the screens of mobiles, tablets, and desktops alike. We use the "z-" prefix in our framework structure, so this is referred to as a z-container.</p>
+            <p>Their mission? To ensure your layouts stay sharp and consistent, adapting seamlessly to the screens of mobiles, tablets, and desktops alike. </p>
    
         </z-col>
     </z-row>
 </z-container>
 <br>
-<z-container class="theme-dark p-2">
-    <z-row class="theme-light mb-1 down-2">
+<z-container class="bg-grey-4 p-2">
+    <z-row class="theme-light mb-1 down-2 text-grey-6">
         <z-col class="center">
-            <p> Rows (z-row) are declared within containers, and are akin to layers in a delicious cake - each adding its own flavor to the overall experience. </p>
+            <p> Rows are declared within containers, and are akin to layers in a delicious cake - each adding its own flavor to the overall experience. </p>
         </z-col>
     </z-row>
     
-    <z-row class="theme-light">
+    <z-row class="theme-light  text-grey-6">
         <z-col class="center">
             <p>Stack as many or as few as you desire — our Smart-Align Framework is the master chef, ensuring rows align perfectly, creating a visual feast. </p>
         </z-col>
     </z-row>
 </z-container>
 <br>
-<z-container class="theme-dark p-2">
+<z-container class="bg-grey-4 p-2">
     <z-row class="theme-light">
-        <z-col class="center bg-grey-2 ml-1 round">And inside rows... columns (z-col).</z-col>
-        <z-col class="center bg-grey-2 round">Any amount is fine, columns format automatically</z-col>
-        <z-col class="center theme-dark mr-1">
+        <z-col class="center bg-grey-2 ml-1 round saf-move-3">And inside rows... columns.</z-col>
+        <z-col class="center bg-grey-2 round saf-move">Any amount is fine, columns format automatically</z-col>
+        <z-col class="center bg-grey-4 mr-1  saf-move-2">
             <z-container>
                 <z-row>
                     <z-col>Or use a container to make a micro-layout in a given section</z-col>
                 </z-row>
                 <z-row>
-                    <z-col class="bg-grey-5 center">1</z-col>
-                    <z-col class="bg-grey-5 center">2</z-col>
-                    <z-col class="bg-grey-5 center">3</z-col>
+                    <z-col class="bg-grey-2 center">1</z-col>
+                    <z-col class="bg-grey-2 center">2</z-col>
+                    <z-col class="bg-grey-2 center">3</z-col>
                 </z-row>
             </z-container>
         </z-col>
@@ -185,7 +185,7 @@
 
 <z-container>
     <z-row>
-        <z-col><p>By default, the Smart-Align System stacks four columns on desktop, two  on tablet and one on mobile. Resize the window to see it in action. </p></z-col>
+        <z-col><p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. The system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window to see it in action. </p></z-col>
     </z-row>
 </z-container>
 <z-container>
@@ -194,6 +194,9 @@
         <z-col class="center bg-grey-2">2</z-col>
         <z-col class="center bg-grey-2">3</z-col>
         <z-col class="center bg-grey-2 ">4</z-col>
+        <z-col class="center bg-grey-2 ">5</z-col>
+        <z-col class="center bg-grey-2 ">6</z-col>
+        <z-col class="center bg-grey-2 ">7</z-col>
     </z-row>
 </z-container>
 
@@ -216,7 +219,7 @@
 </z-row>
 </z-container>
 
-<z-container>
+<!-- <z-container>
     <z-row>
     <z-col><p>And you can nest containers in columns if you need more items per row. Everything will automatically align, beautifully.</p></z-col>
  
@@ -275,11 +278,11 @@
         </z-row>
     </z-container></z-col>
 </z-row>
-</z-container>
+</z-container> -->
 
 <z-container-fluid class="theme-dark mt-5">
     <z-row>
-        <z-col class="center">One more thing.. If you want to go full screen, you'd use z-container-fluid</z-col>
+        <z-col class="center"><p>One more thing.. If you want to go full screen, you'd use container-fluid.  <b>Note:</b> We use a "z-" prefix for container, row and column class names.</p></z-col>
     </z-row>
 </z-container-fluid>
 
@@ -360,7 +363,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
 

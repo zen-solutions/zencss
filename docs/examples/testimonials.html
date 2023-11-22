@@ -18,7 +18,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -30,6 +30,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -45,7 +46,6 @@
                         <a href="smart-text.html">Smart-Text System</a>  
                         <a href="themes.html">Content Themes</a>                      
                         <a href="text-classes.html">Font Styles</a>
-                      <a href="text-colors.html">Font Colors</a>
                         <a href="test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
                         <a href="jumbotron.html">Hero Section</a>
+                       <a href="image-text.html">Image/Text Section</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="hero-section.html">Image/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="toggle.html">Accordian</a>
@@ -121,7 +121,7 @@
             </ul>
         </nav>
     </header>
-<main id="main-navigation">
+<main id="main-content">
 
 
 
@@ -143,24 +143,13 @@
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
-    <z-container>
+    <z-container class="single site-section">
         <z-row>
-            <z-col class="card-split theme-primary small">
-                <div class="image-group">
-                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" alt="" class="w-75">
-                    <star-component stars="3" half="true"></star-component>
-                </div>
-         
-                <div class="text-group">
-                    <h6> Ex error nobis possimus  </h6>
-                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</small>
-                    <small class="signature">-John Doe</small>
-                  </div>
-            </z-col>
+
 
             <z-col class="card-split theme-light small">
                 <div class="image-group">
-                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75">
+                    <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75"><br>
                     <star-component stars="4"></star-component>
                 </div>
          
@@ -171,19 +160,6 @@
                   </div>
             </z-col>
 
-            <z-col class="card-split theme-dark small">
-                <div class="image-group">
-                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-75">
-                    <star-component stars="5" half="false"></star-component>
-
-                </div>
-         
-                <div class="text-group">
-                    <h6> Ex error nobis possimus  </h6>
-                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</small>
-                    <small class="signature">-John Doe</small>
-                  </div>
-            </z-col>
 
 
         </z-row>
@@ -198,7 +174,7 @@
                     <div id="content1" class="expanded-content" aria-hidden="true">
                         <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card-split theme-primary small"&gt;
     &lt;div class="image-group"&gt;
-        &lt;img src="your-image.jpg" class="w-75" alt=""&gt;
+        &lt;img src="your-image.jpg" class="w-75" alt=""&gt;&lt;br&gt;
         &lt;star-component stars="3" half="true"&gt;&lt;/star-component&gt;
     &lt;/div&gt;
 
@@ -217,29 +193,13 @@
 
     
 
-    <z-container>
+    <z-container class="single site-section">
         <z-row>
-            <z-col class="card theme-primary center">
-                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" alt="" class="w-75 center-me img-round">
-                <star-component stars="3" half="true"></star-component>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</p>
-                <small class="signature smaller">-John Doe</small>
-            </z-col>
-
             <z-col class="card theme-light center">
-                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75 center-me img-round">
+                <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75 center-me img-round">
                 <star-component stars="4" half="true"></star-component>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</p>
                 <small class="signature smaller">-Jane Doe</small>
-
-            </z-col>
-            <z-col class="card theme-dark center">
-                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-75 center-me img-round">
-                <star-component stars="5" half="false"></star-component>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</p>
-                <small class="signature smaller">-Jane Doe</small>
-
-            </z-col>
         </z-row>
     </z-container>
 
@@ -289,11 +249,13 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="tab-nav-round">
-                        <a class="item"  id="toggleButton" >Test Mode</a>
-                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
-                        <a href="../index.html" class="item">Docs</a>
-                    </div>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md">Docs</a>
+                    </p>
+                </div>
             </z-col>
         </z-row>
     </z-container>
@@ -307,7 +269,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

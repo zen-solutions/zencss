@@ -20,7 +20,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -32,6 +32,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -47,7 +48,6 @@
                         <a href="smart-text.html">Smart-Text System</a>  
                         <a href="themes.html">Content Themes</a>                      
                         <a href="text-classes.html">Font Styles</a>
-                      <a href="text-colors.html">Font Colors</a>
                         <a href="test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
@@ -57,16 +57,16 @@
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
                         <a href="jumbotron.html">Hero Section</a>
+                       <a href="image-text.html">Image/Text Section</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="hero-section.html">Image/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="toggle.html">Accordian</a>
@@ -124,7 +124,7 @@
         </nav>
     </header>
 
-    <main id="main-navigation">
+    <main id="main-content">
 
         <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -133,7 +133,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 > Image Gallery</h1>
+                    <h1 class="headline"> Image Gallery</h1>
                     <p>A simple image gallery with pagination and a modal. </p>
 
                     <hr>
@@ -152,39 +152,55 @@
 <!-- Image Gallery -->
 <div class="image-gallery">
     <!-- page 1 -->
-    <img src="../../img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
-    <img src="../../img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
-    <img src="../../img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
-    <img src="../../img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
-    <img src="../../img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
-    <img src="../../img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
-    <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
-    <img src="../../img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
-    <img src="../../img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
-    <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
-    <img src="../../img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
-    <img src="../../img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
-    <img src="../../img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
-
+    <img src="/img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
+    <img src="/img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
+    <img src="/img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
+    <img src="/img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
+    <img src="/img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
+    <img src="/img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
+    <img src="/img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
+    <img src="/img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
+    <img src="/img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
+    <img src="/img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
+    <img src="/img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
+    <img src="/img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
+    <img src="/img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
+    <img src="/img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
+    <img src="/img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
 
         <!-- page 2 -->
-        <img src="../../img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
-        <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
-        <img src="../../img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
-        <img src="../../img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
-        <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
-        <img src="../../img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
-        <img src="../../img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
-        <img src="../../img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
-         <img src="../../img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
-        <img src="../../img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
-        <img src="../../img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
-        <img src="../../img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
-        <img src="../../img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
-        <img src="../../img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
-        <img src="../../img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
+        <img src="/img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
+        <img src="/img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
+        <img src="/img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
+        <img src="/img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
+        <img src="/img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
+        <img src="/img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
+        <img src="/img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
+        <img src="/img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
+         <img src="/img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
+        <img src="/img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
+        <img src="/img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
+        <img src="/img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
+        <img src="/img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
+        <img src="/img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="last2">
+        <img src="/img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
+    <!-- page 3 -->
+    <img src="/img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
+    <img src="/img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
+    <img src="/img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
+    <img src="/img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
+    <img src="/img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
+    <img src="/img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
+    <img src="/img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
+    <img src="/img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
+    <img src="/img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
+    <img src="/img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
+    <img src="/img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
+    <img src="/img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
+    <img src="/img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
+    <img src="/img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
+    <img src="/img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
+
 
 
 </div>
@@ -204,9 +220,6 @@
 </z-modal>
 
             </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="center">Note: Include /js/optional/image-gallery.js on your page to use the image gallery</z-col>
         </z-row>
     </z-container>
 
@@ -258,8 +271,7 @@
 
     </main> 
         
-    <script src="../../js/zencss.js"></script>
-    <script src="../../js/optional/image-gallery.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
 </body>

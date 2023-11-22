@@ -15,3 +15,10 @@
         color: $light-color;
     }
 }
+
+//hover state for buttons
+@mixin hover-darken($color, $amount: 12%) {
+    &:hover {
+      background: darken($color, $amount) !important; 
+    }
+  }

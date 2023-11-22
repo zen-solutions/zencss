@@ -18,7 +18,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -30,6 +30,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -45,7 +46,6 @@
                         <a href="smart-text.html">Smart-Text System</a>  
                         <a href="themes.html">Content Themes</a>                      
                         <a href="text-classes.html">Font Styles</a>
-                      <a href="text-colors.html">Font Colors</a>
                         <a href="test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
                         <a href="jumbotron.html">Hero Section</a>
+                       <a href="image-text.html">Image/Text Section</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="hero-section.html">Image/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="toggle.html">Accordian</a>
@@ -121,7 +121,7 @@
             </ul>
         </nav>
     </header>
-<main id="main-navigation">
+<main id="main-content">
 
 
 
@@ -144,49 +144,213 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
+<!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+    <z-container class="single site-section">
+        <z-row>
+            <z-col class="border-bottom">
+                <p class="headline">Card with Full Bleed Header Image and Text</p>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="card theme-light">
+                <img src="/img/placeholder/16x9/neom2.jpg" class="img-full square">
+               <h3>card title</h3>
+               <p>lorem ipsum dolor</p>
+            </z-col>
+
+        </z-row>
+    </z-container>
+
     <z-container>
         <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card theme-light"&gt;
+    &lt;img src="16x9.jpg" class="img-full square"&gt;
+    &lt;h3&gt;card title&lt;/h3&gt;
+    &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
 
-            <z-col class="card theme-light ">
-                <h5>Image Left - Full Bleed Cards</h5>
-                <p>Cards with a full bleed image on the left</p>
-                <a  href="cards-image-full-bleed.html">View&nbsp;Now</a>
+
+
+
+
+
+
+
+<z-container class="single site-section">
+    <z-row>
+        <z-col class="border-bottom">
+            <p class="headline ">Card with Background Image and Text</p>
+        </z-col>
+    </z-row>
+</z-row>
+      
+        <z-row>
+            <z-col class="card theme-light gap-1">
+                <img src="/img/placeholder/16x9/daniel-schwartz.jpg" class="img-bg">
+                <h4>card title</h4>
+                <p>lorem ipsum dolor</p>
             </z-col>
 
+        </z-row>
+       
+    </z-container>
 
-            <z-col class="card theme-light ">
-                <h5>Image Top - Full Bleed Cards</h5>
-                <p>Cards with a full bleed image at the top</p>
-                <a  href="cards-image-top-full-bleed.html">View&nbsp;Now</a>
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2">Code Example</a>
+                    <div id="content2" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card theme-light gap-1"&gt;
+  &lt;img src="16x9.jpg" class="img-bg"&gt;
+  &lt;h4&gt;card title&lt;/h4&gt;
+  &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+
+
+    <z-container class="single">
+        <z-row>
+            <z-col class="border-bottom">
+                <p class="headline ">Card with Top Image and Text</p>
             </z-col>
         </z-row>
         <z-row>
-            <z-col class="card theme-light ">
-                <h5>Image Wrap Cards</h5>
-                <p>Cards with text that wraps around the image</p>
-                <a  href="cards-image-wrap.html">View&nbsp;Now</a>
-            </z-col>
 
-            <z-col class="card theme-light ">
-                <h5>Image Top Cards</h5>
-                <p>Cards with text and a hero image</p>
-                <a  href="cards-image-top.html">View&nbsp;Now</a>
-            </z-col>
-
-            <z-col class="card theme-light ">
-                <h5>Image/Background Cards</h5>
-                <p>Cards with a background image</p>
-                <a  href="cards-image-background.html">View&nbsp;Now</a>
-            </z-col>
+              <z-col class="card theme-light">
+                <img src="/img/placeholder/16x9/KamilWroblewski.jpg" class="square">
+                <h4>A title goes here</h4>
+                <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+              </z-col>
 
 
         </z-row>
-     
-<z-row>
-    <z-col><hr>
-    </z-col>
-</z-row>
+      
     </z-container>
+
+
+
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3">Code Example</a>
+                    <div id="content3" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card theme-dark"&gt;
+    &lt;img src="16x9.jpg" class="square"&gt;
+    &lt;h4&gt;A title goes here&lt;/h4&gt;
+    &lt;p&gt;Fugit ratione natus... &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+
+    <z-container class="single site-section">
+        <z-row>
+            <z-col class="border-bottom">
+                <p class="headline ">Card with Wrapping Text</p>
+            </z-col>
+        </z-row>
+        <z-row>
+          <z-col class="card theme-light small">
+            <div>
+              <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" class="img-left w-90 h-90 img-round">
+            <h3>A title goes here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus officia eligendi iste nihil.  Impedit nam laborum quo qui culpa animi eligendi.  Voluptas velit molestias, illum fugiat eos labore incidunt quis, mollitia deserunt quasi maiores ullam. Eius non at magni amet blanditiis, nesciunt saepe.</p>
+        </div>
+          </z-col>
+
+        </z-row>
+       
+</z-container>
+
+
+
+<z-container>
+  <z-row>
+      <z-col class="pl-0 pr-0">
+          <div class="accordion">
+              <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4">Code Example</a>
+              <div id="content4" class="expanded-content" aria-hidden="true">
+                  <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card theme-primary small"&gt;
+  &lt;div&gt;
+      &lt;img src="your-image.jpg" class="img-left w-80 h-80 img-round"&gt;
+      &lt;h4&gt;A title goes here&lt;/h4&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ... &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+          </div>
+      </z-col>
+  </z-row>
+</z-container>
+
+
+<z-container class="single site-section">
+    <z-row>
+        <z-col class="border-bottom">
+            <p class="headline ">Card with Icon and Text</p>
+        </z-col>
+    </z-row>
+    <z-row>
+        <z-col class="card theme-light center">
+            <div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"><img src="/img/general-icons/essential/bolt-solid.png" alt="" class="w-20 h-20 center-me icon-invert"></i>
+            </div>
+            <h4>A title goes here</h4>
+            <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+        </z-col>
+
+
+    </z-row>
+
+</z-container>
+
+<z-container>
+    <z-row>
+        <z-col class="pl-0 pr-0">
+            <div class="accordion">
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5">Code Example</a>
+                <div id="content5" class="expanded-content" aria-hidden="true">
+                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-col class="card theme-light center"&gt;
+    &lt;div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"&gt;
+      &lt;img src="your-icon.png" alt="" class="w-20 h-20 center-me icon-invert"&gt;
+    &lt;/div&gt;
+    &lt;h4&gt;A title goes here&lt;/h4&gt;
+    &lt;p&gt;Fugit ratione natus ... &lt;/p&gt;
+&lt;/z-col&gt;</code></pre>
+                </div>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+
+
+
+
+
 
 
 
@@ -213,11 +377,13 @@
     <z-container>
         <z-row class="up-40">
             <z-col>
-                <div class="tab-nav-round">
-                        <a class="item"  id="toggleButton" >Test Mode</a>
-                        <a class="item"  id="toggleDarkMode">Dark Mode</a>
-                        <a href="../index.html" class="item">Docs</a>
-                    </div>
+                <div class="center">
+                    <p>
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md">Docs</a>
+                    </p>
+                </div>
             </z-col>
         </z-row>
     </z-container>
@@ -231,7 +397,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

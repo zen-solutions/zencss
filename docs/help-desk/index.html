@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/documentation.css">
    <link rel="stylesheet" href="../../css/zen.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body class="zen">
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -26,6 +24,7 @@
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
 <a href="../help-desk/index.html">Getting Started</a>
+<a href="../help-desk/installation.html">Installation</a>
 <a href="../help-desk/design-system.html">Design System</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Site Parts</a>
@@ -57,10 +56,10 @@
                         <a href="../examples/footer.html">Footer</a>
                     </div>
                 </div>
-                <div class="dropdown p-4">
+                <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Site Parts</a>
                     <div class="dropdown-content megamenu">
-                        <z-container class="ml-3">
+                        <z-container class="narrow-left-sm">
                             <z-row>
                                 <z-col class="small">
                                     <a href="../examples/toggle.html">Accordian</a>
@@ -142,25 +141,19 @@
 <z-container class="site-section">
     <z-row>
         <z-col class="card theme-light feature-md">
-            <img src="../../img/general-icons/expanded/download.svg" class="w-30 h-30 icon-zencolor" alt="">
+            <img src="/img/general-icons/expanded/download.svg" class="w-30 h-30 icon-zencolor" alt="">
             <h2 class="h3 headline">Installation & Configuration</h2>
             <p>Integrate zenCSS into your workflow with our simple setup.</p>
-            <a href="installation.html" class="button btn-md theme-primary">Get Started</a>
+            <a href="installation.html" class="btn btn-md btn-primary">Get Started</a>
         </z-col>
         <z-col class="card theme-light feature">
-            <img src="../../img/general-icons/expanded/layout.svg" class="w-30 h-30 icon-zencolor" alt="">
+            <img src="/img/general-icons/expanded/layout.svg" class="w-30 h-30 icon-zencolor" alt="">
 
             <h3 class="headline">Design System</h3>
             <p>Lorem ipsum dolor sit, amet consectetur.</p>
-            <a href="design-system.html" class="button btn-md theme-primary">Learn More</a>
+            <a href="design-system.html" class="btn btn-md btn-cta">Learn More</a>
         </z-col>
-        <z-col class="card theme-light">
-            <img src="../../img/general-icons/expanded/bookmark-plus.svg" class="w-30 h-30 icon-zencolor" alt="">
 
-            <h3 class="headline">Core Concepts</h3>
-            <p>Learn zenCSS essentials .</p>
-            <a href="core-concepts.html" class="button btn-md theme-primary">Dive In</a>
-        </z-col>   
 
     </z-row>
 </z-container>
@@ -168,7 +161,7 @@
     <z-container>
         <z-row>
             <z-col>
-                <p>Explore our <span class="text-white bold">Component Playground</span> below to gain a deeper understanding of our website's sections, parts, and modifiers.</p>
+                <p><span class="down-10 bigger">&larrpl;</span> Explore our <span class="text-white bold">Component Playground</span> below to gain a deeper understanding of our website's sections, parts, and modifiers.</p>
             </z-col>
         </z-row>
         <z-row>
@@ -199,28 +192,42 @@
         <z-row>
 
             <z-col class="card theme-cta">
+                <img src="/img/general-icons/expanded/ghost-org-square.svg" class="w-30 h-30 icon-invert" alt="">
+
                 <h3 class="headline">Site Sections</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="site-sections.html" class="button btn-md theme-primary">Learn More</a>
+                <a href="site-sections.html" class="btn btn-md">Learn More</a>
             </z-col>
 
             <z-col class="card theme-cta feature">
-                <h3 class="headline">Site Parts</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="site-parts.html" class="button btn-md theme-primary">Learn More</a>
+                <img src="/img/general-icons/expanded/tab.svg" class="w-25 h-25 icon-invert" alt="">
+                <h3 class="headline down-2">Site Parts</h3>
+                <p class=" down-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <a href="site-parts.html" class="btn btn-md down-2">Learn More</a>
             </z-col>
             <z-col class="card theme-cta">
+                <img src="/img/general-icons/expanded/tools.svg" class="w-30 h-30 icon-invert" alt="">
                 <h3 class="headline">Site Modifiers</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="site-modifiers.html" class="button btn-md theme-primary">Learn More</a>
+                <a href="site-modifiers.html" class="btn btn-md">Learn More</a>
             </z-col>
 
      </z-row>
     </z-container>
 </z-container-fluid>
 
-
+<z-container class="site-section">
+    <z-row>
+        <z-col class="card theme-light">
+            <img src="/img/general-icons/expanded/bookmark-plus.svg" class="w-30 h-30 icon-zencolor" alt="">
     
+            <h3 class="headline">Core Concepts</h3>
+            <p>Learn zenCSS essentials.</p>
+            <a href="core-concepts.html" class="btn btn-md btn-cta">Dive In</a>
+        </z-col>   
+    </z-row>
+        
+</z-container>
     </main>
 
     <!----------------------------------------------------------------------->
@@ -231,7 +238,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="../../js/zencss.js"></script>
+    <script src="/js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

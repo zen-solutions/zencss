@@ -25,8 +25,8 @@ z-container-fluid, .z-container-fluid,
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top:$container-margin; //to fix
-  padding-bottom:$container-margin; //to fix
+  // padding-top:$container-margin; //to fix
+  // padding-bottom:$container-margin; //to fix
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -48,6 +48,7 @@ gap: 1em;
 padding-top: .5em; // removed via js when nesting logic applied
 padding-bottom: .5em;// removed via js when nesting logic applied
 flex-grow: 1; 
+border-radius: $border-radius;
 }
 
 .z-row-vcenter {
@@ -79,6 +80,7 @@ z-col, .z-col {
   gap: .4rem;
   padding: $col-padding;
   margin: 0;
+  
 }
 
 .z-col > *, z-col > * {
@@ -87,7 +89,8 @@ z-col, .z-col {
 }
 
 .z-col > span, z-col > span {
-  display: inline-block;
+  //display: inline-block; 11/20 change
+  display: inline;
 }
 
 z-col :has(z-row), .z-col :has(.z-row) {
