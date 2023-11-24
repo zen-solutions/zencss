@@ -1,10 +1,10 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
-/* Define a map for colors */
+// Define a map for colors 
 $colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
@@ -21,7 +21,7 @@ $colors: (
   "grey": $grey
 );
 
-/* Mixin to generate text color classes */
+// Mixin to generate text color classes 
 @mixin text-color-classes($color-name, $color-value) {
   .text-#{$color-name} {
     color: $color-value !important;
@@ -34,17 +34,12 @@ $colors: (
   }
 }
 
-/* Generate text color classes for all colors */
+// generate text color classes for all colors 
 @each $color-name, $color-value in $colors {
   @include text-color-classes($color-name, $color-value);
 }
 
-
-
-//greys
-
 // grey light and darks
-
 $grey-colors: (
   "grey-1": #F7F7F7,
   "grey-2": #c7c6c6,
@@ -54,7 +49,7 @@ $grey-colors: (
   "grey-6": #0D0D0D
 );
 
-//create base grey colors - bg and text
+// create base grey colors - bg and text
 @each $color-name, $color-value in $grey-colors {
 
   .text-#{$color-name} {
@@ -63,8 +58,8 @@ $grey-colors: (
 
 }
 
-//Light and dark universal colors
-/* Define a mixin to generate text color classes for dark and light variations */
+// Light and dark universal colors
+// Define a mixin to generate text color classes for dark and light variations 
 @mixin generate-color-classes($color-name, $color-dark, $color-light) {
   .text-#{$color-name}-dark {
     color: $color-dark !important;

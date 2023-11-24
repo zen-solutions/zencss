@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -93,7 +93,7 @@ button.btn-ghost:hover {
   // margin-top: 0.25rem;
   // margin-bottom: 0.25rem;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .eyebrow {
@@ -102,9 +102,9 @@ button.btn-ghost:hover {
   line-height: 10px;
   position: relative;
   color: $primary-color;
-  padding: 0;
   font-size: .62rem;
-  font-weight: 600;
+  font-weight: 700;
+  @include font-spacing;
 }
 
 .eyebrow-2 {
@@ -137,12 +137,7 @@ button.btn-ghost:hover {
   height: 45px;
   border-top-left-radius: $border-radius;
   overflow: hidden;
-
 }
-
-
-
-
 
 //------------------------------------------------
 // Button sizes
@@ -152,19 +147,16 @@ button.btn-ghost:hover {
 .btn-xl {
   min-width: 200px;
   max-width: 200px;
-  //min-height: 45px;
 }
 
 .btn-lg {
   min-width: 150px;
   max-width: 150px;
-  //min-height: 45px;
 }
 
 .btn-md {
   min-width: 120px;
   max-width: 120px;
-  //min-height: 35px;
 
 }
 
@@ -216,8 +208,6 @@ button.btn-ghost:hover {
 #result-types{
   display:none;
 }
-
-
 
 //------------------------------------------ 
 // New button styles to test
@@ -377,15 +367,14 @@ $text-cta: $cta-color;
   @extend %button-basic;
   background-color: transparent;
   border: 2px solid $cta-color;
-  color: $bg-primary; 
+  color: $cta-color; 
+  padding: 12px;
   &:hover {
     background-color: $cta-color;
 
     color: white;
   }
 }
-
-
 
 //text
 

@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -21,19 +21,7 @@
 
 // shadow
 
-$shadow-color: rgba(0, 0, 0, 0.25);  // Customize the shadow color
 
-@for $i from 1 through 5 {
-  .shadow-#{$i} {
-    $shadow-amount: $i * 2;
-    box-shadow: 0 #{$shadow-amount}px #{2 * $shadow-amount}px $shadow-color;
-    transition: box-shadow 0.3s ease;
-    
-    &:hover {
-      box-shadow: 0 #{($shadow-amount + 2)}px #{(2 * $shadow-amount + 4)}px $shadow-color;
-    }
-  }
-}
 
 // Usage with a button
 // button {
@@ -87,6 +75,26 @@ $shadow-color: rgba(0, 0, 0, 0.25);  // Customize the shadow color
 }
 
 //-----------------------
-//  div tops and bottoms
+//  TO DOCUMENT
 // -----------------------
 
+.shadow-1 {
+	box-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-2 {
+	box-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.075);
+  }
+  
+  .shadow-3 {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-4 {
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.125);
+  }
+  
+  .shadow-5 {
+	box-shadow: 4px 4px 7.5px rgba(0, 0, 0, 0.15);
+  }
+  

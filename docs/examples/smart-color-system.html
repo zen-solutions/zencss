@@ -134,9 +134,9 @@
                 <div class="center">
                     <img src="/docs/images/logos/zencss/smartcolorsystem.png" class="center-me w-90 down-20">
 
-                    <h1 class="headline">The zenCSS Smart-Color System</h1>
-                    <p> The zenCSS Color System provides a comprehensive range of color options to elevate your web design. Whether you're striving for brand cohesion or require versatile color choices, we've got your needs met. Explore our Brand Palette, Light and Dark Palette, and Universal Site Color System to find the perfect colors for your project.</p>
-                    <hr>
+                    <h1 class="headline">The zenCSS Smart-Color System </h1>
+                    <p class="text-balance">Universally accessable color is important. That's why The zenCSS Smart-Color System adheres to WCAG 2.1 AA best practices. Each background color defaults to a font color with sufficient contrast for use with normal text, large text and graphics in both light and dark mode. <a href="https://wave.webaim.org/report#/https://zencss.com/docs/examples/background-colors.html">Verify here</a>.
+                        <hr>
                 </div>
             </z-col>
         </z-row>
@@ -147,129 +147,311 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row>
-            <z-col><h2>Brand Colors <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span>
-            </h2>
-                <p>Accessability is important. That's why all zenCSS color palettes adhere to WCAG 2.1 AA best practices. The pairings have sufficient contrast for use with normal text, large text and graphics in both light and dark mode. <a href="https://wave.webaim.org/report#/https://zencss.com/docs/examples/background-colors.html">Verify here</a>.
-
-    
-                </p></z-col>
+        <z-row class="border-bottom">
+            <z-col><p class="h3 down-20">Brand Colors <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span>
+            </p>
+</z-col>
         </z-row>
         <z-row>
-            <z-col class="bg-primary text-white">
-                <div class="center">bg-primary</div>
-                <div class="center p-1 m-1  bg-primary-dark">bg-primary-dark</div>
-                <div class="center p-1 m-1  bg-primary-light">bg-primary-light</div>
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-primary">
+                        <div class="small down-5 left-5 w-200">bg-primary</div>
+                    </z-col>
+                    <z-col class="card round bg-primary-dark">
+                        <div class="small down-5 left-5">bg-primary-dark</div>
+                    </z-col>
+                    <z-col class="card round bg-primary-light">
+                        <div class="small down-5 left-5">bg-primary-light</div>
+                    </z-col>
+                    
+                   </z-row>
+               </z-container>
             </z-col>
-            <z-col class="bg-secondary text-white">
-                <div class="center">bg-secondary</div>
-                <div class="center p-1 m-1  bg-secondary-dark">bg-secondary-dark</div>
-                <div class="center p-1 m-1  bg-secondary-light">bg-secondary-light</div>
-            </z-col>
-            <z-col class="bg-accent text-black">
-                <div class="center">bg-accent</div>
-                <div class="center p-1 m-1  bg-accent-dark">bg-accent-dark</div>
-                <div class="center p-1 m-1  bg-accent-light">bg-accent-light</div>
-            </z-col>
-            <z-col class="bg-cta text-white">
-                <div class="center">bg-cta</div>
-                <div class="center p-1 m-1  bg-cta-dark">bg-cta-dark</div>
-                <div class="center p-1 m-1  bg-cta-light">bg-cta-light</div>
-            </z-col>
+
+            <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-secondary">
+                         <div class="small down-5 left-5 w-200">bg-secondary</div>
+                     </z-col>
+                     <z-col class="card round bg-secondary-dark">
+                         <div class="small down-5 left-5">bg-secondary-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-secondary-light">
+                         <div class="small down-5 left-5">bg-secondary-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-cta">
+                         <div class="small down-5 left-5 w-200">bg-cta</div>
+                     </z-col>
+                     <z-col class="card round bg-cta-dark">
+                         <div class="small down-5 left-5">bg-cta-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-cta-light">
+                         <div class="small down-5 left-5">bg-cta-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-accent">
+                         <div class="small down-5 left-5 w-200">bg-accent</div>
+                     </z-col>
+                     <z-col class="card round bg-accent-dark">
+                         <div class="small down-5 left-5">bg-accent-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-accent-light">
+                         <div class="small down-5 left-5">bg-accent-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
         </z-row>
-    </z-container>
-    <z-container>
+
+        <z-row class="border-bottom">
+            <z-col class="down-20"><p>Universal Colors <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span>
+            </p>
+</z-col>
+        </z-row>
         <z-row>
-            <z-col><h2>Universal Colors <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span></h2>
-                   
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-red">
+                        <div class="small down-5 left-5">bg-red</div>
+                    </z-col>
+                    <z-col class="card round bg-red-dark">
+                        <div class="small down-5 left-5">bg-red-dark</div>
+                    </z-col>
+                    <z-col class="card round bg-red-light">
+                        <div class="small down-5 left-5 w-300">bg-red-light</div>
+                    </z-col>
+                   </z-row>
+               </z-container>
             </z-col>
+
+            <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-blue">
+                         <div class="small down-5 left-5">bg-blue</div>
+                     </z-col>
+                     <z-col class="card round bg-blue-dark">
+                         <div class="small down-5 left-5">bg-blue-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-blue-light">
+                         <div class="small down-5 left-5 w-300">bg-blue-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-purple">
+                         <div class="small down-5 left-5">bg-purple</div>
+                     </z-col>
+                     <z-col class="card round bg-purple-dark">
+                         <div class="small down-5 left-5 w-90">bg-purple-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-purple-light">
+                         <div class="small down-5 left-5 w-300">bg-purple-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+        </z-row>
+
+        <z-row>
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-orange">
+                        <div class="small down-5 left-5">bg-orange</div>
+                    </z-col>
+                    <z-col class="card round bg-orange-dark">
+                        <div class="small down-5 left-5">bg-orange-dark</div>
+                    </z-col>
+                    <z-col class="card round bg-orange-light">
+                        <div class="small down-5 left-5 w-300">bg-orange-light</div>
+                    </z-col>
+                   </z-row>
+               </z-container>
+            </z-col>
+
+            <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-yellow">
+                         <div class="small down-5 left-5">bg-yellow</div>
+                     </z-col>
+                     <z-col class="card round bg-yellow-dark">
+                         <div class="small down-5 left-5">bg-yellow-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-yellow-light">
+                         <div class="small down-5 left-5 w-300">bg-yellow-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-green">
+                         <div class="small down-5 left-5">bg-green</div>
+                     </z-col>
+                     <z-col class="card round bg-green-dark">
+                         <div class="small down-5 left-5 w-90">bg-green-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-green-light">
+                         <div class="small down-5 left-5 w-300">bg-green-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+        </z-row>
+
+        <z-row class="border-bottom">
+            <z-col class="down-20"><P>Black and Grey Colors <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span>
+            </P>
+</z-col>
         </z-row>
         <z-row>
-            <z-col class="bg-red text-white">
-                <div class="center">bg-red</div>
-                <div class="center p-1 m-1  bg-red-dark">bg-red-dark</div>
-                <div class="center p-1 m-1  bg-red-light">bg-red-light</div>
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-grey-1">
+                        <div class="small down-5 left-5">bg-grey-1</div>
+                    </z-col>
+                    <z-col class="card round bg-grey-1-dark">
+                        <div class="small down-5 left-5">bg-grey-1-dark</div>
+                    </z-col>
+                    <z-col class="card round bg-grey-1-light">
+                        <div class="small down-5 left-5 w-300">bg-grey-1-light</div>
+                    </z-col>
+                   </z-row>
+               </z-container>
             </z-col>
 
-            <z-col class="bg-blue text-white">
-                <div class="center">bg-blue</div>
-                <div class="center p-1 m-1  bg-blue-dark">bg-blue-dark</div>
-                <div class="center p-1 m-1  bg-blue-light">bg-blue-light</div>
-            </z-col>
-            <z-col class="bg-purple text-white">
-                <div class="center">bg-purple</div>
-                <div class="center p-1 m-1  bg-purple-dark">bg-purple-dark</div>
-                <div class="center p-1 m-1  bg-purple-light">bg-purple-light</div>
-            </z-col>
+            <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-grey-2">
+                         <div class="small down-5 left-5">bg-grey-2</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-2-dark">
+                         <div class="small down-5 left-5">bg-grey-2-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-2-light">
+                         <div class="small down-5 left-5 w-300">bg-grey-2-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
 
-
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-grey-3">
+                         <div class="small down-5 left-5">bg-grey-3</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-3-dark">
+                         <div class="small down-5 left-5 w-90">bg-grey-3-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-3-light">
+                         <div class="small down-5 left-5 w-300">bg-grey-3-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
         </z-row>
+
         <z-row>
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-grey-4">
+                        <div class="small down-5 left-5">bg-grey-4</div>
+                    </z-col>
+                    <z-col class="card round bg-grey-4-dark">
+                        <div class="small down-5 left-5">bg-grey-4-dark</div>
+                    </z-col>
+                    <z-col class="card round bg-grey-4-light">
+                        <div class="small down-5 left-5 w-300">bg-grey-4-light</div>
+                    </z-col>
+                   </z-row>
+               </z-container>
+            </z-col>
 
-            <z-col class="bg-orange">
-                <div class="center">bg-orange</div>
-                <div class="center p-1 m-1  bg-orange-dark">bg-orange-dark</div>
-                <div class="center p-1 m-1  bg-orange-light">bg-orange-light</div>
-            </z-col>
-            <z-col class="bg-yellow">
-                <div class="center">bg-yellow</div>
-                <div class="center p-1 m-1  bg-yellow-dark">bg-yellow-dark</div>
-                <div class="center p-1 m-1  bg-yellow-light">bg-yellow-light</div>
-            </z-col>
-            <z-col class="bg-green">
-                <div class="center">bg-green</div>
-                <div class="center p-1 m-1  bg-green-dark">bg-green-dark</div>
-                <div class="center p-1 m-1  bg-green-light">bg-green-light</div>
-            </z-col>
+            <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-grey-5">
+                         <div class="small down-5 left-5">bg-grey-5</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-5-dark">
+                         <div class="small down-5 left-5">bg-grey-5-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-5-light">
+                         <div class="small down-5 left-5 w-300">bg-grey-5-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
+
+             <z-col class="card">
+                <z-container>
+                    <z-row>
+                     <z-col class="card round bg-grey-6">
+                         <div class="small down-5 left-5">bg-grey-6</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-6-dark">
+                         <div class="small down-5 left-5 w-90">bg-grey-6-dark</div>
+                     </z-col>
+                     <z-col class="card round bg-grey-6-light">
+                         <div class="small down-5 left-5 w-300">bg-grey-6-light</div>
+                     </z-col>
+                    </z-row>
+                </z-container>
+             </z-col>
         </z-row>
-    </z-container>
-    <z-container>
+
         <z-row>
-            <z-col><h2>Shades of Grey <span class="tout bg-secondary-light">WCAG 2.1 AA &check;</span></h2></z-col>
-        </z-row>
-        <z-row>
+            <z-col class="card">
+               <z-container>
+                   <z-row>
+                    <z-col class="card round bg-opaque">
+                        <div class="small down-5 left-5">bg-opaque</div>
+                    </z-col>
+                    <z-col class="card round bg-opaque">
+                        <div class="small down-5 left-5">bg-blur</div>
+                    </z-col>
 
-            <div class="z-col bg-grey-1 ">
-                <div class="center">bg-grey-1</div>
-                <div class="center p-1 m-1  bg-grey-1-dark">bg-grey-1-dark</div>
-                <div class="center p-1 m-1  bg-grey-1-light">bg-grey-1-light</div>
-            </div>
-            <div class="z-col bg-grey-2 ">
-                <div class="center">bg-grey-2</div>
-                <div class="center p-1 m-1  bg-grey-2-dark">bg-grey-2-dark</div>
-                <div class="center p-1 m-1  bg-grey-2-light">bg-grey-2-light</div>
-            </div>
-            <div class="z-col bg-grey-3 ">
-                <div class="center">bg-grey-3</div>
-                <div class="center p-1 m-1  bg-grey-3-dark">bg-grey-3-dark</div>
-                <div class="center p-1 m-1  bg-grey-3-light">bg-grey-3-light</div>
-            </div>
-            <div class="z-col bg-grey-4 text-white">
-                <div class="center">bg-grey-4</div>
-                <div class="center p-1 m-1  bg-grey-4-dark">bg-grey-4-dark</div>
-                <div class="center p-1 m-1  bg-grey-4-light">bg-grey-4-light</div>
-            </div>
-            <div class="z-col bg-grey-5 text-white">
-                <div class="center">bg-grey-5</div>
-                <div class="center p-1 m-1  bg-grey-5-dark">bg-grey-5-dark</div>
-                <div class="center p-1 m-1  bg-grey-5-light">bg-grey-5-light</div>
-            </div>
-            <div class="z-col bg-grey-6 text-white">
-                <div class="center">bg-grey-6</div>
-                <div class="center p-1 m-1  bg-grey-6-dark">bg-grey-6-dark</div>
-                <div class="center p-1 m-1  bg-grey-6-light">bg-grey-6-light</div>
-            </div>
-            <div class="z-col bg-opaque">
-                <div class="center">bg-opaque</div>
-            </div>
-            <div class="z-col bg-opaque">
-                <div class="center">bg-blur</div>
-            </div>
+                   </z-row>
+               </z-container>
+            </z-col>
 
-        
+            
 
 
         </z-row>
+
+
         <z-row>
             <z-col>
                 <p class="smaller">Note: bg-opaque triggers a JavaScript function which
@@ -309,7 +491,7 @@
 
 <z-container>
     <z-row>
-        <z-col class="card bg-white round text-black center">
+        <z-col class="card bg-white round center">
             <h2 class="pt-1">Dark Font Colors</h2>
 
             <z-container>
@@ -422,7 +604,7 @@
                     <p>
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html" class="btn btn-md">Docs</a>
+                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
                     </p>
                 </div>
             </z-col>

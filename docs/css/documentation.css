@@ -210,3 +210,7 @@ border-radius: 8px;
   }
 }
 
+/* to begin breaking changes */
+.zen .accordion .title {
+  display: inline-block;
+}

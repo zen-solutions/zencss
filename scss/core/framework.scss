@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -25,8 +25,6 @@ z-container-fluid, .z-container-fluid,
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  // padding-top:$container-margin; //to fix
-  // padding-bottom:$container-margin; //to fix
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -77,21 +75,29 @@ z-col, .z-col {
   justify-content: flex-start;
   flex-direction: column;
   align-self: stretch;
-  gap: .4rem;
+
   padding: $col-padding;
   margin: 0;
-  
 }
+
+//--------------------------------
+// child selector stuff - dirty business
+//--------------------------------
 
 .z-col > *, z-col > * {
   max-width: 100%;
-  width:100%; // for the next time you circle back to this. last time you took this out it broke nav, colors, etc. so leave it and workaround whatever issue brought you here. 
+  width:100%; // dont remove 
 }
 
 .z-col > span, z-col > span {
-  //display: inline-block; 11/20 change
   display: inline;
 }
+
+//fix the annoying nested margin for rows
+// .z-col .z-con .z-row {
+//   margin-top:0;
+//   margin-bottom:0;
+// }
 
 z-col :has(z-row), .z-col :has(.z-row) {
   margin-left: 0;

@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -19,8 +19,7 @@
   }
   
   .headline{
-    font-family: 'Inter', sans-serif;
-    //font-size: 2.5rem;
+font-family: 'Inter', sans-serif;
   font-weight: 800;
   }
   .mono{
@@ -49,14 +48,13 @@
     font-size:2.6rem;
   }
 
-//    .pixel{
-//      font-family: 'Press Start 2P', sans-serif;
-//   }
-
   .lead{
     font-size: 1.1em;
-    margin-top: -1.8em;
-    padding: .8em 0;
+    @include font-spacing;
+  }
+
+  .text-balance{
+    text-wrap: balance;
   }
   
   //------------------------------------------ 
@@ -79,9 +77,8 @@
 // Text Alignment 
 //------------------------------------------ 
 
-.center {
+.center, .text-center {
     text-align: center !important;
-    //align-self: center !important;
 }
 
 .center-vertical {
@@ -90,12 +87,20 @@
 }
 
 
-.text-right {
+.text-end {
     text-align: right !important;
 }
 
-.text-left {
+.text-start {
     text-align: left !important;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
 }
 
 //------------------------------------------ 
@@ -105,9 +110,6 @@
 
 .small {
     font-size: .8em !important;
-
-
-
 }
 
 .smaller {
@@ -129,34 +131,34 @@
 // Special Chars
 //------------------------------------------ 
 
-.tout-circle-floated {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    position: absolute;
-    top: 19px;
-    right: 19px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+// .tout-circle-floated {
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     color: white;
+//     font-size: 14px;
+//     text-align: center;
+//     line-height: 20px;
+//     position: absolute;
+//     top: 19px;
+//     right: 19px;
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
 
-.tout-circle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: $green;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+// .tout-circle {
+//     display: inline-block;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     background: $green;
+//     color: white;
+//     font-size: 14px;
+//     text-align: center;
+//     line-height: 20px;
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
 
 
 // ------------------------------------------ 

@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -192,8 +192,10 @@ $sizes: (
   //gap:.7em;
   padding: 1.2rem;
   font-size: .95em;
-  gap: 1em;
-
+  gap: .5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     border: 0;
@@ -201,39 +203,17 @@ $sizes: (
   }
 
   p, div{
-    //font-size: .8em;
-   // padding-top: .5em;
-    //padding-bottom: .5em;
     padding:0;
-    //line-height: 2rem;
   }
-
-     p{
-      margin-bottom: .7em;
-  }
-
-  //  a{
-  //   font-size: .8em;
-  // }
 
   ul{
   margin-block-start:0;
     margin-block-end: 0;
   }
 }
-
-
-//  .card > * {
-//   padding-left:.5rem;
-//   padding-right:.5rem;
-//  }
-
  .card>img {
-  //margin: 0;
   border: 0;
   padding: 0;
-  //margin-bottom: 1em;
-
 }
 
 .img-full {
@@ -256,8 +236,6 @@ $sizes: (
   height: 100%;
   padding: 0;
 }
-
-
 
 
 //----------------------------------------------------
@@ -285,14 +263,9 @@ $d-values: (
 }
 
 
-
-
-
-
 //----------------------------------------------
 // Misc Utility classes
 //----------------------------------------------
-
 
 .row {
   flex-direction: row;
@@ -357,31 +330,17 @@ $d-values: (
   margin-bottom: .3em;
 }
 
-
-// .w-half{
-//   width:50%;
-// }
-
-// .w-three-quarter{
-//   width:75%;
-// }
-
-// .w-quarter{
-//   width:25%;
-// }
-
 .z-index-2 {
   position: relative;
   z-index: 2;
 }
-
 
 .z-index-3 {
   position: relative;
   z-index: 3;
 }
 
-.z-index-44 {
+.z-index-4 {
   position: relative;
   z-index: 4;
 }
@@ -412,24 +371,3 @@ $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
 .gap-0{
   gap:0;
 }
-
-
-//----------------------------------------------------
-//Refactoring for js efficiency
-//----------------------------------------------------
-// .bg-opaque, .bg-blur {
-//   position: relative;
-// }
-
-// .bg-opaque::before, .bg-blur::before  {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: inherit;
-//   opacity: 0.7;
-//   z-index: -1;
-// }

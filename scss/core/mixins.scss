@@ -1,11 +1,10 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
   @mixin default-state {
-    //color: $text-black;
     background-color: $dual-mode-bg-color;
 }
 
@@ -22,3 +21,16 @@
       background: darken($color, $amount) !important; 
     }
   }
+
+  //spacing for h1-h6
+  @mixin font-spacing {
+  padding: 0;
+  margin: 0.75rem 0;
+}
+
+//headline for h1/h6
+
+@mixin headline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}

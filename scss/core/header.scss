@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -96,7 +96,6 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: $bg-header-footer;
-    //#303030
 }
 
 nav li {
@@ -111,9 +110,6 @@ nav a {
     transition: color 0.3s; 
 }
 
-nav a:hover {
-    color: grey; 
-}
 
 /* Mobile & Tablet Styles */
 @media (max-width: 768px) {

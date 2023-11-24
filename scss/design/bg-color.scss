@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -87,10 +87,13 @@ $bg-light-colors: (
     background: map-get($bg-light-colors, $bg-key + "-light") !important;
     color: map-get($text-light-colors, $bg-key + "-light") !important;
   }
+  
 }
 
 
+//-------------------------------------
 // css stuff
+//-------------------------------------
 .bg-opaque {
   background-color: rgba(255, 255, 255, 0.20);
 }
@@ -100,7 +103,6 @@ $bg-light-colors: (
 }
 
 //random colors
-
 
 .text-dark-green{
   color: hsl(117, 39%, 37%);
@@ -114,12 +116,20 @@ $bg-light-colors: (
   color:$text-black;
 }
 
+.bg-white{
+  background-color: white;
+}
+
+
+//-------------------------------------
+// icon classes
+// see site tools -> icon-color-generator to create filter classes for icons
+//-------------------------------------
+
 .icon-invert{
   filter: invert(1);
 }
 
-
-// find filter for color here https://codepen.io/sosuke/pen/Pjoqqp
 .icon-gold{
   width: 9px;
   filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg) brightness(96%) contrast(97%);
@@ -128,8 +138,4 @@ $bg-light-colors: (
 .icon-silver{
   width: 9px;
   filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
-}
-
-.bg-white{
-  background-color: white;
 }

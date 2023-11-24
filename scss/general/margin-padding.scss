@@ -1,5 +1,5 @@
 /*
-  * zenCSS v1.0.0 (https://zencss.com/)
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2023-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -25,7 +25,8 @@
 /* ------------------------------------------------- */
 
 @for $i from 0 through 5 {
-  $size: $i * 0.75em;
+  //$size: $i * 0.75em;
+  $size: $i * 0.25em;
 
   .mt-#{$i} {
     margin-top: $size !important;
