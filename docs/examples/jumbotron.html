@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-   <link rel="stylesheet" href="../../css/zen.css">
+ <link rel="stylesheet" href="../../css/zen.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -18,7 +17,7 @@
 </div>
 <header class="header-sticky">
     <div class="pl-2" id="header-logo">
-        <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
+        <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
     </div>
     <div class="docs-nav">
         <button id="hamburger-button">☰</button>
@@ -39,7 +38,7 @@
 </div></div>
 
             <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Design System</a>
+                <a href="#" class="dropdown-link">Core Concepts</a>
                 <div class="dropdown-content">
                     <a href="smart-align-framework.html">Smart-Align Framework</a>
                     <a href="smart-color-system.html">Smart-Color System</a>
@@ -95,8 +94,7 @@
                                 <a href="pagination.html">Pagination</a>
                                 <a href="pricing-table.html">Pricing Tables</a>
                                 <a href="quiz.html">Quiz</a>
-                                <a href="decorations.html">Site Icons</a>
-                                <a href="testimonials.html">Testimonials</a>
+                                <a href="decorations.html">Site Extras</a>                                <a href="testimonials.html">Testimonials</a>
                                 <a href="tooltip.html">Tool Tips</a>
                                 <a href="tabs.html">Tabs</a>
                                   <a href="video-player.html">Video Player</a>
@@ -132,12 +130,12 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
-    <z-container-fluid class="theme-light">
+    <z-container-fluid class="theme-light hero-section m-0">
         <z-row>
             <z-col class="card">
                 <div class="center">
                     <span class="tout">NEW</span>
-                    <h1 class="headline">Hero Section</h1>
+                    <h1 class="headline">Hero Section - Full Width Version</h1>
                     <p>Ideal for highlighting hero-style content on your site, tailored for showcasing key marketing messages.
                     <p>
                         <button>Get Started</button>
@@ -148,12 +146,33 @@
         </z-row>
     </z-container-fluid>
 
+    <z-container-fluid class="theme-cta card hero-section m-0">
+        <z-container>
+                <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
+                <z-row>
+                    <z-col class="card center">       
+                   
+                      
+                                <span class="tout center-me">NEW</span>
+                                <h2 class="h1 headline">Full Width + Background image
+                                </h2>
+                                <p class="lead">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam vel esse cupiditate. 
+                                </p>
+                                 <a href="../docs/help-desk/installation.html" class="btn  btn-md center-me">Lorem Ipsum</a>
+                            </p>
+
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
     <br>
 
-    <z-container class="theme-cta">
+    <z-container class="theme-cta hero-section">
         <z-row>
             <z-col>
-                <div class="center card">
+                <div class="center">
                     <span class="tout"> NEW</span>
                     <h2 class="h1 headline">Standard Width Version</h2>
                     <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
@@ -166,20 +185,7 @@
         </z-row>
     </z-container>
 
-<br><br>
-    <z-container class="theme-cta card">
-        <img src="/docs/images/misc/gradient-bg-large.jpg" class="img-bg">
-        <z-row>
-            <z-col>       
 
-                <div class="center">
-                    <h2 class="h1 headline">Background Image Version</h2>
-                    <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
-
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
 
 
 
@@ -194,7 +200,7 @@
             <div class="accordion">
                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
                 <div id="content1" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-container class="theme-cta"&gt; &lt;!-- use z-container-fluid for full width version--&gt; 
+                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-container class="theme-cta hero-section m-0"&gt; &lt;!-- use z-container-fluid for full width version--&gt; 
     &lt;z-row&gt;
         &lt;z-col class="card"&gt;
             &lt;div class="center"&gt;
@@ -215,11 +221,55 @@
     </z-row>
 </z-container>
 
-              
-              
-              
-        
-   
+
+
+<z-container class="center-flex">
+    <z-row>
+        <z-col class="theme-cta hero-section card">
+            <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
+
+            <div class="center">
+                <span class="tout">NEW</span>
+                <h2 class="h1 headline">Standard Width Version</h2>
+                <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
+                <p>
+                    <button>Get Started</button>
+                    <button class="btn-fill">Learn More</button>
+                </p>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+<z-container>
+    <z-row>
+        <z-col class="pl-0 pr-0">
+            <div class="accordion">
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3">Get The Code</a>
+                <div id="content3" class="expanded-content" aria-hidden="true">
+                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-container class="theme-cta card hero-section m-0"&gt;
+    &lt;img src="/docs/images/misc/gradient-bg-large.jpg" class="img-bg"&gt;
+    &lt;z-row&gt;
+        &lt;z-col&gt;       
+            &lt;div class="center"&gt;
+                &lt;h2 class="h1 headline"&gt;Background Image Version&lt;/h2&gt;
+                &lt;p&gt;Eos tenetur corrupti, minima doloribus quam eveniet libero.
+            &lt;/div&gt;
+        &lt;/z-col&gt;
+    &lt;/z-row&gt;
+&lt;/z-container&gt;</code></pre>
+                </div>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+
+
+    
 <!----------------------------------------------------------------------->
 <!---  The Zen Test --->
 <!----------------------------------------------------------------------->
@@ -240,11 +290,10 @@
         <z-row class="up-40">
             <z-col>
                 <div class="center">
-                    <p>
+
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
-                    </p>
                 </div>
             </z-col>
         </z-row>
@@ -255,11 +304,10 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="/js/zencss.js"></script>
+    <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

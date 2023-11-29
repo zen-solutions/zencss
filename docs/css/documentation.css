@@ -4,6 +4,7 @@ pre {
   text-wrap: wrap;
   text-align: left;
   position: relative;
+  margin-bottom: 2em !important;
 }
 
 
@@ -35,8 +36,8 @@ code[class*=language-], pre[class*=language-] {
   text-align: center !important;
   position: absolute;
   cursor: pointer !important;
-  top: 45%;
-  left: 97%;
+  top: 49%;
+  left: 100%;
   transform: translate(-50%, -50%);
   margin-top: -.1px;
   margin-left: -28px;
@@ -52,13 +53,13 @@ code[class*=language-], pre[class*=language-] {
 }
 
 
-.zen .expanded-content {
+/* .zen .expanded-content {
   border-left: 0;
   border-right: 0;
-}
+} */
 
 
-.accordion .title::before {
+/* .accordion .title::before {
   background-image: url('../../img/general-icons/essential/code-solid.svg') !important;
   width: 14px !important;
   height: 14px !important;
@@ -66,7 +67,7 @@ code[class*=language-], pre[class*=language-] {
   position: relative;
   top:2px;
   left:3px;
-}
+} */
 
 /* 
 .zen nav a:hover {
@@ -211,6 +212,6 @@ border-radius: 8px;
 }
 
 /* to begin breaking changes */
-.zen .accordion .title {
+/* .zen .accordion .title {
   display: inline-block;
-}
+} */

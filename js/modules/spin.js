@@ -16,7 +16,7 @@ function startSpinning() {
   // Check if the spinner exists to avoid errors
   if (spinner) {
     // Apply the CSS animation using inline styles
-    spinner.style.animation = 'spin 2s linear infinite';
+    spinner.style.animation = 'spin 1s linear infinite';
   }
 }
 

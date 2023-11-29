@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../css/documentation.css">
+ <link rel="stylesheet" href="../../css/zen.css">
+   <link rel="stylesheet" href="../../docs/css/documentation.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body class="zen">
+
+<main class="docs-content">
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <h2>What Awaits Ahead</h2>
+                <p>Prepare for an assortment of purposefully nonsensical content meticulously constructed to test our framework's capabilities. This array covers a multitude of typographic elements including <span class="bold">bold text</span>, unordered and ordered lists, code blocks, block quotes, and <span class="italic">italics</span>.</p>
+        
+                <p>It's crucial to cover these varied use cases, as initially documented by the fine folks at tailwindcss, for a few reasons:</p>
+                <ol>
+                    <li>Ensuring seamless default appearance.</li>
+                    <li>Primarily, it embodies the core of our framework's functionality.</li>
+                    <li>Additionally, a list with three items provides a more authentic demonstration than one with just two.</li>
+                </ol>
+    
+                <h3>Paving the Way for Typography</h3>
+                <p>Headers should ideally present a well-balanced appearance if our efforts have been effective.</p>
+    
+                <p>A nugget of wisdom about typography resonates:</p>
+                <blockquote>
+                    <p>"Typography is a powerful tool that elevates the quality of your work. When crafted skillfully, it ensures your content always looks impressive and engaging, transforming the ordinary into something visually stunning and highly effective."</p>
+                </blockquote>
+    
+                <p>Visual elements should naturally complement the content:</p>
+    
+                <figure>
+                    <img src="/img/placeholder/16x9/MaevaVigier.jpg" alt="">
+                    <figcaption>Contrary to popular belief, Lorem Ipsum isn't merely random text. It traces back to classical Latin literature from 45 BC, rendering it over 2000 years old.</figcaption>
+                </figure>
+    
+                <h2>Exploring Stacked Headings</h2>
+                <h3>Ensuring Harmony in Sequential Headers</h3>
+                <p>Instances arise where headers are aligned one after the other.  Swapping out margins for padding to avoid margin stacking brings new dimension to our layout, bridging the gap between paragraphs and headers.</p>
+    
+                <h4>Striking a Balance with Paragraphs and Headers</h4>
+                <p>Navigating ideal spacing between paragraphs and headers becomes nuanced, as highlighted earlier. Let's explore a more intricate list format.</p>
+    
+                <ul>
+                    <li>
+                        <p class="bold">I often stylize list items with headings.</p>
+                        <p>For some inexplicable reason, I find this aesthetically pleasing, although it poses challenges in perfecting the styles. Often, these list items entail two or three paragraphs, amplifying the complexity in managing paragraph spacing, list item headings, and distinct list items. It's a formidable task; one might argue against adopting this writing style.</p>
+                    </li>
+                    <li>
+                        <p><strong>Lists necessitate at least two items.</strong></p>
+                        <p>Elaboration on the aforementioned concept was previously articulated. However, a singular item doesn't suffice for a list's authenticity. Hence, this second entry serves as a visual cue while crafting the styles.</p>
+                    </li>
+                    <li>
+                        <p class="bold">Adding a third item isn't impractical.</p>
+                        <p>Perhaps two items could suffice, yet a trio doesn't downgrade the authenticity. Given my effortless knack for conjuring arbitrary content, inclusion seems justifiable.</p>
+                    </li>
+                </ul>
+    
+                <h3>Code Aesthetics by Default</h3>
+                <p>While most users might opt for highlight.js or Prism for code block styling, ensuring a decent default appearance can be beneficial, even without syntax highlighting.</p>
+    
+                <pre>
+                    <code>
+    module.exports = {
+      purge: [],
+      theme: {
+        extend: {},
+      },
+      variants: {},
+      plugins: [],
+    }
+                    </code>
+                </pre>
+    
+                <p>Hopefully, this default style suffices for your needs.</p>
+    
+                <h3>Navigating Nested Lists</h3>
+                <p>Nested lists often pose challenges in terms of visual appeal, which is why platforms like Medium restrict their usage. Nevertheless, for those inclined to use them, we endeavor to ensure they function harmoniously.</p>
+    
+                <ul>
+                    <li>Nested lists seldom enhance readability; they often create an intricate visual structure that hinders easy comprehension.</li>
+                    <li>Organizing content into excessively nested navigation structures within UIs is discouraged.</li>
+                    <li>
+                        Nested folders within source code often result in convoluted structures that are hard to navigate.
+                        <ul>
+                            <li>Increasing the depth of nested folders complicates navigation further.</li>
+                            <li>In order to showcase deeper levels, here's an additional item.</li>
+                            <li>Styling beyond two levels of nesting might not be part of our immediate focus.</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <p>The challenge with lists in Markdown arises when &lt;li&gt; elements lack a child &lt;p&gt; tag unless there are multiple paragraphs in the list item. Thus, styling this specific situation becomes essential.</p>
+    
+                <ul>
+                    <li>
+                        For instance, consider another nested list.
+                        <ul>
+                            <li>However, this time it includes a second paragraph.</li>
+                            <li>
+                                These list items won't have &lt;p&gt; tags.
+                                <ul>
+                                    <li>As they consist of only one line each.</li>
+                                    <li>
+                                        But within this second top-level list item, they will.
+                                        <p>This situation is particularly bothersome due to paragraph spacing.</p>
+                                        <p>As depicted here, with an additional line, this list item now has a &lt;p&gt; tag.</p>
+                                        <p>This second line elucidates the issue.</p>
+                                    </li>
+                                    <li>Finally, here's another list item to maintain the list-like structure.</li>
+                                </ul>
+                            </li>
+                            <li>A closing list item without a nested list, just for variation.</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <p>Concluding this segment with a coherent statement or paragraph often augments the flow, as abruptly leaping to another header might seem disconcerting.</p>
+     
+                <h3>Styling Other Elements</h3>
+                <p>Almost overlooked were links, such as this <a href="https://zenCSS.com">link to the ZenCSS website</a>. Rather than the traditional blue, we've opted for a darker gray, which adds a touch of edge.</p>
+    
+                <p>We've also included table styles; take a look:</p>
+                <table class="tablet-table-responsive">
+                    <tr>
+                        <th>Wrestler</th>
+                        <th>Origin</th>
+                        <th>Finisher</th>
+                    </tr>
+                    <tr>
+                        <td>Bret "The Hitman" Hart</td>
+                        <td>Calgary, AB</td>
+                        <td>Sharpshooter</td>
+                    </tr>
+                    <tr>
+                        <td>Stone Cold Steve Austin</td>
+                        <td>Austin, TX</td>
+                        <td>Stone Cold Stunner</td>
+                    </tr>
+                    <!-- ... Additional rows ... -->
+                </table>
+    
+                <p>We've ensured inline code appears appealing, like when discussing <code>span</code> elements or sharing the good news about @zenCSS/typography.</p>
+    
+                <h4>Occasionally, Code in Headings</h4>
+                <p>Despite being somewhat unconventional, wrapping code blocks in backticks works well, ensuring a decent appearance.</p>
+    
+                <p>Another practice involves embedding a code tag within a link, such as when referencing the zencss/docs repository. Despite the underline beneath the backticks, it's not worth the complexity to avoid it.</p>
+    
+                <h4>Delving into Lower Heading Levels</h4>
+                <p>We abstain from styling h5 or h6 by default since h4 elements are already as small as the body copy. Styling h5 smaller than the body copy seems counterintuitive.</p>
+    
+                <p>We remain vigilant about stacked headings and their seamless integration, ensuring a consistent look and feel.</p>
+    
+                <p>Let's conclude with a substantial paragraph to ensure a balanced end to this content. Its rationale might not be clear, but the aesthetic balance remains paramount.</p>
+    
+                <p>This composition probably spans a considerable length, yet this final sentence perhaps adds the finishing touch.</p>
+                
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr class="top">
+                    <h4>The Zen Test</h4>
+                    <p>Every part, section, and modifier we ship pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row class="up-40">
+            <z-col>
+                <div class="center">
+
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="zen">
+        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="../../js/zencss.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

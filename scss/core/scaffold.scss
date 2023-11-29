@@ -4,7 +4,7 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
-  :link {
+  a {
   color: #295ca8;
 }
 
@@ -73,40 +73,39 @@ h1,
 h2,
 .h2 {
   font-size: 2.4em;
-  line-height: 1.333;
+  //line-height: 1.333;
 }
 
 h3,
 .h3 {
-  line-height: 1.4em;
+  //line-height: 1.4em;
   font-size: 2.1em;
 }
 
 h4,
 .h4 {
   font-size: 1.8em;
-  line-height: 1.5em;
+  //line-height: 1.5em;
 }
 
 
 h5,
 .h5 {
   font-size: 1.5em;
-  line-height: 1.6em;
+  //line-height: 1.6em;
 }
 
 h6,
 .h6 {
   font-size: 1.4em;
-  line-height: 1.6em;
+  //line-height: 1.6em;
 
 }
 
 h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
 position: relative;
 z-index: 2;
-font-weight: 400;
-text-wrap: balance;
+text-wrap: pretty;
 @include font-spacing;
 @include headline;
 }
@@ -118,7 +117,7 @@ h3 ~ h3,
 h4 ~ h4,
 h5 ~ h5,
 h6 ~ h6 {
-    margin-top: .25em;
+    padding-top: .25em;
 }
 
 p {
@@ -151,9 +150,10 @@ ul {
  }
 
 li {
-  margin-bottom: 20px;
+  margin-top:.5em;
+  margin-bottom:.5em;
   line-height: 1.8rem;
-  padding-left: .2rem;
+  padding-left: .5em;
 }
 
 li::marker {
@@ -205,7 +205,7 @@ button, .btn{
   background: $cta-color;
   z-index: 3;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
  button:hover, .btn:hover {
@@ -254,6 +254,7 @@ pre {
   white-space: pre-line;
   font-family: Consolas,Monaco,'Andale Mono',monospace;
   border: 1px solid  $border-color;
+  margin-bottom: 2em;
 }
 
 figure{
@@ -346,7 +347,8 @@ input[type="submit"]{
 
 // Normal link styles.
 a {
-  color: #295CA8;
+  //color: #295CA8;
+  color:#185CAA;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -659,6 +661,44 @@ On the rare occasion you need to override it, use something like the following:
   -webkit-box-orient: horizontal;
   -webkit-line-clamp: none;
 }
+
+.hero-section{
+  padding-top: 70px !important;
+  padding-bottom:70px !important;
+}
+
+.underline-handdrawn {
+  background-image: url('../img/placeholder/underline.svg');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: 100%; 
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.code{
+  margin-bottom: 1.5em;
+}
+
+
+.border-top-0{
+  border-top:none !important;
+}
+
+.border-bottom-0{
+  border-bottom:none !important;
+}
+
+.hide-mobile{
+
+}
+
+//docyument these in bgcolor for primary themes
+//.bg-accent-hover:hover{
+
+
+
 
 // // undo all the text styling and just be default like out of the box
 //inspiration https://play.tailwindcss.com/uj1vGACRJA?layout=preview

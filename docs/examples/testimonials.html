@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-   <link rel="stylesheet" href="../../css/zen.css">
+ <link rel="stylesheet" href="../../css/zen.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -18,7 +17,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -39,14 +38,14 @@
 </div></div>
 
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Design System</a>
+                    <a href="#" class="dropdown-link">Core Concepts</a>
                     <div class="dropdown-content">
                         <a href="smart-align-framework.html">Smart-Align Framework</a>
                         <a href="smart-color-system.html">Smart-Color System</a>
                         <a href="smart-text.html">Smart-Text System</a>  
-                        <a href="themes.html">Content Themes</a>                      
-                        <a href="text-classes.html">Font Styles</a>
-                        <a href="test-mode.html">Visual Test Mode</a>
+                        <a href="themes.html">Content Themes</a>
+                        <a href="zen-system.html">The ZEN Ideology</a>                      
+                        <a href="zentax.html">Intro to Zentax</a>                      
                     </div>
                 </div>
                 
@@ -54,8 +53,8 @@
                     <a href="#" class="dropdown-link">Site Sections</a>
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
-                        <a href="jumbotron.html">Hero Section</a>
-                       <a href="image-text.html">Image/Text Section</a>
+                        <a href="jumbotron.html">Hero Sections</a>
+                       <a href="image-text.html">Image/Text Sections</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
@@ -95,8 +94,7 @@
                                     <a href="pagination.html">Pagination</a>
                                     <a href="pricing-table.html">Pricing Tables</a>
                                     <a href="quiz.html">Quiz</a>
-                                    <a href="decorations.html">Site Icons</a>
-                                    <a href="testimonials.html">Testimonials</a>
+                                    <a href="decorations.html">Site Extras</a>                                    <a href="testimonials.html">Testimonials</a>
                                     <a href="tooltip.html">Tool Tips</a>
                                     <a href="tabs.html">Tabs</a>
                                       <a href="video-player.html">Video Player</a>
@@ -149,7 +147,7 @@
 
             <z-col class="card-split theme-light small">
                 <div class="image-group">
-                    <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75"><br>
+                    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75"><br>
                     <star-component stars="4"></star-component>
                 </div>
          
@@ -169,7 +167,7 @@
     <z-container>
         <z-row>
             <z-col class="pl-0 pr-0">
-                <div class="accordion">
+                <div class="accordion theme-light">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
                         <pre class="copy-text square up-10"><code class="language-html">&lt;div class="card-split theme-primary small"&gt;
@@ -196,10 +194,11 @@
     <z-container class="single site-section">
         <z-row>
             <z-col class="card theme-light center">
-                <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75 center-me img-round">
+                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75 center-me img-round">
                 <star-component stars="4" half="true"></star-component>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut vitae nobis rem necessitatibus labore dolore?</p>
                 <small class="signature smaller">-Jane Doe</small>
+            </z-col>
         </z-row>
     </z-container>
 
@@ -250,11 +249,10 @@
         <z-row class="up-40">
             <z-col>
                 <div class="center">
-                    <p>
+
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
-                    </p>
                 </div>
             </z-col>
         </z-row>
@@ -265,11 +263,10 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="/js/zencss.js"></script>
+    <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

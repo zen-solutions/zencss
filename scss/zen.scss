@@ -8,7 +8,7 @@
 // Initialize zenCSS
 //--------------------------------------------------------------
 
-@import 'core/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
 //vars
 $zen-font-size: 15px;
@@ -22,14 +22,14 @@ sans-serif;
 $zen-body-bg-color:#d7d7d7;
 $zen-dark-text-color: #f0f0f0;
 $zen-dark-link-color: #f0f0f0;
-
+$base-text-color: #444444;
 
 .zen {
   //base stuff
   background: $zen-body-bg-color;
   font-family: $zen-font-family;
   font-size: $zen-font-size;
-  color: #4a4a4a;
+  color: $base-text-color;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ $zen-dark-link-color: #f0f0f0;
   @import 'core/framework.scss';
   @import 'core/scaffold.scss';
   @import 'marketing/marketing-promos.scss';
-  @import 'design/themes.scss';
+  //@import 'design/themes.scss';
   @import 'core/header.scss';
   @import 'general/form.scss';
   @import 'general/slider.scss';
@@ -73,9 +73,9 @@ $zen-dark-link-color: #f0f0f0;
   @import 'core/formatting.scss';
   @import 'optional/alert.scss';
   @import 'design/text.scss';
-  @import 'design/bg-color.scss';
+  //@import 'design/bg-color.scss';
   @import 'design/border-color.scss';
-  @import 'design/text-color.scss';
+  //@import 'design/text-color.scss';
   @import 'general/test.scss';
   @import 'general/components.scss';
   @import 'design/layouts.scss';
@@ -86,7 +86,9 @@ $zen-dark-link-color: #f0f0f0;
   @import 'optional/image-gallery.scss';
 
   //marketing
-  //@import 'marketing/pricing-table.scss';
+  @import 'design/themes.scss';  //11/26 moved
+  @import 'design/bg-color.scss'; //11/26 moved
+  @import 'design/text-color.scss'; //11/26 moved
   @import 'marketing/exit-intent.scss';
   @import 'marketing/contact-form.scss';
 
@@ -111,12 +113,16 @@ $zen-dark-link-color: #f0f0f0;
       letter-spacing: -.2px;
      }
 
+    //  h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
+    //   line-height: 2rem;
+    //  }
+
   }
 
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: $zen-tablet-mobile-font-size;
     p{
-      line-height: 1.4rem;
+      line-height: 1.5rem;
       letter-spacing: -.1px;
      }
   }
@@ -124,7 +130,7 @@ $zen-dark-link-color: #f0f0f0;
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: $zen-font-size;
     p{
-      line-height: 1.6rem;
+      line-height: 1.7rem;
      }
   }
 

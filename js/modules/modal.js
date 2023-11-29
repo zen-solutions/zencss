@@ -99,6 +99,8 @@ class ZModal extends HTMLElement {
               cursor: pointer;
               border: none;
               background-color: transparent;
+              position:relative:
+
           }
           .close:hover,
           .close:focus {
@@ -112,8 +114,10 @@ class ZModal extends HTMLElement {
           .modal-footer {
               display: flex;
               justify-content: flex-end;
-              padding: 10px 10px;
+              padding: 5px 10px;
               border-top: 1px solid rgba(111,111,111,.35);
+              margin-left: 10px;
+              margin-right: 10px;
           }
 
           @media only screen and (max-width: 767px) {

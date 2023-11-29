@@ -120,6 +120,39 @@ $bg-light-colors: (
   background-color: white;
 }
 
+.bg-text-color{
+  background: $base-text-color;
+} 
+
+.bg-primary-hover:hover{
+  background: darken($primary-color, 10%) !important;
+  color: $text-white;
+}
+
+.bg-secondary-hover:hover{
+  background: darken($secondary-color, 10%) !important;
+  color: $text-white !important;
+}
+
+.bg-cta-hover:hover{
+  background: darken($cta-color, 10%) !important;
+  color: $text-white;
+}
+
+.bg-light-hover:hover{
+  background: darken($light-color, 10%) !important;
+  color: $text-black;
+}
+
+.bg-dark-hover:hover{
+  background: darken($dark-color, 10%) !important;
+  color: $text-white;
+}
+.bg-accent-hover:hover{
+  background: darken($accent-color, 10%) !important;
+  color: $text-white;
+}
+
 
 //-------------------------------------
 // icon classes

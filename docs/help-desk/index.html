@@ -12,7 +12,7 @@
 <body class="zen">
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -33,15 +33,14 @@
 </div></div>
 
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Design System</a>
+                    <a href="#" class="dropdown-link">Core Concepts</a>
                     <div class="dropdown-content">
                         <a href="../examples/smart-align-framework.html">Smart-Align Framework</a>
                         <a href="../examples/smart-color-system.html">Smart-Color System</a>
                         <a href="../examples/smart-text.html">Smart-Text System</a>  
                         <a href="../examples/themes.html">Content Themes</a>                      
-                        <a href="../examples/text-classes.html">Font Styles</a>
-                      <a href="../examples/text-colors.html">Font Colors</a>
-                        <a href="../examples/test-mode.html">Visual Test Mode</a>
+    
+                            <a href="../examples/test-mode.html">Visual Test Mode</a>
                     </div>
                 </div>
                 
@@ -90,8 +89,7 @@
                                     <a href="../examples/pagination.html">Pagination</a>
                                     <a href="../examples/pricing-table.html">Pricing Tables</a>
                                     <a href="../examples/quiz.html">Quiz</a>
-                                    <a href="../examples/decorations.html">Site Icons</a>
-                                    <a href="../examples/testimonials.html">Testimonials</a>
+                                    <a href="../examples/decorations.html">Site Extras</a>                                    <a href="../examples/testimonials.html">Testimonials</a>
                                     <a href="../examples/tooltip.html">Tool Tips</a>
                                     <a href="../examples/tabs.html">Tabs</a>
                                       <a href="../examples/video-player.html">Video Player</a>
@@ -120,12 +118,11 @@
 
 <main>
 
-    <div class="bg-red site-section">hello</div>
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
     <!----------------------------------------------------------------------->
-    <z-container-fluid class="theme-cta">
+    <z-container-fluid class="theme-cta hero-section">
         <z-row>
             <z-col>
                 <div class="center">
@@ -143,26 +140,26 @@
 <z-container class="site-section">
     <z-row>
         <z-col class="card theme-light feature-md">
-            <img src="/img/zen-icons/black/file/download.svg" class="w-30 icon-zencolor down-2"> 
+            <img src="../../img/zen-icons/download.svg" class="w-30 icon-zencolor down-2"> 
             <h2 class="h3 headline">Installation & Configuration</h2>
-            <p>Integrate zenCSS into your workflow with our simple setup.</p>
+            <p>Integrate zenCSS into your workflow with our simple setup</p>
             <a href="installation.html" class="btn btn-md btn-primary">Get Started</a>
         </z-col>
         <z-col class="card theme-light feature">
-            <img src="/img/zen-icons/black/content/square_foot.svg" class="w-30 icon-zencolor down-2"> 
+            <img src="../../img/zen-icons/square_foot.svg" class="w-30 icon-zencolor down-2"> 
 
-            <h3 class="headline">Design System</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+            <h3 class="headline">Core Concepts</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
             <a href="design-system.html" class="btn btn-md btn-cta">Learn More</a>
         </z-col>
 
 
     </z-row>
 </z-container>
-<z-container-fluid class="theme-primary">
+<z-container-fluid class="theme-primary pt-5">
     <z-container>
         <z-row>
-            <z-col>
+            <z-col class="pb-0 mb-0">
                 <p><span class="down-10 bigger">&larrpl;</span> Explore our <span class="text-white bold">Component Playground</span> below to gain a deeper understanding of our website's sections, parts, and modifiers.</p>
             </z-col>
         </z-row>
@@ -188,33 +185,26 @@
     </z-container>
 </z-container-fluid>
 
-<z-container-fluid class="theme-primary">
+<z-container-fluid class="theme-primary site-section">
     <z-container>
-
         <z-row>
-
             <z-col class="card theme-cta">
-                <img src="/img/zen-icons/white/audio-video/library_books.svg" class="w-30 down-2"> 
+                <img src="../../img/zen-icons/library_books.svg" class="w-30 down-2 icon-invert"> 
 
                 <h3 class="headline">Site Sections</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                <p>Individual sections of your webpage</p>
                 <a href="site-sections.html" class="btn btn-md">Learn More</a>
             </z-col>
 
             <z-col class="card theme-cta">
-                <!--img src="/img/zen-icons/white/audio-video/library_add.svg" class="w-30 down-2"--> 
-                <img src="/img/zen-icons/white/actions/dashboard_customize.svg" class="w-30 down-2"> 
+                <!--img src="../../img/zen-icons/white/audio-video/library_add.svg" class="w-30 down-2"--> 
+                <img src="../../img/zen-icons/dashboard_customize.svg" class="w-30 down-2 icon-invert"> 
 
                 <h3 class="headline down-2">Site Parts</h3>
-                <p class=" down-2">Lorem ipsum dolor sit, amet consectetur.</p>
+                <p class=" down-2">Functional elements to build out your sections</p>
                 <a href="site-parts.html" class="btn btn-md down-2">Learn More</a>
             </z-col>
-            <z-col class="card theme-cta">
-                <img src="/img/zen-icons/white/actions/highlight_alt.svg" class="w-30 down-2"> 
-                <h3 class="headline">Site Modifiers</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur.</p>
-                <a href="site-modifiers.html" class="btn btn-md">Learn More</a>
-            </z-col>
+
 
      </z-row>
     </z-container>
@@ -223,12 +213,18 @@
 <z-container class="site-section">
     <z-row>
         <z-col class="card theme-light">
-            <img src="/img/zen-icons/black/actions/bookmarks.svg" class="w-30 icon-zencolor down-2"> 
+            <img src="../../img/zen-icons/bookmarks.svg" class="w-30 icon-zencolor down-2 icon-zencolor"> 
     
             <h3 class="headline">Core Concepts</h3>
-            <p>Learn zenCSS essentials.</p>
+            <p>Learn zenCSS essentials</p>
             <a href="core-concepts.html" class="btn btn-md btn-cta">Dive In</a>
         </z-col>   
+        <z-col class="card theme-light">
+            <img src="../../img/zen-icons/highlight_alt.svg" class="w-30 down-2 icon-zencolor"> 
+            <h3 class="headline">Site Modifiers</h3>
+            <p>100+ modifier classes for on-the-fly element styling</p>
+            <a href="site-modifiers.html" class="btn btn-md btn-cta">Learn More</a>
+        </z-col>
     </z-row>
         
 </z-container>
@@ -241,8 +237,7 @@
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="/js/zencss.js"></script>
+    <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

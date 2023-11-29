@@ -4,7 +4,6 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
-//User settings - override as needed. See overrides documentation. A 1 time retest of WCAG compliance will be necessary if modifying any of the bg/text ratios.
 
 //------------------------------------------ 
 //baseline
@@ -13,20 +12,17 @@ $text-white: #eee;
 $text-black: #070707;
 $light-color: #f4f4f4;
 $dark-color: #424242;
-
+$nav-link-color: $light-color;
 
 
 //------------------------------------------ 
 // Brand Color Palette 
 //------------------------------------------ 
 
-$primary-color : #1b66bb; 
-//$primary-color : #4185d2; 
-
+$primary-color: #044384;
 $secondary-color:#426b2f;
 $accent-color: #ffb12b;
-$cta-color: #044384;
-$nav-link-color: $light-color;
+$cta-color : #1b66bb; 
 
 
 //------------------------------------------ 
@@ -39,7 +35,6 @@ $yellow: #ecc500;
 $green: #599d03;
 $blue: #1252a9;
 $purple: #6d45dc;
-
 
 //------------------------------------------ 
 // Background and Text Color Maps for zenCSS color system
@@ -75,9 +70,7 @@ $blue-light: lighten($blue, 10%);
 $purple-light: lighten($purple, 5%); 
 
 
-
 // Default Text Colors
-
 $var-white-text:white;
 $var-black-text: black;
 
@@ -168,9 +161,13 @@ $border-radius: 4px; //on
 //------------------------------------------ 
 
 $light-ui-hover-color:rgba(169, 169, 169, 0.16);
-$border-color:rgba(122, 122, 122, 0.290);
+//$border-color:rgba(122, 122, 122, 0.290);
+$border-color: hsla(0, 0%, 50%, 0.3);
 $dual-mode-bg-color:rgba(79, 78, 78, 0.03);
 $dual-mode-text-color:rgba(122, 122, 122, 0.990);
+
+//grey UI
+$grey-ui-text-color: #727272;
 
 
 //------------------------------------------ 
@@ -198,9 +195,3 @@ $container-margin: 2em;
 $shadow-color:rgba(0,0,0,0.2);
 $line-height: 1.8rem;
 $nav-color: #303030;
-
-//------------------------------------------ 
-// Site Images - not in use at this time
-//------------------------------------------ 
-
-// $hero-image: url("");

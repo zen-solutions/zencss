@@ -20,8 +20,7 @@ z-container, .z-container {
 }
 
 
-z-container-fluid, .z-container-fluid,
-.z-col-fluid {
+z-container-fluid, .z-container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -71,10 +70,10 @@ z-row > *, .z-row > * {
 z-col, .z-col {
   flex-basis: calc(25% - 20px) !important;
   flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-self: stretch;
+  // display: flex;
+  // justify-content: flex-start;
+  // flex-direction: column;
+  // align-self: stretch;
 
   padding: $col-padding;
   margin: 0;

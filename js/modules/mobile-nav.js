@@ -5,9 +5,9 @@
   */
  
 
-//--------------------------------------------------------
-// Mobile Nav
-//--------------------------------------------------------
+// //--------------------------------------------------------
+// // Mobile Nav
+// //--------------------------------------------------------
 document.addEventListener("DOMContentLoaded", (event) => {
   const hamburgerButton = document.getElementById("hamburger-button");
   const closeButton = document.getElementById("close-button");

@@ -4,10 +4,8 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
-  $responsive-breakpoint: 600px;
+  $responsive-breakpoint: 767px;
 $border-color: $border-color;
-//$desktop-header-color: rgb(179, 179, 179);
-//$hover-color: rgb(203, 203, 203);
 
 .responsive-table, table {
     width: 100%;
@@ -16,11 +14,13 @@ $border-color: $border-color;
 }
 
 tr:nth-child(odd) td {
-    background-color:  rgba(111,111,111,.07); //dark mode top color
+    background-color:  hsl(0 0% 0% /  0.15); 
+}
+tr:nth-child(even) td {
+    background-color:  hsl(0 0% 0% /  0.1); 
 }
 
 th, td {
-    border: 1px solid $border-color;
     padding: 8px;
     text-align: left;
     
@@ -28,7 +28,7 @@ th, td {
 }
 
 th {
-    background-color:  rgba(111,111,111,.3); //dark mode top color
+    background-color:  hsl(0 0% 0% /  0.25); 
     font-weight: 600;
 }
 
@@ -43,38 +43,37 @@ thead {
     }
 }
 
-tbody {
-    tr {
+@media (max-width: $responsive-breakpoint) {
+
+    .responsive-table tbody {
+   .responsive-table tr {
         @include default-state;
        // @include hover-state;
 
        background-color:  rgba(111,111,111,.1); //dark mode top color new dual-mode-bg-color?
 
-        @media (max-width: $responsive-breakpoint) {
-            @include default-state;
-           // @include hover-state;
-        }
-        @media (max-width: $responsive-breakpoint) {
 
         display: block;
         margin-bottom: 20px;
 
         }
   
-    }
+ 
 
     td {
         @media (max-width: $responsive-breakpoint) {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            //margin-bottom: 0.5rem; 
-
+            text-align: right;
 
             &:before {
                 content: attr(data-label);
                 font-weight: bold;
+                margin-right: 10px;
+                text-align: left;
             }
         }
     }
+}
 }

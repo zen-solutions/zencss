@@ -1,6 +1,6 @@
 # zenCSS Sitemap Generator 
 
-This README provides instructions on how to set up and use the zenCSS Sitemap Generator tool to generate a sitemap for your local website. The script scans a specified directory for HTML files and generates a sitemap in XML format that is compatible with Google's requirements.
+This README provides instructions on how to set up and use the zenCSS Sitemap Generator tool to generate a sitemap for a local website. The script scans a specified directory for HTML files and generates a sitemap in XML format that is compatible with Google's requirements.
 
 ## Prerequisites
 

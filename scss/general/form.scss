@@ -8,10 +8,8 @@
 @mixin input-styles {
     width: 100%;
     padding: 5px;
-    border: 1px solid $light-color;
     border-radius: $border-radius;
-    color: $dark-color;
-   // outline: none;
+    color: $dual-mode-text-color;
 }
 
 // Mixin for styling button elements
@@ -23,7 +21,6 @@
     color: $light-color;
     font-size: 16px;
     cursor: pointer;
-    //outline: none;
 
     &:hover {
         background: darken($cta-color, 10%);
@@ -31,10 +28,7 @@
 }
 
 form {
-   // margin: auto;
     padding: 1em;
-    //padding-top:10px;
-    //border: 1px solid $primary-color;
 
      fieldset {
         margin-bottom: 20px;
@@ -120,7 +114,7 @@ form select, form input[type="date"], form input[type=datetime-local], form inpu
     opacity: .5;
 }
 //-------------------------------
-// SHRINKING FORM LABELS
+// Shrinking form label
 //-------------------------------
 
 form div {
@@ -159,3 +153,4 @@ form div {
     height: 12px;
     min-height: 12px;
 }
+

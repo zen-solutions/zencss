@@ -81,6 +81,33 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
 });
 
   //-------------------------------------
+  // Responsive Table
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', () => {
+    // Function to apply data labels to a table
+    function applyDataLabelsToTable(table) {
+        // Get all the headers from the direct child thead of the table
+        const headers = Array.from(table.querySelectorAll(':scope > thead > tr > th')).map(th => th.textContent.trim());
+
+        // Iterate over each row in the direct child tbody of the table
+        table.querySelectorAll(':scope > tbody > tr').forEach(row => {
+            // Get all cells (td) in this row
+            row.querySelectorAll(':scope > td').forEach((cell, index) => {
+                // Assign the corresponding header text to the data-label attribute of the cell
+                if (headers[index]) {
+                    cell.setAttribute('data-label', headers[index]);
+                }
+            });
+        });
+    }
+
+    // Select all tables with class 'responsive-table' and apply data labels to each
+    document.querySelectorAll('.responsive-table').forEach(applyDataLabelsToTable);
+});
+
+
+
+  //-------------------------------------
   // Dynamic Navigation
   //-------------------------------------
 //   document.addEventListener('DOMContentLoaded', function() {

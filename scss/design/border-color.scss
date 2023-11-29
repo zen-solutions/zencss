@@ -7,7 +7,7 @@
 /* Generate border color classes */
 $colors: (1: #F7F7F7,
   2: #D9D9D9,
-  3: #A6A6A6,
+  3: rgba(122,122,122,.29),
   4: #737373,
   5: #404040,
   6: #0D0D0D
@@ -16,6 +16,8 @@ $colors: (1: #F7F7F7,
 @for $i from 1 through 6 {
     .border-#{$i} {
       border: 1px solid map-get($colors, $i);
+      border-bottom-color:map-get($colors, $i) !important;
+
     }
   }
   

@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-   <link rel="stylesheet" href="../../css/zen.css">
+ <link rel="stylesheet" href="../../css/zen.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -18,7 +17,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -39,14 +38,14 @@
 </div></div>
 
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Design System</a>
+                    <a href="#" class="dropdown-link">Core Concepts</a>
                     <div class="dropdown-content">
                         <a href="smart-align-framework.html">Smart-Align Framework</a>
                         <a href="smart-color-system.html">Smart-Color System</a>
                         <a href="smart-text.html">Smart-Text System</a>  
-                        <a href="themes.html">Content Themes</a>                      
-                        <a href="text-classes.html">Font Styles</a>
-                        <a href="test-mode.html">Visual Test Mode</a>
+                        <a href="themes.html">Content Themes</a>
+                        <a href="zen-system.html">The ZEN Ideology</a>                      
+                        <a href="zentax.html">Intro to Zentax</a>                      
                     </div>
                 </div>
                 
@@ -54,8 +53,8 @@
                     <a href="#" class="dropdown-link">Site Sections</a>
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
-                        <a href="jumbotron.html">Hero Section</a>
-                       <a href="image-text.html">Image/Text Section</a>
+                        <a href="jumbotron.html">Hero Sections</a>
+                       <a href="image-text.html">Image/Text Sections</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
@@ -95,8 +94,7 @@
                                     <a href="pagination.html">Pagination</a>
                                     <a href="pricing-table.html">Pricing Tables</a>
                                     <a href="quiz.html">Quiz</a>
-                                    <a href="decorations.html">Site Icons</a>
-                                    <a href="testimonials.html">Testimonials</a>
+                                    <a href="decorations.html">Site Extras</a>                                    <a href="testimonials.html">Testimonials</a>
                                     <a href="tooltip.html">Tool Tips</a>
                                     <a href="tabs.html">Tabs</a>
                                       <a href="video-player.html">Video Player</a>
@@ -145,39 +143,41 @@
     <!----------------------------------------------------------------------->
     <z-container>
         <z-row>
-            <z-col>
-  <h3>.img-round</h3>
-  <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" class="img-responsive img-round w-90">
+            <z-col class="card gap-3">
+  <h3>Round Image</h3>
+  <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" class="img-responsive img-round w-90">
   <p>Shapes the image into a perfect circle. The element must have equal width and height dimensions to create a circle rather than an ellipse.</p>
   <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-round" alt=""&gt;</code></pre>
 
-  <h3>.img-round-outline</h3>
-  <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" class="img-responsive img-round-outline w-90">
+  <h3 class="mt-3">Round Image with Outline</h3>
+  <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" class="img-responsive img-round-outline w-90">
   <p>Gives the image a full circular shape with a solid white outline and a subtle drop shadow for depth. The image must have equal width and height for the outline to appear even.</p>
   <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-round-outline" alt=""&gt;</code></pre>
 
-  <h3>.img-rounded</h3>
-  <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" class="img-responsive img-rounded w-90">
+  <h3 class="mt-3">Rounded Image</h3>
+  <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" class="img-responsive img-rounded w-90">
   <p>Applies a small, uniform border-radius to create rounded corners on an image.</p>
-  <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-rounded" alt=""&gt;</code></pre>
+  <pre class="copy-text square up-10 mb-4"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-rounded" alt=""&gt;</code></pre>
 
-  <h3>.img-left</h3>
   <div>
-    <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" class="img-responsive img-left w-90">
+    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" class="img-responsive img-left w-90">
+    <h3 class="mt-3">Left-aligned Image</h3>
+
     <p>Floats the image to the left of the parent element and applies margins for spacing around the image.</p>
+    <br>
   </div>
   <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-left" alt=""&gt;</code></pre>
 
-  <h3>.img-right</h3>
   <div>
-    <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/3.jpg" class="img-responsive img-round img-right w-90">
+    <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/3.jpg" class="img-responsive img-round img-right w-90">
+    <h3 class="mt-3">Right-aligned Image</h3>
     <p>Floats the image to the right of the parent element and applies margins for spacing around the image.</p>
   </div>
-  <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-right" alt=""&gt;</code></pre>
+  <pre class="copy-text square up-10 mt-3"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-right" alt=""&gt;</code></pre>
 
 
-  <h3>.img-responsive</h3>
-  <img src="/img/placeholder/placeholders/unsplash/headshots/150x150/6.jpg" class="img-responsive w-90">
+  <h3 class="mt-3">Responsive Image</h3>
+  <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/6.jpg" class="img-responsive w-90">
 
   <p>Makes an image scale nicely to the parent element. The image will scale down if it has to, but never scale up to be larger than its original size.</p>
   <pre class="copy-text square up-10"><code class="language-html">&lt;img src="path-to-image.jpg" class="img-responsive" alt=""&gt;</code></pre>
@@ -214,11 +214,10 @@
         <z-row class="up-40">
             <z-col>
                 <div class="center">
-                    <p>
+
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
-                    </p>
                 </div>
             </z-col>
         </z-row>
@@ -229,11 +228,10 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="/js/zencss.js"></script>
+    <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>

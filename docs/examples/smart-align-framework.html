@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-   <link rel="stylesheet" href="../../css/zen.css">
+ <link rel="stylesheet" href="../../css/zen.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -18,7 +17,7 @@
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="/img/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
         </div>
         <div class="docs-nav">
             <button id="hamburger-button">☰</button>
@@ -39,14 +38,14 @@
 </div></div>
 
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Design System</a>
+                    <a href="#" class="dropdown-link">Core Concepts</a>
                     <div class="dropdown-content">
                         <a href="smart-align-framework.html">Smart-Align Framework</a>
                         <a href="smart-color-system.html">Smart-Color System</a>
                         <a href="smart-text.html">Smart-Text System</a>  
-                        <a href="themes.html">Content Themes</a>                      
-                        <a href="text-classes.html">Font Styles</a>
-                        <a href="test-mode.html">Visual Test Mode</a>
+                        <a href="themes.html">Content Themes</a>
+                        <a href="zen-system.html">The ZEN Ideology</a>                      
+                        <a href="zentax.html">Intro to Zentax</a>                      
                     </div>
                 </div>
                 
@@ -54,8 +53,8 @@
                     <a href="#" class="dropdown-link">Site Sections</a>
                     <div class="dropdown-content">
                         <a href="header.html">Header</a>
-                        <a href="jumbotron.html">Hero Section</a>
-                       <a href="image-text.html">Image/Text Section</a>
+                        <a href="jumbotron.html">Hero Sections</a>
+                       <a href="image-text.html">Image/Text Sections</a>
                         <a href="optin-form.html">Optin-Form/Text Section</a>
                         <a href="layout-grids.html">Layout Grids</a>
                         <a href="footer.html">Footer</a>
@@ -95,8 +94,7 @@
                                     <a href="pagination.html">Pagination</a>
                                     <a href="pricing-table.html">Pricing Tables</a>
                                     <a href="quiz.html">Quiz</a>
-                                    <a href="decorations.html">Site Icons</a>
-                                    <a href="testimonials.html">Testimonials</a>
+                                    <a href="decorations.html">Site Extras</a>                                    <a href="testimonials.html">Testimonials</a>
                                     <a href="tooltip.html">Tool Tips</a>
                                     <a href="tabs.html">Tabs</a>
                                       <a href="video-player.html">Video Player</a>
@@ -121,7 +119,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
 
 
     <!----------------------------------------------------------------------->
@@ -131,7 +129,7 @@
     <z-container>
         <z-row>
             <z-col class="center">
-                <img src="/docs/images/logos/zencss/smartalign.png" class="center-me w-90 down-20">
+                <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-90" alt="">
                     <h1 class="headline">The zenCSS Smart-Align Framework</h1>
                     <p class="lead">Dive into a world where shape and form align, and everything magically falls into place. 
                     </p>
@@ -139,53 +137,54 @@
     </z-row>
     </z-container>
 
-<z-container class="bg-grey-4">
+<z-container class="bg-grey-2">
     <z-row>
         <z-col class="center">
-            <p>Your journey begins with a container.</p>
-            <p class="text-balance">Imagine containers as the foundational blocks of your webpage, holding your content with precision and care. For example, this grey section is a container,  a self-contained universe of your design. </p>
-            <p class="text-balance">Their mission? To ensure your layouts stay sharp and consistent, adapting seamlessly to the screens of mobiles, tablets, and desktops alike. </p>
-   
+            <p class="">Your journey begins with a container.</p>
+            <p class="text-balance">Imagine containers as the foundational blocks of your webpage, holding your content with precision and care. For example, this grey section is a container. </p>
+            <p class="mb-0 text-balance">Their mission? To ensure your layouts stay sharp and adapt seamlessly to the screens of mobile, tablet, and desktop devices. </p>
         </z-col>
     </z-row>
 </z-container>
 <br>
-<z-container class="bg-grey-4 p-2">
-    <z-row class="theme-light mb-3 down-2 text-grey-6">
+<z-container class="bg-grey-2 p-2">
+    <z-row class="theme-light mb-3 down-2 text-grey-2-dark">
         <z-col class="center">
-            <p class="text-balance"> Rows are declared within containers, and are akin to layers in a delicious cake - each adding its own flavor to the overall experience. </p>
+            <p class="text-balance mb-0"> Rows are declared within containers, and are akin to layers in a delicious cake - each adding its own flavor to the overall experience. </p>
         </z-col>
     </z-row>
     
-    <z-row class="theme-light  text-grey-6">
+    <z-row class="theme-light  text-grey-6 ">
         <z-col class="center">
-            <p class="text-balance">Stack as many or as few as you desire — our Smart-Align Framework is the master chef, ensuring rows align perfectly, creating a visual feast. </p>
+            <p class="text-balance mb-0">Stack as many or as few as you desire — our Smart-Align Framework is the master chef, ensuring rows align perfectly, creating a visual feast. </p>
         </z-col>
     </z-row>
 </z-container>
 <br>
-<z-container class="bg-grey-4 p-2">
-    <z-row class="theme-light">
-        <z-col class="center bg-grey-2 round saf-move-3">And inside rows... columns.</z-col>
-        <z-col class="center bg-grey-2 round saf-move">Any amount is fine, columns format automatically</z-col>
-        <z-col class="center bg-grey-4 mr-1  saf-move-2">
-            <z-container>
-                <z-row>
-                    <z-col>Or use a container to make a micro-layout in a given section</z-col>
-                </z-row>
-                <z-row>
-                    <z-col class="bg-grey-2 center">1</z-col>
-                    <z-col class="bg-grey-2 center">2</z-col>
-                    <z-col class="bg-grey-2 center">3</z-col>
-                </z-row>
-            </z-container>
-        </z-col>
+
+<z-container class="bg-grey-2 p-2">
+    <z-row class="theme-light p-2 gap-2">
+        <z-col class=" bg-grey-3-light round"> And inside rows. columns.</z-col>
+        <z-col class=" bg-grey-3-light round"> Any amount is fine, columns also align automatically</z-col>
+        <z-container class="bg-grey-2 feature-lg">
+            <z-row>
+                <z-col>Or nest a container to make a micro-layout in a given section</z-col>
+            </z-row>
+            <z-row class="gap-2 mobile-two-up">
+                <z-col class="bg-grey-2-dark center">1</z-col>
+                <z-col class="bg-grey-2-dark center">2</z-col>
+                <z-col class="bg-grey-2-dark center">3</z-col>
+            </z-row>
+        </z-container>
     </z-row>
 </z-container>
 
+<br>
+
+
 <z-container>
     <z-row>
-        <z-col><p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. The system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window to see it in action. </p></z-col>
+        <z-col><p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window to see it in action. </p></z-col>
     </z-row>
 </z-container>
 <z-container>
@@ -202,12 +201,12 @@
 
 <z-container>
     <z-row>
-    <z-col><p>You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the class <code>eight-up</code> to the row.</p></z-col>
+    <z-col><p>You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the class <code>eight-up</code> to the row. We also target mobile with the <code>.mobile-two-up</code> class so devices smaller than tablet will display columns side by side. </z-row> </p></z-col>
  
     </z-row>
 </z-container>
 <z-container>
-<z-row class="eight-up">
+<z-row class="eight-up mobile-two-up">
     <z-col class="center bg-grey-2">1</z-col>
     <z-col class="center bg-grey-2">2</z-col>
     <z-col class="center bg-grey-2">3</z-col>
@@ -282,7 +281,7 @@
 
 <z-container-fluid class="theme-dark mt-5">
     <z-row>
-        <z-col class="center"><p>One more thing.. If you want to go full screen, you'd use container-fluid.  <b>Note:</b> We use a "z-" prefix for container, row and column class names.</p></z-col>
+        <z-col class="center card"><p>One more thing.. If you want to go full screen, you'd use container-fluid.  <b>Note:</b> We use a "z-" prefix for container, row and column class names.</p></z-col>
     </z-row>
 </z-container-fluid>
 
@@ -300,7 +299,7 @@
 
         <z-row>
             <z-col>
-                   <h3>Code Example</h3>
+                   <h3>HTML Example</h3>
               <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
   &lt;div class="z-row"&gt;
     &lt;div class="z-col"&gt;
@@ -310,7 +309,7 @@
 &lt;/div&gt;</code></pre>
             </z-col>
             <z-col>
-                <h3>Or use Zentax and write less code</h3>
+                <h3>Zentax Example</h3>
                 <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
     &lt;z-row&gt;
       &lt;z-col&gt;
@@ -359,11 +358,10 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-    <script src="/js/zencss.js"></script>
+    <script src="../../js/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
 

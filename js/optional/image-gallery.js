@@ -1,9 +1,3 @@
-/*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
-  */
- 
 document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.querySelector('.image-gallery');
     const modal = document.querySelector('z-modal');
@@ -12,55 +6,24 @@ document.addEventListener('DOMContentLoaded', function () {
     if (gallery && modal && paginationNav) {
         let currentPage = 1;
         const imagesPerPage = 15;
+        let currentModalIndex = 0;
 
-        // Wrap images in divs for pagination and attach click listeners
         const imageWrappers = Array.from(gallery.children).map((img, index) => {
             const wrapper = document.createElement('div');
-            wrapper.style.display = index < imagesPerPage ? 'block' : 'none'; // Show first page initially
+            wrapper.style.display = index < imagesPerPage ? 'block' : 'none';
             const clonedImg = img.cloneNode(true);
-            clonedImg.addEventListener('click', () => openModal(clonedImg.src, clonedImg.getAttribute('data-text')));
+            clonedImg.addEventListener('click', () => {
+                currentModalIndex = index;
+                openModal(clonedImg.src, clonedImg.getAttribute('data-text'), index);
+            });
             wrapper.appendChild(clonedImg);
             return wrapper;
         });
 
-        // Clear original images and append wrapped images
         gallery.innerHTML = '';
         imageWrappers.forEach(wrapper => gallery.appendChild(wrapper));
 
         const totalPages = Math.ceil(imageWrappers.length / imagesPerPage);
-
-        function openModal(src, text, currentIndex) {
-            const modalBody = modal.shadowRoot.querySelector('.modal-body');
-            const modalWrapper = modal.shadowRoot.querySelector('.modal-wrapper');
-            const modalHeader = modal.shadowRoot.querySelector('.modal-header');
-
-            if (modalBody && modalWrapper && modalHeader) {
-                modalBody.innerHTML = '';
-
-                const modalImage = document.createElement('img');
-                modalImage.src = src;
-                modalImage.style.cssText = 'max-width: 100%; max-height: 60vh; border-radius: 8px; object-fit: contain; margin-bottom: 10px;';
-                modalBody.appendChild(modalImage);
-
-                const modalText = document.createElement('p');
-                modalText.textContent = text;
-                modalText.style.cssText = 'text-align: center; margin-top: 0;';
-                modalBody.appendChild(modalText);
-
-                modalBody.style.overflowY = 'auto';
-                modalBody.style.paddingBottom = '0';
-                modalBody.style.maxHeight = '80vh';
-                modalHeader.style.display = 'none';
-
-                if (window.innerWidth >= 1070) {
-                    modalWrapper.style.maxWidth = '860px';
-                } else {
-                    modalWrapper.style.maxWidth = '80%';
-                }
-
-                modal.open();
-            }
-        }
 
         function updateImagesForPage(pageNumber) {
             imageWrappers.forEach((wrapper, index) => {
@@ -77,38 +40,123 @@ document.addEventListener('DOMContentLoaded', function () {
                 paginationNav.innerHTML += `<a href="#" class="item ${classCurrent}" data-page="${i}">${i}</a>`;
             }
             paginationNav.innerHTML += '<a href="#" class="item" data-page="next">&raquo;</a>';
-
-            paginationNav.addEventListener('click', function (event) {
-                event.preventDefault();
-                const target = event.target;
-                if (target.tagName === 'A' && target.dataset.page) {
-                    const newPage = target.dataset.page === 'prev' ? Math.max(1, currentPage - 1)
-                                    : target.dataset.page === 'next' ? Math.min(totalPages, currentPage + 1)
-                                    : parseInt(target.dataset.page);
-
-                    if (newPage !== currentPage) {
-                        currentPage = newPage;
-                        updateImagesForPage(currentPage);
-                        updatePaginationNav();
-                    }
-                }
-            });
         }
 
-        window.addEventListener('resize', function() {
+        function openModal(src, text, index) {
+            currentModalIndex = index;
+            const modalBody = modal.shadowRoot.querySelector('.modal-body');
             const modalWrapper = modal.shadowRoot.querySelector('.modal-wrapper');
-            if (modalWrapper) {
-                // Set a maximum width for the modal when the screen is above 890px
-                if (window.innerWidth > 890) {
-                    modalWrapper.style.maxWidth = '860px'; // Set this to your desired maximum width
+            const modalHeader = modal.shadowRoot.querySelector('.modal-header');
+
+            if (modalBody && modalWrapper && modalHeader) {
+                modalBody.innerHTML = '';
+
+                // Create a container for the image and arrows
+                const imageContainer = document.createElement('div');
+                imageContainer.style.display = 'flex';
+                imageContainer.style.position = 'relative';
+                imageContainer.style.justifyContent = 'center';
+
+                const prevArrow = document.createElement('div');
+                prevArrow.className = 'prev arrow theme-dark';
+                prevArrow.innerHTML = '❮';
+                prevArrow.style.cursor = 'pointer';
+                prevArrow.style.position = 'absolute';
+                prevArrow.style.top = '50%';
+                prevArrow.style.left = '0';
+                prevArrow.style.background = '#f4f4f4';
+                prevArrow.style.borderTopRightRadius="4px";
+                prevArrow.style.borderBottomRightRadius="4px";
+                prevArrow.style.padding = '5px';
+                prevArrow.style.transform = 'translateY(-50%)';
+                prevArrow.onclick = function () {
+                    currentModalIndex = (currentModalIndex > 0) ? currentModalIndex - 1 : imageWrappers.length - 1;
+                    const newImg = imageWrappers[currentModalIndex].firstChild;
+                    openModal(newImg.src, newImg.getAttribute('data-text'), currentModalIndex);
+                };
+
+                const nextArrow = document.createElement('div');
+                nextArrow.className = 'next arrow theme-dark';
+                nextArrow.innerHTML = '❯';
+                nextArrow.style.cursor = 'pointer';
+                nextArrow.style.position = 'absolute';
+                nextArrow.style.top = '50%';
+                nextArrow.style.right = '0';
+                nextArrow.style.background = '#f4f4f4';
+                nextArrow.style.borderTopLeftRadius="4px";
+                nextArrow.style.borderBottomLeftRadius="4px";
+                nextArrow.style.padding = '5px';
+                nextArrow.style.transform = 'translateY(-50%)';
+                nextArrow.onclick = function () {
+                    currentModalIndex = (currentModalIndex < imageWrappers.length - 1) ? currentModalIndex + 1 : 0;
+                    const newImg = imageWrappers[currentModalIndex].firstChild;
+                    openModal(newImg.src, newImg.getAttribute('data-text'), currentModalIndex);
+                };
+
+                imageContainer.appendChild(prevArrow);
+
+                const modalImage = document.createElement('img');
+                modalImage.src = src;
+                modalImage.style.maxWidth = '100%';
+                modalImage.style.maxHeight = '60vh';
+                modalImage.style.borderRadius = '8px';
+                modalImage.style.objectFit = 'contain';
+                modalImage.style.margin = 'auto';
+                imageContainer.appendChild(modalImage);
+
+                imageContainer.appendChild(nextArrow);
+
+                modalBody.appendChild(imageContainer);
+
+                const modalText = document.createElement('p');
+                modalText.textContent = text;
+                modalText.style.textAlign = 'center';
+                modalText.style.marginBottom = '-7px';
+                modalBody.appendChild(modalText);
+
+                modalBody.style.overflowY = 'auto';
+                modalBody.style.maxHeight = '80vh';
+                modalHeader.style.display = 'none';
+
+                if (window.innerWidth >= 1070) {
+                    modalWrapper.style.maxWidth = '860px';
                 } else {
-                    modalWrapper.style.maxWidth = '80%'; // For smaller screens
+                    modalWrapper.style.maxWidth = '80%';
+                }
+
+                modal.open();
+            }
+        }
+
+        paginationNav.addEventListener('click', function (event) {
+            event.preventDefault();
+            const target = event.target;
+            if (target.tagName === 'A' && target.dataset.page) {
+                let newPage = currentPage;
+                if (target.dataset.page === 'prev') {
+                    newPage = currentPage > 1 ? currentPage - 1 : totalPages;
+                } else if (target.dataset.page === 'next') {
+                    newPage = currentPage < totalPages ? currentPage + 1 : 1;
+                } else {
+                    newPage = parseInt(target.dataset.page);
+                }
+
+                if (newPage !== currentPage) {
+                    currentPage = newPage;
+                    updateImagesForPage(currentPage);
+                    updatePaginationNav();
                 }
             }
         });
+
+        window.addEventListener('resize', function () {
+            const modalWrapper = modal.shadowRoot.querySelector('.modal-wrapper');
+            if (modalWrapper) {
+                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? '1070px' : '80%';
+            }
+        });
+
         updatePaginationNav();
         updateImagesForPage(currentPage);
-    } else {
-        console.log("Required elements (gallery, modal, or paginationNav) not found");
-    }
+    } 
 });
