@@ -1,22 +1,25 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
-
 //------------------------------------------ 
 //baseline
 //------------------------------------------ 
+
+//soften white and black (whe are overwriting these below when we do wcag color specifications, evaluate usage in relation and adjust accordingly. set them as this/replace and reeval compliance?)
 $text-white: #eee;
 $text-black: #070707;
+
+//header config
 $light-color: #f4f4f4;
 $dark-color: #424242;
 $nav-link-color: $light-color;
 
 
 //------------------------------------------ 
-// Brand Color Palette 
+// Brand Color Palette - After adjusting, we recommend a one time WCAG fine-tuning to ensure accessable color compliance with your brand palette
 //------------------------------------------ 
 
 $primary-color: #044384;
@@ -37,7 +40,7 @@ $blue: #1252a9;
 $purple: #6d45dc;
 
 //------------------------------------------ 
-// Background and Text Color Maps for zenCSS color system
+// Background Color Maps for zenCSS color system
 // individually labeled - override as needed for WCAG compliance
 //------------------------------------------ 
 
@@ -70,6 +73,10 @@ $blue-light: lighten($blue, 10%);
 $purple-light: lighten($purple, 5%); 
 
 
+//------------------------------------------ 
+// Text Color Maps for zenCSS color system
+// individually labeled - override as needed for WCAG compliance
+//------------------------------------------ 
 // Default Text Colors
 $var-white-text:white;
 $var-black-text: black;
@@ -133,6 +140,7 @@ $text-light-colors: (
   "grey-6-light": $var-white-text,
 );
 
+//end color system maps
 
 //------------------------------------------ 
 // Misc Dark and Light 
@@ -143,6 +151,7 @@ $dark-grey: #666;
 $light-grey: #ccc;
 $bg-default: $dark-color;
 $text-default: $light-color;
+$ui-button-size: 44px;
 
 .light-color{
   color:$light-color;
@@ -161,8 +170,7 @@ $border-radius: 4px; //on
 //------------------------------------------ 
 
 $light-ui-hover-color:rgba(169, 169, 169, 0.16);
-//$border-color:rgba(122, 122, 122, 0.290);
-$border-color: hsla(0, 0%, 50%, 0.3);
+$border-color: hsla(0, 0%, 69%, 0.3); //good solution for themes, todo: implement elsewhere
 $dual-mode-bg-color:rgba(79, 78, 78, 0.03);
 $dual-mode-text-color:rgba(122, 122, 122, 0.990);
 
@@ -190,7 +198,7 @@ $col-margin: 1em;
 // Below is experimental
 //------------------------------------------ 
 
-$bg-header-footer: #303030;
+$bg-header-footer: #212121;
 $container-margin: 2em;
 $shadow-color:rgba(0,0,0,0.2);
 $line-height: 1.8rem;

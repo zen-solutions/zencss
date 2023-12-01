@@ -1,115 +1,189 @@
-/*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
-  */
-
-// ----------------------------------------
-// Image Slider/Carousel
-// ---------------------------------------
-
-window.onload = function() {
-  let isAnimating = false;
-  let index1 = 0;
-  let slideWidth;
-  let autoRotateInterval;
-
-  // Cache DOM elements
-  const slider = document.querySelector('.slider');
-  const slidesContainer = slider ? document.querySelector('.slides-container') : null;
-  const slides = slidesContainer ? Array.from(slidesContainer.children) : [];
-  const totalSlides = slides.length; // The actual total is minus one because the last is a duplicate
-
-  // Only proceed if there are slides
-  if (slides.length > 0) {
-      slideWidth = slides[0].clientWidth; // Width of a single slide
-
-      // Function to move to a specific slide
-      function moveToSlide(slideIndex) {
-          slidesContainer.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
-      }
-
-      // Function to start auto-rotation
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector('.slider');
+  
+    // Check if the slider element exists
+    if (slider) {
+      const slidesContainer = slider.querySelector('.slides-container');
+      const originalSlides = Array.from(slidesContainer.children);
+      const totalOriginalSlides = originalSlides.length;
+      const nextButton = slider.querySelector('.next');
+      const prevButton = slider.querySelector('.prev');
+    
+      // Clone the first and last slides to create an infinite loop effect
+      const firstSlideClone = originalSlides[0].cloneNode(true);
+      const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
+      slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
+      slidesContainer.appendChild(firstSlideClone);
+    
+      let currentIndex = 1; // Start from the first original slide (not the clone)
+      let isTransitioning = false;
+      let autoRotate;
+    
+      // Function to start auto-rotating
       function startAutoRotate() {
-          autoRotateInterval = setInterval(() => {
-              if (index1 < totalSlides - 1) {
-                  index1++;
-              } else {
-                  index1 = 0;
-              }
-              slidesContainer.style.transition = 'transform 0.5s ease-out';
-              moveToSlide(index1);
-          }, 4000); // Rotate every 4 seconds
+        autoRotate = setInterval(moveToNext, 4000);
       }
-
-      // Stop auto-rotation
+    
+      // Function to stop auto-rotating
       function stopAutoRotate() {
-          clearInterval(autoRotateInterval);
+        clearInterval(autoRotate);
       }
-
-      // Initialize auto-rotation
-      startAutoRotate();
-
-      // Event listeners to pause and resume auto-rotation
-      slider.addEventListener('mouseenter', stopAutoRotate);
-      slider.addEventListener('mouseleave', startAutoRotate);
-
-      // Event listener for when a transition ends on the slides container
+    
+      // Initialize position to the first original slide
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+      // Re-enable transitions after initial positioning
+      setTimeout(() => {
+        slidesContainer.style.transition = 'transform 0.5s ease';
+      }, 0);
+    
+      function updateSlidePosition() {
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+    
+      function moveToNext() {
+        if (isTransitioning) return;
+        currentIndex++;
+        isTransitioning = true;
+        updateSlidePosition();
+      }
+    
+      function moveToPrev() {
+        if (isTransitioning) return;
+        currentIndex--;
+        isTransitioning = true;
+        updateSlidePosition();
+      }
+    
       slidesContainer.addEventListener('transitionend', () => {
-          if (index1 === totalSlides - 1) {
-              slidesContainer.style.transition = 'none';
-              index1 = 0;
-              moveToSlide(index1);
-          } else if (index1 === 0 && isAnimating) {
-              slidesContainer.style.transition = 'none';
-              index1 = totalSlides - 2;
-              moveToSlide(index1);
-          }
-      });
-
-      // Update slide width on window resize
-      window.addEventListener('resize', () => {
-          slideWidth = slides[0].clientWidth;
+        if (currentIndex >= totalOriginalSlides + 1) {
           slidesContainer.style.transition = 'none';
-          moveToSlide(index1);
+          currentIndex = 1;
+          slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+          setTimeout(() => {
+            slidesContainer.style.transition = 'transform 0.5s ease';
+          }, 0);
+        } else if (currentIndex === 0) {
+          slidesContainer.style.transition = 'none';
+          currentIndex = totalOriginalSlides;
+          slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+          setTimeout(() => {
+            slidesContainer.style.transition = 'transform 0.5s ease';
+          }, 0);
+        }
+        isTransitioning = false;
       });
-
-      // Click event delegation on the parent element
-      slider.addEventListener('click', (event) => {
-          if (event.target.classList.contains('next') && !isAnimating) {
-              isAnimating = true;
-              if (index1 < totalSlides - 1) {
-                  index1++;
-              } else {
-                  index1 = 0;
-              }
-              slidesContainer.style.transition = 'transform 0.5s ease-out';
-              moveToSlide(index1);
-              setTimeout(() => {
-                  isAnimating = false;
-              }, 500);
-          }
-
-          if (event.target.classList.contains('prev') && !isAnimating) {
-              isAnimating = true;
-              if (index1 === 0) {
-                  slidesContainer.style.transition = 'none';
-                  index1 = totalSlides - 1;
-                  moveToSlide(index1);
-                  requestAnimationFrame(() => {
-                      slidesContainer.style.transition = 'transform 0.5s ease-out';
-                      index1 = totalSlides - 2;
-                      moveToSlide(index1);
-                  });
-              } else {
-                  index1--;
-                  slidesContainer.style.transition = 'transform 0.5s ease-out';
-                  moveToSlide(index1);
-              }
-              setTimeout(() => {
-                  isAnimating = false;
-              }, 500);
-          }
-      });
-  }
-};
+    
+      nextButton.addEventListener('click', moveToNext);
+      prevButton.addEventListener('click', moveToPrev);
+    
+      // Event listeners to stop/start auto-rotating
+      slidesContainer.addEventListener('mouseenter', stopAutoRotate);
+      slidesContainer.addEventListener('mouseleave', startAutoRotate);
+      nextButton.addEventListener('mouseenter', stopAutoRotate);
+      nextButton.addEventListener('mouseleave', startAutoRotate);
+      prevButton.addEventListener('mouseenter', stopAutoRotate);
+      prevButton.addEventListener('mouseleave', startAutoRotate);
+    
+      // Start auto-rotating
+      startAutoRotate();
+    }
+  });
+  
+  
+  //was fixed but with console error. above to test fixing that.
+// document.addEventListener("DOMContentLoaded", () => {
+//     const slider = document.querySelector('.slider');
+//     const slidesContainer = slider.querySelector('.slides-container');
+//     const originalSlides = Array.from(slidesContainer.children);
+//     const totalOriginalSlides = originalSlides.length;
+//     const nextButton = slider.querySelector('.next');
+//     const prevButton = slider.querySelector('.prev');
+  
+//     // Clone the first and last slides to create an infinite loop effect
+//     const firstSlideClone = originalSlides[0].cloneNode(true);
+//     const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
+//     slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
+//     slidesContainer.appendChild(firstSlideClone);
+  
+//     let currentIndex = 1; // Start from the first original slide (not the clone)
+//     let isTransitioning = false;
+//     let autoRotate;
+  
+//     // Function to start auto-rotating
+//     function startAutoRotate() {
+//       autoRotate = setInterval(moveToNext, 4000);
+//     }
+  
+//     // Function to stop auto-rotating
+//     function stopAutoRotate() {
+//       clearInterval(autoRotate);
+//     }
+  
+//     // Initialize position to the first original slide
+//     slidesContainer.style.transition = 'none';
+//     slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+//     // Re-enable transitions after initial positioning
+//     setTimeout(() => {
+//       slidesContainer.style.transition = 'transform 0.5s ease';
+//     }, 0);
+  
+//     function updateSlidePosition() {
+//       slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     }
+  
+//     function moveToNext() {
+//       if (isTransitioning) return;
+//       currentIndex++;
+//       isTransitioning = true;
+//       updateSlidePosition();
+//     }
+  
+//     function moveToPrev() {
+//       if (isTransitioning) return;
+//       currentIndex--;
+//       isTransitioning = true;
+//       updateSlidePosition();
+//     }
+  
+//     slidesContainer.addEventListener('transitionend', () => {
+//       if (currentIndex >= totalOriginalSlides + 1) {
+//         slidesContainer.style.transition = 'none';
+//         currentIndex = 1;
+//         slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+//         setTimeout(() => {
+//           slidesContainer.style.transition = 'transform 0.5s ease';
+//         }, 0);
+//       } else if (currentIndex === 0) {
+//         slidesContainer.style.transition = 'none';
+//         currentIndex = totalOriginalSlides;
+//         slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+//         setTimeout(() => {
+//           slidesContainer.style.transition = 'transform 0.5s ease';
+//         }, 0);
+//       }
+//       isTransitioning = false;
+//     });
+  
+//     nextButton.addEventListener('click', moveToNext);
+//     prevButton.addEventListener('click', moveToPrev);
+  
+//     // Event listeners to stop/start auto-rotating
+//     slidesContainer.addEventListener('mouseenter', stopAutoRotate);
+//     slidesContainer.addEventListener('mouseleave', startAutoRotate);
+//     nextButton.addEventListener('mouseenter', stopAutoRotate);
+//     nextButton.addEventListener('mouseleave', startAutoRotate);
+//     prevButton.addEventListener('mouseenter', stopAutoRotate);
+//     prevButton.addEventListener('mouseleave', startAutoRotate);
+  
+//     // Start auto-rotating
+//     startAutoRotate();
+//   });
+  
+//   // /*
+// //   * zenCSS Beta v2.0.0 (https://zencss.com/)
+// //   * Copyright 2023-2023 Shaun Mackey
+// //   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+// //   */

@@ -211,6 +211,12 @@ border-radius: 8px;
   }
 }
 
+.glyph{
+padding-top:5px;
+padding-bottom:5px;  
+color: red;
+}
+
 /* to begin breaking changes */
 /* .zen .accordion .title {
   display: inline-block;

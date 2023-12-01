@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -105,6 +105,31 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
     document.querySelectorAll('.responsive-table').forEach(applyDataLabelsToTable);
 });
 
+  //-------------------------------------
+  // Lazy Load
+  //-------------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyLoadImages = document.querySelectorAll("img.lazy-load");
+  
+    if (lazyLoadImages.length > 0) {
+      const imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const image = entry.target;
+            image.src = image.dataset.src;
+            image.classList.remove("lazy-load");
+            imageObserver.unobserve(image);
+          }
+        });
+      });
+  
+      lazyLoadImages.forEach(function(image) {
+        imageObserver.observe(image);
+      });
+    }
+  });
+  
 
 
   //-------------------------------------

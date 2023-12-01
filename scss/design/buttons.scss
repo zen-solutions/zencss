@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -89,6 +89,7 @@ button.btn-ghost:hover {
   line-height: 9px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  bottom:-1px;
 }
 
 .eyebrow {
@@ -99,7 +100,7 @@ button.btn-ghost:hover {
   color: $primary-color;
   font-size: .62rem;
   font-weight: 700;
-  @include font-spacing;
+ // @include font-spacing;
 }
 
 .eyebrow-2 {

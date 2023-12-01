@@ -1,3 +1,8 @@
+function preloadImage(src) {
+    const img = new Image();
+    img.src = src;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.querySelector('.image-gallery');
     const modal = document.querySelector('z-modal');
@@ -7,9 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let currentPage = 1;
         const imagesPerPage = 15;
         let currentModalIndex = 0;
+        const imageWrappers = [];
 
-        const imageWrappers = Array.from(gallery.children).map((img, index) => {
+        Array.from(gallery.children).forEach((img, index) => {
             const wrapper = document.createElement('div');
+            wrapper.classList.add('lazy-load'); // using the lazy-load class
             wrapper.style.display = index < imagesPerPage ? 'block' : 'none';
             const clonedImg = img.cloneNode(true);
             clonedImg.addEventListener('click', () => {
@@ -17,11 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 openModal(clonedImg.src, clonedImg.getAttribute('data-text'), index);
             });
             wrapper.appendChild(clonedImg);
-            return wrapper;
+            imageWrappers.push(wrapper);
         });
-
-        gallery.innerHTML = '';
-        imageWrappers.forEach(wrapper => gallery.appendChild(wrapper));
 
         const totalPages = Math.ceil(imageWrappers.length / imagesPerPage);
 
@@ -49,9 +53,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const modalHeader = modal.shadowRoot.querySelector('.modal-header');
 
             if (modalBody && modalWrapper && modalHeader) {
-                modalBody.innerHTML = '';
+                const currentWidth = modalWrapper.clientWidth;
+                const currentHeight = modalWrapper.clientHeight;
+                modalWrapper.style.minWidth = `${currentWidth}px`;
+                modalWrapper.style.minHeight = `${currentHeight}px`;
 
-                // Create a container for the image and arrows
+                modalBody.innerHTML = '';
                 const imageContainer = document.createElement('div');
                 imageContainer.style.display = 'flex';
                 imageContainer.style.position = 'relative';
@@ -64,16 +71,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevArrow.style.position = 'absolute';
                 prevArrow.style.top = '50%';
                 prevArrow.style.left = '0';
-                prevArrow.style.background = '#f4f4f4';
-                prevArrow.style.borderTopRightRadius="4px";
-                prevArrow.style.borderBottomRightRadius="4px";
-                prevArrow.style.padding = '5px';
                 prevArrow.style.transform = 'translateY(-50%)';
                 prevArrow.onclick = function () {
                     currentModalIndex = (currentModalIndex > 0) ? currentModalIndex - 1 : imageWrappers.length - 1;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
                     openModal(newImg.src, newImg.getAttribute('data-text'), currentModalIndex);
                 };
+                imageContainer.appendChild(prevArrow);
+
+                const modalImage = document.createElement('img');
+                modalImage.onload = () => {
+                    modalWrapper.style.minWidth = '';
+                    modalWrapper.style.minHeight = '';
+                };
+                modalImage.src = src;
+                modalImage.style.maxWidth = '100%';
+                modalImage.style.maxHeight = '60vh';
+                modalImage.style.objectFit = 'contain';
+                modalImage.style.margin = 'auto';
+                imageContainer.appendChild(modalImage);
 
                 const nextArrow = document.createElement('div');
                 nextArrow.className = 'next arrow theme-dark';
@@ -82,28 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 nextArrow.style.position = 'absolute';
                 nextArrow.style.top = '50%';
                 nextArrow.style.right = '0';
-                nextArrow.style.background = '#f4f4f4';
-                nextArrow.style.borderTopLeftRadius="4px";
-                nextArrow.style.borderBottomLeftRadius="4px";
-                nextArrow.style.padding = '5px';
                 nextArrow.style.transform = 'translateY(-50%)';
                 nextArrow.onclick = function () {
                     currentModalIndex = (currentModalIndex < imageWrappers.length - 1) ? currentModalIndex + 1 : 0;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
                     openModal(newImg.src, newImg.getAttribute('data-text'), currentModalIndex);
                 };
-
-                imageContainer.appendChild(prevArrow);
-
-                const modalImage = document.createElement('img');
-                modalImage.src = src;
-                modalImage.style.maxWidth = '100%';
-                modalImage.style.maxHeight = '60vh';
-                modalImage.style.borderRadius = '8px';
-                modalImage.style.objectFit = 'contain';
-                modalImage.style.margin = 'auto';
-                imageContainer.appendChild(modalImage);
-
                 imageContainer.appendChild(nextArrow);
 
                 modalBody.appendChild(imageContainer);
@@ -111,18 +111,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 const modalText = document.createElement('p');
                 modalText.textContent = text;
                 modalText.style.textAlign = 'center';
-                modalText.style.marginBottom = '-7px';
                 modalBody.appendChild(modalText);
 
                 modalBody.style.overflowY = 'auto';
                 modalBody.style.maxHeight = '80vh';
                 modalHeader.style.display = 'none';
 
-                if (window.innerWidth >= 1070) {
-                    modalWrapper.style.maxWidth = '860px';
-                } else {
-                    modalWrapper.style.maxWidth = '80%';
-                }
+                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? '860px' : '80%';
+
+                const nextIndex = (index + 1) % imageWrappers.length;
+                const prevIndex = (index - 1 + imageWrappers.length) % imageWrappers.length;
+                preloadImage(imageWrappers[nextIndex].firstChild.src);
+                preloadImage(imageWrappers[prevIndex].firstChild.src);
 
                 modal.open();
             }
@@ -152,11 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('resize', function () {
             const modalWrapper = modal.shadowRoot.querySelector('.modal-wrapper');
             if (modalWrapper) {
-                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? '1070px' : '80%';
+                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? '860px' : '80%';
             }
         });
 
-        updatePaginationNav();
+        gallery.innerHTML = '';
+        imageWrappers.forEach(wrapper => gallery.appendChild(wrapper));
         updateImagesForPage(currentPage);
-    } 
+        updatePaginationNav();
+    }
 });

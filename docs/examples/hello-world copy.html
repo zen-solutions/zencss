@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Template with Sidebar</title>
+    <style>
+        body {
+            display: flex;
+        }
+        aside {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Title</h1>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is the main content of the page...</p>
+        </article>
+        <section>
+            <h3>Section Title</h3>
+            <p>Additional content or subsections...</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS - Hello World</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+<link rel="stylesheet" href="../../css/icons.css">
+</head>
+<body class="zen">
+    
+
+                <header class="header-sticky">
+                    <div class="pl-2" id="header-logo">
+                        <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="docs-nav">
+                        <button id="hamburger-button">☰</button>
+                    </div>
+                    <nav>
+                        <button id="close-button">×</button>
+                        <ul class="pr-2">
+                            <li><a href="#" class="nav-link">Section 1</a></li>
+                            <li><a href="#" class="nav-link">Section 2</a></li>
+                            <li><a href="#" class="nav-link">Section 3</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+    <main class="container-fluid page-title-here">
+
+        <section class="z-container site-section">
+            <z-row>
+                <z-col class="center">
+                    <h1 class="headline">Hello World</h1>
+                    <p>What will you create from here?</p>
+                </z-col>
+            </z-row>
+        </section>
+
+        <z-container class="site-section">
+            <z-row>
+                <z-col>
+                    <div class="tab-nav-round">
+                        <a class="item" id="toggleButton">Test Mode</a>
+                        <a class="item" id="toggleDarkMode">Dark Mode</a>
+                        <a href="../index.html" class="item">Docs</a>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+    </main>
+
+    <footer>
+        <p class="center mb-0">&copy; <span id="current-year"></span>. Built using zenCSS. </p>
+    </footer>
+
+    <script src="../../js/zencss.js"></script>
+
+</body>
+</html>

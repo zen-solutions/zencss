@@ -7,6 +7,7 @@
     <title>zenCSS Components</title>
 
     <link rel="stylesheet" href="../../css/zen.css">
+<link rel="stylesheet" href="../../css/icons.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -76,7 +77,7 @@
                         </div>
                     </div>
                     <div class="dropdown nav-dropdown">
-                        <a href="#" class="dropdown-link">Site Parts</a>
+                        <a href="#" class="dropdown-link">Components</a>
                         <div class="dropdown-content megamenu">
                            <z-container class="narrow-left-sm">
                                 <z-row>
@@ -123,13 +124,22 @@
         <!----------------------------------------------------------------------->
         <!--- Page Title  --->
         <!----------------------------------------------------------------------->
+        <z-container-fluid class="theme-cta hero-section">
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">Using zenCSS & Bootstrap Together</h1>
+                        <p> zenCSS and Bootstrap can be used interchangeably, allowing developers to leverage the strengths of both frameworks in a project. </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container-fluid>
+       
+
         <z-container>
             <z-row>
                 <z-col>
-                    <h1 class="headline center">Using zenCSS & Bootstrap Together</h1>
-
-                    <p> zenCSS and Bootstrap can be used interchangeably, allowing developers to leverage the strengths of both frameworks in a project. To demonstrate, we'll load zenCSS followed by Bootstrap to give Bootstrap preference in the CSS cascade, and construct a common layout using both frameworks.</p>
-                    <hr>
+                    <p>To demonstrate, we'll load zenCSS followed by Bootstrap to give Bootstrap preference in the CSS cascade, and construct a common layout using both frameworks.</p>
                     <h4>Transitioning Between zenCSS and Bootstrap</h4>
                     <p>By closing the parent element with the zen class, you can switch to using Bootstrap's default styling and spacing. For instance, after transitioning, you'll notice our default styling and spacing is gone, demonstrating the seamless shift between the two frameworks.
                     </p>

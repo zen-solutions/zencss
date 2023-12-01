@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -138,6 +138,7 @@ ol{
   padding:0;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-bottom: 1em;
   padding-inline-start: 35px;
 }
 
@@ -147,6 +148,7 @@ ul {
   margin-block-end: 0;
    list-style-type: disc;
   padding-left: 30px;
+  margin-bottom: 1em;
  }
 
 li {
@@ -210,7 +212,7 @@ button, .btn{
 
  button:hover, .btn:hover {
   cursor: pointer;
-   background: darken($cta-color, 10%);
+   background: darken($cta-color, 12%);
    color:$light-color;
 
  }
@@ -270,6 +272,9 @@ figcaption{
 
 small{
   line-height: calc($line-height / 1.5);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 input,
@@ -366,7 +371,9 @@ header :link {
 }
 
 header :link:hover {
-  text-decoration: underline;
+  background:  hsl(0 0% 0% /  0.65); 
+  text-decoration: none;
+  border-radius: $border-radius;
 }
 
 //-----------------------------
@@ -690,9 +697,20 @@ On the rare occasion you need to override it, use something like the following:
   border-bottom:none !important;
 }
 
-.hide-mobile{
+// .hide-mobile{
+// //hide at media query for mobile. do one for tablet too
+// }
 
+
+.lazy-load {
+  background: url('../../img/general-icons/essential/spinner.gif') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
+
+
+
 
 //docyument these in bgcolor for primary themes
 //.bg-accent-hover:hover{

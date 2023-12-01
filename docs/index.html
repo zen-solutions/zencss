@@ -7,6 +7,7 @@
         <title>zenCSS - Build Better Websites Faster</title>
         <meta name="description" content='zenCSS is an open source framework for rapid front-end development. Get started free.'>
         <link rel="stylesheet" href="../css/zen.css">
+        <link rel="stylesheet" href="../css/icons.css">
         <link rel="stylesheet" href="../docs/css/documentation.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -18,6 +19,7 @@
         <a href="#main-content" class="skip-link">Skip to main content</a>
     </div>
 <body class="zen zen-light"> 
+
         
         <header class="header-sticky slide-down">
                 <div class="pl-2" id="header-logo">
@@ -35,7 +37,7 @@
         <a href="help-desk/index.html">Getting Started</a>
         <a href="help-desk/design-system.html">Design System</a>
         <a href="help-desk/site-sections.html">Site Sections</a>
-        <a href="help-desk/site-parts.html">Site Parts</a>
+        <a href="help-desk/site-parts.html">Components</a>
         <a href="help-desk/site-modifiers.html">Site Modifiers</a>
         <a href="help-desk/core-concepts.html">Core Concepts</a>
         </div></div>
@@ -65,7 +67,7 @@
                             </div>
                         </div>
                         <div class="dropdown nav-dropdown">
-                            <a href="#" class="dropdown-link">Site Parts</a>
+                            <a href="#" class="dropdown-link">Components</a>
                             <div class="dropdown-content megamenu">
                                <z-container class="narrow-left-sm">
                                     <z-row>
@@ -142,7 +144,7 @@
                                         </p>
                                         <div class="pt-2"> 
                                                 <a href="../docs/help-desk/installation.html" class="btn btn-accent btn-md  theme-primary btn-hover">Coming Soon</a>
-                                                <a href="../docs/help-desk/index.html" class="btn theme-dark btn-md btn-hover btn-fill">Learn More </a>
+                                                <a href="../docs/help-desk/index.html" class="btn btn-cta btn-md btn-hover">Learn More </a>
                                         </div>
                                     </p>
                                 </div>
@@ -151,7 +153,9 @@
                     </z-container>
                 </z-container-fluid>
              
-
+                <div class="promo-banner theme-cta  square  fade-in-3">
+                        <i class="text-accent zenicon-verified mr-1 bigger up-1"></i> 101 Essential Icons for zenCSS. <p class="bold mb-2 ml-1 down-1"> <a href="/docs/examples/icons.html" class="text-white">Get 'em free <i class="zenicon-arrow-right-alt bigger down-4"></i></a></p>
+                           </div>
 
 
                 <z-container-fluid class="site-section">
@@ -159,7 +163,7 @@
                                 <z-col class="card fade-in-5">
                       
                                         <!-- Versatility and Customization with zenCSS -->
-                                        <h2 class="h2 headline center">AI-Enhanced Solutions That Work <span class="text-cta">For</span> You</h2>
+                                        <h2 class="h2 headline center"><span class="text-cta">AI-Powered Solutions</span> That Work For You</h2>
                                         <p class="center">Accessible Layout, Color and Typography - Automated</p>
                                         <section id="versatility-customization" class="site-section">
 
@@ -167,7 +171,7 @@
                                                         <z-row class="center">
                                                                 <z-col class="card theme-light align-items-center">
                                                                         <div class="icon-circle bg-grey-2 mb-1 mt-2">
-                                                                                <img src="../img/zen-icons/web.svg" class="w-25 down-1 center-me icon-zencolor" alt="">
+                                                                                <img src="../docs/images/zen-icons/web.svg" class="w-25 down-1 center-me icon-zencolor" alt="">
                                                                             </div>
                                                                         
                                                                         <h3 class="h4 headline">Smart-Align Framework</h3>
@@ -178,7 +182,7 @@
                                                                 </z-col>
                                                                 <z-col class="card theme-light align-items-center">  
                                                                         <div class="icon-circle bg-grey-2 mb-1 mt-2">
-                                                                                <img src="../img/zen-icons/line_style.svg" class="w-25  down-1 center-me icon-zencolor" alt="">
+                                                                                <img src="../docs/images/zen-icons/line_style.svg" class="w-25  down-1 center-me icon-zencolor" alt="">
                                                                             </div>
                                                                             <h3 class="h4 headline">Smart-Color System</h3>
                                                                         <p>Elevate your web design with accessable UI themes, auto-generating brand palettes and WCAG-compliant universal site colors.</p>
@@ -187,7 +191,7 @@
 
                                                                 <z-col class="card theme-light align-items-center"> 
                                                                         <div class="icon-circle bg-grey-2 mb-1 mt-2">
-                                                                                <img src="../img/zen-icons/text_rotation_none.svg" class="w-25 left-1 center-me icon-zencolor" alt="">
+                                                                                <img src="../docs/images/zen-icons/text_rotation_none.svg" class="w-25 left-1 center-me icon-zencolor" alt="">
                                                                             </div>                               
                                                                         <h3 class="h4 headline">Smart-Text System</h3>
                                                                         <p>Your solution for responsive text resizing that eliminates font-size guesswork, ensuring readability and aesthetic consistency.</p>
@@ -202,7 +206,7 @@
                 <z-container-fluid class="theme-primary site-section">
                         <z-container>
                                 <z-row>
-                                        <z-col>
+                                        <z-col class="flex flex-direction-column">
                                                 <img src="../docs/images/misc/icons/white.png" class="w-80 center-me mb-5" alt="">
                                                 <h2 class="h1 pt-0 mt-0 headline center">Your <span class="text-accent">front-end</span> Swiss Army Knife </h2>
                                                 <p class="center lead">Get styling with our curated selection of website components and CSS modifier classes. </p>
@@ -214,7 +218,6 @@
                                                 </z-col>
                                         <z-col>
                                         <div class="card center-vertical center-tablet">
-                                                <img src="../img/zen-icons/dashboard_customize.svg" class="w-30 down-2 icon-invert" alt=""> 
                                                 <h3 class="h3 headline text-white"><span class="text-accent">Site</span> Parts</h3>
                                             <p>Dozens of site parts including cards, contact forms and image galleries, designed for functionality and style on all screens. </p>
                                             <a href="../docs/help-desk/site-parts.html">View Parts &raquo;</a>
@@ -225,7 +228,6 @@
                                 <z-row class="narrow tablet-reverse">
                                         <z-col>
                                         <div class="card center-vertical narrow-left-lg">
-                                                <img src="../img/zen-icons/library_books.svg" class="w-30 down-2 icon-invert" alt=""> 
 
                                             <h3 class="h3 headline text-white"><span class="text-accent">Site</span> Sections</h3>
 
@@ -244,10 +246,9 @@
                                         </z-col>
                                         <z-col>
                                                 <div class="card center-vertical center-tablet narrow-left narrow-left-lg">
-                                                        <img src="../img/zen-icons/highlight_alt.svg" class="w-30 down-2 icon-invert" alt=""> 
                                                     <h3 class="h3 headline text-white"><span class="text-accent">Site</span> Modifiers</h3>
                                                     <p>Over 100, dead simple classes you'll use to modify shape, color and form without writing one line of CSS.</p>
-                                                    <a href="../docs/help-desk/site-modifiers.html">View Modifiers &raquo;</a>
+                                                    <a href="../docs/help-desk/site-modifiers.html" class="link-">View Modifiers &raquo;</a>
                                                 </div>
                                                 </z-col>
                                     </z-row>
@@ -283,12 +284,12 @@
                         </z-row>
                         <z-row class="center">
                                 <z-col class="card theme-primary">
-                                        <img src="../img/zen-icons/select_all.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
+                                        <img src="../docs/images/zen-icons/select_all.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
                                         <h3 class="h6 headline">Website Icons</h3>
                                         <small>1,500 High-Quality Icons, 100% Free.</small>
                                 </z-col>
                                 <z-col class="card theme-primary">
-                                        <img src="../img/zen-icons/app_registration.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
+                                        <img src="../docs/images/zen-icons/app_registration.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
                                         <h3 class="h6 headline">User Snippets</h3>
                                         <small>Rapid deployment of our smart align framework in as little as 4 keystrokes.</small>
                                 </z-col>
@@ -301,12 +302,12 @@
                                         <small>Semantic HTML conversion ensures your projects meet contemporary standards.</small>
                                 </z-col>
                                 <z-col class="card theme-primary">
-                                        <img src="../img/zen-icons/verified.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
+                                        <img src="../docs/images/zen-icons/verified.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
                                         <h3 class="h6 headline">Testing Plugin</h3>
                                         <small>Desktop and mobile troubleshooting at the push of a button.</small>
                                  </z-col>
                                 <z-col class="card theme-cta">                                
-                                        <img src="../img/zen-icons/list_alt.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
+                                        <img src="../docs/images/zen-icons/list_alt.svg" class="w-20 right-1 down-1 center-me icon-invert" alt="">
                                         <h3 class="h6 headline">Sitemap Generator</h3>
                                         <small>Auto-generate search engine-optimized sitemaps for your zenCSS websites.</small>
                                 </z-col>

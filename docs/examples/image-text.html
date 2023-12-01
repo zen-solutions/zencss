@@ -7,6 +7,7 @@
     <title>Welcome to zenCSS</title>
 
     <link rel="stylesheet" href="../../css/zen.css">
+<link rel="stylesheet" href="../../css/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -33,7 +34,7 @@
                         <a href="../help-desk/installation.html">Installation</a>
                         <a href="../help-desk/design-system.html">Design System</a>
                         <a href="../help-desk/site-sections.html">Site Sections</a>
-                        <a href="../help-desk/site-parts.html">Site Parts</a>
+                        <a href="../help-desk/site-parts.html">Components</a>
                         <a href="../help-desk/site-modifiers.html">Site Modifiers</a>
                         <a href="../help-desk/core-concepts.html">Core Concepts</a>
                     </div>
@@ -63,7 +64,7 @@
                     </div>
                 </div>
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Site Parts</a>
+                    <a href="#" class="dropdown-link">Components</a>
                     <div class="dropdown-content megamenu">
                         <z-container class="narrow-left-sm">
                             <z-row>
@@ -132,6 +133,7 @@
         <!----------------------------------------------------------------------->
         <!--- Page Title  --->
         <!----------------------------------------------------------------------->
+        
         <z-container>
             <z-row>
                 <z-col>
@@ -148,76 +150,13 @@
         <!--- Component  --->
         <!----------------------------------------------------------------------->
 
-        <z-container class="site-section">
-            <z-row class="p-0 border-3 square"> <!--- needs a +1 on boarder radius of 4. weird, test this  --->
-                <z-col class="p-0">
-                    <img src="../../docs/images/misc/1024-square.jpg" class="mobile-thin square" alt="">
-                </z-col>
-                <z-col>
-                    <div class="center-vertical narrow-sm">
-                        <h2 class="h3 headline">Split Image/Text with a Border</h2>
-                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
-                        <div id="content1" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square up-10"><code class="language-html">
-                            
-                        </code></pre>
-                        </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-
-
-        <z-container class="site-section">
-            <z-row class="p-0 tablet-reverse">
-                <z-col>
-                    <div class="center-vertical narrow-sm">
-                        <h2 class="h3 headline">Text With a Square Image</h2>
-                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-                <z-col class="p-0">
-                    <img src="../../docs/images/misc/1024-square-2.jpg" class="mobile-thin">
-                </z-col>
-
-            </z-row>
-        </z-container>
-
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
-                        <div id="content1" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square up-10"><code class="language-html">
-                            
-                        </code></pre>
-                        </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
 
         <z-container class="site-section">
             <z-row>
                 <z-col>
                     <img src="../../img/placeholder/fernando-jorge.jpg" alt="">
                 </z-col>
-                <z-col>
+                <z-col class="flex">
                     <div class="center-vertical">
                         <h2 class="h3 headline">Text With a 16/9 Image</h2>
                         <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
@@ -253,7 +192,7 @@
 
         <z-container class="site-section">
             <z-row class="theme-light p-0 gap-0">
-                <z-col>
+                <z-col class="flex">
                     <div class="center-vertical narrow-left-sm">
                         <h2 class="h3 headline">Image/Text in a Themed Card</h2>
                         <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
@@ -279,6 +218,72 @@
                 </z-col>
             </z-row>
         </z-container>
+
+        
+
+        <z-container class="site-section">
+            <z-row class="p-0 border-3 square"> <!--- needs a +1 on boarder radius of 4. weird, test this  --->
+                <z-col class="p-0">
+                    <img src="../../docs/images/misc/1024-square.jpg" class="mobile-thin square" alt="">
+                </z-col>
+                <z-col class="flex">
+                    <div class="center-vertical narrow-sm">
+                        <h2 class="h3 headline">Split Image/Text with a Border</h2>
+                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+
+        <z-container class="up-50">
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
+                        <div id="content1" class="expanded-content" aria-hidden="true">
+                            <pre class="copy-text square up-10"><code class="language-html">
+                            
+                        </code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+
+
+        <z-container class="site-section">
+            <z-row class="p-0 tablet-reverse">
+                <z-col class="flex">
+                    <div class="center-vertical narrow-sm">
+                        <h2 class="h3 headline">Text With a Square Image</h2>
+                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
+                    </div>
+                </z-col>
+                <z-col class="p-0">
+                    <img src="../../docs/images/misc/1024-square-2.jpg" class="mobile-thin">
+                </z-col>
+
+            </z-row>
+        </z-container>
+
+
+        <z-container class="up-50">
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
+                        <div id="content1" class="expanded-content" aria-hidden="true">
+                            <pre class="copy-text square up-10"><code class="language-html">
+                            
+                        </code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
 
         <!----------------------------------------------------------------------->
         <!--- End Component  --->

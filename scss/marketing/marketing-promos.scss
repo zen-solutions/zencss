@@ -1,7 +1,7 @@
 
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -13,11 +13,16 @@ $cta-color: $cta-color;
     height: auto;
     background: $primary-color;
     color: $light-color;
-    text-align: center;
     line-height: normal;
     word-wrap: break-word;
     white-space: normal;
     padding: .3rem !important;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 
     &-text {
         color: #fff;

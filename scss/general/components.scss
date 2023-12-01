@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -88,18 +88,11 @@
 
 .accordion {
   gap: 0;
-  //font-size: .8rem;
 
 
   p {
     margin: 0;
   }
-
-  // .expanded-content {
-  //   p {
-  //     border-bottom: 0;
-  //   }
-  // }
 
 
 
@@ -136,21 +129,6 @@
 
 
 
-.accordion .title::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/general-icons/essential/chevron-down.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: transform 0.3s ease-in-out;
-  vertical-align: middle;
-  margin-right: 3px;
-  opacity: .9;
-  margin-top: -1px;
-  filter: invert(54%) sepia(6%) saturate(16%) hue-rotate(357deg) brightness(88%) contrast(94%);}
-
 
 //toggle
 
@@ -163,10 +141,12 @@
 }
 
 .expanded-content.show {
-  max-height: 300px; /* Adjust as needed */
+  max-height: 300px; 
   border-left: 1px solid $border-color;
   border-right: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+  overflow-y: hidden; /* Initially hide overflow */
+
 }
 
 .expanded-content.full-height.show {
@@ -176,7 +156,6 @@
 
 .accordion .title {
   border-bottom: 1px solid $border-color;
-  //color: $grey-ui-text-color;
 }
 
 .accordion .title:not(:last-of-type) {

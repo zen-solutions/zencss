@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -14,10 +14,13 @@ $border-color: $border-color;
 }
 
 tr:nth-child(odd) td {
-    background-color:  hsl(0 0% 0% /  0.15); 
+    background-color:  hsl(0 0% 25% /  0.15); 
+    border-bottom:1px solid $border-color;
 }
 tr:nth-child(even) td {
-    background-color:  hsl(0 0% 0% /  0.1); 
+    background-color:  hsl(0 0% 25 /  0.1); 
+        border-bottom:1px solid $border-color;
+
 }
 
 th, td {
@@ -28,7 +31,7 @@ th, td {
 }
 
 th {
-    background-color:  hsl(0 0% 0% /  0.25); 
+    background-color:  hsl(0 0% 35% /  0.25); 
     font-weight: 600;
 }
 
@@ -63,9 +66,7 @@ thead {
     td {
         @media (max-width: $responsive-breakpoint) {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: right;
+
 
             &:before {
                 content: attr(data-label);

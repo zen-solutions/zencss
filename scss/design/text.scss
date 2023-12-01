@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2023-2023 Shaun Mackey
+  * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
    
@@ -14,9 +14,10 @@ font-family: 'Inter', sans-serif;
   }
 
   .lead{
-    font-size: 1.1em;
+    font-size: 1.25em;
     @include font-spacing;
     margin-top: 0;
+    font-weight: 300;
   }
 
   .text-balance{
