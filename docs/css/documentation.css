@@ -24,10 +24,10 @@ code[class*=language-], pre[class*=language-] {
 .copy-text button {
   border-radius: 8px;
   background-color: #ccc !important;
-  height: 30px;
-  width: 30px;
-  min-width: 30px;
-  max-width: 30px;
+  height: 25px;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
   background-image: url("../images/ui/copy.png") !important;
   background-size: 70px auto !important;
   background-repeat: no-repeat !important;
@@ -36,7 +36,7 @@ code[class*=language-], pre[class*=language-] {
   text-align: center !important;
   position: absolute;
   cursor: pointer !important;
-  top: 49%;
+  top: 83%;
   left: 100%;
   transform: translate(-50%, -50%);
   margin-top: -.1px;
@@ -215,6 +215,11 @@ border-radius: 8px;
 padding-top:5px;
 padding-bottom:5px;  
 color: red;
+}
+
+.left-150 {
+  position: relative;
+  left: -143px !important;
 }
 
 /* to begin breaking changes */

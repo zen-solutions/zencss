@@ -204,6 +204,8 @@ button, .btn{
   z-index: 3;
   text-decoration: none;
   font-weight: 500;
+  min-height: 41px;
+  min-width: 41px;
 }
 
  button:hover, .btn:hover {
@@ -270,7 +272,7 @@ small{
   line-height: calc($line-height / 1.5);
   margin-top: 0;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: inline;
 }
 
 input,
@@ -496,7 +498,7 @@ margin-top:5px;
 .nav-dropdown{
   .dropdown-content{
     a{
-      padding-left:0;
+      padding-left:12px;
     }
   }
 }

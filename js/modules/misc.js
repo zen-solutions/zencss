@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
   //-------------------------------------
   // Pattern Interrupt
   //-------------------------------------

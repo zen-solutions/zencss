@@ -29,13 +29,14 @@
                 <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content">
+                        <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
+
 <a href="../help-desk/index.html">Getting Started</a>
 <a href="../help-desk/installation.html">Installation</a>
-<a href="../help-desk/design-system.html">Design System</a>
+<a href="../help-desk/core-concepts.html">Core Concepts</a>
 <a href="../help-desk/site-sections.html">Site Sections</a>
 <a href="../help-desk/site-parts.html">Components</a>
-<a href="../help-desk/site-modifiers.html">Site Modifiers</a>
-<a href="../help-desk/core-concepts.html">Core Concepts</a>
+<a href="../help-desk/utilities.html">Utilities</a>
 </div></div>
 
                 <div class="dropdown nav-dropdown">
@@ -44,7 +45,7 @@
                         <a href="smart-align-framework.html">Smart-Align Framework</a>
                         <a href="smart-color-system.html">Smart-Color System</a>
                         <a href="smart-text.html">Smart-Text System</a>  
-                        <a href="themes.html">Content Themes</a>
+                        <a href="themes.html">Modes & Themes</a>
                         <a href="zen-system.html">The ZEN Ideology</a>                      
                         <a href="zentax.html">Intro to Zentax</a>                      
                     </div>
@@ -106,8 +107,8 @@
                     </div>
                 </div>
                 <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Modifiers</a>
-                    <div class="dropdown-content left-100">
+                    <a href="#" class="dropdown-link">Utilities</a>
+                    <div class="dropdown-content left-150">
                         <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                         <a href="padding-margin-utilities.html">Padding & Margin</a>
                         <a href="animations.html">Animation Utilities</a>
@@ -136,56 +137,26 @@
                     </p>
             </z-col>
     </z-row>
-    </z-container>
 
-<z-container class="bg-grey-2">
-    <z-row>
-        <z-col class="center">
-            <p class="">Your journey begins with a container.</p>
-            <p class="text-balance">Imagine containers as the foundational blocks of your webpage, holding your content with precision and care. For example, this grey section is a container. </p>
-            <p class="mb-0 text-balance">Their mission? To ensure your layouts stay sharp and adapt seamlessly to the screens of mobile, tablet, and desktop devices. </p>
-        </z-col>
-    </z-row>
-</z-container>
-<br>
-<z-container class="bg-grey-2 p-2">
-    <z-row class="theme-light mb-3 down-2 text-grey-2-dark">
-        <z-col class="center">
-            <p class="text-balance mb-0"> Rows are declared within containers, and are akin to layers in a delicious cake - each adding its own flavor to the overall experience. </p>
-        </z-col>
-    </z-row>
-    
-    <z-row class="theme-light  text-grey-6 ">
-        <z-col class="center">
-            <p class="text-balance mb-0">Stack as many or as few as you desire — our Smart-Align Framework is the master chef, ensuring rows align perfectly, creating a visual feast. </p>
-        </z-col>
-    </z-row>
-</z-container>
-<br>
+        <z-row>
+            <z-col>
+                <h2>Overview</h2>
+                <p>The zenCSS Smart-Align System uses a custom Flexbox grid system to provide you with an advanced, responsive layout solution for your web apps. Like most modern CSS frameworks' grid systems, it is composed of three main components - containers, rows and columns:</p>
 
-<z-container class="bg-grey-2 p-2">
-    <z-row class="theme-light p-2 gap-2">
-        <z-col class=" bg-grey-3-light round"> And inside rows. columns.</z-col>
-        <z-col class=" bg-grey-3-light round"> Any amount is fine, columns also align automatically</z-col>
-        <z-container class="bg-grey-2 feature-lg">
-            <z-row>
-                <z-col>Or nest a container to make a micro-layout in a given section</z-col>
-            </z-row>
-            <z-row class="gap-2 mobile-two-up">
-                <z-col class="bg-grey-2-dark center">1</z-col>
-                <z-col class="bg-grey-2-dark center">2</z-col>
-                <z-col class="bg-grey-2-dark center">3</z-col>
-            </z-row>
-        </z-container>
-    </z-row>
-</z-container>
+<ul>
+    <li>
+        <p>The container is the outermost layer of the grid system and serves as a nestable, responsive wrapper. Containers are used as the basis for your layout. </p>
+    </li>
+    <li>
+        <p>Inside the container, you can add one or more rows , which will in turn house the columns.</p>
+    </li>
+    <li>
+        <p>Columns are placed inside rows and they can be customized to display differently on different screen sizes, make use of fluid layouts, use features and change ordering.</p>
+    </li>
+</ul>
+<h2>Advanced Features</h2>
 
-<br>
-
-
-<z-container>
-    <z-row>
-        <z-col><p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window to see it in action. </p></z-col>
+<p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window to see it in action. </p></z-col>
     </z-row>
 </z-container>
 <z-container>
@@ -298,9 +269,9 @@
 
 
 
-        <z-row>
+        <z-row class="mt-5">
             <z-col>
-                   <h3>HTML Example</h3>
+                   <h3 class="d-inline">HTML Example</h3>
               <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
   &lt;div class="z-row"&gt;
     &lt;div class="z-col"&gt;
@@ -310,7 +281,7 @@
 &lt;/div&gt;</code></pre>
             </z-col>
             <z-col>
-                <h3>Zentax Example</h3>
+                <h3 class="d-inline">Zentax Example</h3> <small class="small"> <a href="zentax.html">What is zentax?</a></small>
                 <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
     &lt;z-row&gt;
       &lt;z-col&gt;

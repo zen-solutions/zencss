@@ -39,7 +39,7 @@
 
   &.alert-light-minimal {
     color: $dark-color;
-    border-left: 8px solid darken($background-color,15%);
+    border-left: 4px solid darken($background-color,15%);
   }
 
   &.alert-light {
@@ -56,17 +56,17 @@
 
 // Apply the alert mixin to each alert class, passing the background color and icon url
 .alert-primary { @include alert($blue, '../img/icons/alerts/thumbs-up-solid.svg', 60px); }
-.alert-primary-minimal { @include alert($blue, '', 8px); }
+.alert-primary-minimal { @include alert($blue, '', 4px); }
 .alert-danger { @include alert($red, '../img/icons/alerts/triangle-exclamation-solid.svg', 60px); }
-.alert-danger-minimal { @include alert($red, '', 8px); }
+.alert-danger-minimal { @include alert($red, '', 4px); }
 .alert-success { @include alert($secondary-color, '../img/icons/alerts/circle-check-solid.svg', 60px); }
-.alert-success-minimal { @include alert($secondary-color, '', 8px); }
+.alert-success-minimal { @include alert($secondary-color, '', 4px); }
 .alert-warning { @include alert($orange, '../img/icons/alerts/circle-exclamation-solid.svg', 60px); }
-.alert-warning-minimal { @include alert($orange, '', 8px); }
+.alert-warning-minimal { @include alert($orange, '', 4px); }
 .alert-dark { @include alert($dark-color, '../img/icons/alerts/circle-check-regular.svg', 60px); }
-.alert-dark-minimal { @include alert($dark-color, '', 8px); }
+.alert-dark-minimal { @include alert($dark-color, '', 4px); }
 .alert-light { @include alert($light-color, '../img/icons/alerts/circle-check-regular.svg', 60px); }
-.alert-light-minimal { @include alert($light-color, '', 8px); }
+.alert-light-minimal { @include alert($light-color, '', 4px); }
 
 //override
 

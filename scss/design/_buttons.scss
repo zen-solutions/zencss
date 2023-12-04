@@ -20,7 +20,7 @@ $btn-hover-color: darken($cta-color, 20%);
   @include btn-hover($btn-hover-color);
 }
 
-.inactive {
+.disabled {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
@@ -78,7 +78,7 @@ button.btn-ghost:hover {
 }
 
 .label {
-  border-radius: 8px;
+  border-radius: $border-radius;
   padding: 0.3em 1em .3em 1em;
   overflow: hidden; 
   display: inline; 

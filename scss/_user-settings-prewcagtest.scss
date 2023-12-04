@@ -1,50 +1,8 @@
-
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-  //------------------------------------------------
-  // Do not touch
-  //------------------------------------------------
-    
-  @function luminance($color) {
-  $r: red($color) / 255;
-  $g: green($color) / 255;
-  $b: blue($color) / 255;
-
-  $r: if($r < 0.03928, $r / 12.92, pow(($r + 0.055) / 1.055, 2.4));
-  $g: if($g < 0.03928, $g / 12.92, pow(($g + 0.055) / 1.055, 2.4));
-  $b: if($b < 0.03928, $b / 12.92, pow(($b + 0.055) / 1.055, 2.4));
-
-  @return ($r * 0.2126) + ($g * 0.7152) + ($b * 0.0722);
-}
-
-@function contrast-ratio($color1, $color2) {
-  $l1: luminance($color1) + 0.05;
-  $l2: luminance($color2) + 0.05;
-  @return max($l1, $l2) / min($l1, $l2);
-}
-
-@function smart-text-color($bg-color) {
-  $light-color: white;
-  $dark-color: black;
-  $light-contrast: contrast-ratio($bg-color, $light-color);
-  $dark-contrast: contrast-ratio($bg-color, $dark-color);
-
-  @if $light-contrast >= 4.5 and $light-contrast > $dark-contrast {
-    @return $light-color;
-  } @else if $dark-contrast >= 4.5 {
-    @return $dark-color;
-  } @else {
-    @return null; // or some default color if neither contrast is sufficient
-  }
-}
-
-//------------------------------------------------
-// OK to pverride
-//------------------------------------------------
   
 //------------------------------------------ 
 //baseline
@@ -61,7 +19,7 @@ $nav-link-color: $light-color;
 
 
 //------------------------------------------ 
-// Brand Color Palette -When adjusting, our smart-color system will provide WCAG fine-tuning to ensure accessable color compliance with your brand palette.
+// Brand Color Palette - If adjusting, we recommend a one time WCAG fine-tuning to ensure accessable color compliance with your brand palette
 //------------------------------------------ 
 
 $primary-color: #044384;
@@ -123,13 +81,11 @@ $purple-light: lighten($purple, 5%);
 $var-white-text:white;
 $var-black-text: black;
 
-
 $text-default-colors: (
-  "primary": smart-text-color($primary-color),
-  "secondary": smart-text-color($secondary-color),
-  "accent": smart-text-color($accent-color),
-  "cta": smart-text-color($cta-color),
-//  "secondary": $var-white-text,
+  "primary": $var-white-text,
+  "secondary": $var-white-text,
+  "accent": $var-black-text,
+  "cta": $var-white-text,
   "red": $var-white-text,
   "orange": $var-black-text,
   "yellow": $var-black-text,
@@ -146,10 +102,10 @@ $text-default-colors: (
 
 // Dark Text Colors
 $text-dark-colors: (
-  "primary-dark": smart-text-color($primary-color),
-  "secondary-dark": smart-text-color($secondary-color),
-  "accent-dark": smart-text-color($accent-color),
-  "cta-dark": smart-text-color($cta-color),
+  "primary-dark": $var-white-text,
+  "secondary-dark": $var-white-text,
+  "accent-dark": $var-black-text,
+  "cta-dark": $var-white-text,
   "red-dark": $var-white-text,
   "orange-dark": $var-black-text,
   "yellow-dark": $var-black-text,
@@ -166,10 +122,10 @@ $text-dark-colors: (
 
 // Light Text Colors
 $text-light-colors: (
-  "primary-light": smart-text-color($primary-color),
-  "secondary-light": smart-text-color($secondary-color),
-  "accent-light": smart-text-color($accent-color),
-  "cta-light": smart-text-color($cta-color),
+  "primary-light": $var-white-text,
+  "secondary-light": $var-white-text,
+  "accent-light": $var-black-text,
+  "cta-light": $var-white-text,
   "red-light": $var-white-text,
   "orange-light": $var-black-text,
   "yellow-light": $var-black-text,
@@ -183,8 +139,6 @@ $text-light-colors: (
   "grey-5-light": $var-white-text,
   "grey-6-light": $var-white-text,
 );
-
-
 
 //end color system maps
 

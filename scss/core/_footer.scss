@@ -27,28 +27,29 @@
     align-items: center;
     justify-content: center;
     gap:1em;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px; 
+        background-color: $light-color; 
+        border-radius: $border-radius; 
+        transition: background-color 0.3s ease;
+        overflow: hidden; 
+    
+        &:hover {
+            background-color: darken($light-color, 20%);
+        }
+    
+        img {
+            width: 20px; 
+            height: 20px;
+            object-fit: contain; 
+        }
+    }
 }
 
-.social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px; 
-    background-color: #fff; 
-    border-radius: $border-radius; 
-    transition: background-color 0.3s ease;
-    overflow: hidden; 
-}
 
-.social-icons a:hover {
-    background-color: darken($light-color, 20%);
-
-}
-
-.social-icons a img {
-    width: 20px; 
-    height: 20px;
-    object-fit: contain; 
-}

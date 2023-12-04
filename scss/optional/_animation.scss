@@ -17,16 +17,14 @@
       100% { transform: translateY(0); }
   }
   
-  /* Updated keyframes for sliding in from the left */
   @keyframes slideInFromLeft {
-      0% { transform: translateX(-20px); } /* Start 20px to the left */
-      100% { transform: translateX(0); }    /* End in the original position */
+      0% { transform: translateX(-20px); } 
+      100% { transform: translateX(0); }    
   }
   
-  /* Updated keyframes for sliding in from the right */
   @keyframes slideInFromRight {
-      0% { transform: translateX(20px); }  /* Start 20px to the right */
-      100% { transform: translateX(0); }   /* End in the original position */
+      0% { transform: translateX(20px); } 
+      100% { transform: translateX(0); }  
   }
   
   @keyframes fadeIn {
@@ -38,23 +36,21 @@
   
   .slide-up { animation: slideUpDown 0.5s ease-out; }
   
-  /* Updated slideDown animation */
   @keyframes slideDown {
-      0% { transform: translateY(-20px); } /* Start above */
-      100% { transform: translateY(0); }    /* End in the original position */
+      0% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }  
   }
   
   .slide-down { 
-      animation: slideDown 0.5s ease-out; /* Apply the updated animation */
+      animation: slideDown 0.5s ease-out; 
   }
   
-  /* Apply the updated animations for slide-left and slide-right */
   .slide-left { 
-      animation: slideInFromLeft 0.5s ease-out; /* Slide in from the left */
+      animation: slideInFromLeft 0.5s ease-out; 
   }
   
   .slide-right { 
-      animation: slideInFromRight 0.5s ease-out; /* Slide in from the right */
+      animation: slideInFromRight 0.5s ease-out; 
   }
   
   @for $i from 1 through $steps {

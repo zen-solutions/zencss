@@ -82,8 +82,12 @@ $grey-colors: (
   color: $green;
 }
 
-.text-failure{
-  color: $red;
+.text-danger{
+  color:  darken($red, 10%);
+}
+
+.text-warning{
+  color:  darken($orange, 10%);
 }
 
 

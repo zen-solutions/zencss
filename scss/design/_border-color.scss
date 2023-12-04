@@ -24,4 +24,17 @@ $colors: (1: #F7F7F7,
   .border {
     border: 1px solid #c2c2c2;
   }
+
+  //do these with the color map
+  .border-success {
+    border: 1px solid $green;
+  }
+  
+  .border-danger {
+    border: 1px solid $red;
+  }
+  
+  .border-warning {
+    border: 1px solid $orange;
+  }
   

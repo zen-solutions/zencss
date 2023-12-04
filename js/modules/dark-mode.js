@@ -5,7 +5,7 @@
   */
 
 //--------------------------------------------------------
-//  Dark Mode Option
+//  Toggle Dark Mode Option
 //--------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   function toggleDarkMode() {
