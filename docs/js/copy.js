@@ -1,32 +1,41 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+ 
 var preElements = document.querySelectorAll('pre.copy-text');
 
-preElements.forEach(function (textBox)
-{
-	var copyButton = document.createElement('button');
-	var copyText = textBox.innerText;
+preElements.forEach(function (textBox) {
+    var copyButton = document.createElement('button');
+    var copyText = textBox.innerText;
 
-	textBox.appendChild(copyButton);
+    // Create a span element with the desired text content for screen readers
+    var srOnlySpan = document.createElement('span');
+    srOnlySpan.textContent = 'Copy Text'; // Include your desired text here
 
-	copyButton.addEventListener('click', function (event)
-	{
-		navigator.clipboard.writeText(copyText)
-			.then(() =>
-			{
+    // Apply CSS to visually hide the span element while making it accessible
+    srOnlySpan.style.cssText = 'position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);';
 
-				copyButton.style.cssText = 'background-color: green !important; background-image: url("../images/ui/copied.png") !important;';
-				setTimeout(function unCopy()
-				{
-					copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
-				}, 1500);
-			})
-			.catch(err =>
-			{
-				alert('Not enough permissions to copy text');
-			});
-	});
+    // Append the span to the button
+    copyButton.appendChild(srOnlySpan);
+
+    // Add the button to the textBox
+    textBox.appendChild(copyButton);
+
+    copyButton.addEventListener('click', function (event) {
+        navigator.clipboard.writeText(copyText)
+            .then(() => {
+                copyButton.style.cssText = 'background-color: green !important; background-image: url("../images/ui/copied.png") !important;';
+                setTimeout(function unCopy() {
+                    copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
+                }, 1500);
+            })
+            .catch(err => {
+                alert('Not enough permissions to copy text');
+            });
+    });
 });
-
-
 
 
 //   //fix for hamburger broken on docs

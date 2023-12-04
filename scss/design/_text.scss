@@ -1,0 +1,414 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+   
+//----------------------
+//fonts 
+//----------------------
+
+  .headline{
+font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  }
+
+  .lead{
+    font-size: 1.25em;
+    @include font-spacing;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 300;
+  }
+
+  .text-balance{
+    text-wrap: balance;
+  }
+
+  .text-grey-dual{
+  color: #5E5E5E;
+}
+$text-grey-dual:#5E5E5E;
+
+  
+  //------------------------------------------ 
+// Text Formatting */
+//------------------------------------------ 
+
+.italic {font-style: italic;}
+.thinnest { font-weight: 100; }
+.thinner { font-weight: 200; }
+.thin { font-weight: 300; }
+.regular { font-weight: 400; }
+.medium { font-weight: 500; }
+.semibold { font-weight: 600; }
+.bold { font-weight: 700; }
+.bolder { font-weight: 800; }
+.boldest { font-weight: 900; }
+
+
+//------------------------------------------ 
+// Text Alignment 
+//------------------------------------------ 
+
+.center, .text-center {
+    text-align: center !important;
+}
+
+.center-vertical {
+    margin: auto;
+    width: 100%;
+}
+
+
+.text-end {
+    text-align: right !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+//------------------------------------------ 
+// Text Size 
+//------------------------------------------ 
+
+
+.small {
+    font-size: .8em !important;
+}
+
+.smaller {
+    font-size: .6em;
+}
+
+.big {
+    font-size: 1.2em;
+}
+
+.bigger {
+    font-size: 1.4em;
+}
+
+.text-align-right{
+    text-align: right;
+}
+// ------------------------------------------ 
+// Special Chars - depricated
+//------------------------------------------ 
+
+// .label-circle-floated {
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     color: white;
+//     font-size: 14px;
+//     text-align: center;
+//     line-height: 20px;
+//     position: absolute;
+//     top: 19px;
+//     right: 19px;
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
+
+// .label-circle {
+//     display: inline-block;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     background: $green;
+//     color: white;
+//     font-size: 14px;
+//     text-align: center;
+//     line-height: 20px;
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
+
+
+// ------------------------------------------ 
+// Tooltips - depricated
+//------------------------------------------ 
+
+// .tooltip {
+//     position: relative;
+//     display: inline-block;
+//     cursor: pointer;
+// }
+
+// .text-tooltip {
+//     visibility: hidden;
+//     max-width: 200px;
+//     background: #555;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 5px 5px 9px 5px;
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 125%;
+//     margin-left: -145px;
+//     opacity: 0;
+// }
+
+// .tooltip:hover .text-tooltip {
+//     visibility: visible;
+//     opacity: 1;
+//     transition: opacity 0.3s;
+// }
+
+//-----------------------------------------------------
+//breadcrumb
+//-----------------------------------------------------
+
+.breadcrumb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumb li+li:before {
+    content: ">  ";
+    margin-right: 5px;
+    position: relative;
+    right: 2px;
+    color: #636363;
+}
+
+.breadcrumb a {
+    text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+
+//-----------------------------------------------------
+//list groups
+//-----------------------------------------------------
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    border: 1px solid $border-color;
+    margin-bottom: -1px; 
+}
+
+/* Active Items */
+.list-group-item.active {
+    color: #fff;
+    background-color: $cta-color;
+    border-color: $cta-color;
+}
+
+/* Disabled Items */
+.list-group-item.disabled {
+    color: #6c757d;
+    background-color: #f8f9fa;
+    pointer-events: none;
+}
+
+/* Flush */
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+/* Horizontal */
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+
+/* Contextual Classes */
+.list-group-item-success {
+    background-color: #d4edda;
+    color:$dark-color;
+}
+
+.list-group-item-danger {
+    background-color: #f8d7da;
+    color:$dark-color;
+}
+
+.list-group-item-warning {
+    background-color: #fff3cd;
+    color:$dark-color;
+}
+
+.list-group-horizontal .list-group-item {
+    border-bottom: 1px solid $border-color;
+}
+
+.list-group .list-group-item-action:hover {
+    background-color: $cta-color;
+    color: $light-color;
+}
+
+
+//Pagination and nav
+// Mixin for common nav styles
+@mixin nav-style($item-margin-left: 4px, $gap: 0) {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: center;
+
+    .item {
+        padding: 0.5rem 1.25rem;
+        border: 1px solid $border-color;
+        text-decoration: none !important;
+        @include default-state;
+        @include hover-state;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        position: relative; 
+        z-index: 10;
+        margin-right: -1px; 
+
+        // &:last-child {
+        //     border-right:0;
+        // }
+
+
+    }
+
+    .item-minimal {
+        padding: 0.5rem 1.25rem;
+        text-decoration: none !important;
+        @include default-state;
+        @include hover-state;
+        position: relative; 
+        padding: 6px 12px;
+        border-radius: $border-radius;
+        background: none;
+        margin: .6em;
+
+        &:hover{
+            background: darken( $bg-ui-hover, 25%);
+        }
+    }
+
+
+    .current {
+        background: darken( $bg-ui-hover, 25%);
+    }
+}
+
+.pagination-nav {
+    @include nav-style;
+}
+
+// Tab Nav
+.tab-nav {
+    @include nav-style($item-margin-left: 0, $gap: 0); 
+}
+
+// Tab Nav Thin
+.tab-nav-thin {
+    @extend .tab-nav;
+    .item {
+        padding: 0.25rem 1.25rem
+    }
+
+}
+
+// Styles for .tab-nav-round
+.tab-nav-round {
+    @extend .tab-nav;
+
+    .item:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .item:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+// Styles for .tab-nav-round
+.tab-nav-round-thin {
+    @extend .tab-nav;
+    .item {
+        padding: 0.25rem 1.25rem
+    }
+    .item:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .item:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+.bg-ui-hover:hover, .tab-nav .item-minimal:hover {
+    background: darken( $bg-ui-hover, 13%);
+}
+
+//alt for wizard
+.pagination-nav-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pagination-nav-alt .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    text-decoration: none;
+    margin: 0 10px; 
+    position: relative;
+    z-index: 1;
+}
+
+.pagination-nav-alt .item:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; 
+    height: 2px;
+    width: 20px; 
+    background-color: $border-color;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+
+
+

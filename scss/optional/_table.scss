@@ -1,0 +1,86 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  $responsive-breakpoint: 767px;
+$border-color: $border-color;
+
+.responsive-table, table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+tr:nth-child(odd) td {
+    //background-color:  hsl(0 0% 25% /  0.15); 
+   // border-bottom:1px solid $border-color;
+   background: darken( $bg-ui-hover,25%);
+
+}
+tr:nth-child(even) td {
+    //background-color:  hsl(0 0% 25 /  0.1); 
+    background: darken( $bg-ui-hover, 15%);
+
+       // border-bottom:1px solid $border-color;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    
+   // color:  $responsive-text-color;
+}
+
+th {
+    //background-color:  hsl(0 0% 35% /  0.25); 
+    background: darken( $bg-ui-hover,45%);
+
+    font-weight: 600;
+}
+
+thead {
+
+
+    @media (max-width: $responsive-breakpoint) {
+        display: none; 
+        th {
+            background-color: inherit; 
+        }
+    }
+}
+
+@media (max-width: $responsive-breakpoint) {
+
+    .responsive-table tbody {
+   .responsive-table tr {
+        @include default-state;
+       // @include hover-state;
+
+       background-color:  rgba(111,111,111,.1); //dark mode top color new dual-mode-bg-color?
+
+
+        display: block;
+        margin-bottom: 20px;
+
+        }
+  
+ 
+
+    td {
+        @media (max-width: $responsive-breakpoint) {
+            display: flex;
+
+
+            &:before {
+                content: attr(data-label);
+                font-weight: bold;
+                margin-right: 10px;
+                text-align: left;
+            }
+        }
+    }
+}
+}

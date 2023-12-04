@@ -20,9 +20,10 @@ Helvetica,
 Arial,
 sans-serif;
 $zen-body-bg-color:#d7d7d7;
-$zen-dark-text-color: #f0f0f0;
+$zen-dark-text-color: #e5e5e5;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
+//$text-light-dual: #000000;
 
 .zen {
   //base stuff
@@ -30,7 +31,7 @@ $base-text-color: #444444;
   font-family: $zen-font-family;
   font-size: $zen-font-size;
   color: $base-text-color;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -58,51 +59,62 @@ $base-text-color: #444444;
   // Import core files
   //--------------------------------------------------------------
 
-  @import 'user-settings.scss';
-  @import 'core/mixins.scss';
-  @import 'core/framework.scss';
-  @import 'core/scaffold.scss';
-  @import 'marketing/marketing-promos.scss';
-  //@import 'design/themes.scss';
-  @import 'core/header.scss';
-  @import 'general/form.scss';
-  @import 'general/slider.scss';
-  @import 'design/buttons.scss';
-  @import 'core/flex.scss';
-  @import 'optional/table.scss';
-  @import 'core/formatting.scss';
-  @import 'optional/alert.scss';
-  @import 'design/text.scss';
-  //@import 'design/bg-color.scss';
-  @import 'design/border-color.scss';
-  //@import 'design/text-color.scss';
-  @import 'general/test.scss';
-  @import 'general/components.scss';
-  @import 'design/layouts.scss';
-  @import 'core/footer.scss';
-  @import 'core/wip.scss';
-  @import 'optional/decoration.scss';
-  @import 'optional/animation.scss';
-  @import 'optional/image-gallery.scss';
+  @import 'user-settings';
+  @import 'core/mixins';
+  @import 'core/framework';
+  @import 'core/scaffold';
+  @import 'marketing/marketing-promos';
+  //@import 'design/themes';
+  @import 'core/header';
+  @import 'general/form';
+  @import 'general/slider';
+  @import 'design/buttons';
+  @import 'core/flex';
+  @import 'optional/table';
+  @import 'core/formatting';
+  @import 'optional/alert';
+  @import 'design/text';
+  //@import 'design/bg-color';
+  @import 'design/border-color';
+  //@import 'design/text-color';
+  @import 'general/test';
+  @import 'general/components';
+  @import 'design/layouts';
+  @import 'core/footer';
+  @import 'core/wip';
+  @import 'optional/decoration';
+  @import 'optional/animation';
+  @import 'optional/image-gallery';
+  @import 'optional/tooltip';
+  @import 'optional/aria';
+  @import 'optional/accessability';
 
   //marketing
-  @import 'design/themes.scss';  //11/26 moved
-  @import 'design/bg-color.scss'; //11/26 moved
-  @import 'design/text-color.scss'; //11/26 moved
-  @import 'marketing/exit-intent.scss';
-  @import 'marketing/contact-form.scss';
+  @import 'design/themes';  
+  @import 'design/bg-color';
+  @import 'design/text-color'; 
+  @import 'marketing/exit-intent';
+  @import 'marketing/contact-form';
 
   //--------------------------------------------------------------
   //  Things that should go last
   //--------------------------------------------------------------
-  @import 'core/media-query.scss';
-  // @import 'optional/stacking.scss';
-  @import 'general/margin-padding.scss';
+  @import 'core/media-query';
+  // @import 'optional/stacking';
+  @import 'general/margin-padding';
 
 
   //--------------------------------------------------------------
   // Media queries for font size change
   //--------------------------------------------------------------
+//contextual
+.text-success{
+  color: darken($green, 11%);
+}
+
+.text-failure{
+ color: darken($red, 4%);
+}
 
   @media (max-width: 575.98px) {
     font-size: $zen-tablet-mobile-font-size;
@@ -143,15 +155,24 @@ $base-text-color: #444444;
   }
 }
 
+
 //--------------------------------------------------------------
 // Dark Mode Settings
 //--------------------------------------------------------------
 
+
 .zen-dark {
   color: $zen-dark-text-color;
-  background: #252525;
-  background-color: #252525;
-  $responsive-text-color: white;
+  background: #292929;
+  $responsive-text-color: #ededed;
+
+  .text-success{
+    color: lighten(green, 10%);
+  }
+  
+  .text-failure{
+   color:  lighten(red, 16%);
+  }
 
   td,
   th {
@@ -169,7 +190,28 @@ $base-text-color: #444444;
   }
 
   a:hover {
-    color: #808080;
+    color: #e8e8e8;
     text-decoration: none;
   }
+
+  .text-grey-dual{
+    color: #8C8C8C;
+  }
+
+  $text-grey-dual: #8C8C8C;
+  //$text-light-dual: #000000;
+
+  .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
+    background: hsla(69, 0%, 79%, 0.3);
+    //color: $text-grey-dual;
+  }
+
+  // Adjust the .btn-fill-up to have the text same as the outline
+.btn-fill, .theme-light .btn-fill {
+  color: $responsive-text-color;
+}  
+
+
+
+
 }

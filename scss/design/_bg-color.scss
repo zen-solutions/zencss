@@ -1,0 +1,186 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+// Default Background Colors
+$bg-default-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "accent": $accent-color,
+  "cta": $cta-color,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "blue": $blue,
+  "purple": $purple,
+  "grey-1": #F7F7F7,
+  "grey-2": #c7c6c6,
+  "grey-3": #A6A6A6,
+  "grey-4": #616161,
+  "grey-5": #404040,
+  "grey-6": #0D0D0D,
+);
+
+// Dark Background Colors
+$bg-dark-colors: (
+  "primary-dark": $primary-color-dark,
+  "secondary-dark": $secondary-color-dark,
+  "accent-dark": $accent-color-dark,
+  "cta-dark": $cta-color-dark,
+  "red-dark": $red-dark,
+  "orange-dark": $orange-dark,
+  "yellow-dark": $yellow-dark,
+  "green-dark": $green-dark,
+  "blue-dark": $blue-dark,
+  "purple-dark": $purple-dark,
+  "grey-1-dark": #d1d1d1,
+  "grey-2-dark": #a5a4a4,
+  "grey-3-dark": #7b7979,
+  "grey-4-dark": #4d4d4d,
+  "grey-5-dark": #1e1e1e,
+  "grey-6-dark": #000000,
+);
+
+// Light Background Colors
+$bg-light-colors: (
+  "primary-light": $primary-color-light,
+  "secondary-light": $secondary-color-light,
+  "accent-light": $accent-color-light,
+  "cta-light": $cta-color-light,
+  "red-light": $red-light,
+  "orange-light": $orange-light,
+  "yellow-light": $yellow-light,
+  "green-light": $green-light,
+  "blue-light": $blue-light,
+  "purple-light": $purple-light,
+  "grey-1-light": #ffffff,
+  "grey-2-light": #d9d8d8,
+  "grey-3-light": #b5b3b3,
+  "grey-4-light": #6f6f6f,
+  "grey-5-light": #575757,
+  "grey-6-light": #1e1e1e,
+);
+
+
+//------------------------------------------ 
+// Background and Text Color Classes
+//------------------------------------------ 
+
+@each $bg-key in map-keys($bg-default-colors) {
+  .bg-#{$bg-key} {
+    background: map-get($bg-default-colors, $bg-key) !important;
+    
+    @if map-has-key($text-default-colors, $bg-key) {
+      color: map-get($text-default-colors, $bg-key) !important;
+    }
+  }
+
+  .bg-#{$bg-key}-dark {
+    background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+  }
+
+  .bg-#{$bg-key}-light {
+    background: map-get($bg-light-colors, $bg-key + "-light") !important;
+    color: map-get($text-light-colors, $bg-key + "-light") !important;
+  }
+
+  .bg-#{$bg-key}-minimal {
+    background: lighten(map-get($bg-dark-colors, $bg-key + "-dark"),66%) !important;
+    border: 1px solid map-get($text-dark-colors, $bg-key) !important;
+    color: map-get($bg-default-colors, $bg-key) !important;
+  }
+  
+}
+
+
+//-------------------------------------
+//override
+
+.bg-accent-minimal {
+  color: black !important;
+}
+
+// css stuff
+//-------------------------------------
+.bg-opaque {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.bg-blur {
+  backdrop-filter: blur(3px);
+}
+
+//random colors
+
+.text-dark-green{
+  color: hsl(117, 39%, 37%);
+}
+
+.highlight {
+  background-color: $yellow;
+}
+
+.text-black{
+  color:$text-black;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-text-color{
+  background: $base-text-color;
+} 
+
+.bg-primary-hover:hover{
+  background: darken($primary-color, 10%) !important;
+  color: $text-white;
+}
+
+.bg-secondary-hover:hover{
+  background: darken($secondary-color, 10%) !important;
+  color: $text-white !important;
+}
+
+.bg-cta-hover:hover{
+  background: darken($cta-color, 10%) !important;
+  color: $text-white;
+}
+
+.bg-light-hover:hover{
+  background: darken($light-color, 10%) !important;
+  color: $text-black;
+}
+
+.bg-dark-hover:hover{
+  background: darken($dark-color, 10%) !important;
+  color: $text-white;
+}
+.bg-accent-hover:hover{
+  background: darken($accent-color, 10%) !important;
+  color: $text-white;
+}
+
+
+//-------------------------------------
+// icon classes
+// see site tools -> icon-color-generator to create filter classes for icons
+//-------------------------------------
+
+.icon-invert{
+  filter: invert(1);
+}
+
+.icon-gold{
+  width: 9px;
+  filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg) brightness(96%) contrast(97%);
+}
+
+.icon-silver{
+  width: 9px;
+  filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+}

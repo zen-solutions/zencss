@@ -769,12 +769,12 @@ function startSpinning() {
   // Heart toggle
   //-------------------------------------
   document.addEventListener('DOMContentLoaded', function () {
-    var heartToggle = document.querySelector('.heart-toggle');
+    var heartToggle = document.querySelector('.icon-toggle');
     
     if (heartToggle) {
         heartToggle.addEventListener('click', function () {
-            var emptyHeart = this.querySelector('.heart-empty');
-            var filledHeart = this.querySelector('.heart-filled');
+            var emptyHeart = this.querySelector('.icon-off');
+            var filledHeart = this.querySelector('.icon-on');
 
             if (emptyHeart && filledHeart) {
                 emptyHeart.classList.toggle('show');

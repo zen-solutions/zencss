@@ -1,0 +1,74 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+
+@mixin alert($background-color, $icon-url, $left-width) {
+  background: white;
+  border-spacing: 1px;
+  padding: 1em 1em 1em 16px;  
+  filter: grayscale(10%);
+  color: $background-color;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  margin: 1rem 0;  
+  position: relative; 
+  opacity: .9;
+  border-left: $left-width solid lighten($background-color,15%);
+  line-height: 1.6em;
+  font-size: .8em;
+
+  &::before {
+    margin-left: -56px;
+    background: url($icon-url) no-repeat center center;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;  
+    height: 15px;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  }
+
+  // Override color for light alert
+
+  &.alert-light-minimal {
+    color: $dark-color;
+    border-left: 8px solid darken($background-color,15%);
+  }
+
+  &.alert-light {
+    color: $dark-color;
+    //border: 1px solid darken($background-color,15%);
+    border-left: 60px solid darken($background-color,15%);
+
+
+    &::before {
+      filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    }
+  }
+}
+
+// Apply the alert mixin to each alert class, passing the background color and icon url
+.alert-primary { @include alert($blue, '../img/icons/alerts/thumbs-up-solid.svg', 60px); }
+.alert-primary-minimal { @include alert($blue, '', 8px); }
+.alert-danger { @include alert($red, '../img/icons/alerts/triangle-exclamation-solid.svg', 60px); }
+.alert-danger-minimal { @include alert($red, '', 8px); }
+.alert-success { @include alert($secondary-color, '../img/icons/alerts/circle-check-solid.svg', 60px); }
+.alert-success-minimal { @include alert($secondary-color, '', 8px); }
+.alert-warning { @include alert($orange, '../img/icons/alerts/circle-exclamation-solid.svg', 60px); }
+.alert-warning-minimal { @include alert($orange, '', 8px); }
+.alert-dark { @include alert($dark-color, '../img/icons/alerts/circle-check-regular.svg', 60px); }
+.alert-dark-minimal { @include alert($dark-color, '', 8px); }
+.alert-light { @include alert($light-color, '../img/icons/alerts/circle-check-regular.svg', 60px); }
+.alert-light-minimal { @include alert($light-color, '', 8px); }
+
+//override
+
+
+//filter: invert(0%) sepia(95%) saturate(7474%) hue-rotate(188deg) brightness(90%) contrast(99%);

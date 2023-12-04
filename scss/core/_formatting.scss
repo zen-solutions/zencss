@@ -1,0 +1,380 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+//-------------------------------------------------
+// undocumented
+//-------------------------------------------------
+
+.img-left{
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 7px;
+}
+
+.img-right{
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+
+
+
+// //----------------------------------------------------
+// /* Generate classes for heights */
+// //----------------------------------------------------
+
+// @for $i from 1 through length($heights) {
+//   .height-#{$i} {
+//     height: nth($heights, $i);
+//   }
+// }
+
+// //----------------------------------------------------
+// /* Generate classes for widths */
+// //----------------------------------------------------
+
+// @for $i from 1 through length($widths) {
+//   .width-#{$i} {
+//     width: nth($widths, $i);
+//   }
+// }
+
+//----------------------------------------------
+// Directional modifiers
+//----------------------------------------------
+
+//BUG
+// up 20 should do margin-bottom: 20px; not margin top - 20 for some reason. test this.
+
+// .up-1 {
+//   position: relative;
+//   bottom: 1px;
+// }
+
+// .down-1 {
+//   position: relative;
+//   top: 1px;
+// }
+
+// .up-5 {
+//   position: relative;
+//   bottom: 5px;
+// }
+
+// .down-5 {
+//   position: relative;
+//   top: 5px;
+// }
+
+// Loop through to generate classes for 1 to 50, incrementing by 1
+@for $i from 1 through 11 {
+  $value: $i * 10; 
+  
+  // Generating classes for negative margin-top (moving up)
+  .up-#{$value} {
+    position: relative;
+    top: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-top (moving down)
+  .down-#{$value} {
+    position: relative;
+    top: #{$value}px !important;
+  }
+
+  // Generating classes for negative margin-left (moving left)
+  .left-#{$value} {
+    position: relative;
+    left: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-right (moving right)
+  .right-#{$value} {
+    position: relative;
+    right: -#{$value}px !important;
+  }
+}
+
+// Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
+@for $i from 1 through 9 {
+  $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
+
+  // Generating classes for negative margin-top (moving up)
+  .up-#{$value} {
+    position: relative;
+    top: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-top (moving down)
+  .down-#{$value} {
+    position: relative;
+    top: #{$value}px !important;
+  }
+
+  // Generating classes for negative margin-left (moving left)
+  .left-#{$value} {
+    position: relative;
+    left: -#{$value}px !important;
+  }
+
+  // Generating classes for positive margin-right (moving right)
+  .right-#{$value} {
+    position: relative;
+    right: -#{$value}px !important;
+  }
+}
+
+
+
+//----------------------------------------------------
+/* Width and height */
+//----------------------------------------------------
+
+$sizes: (
+  5: 5px,
+  10: 10px,
+  15: 15px,
+  16: 16px,
+  20: 20px,
+  25: 25px,
+  30: 30px,
+  32: 32px,
+  40: 40px,
+  50: 50px,
+  60: 60px,
+  64: 64px,
+  75: 75px,
+  80: 80px,
+  85: 85px,
+  90: 90px,
+ 110: 110px,
+  125:125px,
+  150:150px,
+  175:175px,
+  200:200px,
+  225:225px,
+  250:250px,
+  300:300px,
+  325:325px,
+  350:350px,
+  375:375px,
+  400:400px,
+  450:450px,
+  500:500px,
+  600:600px,
+  700:700px,
+  800:800px,
+  900:900px,
+  1000:1000px,
+);
+
+@each $key, $value in $sizes {
+  .w-#{$key} {
+   width: $value !important;
+   max-width:$value;
+   display: inline-block;
+
+  }
+  .h-#{$key} {
+    height: $value !important;
+    max-height:$value;
+    display: inline-block;
+  }
+}
+
+//----------------------------------------------------
+//card//
+//----------------------------------------------------
+
+.card {
+  position: relative;
+  padding: 1.2rem;
+  font-size: .95em;
+  gap: .7em;
+display: inline-flex;
+flex-direction: column;
+justify-content: start;
+width: 100%;
+  h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    border: 0;
+    padding:0;
+  }
+
+  p, div{
+    padding:0;
+  }
+
+// *{
+//   margin-top:0 !important;
+//   margin-bottom:0 !important;
+// }
+
+  ul{
+  margin-block-start:0;
+    margin-block-end: 0;
+  }
+}
+ .card>img {
+  border: 0;
+  padding: 0;
+}
+
+.img-full {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 !important;
+}
+
+.img-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover; 
+  width: 100%; 
+  height: 100%;
+  z-index: 0;
+}
+
+
+//----------------------------------------------------
+// Display values - d-block, d-flex, etc. 
+//----------------------------------------------------
+
+$d-values: (
+  block: block,
+  inline: inline,
+  'inline-block': inline-block,
+  flex: flex,
+  'inline-flex': inline-flex,
+  grid: grid,
+  'inline-grid': inline-grid,
+  table: table,
+  'table-row': table-row,
+  'table-cell': table-cell,
+  none: none
+);
+
+@each $name, $value in $d-values {
+  .d-#{$name} {
+    display: $value;
+  }
+}
+
+
+//----------------------------------------------
+// Misc Utility classes
+//----------------------------------------------
+
+.row {
+  flex-direction: row;
+  gap: 1em;
+}
+
+.column {
+  flex-direction: column;
+  gap: 1em;
+}
+
+.reverse {
+  flex-direction: row-reverse !important;
+}
+
+.unzen {
+  display: initial;
+  text-align: left;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.vertical-center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.vertical-center{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-none{
+  background:none; //!?
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-sm {
+  width: 50px;
+  height: auto;
+}
+
+//----------------------------------------------------
+//Unset Round - we have square somehere else i beliee
+//----------------------------------------------------
+
+.unset-round {
+  border-radius: 0;
+}
+
+.squeeze > * {
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-4 {
+  position: relative;
+  z-index: 4;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+//----------------------------------------------------
+/* gaps, heights, and widths */
+//----------------------------------------------------
+
+$gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
+// $heights: (10em, 15em, 20em, 25em, 30em, 40em);
+// $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
+
+//----------------------------------------------------
+/* Generate classes for gaps */
+//----------------------------------------------------
+
+@for $i from 1 through length($gaps) {
+  .gap-#{$i} {
+    gap: nth($gaps, $i);
+  }
+}
+
+.gap-0{
+  gap:0;
+}

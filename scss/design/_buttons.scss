@@ -1,0 +1,299 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+/* Variables */
+$btn-color: $cta-color;
+$btn-hover-color: darken($cta-color, 20%);
+
+
+/* Mixin for hover styles */
+@mixin btn-hover($bg-color, $border-color: $bg-color) {
+  &:hover {
+    background-color: $bg-color;  }
+}
+
+/* Button Styles */
+.btn, .btn-ghost, .btn-invert {
+  @include btn-hover($btn-hover-color);
+}
+
+.inactive {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+//css stuff
+.btn {
+  background-color: $btn-color;
+  display: inline-flex !important;
+  position: relative;
+  z-index: 1;
+}
+
+button.btn-ghost-light {
+  color: $light-color;
+  border: 2px solid $light-color;
+  padding: 0.65em;
+  background:none;
+}
+
+button.btn-ghost-light:hover {
+  color: darken($btn-color, 10%);
+  border: 2px solid darken($btn-color, 10%);
+  background:darken($light-color, 4%);
+}
+
+button.btn-ghost-dark {
+  color: $dark-color;
+  border: 2px solid $primary-color;
+  padding: 0.65em;
+}
+
+button.btn-ghost-dark:hover {
+  color: lighten($light-color, 10%);
+  border: 2px solid darken($dark-color, 10%);
+  background:darken($dark-color, 4%);
+  opacity: .5;
+}
+
+
+button.btn-ghost {
+  color: #d8d8d8;
+  border: 2px solid  #d8d8d8;
+  padding: 0.65em;
+  background:none;
+}
+
+button.btn-ghost:hover {
+  border: 2px solid darken($primary-color, 1%);
+  background: none;
+}
+
+.btn-invert {
+  background-color: $btn-color;
+}
+
+.label {
+  border-radius: 8px;
+  padding: 0.3em 1em .3em 1em;
+  overflow: hidden; 
+  display: inline; 
+  background: lighten($dark-color, 10%);
+  color: $light-color;
+  position: relative;
+  font-size: .63rem;
+  line-height: 9px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  bottom:-1px;
+  width: auto;
+}
+
+.eyebrow {
+  overflow: hidden; 
+  display: inline-block; 
+  line-height: 10px;
+  position: relative;
+  color: $primary-color;
+  font-size: .62rem;
+  font-weight: 700;
+ @include font-spacing;
+}
+
+.eyebrow-2 {
+  overflow: hidden; 
+  display: inline-block; 
+  line-height: 10px;
+  position: relative;
+  padding: 0.3em 1em;
+  font-size: .8rem;
+}
+
+
+.eyebrow-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; 
+  border-bottom: 2px solid $accent-color;
+}
+
+.label-circle{
+  border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-wrapper{
+  position: absolute;
+  margin-top: -18px;
+  margin-left: -18px;
+  width: 45px;
+  height: 45px;
+  border-top-left-radius: $border-radius;
+  overflow: hidden;
+}
+
+//------------------------------------------------
+// Button sizes
+//------------------------------------------------
+
+
+.btn-xl {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.btn-lg {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.btn-md {
+  min-width: 120px;
+  max-width: 120px;
+
+}
+
+.btn-sm {
+  min-width: 75px;
+  max-width: 75px;
+  padding: .3em;
+  font-size: 12px;
+}
+
+
+.btn-primary{
+  background: $primary-color !important;
+  color: $text-white !important;
+  @include hover-darken($primary-color);
+}
+
+.btn-secondary{
+  background: $secondary-color !important;
+  color: $text-white !important;
+  @include hover-darken($secondary-color);
+}
+
+.btn-dark{
+  background: $dark-color !important;
+  color: $text-white !important;
+  @include hover-darken($dark-color);
+}
+
+.btn-light{
+  background: $light-color !important;
+  color: $text-black !important;
+  @include hover-darken($light-color);
+}
+
+.btn-cta{
+  background: $cta-color !important;
+  color: $text-white !important;
+  @include hover-darken($cta-color);
+}
+
+.btn-accent{
+  background: $accent-color !important;
+  color: $text-black !important;
+  @include hover-darken($accent-color);
+}
+
+//for poll. misc placement
+#result-types{
+  display:none;
+}
+
+//------------------------------------------ 
+// New button styles to test
+//------------------------------------------ 
+
+// SCSS Variables for colors
+$bg-primary: $primary-color; // Example primary color
+$text-cta: $cta-color;
+
+// Adjust the .btn-fill-up to have the text same as the outline
+.btn-fill {
+  @extend %button-basic;
+  background-color: transparent;
+  border: 2px solid  lighten($bg-header-footer, 25%);
+  color: lighten($bg-header-footer, 20%);
+  padding: 11px;
+
+  &:hover {
+    background: lighten($dark-color, 10%);
+    border: 2px solid  lighten($dark-color, 10%);
+
+  }
+}
+
+//--------------------------
+// new  button stuff to test, mixins for ghost button
+//----------------------------
+
+// Define theme color variables for bg and text - use for buttons and reuse for stuff
+$theme-primary-bg: $cta-color; 
+$theme-primary-text: $light-color; 
+
+$theme-secondary-bg: $accent-color; 
+$theme-secondary-text: $dark-color; 
+
+$theme-cta-bg: $primary-color; 
+$theme-cta-text: $light-color; 
+
+$theme-accent-bg: $secondary-color; 
+$theme-accent-text: $light-color; 
+
+$theme-dark-bg: $light-color; 
+$theme-dark-text:$dark-color ; 
+
+$theme-light-bg: $dark-color; 
+$theme-light-text: $light-color; 
+
+
+// Define a mixin for theme button styles
+@mixin theme-button-styles($bg-color, $text-color) {
+  background-color: transparent;
+  border: 2px solid $bg-color;
+  color: $bg-color; // Text color matches border
+  //font-size: .9rem;
+  padding:0.85em;
+
+  &:hover {
+    background-color: $bg-color;
+    color: $text-color;
+  }
+}
+
+// Extend .btn-fill with theme styles
+.btn-fill {
+  @extend %button-basic;
+  
+  // Apply theme styles
+  &.theme-primary {
+    @include theme-button-styles($theme-primary-bg, $theme-primary-text);
+  }
+  &.theme-secondary {
+    @include theme-button-styles($theme-secondary-bg, $theme-secondary-text);
+  }
+  &.theme-accent {
+    @include theme-button-styles($theme-accent-bg, $theme-accent-text);
+  }
+  &.theme-dark {
+    @include theme-button-styles($theme-dark-bg, $theme-dark-text);
+  }
+  &.theme-light {
+    @include theme-button-styles($theme-light-bg, $theme-light-text);
+  }
+  &.theme-cta {
+    @include theme-button-styles($theme-cta-bg, $theme-cta-text);
+  }
+}

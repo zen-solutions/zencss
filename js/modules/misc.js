@@ -20,20 +20,21 @@
   // Heart toggle
   //-------------------------------------
   document.addEventListener('DOMContentLoaded', function () {
-    var heartToggle = document.querySelector('.heart-toggle');
-    
-    if (heartToggle) {
-        heartToggle.addEventListener('click', function () {
-            var emptyHeart = this.querySelector('.heart-empty');
-            var filledHeart = this.querySelector('.heart-filled');
+    var iconToggles = document.querySelectorAll('.icon-toggle');
 
-            if (emptyHeart && filledHeart) {
-                emptyHeart.classList.toggle('show');
-                filledHeart.classList.toggle('show');
-            }
+    iconToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function () {
+            var iconOff = this.querySelector('.icon-off');
+            var iconOn = this.querySelector('.icon-on');
+
+            // Toggle the 'show' class
+            iconOff.classList.toggle('show');
+            iconOn.classList.toggle('show');
         });
-    }
+    });
 });
+
+
 
 // New stuff here after modules were created. If we need to revert, include this stuff. 
 document.querySelectorAll('.accordion-toggle').forEach(item => {
@@ -106,7 +107,7 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
 });
 
   //-------------------------------------
-  // Lazy Load
+  // Lazy Load Test - WIP
   //-------------------------------------
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -130,7 +131,78 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+   //-------------------------------------
+  // Tabbed Card
+  //-------------------------------------
 
+  // JavaScript function to show/hide tab content
+  function showTab(tabNumber) {
+    const tabbedCard = document.querySelector('.tabbed-card');
+    if (tabbedCard) {
+        const tabs = tabbedCard.querySelectorAll('.tab');
+        const tabContents = tabbedCard.querySelectorAll('.tab-content');
+        
+        tabs.forEach((tab, index) => {
+            if (index + 1 === tabNumber) {
+                tab.classList.add('active');
+                tabContents[index].classList.add('active');
+            } else {
+                tab.classList.remove('active');
+                tabContents[index].classList.remove('active');
+            }
+        });
+    }
+}
+
+// Attach click event listeners to tabs
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', function() {
+            const tabNumber = parseInt(tab.getAttribute('data-tab'));
+            showTab(tabNumber);
+        });
+    });
+});
+  //-------------------------------------
+  // Pattern Interrupt
+  //-------------------------------------
+//   document.addEventListener('DOMContentLoaded', function() {
+//     var modalShown = false;
+//     var modal = document.querySelector('.pattern-interrupt');
+//     var modal2 = document.querySelector('.modal');
+
+//     function showModal() {
+//         if (!modal) return; // Exit if no modal found
+
+//         // Center the modal in the viewport
+//         modal.style.display = 'block';
+//         modal2.style.display = 'block';
+//         modal.style.position = 'fixed'; // Fixed position
+//         modal.style.top = '50%'; // Center vertically
+//         modal.style.left = '50%'; // Center horizontally
+//         modal.style.transform = 'translate(-50%, -50%)'; // Adjust for modal's dimensions
+
+//         modalShown = true;
+//     }
+
+//     function checkScroll() {
+//         if (modalShown) return; // Skip if the modal is already shown
+
+//         var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+//         var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//         var scrolledPercentage = (scrollPosition / totalHeight) * 100;
+
+//         if (scrolledPercentage > 10) {
+//             showModal();
+//         }
+//     }
+
+//     // Attach the scroll event listener only if the modal exists
+//     if (modal) {
+//         window.addEventListener('scroll', checkScroll);
+//     }
+// });
 
   //-------------------------------------
   // Dynamic Navigation

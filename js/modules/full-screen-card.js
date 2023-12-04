@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var image = card.querySelector(".img-full");
       if (image) {
           image.addEventListener('load', function() {
-              var imageHeight = image.offsetHeight + 13;
+              var imageHeight = image.offsetHeight + 20;
               card.style.paddingTop = imageHeight + "px";
           });
           

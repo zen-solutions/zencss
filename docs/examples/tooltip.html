@@ -144,25 +144,21 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
+
         <z-row>
             <z-col>
-                <div class="tooltip center">
-                    Hover or tap me
-                    <span class="text-tooltip small">In a gentle way, you can shake the world. </span>
-                  </div>
-
+                <p>Tooltip on a <a href="#" data-tooltip="In a gentle way,
+                     you can shake the world.">link</a></p>
+<p>Tooltip on <em data-tooltip="In a gentle way, you can shake the world." data-placement="right">inline element</em></p>
+<p><button data-tooltip="In a gentle way, you can shake the world."  data-placement="bottom">Tooltip on a button</button></p>
             </z-col>
-            <z-col>                  <div class="tooltip center">
-                <button>Hover or tap me</button>
-                <span class="text-tooltip small">In a gentle way, you can shake the world. </span>
-              </div></z-col>
         </z-row>
     </z-container>
 
     <z-container>
         <z-row>
             <z-col class="pl-0 pr-0">
-                <div class="accordion theme-light">
+                <div class="accordion">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
                         <pre class="copy-text square up-10"><code class="language-html">&lt;div class="tooltip"&gt;
@@ -211,7 +207,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
+            <img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="">
     </footer>
 
     <script src="../../js/zencss.js"></script>

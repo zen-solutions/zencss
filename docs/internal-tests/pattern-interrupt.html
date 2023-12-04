@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern-Interrupt Modal</title>
+    <style>
+        /* Placeholder styles - Replace with actual styles from 'zen.css' and 'icons.css' */
+        .modal-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none; /* Initially hidden */
+        }
+
+        .close {
+            float: right;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* Add additional styling as needed */
+    </style>
+</head>
+<body>
+    
+        <div class="modal-content center">
+            <span class="close">&times;</span>
+            <img src="16x9.jpg" alt="">
+            <h3>But wait, there's more..</h3>
+            <p><span class="bold">20% off:</span> Your amazing offer goes here and looks like this.</p>
+            <button>Click here</button>
+        </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modalShown = false;
+
+            function showModal() {
+                var modal = document.querySelector('.modal-content');
+                modal.style.display = 'block';
+            }
+
+            function checkScroll() {
+                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolledPercentage = (scrollPosition / totalHeight) * 100;
+
+                if (scrolledPercentage > 10 && !modalShown) {
+                    showModal();
+                    modalShown = true;
+                }
+            }
+
+            window.addEventListener('scroll', checkScroll);
+        });
+    </script>
+
+    <!-- Add the rest of your page content here -->
+    asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>asdasd<br>
+</body>
+</html>

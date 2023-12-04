@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Card</title>
+    <style>
+        /* Styles for the tabbed card */
+        .tabbed-card {
+            width: 300px;
+            margin: 0 auto;
+            padding: 0;
+           /* border: 1px solid #ccc; */
+            border-radius: 5px;
+        }
+
+        /* Styles for the tab header container */
+        .tab-header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 10px;
+            padding-bottom: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border: 1px solid #ccc;
+
+        }
+
+        /* Styles for individual tabs */
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Styles for active tab */
+        .tab.active {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-bottom: 1px solid transparent;
+            margin-bottom: -1px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* Styles for tab content */
+        .tab-content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+
+        /* Hide tab content by default */
+        .tab-content:not(.active) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabbed-card">
+        <!-- Tab header container -->
+        <div class="tab-header">
+            <div class="tab active" data-tab="1">Section 1</div>
+            <div class="tab" data-tab="2">Section 2</div>
+            <div class="tab" data-tab="3">Section 3</div>
+            <div class="tab" data-tab="4">Section 4</div>
+        </div>
+
+        <!-- Tab content container -->
+        <div class="tab-content active">
+            <z-col class="card theme-light">
+                <p>Content for Section 1</p>
+            </z-col>
+        </div>
+        <div class="tab-content">
+            <z-col class="card theme-light">
+                <p>Content for Section 2</p>
+            </z-col>
+        </div>
+        <div class="tab-content">
+            <z-col class="card theme-light">
+                <p>Content for Section 3</p>
+            </z-col>
+        </div>
+        <div class="tab-content">
+            <z-col class="card theme-light">
+                <p>Content for Section 4</p>
+            </z-col>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to show/hide tab content
+        function showTab(tabNumber) {
+            const tabbedCard = document.querySelector('.tabbed-card');
+            if (tabbedCard) {
+                const tabs = tabbedCard.querySelectorAll('.tab');
+                const tabContents = tabbedCard.querySelectorAll('.tab-content');
+                
+                tabs.forEach((tab, index) => {
+                    if (index + 1 === tabNumber) {
+                        tab.classList.add('active');
+                        tabContents[index].classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                        tabContents[index].classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Attach click event listeners to tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', function() {
+                    const tabNumber = parseInt(tab.getAttribute('data-tab'));
+                    showTab(tabNumber);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

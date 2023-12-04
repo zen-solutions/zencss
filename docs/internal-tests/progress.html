@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Bar Styling</title>
+    <style>
+        /* Styling the overall progress bar */
+        progress {
+            /* Changing border properties */
+            border: 2px solid #007bff; /* Blue border */
+            border-radius: 5px; /* Rounded corners */
+            width: 100%; /* Full width */
+            height: 20px; /* Height of the bar */
+        }
+
+        /* Styling for the value (progress) */
+        progress::-webkit-progress-value {
+            background-color: #28a745; /* Green progress bar */
+        }
+
+        /* Styling for the remaining part (background) */
+        progress::-webkit-progress-bar {
+            background-color: #e9ecef; /* Light grey background */
+        }
+
+        /* Styling for the animation (need wrapper)*/
+
+        .progress-container {
+    width: 100%; /* Full width */
+    height: 20px; /* Height of the bar */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e9ecef; /* Light grey background */
+    overflow: hidden; /* Ensures the inner bar doesn't exceed the container */
+}
+
+.progress-bar {
+    width: 100%; /* Initial width of the inner bar */
+    height: 100%; /* Full height of the container */
+    background-color: #28a745; /* Green progress bar */
+    animation: move 2s linear infinite; /* Applying the animation */
+}
+
+@keyframes move {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(0%); }
+    100% { transform: translateX(100%); }
+}
+
+    </style>
+</head>
+<body>
+    <progress value="50" max="100"></progress> <!-- Example progress bar -->
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>

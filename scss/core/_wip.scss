@@ -1,0 +1,27 @@
+
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  //---------------------------------------------
+// heart toggle
+//---------------------------------------------
+.icon-toggle {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-off, .icon-on {
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; /* Both icons are hidden by default */
+}
+
+.icon-off.show, .icon-on.show {
+  display: inline-block; /* Show the element when 'show' class is present */
+}
