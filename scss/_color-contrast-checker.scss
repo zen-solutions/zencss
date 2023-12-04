@@ -1,0 +1,69 @@
+ /*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  */
+  
+  //------------------------------------------------
+  // zenCSS Color Contrast Checker + Updater
+  //------------------------------------------------
+
+  // Purpose: 
+  // This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
+  // It evaluates each color against WCAG recommended color contrast ratio of 4.5/1 (adds a buffer) and chooses the appropriate text color 
+  // Finally, it autoassigns that color to complment the background, ensuring WCAG color compliance out of the box. 
+  // Change colors, and we'll update the color value with new compliant matches for fonts automatically. 
+
+  @use "sass:math";
+
+  //------------------------------------------------
+  //  Luminance - Convert to sRGB and then linearize the RGB values
+  //------------------------------------------------
+  @function luminance($color) {
+    $r: math.div(red($color), 255);
+    $g: math.div(green($color), 255);
+    $b: math.div(blue($color), 255);
+  
+    $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
+    $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
+    $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
+  
+    @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
+  }
+
+  //------------------------------------------------
+  //  Contrast Ratio - Determine contrast ratio for white/black text
+  //------------------------------------------------
+
+  @function contrast-ratio($color1, $color2) {
+    $l1: luminance($color1) + 0.05; 
+    $l2: luminance($color2) + 0.05;
+    @return math.div(max($l1, $l2), min($l1, $l2));
+  }
+  
+
+  //------------------------------------------------
+  //  Smart Text Color - Evaluate and return a WCAG compliant color
+  //  that has the appropriate aspect ratio in relation to the source bg color
+  //------------------------------------------------
+
+  @function smart-text-color($bg-color) {
+    $light-color: white;
+    $dark-color: black;
+    $minimum-contrast: 4.5;
+    $buffer: 0.1;  //increase the safety margin
+  
+    $light-contrast: contrast-ratio($bg-color, $light-color);
+    $dark-contrast: contrast-ratio($bg-color, $dark-color);
+    //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
+
+    @if $light-contrast >= $minimum-contrast + $buffer {
+      @return $light-color;
+    } @else if $dark-contrast >= $minimum-contrast + $buffer {
+      @return $dark-color;
+    } @else {
+      @return red; // default fallback color (used during dev, can likely be depricated after further testing) 
+    }
+  }
+
+  

@@ -4,82 +4,81 @@
   * Copyright 2022-2023 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
 
-  $primary-color:#f7dada;
-//  $primary-color: #6A6A6A;
-$secondary-color: #949289;
-$accent-color: #62645f;
-$cta-color: #1e2021;
+//------------------------------------------ 
+// Initialization - Don't touch these 2 lines
+//------------------------------------------ 
+@import '_color-contrast-checker';  
+  $error-color: #d33331;
 
-$error-color: #d33331;
+
+//------------------------------------------ 
+// Your Brand Color Palette  - Override these as needed, we will auto-figure wcag compliance and update text colors accordingly
+//------------------------------------------ 
+
+$primary-color: #044384;
+$secondary-color:#426b2f;
+$accent-color: #dbc65d;
+$cta-color : #1b66bb; 
+
+
+//------------------------------------------ 
+// Generic Color Palette  - Override these as needed, we will auto-figure wcag compliance and update text colors accordingly
+//------------------------------------------ 
+
+$red: #c22a27;
+$orange: #ef7b02;
+$yellow: #ecc500;
+$green: #599d03;
+$blue: #1252a9;
+$purple: #6d45dc;
 
   //------------------------------------------------
-  // Do not touch
+  // 
   //------------------------------------------------
-  @use "sass:math";
+  // @use "sass:math";
 
-  @function luminance($color) {
-    // Convert to sRGB and then linearize the RGB values
-    $r: math.div(red($color), 255);
-    $g: math.div(green($color), 255);
-    $b: math.div(blue($color), 255);
+  // @function luminance($color) {
+  //   // Convert to sRGB and then linearize the RGB values
+  //   $r: math.div(red($color), 255);
+  //   $g: math.div(green($color), 255);
+  //   $b: math.div(blue($color), 255);
   
-    $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
-    $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
-    $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
+  //   $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
+  //   $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
+  //   $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
   
-    @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
-  }
+  //   @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
+  // }
 
-  @function contrast-ratio($color1, $color2) {
-    $l1: luminance($color1) + 0.05; 
-    $l2: luminance($color2) + 0.05;
-    @return math.div(max($l1, $l2), min($l1, $l2));
-  }
+  // @function contrast-ratio($color1, $color2) {
+  //   $l1: luminance($color1) + 0.05; 
+  //   $l2: luminance($color2) + 0.05;
+  //   @return math.div(max($l1, $l2), min($l1, $l2));
+  // }
   
 
 
-  @function smart-text-color($bg-color) {
-    $light-color: white;
-    $dark-color: black;
-    $minimum-contrast: 4.5;
-    $buffer: 0.1;  //increase the safety margin
+  // @function smart-text-color($bg-color) {
+  //   $light-color: white;
+  //   $dark-color: black;
+  //   $minimum-contrast: 4.5;
+  //   $buffer: 0.1;  //increase the safety margin
   
-    $light-contrast: contrast-ratio($bg-color, $light-color);
-    $dark-contrast: contrast-ratio($bg-color, $dark-color);
-    //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
+  //   $light-contrast: contrast-ratio($bg-color, $light-color);
+  //   $dark-contrast: contrast-ratio($bg-color, $dark-color);
+  //   //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
 
-    @if $light-contrast >= $minimum-contrast + $buffer {
-      @return $light-color;
-    } @else if $dark-contrast >= $minimum-contrast + $buffer {
-      @return $dark-color;
-    } @else {
-      @return red; // or a default fallback color
-    }
-  }
+  //   @if $light-contrast >= $minimum-contrast + $buffer {
+  //     @return $light-color;
+  //   } @else if $dark-contrast >= $minimum-contrast + $buffer {
+  //     @return $dark-color;
+  //   } @else {
+  //     @return red; // or a default fallback color
+  //   }
+  // }
 
 
-// @function smart-text-color($bg-color) {
-//   $light-color: white;
-//   $dark-color: black;
-//   $light-contrast: contrast-ratio($bg-color, $light-color);
-//   $dark-contrast: contrast-ratio($bg-color, $dark-color);
-//   //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
-
-//   @if $light-contrast >= 4.5 and $light-contrast > $dark-contrast {
-//     @return $light-color;
-//   } @else if $dark-contrast >= 4.5 {
-//     @return $dark-color;
-//   } @else {
-//     @return $error-color; // or some default color if neither contrast is sufficient
-//   }
-// }
-
-//------------------------------------------------
-// OK to pverride
-//------------------------------------------------
-  
 //------------------------------------------ 
 //baseline
 //------------------------------------------ 
@@ -94,35 +93,14 @@ $dark-color: #424242;
 $nav-link-color: $light-color;
 
 
-//------------------------------------------ 
-// Brand Color Palette -When adjusting, our smart-color system will provide WCAG fine-tuning to ensure accessable color compliance with your brand palette.
-// //------------------------------------------ 
 
-// $primary-color: #044384;
-// $secondary-color:#426b2f;
-// $accent-color: #dbc65d;
-// $cta-color : #1b66bb; 
-// $primary-color: #044384;
-// $secondary-color:#426b2f;
-// $accent-color: #dbc65d;
-// $cta-color : #1b66bb; 
 
 
 
 //------------------------------------------ 
-// Generic Color Palette  - If adjusting, we recommend a one time WCAG fine-tuning to ensure accessable color compliance with your brand palette
-//------------------------------------------ 
-
-$red: #c22a27;
-$orange: #ef7b02;
-$yellow: #ecc500;
-$green: #599d03;
-$blue: #1252a9;
-$purple: #6d45dc;
-
-//------------------------------------------ 
-// Background Color Maps for zenCSS color system
-// individually labeled - override as needed for WCAG compliance
+// Light and Dark Color Maps for zenCSS color system
+// individually labeled - override as needed for desired darkness and lightness
+// TODO - make a new user settings folder, chop this up with all the stuff they can override, and rename this file as its now more like autoformatting vs user settings
 //------------------------------------------ 
 
 //brand palette dark
@@ -132,10 +110,10 @@ $accent-color-dark: darken($accent-color,8%);
 $cta-color-dark: darken($cta-color, 10%); 
 
 //brand palette light
-$primary-color-light: lighten($primary-color, 5%); 
-$secondary-color-light: lighten($secondary-color, 4%); 
+$primary-color-light: lighten($primary-color,  10%); 
+$secondary-color-light: lighten($secondary-color, 10%); 
 $accent-color-light: lighten($accent-color, 10%); 
-$cta-color-light: lighten($cta-color, 4%); 
+$cta-color-light: lighten($cta-color, 10%); 
 
 // Generic palette dark
 $red-dark: darken($red, 10%); 
@@ -154,10 +132,12 @@ $blue-light: lighten($blue, 10%);
 $purple-light: lighten($purple, 5%); 
 
 
-//------------------------------------------ 
-// Font Color Maps for zenCSS color system
-// individually labeled - override as needed for WCAG compliance
-//------------------------------------------ 
+//------------------------------------------------------------------------------ 
+//------------------------------------------------------------------------------ 
+// zenCSS Color Map System - Auto-WCAG Compliant color map generator
+// do not modify
+//------------------------------------------------------------------------------ 
+//------------------------------------------------------------------------------ 
 // Default font colors for smart-color system
 $var-white-text:white;
 $var-black-text: black;
