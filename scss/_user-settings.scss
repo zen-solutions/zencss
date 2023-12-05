@@ -5,15 +5,19 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
-//------------------------------------------ 
-// Initialization - Don't touch these 2 lines
-//------------------------------------------ 
-@import '_color-contrast-checker';  
-  $error-color: #d33331;
+  // Main configuration file for zenCSS
+  // ✓ = ok to override
+ //  ✕ = do not override/modify
 
+//--------------------------------------------- 
+//  ✕ Initialization - Don't touch these 2 lines 
+//--------------------------------------------- 
+@import 'general/color-contrast-checker';  
+$error-color: #d33331; // used for system not for UI
+  
 
 //------------------------------------------ 
-// Your Brand Color Palette  - Override these as needed, we will auto-figure wcag compliance and update text colors accordingly
+//  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
 //------------------------------------------ 
 
 $primary-color: #044384;
@@ -23,7 +27,7 @@ $cta-color : #1b66bb;
 
 
 //------------------------------------------ 
-// Generic Color Palette  - Override these as needed, we will auto-figure wcag compliance and update text colors accordingly
+//  ✓ Generic Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
 //------------------------------------------ 
 
 $red: #c22a27;
@@ -33,73 +37,21 @@ $green: #599d03;
 $blue: #1252a9;
 $purple: #6d45dc;
 
-  //------------------------------------------------
-  // 
-  //------------------------------------------------
-  // @use "sass:math";
+//------------------------------------------ 
+//  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
+//------------------------------------------ 
 
-  // @function luminance($color) {
-  //   // Convert to sRGB and then linearize the RGB values
-  //   $r: math.div(red($color), 255);
-  //   $g: math.div(green($color), 255);
-  //   $b: math.div(blue($color), 255);
-  
-  //   $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
-  //   $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
-  //   $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
-  
-  //   @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
-  // }
-
-  // @function contrast-ratio($color1, $color2) {
-  //   $l1: luminance($color1) + 0.05; 
-  //   $l2: luminance($color2) + 0.05;
-  //   @return math.div(max($l1, $l2), min($l1, $l2));
-  // }
-  
-
-
-  // @function smart-text-color($bg-color) {
-  //   $light-color: white;
-  //   $dark-color: black;
-  //   $minimum-contrast: 4.5;
-  //   $buffer: 0.1;  //increase the safety margin
-  
-  //   $light-contrast: contrast-ratio($bg-color, $light-color);
-  //   $dark-contrast: contrast-ratio($bg-color, $dark-color);
-  //   //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
-
-  //   @if $light-contrast >= $minimum-contrast + $buffer {
-  //     @return $light-color;
-  //   } @else if $dark-contrast >= $minimum-contrast + $buffer {
-  //     @return $dark-color;
-  //   } @else {
-  //     @return red; // or a default fallback color
-  //   }
-  // }
+$grey-1: #F7F7F7;
+$grey-2: #c7c6c6;
+$grey-3: #A6A6A6;
+$grey-4: #616161;
+$grey-5: #404040;
+$grey-6: #0D0D0D;
 
 
 //------------------------------------------ 
-//baseline
-//------------------------------------------ 
-
-//soften white and black for general site font colors
-$text-white: #eee;
-$text-black: #070707;
-
-//header config
-$light-color: #f4f4f4;
-$dark-color: #424242;
-$nav-link-color: $light-color;
-
-
-
-
-
-
-//------------------------------------------ 
-// Light and Dark Color Maps for zenCSS color system
-// individually labeled - override as needed for desired darkness and lightness
+// ✓ Light and Dark Color Variables for zenCSS color system
+// Override as needed for desired darkness and lightness for your theme/universal color background color variations
 // TODO - make a new user settings folder, chop this up with all the stuff they can override, and rename this file as its now more like autoformatting vs user settings
 //------------------------------------------ 
 
@@ -131,36 +83,53 @@ $green-light: lighten($green, 6%);
 $blue-light: lighten($blue, 10%); 
 $purple-light: lighten($purple, 5%); 
 
+// Grey palette dark
+$grey-1-dark: darken($grey-1, 10%); 
+$grey-2-dark: darken($grey-2, 6%); 
+$grey-3-dark: darken($grey-3, 4%); 
+$grey-4-dark: darken($grey-4, 5%); 
+$grey-5-dark: darken($grey-5, 10%); 
+$grey-6-dark: darken($grey-6, 10%); 
+
+// Grey palette light
+$grey-1-light: lighten($grey-1, 10%); 
+$grey-2-light: lighten($grey-2, 6%); 
+$grey-3-light: lighten($grey-3, 4%); 
+$grey-4-light: lighten($grey-4, 5%); 
+$grey-5-light: lighten($grey-5, 10%); 
+$grey-6-light: lighten($grey-6, 10%); 
+
 
 //------------------------------------------------------------------------------ 
 //------------------------------------------------------------------------------ 
-// zenCSS Color Map System - Auto-WCAG Compliant color map generator
-// do not modify
+//  ✕ zenCSS Color Map System - Auto-WCAG Compliant color map generator
+//  ✕ do not modify
 //------------------------------------------------------------------------------ 
 //------------------------------------------------------------------------------ 
-// Default font colors for smart-color system
+
+// Default font colors for smart-color system - obsolete once WCAG functionality is in place and fully tested
+
 $var-white-text:white;
 $var-black-text: black;
 
-
+//Smart Color Maps - Text color is figured automatically based on your input color and adherance to 4.5/1 color contrast minimum 
 $text-default-colors: (
   "primary": smart-text-color($primary-color),
   "secondary": smart-text-color($secondary-color),
   "accent": smart-text-color($accent-color),
   "cta": smart-text-color($cta-color),
-//  "secondary": $var-white-text,
-  "red": $var-white-text,
-  "orange": $var-black-text,
-  "yellow": $var-black-text,
-  "green": $var-black-text,
-  "blue": $var-white-text,
-  "purple": $var-white-text,
-  "grey-1": $var-black-text,
-  "grey-2": $var-black-text,
-  "grey-3": $var-black-text,
-  "grey-4": $var-white-text,
-  "grey-5": $var-white-text,
-  "grey-6": $var-white-text,
+  "red": smart-text-color($red),
+  "orange": smart-text-color($orange),
+  "yellow": smart-text-color($yellow),
+  "green": smart-text-color($green),
+  "blue": smart-text-color($blue),
+  "purple": smart-text-color($purple),
+  "grey-1": smart-text-color($grey-1),
+  "grey-2": smart-text-color($grey-2),
+  "grey-3": smart-text-color($grey-3),
+  "grey-4": smart-text-color($grey-4),
+  "grey-5": smart-text-color($grey-5),
+  "grey-6": smart-text-color($grey-6),
 );
 
 // Dark Text Colors
@@ -169,18 +138,18 @@ $text-dark-colors: (
   "secondary-dark": smart-text-color($secondary-color-dark),
   "accent-dark": smart-text-color($accent-color-dark),
   "cta-dark": smart-text-color($cta-color-dark),
-  "red-dark": $var-white-text,
-  "orange-dark": $var-black-text,
-  "yellow-dark": $var-black-text,
-  "green-dark": $var-black-text,
-  "blue-dark": $var-white-text,
-  "purple-dark": $var-white-text,
-  "grey-1-dark": $var-black-text,
-  "grey-2-dark": $var-black-text,
-  "grey-3-dark": $var-black-text,
-  "grey-4-dark": $var-white-text,
-  "grey-5-dark": $var-white-text,
-  "grey-6-dark": $var-white-text,
+  "red-dark": smart-text-color($red-dark),
+  "orange-dark": smart-text-color($orange-dark),
+  "yellow-dark": smart-text-color($yellow-dark),
+  "green-dark": smart-text-color($green-dark),
+  "blue-dark": smart-text-color($blue-dark),
+  "purple-dark": smart-text-color($purple-dark),
+  "grey-1-dark": smart-text-color($grey-1-dark),
+  "grey-2-dark": smart-text-color($grey-2-dark),
+  "grey-3-dark": smart-text-color($grey-3-dark),
+  "grey-4-dark": smart-text-color($grey-4-dark),
+  "grey-5-dark": smart-text-color($grey-5-dark),
+  "grey-6-dark": smart-text-color($grey-6-dark),
 );
 
 // Light Text Colors
@@ -189,18 +158,18 @@ $text-light-colors: (
   "secondary-light": smart-text-color($secondary-color-light),
   "accent-light": smart-text-color($accent-color-light),
   "cta-light": smart-text-color($cta-color-light),
-  "red-light": $var-white-text,
-  "orange-light": $var-black-text,
-  "yellow-light": $var-black-text,
-  "green-light": $var-black-text,
-  "blue-light": $var-white-text,
-  "purple-light": $var-white-text,
-  "grey-1-light": $var-black-text,
-  "grey-2-light": $var-black-text,
-  "grey-3-light": $var-black-text,
-  "grey-4-light": $var-white-text,
-  "grey-5-light": $var-white-text,
-  "grey-6-light": $var-white-text,
+  "red-light": smart-text-color($red-light),
+  "orange-light": smart-text-color($orange-light),
+  "yellow-light": smart-text-color($yellow-light),
+  "green-light": smart-text-color($green-light),
+  "blue-light": smart-text-color($blue-light),
+  "purple-light": smart-text-color($purple-light),
+  "grey-1-light": smart-text-color($grey-1-light),
+  "grey-2-light": smart-text-color($grey-2-light),
+  "grey-3-light": smart-text-color($grey-3-light),
+  "grey-4-light": smart-text-color($grey-4-light),
+  "grey-5-light": smart-text-color($grey-5-light),
+  "grey-6-light": smart-text-color($grey-6-light),
 );
 
 
@@ -208,8 +177,17 @@ $text-light-colors: (
 //end color system maps
 
 //------------------------------------------ 
-// Misc Dark and Light 
+// ✓ Global Vars 
 //------------------------------------------ 
+
+//soften white and black for light/dark mode global font colors
+$text-white: #eee;
+$text-black: #070707;
+
+//header config
+$light-color: #f4f4f4;
+$dark-color: #424242;
+$nav-link-color: $light-color;
 
 $grey: #eee;
 $dark-grey: #666;
@@ -223,7 +201,7 @@ $ui-button-size: 44px;
 }
 
 //------------------------------------------ 
-// Rounded corners
+// ✓ Rounded corners
 //------------------------------------------ 
 
 $border-radius: 4px; //on
@@ -231,7 +209,7 @@ $border-radius: 4px; //on
 
 
 //------------------------------------------ 
-// Dual Mode UI Styling Classes
+// ✓ Dual Mode UI Styling Classes
 //------------------------------------------ 
 
 $light-ui-hover-color:rgba(169, 169, 169, 0.16);
@@ -245,7 +223,7 @@ $grey-ui-text-color: #727272;
 
 
 //------------------------------------------ 
-// Default Spacing - wip
+// ✓ Default Spacing - wip
 //------------------------------------------ 
 
 $site-section-padding-top: .5em;
@@ -253,7 +231,7 @@ $site-section-padding-bottom: .5em;
 
 
 //------------------------------------------ 
-//set master padding and margin for columns
+// ✓ set master padding and margin for columns
 //------------------------------------------ 
 
 $col-padding: .8em; 
@@ -261,7 +239,7 @@ $col-margin: .8em;
 
 
 //------------------------------------------ 
-// Below is experimental
+// ✓ Below is experimental
 //------------------------------------------ 
 
 $bg-header-footer: #212121;
