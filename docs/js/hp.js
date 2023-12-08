@@ -1,12 +1,12 @@
-const body = document.querySelector("body"),
-  sidebar = body.querySelector("nav"),
-  toggle = body.querySelector(".toggle"),
-  searchBtn = body.querySelector(".search-z-row"),
-  modeSwitch = body.querySelector(".toggle-switch"),
-  modeText = body.querySelector(".mode-text");
-toggle.addEventListener("click", () => {
-  sidebar.classList.toggle("close");
-});
+// const body = document.querySelector("body"),
+//   sidebar = body.querySelector("nav"),
+//   toggle = body.querySelector(".toggle"),
+//   searchBtn = body.querySelector(".search-z-row"),
+//   modeSwitch = body.querySelector(".toggle-switch"),
+//   modeText = body.querySelector(".mode-text");
+// toggle.addEventListener("click", () => {
+//   sidebar.classList.toggle("close");
+// });
 
 // modeSwitch.addEventListener("click", () => {
 //   // Get all .zen elements

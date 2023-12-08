@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -95,9 +95,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
 	if (hamburgerButton2) {
 		hamburgerButton2.addEventListener("click", toggleMenu);
-
-  
-
 	}
   });
-  
+
+  //add remove on framework page
+  document.addEventListener('DOMContentLoaded', function() {
+    var addColBtn = document.getElementById('addCol');
+    var removeColBtn = document.getElementById('removeCol');
+    var row = document.querySelector('.add-remove');
+
+    // Function to update the numbering of z-col elements
+    function updateZColNumbers() {
+        if (row) {
+            var zCols = row.querySelectorAll('z-col');
+            zCols.forEach(function(zCol, index) {
+                zCol.textContent = "column " + (index + 1);
+            });
+        }
+    }
+
+    if (addColBtn) {
+        addColBtn.addEventListener('click', function() {
+            if (row) {
+                var newCol = document.createElement('z-col');
+                newCol.className = 'center bg-grey-2';
+                row.appendChild(newCol);
+                updateZColNumbers(); // Update numbers after adding a column
+            }
+        });
+    }
+
+    if (removeColBtn) {
+        removeColBtn.addEventListener('click', function() {
+            if (row && row.children.length > 0) {
+                row.removeChild(row.lastElementChild);
+                updateZColNumbers(); // Update numbers after removing a column
+            }
+        });
+    }
+
+    // Initial numbering update for existing z-cols
+    updateZColNumbers();
+});

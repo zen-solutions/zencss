@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -175,14 +175,13 @@ hr {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   height: 1px;
-  opacity: .25;
+  opacity: .5;
+  width: 100%;
 }
 
-hr.top {
-  margin-bottom: 2em;
-  margin-top: .65em;
+.hr-light {
+  opacity: .05;
 }
-
 
 button, .btn{
   display: inline-flex;
@@ -204,6 +203,8 @@ button, .btn{
   z-index: 3;
   text-decoration: none;
   font-weight: 500;
+  min-height: 41px;
+  min-width: 41px;
 }
 
  button:hover, .btn:hover {
@@ -270,7 +271,7 @@ small{
   line-height: calc($line-height / 1.5);
   margin-top: 0;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: inline;
 }
 
 input,
@@ -340,9 +341,9 @@ input[type="submit"]{
   border:none !important;
 }
 
-.site-section{
-  padding-top:$site-section-padding-top;
-  padding-bottom:$site-section-padding-bottom;
+.page-section{
+  padding-top:$page-section-padding-top;
+  padding-bottom:$page-section-padding-bottom;
 }
 
 
@@ -496,7 +497,7 @@ margin-top:5px;
 .nav-dropdown{
   .dropdown-content{
     a{
-      padding-left:0;
+      padding-left:12px;
     }
   }
 }
@@ -677,8 +678,8 @@ On the rare occasion you need to override it, use something like the following:
 }
 
 .hero-section{
-  padding-top: 70px !important;
-  padding-bottom:70px !important;
+  padding-top: 40px !important;
+  padding-bottom:40px !important;
 }
 
 .underline-handdrawn {
@@ -722,7 +723,6 @@ On the rare occasion you need to override it, use something like the following:
     border-top-right-radius: $border-radius;
     border: 1px solid $border-color;
     border-bottom: none;
-    //padding-top:10px !important;
     padding-left:10px;
     padding-right:10px;
 
@@ -735,7 +735,22 @@ On the rare occasion you need to override it, use something like the following:
     padding: 20px;
     border: 1px solid $border-color;
     border-radius: 0 0 $border-radius $border-radius;
+}
 
+.panel {
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.5s ease-out;
+}
+
+.panel::after {
+  content: '';
+  display: block;
+  height: 200px;
+}
+
+.active-toggle {
+  background-color: rgba(199,199,199,.3) !important; 
 }
 
 // .bg-ui-hover
@@ -765,9 +780,6 @@ On the rare occasion you need to override it, use something like the following:
   width: 100%;
   height: auto;
 }
-
-
-
 
 //docyument these in bgcolor for primary themes
 //.bg-accent-hover:hover{

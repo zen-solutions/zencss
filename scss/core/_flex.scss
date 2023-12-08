@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -137,24 +137,7 @@
 .order-10 { order: 10; }
 
 //old - in use
-.feature {
-  flex-grow: 2 !important;
-}
 
-.feature-sm {
-  flex-grow: 3;
-}
-
-.feature-lg {
-  flex-grow: 4;
-}
-.feature-md {
-  flex-grow: 5;
-}
-
-.feature-lg {
-  flex-grow: 6;
-}
 
 .reverse > :nth-z-col(1) {
   order: 2;

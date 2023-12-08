@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -203,7 +203,9 @@
   display: block;
   border-radius: $border-radius;
   padding:10px;
-  padding-left: 12px;
+  padding-left: 24px;
+  margin-left:-1px;
+
 
   &:hover{
     background:darken($light-ui-hover-color, 25%);
@@ -222,6 +224,9 @@
   color: $var-black-text;
   padding: 0;
 
+  a{
+    margin-left:-15px;
+  }
  
 
 
@@ -504,13 +509,9 @@ blockquote em {
 //-------------------------------------------------
 .img-responsive {
   flex-shrink: 0;
-  /* Prevents the image from shrinking */
   max-width: 100%;
-  /* Ensures the image is no wider than its container */
   height: auto;
-  /* Maintains the aspect ratio */
   object-fit: contain;
-  /* Ensures the image scales correctly within its bounds */
 
 }
 
@@ -577,7 +578,7 @@ blockquote em {
   max-height: 400px;
   overflow: auto;
 position: absolute;
-bottom: 48px;
+bottom: 66px;
 right: 3px;
 background: $light-color;
 color: $dark-color;

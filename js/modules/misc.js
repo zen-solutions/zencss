@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
   //-------------------------------------
   // Pattern Interrupt
   //-------------------------------------

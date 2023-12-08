@@ -4,46 +4,46 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Select all accordion toggle elements
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
 
     accordionToggles.forEach(function(accordionToggle) {
         accordionToggle.addEventListener('click', function() {
-            // Toggle the 'aria-expanded' attribute for the clicked item
-            var isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
+            // Determine if the clicked toggle is being expanded
+            var isExpanding = this.getAttribute('aria-expanded') === 'false';
 
-            // Get the icon within the clicked toggle
-            var icon = this.querySelector('.zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down');
+            // Remove active class from all toggles and reset icons
+            accordionToggles.forEach(function(otherToggle) {
+                otherToggle.classList.remove('active-toggle');
+                otherToggle.setAttribute('aria-expanded', 'false');
+                
+                var otherIcon = otherToggle.querySelector('.zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down');
+                if (otherIcon) {
+                    otherIcon.classList.remove('zenicon-keyboard-arrow-down');
+                    otherIcon.classList.add('zenicon-keyboard-arrow-right');
+                }
 
-            // Correctly toggle the icon classes
-            if (icon) {
-                if (isExpanded) {
-                    // If the item is currently open and is being closed, show the 'right' arrow
-                    icon.classList.remove('zenicon-keyboard-arrow-down');
-                    icon.classList.add('zenicon-keyboard-arrow-right');
-                } else {
-                    // If the item is currently closed and is being opened, show the 'down' arrow
+                var otherPanel = otherToggle.nextElementSibling;
+                otherPanel.style.maxHeight = null;
+            });
+
+            // Set the clicked toggle as active if it's expanding
+            if (isExpanding) {
+                this.classList.add('active-toggle');
+                this.setAttribute('aria-expanded', 'true');
+
+                var icon = this.querySelector('.zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down');
+                if (icon) {
                     icon.classList.remove('zenicon-keyboard-arrow-right');
                     icon.classList.add('zenicon-keyboard-arrow-down');
                 }
-            }
 
-            // Reset other toggles to default state
-            accordionToggles.forEach(function(otherToggle) {
-                if (otherToggle !== accordionToggle) {
-                    otherToggle.setAttribute('aria-expanded', 'false');
-                    var otherIcon = otherToggle.querySelector('.zenicon-keyboard-arrow-down, .zenicon-keyboard-arrow-right');
-                    if (otherIcon) {
-                        otherIcon.classList.remove('zenicon-keyboard-arrow-down');
-                        otherIcon.classList.add('zenicon-keyboard-arrow-right');
-                    }
-                }
-            });
+                var panel = this.nextElementSibling;
+                panel.style.maxHeight = panel.scrollHeight > 200 ? '1000px' : (panel.scrollHeight + 10) + "px";
+            }
         });
     });
 });
+
 
 
 // document.addEventListener('DOMContentLoaded', () => {
