@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
    
@@ -61,11 +61,11 @@ $text-grey-dual:#5E5E5E;
 }
 
 
-.text-end {
+.text-right {
     text-align: right !important;
 }
 
-.text-start {
+.text-left {
     text-align: left !important;
 }
 
@@ -228,7 +228,7 @@ $text-grey-dual:#5E5E5E;
 /* Disabled Items */
 .list-group-item.disabled {
     color: #6c757d;
-    background-color: #f8f9fa;
+    background-color: #cacaca;
     pointer-events: none;
 }
 
@@ -408,7 +408,6 @@ $text-grey-dual:#5E5E5E;
     transform: translateY(-50%);
     z-index: 0;
 }
-
 
 
 

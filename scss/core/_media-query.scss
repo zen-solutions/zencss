@@ -1,14 +1,18 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
   @use "sass:math";
+
+//---------------------------------------------
+// Items that need to go last that dont use media queries
+// to do - move these classes to own file
+//---------------------------------------------
 
   .megamenu z-col, .megamenu .z-col{
     flex-basis: calc(30.94%) !important;
-  
   }
 
 .two-up {
@@ -33,14 +37,11 @@
 .four-up {
   display: flex;
   flex-wrap: wrap;
-  //margin: -1em;
   gap: 1em;
 }
 
 .four-up > * {
-  //flex: 0 0 25%; //this ones working without important. why? 
   flex: 1; 
-  //margin:0; 
 }
 
 .five-up {
@@ -49,7 +50,7 @@
 }
 
 .five-up > * {
-  flex: 1 0 18.876% !important;
+  flex: 1 0 18.876% !important; //reevaluate if we can remove importants here
 }
 
 .six-up {
@@ -81,16 +82,18 @@
   flex: 1 0 11.27% !important;
 }
 
+.br-0{
+  border-radius: 0;
+}
 
 
 //---------------------------------------------
 // Small devices (landscape phones, 576px and up)
 //---------------------------------------------
+
 @media (min-width: 576px) {
    .zen {
      font-size: 14px; // Override the base font size for mobile 
-
-
    }
 
   & .z-container,
@@ -117,10 +120,13 @@
  
 }
 
+//---------------------------------------------
 /* Medium devices (tablets, 768px and up) */
+//---------------------------------------------
+
+
 @media (min-width: 768px) {
 
-  
   .zen {
     font-size: 16px; // Override the base font size for tablet 
   }
@@ -151,25 +157,24 @@
     display: none;
   }
 
-  & .reverse-tablet {
+  & .tablet-reverse {
     flex-direction: column;
   }
 
   & .z-col, z-col {
  flex-basis: calc(33%) !important;
-//flex-basis: calc(31.94%) !important;
-
   }
 
     .z-row .z-col .z-col, z-row z-col z-col {
     flex-direction: column;
 }
-
-
-
 }
 
+
+//---------------------------------------------
 /* Large devices (desktops, 992px and up) */
+//---------------------------------------------
+
 @media (min-width: 992px) {
   .zen {
     font-size: 18px;  // Override the base font size for desktops
@@ -193,15 +198,18 @@
   & .z-col, z-col {
     flex-basis: calc(25% - 20px) !important;
   }
-
-
 }
 
+
+//---------------------------------------------
 /* X-Large devices (large desktops, 1200px and up) */
+//---------------------------------------------
+
 @media (min-width: 1200px) {
   .zen {
     font-size: 18px;  // Override the base font size for large desktop
   }
+
   & .z-container,
   & .header {
     max-width: 1140px;
@@ -222,15 +230,17 @@
   .z-row .z-col .z-col, z-row z-col z-col {
     flex-direction: column;
 }
-
 }
 
+//---------------------------------------------
 /* XX-Large devices (larger desktops, 1400px and up) */
+//---------------------------------------------
+
 // @media (min-width: 1400px) { }
 
 
 //---------------------------------------------
-// Experimental
+// Misc media queries
 //---------------------------------------------
 
 // Need to expand on this class. why is it here also.
@@ -238,8 +248,12 @@
   display: flex;
   flex-wrap: wrap;
  flex-direction: column-reverse;
-  /* Allow items to wrap onto the next line */
 }
+
+
+//---------------------------------------------
+// Devices with Max 991px width
+//---------------------------------------------
 
 @media (max-width: 991px) {
 z-col, .z-col {
@@ -250,20 +264,23 @@ z-col, .z-col {
 ul,ol {
   padding-left: 18px;
 }
-
 }
 
+
+//---------------------------------------------
+// Devices with Max 768 width
+//---------------------------------------------
 @media (max-width: 768px) {
 
   .card{
     font-size: 1em;
   }
 
-  .reverse-tablet> :nth-z-col(1) {
+  .tablet-reverse> :nth-z-col(1) {
     order: 2;
   }
 
-  .reverse-tablet> :nth-z-col(2) {
+  .tablet-reverse> :nth-z-col(2) {
     order: 1;
   }
 
@@ -273,6 +290,10 @@ ul,ol {
   }
 
 }
+
+//---------------------------------------------
+// Devices with Max 767 width
+//---------------------------------------------
 
 @media (max-width: 767px) {
   .z-col, z-col, blockquote{
@@ -297,11 +318,12 @@ left:0;
 
 }
 
-// // TO DOCUMENT
-.card, .card-split{
-    margin-left: 1em;
-    margin-right: 1em;
-}
+// // Removed due to multiple overflow issues
+// .card, .card-split{
+//     margin-left: 1em;
+//     margin-right: 1em;
+//     max-width: 95%; // exploration of a compomise for a fix
+// }
 
 
 .mobile-square{
@@ -315,6 +337,10 @@ left:0;
 
 }
 
+//---------------------------------------------
+// Devices with Max 1199px width
+//---------------------------------------------
+
 @media (max-width: 1199px) {
   .eight-up > * {
     flex: 1 0 23.751% !important;
@@ -323,7 +349,7 @@ left:0;
   .five-up > * {
     flex: 1 0 32.293% !important;
   }
-//every 4th/5th kid make them half
+//every 4th/5th child make them half
   .five-up > :nth-child(4n+4), .five-up > :nth-child(4n+5) {
     flex: 1 0 49.168% !important;
 }
@@ -335,8 +361,8 @@ left:0;
 }
 
 .narrow{
-  padding-left:.5em;
-  padding-right:.5em;
+  padding-left:.5em !important;
+  padding-right:.5em !important;
 }
 
 .narrow-left{
@@ -373,17 +399,21 @@ left:0;
   padding-right:2em;
 }
 
+//---------------------------------------------
+// Devices with Max 992px width
+//---------------------------------------------
+
 @media (max-width: 992px) {
 
   .narrow, .narrow-sm, .narrow-md, .narrow-lg, .narrow-left, .narrow-left-sm, .narrow-left-md, .narrow-left-lg, .narrow-right{
-    padding-left:unset;
-    padding-right:unset;
+    padding-left:1.2em;
+    padding-right:1.2em;
   }
-  .reverse-tablet> :nth-z-col(1) {
+  .tablet-reverse> :nth-z-col(1) {
     order: 2;
   }
 
-  .reverse-tablet> :nth-z-col(2) {
+  .tablet-reverse> :nth-z-col(2) {
     order: 1;
   }
 
@@ -419,9 +449,9 @@ content: "";
   border-bottom: 1px solid lighten($border-color, 24%);
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-//margin: 0.15rem 0;
-} 
+// h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+ //margin: 0.15rem 0;
+// } 
 
 }
 
@@ -431,6 +461,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   margin-right: 0;
 }
 
+//---------------------------------------------
+// Devices with Max 768px width
+//---------------------------------------------
 @media (max-width: 768px) {
 
 .dropdown-content.megamenu .z-col, .dropdown-content.megamenu z-col  {
@@ -448,7 +481,14 @@ header {
   padding-right: 10px;
 }
 
+.feature, .feature-sm, .feature-md, .feature-lg {
+  flex-grow: 1;
 }
+}
+
+//---------------------------------------------
+// Devices with Max 767px width
+//---------------------------------------------
 
 @media (max-width: 767px) {
 
@@ -464,7 +504,6 @@ header {
     justify-content: center;
     
   }
-  
 
   .mobile-two-up{
     flex-direction: row;
@@ -474,6 +513,22 @@ header {
       flex-basis: calc(50% - 20px) !important;
     }
   }
-  
   }
 
+//needed to overwrite importance. good example of why using important is bad. 
+  .feature {
+    //flex-grow: 2 !important;
+    flex: 2.7 !important;
+  }
+  
+  .feature-sm {
+    flex-grow: 3 !important;
+  }
+  
+  .feature-md {
+    flex-grow: 4 !important;
+  }
+  
+  .feature-lg {
+    flex-grow: 8 !important;
+  }

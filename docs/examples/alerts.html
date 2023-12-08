@@ -19,108 +19,11 @@
     </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
-        <div class="docs-nav">
-            <button id="hamburger-button">☰</button>
-        </div>
-        <nav>
-            <button id="close-button">×</button>
-            <ul class="pr-2">
-                <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Help Desk</a>
-                    <div class="dropdown-content">
-                        <a href="../help-desk/index.html">Getting Started</a>
-                        <a href="../help-desk/installation.html">Installation</a>
-                        <a href="../help-desk/design-system.html">Design System</a>
-                        <a href="../help-desk/site-sections.html">Site Sections</a>
-                        <a href="../help-desk/site-parts.html">Components</a>
-                        <a href="../help-desk/site-modifiers.html">Site Modifiers</a>
-                        <a href="../help-desk/core-concepts.html">Core Concepts</a>
-                    </div>
-                </div>
 
-                <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Core Concepts</a>
-                    <div class="dropdown-content">
-                        <a href="smart-align-framework.html">Smart-Align Framework</a>
-                        <a href="smart-color-system.html">Smart-Color System</a>
-                        <a href="smart-text.html">Smart-Text System</a>
-                        <a href="themes.html">Content Themes</a>
-                        <a href="zentax.html">Intro to Zentax</a>
-                        <a href="test-mode.html">Visual Test Mode</a>
-                    </div>
-                </div>
+               <div id="nav-placeholder"></div>
 
-                <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Site Sections</a>
-                    <div class="dropdown-content">
-                        <a href="header.html">Header</a>
-                        <a href="jumbotron.html">Hero Sections</a>
-                        <a href="image-text.html">Image/Text Sections</a>
-                        <a href="optin-form.html">Optin-Form/Text Section</a>
-                        <a href="layout-grids.html">Layout Grids</a>
-                        <a href="footer.html">Footer</a>
-                    </div>
-                </div>
-                <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Components</a>
-                    <div class="dropdown-content megamenu">
-                        <z-container class="narrow-left-sm">
-                            <z-row>
-                                <z-col class="small">
-                                    <a href="toggle.html">Accordian</a>
-                                    <a href="alerts.html">Alert Messages</a>
-                                    <a href="buttons.html">Buttons</a>
-                                    <a href="breadcrumb.html">Breadcrumbs</a>
-                                    <a href="cards.html">Cards</a>
-                                    <a href="cookie-consent.html">Cookie Consent</a>
-                                    <a href="corner-popup.html">Corner Popup</a>
-                                    <a href="dropdown.html">Dropdown</a>
-                                    <a href="exit-intent.html">Exit Popup</a>
-                                    <a href="form-elements.html">Form Elements</a>
-                                </z-col>
-                                <z-col class="small">
-                                    <a href="contact-form.html">Form - Sign Up</a>
-                                    <a href="sign-in-form.html">Form - Sign In</a>
-                                    <a href="responsive-table.html">HTML Table</a>
-                                    <a href="icons.html">Icons</a>
-                                    <a href="icon.html">Icon Container</a>
-                                    <a href="image.html">Image Styling</a>
-                                    <a href="image-carousel.html">Image Carousel</a>
-                                    <a href="image-gallery.html">Image Gallery</a>
-                                    <a href="list-group.html">List Groups</a>
-                                    <a href="logos.html">Logo Bar</a>
-                                </z-col>
-                                <z-col class="small">
-                                    <a href="modal.html">Modal</a>
-                                    <a href="pagination.html">Pagination</a>
-                                    <a href="pricing-table.html">Pricing Tables</a>
-                                    <a href="quiz.html">Quiz</a>
-                                    <a href="decorations.html">Site Extras</a> <a href="testimonials.html">Testimonials</a>
-                                    <a href="tooltip.html">Tool Tips</a>
-                                    <a href="tabs.html">Tabs</a>
-                                    <a href="video-player.html">Video Player</a>
-                                    <a href="wizard.html">Wizard/Multi-Step</a>
-                                </z-col>
-                            </z-row>
-                        </z-container>
-                    </div>
-                </div>
-                <div class="dropdown nav-dropdown">
-                    <a href="#" class="dropdown-link">Modifiers</a>
-                    <div class="dropdown-content left-100">
-                        <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
-                        <a href="padding-margin-utilities.html">Padding & Margin</a>
-                        <a href="animations.html">Animation Utilities</a>
-                        <a href="formatting.html">Gap, Height, and Width</a>
-                        <a href="flex.html">Flex</a>
-                        <a href="test-classes.html">Test Classes</a>
-                        <a href="border-utilities.html">Border Classes</a>
-                    </div>
-                </div>
-            </ul>
-        </nav>
     </header>
     <main id="main-content">
 
@@ -132,8 +35,11 @@
             <z-row>
                 <z-col>
                     <div class="center">
-                        <h1 class="headline"> Alerts <span class="label bg-secondary-light">WCAG 2.1 AA &check;</span></h1>
+                        
+                        <h1 class="headline"> Alerts </h1>
+                        
                         <p>Copy/Paste examples of zenCSS components - style to your liking. </p>
+                        <span class="label bg-secondary">WCAG 2.1 AA &check;</span>
 
                         <hr>
                     </div>
@@ -149,11 +55,11 @@
             <z-row>
                 <z-col>
                     <div class="alert-primary" role="alert">
-                        This is a primary alert—use alert-primary class
+                        primary alert—use alert-primary class
                     </div>
 
-                    <div class="alert-primary-minimal accent-left" role="alert">
-                        This is a primary alert—use alert-primary-minimal accent-left classes
+                    <div class="alert-primary-minimal" role="alert">
+                        primary alert—use alert-primary-minimal class
                     </div>
 
 
@@ -163,20 +69,20 @@
 
                 <z-col>
                         <div class="alert-success" role="alert">
-                            This is a success alert—use alert-success class
+                            success alert—use alert-success class
                         </div>
 
-                        <div class="alert-success-minimal accent-left" role="alert">
-                            This is a success alert—use alert-success-minimal accent-left classes
+                        <div class="alert-success-minimal" role="alert">
+                            success alert—use alert-success-minimal class
                         </div>
 
                     </z-col>
                     <z-col>
                         <div class="alert-danger" role="alert">
-                            This is a danger alert—use alert-danger class
+                            danger alert—use alert-danger class
                         </div>
-                        <div class="alert-danger-minimal accent-left" role="alert">
-                            This is a danger alert—use alert-danger-minimal accent-left classes
+                        <div class="alert-danger-minimal" role="alert">
+                            danger alert—use alert-danger-minimal class
                         </div>
 
                     </z-col>
@@ -184,31 +90,45 @@
             <z-row>
                 <z-col>
                     <div class="alert-warning" role="alert">
-                        This is a warning alert—use alert-warning class
+                        warning alert—use alert-warning class
                     </div>
-                    <div class="alert-warning-minimal accent-left" role="alert">
-                        This is a warning alert—use alert-warning class for display purposes
+                    <div class="alert-warning-minimal" role="alert">
+                        warning alert—use alert-warning class
                     </div>
 
 
                 </z-col>
                 <z-col>
                     <div class="alert-dark" role="alert">
-                        This is a dark alert—use alert-dark class for display purposes
+                        dark alert—use alert-dark class
                     </div>
-                    <div class="alert-dark-minimal accent-left" role="alert">
-                        This is a dark alert—use alert-dark-minimal accent-left classes
+                    <div class="alert-dark-minimal" role="alert">
+                        dark alert—use alert-dark-minimal class
                     </div>
                 </z-col>
                 <z-col>
                     <div class="alert-light" role="alert">
-                        This is a light alert—use alert-light-minimal accent-left classes
+                        light alert—use alert-light-minimal class
                     </div>
-                    <div class="alert-light-minimal accent-left" role="alert">
-                        This is a light alert—use alert-light-minimal accent-left classes
+                    <div class="alert-light-minimal" role="alert">
+                        light alert—use alert-light-minimal class
                     </div>
                 </z-col>
             </z-row>
+            <z-row>
+                <z-col>
+                    <h3>Generic Notice Example</h3>
+                    <!-- Basic Example -->
+                  
+                    <div class="list-group-item list-group-item-success mb-3 text-success">Success</div>
+                    <div class="list-group-item list-group-item-warning mb-3 text-warning">Warning</div>
+                    <div class="list-group-item list-group-item-danger text-danger">Danger</div>
+
+
+
+                </z-col>
+            </z-row>
+
   
         </z-container>
 
@@ -220,10 +140,10 @@
             <z-row>
                 <z-col class="pl-0 pr-0">
                     <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Get The Code</a>
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-keyboard-arrow-right"></i> Sample Code</a>
                         <div id="content1" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square up-10"><code class="language-html">&lt;div class="alert-primary"&gt;
-  This is a primary alert
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="alert-primary"&gt;
+  primary alert
 &lt;/div&gt;
 
 </code></pre>
@@ -238,7 +158,7 @@
 
             <z-row>
                 <z-col>
-                    <p>* remove icon-invert class to use black icons. For background and text formatting use classes: <span class="italic">bg-grey-2 text-black headline</span>.</p>
+                    <p>* remove icon-invert class to use black icons. For background and text formatting use class: <span class="italic">bg-grey-2 text-black headline</span>.</p>
                 </z-col>
             </z-row>
         </z-container>
@@ -252,9 +172,9 @@
             <z-row>
                 <z-col>
                     <div class="center up-20">
-                        <hr class="top">
-                        <h4>The Zen Test</h4>
-                        <p>Every part, section, and modifier we ship pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <hr>
+                        <h3 class="h4">The Zen Test</h3>
+                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                         <p> So you can be assured it "just works". Try it out below. </p>
                     </div>
                 </z-col>
@@ -283,11 +203,10 @@
     </footer>
 
     <script src="../../js/zencss.js"></script>
+<script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
     <script src="../js/copy.js"></script>
-    <script src="https://kit.fontawesome.com/a05a075d4b.js" crossorigin="anonymous"></script>
-
-</body>
+    </body>
 
 </html>

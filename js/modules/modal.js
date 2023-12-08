@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -85,7 +85,7 @@ class ZModal extends HTMLElement {
           .modal-header {
               display: flex;
               justify-content: space-between;
-              padding: 10px 20px;
+              padding: 0 20px;
               border-bottom: 1px solid rgba(111,111,111,.35);
           }
           .modal-title {
@@ -114,7 +114,7 @@ class ZModal extends HTMLElement {
           .modal-footer {
               display: flex;
               justify-content: flex-end;
-              padding: 5px 10px;
+              padding: 0 10px;
               border-top: 1px solid rgba(111,111,111,.35);
               margin-left: 10px;
               margin-right: 10px;

@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -24,4 +24,32 @@ $colors: (1: #F7F7F7,
   .border {
     border: 1px solid #c2c2c2;
   }
+
+  //do these with the color map
+  .border-success {
+    border: 1px solid $green;
+  }
   
+  .border-danger {
+    border: 1px solid $red;
+  }
+  
+  .border-warning {
+    border: 1px solid $orange;
+  }
+
+  .border-primary {
+    border: 2px solid $primary-color;
+  }
+  
+  .border-cta {
+    border: 2px solid $cta-color;
+  }
+
+  .border-secondary {
+    border: 2px solid $secondary-color;
+  }
+
+  .border-accent {
+    border: 2px solid $accent-color;
+  }

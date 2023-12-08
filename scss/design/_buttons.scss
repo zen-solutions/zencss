@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -20,7 +20,7 @@ $btn-hover-color: darken($cta-color, 20%);
   @include btn-hover($btn-hover-color);
 }
 
-.inactive {
+.disabled {
   cursor: not-allowed;
   opacity: 0.65;
   pointer-events: none;
@@ -78,14 +78,14 @@ button.btn-ghost:hover {
 }
 
 .label {
-  border-radius: 8px;
+  border-radius: $border-radius;
   padding: 0.3em 1em .3em 1em;
   overflow: hidden; 
   display: inline; 
   background: lighten($dark-color, 10%);
   color: $light-color;
   position: relative;
-  font-size: .63rem;
+  font-size: 11px;
   line-height: 9px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -99,29 +99,29 @@ button.btn-ghost:hover {
   line-height: 10px;
   position: relative;
   color: $primary-color;
-  font-size: .62rem;
+  font-size: 11px;
   font-weight: 700;
  @include font-spacing;
 }
 
-.eyebrow-2 {
-  overflow: hidden; 
-  display: inline-block; 
-  line-height: 10px;
-  position: relative;
-  padding: 0.3em 1em;
-  font-size: .8rem;
-}
+// .eyebrow-2 {
+//   overflow: hidden; 
+//   display: inline-block; 
+//   line-height: 10px;
+//   position: relative;
+//   padding: 0.3em 1em;
+//   font-size: .8rem;
+// }
 
 
-.eyebrow-2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px; 
-  border-bottom: 2px solid $accent-color;
-}
+// .eyebrow-2::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: -1px; 
+//   border-bottom: 2px solid $accent-color;
+// }
 
 .label-circle{
   border-radius: 50%;

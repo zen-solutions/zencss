@@ -1,11 +1,11 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
 //--------------------------------------------------------
-//  Dark Mode Option
+//  Toggle Dark Mode Option
 //--------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   function toggleDarkMode() {

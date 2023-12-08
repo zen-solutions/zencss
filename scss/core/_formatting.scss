@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -129,6 +129,7 @@
 
 
 
+
 //----------------------------------------------------
 /* Width and height */
 //----------------------------------------------------
@@ -197,7 +198,7 @@ $sizes: (
 display: inline-flex;
 flex-direction: column;
 justify-content: start;
-width: 100%;
+max-width: 100%;
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     border: 0;
