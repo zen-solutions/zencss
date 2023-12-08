@@ -1,18 +1,23 @@
  /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
   //------------------------------------------------
   // zenCSS Color Contrast Checker + Updater
-  //------------------------------------------------
 
-  // Purpose: 
-  // This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
-  // It evaluates each color against WCAG recommended color contrast ratio of 4.5/1 (adds a buffer) and chooses the appropriate text color 
-  // Finally, it autoassigns that color to complment the background, ensuring WCAG color compliance out of the box. 
-  // Change colors, and we'll update the color value with new compliant matches for fonts automatically. 
+  /* Purpose: 
+   This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
+
+   It evaluates each color in each map against WCAG recommended color contrast ratio
+   of 4.5/1 (adds a buffer) and chooses the appropriate text color that will pass compliance.
+
+   Finally, it autoassigns that color to the font color associated with that background, ensuring WCAG color compliance out of the box. 
+
+   Change colors, and this script will update the color value with a new compliant match for the font color. */
+
+  //------------------------------------------------
 
   @use "sass:math";
 
@@ -51,7 +56,7 @@
     $light-color: white;
     $dark-color: black;
     $minimum-contrast: 4.5;
-    $buffer: 0.1;  //increase the safety margin
+    $buffer: 0.1;  
   
     $light-contrast: contrast-ratio($bg-color, $light-color);
     $dark-contrast: contrast-ratio($bg-color, $dark-color);
@@ -65,5 +70,3 @@
       @return red; // default fallback color (used during dev, can likely be depricated after further testing) 
     }
   }
-
-  

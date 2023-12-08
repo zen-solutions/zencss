@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
@@ -48,12 +48,12 @@ $base-text-color: #444444;
   }
 
   //color tweak
-  background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
-  background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
+  // background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
+  // background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
 
   //--------------------------------------------------------------
   // Import core files
@@ -63,20 +63,17 @@ $base-text-color: #444444;
   @import 'core/mixins';
   @import 'core/framework';
   @import 'core/scaffold';
-  @import 'marketing/marketing-promos';
-  //@import 'design/themes';
+  @import 'optional/marketing/marketing-promos';
   @import 'core/header';
   @import 'general/form';
-  @import 'general/slider';
+  @import 'optional/slider';
   @import 'design/buttons';
   @import 'core/flex';
   @import 'optional/table';
   @import 'core/formatting';
   @import 'optional/alert';
   @import 'design/text';
-  //@import 'design/bg-color';
   @import 'design/border-color';
-  //@import 'design/text-color';
   @import 'general/test';
   @import 'general/components';
   @import 'design/layouts';
@@ -88,13 +85,11 @@ $base-text-color: #444444;
   @import 'optional/tooltip';
   @import 'optional/aria';
   @import 'optional/accessability';
-
-  //marketing
   @import 'design/themes';  
   @import 'design/bg-color';
   @import 'design/text-color'; 
-  @import 'marketing/exit-intent';
-  @import 'marketing/contact-form';
+  @import 'optional/marketing/exit-intent';
+  @import 'optional/marketing/contact-form';
 
   //--------------------------------------------------------------
   //  Things that should go last
@@ -107,6 +102,7 @@ $base-text-color: #444444;
   //--------------------------------------------------------------
   // Media queries for font size change
   //--------------------------------------------------------------
+
 //contextual
 .text-success{
   color: darken($green, 11%);
@@ -179,6 +175,10 @@ $base-text-color: #444444;
     color: $zen-dark-text-color;
   }
 
+  .text-dual{
+    color: $zen-dark-text-color !important;
+  }
+
   a {
     color: $zen-dark-text-color;
     cursor: pointer;
@@ -199,11 +199,9 @@ $base-text-color: #444444;
   }
 
   $text-grey-dual: #8C8C8C;
-  //$text-light-dual: #000000;
 
   .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
     background: hsla(69, 0%, 79%, 0.3);
-    //color: $text-grey-dual;
   }
 
   // Adjust the .btn-fill-up to have the text same as the outline

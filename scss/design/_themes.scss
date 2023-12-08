@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
   
@@ -11,7 +11,7 @@
 
 @mixin theme($bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color) {
   background: $bg-color;
-  border-bottom-color: $bg-color;
+  //border-bottom-color: $bg-color;
   color: $text-color;
   border-radius: $border-radius;
 

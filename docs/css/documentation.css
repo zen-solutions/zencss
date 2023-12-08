@@ -36,10 +36,10 @@ code[class*=language-], pre[class*=language-] {
   text-align: center !important;
   position: absolute;
   cursor: pointer !important;
-  top: 83%;
+
   left: 100%;
   transform: translate(-50%, -50%);
-  margin-top: -.1px;
+  margin-top: 10px;
   margin-left: -28px;
   opacity: .6;
 }
@@ -222,7 +222,20 @@ color: red;
   left: -143px !important;
 }
 
-/* to begin breaking changes */
-/* .zen .accordion .title {
-  display: inline-block;
-} */
+pre[class*="language-"]:after, pre[class*="language-"]:before {
+  display: none !important;
+}
+
+pre[class*="language-"] {
+
+  margin:0 !important;
+}
+
+.zen pre {
+border:0;
+padding-top:5px;
+}
+
+.crooked-section{
+  clip-path: polygon(0 0, 100% 0, 100% 9%, 0 0);
+}

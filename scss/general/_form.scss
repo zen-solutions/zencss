@@ -1,6 +1,6 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
  
@@ -131,8 +131,8 @@ input {
   
   .form-container form label {
     position: absolute;
-    left: 8px;
-    top: 7px;
+    left: 10px;
+    top: 10px;
     font-size: .8em;
     color: $dark-color !important;
     transition: 0.3s all;
@@ -141,7 +141,7 @@ input {
   /* Shrink and move label on input focus or if there is content in the input field */
   form input:focus + label,
   form input:not(:placeholder-shown) + label {
-    top: -1px;
+    top: 1px;
     left:6px;
     font-size: 9px;
     color: #b9b9b9 !important;

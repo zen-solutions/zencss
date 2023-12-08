@@ -1,7 +1,7 @@
 
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
+  * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
@@ -12,7 +12,7 @@
 //--------------------------------------------- 
 //  ✕ Initialization - Don't touch these 2 lines 
 //--------------------------------------------- 
-@import 'general/color-contrast-checker';  
+@import 'core/color-contrast-checker';  
 $error-color: #d33331; // used for system not for UI
   
 
@@ -22,7 +22,7 @@ $error-color: #d33331; // used for system not for UI
 
 $primary-color: #044384;
 $secondary-color:#426b2f;
-$accent-color: #dbc65d;
+$accent-color: #dabf3c;
 $cta-color : #1b66bb; 
 
 
@@ -226,8 +226,8 @@ $grey-ui-text-color: #727272;
 // ✓ Default Spacing - wip
 //------------------------------------------ 
 
-$site-section-padding-top: .5em;
-$site-section-padding-bottom: .5em;
+$page-section-padding-top: 50px;
+$page-section-padding-bottom: 50px;
 
 
 //------------------------------------------ 

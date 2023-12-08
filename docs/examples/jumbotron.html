@@ -18,106 +18,13 @@
 </div>
 <header class="header-sticky">
     <div class="pl-2" id="header-logo">
-        <a href="../index.html"><img src="../../img/logo.png" alt="Logo"></a>
+        <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
     </div>
     <div class="docs-nav">
         <button id="hamburger-button">☰</button>
     </div>
-    <nav>
-        <button id="close-button">×</button>
-        <ul class="pr-2">
-            <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Help Desk</a>
-                <div class="dropdown-content">
-<a href="../help-desk/index.html">Getting Started</a>
-<a href="../help-desk/installation.html">Installation</a>
-<a href="../help-desk/core-concepts.html">Core Concepts</a>
-<a href="../help-desk/site-sections.html">Site Sections</a>
-<a href="../help-desk/site-parts.html">Components</a>
-<a href="../help-desk/utilities.html">Utilities</a>
-</div></div>
+    <div id="nav-placeholder"></div>
 
-            <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Core Concepts</a>
-                <div class="dropdown-content">
-                    <a href="smart-align-framework.html">Smart-Align Framework</a>
-                    <a href="smart-color-system.html">Smart-Color System</a>
-                    <a href="smart-text.html">Smart-Text System</a>  
-                    <a href="themes.html">Modes & Themes</a>                      
-                    <a href="text-classes.html">Font Styles</a>
-                    <a href="test-mode.html">Visual Test Mode</a>
-                </div>
-            </div>
-            
-            <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Site Sections</a>
-                <div class="dropdown-content">
-                    <a href="header.html">Header</a>
-                    <a href="jumbotron.html">Hero Section</a>
-                    <a href="optin-form.html">Optin-Form/Text Section</a>
-                   <a href="image-text.html">Image/Text Section</a>
-                    <a href="layout-grids.html">Layout Grids</a>
-                    <a href="footer.html">Footer</a>
-                </div>
-            </div>
-            <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Components</a>
-                <div class="dropdown-content megamenu">
-                    <z-container class="narrow-left-sm">
-                        <z-row>
-                            <z-col class="small">
-                                <a href="toggle.html">Accordian</a>
-                                <a href="alerts.html">Alert Messages</a>
-                                <a href="buttons.html">Buttons</a>
-                                <a href="breadcrumb.html">Breadcrumbs</a>
-                                <a href="cards.html">Cards</a>
-                                <a href="cookie-consent.html">Cookie Consent</a>
-                                <a href="corner-popup.html">Corner Popup</a>
-                                <a href="dropdown.html">Dropdown</a>
-                                <a href="exit-intent.html">Exit Popup</a>
-                                <a href="form-elements.html">Form Elements</a>
-  </z-col>
-                            <z-col class="small">
-                                <a href="contact-form.html">Form - Sign Up</a>
-                                <a href="sign-in-form.html">Form - Sign In</a>
-                                <a href="responsive-table.html">HTML Table</a>
-                                <a href="icons.html">Icons</a>
-                                <a href="icon.html">Icon Container</a>
-                                <a href="image.html">Image Styling</a>
-                                <a href="image-carousel.html">Image Carousel</a>
-                                <a href="image-gallery.html">Image Gallery</a>
-                                <a href="list-group.html">List Groups</a>
-                                <a href="logos.html">Logo Bar</a>
-                            </z-col>
-                            <z-col class="small">
-                                <a href="modal.html">Modal</a>
-                                <a href="pagination.html">Pagination</a>
-                                <a href="pricing-table.html">Pricing Tables</a>
-                                <a href="quiz.html">Quiz</a>
-                                <a href="decorations.html">Site Extras</a>                                <a href="testimonials.html">Testimonials</a>
-                                <a href="tooltip.html">Tool Tips</a>
-                                <a href="tabs.html">Tabs</a>
-                                  <a href="video-player.html">Video Player</a>
-                                  <a href="wizard.html">Wizard/Multi-Step</a>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-                </div>
-            </div>
-            <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Utilities</a>
-                <div class="dropdown-content left-150">
-                    <a href="text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
-                    <a href="padding-margin-utilities.html">Padding & Margin</a>
-                    <a href="animations.html">Animation Utilities</a>
-                    <a href="formatting.html">Gap, Height, and Width</a>
-                    <a href="flex.html">Flex</a>
-                    <a href="test-classes.html">Test Classes</a>
-                    <a href="border-utilities.html">Border Classes</a>
-                </div>
-            </div>
-        </ul>
-    </nav>
 </header>
 <main id="main-content">
 
@@ -130,65 +37,8 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
-<!-- 
-    <z-container>
-        <z-row>
-            <z-col>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <div class="slider">
-                    <div class="slides-container"> 
-                      <div class="slide">
-                        <z-container>
-                            <z-row>
-                                <z-col class="theme-cta hero-section card">
-                                    <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
-                        
-                                    <div class="center">
-                                        <span class="label">NEW</span>
-                                        <h2 class="h1 headline">Standard Width Version</h2>
-                                        <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
-                                        <p>
-                                            <button>Get Started</button>
-                                            <button class="btn-fill">Learn More</button>
-                                        </p>
-                                    </div>
-                                </z-col>
-                            </z-row>
-                        </z-container>
-                    </div> 
-                    <div class="slide">
-                        <z-container>
-                            <z-row>
-                                <z-col class="theme-cta hero-section card">
-                                    <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
-                        
-                                    <div class="center">
-                                        <span class="label">TWO</span>
-                                        <h2 class="h1 headline">Standard Width Version</h2>
-                                        <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
-                                        <p>
-                                            <button>Get Started</button>
-                                            <button class="btn-fill">Learn More</button>
-                                        </p>
-                                    </div>
-                                </z-col>
-                            </z-row>
-                        </z-container>
-                    </div> 
 
-                    </div>
-                    <div class="prev arrow theme-dark d-none">&#10094;</div>
-                    <div class="next arrow theme-dark  d-none">&#10095;</div>
-                  </div>
-            </z-col>
-        </z-row>
-    </z-container> -->
-
-
-    <z-container>
+    <!--z-container>
         <z-row>
             <z-col>
             </z-col>
@@ -243,59 +93,39 @@
                   </div>
             </z-col>
         </z-row>
-    </z-container>
+    </z-container-->
 
-    <z-container-fluid class="theme-light hero-section m-0">
+    <z-container-fluid class="theme-cta hero-section m-0">
         <z-row>
-            <z-col class="card">
-                <div class="center">
-                    <span class="label">NEW</span>
+            <z-col class="card center">
+   
+                    <span class="label center-me">NEW</span>
                     <h1 class="headline">Hero Section - Full Width Version</h1>
                     <p>Ideal for highlighting hero-style content on your site, tailored for showcasing key marketing messages.
                     <p>
                         <button>Get Started</button>
                         <button class="btn-fill">Learn More</button>
                     </p>
-                </div>
+      
             </z-col>
         </z-row>
     </z-container-fluid>
 
-    <z-container-fluid class="theme-cta card hero-section m-0">
-        <z-container>
-                <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
-                <z-row>
-                    <z-col class="card center">       
-                   
-                      
-                                <span class="label center-me">NEW</span>
-                                <h2 class="h1 headline">Full Width + Background image
-                                </h2>
-                                <p class="lead">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam vel esse cupiditate. 
-                                </p>
-                                 <a href="../docs/help-desk/installation.html" class="btn  btn-md center-me">Lorem Ipsum</a>
-                            </p>
 
-                    </z-col>
-                </z-row>
-            </z-container>
-        </z-container-fluid>
 
     <br>
 
-    <z-container class="theme-cta hero-section">
+    <z-container class="theme-cta hero-section mt-5">
         <z-row>
-            <z-col>
-                <div class="center">
-                    <span class="label"> NEW</span>
+            <z-col class="center">
+                    <span class="label center-me"> NEW</span>
                     <h2 class="h1 headline">Standard Width Version</h2>
                     <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
                     <p>
                         <button>Get Started</button>
                         <button class="btn-fill">Learn More</button>
                     </p>
-                </div>
+
             </z-col>
         </z-row>
     </z-container>
@@ -313,12 +143,11 @@
     <z-row>
         <z-col class="pl-0 pr-0">
             <div class="accordion">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1">Sample Code</a>
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-keyboard-arrow-right"></i> Sample Code</a>
                 <div id="content1" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-container class="theme-cta hero-section m-0"&gt; &lt;!-- use z-container-fluid for full width version--&gt; 
+                    <pre class="copy-text square"><code class="language-html">&lt;z-container class="theme-cta hero-section m-0"&gt; &lt;!-- use z-container-fluid for full width version--&gt; 
     &lt;z-row&gt;
         &lt;z-col class="card"&gt;
-            &lt;div class="center"&gt;
                 &lt;span class="label"&gt; NEW&lt;/span&gt;
                 &lt;h1&gt;Lorem ipsum dolor sit amet, consectetur elit.&lt;/h1&gt;
                 &lt;p&gt;Eos tenetur corrupti, minima doloribus quam eveniet libero.&lt;/p&gt;
@@ -326,7 +155,6 @@
                 &lt;button&gt;Get Started&lt;/button&gt;
                 &lt;button class="btn-fill"&gt;Learn More&lt;/button&gt;
                 &lt;/p&gt;
-            &lt;/div&gt;
         &lt;/z-col&gt;
     &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
@@ -336,22 +164,40 @@
     </z-row>
 </z-container>
 
+<z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+    <z-container>
+            <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
+            <z-row>
+                <z-col class="card center">       
+               
+                  
+                            <span class="label center-me">NEW</span>
+                            <h2 class="h1 headline">Full Width + Background image
+                            </h2>
+                            <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam vel esse cupiditate. 
+                            </p>
+                             <a href="../docs/help-desk/installation.html" class="btn  btn-md center-me">Lorem Ipsum</a>
+                        </p>
 
+                </z-col>
+            </z-row>
+        </z-container>
+    </z-container-fluid>
 
 <z-container class="center-flex">
     <z-row>
-        <z-col class="theme-cta hero-section card">
+        <z-col class="theme-cta hero-section card center">
             <img src="../../docs/images/misc/gradient-bg-large.jpg" class="img-bg">
 
-            <div class="center">
-                <span class="label">NEW</span>
+      
+                <span class="label center-me">NEW</span>
                 <h2 class="h1 headline">Standard Width Version</h2>
                 <p>Eos tenetur corrupti, minima doloribus quam eveniet libero.
                 <p>
                     <button>Get Started</button>
-                    <button class="btn-fill">Learn More</button>
                 </p>
-            </div>
+          
         </z-col>
     </z-row>
 </z-container>
@@ -364,7 +210,7 @@
             <div class="accordion">
                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-keyboard-arrow-down"></i>Sample Code</a>
                 <div id="content3" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square up-10"><code class="language-html">&lt;z-container class="theme-cta card hero-section m-0"&gt;
+                    <pre class="copy-text square"><code class="language-html">&lt;z-container class="theme-cta card hero-section m-0"&gt;
     &lt;img src="/docs/images/misc/gradient-bg-large.jpg" class="img-bg"&gt;
     &lt;z-row&gt;
         &lt;z-col&gt;       
@@ -393,9 +239,9 @@
         <z-row >
             <z-col>
                 <div class="center up-20">
-                    <hr class="top">
-                    <h4>The Zen Test</h4>
-                    <p>Every part, section, and modifier we ship pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <hr>
+                    <h3 class="h4">The Zen Test</h3>
+                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
             </z-col>
         </z-row>
@@ -423,6 +269,7 @@
     </footer>
 
     <script src="../../js/zencss.js"></script>
+<script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
