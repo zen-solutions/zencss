@@ -95,7 +95,7 @@ $base-text-color: #444444;
   //  Things that should go last
   //--------------------------------------------------------------
   @import 'core/media-query';
-  // @import 'optional/stacking';
+  // @import 'optional/stacking'; // not in use currently
   @import 'general/margin-padding';
 
 
@@ -114,7 +114,6 @@ $base-text-color: #444444;
 
   @media (max-width: 575.98px) {
     font-size: $zen-tablet-mobile-font-size;
-    //line-height: 1.6;
 
   p{
       line-height: 1.4rem;
@@ -162,54 +161,56 @@ $base-text-color: #444444;
   background: #292929;
   $responsive-text-color: #ededed;
 
-  .text-success{
-    color: lighten(green, 10%);
+      .text-success{
+        color: lighten(green, 10%);
+      }
+      
+      .text-failure{
+      color:  lighten(red, 16%);
+      }
+
+      td,
+      th {
+        color: $zen-dark-text-color;
+      }
+
+      .text-dual{
+        color: $zen-dark-text-color !important;
+      }
+
+      a {
+        color: $zen-dark-text-color;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      label {
+        color: $zen-dark-text-color !important;
+      }
+
+      a:hover {
+        color: #e8e8e8;
+        text-decoration: none;
+      }
+
+      .text-grey-dual{
+        color: #8C8C8C;
+      }
+
+      $text-grey-dual: #8C8C8C;
+
+      .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
+        background: hsla(69, 0%, 79%, 0.3);
+      }
+
+      // Adjust the .btn-fill-up to have the text same as the outline
+    .btn-fill, .theme-light .btn-fill {
+      color: $responsive-text-color;
+    }  
+
+    .text-cta-dual{
+      color: $responsive-text-color;
+
   }
-  
-  .text-failure{
-   color:  lighten(red, 16%);
-  }
-
-  td,
-  th {
-    color: $zen-dark-text-color;
-  }
-
-  .text-dual{
-    color: $zen-dark-text-color !important;
-  }
-
-  a {
-    color: $zen-dark-text-color;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  label {
-    color: $zen-dark-text-color !important;
-  }
-
-  a:hover {
-    color: #e8e8e8;
-    text-decoration: none;
-  }
-
-  .text-grey-dual{
-    color: #8C8C8C;
-  }
-
-  $text-grey-dual: #8C8C8C;
-
-  .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
-    background: hsla(69, 0%, 79%, 0.3);
-  }
-
-  // Adjust the .btn-fill-up to have the text same as the outline
-.btn-fill, .theme-light .btn-fill {
-  color: $responsive-text-color;
-}  
-
-
-
 
 }

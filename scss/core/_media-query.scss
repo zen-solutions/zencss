@@ -106,15 +106,15 @@
     max-width: 540px;
   }
 
-  & .z-row.stack-mobile {
-    flex-direction: column;
-  }
+  // & .z-row.stack-mobile {
+  //   flex-direction: column;
+  // }
 
-  & .z-row.stack-tablet {
-    flex-direction: column;
-  }
+  // & .z-row.stack-tablet {
+  //   flex-direction: column;
+  // }
 
-  & .hide-mobile {
+  .mobile\:hide {
     display: none;
   }
  
@@ -493,19 +493,19 @@ header {
 @media (max-width: 767px) {
 
 
-  .mobile-thin{
+  .mobile\:thin{
     aspect-ratio: 16/9;
     object-fit: cover;
     object-position: 50% 50%;
   }
 
-  .mobile-max-up{
+  .mobile\:max-up{
     flex-direction: row;
     justify-content: center;
     
   }
 
-  .mobile-two-up{
+  .mobile\:two-up{
     flex-direction: row;
     justify-content: center;
  

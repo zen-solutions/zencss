@@ -50,7 +50,7 @@
     
                 <h2>Exploring Stacked Headings</h2>
                 <h3>Ensuring Harmony in Sequential Headers</h3>
-                <p>Instances arise where headers are aligned one after the other.  Swapping out margins for padding to avoid margin stacking brings new dimension to our layout, bridging the gap between paragraphs and headers.</p>
+                <p>Instances arise where headers are aligned one after the other.  Removing the top margin on the second one automatically is a nice touch, bridging the gap between paragraphs and headers.</p>
     
                 <h4>Striking a Balance with Paragraphs and Headers</h4>
                 <p>Navigating ideal spacing between paragraphs and headers becomes nuanced, as highlighted earlier. Let's explore a more intricate list format.</p>
@@ -134,24 +134,33 @@
                 <h3>Styling Other Elements</h3>
                 <p>Almost overlooked were links, such as this <a href="https://zenCSS.com">link to the ZenCSS website</a>. Rather than the traditional blue, we've opted for a darker gray, which adds a touch of edge.</p>
     
-                <p>We've also included table styles; take a look:</p>
-                <table class="tablet-table-responsive">
-                    <tr>
-                        <th>Wrestler</th>
-                        <th>Origin</th>
-                        <th>Finisher</th>
-                    </tr>
-                    <tr>
-                        <td>Bret "The Hitman" Hart</td>
-                        <td>Calgary, AB</td>
-                        <td>Sharpshooter</td>
-                    </tr>
-                    <tr>
-                        <td>Stone Cold Steve Austin</td>
-                        <td>Austin, TX</td>
-                        <td>Stone Cold Stunner</td>
-                    </tr>
-                    <!-- ... Additional rows ... -->
+                <p>We've also included default table styles; take a look:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Creature</th>
+                            <th>Origin Mythology</th>
+                            <th>Notable Feature</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phoenix</td>
+                            <td>Greek</td>
+                            <td>Regenerates from ashes</td>
+                        </tr>
+                        <tr>
+                            <td>Dragon</td>
+                            <td>Multiple cultures</td>
+                            <td>Fire-breathing</td>
+                        </tr>
+                        <tr>
+                            <td>Kraken</td>
+                            <td>Norse</td>
+                            <td>Giant sea monster</td>
+                        </tr>
+                        
+                    </tbody>
                 </table>
     
                 <p>We've ensured inline code appears appealing, like when discussing <code>span</code> elements or sharing the good news about @zenCSS/typography.</p>

@@ -372,7 +372,7 @@ $text-grey-dual:#5E5E5E;
 }
 
 .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
-    background: darken( $bg-ui-hover, 13%);
+    background: darken( $bg-ui-hover, 25%);
 }
 
 //alt for wizard
@@ -409,5 +409,21 @@ $text-grey-dual:#5E5E5E;
     z-index: 0;
 }
 
+.text-height-lg{
+    line-height: 2.2em;
+}
 
+
+.text-cta-dual{
+    color: $cta-color;    
+
+}
+a.text-cta-dual{
+
+        font-weight: 600;
+        text-decoration: none; 
+        position: relative;
+    display: inline-block;
+     
+}
 

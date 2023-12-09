@@ -98,7 +98,7 @@
   }
 }
 
-// Loop through 1 to 5 to generate classes for 10 to 50, incrementing by 10
+// Loop through 1 to 10 to generate classes for 10 to 50, incrementing by 10
 @for $i from 1 through 9 {
   $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
 
@@ -177,13 +177,13 @@ $sizes: (
    width: $value !important;
    max-width:$value;
    display: inline-block;
-
   }
-  .h-#{$key} {
-    height: $value !important;
-    max-height:$value;
-    display: inline-block;
-  }
+  
+  // .h-#{$key} {
+  //   height: $value !important;
+  //   max-height:$value;
+  //   display: inline-block;
+  // }
 }
 
 //----------------------------------------------------
@@ -195,11 +195,12 @@ $sizes: (
   padding: 1.2rem;
   font-size: .95em;
   gap: .7em;
-display: inline-flex;
-flex-direction: column;
-justify-content: start;
-max-width: 100%;
-  h1, h2, h3, h4, h5, h6, p{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 100%;
+
+  h1, h2, h3, h4, h5, h6, p, small, .eyebrow{
     margin: 0;
     border: 0;
     padding:0;
@@ -209,10 +210,6 @@ max-width: 100%;
     padding:0;
   }
 
-// *{
-//   margin-top:0 !important;
-//   margin-bottom:0 !important;
-// }
 
   ul{
   margin-block-start:0;
@@ -289,10 +286,10 @@ $d-values: (
   flex-direction: row-reverse !important;
 }
 
-.unzen {
-  display: initial;
-  text-align: left;
-}
+// .unzen {
+//   display: initial;
+//   text-align: left;
+// }
 
 .overflow-hidden {
   overflow: hidden;
@@ -325,13 +322,6 @@ $d-values: (
   height: auto;
 }
 
-//----------------------------------------------------
-//Unset Round - we have square somehere else i beliee
-//----------------------------------------------------
-
-.unset-round {
-  border-radius: 0;
-}
 
 .squeeze > * {
   margin-top: .3em;

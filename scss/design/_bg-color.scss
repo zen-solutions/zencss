@@ -16,12 +16,12 @@ $bg-default-colors: (
   "green": $green,
   "blue": $blue,
   "purple": $purple,
-  "grey-1": #F7F7F7,
+  "grey-1": #e5e5e5,
   "grey-2": #c7c6c6,
   "grey-3": #A6A6A6,
-  "grey-4": #616161,
-  "grey-5": #404040,
-  "grey-6": #0D0D0D,
+  "grey-4": #797979,
+  "grey-5": #525252,
+  "grey-6": #3d3d3d,
 );
 
 // Dark Background Colors
@@ -36,12 +36,12 @@ $bg-dark-colors: (
   "green-dark": $green-dark,
   "blue-dark": $blue-dark,
   "purple-dark": $purple-dark,
-  "grey-1-dark": #d1d1d1,
-  "grey-2-dark": #a5a4a4,
-  "grey-3-dark": #7b7979,
-  "grey-4-dark": #4d4d4d,
-  "grey-5-dark": #1e1e1e,
-  "grey-6-dark": #000000,
+  "grey-1-dark": #c8c8c8,
+  "grey-2-dark": #b0b0b0,
+  "grey-3-dark": #909090,
+  "grey-4-dark": #616161,
+  "grey-5-dark": #3b3b3b,
+  "grey-6-dark": #1d1d1d,
 );
 
 // Light Background Colors
@@ -56,12 +56,12 @@ $bg-light-colors: (
   "green-light": $green-light,
   "blue-light": $blue-light,
   "purple-light": $purple-light,
-  "grey-1-light": #ffffff,
-  "grey-2-light": #d9d8d8,
+  "grey-1-light": #ebebeb,
+  "grey-2-light": #e0e0e0,
   "grey-3-light": #b5b3b3,
-  "grey-4-light": #6f6f6f,
+  "grey-4-light": #8e8e8e,
   "grey-5-light": #575757,
-  "grey-6-light": #1e1e1e,
+  "grey-6-light": #383838,
 );
 
 
@@ -196,3 +196,14 @@ $bg-light-colors: (
   width: 9px;
   filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
 }
+
+// testing. testing. is this thing on? 
+
+// .bg-primary-gradient {
+//   background: linear-gradient(
+//     to bottom,
+//     map-get($bg-default-colors, "primary"),
+//     map-get($bg-dark-colors, "primary-dark")
+//   ) !important;
+// //  color: #fff !important; 
+// }

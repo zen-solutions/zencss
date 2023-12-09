@@ -30,11 +30,11 @@
     <!--- Hero --->
     <!----------------------------------------------------------------------->
 
-    <z-container-fluid class="theme-cta hero-section m-0">
+    <z-container-fluid class="theme-cta bg-cta-gradient hero-section m-0">
         <z-row>
             <z-col>
                 <div class="center">
-                    <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-90" alt="">
+                    <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-75" alt="">
                     <h1 class="headline">zenCSS Smart-Align Framework</h1>
                     <p class="lead">Dive into a world where shape and form align, and everything magically falls into place. 
                     </p>
@@ -68,16 +68,16 @@
 </z-row>
 <z-row>
     <z-col>
-<h2>Advanced Features</h2>
+<h2>Experience Smart-Align</h2>
 
-<p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns automatically. Odd columns size up accordingly. Resize the window or click the buttons below to see it in action. </p></z-col>
+<p>By default, the Smart-Align System stacks four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns. Add or remove some columns using the buttons below, and watch as the content reflows automatically.  </p></z-col>
     </z-row>
 
-<z-row class="single">
-    <z-col><button id="addCol">Add Column</button>
+<z-row>
+    <z-col class="p-0"><button id="addCol" class="m-0 p-0"><i class="zenicon-add-circle mr-1"></i> Add Column</button>
       </z-col>
-        <z-col>
-            <button id="removeCol">Remove Column</button></z-col>
+        <z-col class="p-0">
+            <button id="removeCol" class="m-0 p-0"><i class="zenicon-do-not-disturb-on-1 mr-1"></i> Remove Column</button></z-col>
 </z-row>
 
 <z-row class="add-remove">
@@ -93,12 +93,12 @@
 
 <z-container>
     <z-row>
-    <z-col><p>You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the class <code>eight-up</code> to the row. We also target mobile with the <code>.mobile-two-up</code> class so devices smaller than tablet will display columns side by side. </z-row> </p></z-col>
+    <z-col><p>You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the class <code>eight-up</code> to the row. We also target mobile with the <code>.mobile:two-up</code> class so devices smaller than tablet will display columns side by side. </z-row> </p></z-col>
  
     </z-row>
 </z-container>
 <z-container>
-<z-row class="eight-up mobile-two-up">
+<z-row class="eight-up mobile:two-up">
     <z-col class="center bg-grey-2">1</z-col>
     <z-col class="center bg-grey-2">2</z-col>
     <z-col class="center bg-grey-2">3</z-col>

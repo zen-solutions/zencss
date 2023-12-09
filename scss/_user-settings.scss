@@ -39,6 +39,7 @@ $purple: #6d45dc;
 
 //------------------------------------------ 
 //  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
+// BUG - these are overwritten in bg color i think
 //------------------------------------------ 
 
 $grey-1: #F7F7F7;
@@ -58,7 +59,7 @@ $grey-6: #0D0D0D;
 //brand palette dark
 $primary-color-dark: darken($primary-color, 10%); 
 $secondary-color-dark: darken($secondary-color, 10%); 
-$accent-color-dark: darken($accent-color,8%); 
+$accent-color-dark: darken($accent-color,10%); 
 $cta-color-dark: darken($cta-color, 10%); 
 
 //brand palette light
@@ -132,6 +133,102 @@ $text-default-colors: (
   "grey-6": smart-text-color($grey-6),
 );
 
+// gradient test
+
+    .bg-primary-gradient {
+      background: linear-gradient(
+      to bottom,
+      $primary-color,
+      $primary-color-dark
+      ) !important;
+      color: smart-text-color($primary-color) !important; 
+    }
+
+    .bg-secondary-gradient {
+      background: linear-gradient(
+      to bottom,
+      $secondary-color,
+      $secondary-color-dark
+      ) !important;
+      color: smart-text-color($secondary-color) !important; 
+    }
+
+
+    .bg-cta-gradient {
+      background: linear-gradient(
+      to bottom,
+      $cta-color,
+      $cta-color-dark
+      ) !important;
+      color: smart-text-color($cta-color) !important; 
+    }
+
+
+    .bg-accent-gradient {
+      background: linear-gradient(
+      to bottom,
+      $accent-color,
+      $accent-color-dark
+      ) !important;
+      color: smart-text-color($accent-color) !important; 
+    }
+
+
+    .bg-red-gradient {
+      background: linear-gradient(
+      to bottom,
+      $red,
+      $red-dark
+      ) !important;
+      color: smart-text-color($red) !important; 
+    }
+
+    .bg-orange-gradient {
+      background: linear-gradient(
+      to bottom,
+      $orange,
+      $orange-dark
+      ) !important;
+      color: smart-text-color($orange) !important; 
+    }
+
+    .bg-yellow-gradient {
+      background: linear-gradient(
+        to bottom,
+        $yellow,
+        $yellow-dark
+      ) !important;
+        color: smart-text-color($yellow) !important; 
+    }
+
+    .bg-green-gradient {
+        background: linear-gradient(
+          to bottom,
+          $green,
+          $green-dark
+        ) !important;
+          color: smart-text-color($green) !important; 
+      }
+
+      .bg-blue-gradient {
+          background: linear-gradient(
+            to bottom,
+            $blue,
+            $blue-dark
+          ) !important;
+            color: smart-text-color($blue) !important; 
+        }
+
+              
+      .bg-purple-gradient {
+          background: linear-gradient(
+            to bottom,
+            $purple,
+            $purple-dark
+          ) !important;
+          color: smart-text-color($purple) !important; 
+        }
+    
 // Dark Text Colors
 $text-dark-colors: (
   "primary-dark": smart-text-color($primary-color-dark),

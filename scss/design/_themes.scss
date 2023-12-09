@@ -58,7 +58,7 @@
 //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color
 $themes: (
   primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
-  dark: (rgba(25,25,25, 0.9), #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
+  dark: (rgba(25,25,25, 0.84), #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
   light: (rgba(255,255,255,.20), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
   cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
   accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
