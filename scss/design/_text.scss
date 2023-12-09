@@ -427,3 +427,29 @@ a.text-cta-dual{
      
 }
 
+//custom links
+.link-underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -4px;
+    height: 2px;
+    background-color: transparent;
+    transition: right 0.3s ease;
+  }
+  
+  .link-underline:hover::after {
+    right: 0;
+    background-color: #919191; 
+  }
+
+  .link-underline-white:hover::after {
+    background-color: white; 
+  }
