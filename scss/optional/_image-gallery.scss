@@ -1,21 +1,20 @@
-  /*
+/*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 /* Image Gallery Styles */
-  .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-    grid-row-gap: 6px;
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  grid-row-gap: 6px;
 }
 
 .image-gallery img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: $border-radius;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: $border-radius;
 }
-

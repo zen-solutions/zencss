@@ -3,8 +3,8 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-// Define a map for colors 
+
+// Define a map for colors
 $colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
@@ -18,10 +18,10 @@ $colors: (
   "blue": $blue,
   "purple": $purple,
   "white": white,
-  "grey": $grey
+  "grey": $grey,
 );
 
-// Mixin to generate text color classes 
+// Mixin to generate text color classes
 @mixin text-color-classes($color-name, $color-value) {
   .text-#{$color-name} {
     color: $color-value !important;
@@ -34,32 +34,30 @@ $colors: (
   }
 }
 
-// generate text color classes for all colors 
+// generate text color classes for all colors
 @each $color-name, $color-value in $colors {
   @include text-color-classes($color-name, $color-value);
 }
 
 // grey light and darks
 $grey-colors: (
-  "grey-1": #F7F7F7,
+  "grey-1": #f7f7f7,
   "grey-2": #c7c6c6,
-  "grey-3": #A6A6A6,
+  "grey-3": #a6a6a6,
   "grey-4": #616161,
   "grey-5": #404040,
-  "grey-6": #0D0D0D
+  "grey-6": #0d0d0d,
 );
 
 // create base grey colors - bg and text
 @each $color-name, $color-value in $grey-colors {
-
   .text-#{$color-name} {
     color: $color-value !important;
   }
-
 }
 
 // Light and dark universal colors
-// Define a mixin to generate text color classes for dark and light variations 
+// Define a mixin to generate text color classes for dark and light variations
 @mixin generate-color-classes($color-name, $color-dark, $color-light) {
   .text-#{$color-name}-dark {
     color: $color-dark !important;
@@ -70,24 +68,22 @@ $grey-colors: (
 }
 
 /* Apply the mixin for each color */
-@include generate-color-classes('red', $red-dark, $red-light);
-@include generate-color-classes('orange', $orange-dark, $orange-light);
-@include generate-color-classes('yellow', $yellow-dark, $yellow-light);
-@include generate-color-classes('green', $green-dark, $green-light);
-@include generate-color-classes('blue', $blue-dark, $blue-light);
-@include generate-color-classes('purple', $purple-dark, $purple-light);
+@include generate-color-classes("red", $red-dark, $red-light);
+@include generate-color-classes("orange", $orange-dark, $orange-light);
+@include generate-color-classes("yellow", $yellow-dark, $yellow-light);
+@include generate-color-classes("green", $green-dark, $green-light);
+@include generate-color-classes("blue", $blue-dark, $blue-light);
+@include generate-color-classes("purple", $purple-dark, $purple-light);
 
 //contextual
-.text-success{
+.text-success {
   color: $green;
 }
 
-.text-danger{
-  color:  darken($red, 10%);
+.text-danger {
+  color: $text-warning;
 }
 
-.text-warning{
-  color:  darken($yellow, 21%);
+.text-warning {
+  color: darken($yellow, 21%);
 }
-
-

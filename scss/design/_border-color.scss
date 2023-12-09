@@ -3,53 +3,53 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 /* Generate border color classes */
-$colors: (1: #F7F7F7,
-  2: #D9D9D9,
+$colors: (
+  1: #f7f7f7,
+  2: #d9d9d9,
   3: $border-color,
   4: #737373,
   5: #404040,
-  6: #0D0D0D
+  6: #0d0d0d,
 );
 
 @for $i from 1 through 6 {
-    .border-#{$i} {
-      border: 1px solid map-get($colors, $i);
-      border-bottom-color:map-get($colors, $i) !important;
+  .border-#{$i} {
+    border: 1px solid map-get($colors, $i);
+    border-bottom-color: map-get($colors, $i) !important;
+  }
+}
 
-    }
-  }
-  
-  .border {
-    border: 1px solid #c2c2c2;
-  }
+.border {
+  border: 1px solid #c2c2c2;
+}
 
-  //do these with the color map
-  .border-success {
-    border: 1px solid $green;
-  }
-  
-  .border-danger {
-    border: 1px solid $red;
-  }
-  
-  .border-warning {
-    border: 1px solid $orange;
-  }
+//do these with the color map
+.border-success {
+  border: 1px solid $green;
+}
 
-  .border-primary {
-    border: 2px solid $primary-color;
-  }
-  
-  .border-cta {
-    border: 2px solid $cta-color;
-  }
+.border-danger {
+  border: 1px solid $red;
+}
 
-  .border-secondary {
-    border: 2px solid $secondary-color;
-  }
+.border-warning {
+  border: 1px solid $orange;
+}
 
-  .border-accent {
-    border: 2px solid $accent-color;
-  }
+.border-primary {
+  border: 2px solid $primary-color;
+}
+
+.border-cta {
+  border: 2px solid $cta-color;
+}
+
+.border-secondary {
+  border: 2px solid $secondary-color;
+}
+
+.border-accent {
+  border: 2px solid $accent-color;
+}

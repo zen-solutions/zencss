@@ -3,7 +3,7 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 //---------------------------------------------------------
 // test classes - for on the fly troubleshooting
 //---------------------------------------------------------
@@ -27,45 +27,42 @@
   outline: 2px solid $purple;
 }
 
-
 //---------------------------------------------------------
 //  For Toggle button & Chrome Extension
 //---------------------------------------------------------
 
 .z-container-outline-on {
   outline: 2px dashed $blue;
-  border-radius:0;
+  border-radius: 0;
   //outline-offset: 2px;
 }
 
 .z-container-fluid-outline-on {
   outline: 2px dashed $purple;
-  border-radius:0;
+  border-radius: 0;
 }
 
 .z-row-outline-on {
- // outline: 3px solid $green;
-  border-radius:0;
+  // outline: 3px solid $green;
+  border-radius: 0;
   box-shadow: inset 0 0 0 1px green; /* Creates a 1px inset 'outline' */
-
 }
 
 .z-col-outline-on {
   //outline: 2px solid $red;
-  border-radius:0;
+  border-radius: 0;
   box-shadow: inset 0 0 0 1px red; /* Creates a 1px inset 'outline' */
-
 }
 
-.p-outline-on{
+.p-outline-on {
   outline: 1px solid $orange;
 }
 
-.h1-outline-on{
+.h1-outline-on {
   outline: 2px dotted $orange;
 }
 
-.h-outline-on{
+.h-outline-on {
   outline: 2px solid $orange;
 }
 
@@ -85,6 +82,6 @@
   left: 50%;
   width: 1px;
   height: 130%;
-  z-index:10000;
-  background-color:rgb(191, 191, 191); 
+  z-index: 10000;
+  background-color: rgb(191, 191, 191);
 }

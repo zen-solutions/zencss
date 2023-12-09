@@ -3,10 +3,10 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-  .slider {
+
+.slider {
   position: relative;
-  width: 100%; 
+  width: 100%;
   overflow: hidden;
 }
 .slides-container {
@@ -14,7 +14,7 @@
   transition: transform 0.5s ease;
 }
 .slide {
-  min-width: 100%; 
+  min-width: 100%;
   transition: transform 0.5s ease;
 }
 .arrow {
@@ -33,7 +33,7 @@
   right: 10px;
 }
 
-// Make arrows bigger on smaller screens for easier tapping 
+// Make arrows bigger on smaller screens for easier tapping
 @media (max-width: 768px) {
   .arrow {
     font-size: 30px;

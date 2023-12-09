@@ -5,41 +5,47 @@
 // Progress spinner
 //-----------------------------------------------------------
 
-[aria-busy=true] {
-    cursor: progress
+[aria-busy="true"] {
+  cursor: progress;
 }
 
-[aria-busy=true]:not(input,select,textarea,html)::before {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border: .1875em solid $grey-ui-text-color;
-    border-radius: 1em;
-    border-right-color: transparent;
-    content: "";
-    vertical-align: text-bottom;
-    vertical-align: -.125em;
-    animation: spinner .75s linear infinite;
-    opacity: .5;
+[aria-busy="true"]:not(input, select, textarea, html)::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.1875em solid $grey-ui-text-color;
+  border-radius: 1em;
+  border-right-color: transparent;
+  content: "";
+  vertical-align: text-bottom;
+  vertical-align: -0.125em;
+  animation: spinner 0.75s linear infinite;
+  opacity: 0.5;
 }
 
-[aria-busy=true]:not(input,select,textarea,html):not(:empty)::before {
-    margin-right: calc(1em * .5);
-    margin-left: 0;
-    -webkit-margin-start: 0;
-    margin-inline-start:0;-webkit-margin-end: calc(1em * .5);
-    margin-inline-end:calc(1em * .5)}
-
-[aria-busy=true]:not(input,select,textarea,html):empty {
-    text-align:center
+[aria-busy="true"]:not(input, select, textarea, html):not(:empty)::before {
+  margin-right: calc(1em * 0.5);
+  margin-left: 0;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: calc(1em * 0.5);
+  margin-inline-end: calc(1em * 0.5);
 }
 
-a[aria-busy=true],button[aria-busy=true],input[type=button][aria-busy=true],input[type=reset][aria-busy=true],input[type=submit][aria-busy=true] {
-    pointer-events: none
+[aria-busy="true"]:not(input, select, textarea, html):empty {
+  text-align: center;
+}
+
+a[aria-busy="true"],
+button[aria-busy="true"],
+input[type="button"][aria-busy="true"],
+input[type="reset"][aria-busy="true"],
+input[type="submit"][aria-busy="true"] {
+  pointer-events: none;
 }
 
 @keyframes spinner {
-    to {
-        transform: rotate(360deg)
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -239,3 +239,42 @@ padding-top:5px;
 .crooked-section{
   clip-path: polygon(0 0, 100% 0, 100% 9%, 0 0);
 }
+
+
+/* Add your class or selector here */
+.zen .img-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  /* Adding animation */
+  animation: subtleZoom 10s infinite alternate;
+}
+
+/* Keyframes for the animation */
+@keyframes subtleZoom {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05); /* Slightly enlarges the image */
+  }
+}
+.logo-bar-logo {
+  filter: invert(33%) sepia(6%) saturate(3%) hue-rotate(321deg) brightness(88%) contrast(80%);
+}
+
+.accordion .title{
+  display: inline-block !important;
+}
+
+.title.accordion-toggle.accordion-workaround{
+  display: block !important;
+}
+

@@ -23,12 +23,12 @@ module.exports = {
       '/modules/spin.js',
       '/modules/poll.js',
       '/optional/cookie-consent.js',
-      '/modules/test-mode.js'
+      '/modules/test-mode.js'  
     ]
   },
   output: {
     filename: 'zencss.js',
     path: path.resolve(__dirname, '../js'),
   },
-  mode: 'development', // Use 'development' for non-minified output
+  mode: 'development', // Use 'development' for non-minified outp ut
 };

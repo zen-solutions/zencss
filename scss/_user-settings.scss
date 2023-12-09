@@ -1,34 +1,39 @@
-
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
-  // Main configuration file for zenCSS
-  // ✓ = ok to override
- //  ✕ = do not override/modify
+// Main configuration file for zenCSS
+// ✓ = ok to override
+//  ✕ = do not override/modify
 
-//--------------------------------------------- 
-//  ✕ Initialization - Don't touch these 2 lines 
-//--------------------------------------------- 
-@import 'core/color-contrast-checker';  
-$error-color: #d33331; // used for system not for UI
-  
+//---------------------------------------------
+//  ✕ Initialization - Don't touch these 2 lines
+//---------------------------------------------
+@import "core/color-contrast-checker";
+$error-color: #d33331; // used for color system not for UI -prolly wont be needed much longer
 
-//------------------------------------------ 
-//  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
-//------------------------------------------ 
+//------------------------------------------
+//  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+//------------------------------------------
 
 $primary-color: #044384;
-$secondary-color:#426b2f;
-$accent-color: #dabf3c;
-$cta-color : #1b66bb; 
+//$primary-color: #044384;  
+$secondary-color: #426b2f;
+$accent-color: #ffc107;
+$cta-color: #2876ce; // this hex passes w light and dark text. just fyi. 
+
+// new - bg colors for light and dark mode themes/buttons etc. 
+$dark-mode-color: rgba(25, 25, 25, 0.84);
+$light-mode-color: rgba(255, 255, 255, 0.2);
+// $NICEREDCOLOR: NO USE JUST SAVING-color: rgba(191, 44, 44, 0.84);
 
 
-//------------------------------------------ 
-//  ✓ Generic Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
-//------------------------------------------ 
+
+//------------------------------------------
+//  ✓ Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+//------------------------------------------
 
 $red: #c22a27;
 $orange: #ef7b02;
@@ -37,84 +42,96 @@ $green: #599d03;
 $blue: #1252a9;
 $purple: #6d45dc;
 
-//------------------------------------------ 
-//  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly 
-//------------------------------------------ 
 
-$grey-1: #F7F7F7;
+//------------------------------------------
+//  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+// BUG - these are overwritten in bg color i think
+//------------------------------------------
+
+$grey-1: #f7f7f7;
 $grey-2: #c7c6c6;
-$grey-3: #A6A6A6;
+$grey-3: #a6a6a6;
 $grey-4: #616161;
 $grey-5: #404040;
-$grey-6: #0D0D0D;
+$grey-6: #0d0d0d;
 
 
-//------------------------------------------ 
+
+
+// - todo: we could add a "color-overrides.scss" file that they could use to override the colors. it could have the vars w no values filled in. 
+// or we could just create a folder, user overrides, and put the color-overrides above in there, then iinclude that file here. that would be smoother. 
+// then do that down the page for the other overrides, and they have one place to go.
+// we need to keep OUR values here tho, bc for upgrades, then they can just copy their new overrides files into the system and they're good to go.
+
+
+//------------------------------------------
 // ✓ Light and Dark Color Variables for zenCSS color system
 // Override as needed for desired darkness and lightness for your theme/universal color background color variations
 // TODO - make a new user settings folder, chop this up with all the stuff they can override, and rename this file as its now more like autoformatting vs user settings
-//------------------------------------------ 
+//------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color, 10%); 
-$secondary-color-dark: darken($secondary-color, 10%); 
-$accent-color-dark: darken($accent-color,8%); 
-$cta-color-dark: darken($cta-color, 10%); 
+$primary-color-dark: darken($primary-color, 10%);
+$secondary-color-dark: darken($secondary-color, 10%);
+$accent-color-dark: darken($accent-color, 10%);
+$cta-color-dark: darken($cta-color, 10%);
 
 //brand palette light
-$primary-color-light: lighten($primary-color, 10%); 
-$secondary-color-light: lighten($secondary-color, 10%); 
-$accent-color-light: lighten($accent-color, 10%); 
-$cta-color-light: lighten($cta-color, 10%); 
+$primary-color-light: lighten($primary-color, 10%);
+$secondary-color-light: lighten($secondary-color, 10%);
+$accent-color-light: lighten($accent-color, 10%);
+$cta-color-light: lighten($cta-color, 10%);
 
 // Generic palette dark
-$red-dark: darken($red, 10%); 
-$orange-dark: darken($orange, 6%); 
-$yellow-dark: darken($yellow, 4%); 
-$green-dark: darken($green, 5%); 
-$blue-dark: darken($blue, 10%); 
-$purple-dark: darken($purple, 10%); 
+$red-dark: darken($red, 10%);
+$orange-dark: darken($orange, 6%);
+$yellow-dark: darken($yellow, 4%);
+$green-dark: darken($green, 5%);
+$blue-dark: darken($blue, 10%);
+$purple-dark: darken($purple, 10%);
 
 // Generic palette light
-$red-light: lighten($red, 5%); 
-$orange-light: lighten($orange, 10%); 
-$yellow-light: lighten($yellow, 5%); 
-$green-light: lighten($green, 6%); 
-$blue-light: lighten($blue, 10%); 
-$purple-light: lighten($purple, 5%); 
+$red-light: lighten($red, 5%);
+$orange-light: lighten($orange, 10%);
+$yellow-light: lighten($yellow, 5%);
+$green-light: lighten($green, 6%);
+$blue-light: lighten($blue, 10%);
+$purple-light: lighten($purple, 5%);
 
 // Grey palette dark
-$grey-1-dark: darken($grey-1, 10%); 
-$grey-2-dark: darken($grey-2, 6%); 
-$grey-3-dark: darken($grey-3, 4%); 
-$grey-4-dark: darken($grey-4, 5%); 
-$grey-5-dark: darken($grey-5, 10%); 
-$grey-6-dark: darken($grey-6, 10%); 
+$grey-1-dark: darken($grey-1, 10%);
+$grey-2-dark: darken($grey-2, 6%);
+$grey-3-dark: darken($grey-3, 4%);
+$grey-4-dark: darken($grey-4, 5%);
+$grey-5-dark: darken($grey-5, 10%);
+$grey-6-dark: darken($grey-6, 10%);
 
 // Grey palette light
-$grey-1-light: lighten($grey-1, 10%); 
-$grey-2-light: lighten($grey-2, 6%); 
-$grey-3-light: lighten($grey-3, 4%); 
-$grey-4-light: lighten($grey-4, 5%); 
-$grey-5-light: lighten($grey-5, 10%); 
-$grey-6-light: lighten($grey-6, 10%); 
+$grey-1-light: lighten($grey-1, 10%);
+$grey-2-light: lighten($grey-2, 6%);
+$grey-3-light: lighten($grey-3, 4%);
+$grey-4-light: lighten($grey-4, 5%);
+$grey-5-light: lighten($grey-5, 10%);
+$grey-6-light: lighten($grey-6, 10%);
 
-
-//------------------------------------------------------------------------------ 
-//------------------------------------------------------------------------------ 
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 //  ✕ zenCSS Color Map System - Auto-WCAG Compliant color map generator
 //  ✕ do not modify
-//------------------------------------------------------------------------------ 
-//------------------------------------------------------------------------------ 
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
-// Default font colors for smart-color system - obsolete once WCAG functionality is in place and fully tested
+// Default font colors for smart-color system - likely obsolete once WCAG functionality is in place and fully tested
 
-$var-white-text:white;
+$var-white-text: white;
 $var-black-text: black;
 
-//Smart Color Maps - Text color is figured automatically based on your input color and adherance to 4.5/1 color contrast minimum 
+//Smart Color Maps - Text color is figured automatically based on your input color and adherance to 4.5/1 color contrast minimum
+// the smart-text-color() function includes the wcag-compliant font color for that particular background color
 $text-default-colors: (
   "primary": smart-text-color($primary-color),
+  "dark": smart-text-color($dark-mode-color),
+  "light": smart-text-color($light-mode-color),
   "secondary": smart-text-color($secondary-color),
   "accent": smart-text-color($accent-color),
   "cta": smart-text-color($cta-color),
@@ -131,6 +148,141 @@ $text-default-colors: (
   "grey-5": smart-text-color($grey-5),
   "grey-6": smart-text-color($grey-6),
 );
+
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//  ✕ zenCSS Gradient Map System - Auto-WCAG Compliant gradient class generator
+//  ✕ do not modify
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+//-----------------
+// Mixin for creating the gradient background
+
+// Purpose: We check if the gradient should be made with the light or dark + base color,
+// depending on which ones match for the same wcag-compliant text color.
+// Pretty schnazzy huh? 
+//-----------------
+
+@mixin gradient-background($color, $color-dark, $color-light) {
+
+  $text-color: smart-text-color($color);
+
+  $gradient-end-color: if($text-color == black, $color-light, $color-dark);
+
+  background: linear-gradient(to bottom, $color, $gradient-end-color) !important;
+
+  color: $text-color !important;
+}
+
+// Applying the mixin to each gradient class
+.bg-primary-gradient {
+  @include gradient-background($primary-color, $primary-color-dark, $primary-color-light);
+}
+
+.bg-secondary-gradient {
+  @include gradient-background($secondary-color, $secondary-color-dark, $secondary-color-light);
+}
+
+.bg-cta-gradient {
+  @include gradient-background($cta-color, $cta-color-dark, $cta-color-light);
+}
+
+.bg-accent-gradient {
+  @include gradient-background($accent-color, $accent-color-dark, $accent-color-light);
+}
+
+.bg-red-gradient {
+  @include gradient-background($red, $red-dark, $red-light);
+}
+
+.bg-orange-gradient {
+  @include gradient-background($orange, $orange-dark, $orange-light);
+}
+
+.bg-yellow-gradient {
+  @include gradient-background($yellow, $yellow-dark, $yellow-light);
+}
+
+.bg-green-gradient {
+  @include gradient-background($green, $green-dark, $green-light);
+}
+
+.bg-blue-gradient {
+  @include gradient-background($blue, $blue-dark, $blue-light);
+}
+
+.bg-purple-gradient {
+  @include gradient-background($purple, $purple-dark, $purple-light);
+}
+
+
+// old way can delete once sure above is stable
+// .bg-primary-gradient {
+//   background: linear-gradient(
+//     to bottom,
+//     $primary-color,
+//     $primary-color-dark
+//   ) !important;
+//   color: smart-text-color($primary-color) !important;
+// }
+
+// .bg-secondary-gradient {
+//   background: linear-gradient(
+//     to bottom,
+//     $secondary-color,
+//     $secondary-color-dark
+//   ) !important;
+//   color: smart-text-color($secondary-color) !important;
+// }
+
+// .bg-cta-gradient {
+//   background: linear-gradient(
+//     to bottom,
+//     $cta-color,
+//     $cta-color-dark
+//   ) !important;
+//   color: smart-text-color($cta-color) !important;
+// }
+
+// .bg-accent-gradient {
+//   background: linear-gradient(
+//     to bottom,
+//     $accent-color,
+//     $accent-color-dark
+//   ) !important;
+//   color: smart-text-color($accent-color) !important;
+// }
+
+// .bg-red-gradient {
+//   background: linear-gradient(to bottom, $red, $red-dark) !important;
+//   color: smart-text-color($red) !important;
+// }
+
+// .bg-orange-gradient {
+//   background: linear-gradient(to bottom, $orange, $orange-dark) !important;
+//   color: smart-text-color($orange) !important;
+// }
+
+// .bg-yellow-gradient {
+//   background: linear-gradient(to bottom, $yellow, $yellow-dark) !important;
+//   color: smart-text-color($yellow) !important;
+// }
+
+// .bg-green-gradient {
+//   background: linear-gradient(to bottom, $green, $green-dark) !important;
+//   color: smart-text-color($green) !important;
+// }
+
+// .bg-blue-gradient {
+//   background: linear-gradient(to bottom, $blue, $blue-dark) !important;
+//   color: smart-text-color($blue) !important;
+// }
+
+// .bg-purple-gradient {
+//   background: linear-gradient(to bottom, $purple, $purple-dark) !important;
+//   color: smart-text-color($purple) !important;
+// }
 
 // Dark Text Colors
 $text-dark-colors: (
@@ -172,22 +324,21 @@ $text-light-colors: (
   "grey-6-light": smart-text-color($grey-6-light),
 );
 
+//end ✕ - color system maps
 
-
-//end color system maps
-
-//------------------------------------------ 
-// ✓ Global Vars 
-//------------------------------------------ 
+//------------------------------------------
+// ✓ Global Vars/misc
+//------------------------------------------
 
 //soften white and black for light/dark mode global font colors
 $text-white: #eee;
 $text-black: #070707;
 
 //header config
-$light-color: #f4f4f4;
+//$light-color: #f4f4f4;
+$light-color: white; // changed to white for wcag compliance needs
 $dark-color: #424242;
-$nav-link-color: $light-color;
+$nav-link-color: $text-white;
 
 $grey: #eee;
 $dark-grey: #666;
@@ -196,54 +347,60 @@ $bg-default: $dark-color;
 $text-default: $light-color;
 $ui-button-size: 44px;
 
-.light-color{
-  color:$light-color;
+.light-color {
+  color: $light-color;
 }
 
-//------------------------------------------ 
+//------------------------------------------
 // ✓ Rounded corners
-//------------------------------------------ 
+//------------------------------------------
 
 $border-radius: 4px; //on
 //$border-radius: 0; //off
 
-
-//------------------------------------------ 
+//------------------------------------------
 // ✓ Dual Mode UI Styling Classes
-//------------------------------------------ 
+//------------------------------------------
 
-$light-ui-hover-color:rgba(169, 169, 169, 0.16);
-$border-color: hsla(0, 0%, 69%, 0.3); 
-$dual-mode-bg-color:rgba(79, 78, 78, 0.03);
-
+$light-ui-hover-color: rgba(169, 169, 169, 0.16);
+$border-color: hsla(0, 0%, 69%, 0.3);
+$dual-mode-bg-color: rgba(79, 78, 78, 0.03);
 
 //default UI
-$bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc. 
+$bg-ui-hover: hsla(
+  0,
+  0%,
+  93%,
+  0.3
+); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
-
-//------------------------------------------ 
-// ✓ Default Spacing - wip
-//------------------------------------------ 
+//------------------------------------------
+// ✓ Default Spacing 
+//------------------------------------------
 
 $page-section-padding-top: 50px;
 $page-section-padding-bottom: 50px;
 
+//------------------------------------------
+// ✓ set master padding and margin for columns - Likely being depricated
+//------------------------------------------
 
-//------------------------------------------ 
-// ✓ set master padding and margin for columns
-//------------------------------------------ 
+$col-padding: 0.8em;
+$col-margin: 0.8em;
 
-$col-padding: .8em; 
-$col-margin: .8em;
-
-
-//------------------------------------------ 
+//------------------------------------------
 // ✓ Below is experimental
-//------------------------------------------ 
+//------------------------------------------
 
 $bg-header-footer: #212121;
 $container-margin: 2em;
-$shadow-color:rgba(0,0,0,0.2);
-$line-height: 1.8rem;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$line-height: 1.65rem; // base
 $nav-color: #303030;
+
+//warning colors - WIP/NEW/Not functioning correctly yet
+
+// red - working to find a red that works for both light and dark + on themes
+$text-warning: #FF0000;
+

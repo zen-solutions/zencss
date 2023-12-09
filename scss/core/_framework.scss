@@ -3,12 +3,13 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 //--------------------------------
 // z-container
 //--------------------------------
 
-z-container, .z-container {
+z-container,
+.z-container {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
@@ -19,8 +20,8 @@ z-container, .z-container {
   flex-grow: 1;
 }
 
-
-z-container-fluid, .z-container-fluid {
+z-container-fluid,
+.z-container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -30,22 +31,22 @@ z-container-fluid, .z-container-fluid {
   border-radius: 0 !important;
 }
 
-
 //--------------------------------
 // z-row
 //--------------------------------
 
-z-row, .z-row {
+z-row,
+.z-row {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-width:100%;
-flex-wrap: wrap; //nowrap is interesting too
-gap: 1em;
-padding-top: .5em; // removed via js when nesting logic applied
-padding-bottom: .5em;// removed via js when nesting logic applied
-flex-grow: 1; 
-border-radius: $border-radius;
+  width: 100%;
+  flex-wrap: wrap; //nowrap is interesting too
+  gap: 1em;
+  padding-top: 0.5em; // removed via js when nesting logic applied
+  padding-bottom: 0.5em; // removed via js when nesting logic applied
+  flex-grow: 1;
+  border-radius: $border-radius;
 }
 
 .z-row-vcenter {
@@ -56,24 +57,26 @@ border-radius: $border-radius;
   justify-content: center;
 }
 
-z-row > *, .z-row > * {
+z-row > *,
+.z-row > * {
   flex: 1;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-
 //--------------------------------
 // z-col
 //--------------------------------
 
-z-col, .z-col {
+z-col,
+.z-col {
   flex-basis: calc(25% - 20px) !important;
   flex: 1;
   // display: flex;
   // justify-content: flex-start;
   // flex-direction: column;
   // align-self: stretch;
+  width: 100%; // we're back here again
 
   padding: $col-padding;
   margin: 0;
@@ -83,12 +86,14 @@ z-col, .z-col {
 // child selector stuff - dirty business
 //--------------------------------
 
-.z-col > *, z-col > * {
+.z-col > *,
+z-col > * {
   max-width: 100%;
-  width:100%; // dont remove 
+  width: 100%; // dont remove
 }
 
-.z-col > span, z-col > span {
+.z-col > span,
+z-col > span {
   display: inline;
 }
 
@@ -98,7 +103,8 @@ z-col, .z-col {
 //   margin-bottom:0;
 // }
 
-z-col :has(z-row), .z-col :has(.z-row) {
+z-col :has(z-row),
+.z-col :has(.z-row) {
   margin-left: 0;
   margin-right: 0;
 }

@@ -3,20 +3,26 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
+//------------------------------------------------
+// Stuff that should prolly be lower on the page
+//------------------------------------------------
+
 /* Variables */
 $btn-color: $cta-color;
 $btn-hover-color: darken($cta-color, 20%);
 
-
 /* Mixin for hover styles */
 @mixin btn-hover($bg-color, $border-color: $bg-color) {
   &:hover {
-    background-color: $bg-color;  }
+    background-color: $bg-color;
+  }
 }
 
 /* Button Styles */
-.btn, .btn-ghost, .btn-invert {
+.btn,
+.btn-ghost,
+.btn-invert {
   @include btn-hover($btn-hover-color);
 }
 
@@ -28,111 +34,49 @@ $btn-hover-color: darken($cta-color, 20%);
 
 //css stuff
 .btn {
+  // this should already be in scaffold. dupe attributes or why needed? 
   background-color: $btn-color;
   display: inline-flex !important;
   position: relative;
-  z-index: 1;
-}
-
-button.btn-ghost-light {
-  color: $light-color;
-  border: 2px solid $light-color;
-  padding: 0.65em;
-  background:none;
-}
-
-button.btn-ghost-light:hover {
-  color: darken($btn-color, 10%);
-  border: 2px solid darken($btn-color, 10%);
-  background:darken($light-color, 4%);
-}
-
-button.btn-ghost-dark {
-  color: $dark-color;
-  border: 2px solid $primary-color;
-  padding: 0.65em;
-}
-
-button.btn-ghost-dark:hover {
-  color: lighten($light-color, 10%);
-  border: 2px solid darken($dark-color, 10%);
-  background:darken($dark-color, 4%);
-  opacity: .5;
-}
-
-
-button.btn-ghost {
-  color: #d8d8d8;
-  border: 2px solid  #d8d8d8;
-  padding: 0.65em;
-  background:none;
-}
-
-button.btn-ghost:hover {
-  border: 2px solid darken($primary-color, 1%);
-  background: none;
-}
-
-.btn-invert {
-  background-color: $btn-color;
 }
 
 .label {
   border-radius: $border-radius;
-  padding: 0.3em 1em .3em 1em;
-  overflow: hidden; 
-  display: inline; 
-  background: lighten($dark-color, 10%);
-  color: $light-color;
+  padding: 0.3em 1em 0.3em 1em;
+  overflow: hidden;
+  display: inline;
+  background: lighten($dark-color, 10%); // why
+  color: $light-color; // make smart
   position: relative;
   font-size: 11px;
   line-height: 9px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-  bottom:-1px;
+  bottom: -1px;
   width: auto;
 }
 
 .eyebrow {
-  overflow: hidden; 
-  display: inline-block; 
+  overflow: hidden;
+  display: inline-block;
   line-height: 10px;
   position: relative;
-  color: $primary-color;
+  color: $primary-color; // make smart
   font-size: 11px;
   font-weight: 700;
- @include font-spacing;
+  @include font-spacing;
 }
 
-// .eyebrow-2 {
-//   overflow: hidden; 
-//   display: inline-block; 
-//   line-height: 10px;
-//   position: relative;
-//   padding: 0.3em 1em;
-//   font-size: .8rem;
-// }
-
-
-// .eyebrow-2::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   bottom: -1px; 
-//   border-bottom: 2px solid $accent-color;
-// }
-
-.label-circle{
+.label-circle {
   border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.label-wrapper{
+.label-wrapper {
   position: absolute;
   margin-top: -18px;
   margin-left: -18px;
@@ -142,10 +86,143 @@ button.btn-ghost:hover {
   overflow: hidden;
 }
 
+//------------------------------------------------------------
+// Button Definitions
+//------------------------------------------------------------
+
+.btn-primary {
+  background: $primary-color !important;
+  color: smart-text-color($primary-color) !important;
+  @include hover-darken($primary-color);
+}
+
+.btn-secondary {
+  background: $secondary-color !important;
+  color: smart-text-color($secondary-color) !important;
+  @include hover-darken($secondary-color);
+}
+
+.btn-dark {
+  background: $dark-color !important;
+  color: smart-text-color($dark-color) !important; //not defined technically
+  @include hover-darken($dark-color);
+}
+
+.btn-light {
+  background: $light-color !important;
+  color: smart-text-color($light-color) !important;
+  @include hover-darken($light-color);
+}
+
+.btn-cta {
+  background: $cta-color !important;
+  color: smart-text-color($cta-color) !important;
+  @include hover-darken($cta-color);
+}
+
+.btn-accent {
+  background: $accent-color !important;
+  color: smart-text-color($accent-color) !important;
+  @include hover-darken($accent-color);
+}
+
+
+//------------------------------------------------------------
+// Ghost Button Definitions - NEW*
+// to do, turn this into scss when done w logic and tested
+//------------------------------------------------------------
+
+// Define a mixin for button outlines
+@mixin outline-button($color, $bg-color: white) {
+  border: 2px solid $color !important;
+  background: none;
+  color: $color !important;
+  @include hover-outline($color, smart-text-color($color));
+}
+
+// Define your button colors
+$btn-primary-color: $primary-color;
+$btn-secondary-color: $secondary-color;
+$btn-cta-color: $cta-color;
+$btn-accent-color: $accent-color;
+$btn-light-color: white;
+$btn-dark-color: $dark-mode-color;
+
+// Define your button styles
+.btn-primary-outline {
+  @include outline-button($btn-primary-color);
+}
+
+.btn-secondary-outline {
+  @include outline-button($btn-secondary-color);
+}
+
+.btn-cta-outline {
+  @include outline-button($btn-cta-color);
+}
+
+.btn-accent-outline {
+  @include outline-button($btn-accent-color);
+}
+
+.btn-light-outline {
+  @include outline-button($btn-light-color, $light-mode-color);
+}
+
+.btn-dark-outline {
+  @include outline-button($btn-dark-color);
+}
+
+
+
+// .btn-primary-outline {
+//   border: 2px solid $primary-color !important;
+//   background: none;
+//   color: $primary-color !important;
+//   @include hover-outline ($primary-color, smart-text-color($primary-color)); // pass it the bg color and text color we want to use
+// }
+
+// .btn-secondary-outline {
+//   border: 2px solid $secondary-color !important;
+//   background: none;
+//   color: $secondary-color !important;
+//   @include hover-outline ($secondary-color, smart-text-color($secondary-color)); 
+// }
+
+// .btn-cta-outline {
+//   border: 2px solid $cta-color !important;
+//   background: none;
+//   color: $cta-color !important;
+//   @include hover-outline ($cta-color, smart-text-color($cta-color)); 
+// }
+
+// .btn-accent-outline {
+//   border: 2px solid $accent-color !important;
+//   background: none;
+//   color: $accent-color !important;
+//   @include hover-outline ($accent-color, smart-text-color($accent-color)); 
+// }
+
+// .btn-light-outline {
+// //  border: 2px solid $light-mode-color !important;
+// border: 2px solid white !important;
+// background: none;
+//   color: white !important;
+//   @include hover-outline (white, smart-text-color($light-mode-color)); 
+// }
+
+
+// .btn-dark-outline {
+//   border: 2px solid $dark-mode-color !important;
+//   background: none;
+//   color: $dark-mode-color  !important;
+//   @include hover-outline ($dark-mode-color, smart-text-color($dark-mode-color)); 
+// }
+
+
 //------------------------------------------------
 // Button sizes
 //------------------------------------------------
-
 
 .btn-xl {
   min-width: 200px;
@@ -160,61 +237,24 @@ button.btn-ghost:hover {
 .btn-md {
   min-width: 120px;
   max-width: 120px;
-
 }
 
 .btn-sm {
   min-width: 75px;
   max-width: 75px;
-  padding: .3em;
+  padding: 0.3em;
   font-size: 12px;
 }
 
 
-.btn-primary{
-  background: $primary-color !important;
-  color: $text-white !important;
-  @include hover-darken($primary-color);
-}
-
-.btn-secondary{
-  background: $secondary-color !important;
-  color: $text-white !important;
-  @include hover-darken($secondary-color);
-}
-
-.btn-dark{
-  background: $dark-color !important;
-  color: $text-white !important;
-  @include hover-darken($dark-color);
-}
-
-.btn-light{
-  background: $light-color !important;
-  color: $text-black !important;
-  @include hover-darken($light-color);
-}
-
-.btn-cta{
-  background: $cta-color !important;
-  color: $text-white !important;
-  @include hover-darken($cta-color);
-}
-
-.btn-accent{
-  background: $accent-color !important;
-  color: $text-black !important;
-  @include hover-darken($accent-color);
-}
-
 //for poll. misc placement
-#result-types{
-  display:none;
+#result-types {
+  display: none;
 }
 
-//------------------------------------------ 
+//------------------------------------------
 // New button styles to test
-//------------------------------------------ 
+//------------------------------------------
 
 // SCSS Variables for colors
 $bg-primary: $primary-color; // Example primary color
@@ -224,14 +264,13 @@ $text-cta: $cta-color;
 .btn-fill {
   @extend %button-basic;
   background-color: transparent;
-  border: 2px solid  lighten($bg-header-footer, 25%);
+  border: 2px solid lighten($bg-header-footer, 25%);
   color: lighten($bg-header-footer, 20%);
   padding: 11px;
 
   &:hover {
     background: lighten($dark-color, 10%);
-    border: 2px solid  lighten($dark-color, 10%);
-
+    border: 2px solid lighten($dark-color, 10%);
   }
 }
 
@@ -240,24 +279,23 @@ $text-cta: $cta-color;
 //----------------------------
 
 // Define theme color variables for bg and text - use for buttons and reuse for stuff
-$theme-primary-bg: $cta-color; 
-$theme-primary-text: $light-color; 
+$theme-primary-bg: $cta-color;
+$theme-primary-text: $light-color;
 
-$theme-secondary-bg: $accent-color; 
-$theme-secondary-text: $dark-color; 
+$theme-secondary-bg: $accent-color;
+$theme-secondary-text: $dark-color;
 
-$theme-cta-bg: $primary-color; 
-$theme-cta-text: $light-color; 
+$theme-cta-bg: $primary-color;
+$theme-cta-text: $light-color;
 
-$theme-accent-bg: $secondary-color; 
-$theme-accent-text: $light-color; 
+$theme-accent-bg: $secondary-color;
+$theme-accent-text: $light-color;
 
-$theme-dark-bg: $light-color; 
-$theme-dark-text:$dark-color ; 
+$theme-dark-bg: $light-color;
+$theme-dark-text: $dark-color;
 
-$theme-light-bg: $dark-color; 
-$theme-light-text: $light-color; 
-
+$theme-light-bg: $dark-color;
+$theme-light-text: $light-color;
 
 // Define a mixin for theme button styles
 @mixin theme-button-styles($bg-color, $text-color) {
@@ -265,7 +303,7 @@ $theme-light-text: $light-color;
   border: 2px solid $bg-color;
   color: $bg-color; // Text color matches border
   //font-size: .9rem;
-  padding:0.85em;
+  padding: 0.85em;
 
   &:hover {
     background-color: $bg-color;
@@ -276,23 +314,28 @@ $theme-light-text: $light-color;
 // Extend .btn-fill with theme styles
 .btn-fill {
   @extend %button-basic;
-  
+
   // Apply theme styles
   &.theme-primary {
     @include theme-button-styles($theme-primary-bg, $theme-primary-text);
   }
+
   &.theme-secondary {
     @include theme-button-styles($theme-secondary-bg, $theme-secondary-text);
   }
+
   &.theme-accent {
     @include theme-button-styles($theme-accent-bg, $theme-accent-text);
   }
+
   &.theme-dark {
     @include theme-button-styles($theme-dark-bg, $theme-dark-text);
   }
+
   &.theme-light {
     @include theme-button-styles($theme-light-bg, $theme-light-text);
   }
+
   &.theme-cta {
     @include theme-button-styles($theme-cta-bg, $theme-cta-text);
   }

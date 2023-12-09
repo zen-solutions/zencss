@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
                    <z-container class="narrow-left-sm">
                         <z-row>
                             <z-col class="small">
-                                <a href="../examples/toggle.html">Accordian</a>
+                                <a href="../examples/accordian.html">Accordian</a>
                                 <a href="../examples/alerts.html">Alert Messages</a>
                                 <a href="../examples/buttons.html">Buttons</a>
                                 <a href="../examples/breadcrumb.html">Breadcrumbs</a>

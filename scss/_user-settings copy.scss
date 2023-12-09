@@ -1,4 +1,3 @@
-
 @function luminance($color) {
   $r: red($color) / 255;
   $g: green($color) / 255;
@@ -37,10 +36,10 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-//------------------------------------------ 
+
+//------------------------------------------
 //baseline
-//------------------------------------------ 
+//------------------------------------------
 
 //soften white and black for general site font colors
 $text-white: #eee;
@@ -51,20 +50,18 @@ $light-color: #f4f4f4;
 $dark-color: #424242;
 $nav-link-color: $light-color;
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Brand Color Palette - If adjusting, we recommend a one time WCAG fine-tuning to ensure accessable color compliance with your brand palette
-//------------------------------------------ 
+//------------------------------------------
 
 $primary-color: #044384;
-$secondary-color:#426b2f;
+$secondary-color: #426b2f;
 $accent-color: #dbc65d;
-$cta-color : #1b66bb; 
+$cta-color: #1b66bb;
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Generic Color Palette  - If adjusting, we recommend a one time WCAG fine-tuning to ensure accessable color compliance with your brand palette
-//------------------------------------------ 
+//------------------------------------------
 
 $red: #c22a27;
 $orange: #ef7b02;
@@ -73,49 +70,47 @@ $green: #599d03;
 $blue: #1252a9;
 $purple: #6d45dc;
 
-//------------------------------------------ 
+//------------------------------------------
 // Background Color Maps for zenCSS color system
 // individually labeled - override as needed for WCAG compliance
-//------------------------------------------ 
+//------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color, 10%); 
-$secondary-color-dark: darken($secondary-color, 10%); 
-$accent-color-dark: darken($accent-color,8%); 
-$cta-color-dark: darken($cta-color, 10%); 
+$primary-color-dark: darken($primary-color, 10%);
+$secondary-color-dark: darken($secondary-color, 10%);
+$accent-color-dark: darken($accent-color, 8%);
+$cta-color-dark: darken($cta-color, 10%);
 
 //brand palette light
-$primary-color-light: lighten($primary-color, 5%); 
-$secondary-color-light: lighten($secondary-color, 4%); 
-$accent-color-light: lighten($accent-color, 10%); 
-$cta-color-light: lighten($cta-color, 4%); 
+$primary-color-light: lighten($primary-color, 5%);
+$secondary-color-light: lighten($secondary-color, 4%);
+$accent-color-light: lighten($accent-color, 10%);
+$cta-color-light: lighten($cta-color, 4%);
 
 // Generic palette dark
-$red-dark: darken($red, 10%); 
-$orange-dark: darken($orange, 6%); 
-$yellow-dark: darken($yellow, 4%); 
-$green-dark: darken($green, 5%); 
-$blue-dark: darken($blue, 10%); 
-$purple-dark: darken($purple, 10%); 
+$red-dark: darken($red, 10%);
+$orange-dark: darken($orange, 6%);
+$yellow-dark: darken($yellow, 4%);
+$green-dark: darken($green, 5%);
+$blue-dark: darken($blue, 10%);
+$purple-dark: darken($purple, 10%);
 
 // Generic palette light
-$red-light: lighten($red, 5%); 
-$orange-light: lighten($orange, 10%); 
-$yellow-light: lighten($yellow, 5%); 
-$green-light: lighten($green, 6%); 
-$blue-light: lighten($blue, 10%); 
-$purple-light: lighten($purple, 5%); 
+$red-light: lighten($red, 5%);
+$orange-light: lighten($orange, 10%);
+$yellow-light: lighten($yellow, 5%);
+$green-light: lighten($green, 6%);
+$blue-light: lighten($blue, 10%);
+$purple-light: lighten($purple, 5%);
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Font Color Maps for zenCSS color system
 // individually labeled - override as needed for WCAG compliance
-//------------------------------------------ 
+//------------------------------------------
 // Default font colors for smart-color system
-$var-white-text:white;
+$var-white-text: white;
 $var-black-text: black;
 
-
 $text-default-colors: (
   "primary": smart-text-color($primary-color),
   "secondary": $var-white-text,
@@ -237,7 +232,107 @@ $text-light-colors: (
   "grey-6-light": $var-white-text,
 );
 
+// Light Text Colors
 
+$text-default-colors: (
+  "primary": smart-text-color($primary-color),
+  "secondary": $var-white-text,
+  "accent": $var-black-text,
+  "cta": $var-white-text,
+  "red": $var-white-text,
+  "orange": $var-black-text,
+  "yellow": $var-black-text,
+  "green": $var-black-text,
+  "blue": $var-white-text,
+  "purple": $var-white-text,
+  "grey-1": $var-black-text,
+  "grey-2": $var-black-text,
+  "grey-3": $var-black-text,
+  "grey-4": $var-white-text,
+  "grey-5": $var-white-text,
+  "grey-6": $var-white-text,
+);
+
+// Dark Text Colors
+$text-dark-colors: (
+  "primary-dark": $var-white-text,
+  "secondary-dark": $var-white-text,
+  "accent-dark": $var-black-text,
+  "cta-dark": $var-white-text,
+  "red-dark": $var-white-text,
+  "orange-dark": $var-black-text,
+  "yellow-dark": $var-black-text,
+  "green-dark": $var-black-text,
+  "blue-dark": $var-white-text,
+  "purple-dark": $var-white-text,
+  "grey-1-dark": $var-black-text,
+  "grey-2-dark": $var-black-text,
+  "grey-3-dark": $var-black-text,
+  "grey-4-dark": $var-white-text,
+  "grey-5-dark": $var-white-text,
+  "grey-6-dark": $var-white-text,
+);
+
+// Light Text Colors
+$text-light-colors: (
+  "primary-light": $var-white-text,
+  "secondary-light": $var-white-text,
+  "accent-light": $var-black-text,
+  "cta-light": $var-white-text,
+  "red-light": $var-white-text,
+  "orange-light": $var-black-text,
+  "yellow-light": $var-black-text,
+  "green-light": $var-black-text,
+  "blue-light": $var-white-text,
+  "purple-light": $var-white-text,
+  "grey-1-light": $var-black-text,
+  "grey-2-light": $var-black-text,
+  "grey-3-light": $var-black-text,
+  "grey-4-light": $var-white-text,
+  "grey-5-light": $var-white-text,
+  "grey-6-light": $var-white-text,
+);
+
+// Dark Text Colors
+
+$text-default-colors: (
+  "primary": smart-text-color($primary-color),
+  "secondary": $var-white-text,
+  "accent": $var-black-text,
+  "cta": $var-white-text,
+  "red": $var-white-text,
+  "orange": $var-black-text,
+  "yellow": $var-black-text,
+  "green": $var-black-text,
+  "blue": $var-white-text,
+  "purple": $var-white-text,
+  "grey-1": $var-black-text,
+  "grey-2": $var-black-text,
+  "grey-3": $var-black-text,
+  "grey-4": $var-white-text,
+  "grey-5": $var-white-text,
+  "grey-6": $var-white-text,
+);
+
+// Dark Text Colors
+$text-dark-colors: (
+  "primary-dark": $var-white-text,
+  "secondary-dark": $var-white-text,
+  "accent-dark": $var-black-text,
+  "cta-dark": $var-white-text,
+  "red-dark": $var-white-text,
+  "orange-dark": $var-black-text,
+  "yellow-dark": $var-black-text,
+  "green-dark": $var-black-text,
+  "blue-dark": $var-white-text,
+  "purple-dark": $var-white-text,
+  "grey-1-dark": $var-black-text,
+  "grey-2-dark": $var-black-text,
+  "grey-3-dark": $var-black-text,
+  "grey-4-dark": $var-white-text,
+  "grey-5-dark": $var-white-text,
+  "grey-6-dark": $var-white-text,
+);
 
 // Light Text Colors
 
@@ -300,49 +395,6 @@ $text-light-colors: (
   "grey-6-light": $var-white-text,
 );
 
-
-
-// Dark Text Colors
-
-$text-default-colors: (
-  "primary": smart-text-color($primary-color),
-  "secondary": $var-white-text,
-  "accent": $var-black-text,
-  "cta": $var-white-text,
-  "red": $var-white-text,
-  "orange": $var-black-text,
-  "yellow": $var-black-text,
-  "green": $var-black-text,
-  "blue": $var-white-text,
-  "purple": $var-white-text,
-  "grey-1": $var-black-text,
-  "grey-2": $var-black-text,
-  "grey-3": $var-black-text,
-  "grey-4": $var-white-text,
-  "grey-5": $var-white-text,
-  "grey-6": $var-white-text,
-);
-
-// Dark Text Colors
-$text-dark-colors: (
-  "primary-dark": $var-white-text,
-  "secondary-dark": $var-white-text,
-  "accent-dark": $var-black-text,
-  "cta-dark": $var-white-text,
-  "red-dark": $var-white-text,
-  "orange-dark": $var-black-text,
-  "yellow-dark": $var-black-text,
-  "green-dark": $var-black-text,
-  "blue-dark": $var-white-text,
-  "purple-dark": $var-white-text,
-  "grey-1-dark": $var-black-text,
-  "grey-2-dark": $var-black-text,
-  "grey-3-dark": $var-black-text,
-  "grey-4-dark": $var-white-text,
-  "grey-5-dark": $var-white-text,
-  "grey-6-dark": $var-white-text,
-);
-
 // Light Text Colors
 
 $text-default-colors: (
@@ -403,76 +455,12 @@ $text-light-colors: (
   "grey-5-light": $var-white-text,
   "grey-6-light": $var-white-text,
 );
-
-
-
-// Light Text Colors
-
-$text-default-colors: (
-  "primary": smart-text-color($primary-color),
-  "secondary": $var-white-text,
-  "accent": $var-black-text,
-  "cta": $var-white-text,
-  "red": $var-white-text,
-  "orange": $var-black-text,
-  "yellow": $var-black-text,
-  "green": $var-black-text,
-  "blue": $var-white-text,
-  "purple": $var-white-text,
-  "grey-1": $var-black-text,
-  "grey-2": $var-black-text,
-  "grey-3": $var-black-text,
-  "grey-4": $var-white-text,
-  "grey-5": $var-white-text,
-  "grey-6": $var-white-text,
-);
-
-// Dark Text Colors
-$text-dark-colors: (
-  "primary-dark": $var-white-text,
-  "secondary-dark": $var-white-text,
-  "accent-dark": $var-black-text,
-  "cta-dark": $var-white-text,
-  "red-dark": $var-white-text,
-  "orange-dark": $var-black-text,
-  "yellow-dark": $var-black-text,
-  "green-dark": $var-black-text,
-  "blue-dark": $var-white-text,
-  "purple-dark": $var-white-text,
-  "grey-1-dark": $var-black-text,
-  "grey-2-dark": $var-black-text,
-  "grey-3-dark": $var-black-text,
-  "grey-4-dark": $var-white-text,
-  "grey-5-dark": $var-white-text,
-  "grey-6-dark": $var-white-text,
-);
-
-// Light Text Colors
-$text-light-colors: (
-  "primary-light": $var-white-text,
-  "secondary-light": $var-white-text,
-  "accent-light": $var-black-text,
-  "cta-light": $var-white-text,
-  "red-light": $var-white-text,
-  "orange-light": $var-black-text,
-  "yellow-light": $var-black-text,
-  "green-light": $var-black-text,
-  "blue-light": $var-white-text,
-  "purple-light": $var-white-text,
-  "grey-1-light": $var-black-text,
-  "grey-2-light": $var-black-text,
-  "grey-3-light": $var-black-text,
-  "grey-4-light": $var-white-text,
-  "grey-5-light": $var-white-text,
-  "grey-6-light": $var-white-text,
-);
-
 
 //end color system maps
 
-//------------------------------------------ 
-// Misc Dark and Light 
-//------------------------------------------ 
+//------------------------------------------
+// Misc Dark and Light
+//------------------------------------------
 
 $grey: #eee;
 $dark-grey: #666;
@@ -481,54 +469,54 @@ $bg-default: $dark-color;
 $text-default: $light-color;
 $ui-button-size: 44px;
 
-.light-color{
-  color:$light-color;
+.light-color {
+  color: $light-color;
 }
 
-//------------------------------------------ 
+//------------------------------------------
 // Rounded corners
-//------------------------------------------ 
+//------------------------------------------
 
 $border-radius: 4px; //on
 //$border-radius: 0; //off
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Dual Mode UI Styling Classes
-//------------------------------------------ 
+//------------------------------------------
 
-$light-ui-hover-color:rgba(169, 169, 169, 0.16);
-$border-color: hsla(0, 0%, 69%, 0.3); 
-$dual-mode-bg-color:rgba(79, 78, 78, 0.03);
-
+$light-ui-hover-color: rgba(169, 169, 169, 0.16);
+$border-color: hsla(0, 0%, 69%, 0.3);
+$dual-mode-bg-color: rgba(79, 78, 78, 0.03);
 
 //default UI
-$bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc. 
+$bg-ui-hover: hsla(
+  0,
+  0%,
+  93%,
+  0.3
+); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Default Spacing - wip
-//------------------------------------------ 
+//------------------------------------------
 
-$page-section-padding-top: .5em;
-$page-section-padding-bottom: .5em;
+$page-section-padding-top: 0.5em;
+$page-section-padding-bottom: 0.5em;
 
-
-//------------------------------------------ 
+//------------------------------------------
 //set master padding and margin for columns
-//------------------------------------------ 
+//------------------------------------------
 
-$col-padding: .8em; 
-$col-margin: .8em;
+$col-padding: 0.8em;
+$col-margin: 0.8em;
 
-
-//------------------------------------------ 
+//------------------------------------------
 // Below is experimental
-//------------------------------------------ 
+//------------------------------------------
 
 $bg-header-footer: #212121;
 $container-margin: 2em;
-$shadow-color:rgba(0,0,0,0.2);
+$shadow-color: rgba(0, 0, 0, 0.2);
 $line-height: 1.8rem;
 $nav-color: #303030;

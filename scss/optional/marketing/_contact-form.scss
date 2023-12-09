@@ -3,13 +3,13 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 // Define Variables
-$form-bg: #F9F9F9;
-$input-bg: #FFF;
+$form-bg: #f9f9f9;
+$input-bg: #fff;
 $input-border: 1px solid $border-color;
-$input-border-hover: 1px solid #AAA;
-$btn-bg-hover: #09C;
+$input-border-hover: 1px solid #aaa;
+$btn-bg-hover: #09c;
 $placeholder-color: #888;
 
 %input-styles {
@@ -23,16 +23,21 @@ $placeholder-color: #888;
 .form-container {
   width: 100%;
   margin: 1em auto;
-  padding: .4em;
+  padding: 0.4em;
 
- h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0;
     padding-top: 0;
   }
 
-  p{
-    margin-top:0;
-    margin-bottom:1em;
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
   }
 }
 

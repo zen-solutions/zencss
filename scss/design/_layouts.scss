@@ -3,39 +3,37 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 //------------------------------
 //fibonacci spiral
 //------------------------------
 
-.col-square{
-    flex: 1 1 auto;   
-  }
-  
-  .leader-container {
-    flex: 0 0 auto; 
-    width: 570px; 
-    height: 570px;
-    display: flex; 
-  }
-  
-  .leader {
-    flex-grow: 1; 
-  }
-  
-  .fib-container{
-    .flex-container {
-  
-      align-items: stretch; 
-  }
-  }
+.col-square {
+  flex: 1 1 auto;
+}
 
-@media  (max-width: 991.98px){
 .leader-container {
-    width: 100%;
-}
+  flex: 0 0 auto;
+  width: 570px;
+  height: 570px;
+  display: flex;
 }
 
+.leader {
+  flex-grow: 1;
+}
+
+.fib-container {
+  .flex-container {
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .leader-container {
+    width: 100%;
+  }
+}
 
 //------------------------------
 //fancy cards
@@ -76,7 +74,7 @@
   bottom: auto;
   right: 0;
   left: auto;
-  width:25%;
+  width: 25%;
   height: 100%;
 }
 

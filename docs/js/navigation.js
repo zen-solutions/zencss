@@ -49,7 +49,7 @@
                     <z-container class="narrow-left-sm">
                         <z-row>
                             <z-col class="small">
-                                <a href="toggle.html">Accordian</a>
+                                <a href="accordian.html">Accordian</a>
                                 <a href="alerts.html">Alert Messages</a>
                                 <a href="buttons.html">Buttons</a>
                                 <a href="breadcrumb.html">Breadcrumbs</a>

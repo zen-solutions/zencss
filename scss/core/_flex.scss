@@ -3,10 +3,14 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 /* Flex Container Classes */
 .flex {
   display: flex;
+}
+
+.flex-bottom{
+  margin-top: auto;
 }
 .flex-inline {
   display: inline-flex;
@@ -124,20 +128,41 @@
 }
 
 /* Order Classes */
-.order-0 { order: 0; }
-.order-1 { order: 1; }
-.order-2 { order: 2; }
-.order-3 { order: 3; }
-.order-4 { order: 4; }
-.order-5 { order: 5; }
-.order-6 { order: 6; }
-.order-7 { order: 7; }
-.order-8 { order: 8; }
-.order-9 { order: 9; }
-.order-10 { order: 10; }
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}
+.order-6 {
+  order: 6;
+}
+.order-7 {
+  order: 7;
+}
+.order-8 {
+  order: 8;
+}
+.order-9 {
+  order: 9;
+}
+.order-10 {
+  order: 10;
+}
 
 //old - in use
-
 
 .reverse > :nth-z-col(1) {
   order: 2;
@@ -147,71 +172,69 @@
   order: 1;
 }
 
-.expand{
-  flex:1;
+.expand {
+  flex: 1;
 }
 
-.center-me{
-  align-self:center;
+.center-me {
+  align-self: center;
 }
 
-.center-flex{
+.center-flex {
   justify-content: center;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-
-//old - may be depricated 
+//old - may be depricated
 
 .d-flex {
-display:flex;
+  display: flex;
 }
 
-
-.flex-grow-1{
+.flex-grow-1 {
   flex-grow: 1;
 }
 
-.flex-grow-2{
+.flex-grow-2 {
   flex-grow: 2;
 }
 
-.flex-grow-8{
+.flex-grow-8 {
   flex-grow: 8;
 }
 
-.align-self-start{
+.align-self-start {
   align-self: start;
 }
 
 .flex-align-vertical {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 .flex-align-horizontal {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .justify-content-center {
-  justify-content: center; 
+  justify-content: center;
 }
 
 .align-items-center {
-  align-items: center; 
+  align-items: center;
 }
 
-.center-flex-child{
-  margin: auto; 
+.center-flex-child {
+  margin: auto;
 }

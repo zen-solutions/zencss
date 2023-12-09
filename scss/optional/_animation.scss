@@ -4,90 +4,132 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
-  $increment: 0.2;
-  $steps: 10;
-  
-  @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+$increment: 0.2;
+$steps: 10;
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes slideUpDown {
-      0% { transform: translateY(20px); }
-      100% { transform: translateY(0); }
+  50% {
+    opacity: 0;
   }
-  
-  @keyframes slideInFromLeft {
-      0% { transform: translateX(-20px); } 
-      100% { transform: translateX(0); }    
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(20px);
   }
-  
-  @keyframes slideInFromRight {
-      0% { transform: translateX(20px); } 
-      100% { transform: translateX(0); }  
+  100% {
+    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-      0%, 100% { opacity: 0; }
-      100% { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-20px);
   }
-  
-  .blink { animation: blink 1s infinite; }
-  
-  .slide-up { animation: slideUpDown 0.5s ease-out; }
-  
-  @keyframes slideDown {
-      0% { transform: translateY(-20px); }
-      100% { transform: translateY(0); }  
+  100% {
+    transform: translateX(0);
   }
-  
-  .slide-down { 
-      animation: slideDown 0.5s ease-out; 
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(20px);
   }
-  
-  .slide-left { 
-      animation: slideInFromLeft 0.5s ease-out; 
+  100% {
+    transform: translateX(0);
   }
-  
-  .slide-right { 
-      animation: slideInFromRight 0.5s ease-out; 
+}
+
+@keyframes fadeIn {
+  0%,
+  100% {
+    opacity: 0;
   }
-  
-  @for $i from 1 through $steps {
-      $delay: $increment * $i;
-      .fade-in-#{$i} {
-          opacity: 0;
-          animation: fadeIn 1s $delay + s forwards;
-      }
+  100% {
+    opacity: 1;
   }
-  
-  .btn-hover {
-      transition: transform 0.3s ease-in-out;
-      display: inline-block;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+.slide-up {
+  animation: slideUpDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
   }
-  
-  .btn-hover:hover { transform: translateY(-3px); }
-  
-  .fancy, .fancy-ghost {
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      will-change: transform;
+  100% {
+    transform: translateY(0);
   }
-  
-  .fancy:hover, .fancy-ghost:hover {
-      transform: translateY(-2px);
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+.slide-left {
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.slide-right {
+  animation: slideInFromRight 0.5s ease-out;
+}
+
+@for $i from 1 through $steps {
+  $delay: $increment * $i;
+  .fade-in-#{$i} {
+    opacity: 0;
+    animation: fadeIn 1s $delay + s forwards;
   }
-  
-  .fancy:focus, .fancy-ghost:focus { outline: none; }
-  
-  .fancy-ghost {
-      transition: transform 0.4s ease, color 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
-  }
-  
-  .fancy-ghost:hover {
-      background-color: #fff;
-      color: #000;
-      box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2);
-  }
-  
+}
+
+.btn-hover {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn-hover:hover {
+  transform: translateY(-3px);
+}
+
+.fancy,
+.fancy-ghost {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.fancy:hover,
+.fancy-ghost:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fancy:focus,
+.fancy-ghost:focus {
+  outline: none;
+}
+
+.fancy-ghost {
+  transition:
+    transform 0.4s ease,
+    color 0.4s ease,
+    background-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.fancy-ghost:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2);
+}
