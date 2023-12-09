@@ -3,7 +3,7 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
- 
+
 //-------------------------------------------------
 // star component
 //-------------------------------------------------
@@ -45,7 +45,7 @@
   position: relative;
 }
 
-.modal-content>.text {
+.modal-content > .text {
   width: 91%;
 }
 
@@ -61,7 +61,7 @@
   top: 0;
   right: 5px;
   transform: translateY(-50%);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .close:hover,
@@ -89,24 +89,20 @@
 .accordion {
   gap: 0;
 
-
   p {
     margin: 0;
   }
 
-
-
   a {
     //color:$text-grey-dual; //interfere w themes
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     text-decoration: none;
     padding-left: 10px;
     margin-left: -24px;
   }
 
   a:hover {
-    background-color:$border-color; //dark mode top color
-
+    background-color: $border-color; //dark mode top color
   }
 }
 
@@ -123,12 +119,8 @@
   transition: background-color 0.3s;
   font-weight: 400;
   @include default-state;
-@include hover-state;
+  @include hover-state;
 }
-
-
-
-
 
 //toggle
 
@@ -150,7 +142,6 @@
 .expanded-content.full-height.show {
   max-height: none;
 }
-
 
 .accordion .title {
   border-bottom: 1px solid $border-color;
@@ -175,41 +166,36 @@
   left: -50px;
   top: calc(100% + 29px);
   background-color: #ededed;
-  color:$dark-color;
+  color: $dark-color;
   min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
   z-index: 1001;
   border-radius: $border-radius;
   padding: $col-padding;
-  font-size: .9em;
+  font-size: 0.9em;
 }
-
 
 .dropdown-content.megamenu {
   min-width: 650px;
-  left:-539px;
+  left: -539px;
   top: 79px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   z-index: 1001;
-
 }
 
-
-
 .dropdown-content a {
-  color:$dark-color;
+  color: $dark-color;
   text-decoration: none;
   display: block;
   border-radius: $border-radius;
-  padding:10px;
+  padding: 10px;
   padding-left: 24px;
-  margin-left:-1px;
+  margin-left: -1px;
 
-
-  &:hover{
-    background:darken($light-ui-hover-color, 25%);
-    color:$dark-color;
+  &:hover {
+    background: darken($light-ui-hover-color, 25%);
+    color: $dark-color;
     text-decoration: none;
   }
 }
@@ -224,15 +210,10 @@
   color: $var-black-text;
   padding: 0;
 
-  a{
-    margin-left:-15px;
+  a {
+    margin-left: -15px;
   }
- 
-
-
 }
-
-
 
 .caret-up {
   background: none !important;
@@ -258,31 +239,27 @@
   position: absolute;
   left: 10px;
   top: 45px;
-
 }
-
-
-
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .dropdown-content {
     background-color: unset;
-    position: static; 
-    display: block; 
+    position: static;
+    display: block;
     left: auto;
     top: auto;
-    box-shadow: none; 
-    z-index: auto; 
+    box-shadow: none;
+    z-index: auto;
     max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
-    width: auto; 
+    width: auto;
     min-width: 225px !important;
-    border-radius:unset;
+    border-radius: unset;
 
-    a{
-      color:$text-white;
+    a {
+      color: $text-white;
     }
   }
 
@@ -290,8 +267,9 @@
     position: static; /* Resets the absolute positioning */
   }
 
-  .nav-dropdown .caret-up,  .dropdown .caret-up {
-    display: none !important; 
+  .nav-dropdown .caret-up,
+  .dropdown .caret-up {
+    display: none !important;
   }
 }
 
@@ -325,7 +303,6 @@
   .image-group {
     flex-basis: 110px;
   }
-
 }
 
 //-------------------------------------------------
@@ -341,21 +318,20 @@ blockquote {
   font-weight: 500;
   font-style: italic;
   font-size: 1.1rem;
-  
 
-  p{
+  p {
     margin-bottom: 0;
   }
 }
 
 blockquote::before {
-  content: ''; 
+  content: "";
   position: absolute;
-  left: -26px; 
-  top: 0; 
-  bottom: 0; 
+  left: -26px;
+  top: 0;
+  bottom: 0;
   border-left: 4px solid $border-color;
-  width: 0; 
+  width: 0;
 }
 
 blockquote::after {
@@ -377,7 +353,6 @@ blockquote em {
   font-style: italic;
 }
 
-
 .slide-figure {
   display: flex;
   transition: transform 0.3s ease-in-out;
@@ -387,7 +362,6 @@ blockquote em {
   min-width: 100%;
   box-sizing: border-box;
 }
-
 
 //-------------------------------------------------
 // slider
@@ -402,7 +376,6 @@ blockquote em {
 
 .slides-container {
   display: flex;
-
 }
 
 .slide {
@@ -420,7 +393,7 @@ blockquote em {
   font-size: 24px;
   z-index: 100;
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .prev {
@@ -453,7 +426,7 @@ blockquote em {
 .wizard-step {
   label {
     display: block;
-    padding: .45em;
+    padding: 0.45em;
   }
 }
 
@@ -471,7 +444,6 @@ blockquote em {
 .spin {
   animation: spin 2s linear infinite;
 }
-
 
 //do we need this anymore?
 .card-split {
@@ -502,8 +474,6 @@ blockquote em {
 //   margin-left: 105px; /* Add left margin to push the text to the right */
 // }
 
-
-
 //-------------------------------------------------
 // Image classes - responsive/round/rounded/outline
 //-------------------------------------------------
@@ -512,7 +482,6 @@ blockquote em {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-
 }
 
 .img-round {
@@ -537,13 +506,13 @@ blockquote em {
 // Icon classes
 //-------------------------------------------------
 
-
-.hidden, .d-none{
+.hidden,
+.d-none {
   display: none !important;
 }
 
-.visible{
-  display:block !important;
+.visible {
+  display: block !important;
 }
 
 .opacity-50 {
@@ -559,7 +528,7 @@ blockquote em {
 }
 
 // feature one col and one col only
-.single{
+.single {
   max-width: 390px;
   min-width: 330px;
 }
@@ -570,36 +539,33 @@ blockquote em {
   position: fixed;
   bottom: 10px;
   right: 10px;
-
-
 }
 .corner-popup-window {
   max-width: 285px;
   max-height: 400px;
   overflow: auto;
-position: absolute;
-bottom: 66px;
-right: 3px;
-background: $light-color;
-color: $dark-color;
-border: 1px solid $border-color;
-border-radius: $border-radius;
-padding:1em;
-font-size: .9em;
-z-index: 6;
+  position: absolute;
+  bottom: 66px;
+  right: 3px;
+  background: $light-color;
+  color: $dark-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1em;
+  font-size: 0.9em;
+  z-index: 6;
 }
 
 .corner-popup-button {
-padding: 5px 10px;
-border: none;
-border-radius: $border-radius;
-cursor: pointer;
-position: absolute;
-bottom:0; 
-right: 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .hidden {
   display: none;
 }
-

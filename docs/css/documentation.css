@@ -266,3 +266,15 @@ padding-top:5px;
       transform: scale(1.05); /* Slightly enlarges the image */
   }
 }
+.logo-bar-logo {
+  filter: invert(33%) sepia(6%) saturate(3%) hue-rotate(321deg) brightness(88%) contrast(80%);
+}
+
+.accordion .title{
+  display: inline-block !important;
+}
+
+.title.accordion-toggle.accordion-workaround{
+  display: block !important;
+}
+

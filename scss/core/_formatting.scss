@@ -3,24 +3,22 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 //-------------------------------------------------
 // undocumented
 //-------------------------------------------------
 
-.img-left{
+.img-left {
   float: left;
   margin-right: 15px;
   margin-bottom: 7px;
 }
 
-.img-right{
+.img-right {
   float: right;
   margin-left: 15px;
   margin-bottom: 7px;
 }
-
-
 
 // //----------------------------------------------------
 // /* Generate classes for heights */
@@ -71,8 +69,8 @@
 
 // Loop through to generate classes for 1 to 50, incrementing by 1
 @for $i from 1 through 11 {
-  $value: $i * 10; 
-  
+  $value: $i * 10;
+
   // Generating classes for negative margin-top (moving up)
   .up-#{$value} {
     position: relative;
@@ -127,9 +125,6 @@
   }
 }
 
-
-
-
 //----------------------------------------------------
 /* Width and height */
 //----------------------------------------------------
@@ -151,34 +146,34 @@ $sizes: (
   80: 80px,
   85: 85px,
   90: 90px,
- 110: 110px,
-  125:125px,
-  150:150px,
-  175:175px,
-  200:200px,
-  225:225px,
-  250:250px,
-  300:300px,
-  325:325px,
-  350:350px,
-  375:375px,
-  400:400px,
-  450:450px,
-  500:500px,
-  600:600px,
-  700:700px,
-  800:800px,
-  900:900px,
-  1000:1000px,
+  110: 110px,
+  125: 125px,
+  150: 150px,
+  175: 175px,
+  200: 200px,
+  225: 225px,
+  250: 250px,
+  300: 300px,
+  325: 325px,
+  350: 350px,
+  375: 375px,
+  400: 400px,
+  450: 450px,
+  500: 500px,
+  600: 600px,
+  700: 700px,
+  800: 800px,
+  900: 900px,
+  1000: 1000px,
 );
 
 @each $key, $value in $sizes {
   .w-#{$key} {
-   width: $value !important;
-   max-width:$value;
-   display: inline-block;
+    width: $value !important;
+    max-width: $value;
+    display: inline-block;
   }
-  
+
   // .h-#{$key} {
   //   height: $value !important;
   //   max-height:$value;
@@ -193,30 +188,38 @@ $sizes: (
 .card {
   position: relative;
   padding: 1.2rem;
-  font-size: .95em;
-  gap: .7em;
+  font-size: 0.95em;
+  gap: 0.7em;
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
   max-width: 100%;
 
-  h1, h2, h3, h4, h5, h6, p, small, .eyebrow{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  small,
+  .eyebrow {
     margin: 0;
     border: 0;
-    padding:0;
+    padding: 0;
   }
 
-  p, div{
-    padding:0;
+  p,
+  div {
+    padding: 0;
   }
 
-
-  ul{
-  margin-block-start:0;
+  ul {
+    margin-block-start: 0;
     margin-block-end: 0;
   }
 }
- .card>img {
+.card > img {
   border: 0;
   padding: 0;
 }
@@ -236,29 +239,28 @@ $sizes: (
   right: 0;
   top: 0;
   bottom: 0;
-  object-fit: cover; 
-  width: 100%; 
+  object-fit: cover;
+  width: 100%;
   height: 100%;
   z-index: 0;
 }
 
-
 //----------------------------------------------------
-// Display values - d-block, d-flex, etc. 
+// Display values - d-block, d-flex, etc.
 //----------------------------------------------------
 
 $d-values: (
   block: block,
   inline: inline,
-  'inline-block': inline-block,
+  "inline-block": inline-block,
   flex: flex,
-  'inline-flex': inline-flex,
+  "inline-flex": inline-flex,
   grid: grid,
-  'inline-grid': inline-grid,
+  "inline-grid": inline-grid,
   table: table,
-  'table-row': table-row,
-  'table-cell': table-cell,
-  none: none
+  "table-row": table-row,
+  "table-cell": table-cell,
+  none: none,
 );
 
 @each $name, $value in $d-values {
@@ -266,7 +268,6 @@ $d-values: (
     display: $value;
   }
 }
-
 
 //----------------------------------------------
 // Misc Utility classes
@@ -302,15 +303,15 @@ $d-values: (
   flex-grow: 1;
 }
 
-.vertical-center{
+.vertical-center {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.bg-none{
-  background:none; //!?
+.bg-none {
+  background: none; //!?
 }
 
 .w-100 {
@@ -322,10 +323,9 @@ $d-values: (
   height: auto;
 }
 
-
 .squeeze > * {
-  margin-top: .3em;
-  margin-bottom: .3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .z-index-2 {
@@ -366,6 +366,6 @@ $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
   }
 }
 
-.gap-0{
-  gap:0;
+.gap-0 {
+  gap: 0;
 }

@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shaunmackey/zenCSS.git"
+    "url": "https://github.com/zen-solutions/zencss.git"
   },
   "keywords": [
     "css",
@@ -21,10 +21,11 @@
   "author": "Shaun Mackey (https://shaunmackey.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shaunmackey/zenCSS/issues"
+    "url": "https://github.com/zen-solutions/zencss/issues"
   },
   "homepage": "https://zencss.com",
   "devDependencies": {
+    "prettier": "^3.1.0",
     "sass": "^1.69.5",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"

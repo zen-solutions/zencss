@@ -3,7 +3,7 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 html {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ html {
 .header {
   width: 100%;
   margin: 0 auto;
-  padding: .618rem; 
+  padding: 0.618rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,6 @@ html {
     display: inline;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-
 
     &:hover {
       background: darken($light-color, 15%);
@@ -56,8 +55,6 @@ html {
 //   min-height: 510px;
 //   margin-top: 0 !important;
 // }
-
-
 
 // Heading styles
 h1,
@@ -84,7 +81,6 @@ h4,
   //line-height: 1.5em;
 }
 
-
 h5,
 .h5 {
   font-size: 1.5em;
@@ -95,15 +91,25 @@ h6,
 .h6 {
   font-size: 1.4em;
   //line-height: 1.6em;
-
 }
 
-h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
-position: relative;
-z-index: 2;
-text-wrap: pretty;
-@include font-spacing;
-@include headline;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  position: relative;
+  z-index: 2;
+  text-wrap: pretty;
+  @include font-spacing;
+  @include headline;
 }
 
 //Remove padding from 2nd stacked header
@@ -133,10 +139,10 @@ h6 + h6 {
 
 p {
   line-height: $line-height;
-  letter-spacing: .0;
+  letter-spacing: 0;
   position: relative;
   margin-top: 0;
-  margin-bottom: .85rem;
+  margin-bottom: 0.85rem;
   text-wrap: pretty;
 }
 
@@ -145,8 +151,8 @@ span {
   display: inline;
 }
 
-ol{
-  padding:0;
+ol {
+  padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-bottom: 1em;
@@ -154,30 +160,30 @@ ol{
 }
 
 ul {
-  padding:0;
+  padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-   list-style-type: disc;
+  list-style-type: disc;
   padding-left: 30px;
   margin-bottom: 1em;
- }
+}
 
 li {
-  margin-top:.5em;
-  margin-bottom:.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   line-height: 1.8rem;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 li::marker {
-  color: grey; 
+  color: grey;
 }
 
-ul li > ul  {
-  list-style-type:circle;
+ul li > ul {
+  list-style-type: circle;
 }
 
-ul li > ul  li > ul    {
+ul li > ul li > ul {
   list-style-type: square;
 }
 
@@ -190,29 +196,30 @@ hr {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   height: 1px;
-  opacity: .5;
+  opacity: 0.5;
   width: 100%;
 }
 
 .hr-light {
-  opacity: .05;
+  opacity: 0.05;
 }
 
-button, .btn{
+button,
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-wrap: pretty;
   padding: 1em;
-  margin:.2em;
-  margin-top:1em;
+  margin: 0.2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
   border: none;
   transition: all 0.25s ease;
   cursor: pointer;
   border-radius: $border-radius;
-  font-size: .9em;
+  font-size: 0.9em;
   color: $light-color;
   background: lighten($bg-header-footer, 20%);
   z-index: 3;
@@ -222,12 +229,12 @@ button, .btn{
   min-width: 41px;
 }
 
- button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   cursor: pointer;
   background: lighten($bg-header-footer, 10%);
-   color:$light-color;
-
- }
+  color: $light-color;
+}
 
 button.bg-cta:hover {
   background: darken($cta-color, 8%);
@@ -261,28 +268,28 @@ a.swap-underline:hover {
 
 pre {
   padding: 0 20px;
-  font-size:.8em;
+  font-size: 0.8em;
   background: rgba(0, 0, 0, 0.1);
   border-radius: $border-radius;
   width: 100%;
   white-space: pre-line;
-  font-family: Consolas,Monaco,'Andale Mono',monospace;
-  border: 1px solid  $border-color;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  border: 1px solid $border-color;
   margin-bottom: 2em;
 }
 
-figure{
+figure {
   margin: 1em 0;
 }
 
-figcaption{
-    font-size: 0.875em;
-    line-height: 1.4285714;
-    margin-top: 0.8571429em;
-    color: lighten($text-black, 50%);
+figcaption {
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+  color: lighten($text-black, 50%);
 }
 
-small{
+small {
   line-height: calc($line-height / 1.5);
   margin-top: 0;
   margin-bottom: 1rem;
@@ -292,22 +299,21 @@ small{
 input,
 textarea,
 button[type="submit"] {
-  font-family: $zen-font-family;  
-  width: 100%;  
+  font-family: $zen-font-family;
+  width: 100%;
   min-height: 35px;
   border: 0;
   padding: 5px;
 }
 
-input[type="submit"]{
-  padding-left:10px;
-  padding-right:10px;
+input[type="submit"] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.tout{
-  width:auto;
+.tout {
+  width: auto;
 }
-
 
 //----------------------------------------------
 //Experimental
@@ -352,40 +358,34 @@ input[type="submit"]{
   border-radius: 8px;
 }
 
-.border-0{
-  border:none !important;
+.border-0 {
+  border: none !important;
 }
 
-.page-section{
-  padding-top:$page-section-padding-top;
-  padding-bottom:$page-section-padding-bottom;
+.page-section {
+  padding-top: $page-section-padding-top;
+  padding-bottom: $page-section-padding-bottom;
 }
-
 
 // Normal link styles.
 a {
-  //color: #295CA8;
-//  color:#185CAA;
-color: #5E5E5E;
-
+  color: #5e5e5e;
   cursor: pointer;
   text-decoration: underline;
 }
 
-
 a:hover {
   color: #636363;
   text-decoration: none;
-
 }
 
 header :link {
   text-decoration: none;
-  font-size: .88rem;
+  font-size: 0.88rem;
 }
 
 header :link:hover {
-  background:  hsl(0 0% 0% /  0.65); 
+  background: hsl(0 0% 0% / 0.65);
   text-decoration: none;
   border-radius: $border-radius;
 }
@@ -407,7 +407,7 @@ header :link:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: .7em;
+  font-size: 0.7em;
   gap: 0.2em;
   box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 
@@ -419,19 +419,19 @@ header :link:hover {
 }
 
 .text-group {
-  gap:.3em;
+  gap: 0.3em;
   display: flex;
-  flex-direction: column; 
-  flex:4;
+  flex-direction: column;
+  flex: 4;
 
-  .signature{
-font-size: .7em;
-font-style: italic;
-margin-top:5px;
+  .signature {
+    font-size: 0.7em;
+    font-style: italic;
+    margin-top: 5px;
   }
 }
 
-//cookie consent 
+//cookie consent
 .cookie-consent-banner {
   position: fixed;
   bottom: 0;
@@ -442,59 +442,54 @@ margin-top:5px;
   text-align: center;
   padding: 15px;
   z-index: 1100;
-  display: none; 
+  display: none;
 
-  a{
+  a {
     color: $dark-color;
 
-    &:hover{
+    &:hover {
       color: darken($dark-color, 10%);
     }
   }
 
   p {
-    
-      margin: 0;
-      margin-right: 10px;
-      display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    display: inline-block;
   }
-
 }
 
 // custom scrollbars
 
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #a1a1a1 #e8e8e8;
-  }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a1a1a1 #e8e8e8;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 8px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #e8e8e8;
-  }
+*::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #b0b0b0;
-    border-radius: 8px;
-    border: 1px solid #b0b0b0;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid #b0b0b0;
+}
 
-  //sticky header
-  .header-sticky {
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0; 
-    z-index: 1000;
-  }
+//sticky header
+.header-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  .logo-bar-logo{
-    filter: invert(33%) sepia(6%) saturate(3%) hue-rotate(321deg) brightness(88%) contrast(80%);
-  }
 //-------------------------------------------------
 // Icon classes - circle
 //-------------------------------------------------
@@ -502,42 +497,42 @@ margin-top:5px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 50px; 
+  width: 50px;
   height: 50px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: $border-color;
-  color: white; 
+  color: white;
 }
 
-.nav-dropdown{
-  .dropdown-content{
-    a{
-      padding-left:12px;
+.nav-dropdown {
+  .dropdown-content {
+    a {
+      padding-left: 12px;
     }
   }
 }
 
 //fix for code formatting
-.language-html, .language-scss, .language-css{
-  white-space: pre-wrap; 
-  word-wrap: break-word; 
-
+.language-html,
+.language-scss,
+.language-css {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .border-right::after {
-  content: ''; 
+  content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   right: -9px;
-  width: 0; 
-  height: 100%; 
+  width: 0;
+  height: 100%;
   border-right: 1px solid lighten($border-color, 24%);
 }
 
-.border-top{
+.border-top {
   border-top: 1px solid lighten($border-color, 24%);
 }
-
 
 .border-bottom {
   position: relative;
@@ -549,11 +544,12 @@ margin-top:5px;
   bottom: 7px;
   left: 0;
   width: 100%;
-  height: 1px; 
-  background-color:$border-color;
-  z-index: -1; 
+  height: 1px;
+  background-color: $border-color;
+  z-index: -1;
 }
-.text-decoration-none{
+
+.text-decoration-none {
   text-decoration: none;
 }
 
@@ -577,29 +573,38 @@ margin-top:5px;
 .video-container {
   position: relative;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   aspect-ratio: 16 / 9;
 }
 
 .video-container video {
   position: relative;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
 }
 
-.youtube\:video-container{
-  display: block; /* Ensures block-level element behavior */
-  width: 100%; /* Full width of the container */
-  aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
-  margin: 0 auto; /* Center align if necessary and add some space around */
+.youtube\:video-container {
+  display: block;
+  /* Ensures block-level element behavior */
+  width: 100%;
+  /* Full width of the container */
+  aspect-ratio: 16 / 9;
+  /* Maintains a 16:9 aspect ratio */
+  margin: 0 auto;
+  /* Center align if necessary and add some space around */
 }
 
 .youtube\:video-container iframe {
-  display: block; /* Remove default inline framing */
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height based on the aspect ratio */
-  border: none; /* Optional, removes the border */
+  display: block;
+  /* Remove default inline framing */
+  width: 100%;
+  /* Full width of the container */
+  height: 100%;
+  /* Full height based on the aspect ratio */
+  border: none;
+  /* Optional, removes the border */
 }
+
 /*
 Box-sizinghttps://getbootstrap.com/docs/4.6/getting-started/introduction/#css-files
 For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
@@ -612,25 +617,24 @@ On the rare occasion you need to override it, use something like the following:
 
 .text-superscript {
   vertical-align: super;
-  font-size: .5em;
+  font-size: 0.5em;
   position: relative;
-} 
-
-.bg-black{
-  background: black;
-  color:white;
 }
 
+.bg-black {
+  background: black;
+  color: white;
+}
 
-.modal-sm{
+.modal-sm {
   max-width: 500px;
 }
 
-.link-white{
-  color:white;
+.link-white {
+  color: white;
 
-  &:hover{
-    color:darken(white, 10%);
+  &:hover {
+    color: darken(white, 10%);
   }
 }
 
@@ -644,16 +648,15 @@ On the rare occasion you need to override it, use something like the following:
   transition: opacity 0.5s ease;
 }
 
-.br-left{
+.br-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
 
-.br-right{
+.br-right {
   border-top-right-radius: $border-radius !important;
   border-bottom-right-radius: $border-radius !important;
 }
-
 
 //Utilities for clamping text to a specific number of lines.
 .line-clamp-1 {
@@ -705,90 +708,89 @@ On the rare occasion you need to override it, use something like the following:
   -webkit-line-clamp: none;
 }
 
-.hero-section{
+.hero-section {
   padding-top: 40px !important;
-  padding-bottom:40px !important;
+  padding-bottom: 40px !important;
 }
 
 .underline-handdrawn {
-  background-image: url('../img/placeholder/underline.svg');
+  background-image: url("../img/placeholder/underline.svg");
   background-repeat: repeat-x;
   background-position: bottom center;
-  background-size: 100%; 
+  background-size: 100%;
   padding-bottom: 8px;
   text-decoration: none;
-  display: inline-block; 
+  display: inline-block;
 }
 
-.code{
+.code {
   margin-bottom: 1.5em;
 }
 
-
-.border-top-0{
-  border-top:none !important;
+.border-top-0 {
+  border-top: none !important;
 }
 
-.border-bottom-0{
-  border-bottom:none !important;
+.border-bottom-0 {
+  border-bottom: none !important;
 }
 
-  /* Styles for the tabbed card */
-  .tabbed-card {
-    margin: 0 auto;
-    padding: 0;
-    gap:0 !important;
-    border-radius: $border-radius;
+/* Styles for the tabbed card */
+.tabbed-card {
+  margin: 0 auto;
+  padding: 0;
+  gap: 0 !important;
+  border-radius: $border-radius;
 }
 
 /* Styles for the tab header container */
 .tab-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    padding-bottom: 0;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-    border: 1px solid $border-color;
-    border-bottom: none;
-    padding-left:10px;
-    padding-right:10px;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 0;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border: 1px solid $border-color;
+  border-bottom: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Styles for individual tabs */
 
 /* Styles for tab content */
 .tab-content {
-    padding: 20px;
-    border: 1px solid $border-color;
-    border-radius: 0 0 $border-radius $border-radius;
+  padding: 20px;
+  border: 1px solid $border-color;
+  border-radius: 0 0 $border-radius $border-radius;
 }
 
 .panel {
-  max-height: 0; 
-  overflow: hidden; 
+  max-height: 0;
+  overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
 .panel::after {
-  content: '';
+  content: "";
   display: block;
   height: 200px;
 }
 
 .active-toggle {
-  background-color: rgba(199,199,199,.3) !important; 
+  background-color: rgba(199, 199, 199, 0.3) !important;
 }
 
 // .bg-ui-hover
 
 /* Hide tab content by default */
 .tab-content:not(.active) {
-    display: none;
+  display: none;
 }
+
 // .pattern-interrupt {
-//   display: none; 
+//   display: none;
 // }
 
 // .close {
@@ -801,9 +803,9 @@ On the rare occasion you need to override it, use something like the following:
 // //hide at media query for mobile. do one for tablet too
 // }
 
-
 .lazy-load {
-  background: url('../../img/general-icons/essential/spinner.gif') no-repeat center center;
+  background: url("../../img/general-icons/essential/spinner.gif") no-repeat
+    center center;
   background-size: cover;
   width: 100%;
   height: auto;
@@ -812,11 +814,8 @@ On the rare occasion you need to override it, use something like the following:
 //docyument these in bgcolor for primary themes
 //.bg-accent-hover:hover{
 
-
-
-
 // // undo all the text styling and just be default like out of the box
 //inspiration https://play.tailwindcss.com/uj1vGACRJA?layout=preview
 // .unzen{
-  
+
 // // }

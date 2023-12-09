@@ -1,13 +1,13 @@
- /*
+/*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-  //------------------------------------------------
-  // zenCSS Color Contrast Checker + Updater
 
-  /* Purpose: 
+//------------------------------------------------
+// zenCSS Color Contrast Checker + Updater
+
+/* Purpose: 
    This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
 
    It evaluates each color in each map against WCAG recommended color contrast ratio
@@ -17,56 +17,62 @@
 
    Change colors, and this script will update the color value with a new compliant match for the font color. */
 
-  //------------------------------------------------
+//------------------------------------------------
 
-  @use "sass:math";
+@use "sass:math";
 
-  //------------------------------------------------
-  //  Luminance - Convert to sRGB and then linearize the RGB values
-  //------------------------------------------------
-  @function luminance($color) {
-    $r: math.div(red($color), 255);
-    $g: math.div(green($color), 255);
-    $b: math.div(blue($color), 255);
-  
-    $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
-    $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
-    $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
-  
-    @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
-  }
+//------------------------------------------------
+//  Luminance - Convert to sRGB and then linearize the RGB values
+//------------------------------------------------
+@function luminance($color) {
+  $r: math.div(red($color), 255);
+  $g: math.div(green($color), 255);
+  $b: math.div(blue($color), 255);
 
-  //------------------------------------------------
-  //  Contrast Ratio - Determine contrast ratio for white/black text
-  //------------------------------------------------
+  $r: if($r <= 0.04045, math.div($r, 12.92), pow(($r + 0.055) / 1.055, 2.4));
+  $g: if($g <= 0.04045, math.div($g, 12.92), pow(($g + 0.055) / 1.055, 2.4));
+  $b: if($b <= 0.04045, math.div($b, 12.92), pow(($b + 0.055) / 1.055, 2.4));
 
-  @function contrast-ratio($color1, $color2) {
-    $l1: luminance($color1) + 0.05; 
-    $l2: luminance($color2) + 0.05;
-    @return math.div(max($l1, $l2), min($l1, $l2));
-  }
-  
+  @return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
+}
 
-  //------------------------------------------------
-  //  Smart Text Color - Evaluate and return a WCAG compliant color
-  //  that has the appropriate aspect ratio in relation to the source bg color
-  //------------------------------------------------
+//------------------------------------------------
+//  Contrast Ratio - Determine contrast ratio for white/black text
+//------------------------------------------------
 
-  @function smart-text-color($bg-color) {
-    $light-color: white;
-    $dark-color: black;
-    $minimum-contrast: 4.5;
-    $buffer: 0.1;  
-  
-    $light-contrast: contrast-ratio($bg-color, $light-color);
-    $dark-contrast: contrast-ratio($bg-color, $dark-color);
-    //@error "$light-contrast is #{$light-contrast} and $dark-contrast is #{$dark-contrast} ";
+@function contrast-ratio($color1, $color2) {
+  $l1: luminance($color1) + 0.05;
+  $l2: luminance($color2) + 0.05;
+  @return math.div(max($l1, $l2), min($l1, $l2));
+}
 
-    @if $light-contrast >= $minimum-contrast + $buffer {
+//------------------------------------------------
+//  Smart Text Color - Evaluate and return a WCAG compliant color
+//  that has the appropriate aspect ratio in relation to the source bg color
+//------------------------------------------------
+
+@function smart-text-color($bg-color) {
+  $light-color: white;
+  $dark-color: black;
+  $minimum-contrast: 4.5;
+  $buffer: 0.00001; //can cause errors with both colors passing and this causing a threashhold issue.. put more 0 for less buffer would work too.
+
+  $light-contrast: contrast-ratio($bg-color, $light-color);
+  $dark-contrast: contrast-ratio($bg-color, $dark-color);
+
+  // Check if both contrasts meet the minimum requirement
+  @if $light-contrast >= $minimum-contrast + $buffer and $dark-contrast >= $minimum-contrast + $buffer {
+    // Pick the color with better contrast
+    @if $light-contrast >= $dark-contrast {
       @return $light-color;
-    } @else if $dark-contrast >= $minimum-contrast + $buffer {
-      @return $dark-color;
     } @else {
-      @return red; // default fallback color (used during dev, can likely be depricated after further testing) 
+      @return $dark-color;
     }
+  } @else if $light-contrast >= $minimum-contrast + $buffer {
+    @return $light-color;
+  } @else if $dark-contrast >= $minimum-contrast + $buffer {
+    @return $dark-color;
+  } @else {
+    @return red; // default error color
   }
+}

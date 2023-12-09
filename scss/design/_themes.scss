@@ -3,20 +3,28 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
+
 // Define the transition mixin
 @mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
   transition: $properties $duration $ease;
 }
 
-@mixin theme($bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color) {
+@mixin theme(
+  $bg-color,
+  $text-color,
+  $button-bg-color,
+  $button-text-color,
+  $label-bg-color,
+  $label-text-color
+) {
   background: $bg-color;
   //border-bottom-color: $bg-color;
   color: $text-color;
   border-radius: $border-radius;
 
   // Regular buttons inside the theme
-  button, .btn {
+  button,
+  .btn {
     background: $button-bg-color;
     color: $button-text-color;
     @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
@@ -32,12 +40,12 @@
     background: $label-bg-color;
     color: $label-text-color;
   }
-  
+
   // .btn-fill specific styles
   .btn-fill {
     background: transparent;
     border: 2px solid $button-bg-color;
-   
+
     color: $button-bg-color;
     @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
 
@@ -48,38 +56,86 @@
   }
 
   //override the text for the ones that aren't right
-.theme-primary btn.btn-fill {
+  .theme-primary btn.btn-fill {
     color: red !important;
   }
-
 }
 
 // Your themes map
 //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color
 $themes: (
-  primary: ($primary-color, $light-color, $cta-color, $light-color, $cta-color, $light-color),
-  dark: (rgba(25,25,25, 0.84), #f4f4f4, $light-color, $dark-color, $dark-grey, $light-color),
-  light: (rgba(255,255,255,.20), $dark-color, $dark-color, $light-color, $light-grey, $dark-color),
-  cta: ($cta-color, #f4f4f4, $primary-color, $light-color, $primary-color, $light-color),
-  accent: ($accent-color, $dark-color, $secondary-color, $light-color, $secondary-color, $light-color),
-  secondary: ($secondary-color, $light-color, $accent-color, $dark-color, $accent-color, $dark-color)
+  primary: (
+    $primary-color,                                 //$bg-color,
+    smart-text-color($primary-color),   //$text-color
+    $cta-color,                                         //$button-bg-color
+    smart-text-color($primary-color),   // $button-text-color
+    $cta-color,                                         //$label-bg-color,
+    smart-text-color($primary-color),   //$label-text-color
+  ),
+  dark: (                                                  // skipped dark and light as we need to setup smartcolors for em
+    $dark-mode-color,
+    #f4f4f4,
+    $light-color,
+    $dark-color,
+    $dark-grey,
+    $light-color,
+  ),
+  light: (
+    $light-mode-color,
+    $dark-color,
+    $dark-color,
+    $light-color,
+    $light-grey,
+    $dark-color,
+  ),                            //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color
+  cta: (
+    $cta-color,
+    smart-text-color($cta-color),
+    $primary-color,
+    smart-text-color($cta-color),
+    $primary-color,
+    smart-text-color($cta-color),
+  ),
+  accent: (
+    $accent-color,
+    smart-text-color($accent-color),
+    $secondary-color,
+    smart-text-color($secondary-color),
+    $secondary-color,
+    smart-text-color($secondary-color),
+  ),
+  secondary: (
+    $secondary-color,
+    smart-text-color($secondary-color),
+    $accent-color,
+    smart-text-color($accent-color),
+    $accent-color,
+    smart-text-color($accent-color),
+  ),
 );
 
 // Iterate over each theme to apply styles
 @each $theme, $colors in $themes {
   .theme-#{$theme} {
-    @include theme(nth($colors, 1), nth($colors, 2), nth($colors, 3), nth($colors, 4), nth($colors, 5), nth($colors, 6));
+    @include theme(
+      nth($colors, 1),
+      nth($colors, 2),
+      nth($colors, 3),
+      nth($colors, 4),
+      nth($colors, 5),
+      nth($colors, 6)
+    );
 
-    // Override styles for hyperlinks
-    a {
-      @if $theme == 'secondary' {
-          color: $accent-color;
-        }@else if $theme == 'cta' {
-        color: nth($colors, 4); 
-      }@else if $theme == 'accent' {
-        color: $secondary-color;
-      }
-    }
+    // // Override styles for hyperlinks - This is likely coming out today
+    // a {
+    //   @if $theme== "secondary" {
+    //     color: $accent-color;
+    //   } @else if $theme== "cta" {
+    //     color: nth($colors, 4);
+    //   } @else if $theme== "accent" {
+    //     color: $secondary-color;
+    //   }
+    // }
   }
 }
 
@@ -89,17 +145,62 @@ $themes: (
 }
 
 // wcag compliance text overrides
-.theme-primary a,.theme-secondary a, .theme-dark a, .theme-primary .btn-fill , .theme-cta .btn-fill,.theme-secondary .btn-fill {
+// xxxxxxxx
+.theme-primary a,
+.theme-secondary a,
+.theme-dark a,
+.theme-primary .btn-fill,
+.theme-cta .btn-fill,
+.theme-secondary .btn-fill {
   color: white;
 }
 
-.theme-accent a,.theme-accent .btn-fill{
-  color:$dark-color;
+
+//---------------------------------------------
+// Correcting above -  wcag compliant links for each theme
+//---------------------------------------------
+
+.theme-primary a{
+  color: smart-text-color($primary-color);
+} //this works do for others
+
+.theme-secondary a{
+  color: smart-text-color($secondary-color);
+} 
+
+.theme-accent a{
+  color: smart-text-color($accent-color); 
+} 
+
+.theme-cta a{
+  color: smart-text-color($cta-color);
+} 
+
+// i think we need to override the theme button colors here (from above) or rip them out if not too complicated
+// reason being, we already handle them in the button (bg color/text color is set) so we dont need to deal w that here technically
+//bt we have a lot of it baked in here already. so thats an issue to address.
+
+
+// btn-fill ones here - we have not yet dealt with those at the button level, so its logical to go back and do that and not have to do it here
+// the issue is we dont know what the bg color will be in that situation. thats the rub.
+
+// the color will be THE SAME as the text color (since its on the same bg). 
+.theme-primary .btn-fill{
+  color: smart-text-color($primary-color);  
 }
+
+
+
+
+
+
+// no longer neede bc of above .theme-accent a,
+// .theme-accent .btn-fill {
+//   color: $dark-color;
+// }
 
 .theme-dark.accent-left {
   border-left: 10px solid $primary-color;
-
 }
 
 .theme-secondary.accent-left {
@@ -121,7 +222,7 @@ $themes: (
 
 // Basic button style placeholder
 %button-basic {
-  border-radius: $border-radius; 
+  border-radius: $border-radius;
   cursor: pointer;
   text-align: center;
   text-decoration: none;

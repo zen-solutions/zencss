@@ -3,8 +3,8 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
-  
-  //---------------------------------------------
+
+//---------------------------------------------
 // icon toggle
 //---------------------------------------------
 .icon-toggle {
@@ -13,14 +13,16 @@
   display: inline;
 }
 
-.icon-off, .icon-on {
+.icon-off,
+.icon-on {
   transition: opacity 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
-  display: none; 
+  display: none;
 }
 
-.icon-off.show, .icon-on.show {
-  display: inline; 
+.icon-off.show,
+.icon-on.show {
+  display: inline;
 }

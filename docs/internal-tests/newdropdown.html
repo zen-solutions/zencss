@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple drop-down</title>
+    <style>
+        /* Basic styling for drop-down */
+        .drop-down {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the drop-down button */
+        .drop-down-toggle {
+            background-color: #f9f9f9;
+            color: black;
+            padding: 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        /* drop-down Content */
+        .drop-down-content {
+            display: none;
+  position: absolute;
+  left: -50px;
+  top: calc(100% + 29px);
+  background-color: #ededed;
+  color: $dark-color;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
+  z-index: 1001;
+  border-radius: $border-radius;
+  padding: $col-padding;
+  font-size: 0.9em;
+        }
+
+        /* Links inside the drop-down */
+        .drop-down-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of drop-down links on hover */
+        .drop-down-content a:hover {background-color: #f1f1f1}
+
+        /* Show the drop-down menu on hover */
+        .drop-down:hover .drop-down-content {
+            display: block;
+        }
+
+        /* Rotate caret on hover */
+        .drop-down:hover .caret {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="drop-down">
+        <button class="drop-down-toggle">drop-down Button <span class="caret">&#9662;</span></button>
+        <div class="drop-down-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>

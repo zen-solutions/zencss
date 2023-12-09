@@ -8,18 +8,14 @@
 // Initialize zenCSS
 //--------------------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 //vars
 $zen-font-size: 15px;
 $zen-tablet-mobile-font-size: 14px;
 $zen-large-screen-font-size: 16px;
-$zen-font-family: "Inter",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$zen-body-bg-color:#d7d7d7;
+$zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$zen-body-bg-color: #d7d7d7;
 $zen-dark-text-color: #e5e5e5;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
@@ -59,86 +55,84 @@ $base-text-color: #444444;
   // Import core files
   //--------------------------------------------------------------
 
-  @import 'user-settings';
-  @import 'core/mixins';
-  @import 'core/framework';
-  @import 'core/scaffold';
-  @import 'optional/marketing/marketing-promos';
-  @import 'core/header';
-  @import 'general/form';
-  @import 'optional/slider';
-  @import 'design/buttons';
-  @import 'core/flex';
-  @import 'optional/table';
-  @import 'core/formatting';
-  @import 'optional/alert';
-  @import 'design/text';
-  @import 'design/border-color';
-  @import 'general/test';
-  @import 'general/components';
-  @import 'design/layouts';
-  @import 'core/footer';
-  @import 'core/wip';
-  @import 'optional/decoration';
-  @import 'optional/animation';
-  @import 'optional/image-gallery';
-  @import 'optional/tooltip';
-  @import 'optional/aria';
-  @import 'optional/accessability';
-  @import 'design/themes';  
-  @import 'design/bg-color';
-  @import 'design/text-color'; 
-  @import 'optional/marketing/exit-intent';
-  @import 'optional/marketing/contact-form';
+  @import "user-settings";
+  @import "core/mixins";
+  @import "core/framework";
+  @import "core/scaffold";
+  @import "optional/marketing/marketing-promos";
+  @import "core/header";
+  @import "general/form";
+  @import "optional/slider";
+  @import "design/buttons";
+  @import "core/flex";
+  @import "optional/table";
+  @import "core/formatting";
+  @import "optional/alert";
+  @import "design/text";
+  @import "design/border-color";
+  @import "general/test";
+  @import "general/components";
+  @import "design/layouts";
+  @import "core/footer";
+  @import "core/wip";
+  @import "optional/decoration";
+  @import "optional/animation";
+  @import "optional/image-gallery";
+  @import "optional/tooltip";
+  @import "optional/aria";
+  @import "optional/accessability";
+  @import "design/themes";
+  @import "design/bg-color";
+  @import "design/text-color";
+  @import "optional/marketing/exit-intent";
+  @import "optional/marketing/contact-form";
 
   //--------------------------------------------------------------
   //  Things that should go last
   //--------------------------------------------------------------
-  @import 'core/media-query';
+  @import "core/media-query";
   // @import 'optional/stacking'; // not in use currently
-  @import 'general/margin-padding';
-
+  @import "general/margin-padding";
 
   //--------------------------------------------------------------
   // Media queries for font size change
   //--------------------------------------------------------------
 
-//contextual
-.text-success{
-  color: darken($green, 11%);
-}
+  //contextual
+  .text-success {
+    color: darken($green, 11%);
+  }
 
-.text-failure{
- color: darken($red, 4%);
-}
+  .text-failure {
+    color: darken($red, 4%);
+  }
 
   @media (max-width: 575.98px) {
     font-size: $zen-tablet-mobile-font-size;
 
-  p{
+    p {
       line-height: 1.4rem;
-      letter-spacing: -.2px;
-     }
+      letter-spacing: -0.2px;
+    }
 
     //  h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
     //   line-height: 2rem;
     //  }
-
   }
 
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: $zen-tablet-mobile-font-size;
-    p{
-      line-height: 1.5rem;
-      letter-spacing: -.1px;
-     }
+    p {
+      line-height: 1.4rem;
+      letter-spacing: -0.1px;
+    }
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: $zen-font-size;
-    p{
-      line-height: 1.7rem;
-     }
+    p {
+      line-height: 1.5rem;
+    }
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -150,67 +144,65 @@ $base-text-color: #444444;
   }
 }
 
-
 //--------------------------------------------------------------
 // Dark Mode Settings
 //--------------------------------------------------------------
-
 
 .zen-dark {
   color: $zen-dark-text-color;
   background: #292929;
   $responsive-text-color: #ededed;
 
-      .text-success{
-        color: lighten(green, 10%);
-      }
-      
-      .text-failure{
-      color:  lighten(red, 16%);
-      }
-
-      td,
-      th {
-        color: $zen-dark-text-color;
-      }
-
-      .text-dual{
-        color: $zen-dark-text-color !important;
-      }
-
-      a {
-        color: $zen-dark-text-color;
-        cursor: pointer;
-        text-decoration: underline;
-      }
-
-      label {
-        color: $zen-dark-text-color !important;
-      }
-
-      a:hover {
-        color: #e8e8e8;
-        text-decoration: none;
-      }
-
-      .text-grey-dual{
-        color: #8C8C8C;
-      }
-
-      $text-grey-dual: #8C8C8C;
-
-      .bg-ui-hover:hover, .tab-nav .item-minimal:hover {
-        background: hsla(69, 0%, 79%, 0.3);
-      }
-
-      // Adjust the .btn-fill-up to have the text same as the outline
-    .btn-fill, .theme-light .btn-fill {
-      color: $responsive-text-color;
-    }  
-
-    .text-cta-dual{
-      color: $responsive-text-color;
-
+  .text-success {
+    color: lighten(green, 10%);
   }
 
+  .text-failure {
+    color: lighten(red, 16%);
+  }
+
+  td,
+  th {
+    color: $zen-dark-text-color;
+  }
+
+  .text-dual {
+    color: $zen-dark-text-color !important;
+  }
+
+  a {
+    color: $zen-dark-text-color;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  label {
+    color: $zen-dark-text-color !important;
+  }
+
+  a:hover {
+    color: #e8e8e8;
+    text-decoration: none;
+  }
+
+  .text-grey-dual {
+    color: #8c8c8c;
+  }
+
+  $text-grey-dual: #8c8c8c;
+
+  .bg-ui-hover:hover,
+  .tab-nav .item-minimal:hover {
+    background: hsla(69, 0%, 79%, 0.3);
+  }
+
+  // Adjust the .btn-fill-up to have the text same as the outline
+  .btn-fill,
+  .theme-light .btn-fill {
+    color: $responsive-text-color;
+  }
+
+  .text-cta-dual {
+    color: $responsive-text-color;
+  }
 }
