@@ -1,10 +1,10 @@
 # zencss
 
-An open-source, website authoring and design toolkit that helps you build, style, and debug websites. Currently Beta v2.0.0 
+An open-source, website authoring and design toolkit that helps you build, style, and debug websites. Currently working on RC for Beta v2.0.0. Est. launch - Q1 2024
 
 ### Installation
 
-- Download or clone the files [from the zencss repository](https://github.com/zencss/zencss).
+- Download or clone the files [from the zencss repository](https://github.com/zen-solutions/zencss).
 - Follow the instructions in the [zenCSS setup documentation](https://zencss.com/docs/index.html#setup).
 
 
