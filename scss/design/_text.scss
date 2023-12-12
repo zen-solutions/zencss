@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //----------------------
@@ -35,43 +35,43 @@ $text-grey-dual: #5e5e5e;
 // Text Formatting */
 //------------------------------------------
 
-.italic {
+.text-italic {
   font-style: italic;
 }
 
-.thinnest {
+.text-thinnest {
   font-weight: 100;
 }
 
-.thinner {
+.text-thinner {
   font-weight: 200;
 }
 
-.thin {
+.text-thin {
   font-weight: 300;
 }
 
-.regular {
+.text-regular {
   font-weight: 400;
 }
 
-.medium {
+.text-medium {
   font-weight: 500;
 }
 
-.semibold {
+.text-semibold {
   font-weight: 600;
 }
 
-.bold {
+.text-bold {
   font-weight: 700;
 }
 
-.bolder {
+.text-bolder {
   font-weight: 800;
 }
 
-.boldest {
+.text-boldest {
   font-weight: 900;
 }
 
@@ -109,24 +109,28 @@ $text-grey-dual: #5e5e5e;
 // Text Size
 //------------------------------------------
 
-.small {
+.text-small {
   font-size: 0.8em !important;
 }
 
-.smaller {
+.text-smaller {
   font-size: 0.6em;
 }
 
-.big {
+.text-big {
   font-size: 1.2em;
 }
 
-.bigger {
+.text-bigger {
   font-size: 1.4em;
 }
 
 .text-align-right {
   text-align: right;
+}
+
+.text-50{
+  font-size: 50px;
 }
 
 // ------------------------------------------
@@ -280,6 +284,15 @@ $text-grey-dual: #5e5e5e;
   background-color: #f8d7da;
   color: $dark-color;
 }
+
+.list-group-item-notice {
+  background-color: #e5eaef;
+  color: darken(#e5eaef, 50%);
+  font-size: .8em;
+  border:0;
+  border-left: 3px solid darken(#e5eaef, 20%);
+}
+
 
 .list-group-item-warning {
   background-color: #fff3cd;
@@ -470,4 +483,19 @@ a.text-cta-dual {
 
 .link-underline-white:hover::after {
   background-color: white;
+}
+
+.link-classic {
+  color: #0061C2;
+  text-decoration: none;
+}
+
+
+.link-classic:hover {
+  color: #2491FF;
+  text-decoration: underline; 
+}
+
+.link-classic:active {
+  color: #FF0000; /* Red for active (clicked) state */
 }

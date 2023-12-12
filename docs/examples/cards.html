@@ -52,32 +52,34 @@
         <z-container>
             <z-row>
                 <z-col>
-                    <p> zenCSS provides you with cards (<code>.card</code>), general-purpose containers that help you organize the content of your web apps. Cards should be used in combination with the Smart-Align System, meaning that they need to be placed inside a grid's rows to work properly. Layouts created with cards are responsive, realigning according to the available size on the screen.
+                    <p> zenCSS provides you with cards (<code>.card</code>), general-purpose containers that help you organize the content of your web apps. Cards should be used in combination with the Smart-Align System, meaning that they need to be placed inside a grid's rows (or defined on a column) to work properly. Layouts created with cards are responsive, realigning according to the available size on the screen.
                     </p>
                 </z-col>
             </z-row>
         </z-container>
         <z-container class="single page-section">
             <z-row>
-                <z-col class="border-bottom">
-                    <p class="headline">Card with Full Bleed Header Image and Text</p>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h2 class="headline">Large Image Card</h2>
+                        <p>Card with Full Bleed Header Image and Text</p>
+                        <hr>
+                    </div>
                 </z-col>
             </z-row>
+
             <z-row>
                 <z-col class="card theme-light border-3">
                     <img src="../../img/placeholder/16x9/neom2.jpg" class="img-full square">
                     <h3 class="h6 headline">A beautiful card for your website</h3>
                     <p>Lorem ipsum dolor sit amet consec tetur, adipis cing elit. Amet incidunt veritatis dolorum sed alias et nulla illo sapiente repellendus ducimus.</p>
                 </z-col>
-
             </z-row>
-        </z-container>
 
-        <z-container>
             <z-row>
                 <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
+                    <div class="accordion center">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content1" class="expanded-content" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light"&gt;
     &lt;img src="16x9.jpg" class="img-full square"&gt;
@@ -99,30 +101,32 @@
 
         <z-container class="single page-section">
             <z-row>
-                <z-col class="border-bottom">
-                    <p class="headline ">Card with Background Image and Text</p>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h2 class="headline">Full Image Card</h2>
+                        <p>Card with Background Image, overlay & Text</p>
+                        <hr>
+                    </div>
                 </z-col>
             </z-row>
-            </z-row>
-
+           
             <z-row>
-                <z-col class="card theme-light gap-1">
-                    <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" class="img-bg">
-                    <h4>card title</h4>
-                    <p>lorem ipsum dolor</p>
+                <z-col class="card theme-dark gap-3 h-300">
+                    <div class="overlay"></div> <!-- Overlay element -->
+                    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" class="img-bg">
+                    <span class="eyebrow">NATURE</span>
+                    <h4 class="headline">Best places to visit this summer</h4>
+                    <a href="" class="btn  btn-light w-150 flex-bottom">Learn More</a>
                 </z-col>
 
             </z-row>
 
-        </z-container>
-
-        <z-container>
             <z-row>
                 <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
+                    <div class="accordion center">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content2" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light gap-1"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light gap-3 h-300"&gt;
   &lt;img src="16x9.jpg" class="img-bg"&gt;
   &lt;h4&gt;card title&lt;/h4&gt;
   &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
@@ -137,34 +141,32 @@
 
         <z-container class="single">
             <z-row>
-                <z-col class="border-bottom">
-                    <p class="headline ">Card with Top Image and Text</p>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h2 class="headline">Image Card</h2>
+                        <p>Card with Top Image and Text</p>
+                        <hr>
+                    </div>
                 </z-col>
             </z-row>
+        
             <z-row>
-
                 <z-col class="card theme-light">
                     <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" class="square">
-                    <h4>A title goes here</h4>
+                    <h4 class="headline">A title goes here</h4>
                     <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
                 </z-col>
-
-
             </z-row>
 
-        </z-container>
 
-
-
-        <z-container>
             <z-row>
                 <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
+                    <div class="accordion center">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content3" class="expanded-content" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-dark"&gt;
     &lt;img src="16x9.jpg" class="square"&gt;
-    &lt;h4&gt;A title goes here&lt;/h4&gt;
+    &lt;h4 class="headline"&gt;A title goes here&lt;/h4&gt;
     &lt;p&gt;Fugit ratione natus... &lt;/p&gt;
 &lt;/div&gt;</code></pre>
                         </div>
@@ -176,35 +178,34 @@
 
         <z-container class="single page-section">
             <z-row>
-                <z-col class="border-bottom">
-                    <p class="headline">Card with Wrapping Text</p>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h2 class="headline">Text Wrap Card</h2>
+                        <p>Card with image and wrapping text</p>
+                        <hr>
+                    </div>
                 </z-col>
             </z-row>
+          
             <z-row>
                 <z-col class="card theme-light small">
                     <div>
                         <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" class="img-left w-90 h-90 img-round">
-                        <h3>A title goes here</h3>
+                        <h4  class="headline mb-1">A title goes here</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus officia eligendi iste nihil. Impedit nam laborum quo qui culpa animi eligendi. Voluptas velit molestias, illum fugiat eos labore incidunt quis, mollitia deserunt quasi maiores ullam. Eius non at magni amet blanditiis, nesciunt saepe.</p>
                     </div>
                 </z-col>
-
             </z-row>
 
-        </z-container>
-
-
-
-        <z-container>
             <z-row>
                 <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
+                    <div class="accordion center">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content4" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-primary small"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light"&gt;
   &lt;div&gt;
       &lt;img src="your-image.jpg" class="img-left w-80 h-80 img-round"&gt;
-      &lt;h4&gt;A title goes here&lt;/h4&gt;
+      &lt;h4 class="headline mb-1"&gt;A title goes here&lt;/h4&gt;
       &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ... &lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -217,33 +218,36 @@
 
         <z-container class="single page-section">
             <z-row>
-                <z-col class="border-bottom">
-                    <p class="headline ">Card with Icon and Text</p>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h2 class="headline">Icon Card</h2>
+                        <p>Card with Icon and Text</p>
+                        <hr>
+                    </div>
                 </z-col>
             </z-row>
             <z-row>
                 <z-col class="card theme-light center">
-                    <div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"><img src="../../docs/images/zen-icons/policy.svg" alt="" class="w-30 h-30 center-me"></i>
+                    <div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"><i class="zenicon-ind-in-page text-bigger"></i>
                     </div>
-                    <h4>A title goes here</h4>
-                    <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+                    <h4 class="headline">A title goes here</h4>
+                    <p>Todo: Redo code. Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
                 </z-col>
             </z-row>
-        </z-container>
 
-        <z-container>
             <z-row>
                 <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
+                    <div class="accordion center">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content5" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-light center"&gt;
-    &lt;div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"&gt;
-      &lt;img src="your-icon.png" alt="" class="w-20 h-20 center-me icon-invert"&gt;
-    &lt;/div&gt;
-    &lt;h4&gt;A title goes here&lt;/h4&gt;
-    &lt;p&gt;Fugit ratione natus ... &lt;/p&gt;
-&lt;/z-col&gt;</code></pre>
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light center"&gt;
+ &lt;div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"&gt;
+  &lt;i class="zenicon-ind-in-page text-bigger"&gt;
+  &lt;/i&gt;
+ &lt;/div&gt;
+ &lt;h4&gt;A title goes here&lt;/h4&gt;
+ &lt;p&gt;Fugit ratione natus ... &lt;/p&gt;
+&lt;/div&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>
@@ -253,16 +257,16 @@
 
 
 
-        <z-container class="single page-section">
+        <!--z-container class="single page-section">
             <z-row>
                 <z-col class="theme-light square">
                     <div class="p-5">
-                        <h2 class="headline">This is the amazing section</h2>
-                        <p class="lead ">here are some amazing things you can do</p>
+                        <h4 class="headline">This is the amazing section</h4>
+                        <p>here are some amazing <mark>highlighted text</mark> things you can do</p>
                     </div>
                     <z-container>
                         <z-row>
-                            <z-col class="card bg-grey-1-dark">
+                            <z-col class="card bg-grey-1-dark d-flex flex-direction-row justify-content-evenly">
                                 <span>Card with Footer</span>
                                 <div class="icon-toggle">
                                     <i class="zenicon-favorite-border icon-off show"></i>
@@ -286,8 +290,8 @@
                         </z-row>
                     </z-container>
                     <div class="p-5">
-                        <h2 class="headline">This is the amazing section</h2>
-                        <p class="lead ">here are some amazing things you can do</p>
+                        <h4 class="headline">This is the amazing section</h4>
+                        <p>here are some amazing <mark>highlighted text</mark> things you can do</p>
                     </div>
                 </z-col>
             </z-row>
@@ -298,9 +302,11 @@
         <z-container class="single page-section">
             <z-row>
                 <z-col class="theme-light square">
-                    <div class="pt-5 mb-0 center">
-                        <h2 class="headline text-balance">Get Started with zenCSS</h2>
-                        <p class="lead mb-0">Follow these simple steps</p>
+                    <div class="pt-5 center">
+                        <div class="p-5">
+                            <h4 class="headline">This is the amazing section</h4>
+                            <p>here are some amazing things you can do</p>
+                        </div>
                     </div>
                     <z-container>
                         <z-row>
@@ -358,14 +364,12 @@
         <z-container class="single">
             <z-row>
                 <z-col class="card tabbed-card p-0">
-                    <!-- Tab header container -->
                     <div class="tab-nav tab-header">
                         <div class="item-minimal tab" data-tab="1"><i class="zenicon-person down-1"></i> Account</div>
                         <div class="item-minimal tab" data-tab="2"><i class="zenicon-settings"></i> Settings</div>
                         <div class=" item-minimal tab" data-tab="3"><i class="zenicon-ind-in-page"></i> Prefs</div>
                     </div>
 
-                    <!-- Tab content container -->
                     <div class="tab-content active">
                         <z-col class="card theme-light ml-0 mr-0">
                             <p>Content for Section 1</p>
@@ -383,7 +387,7 @@
                     </div>
                 </z-col>
             </z-row>
-        </z-container>
+        </z-container-->
 
 
 

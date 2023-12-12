@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 @mixin alert($background-color, $icon-url, $left-width) {
@@ -93,23 +93,23 @@
 }
 .alert-dark {
   @include alert(
-    $dark-color,
+    $dark-mode-color,
     "../img/icons/alerts/circle-check-regular.svg",
     60px
   );
 }
 .alert-dark-minimal {
-  @include alert($dark-color, "", 4px);
+  @include alert($dark-mode-color, "", 4px);
 }
 .alert-light {
   @include alert(
-    $light-color,
+    $light-mode-color,
     "../img/icons/alerts/circle-check-regular.svg",
     60px
   );
 }
 .alert-light-minimal {
-  @include alert($light-color, "", 4px);
+  @include alert($light-mode-color, "", 4px);
 }
 
 //override

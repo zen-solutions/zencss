@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+<div id="skip-navigation">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+</div>
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+        </div>
+        <div class="docs-nav">
+            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
+        </div>
+        <div id="nav-placeholder"></div>
+    </header>
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1 class="headline">
+                        Header
+                    </h1>
+                    <p>
+                        A scaled back, mobile-responsive header you can integrate in under 30 seconds. use <code>.header-sticky</code> for a sticky header.
+                    </p>
+                        <hr>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+
+
+
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Code Example--->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">
+
+
+
+                        </code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row >
+            <z-col>
+                <div class="center up-20">
+                    <hr>
+                    <h3 class="h4">The Zen Test</h3>
+                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                </div>
+                <div class="center">
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+    </main> 
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="../../js/zencss.js"></script>
+<script src="../../docs/js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+  <script src="../js/copy.js"></script>
+</body>
+
+</html>

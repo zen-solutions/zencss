@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //-------------------------------------------------
@@ -171,14 +171,12 @@ $sizes: (
   .w-#{$key} {
     width: $value !important;
     max-width: $value;
-    display: inline-block;
   }
 
-  // .h-#{$key} {
-  //   height: $value !important;
-  //   max-height:$value;
-  //   display: inline-block;
-  // }
+  .h-#{$key} {
+    height: $value !important;
+    max-height:$value;
+  }
 }
 
 //----------------------------------------------------
@@ -193,7 +191,8 @@ $sizes: (
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
-  max-width: 100%;
+  //max-width: 100%;
+  //overflow: hidden;
 
   h1,
   h2,

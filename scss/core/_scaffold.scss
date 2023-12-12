@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 html {
@@ -196,7 +196,7 @@ hr {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   height: 1px;
-  opacity: 0.5;
+  opacity: 0.28;
   width: 100%;
 }
 
@@ -212,7 +212,7 @@ button,
   text-wrap: pretty;
   padding: 1em;
   margin: 0.2em;
-  margin-top: 1em;
+  margin-top: 0;
   margin-bottom: 1em;
   text-align: center;
   border: none;
@@ -235,6 +235,7 @@ button:hover,
   background: lighten($bg-header-footer, 10%);
   color: $light-color;
 }
+
 
 button.bg-cta:hover {
   background: darken($cta-color, 8%);
@@ -267,7 +268,7 @@ a.swap-underline:hover {
 }
 
 pre {
-  padding: 0 20px;
+  padding: 10px 20px;
   font-size: 0.8em;
   background: rgba(0, 0, 0, 0.1);
   border-radius: $border-radius;
@@ -789,6 +790,46 @@ On the rare occasion you need to override it, use something like the following:
   display: none;
 }
 
+//----------------
+// close button
+//---------------
+
+.close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Adjust as needed */
+  padding: 8px; 
+  color: $grey-3;
+}
+
+.close:before {
+  content: '\ea29';
+  font-family: 'zenicons'; 
+  display: inline-block;
+
+}
+
+.close:hover:before {
+  content: '\ea04'; 
+  color: $grey-3;
+}
+
+.naked{
+  background: unset !important;
+  border: unset !important;
+}
+
+.overlay {
+  position: absolute; /* Absolute position to overlay on top of the image */
+  top: 0; /* Align to top */
+  right: 0; /* Align to right */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Gradient effect */
+  z-index: 1; /* Ensure it's above the image */
+}
+
 // .pattern-interrupt {
 //   display: none;
 // }
@@ -803,13 +844,19 @@ On the rare occasion you need to override it, use something like the following:
 // //hide at media query for mobile. do one for tablet too
 // }
 
-.lazy-load {
-  background: url("../../img/general-icons/essential/spinner.gif") no-repeat
-    center center;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
+// .lazy-load {
+//   font-size: 0; 
+//   background-color: red; 
+//   max-width: 100%; 
+//   min-height: 100px; 
+//   display: block;
+// }
+
+// .lazy-load[src=""]::after {
+//   content: attr(alt);
+//   font-size: initial; 
+// }
+
 
 //docyument these in bgcolor for primary themes
 //.bg-accent-hover:hover{

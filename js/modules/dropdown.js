@@ -1,7 +1,7 @@
 /*
 * zenCSS v1.0.0 (https://zencss.com/)
 * Copyright 2023-2023 Shaun Mackey
-* Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+* Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 */
  
   //-------------------------------------

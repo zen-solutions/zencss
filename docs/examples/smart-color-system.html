@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
- <link rel="stylesheet" href="../../css/zen.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -60,9 +61,9 @@
     <z-container class="page-section">
         <z-row>
             <z-col>
-                <span class="label up-5 mb-5">WCAG 2.1 AA &check;</span>
+                <span class="label bg-cta-minimal">WCAG 2.1 AA <i class="zenicon-check down-2"></i> <a class="text-small text-cta up-1" href="https://wave.webaim.org/report#/https://zencss.com/docs/examples/smart-color-system.html">Verify</span> </a>
                 <h2>Color Compliance, automated.</h2>
-                <p>The zenCSS Smart-Color System automatically adheres to WCAG 2.1 AA best practices. Our software evaluates the necessary contrast ratios for your color choices,  autogenerates a light/dark & gradient palette for each color and all font colors with sufficient contrast to exceed current accessability standards. <a href="https://wave.webaim.org/report#/https://zencss.com/docs/examples/smart-color-system.html">Verify here</a></p>
+                <p>The zenCSS Smart-Color System automatically adheres to WCAG 2.1 AA best practices. Our software evaluates the necessary contrast ratios for your color choices,  autogenerates a light/dark & gradient palette for each color and all font colors with sufficient contrast to exceed current accessability standards. </p>
             </z-col>
         </z-row>
         <z-row class="border-bottom">
@@ -75,16 +76,16 @@
                <z-container>
                 <z-row>
                     <z-col>
-                        <div class="bg-primary  w-75">
+                        <div class="bg-primary  w-75 d-inline-block">
                             <div class="small  w-75 p-1">Primary</div>
                         </div>
-                        <div class="bg-secondary  w-75">
-                            <div class="small  w-75 p-1">Secondary</div>
+                        <div class="bg-secondary  w-90 d-inline-block">
+                            <div class="small  w-90 p-1">Secondary</div>
                         </div>
-                        <div class="bg-cta  w-75">
+                        <div class="bg-cta  w-75 d-inline-block">
                             <div class="small  w-75 p-1">CTA</div>
                         </div>
-                        <div class="bg-accent  w-75">
+                        <div class="bg-accent  w-75 d-inline-block">
                             <div class="small  w-75 p-1">Accent</div>
                         </div>
                     </z-col>
@@ -98,7 +99,7 @@
         </z-row>
 
         <z-row class="border-bottom">
-            <z-col><p class="down-20">Brand Colors + auto-generated light/dark/gradient versions with color compliant font color<!--span class="label bg-secondary-light">WCAG 2.1 AA &check;</span-->
+            <z-col><p class="down-20">zenCSS integrates your colors, and auto-generates light/dark/gradient versions with color compliant font colors
             </p>
 </z-col>
         </z-row>
@@ -275,7 +276,7 @@
                      <z-col class="card bg-yellow-dark">
                          <div class="small down-5 left-5 w-225">bg-yellow-dark</div>
                      </z-col>
-                     <z-col class="card bg-yellow-light w-225">
+                     <z-col class="card bg-yellow-light">
                          <div class="small down-5 left-5 w-225">bg-yellow-light</div>
                      </z-col>
                      <z-col class="card bg-yellow-gradient">

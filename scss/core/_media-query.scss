@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 @use "sass:math";
@@ -456,6 +456,7 @@
   // h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   //margin: 0.15rem 0;
   // }
+  
 }
 
 .col-nested {
@@ -521,15 +522,15 @@
 //needed to overwrite importance. good example of why using important is bad.
 .feature {
   //flex-grow: 2 !important;
-  flex: 2.7 !important;
+  flex-grow: 1.50 !important;
 }
 
 .feature-sm {
-  flex-grow: 3 !important;
+  flex-grow: 2.3 !important;
 }
 
 .feature-md {
-  flex-grow: 4 !important;
+  flex-grow: 3.9 !important;
 }
 
 .feature-lg {

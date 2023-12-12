@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 // Default Background Colors
@@ -95,6 +95,7 @@ $bg-light-colors: (
     ) !important;
     border: 1px solid map-get($text-dark-colors, $bg-key) !important;
     color: map-get($bg-default-colors, $bg-key) !important;
+  
   }
 
   //overrides

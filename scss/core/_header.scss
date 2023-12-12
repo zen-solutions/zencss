@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 header {
@@ -16,6 +16,12 @@ header {
 #header-logo,
 #header-logo img {
   max-height: 43px;
+
+  & a {
+    &:hover {
+      background: none;
+    }
+  }
 }
 
 nav ul {
@@ -54,8 +60,10 @@ nav a:hover {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: .9em;
+
   }
+
 
   .caret-up {
     top: calc(100% + 12px);

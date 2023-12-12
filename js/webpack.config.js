@@ -1,3 +1,9 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 const path = require('path');
 
 module.exports = {
@@ -9,6 +15,7 @@ module.exports = {
       '/modules/dropdown.js',
       '/optional/image-gallery.js',
       '/modules/accordian.js',
+//      '/optional/lazy-load.js',
       '/modules/misc.js',
       '/modules/opacity-overrides.js',
       '/modules/dark-mode.js',

@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //-------------------------------------------------
@@ -49,27 +49,27 @@
   width: 91%;
 }
 
-.close {
-  color: $dark-color;
-  font-size: 28px;
-  font-weight: bold;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  // top: 45%;
-  // right: 0;
-  top: 0;
-  right: 5px;
-  transform: translateY(-50%);
-  opacity: 0.5;
-}
+// .close {
+//   color: $dark-color;
+//   font-size: 28px;
+//   font-weight: bold;
+//   width: 15px;
+//   height: 15px;
+//   position: absolute;
+//   // top: 45%;
+//   // right: 0;
+//   top: 0;
+//   right: 5px;
+//   transform: translateY(-50%);
+//   opacity: 0.5;
+// }
 
-.close:hover,
-.close:focus {
-  color: $cta-color;
-  text-decoration: none;
-  cursor: pointer;
-}
+// .close:hover,
+// .close:focus {
+//   color: $cta-color;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
 
 .left-child {
   width: 95%;
@@ -91,6 +91,7 @@
 
   p {
     margin: 0;
+    padding:1em;
   }
 
   a {
@@ -117,9 +118,9 @@
   margin: 0;
   border: 1px solid $border-color;
   transition: background-color 0.3s;
-  font-weight: 400;
   @include default-state;
   @include hover-state;
+  margin-top: -1px;
 }
 
 //toggle
@@ -134,9 +135,7 @@
 
 .expanded-content.show {
   max-height: 300px; /* Adjust as needed */
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border: 1px solid $border-color;
 }
 
 .expanded-content.full-height.show {
@@ -165,7 +164,7 @@
   position: absolute;
   left: -50px;
   top: calc(100% + 29px);
-  background-color: #ededed;
+  background-color: #fdfdfd;
   color: $dark-color;
   min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
@@ -182,6 +181,7 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   z-index: 1001;
+
 }
 
 .dropdown-content a {
@@ -194,9 +194,10 @@
   margin-left: -1px;
 
   &:hover {
-    background: darken($light-ui-hover-color, 25%);
+    background: $light-ui-hover-color;
     color: $dark-color;
     text-decoration: none;
+    
   }
 }
 
@@ -221,7 +222,7 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #ededed;
+  border-bottom: 10px solid #fdfdfd;
   position: absolute;
   top: calc(100% + 29px);
   left: 29px;
@@ -243,8 +244,15 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .dropdown-content {
+
+  nav .dropdown-content {
     background-color: unset;
+    a {
+      color: $text-white;
+    }
+  }
+  .dropdown-content {
+    //background-color: unset;
     position: static;
     display: block;
     left: auto;
@@ -258,9 +266,7 @@
     min-width: 225px !important;
     border-radius: unset;
 
-    a {
-      color: $text-white;
-    }
+
   }
 
   .dropdown-link-container {
@@ -295,7 +301,7 @@
       margin-top: 0;
       margin-bottom: 0;
       padding-top: 0;
-      line-height: 1.7em;
+      //line-height: 1.7em;
       letter-spacing: normal;
     }
   }

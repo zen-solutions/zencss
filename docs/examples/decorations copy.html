@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zenCSS Components</title>
+
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body class="zen">
+    <div id="skip-navigation">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+    </div>
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+        </div>
+
+        <div id="nav-placeholder"></div>
+
+    </header>
+    <main id="main-content">
+
+
+
+        <!----------------------------------------------------------------------->
+        <!--- Page Title  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">Site Extras</h1>
+                        <p>Additional elements and features that enhance the functionality and user experience of your websites.</p>
+                        <hr>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <!----------------------------------------------------------------------->
+        <!--- Component --->
+        <!----------------------------------------------------------------------->
+
+
+
+
+
+
+       
+        <z-container>
+            <z-row>
+                <z-col>
+                    <hr>
+                    <h2>Shadows</h2>
+                </z-col>
+            </z-row>
+            <z-row class="five-up">
+                <z-col class="card shadow-1 theme-light">Shadow 1</z-col>
+                <z-col class="card shadow-2 theme-light">Shadow 2</z-col>
+                <z-col class="card shadow-3 theme-light">Shadow 3</z-col>
+                <z-col class="card shadow-4 theme-light">Shadow 4</z-col>
+                <z-col class="card shadow-5 theme-light">Shadow 5</z-col>
+            </z-row>
+        </z-container>
+
+
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <hr>
+                    <h2>Progress Bar</h2>
+                </z-col>
+            </z-row>
+            <z-row class="five-up">
+                <z-col class="card"><progress></progress></z-col>
+                <z-col class="card"><progress value="25" max="100"></progress></z-col>
+                <z-col class="card"><progress value="50" max="100"></progress></z-col>
+                <z-col class="card"><progress value="75" max="100"></progress></z-col>
+                <z-col class="card"><progress value="100" max="100"></progress></z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <hr>
+                    <h2>Spinner</h2>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col class="card">
+                    <span aria-busy="true">add aria-busy="true" to an element to add a spinner</span>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <hr>
+                    <h2>Promo Bar</h2>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <div class="promo-banner theme-cta  square">
+                        <i class="text-accent zenicon-verified mr-1 bigger up-1"></i> 101 Essential Icons for zenCSS. <p class="bold mb-2 ml-1 down-1"> <a href="/docs/examples/icons.html" class="text-white down-2">Get 'em free <i class="zenicon-arrow-right-alt bigger down-4"></i></a></p>
+                    </div>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <hr>
+                    <h2>Icon Toggle</h2>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <div class="icon-toggle">
+                        <i class="zenicon-favorite-border icon-off show bigger"></i>
+                        <i class="zenicon-favorite icon-on bigger"></i>
+                    </div>
+                    <br>
+                    <div class="icon-toggle">
+                        <i class=" zenicon-add-circle-outline icon-off show  bigger"></i>
+                        <i class=" zenicon-add-circle icon-on  bigger"></i>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <h2>Close Button</h2>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <a class="close bigger"></a>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <h2>Links</h2>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <div> <a href="../examples/bootstrap-test.html" class="text-cta-dual link-underline">View&nbsp;Now <i class="zenicon-east down-2"></i></a></div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <nav class="nav-menu">
+                <ul>
+                  <li><i class="icon zenicon-person"></i> Account</li>
+                  <li><i class="icon zenicon-shield"></i> Billing</li>
+                  <li><i class="icon zenicon-https"></i> Security</li>
+                  <li><i class="icon zenicon-notifications-off"></i> Notifications</li>
+                  <li><i class="icon zenicon-ind-in-page"></i> Preferences</li>
+                  <li><i class="icon zenicon-settings"></i> Settings</li>
+                </ul>
+              </nav>
+        </z-col>
+    </z-row>
+</z-container>
+
+<z-container>
+    <z-row>
+        <z-col>
+            <nav class="nav-menu">
+                <ul>
+                  <li class="active">
+                    <i class="icon big zenicon-person"></i>
+                    <div class="menu-item pl-2">
+                        <span class="main-text">Account</span>
+                      <span class="sub-text"> Your personal profile and information</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon big zenicon-shield"></i>
+                    <div class="menu-item pl-2">
+                        <span class="main-text">Billing</span>
+                      <span class="sub-text">Manage payments and transactions</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon big zenicon-https"></i>
+                    <div class="menu-item pl-2">
+                        <span class="main-text">Security</span>
+                      <span class="sub-text">Enhance account safety</span>
+                    </div>
+                  </li>
+
+                  <li >
+                    <i class="icon big zenicon-notifications-off"></i>
+                    <div class="menu-item pl-2">
+                        <span class="main-text">Notifications</span>
+                      <span class="sub-text">Customize your site alerts</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon big zenicon-ind-in-page"></i>
+                    <div class="menu-item pl-2">
+                        <span class="main-text">Preferences</span>
+                      <span class="sub-text">Personalize your experience</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon big zenicon-settings  pl-1"></i>
+                    <div class="menu-item pl-2">
+                      <span class="main-text">Settings</span>
+                      <span class="sub-text">Access account options</span>
+                    </div>
+                  </li>
+                  <!-- Repeat for other menu items -->
+                </ul>
+              </nav>
+              
+        </z-col>
+    </z-row>
+</z-container>
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <p>You might also be interested in...</p>
+                    <hr>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <button>Alice's previous article. </button>
+                </z-col>
+                <z-col>
+                    <button>Bob's next article</button>
+                </z-col>
+            </z-row>
+        </z-container>
+
+
+
+        <!----------------------------------------------------------------------->
+        <!---  The Zen Test --->
+        <!----------------------------------------------------------------------->
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center up-20">
+                        <hr>
+                        <h3 class="h4">The Zen Test</h3>
+                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <p> So you can be assured it "just works". Try it out below. </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row class="up-40">
+                <z-col>
+                    <div class="center">
+
+                        <button id="toggleButton" class="btn-md">Test</button>
+                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+    </main>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer>
+        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
+    </footer>
+
+    <script src="../js/hp.js"></script>
+    <script src="../../js/zencss.js"></script>
+<script src="../../docs/js/navigation.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+    <script src="../js/copy.js"></script>
+</body>
+
+</html>

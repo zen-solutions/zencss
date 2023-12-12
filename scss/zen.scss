@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //--------------------------------------------------------------
@@ -15,7 +15,7 @@ $zen-font-size: 15px;
 $zen-tablet-mobile-font-size: 14px;
 $zen-large-screen-font-size: 16px;
 $zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$zen-body-bg-color: #d7d7d7;
+$zen-body-bg-color: #e2e2e2;
 $zen-dark-text-color: #e5e5e5;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
@@ -64,7 +64,6 @@ $base-text-color: #444444;
   @import "general/form";
   @import "optional/slider";
   @import "design/buttons";
-  @import "core/flex";
   @import "optional/table";
   @import "core/formatting";
   @import "optional/alert";
@@ -86,6 +85,9 @@ $base-text-color: #444444;
   @import "design/text-color";
   @import "optional/marketing/exit-intent";
   @import "optional/marketing/contact-form";
+  @import "optional/menus";
+  @import "core/flex";
+
 
   //--------------------------------------------------------------
   //  Things that should go last
@@ -153,13 +155,13 @@ $base-text-color: #444444;
   background: #292929;
   $responsive-text-color: #ededed;
 
-  .text-success {
-    color: lighten(green, 10%);
-  }
+  // .text-success {
+  //   color: lighten(green, 10%);
+  // }
 
-  .text-failure {
-    color: lighten(red, 16%);
-  }
+  // .text-failure {
+  //   color: lighten(red, 16%);
+  // }
 
   td,
   th {
@@ -204,5 +206,10 @@ $base-text-color: #444444;
 
   .text-cta-dual {
     color: $responsive-text-color;
+  }
+
+  .link-classic {
+    color: #2491FF;
+    text-decoration: none;
   }
 }

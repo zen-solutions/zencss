@@ -1,11 +1,10 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 $responsive-breakpoint: 767px;
-$border-color: $border-color;
 
 .responsive-table,
 table {
@@ -14,30 +13,46 @@ table {
   margin-bottom: 1rem;
 }
 
-tr:nth-child(odd) td {
-  //background-color:  hsl(0 0% 25% /  0.15);
-  // border-bottom:1px solid $border-color;
-  background: darken($bg-ui-hover, 25%);
-}
-tr:nth-child(even) td {
-  //background-color:  hsl(0 0% 25 /  0.1);
-  background: darken($bg-ui-hover, 15%);
-
-  // border-bottom:1px solid $border-color;
-}
-
 th,
 td {
   padding: 8px;
   text-align: left;
-
-  // color:  $responsive-text-color;
 }
 
-th {
-  //background-color:  hsl(0 0% 35% /  0.25);
-  background: darken($bg-ui-hover, 45%);
+.zebra{
+  th{
+    background: darken($bg-ui-hover, 24%);
+  }
+  tr:nth-child(odd) td {
+    background: darken($bg-ui-hover, 16%);
+  }
+  tr:nth-child(even) td {
+    background: darken($bg-ui-hover, 8%);
+  }
+}
 
+.striped{
+
+
+  th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid $border-color;
+}
+th{
+  border-bottom: 2px solid $border-color;
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+}
+
+
+
+th {
+  //background: darken($bg-ui-hover, 35%);
   font-weight: 600;
 }
 
@@ -61,7 +76,7 @@ th {
         111,
         111,
         0.1
-      ); //dark mode top color new dual-mode-bg-color?
+      ); 
 
       display: block;
       margin-bottom: 20px;
@@ -81,3 +96,4 @@ th {
     }
   }
 }
+
