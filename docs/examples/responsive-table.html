@@ -33,8 +33,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Responsive HTML Table</h1>
-                    <p>A responsive component for displaying data in a structured, grid-like format. </p>
+                    <h1 class="headline">Responsive HTML Tables</h1>
+                    <p>A responsive component for displaying data in a structured, grid-like format. 4 formatting options. </p>
                         <hr>
                 </div>
             </z-col>
@@ -45,86 +45,317 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
-   <z-container>
-       <z-row>
-           <z-col>
-            <table class="responsive-table">
-                <thead>
-                    <tr>
-                        <th>Creature</th>
-                        <th>Origin Mythology</th>
-                        <th>Notable Feature</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Phoenix</td>
-                        <td>Greek</td>
-                        <td>Regenerates from ashes</td>
-                    </tr>
-                    <tr>
-                        <td>Dragon</td>
-                        <td>Multiple cultures</td>
-                        <td>Fire-breathing</td>
-                    </tr>
-                    <tr>
-                        <td>Unicorn</td>
-                        <td>European</td>
-                        <td>Single horn with healing powers</td>
-                    </tr>
-                    <tr>
-                        <td>Kraken</td>
-                        <td>Norse</td>
-                        <td>Giant sea monster</td>
-                    </tr>
-                    <tr>
-                        <td>Chimera</td>
-                        <td>Greek</td>
-                        <td>Part lion, goat, and snake</td>
-                    </tr>
-                    <tr>
-                        <td>Griffin</td>
-                        <td>Ancient Egyptian and Greek</td>
-                        <td>Body of a lion and the head and wings of an eagle</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-           </z-col>
-       </z-row>
-   </z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!--- End Component --->
-    <!----------------------------------------------------------------------->
     <z-container>
         <z-row>
             <z-col>
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Sample Code</a>
-                    <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;table class="responsive-table"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-        &lt;th&gt;Header 1&lt;/th&gt;
-        &lt;th&gt;Header 2&lt;/th&gt;
-        &lt;th&gt;Header 3&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Data 1&lt;/td&gt;
-        &lt;td&gt;Data 2&lt;/td&gt;
-        &lt;td&gt;Data 3&lt;/td&gt;
-        &lt;/tr&gt;
-    ...
-    &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-                    </div>
-                </div>
+             <table class="tablet:scroll-x striped">
+                 <thead>
+                     <tr>
+                         <th>Creature</th>
+                         <th>Origin Mythology</th>
+                         <th>Notable Feature</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Phoenix</td>
+                         <td>Greek</td>
+                         <td>Regenerates from ashes</td>
+                     </tr>
+                     <tr>
+                         <td>Dragon</td>
+                         <td>Multiple cultures</td>
+                         <td>Fire-breathing</td>
+                     </tr>
+                     <tr>
+                         <td>Unicorn</td>
+                         <td>European</td>
+                         <td>Single horn with healing powers</td>
+                     </tr>
+                     <tr>
+                         <td>Kraken</td>
+                         <td>Norse</td>
+                         <td>Giant sea monster</td>
+                     </tr>
+                     <tr>
+                         <td>Chimera</td>
+                         <td>Greek</td>
+                         <td>Part lion, goat, and snake</td>
+                     </tr>
+                     <tr>
+                         <td>Griffin</td>
+                         <td>Ancient Egyptian and Greek</td>
+                         <td>Body of a lion and the head and wings of an eagle</td>
+                     </tr>
+                 </tbody>
+             </table>
+             
             </z-col>
         </z-row>
-    </z-container>
+ 
+         <z-row>
+             <z-col>
+                 <div class="accordion">
+                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                     <div id="content1" class="expanded-content" aria-hidden="true">
+                         <pre class="copy-text square"><code class="language-html">&lt;table class="responsive-table striped"&gt;
+     &lt;thead&gt;
+         &lt;tr&gt;
+         &lt;th&gt;Header 1&lt;/th&gt;
+         &lt;th&gt;Header 2&lt;/th&gt;
+         &lt;th&gt;Header 3&lt;/th&gt;
+         &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+         &lt;tr&gt;
+         &lt;td&gt;Data 1&lt;/td&gt;
+         &lt;td&gt;Data 2&lt;/td&gt;
+         &lt;td&gt;Data 3&lt;/td&gt;
+         &lt;/tr&gt;
+     ...
+     &lt;/tbody&gt;
+ &lt;/table&gt;</code></pre>
+                     </div>
+                 </div>
+             </z-col>
+         </z-row>
+     </z-container>
+     
+ 
+    <z-container>
+        <z-row>
+            <z-col>
+             <table class="responsive-table zebra">
+                 <thead>
+                     <tr>
+                         <th>Creature</th>
+                         <th>Origin Mythology</th>
+                         <th>Notable Feature</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Phoenix</td>
+                         <td>Greek</td>
+                         <td>Regenerates from ashes</td>
+                     </tr>
+                     <tr>
+                         <td>Dragon</td>
+                         <td>Multiple cultures</td>
+                         <td>Fire-breathing</td>
+                     </tr>
+                     <tr>
+                         <td>Unicorn</td>
+                         <td>European</td>
+                         <td>Single horn with healing powers</td>
+                     </tr>
+                     <tr>
+                         <td>Kraken</td>
+                         <td>Norse</td>
+                         <td>Giant sea monster</td>
+                     </tr>
+                     <tr>
+                         <td>Chimera</td>
+                         <td>Greek</td>
+                         <td>Part lion, goat, and snake</td>
+                     </tr>
+                     <tr>
+                         <td>Griffin</td>
+                         <td>Ancient Egyptian and Greek</td>
+                         <td>Body of a lion and the head and wings of an eagle</td>
+                     </tr>
+                 </tbody>
+             </table>
+             
+            </z-col>
+        </z-row>
+ 
+         <z-row>
+             <z-col>
+                 <div class="accordion">
+                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                     <div id="content1" class="expanded-content" aria-hidden="true">
+                         <pre class="copy-text square"><code class="language-html">&lt;table class="responsive-table zebra"&gt;
+     &lt;thead&gt;
+         &lt;tr&gt;
+         &lt;th&gt;Header 1&lt;/th&gt;
+         &lt;th&gt;Header 2&lt;/th&gt;
+         &lt;th&gt;Header 3&lt;/th&gt;
+         &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+         &lt;tr&gt;
+         &lt;td&gt;Data 1&lt;/td&gt;
+         &lt;td&gt;Data 2&lt;/td&gt;
+         &lt;td&gt;Data 3&lt;/td&gt;
+         &lt;/tr&gt;
+     ...
+     &lt;/tbody&gt;
+ &lt;/table&gt;</code></pre>
+                     </div>
+                 </div>
+             </z-col>
+         </z-row>
+     </z-container>
+     
+
+     <z-container>
+        <z-row>
+            <z-col>
+             <table class="responsive-table striped zebra">
+                 <thead>
+                     <tr>
+                         <th>Creature</th>
+                         <th>Origin Mythology</th>
+                         <th>Notable Feature</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Phoenix</td>
+                         <td>Greek</td>
+                         <td>Regenerates from ashes</td>
+                     </tr>
+                     <tr>
+                         <td>Dragon</td>
+                         <td>Multiple cultures</td>
+                         <td>Fire-breathing</td>
+                     </tr>
+                     <tr>
+                         <td>Unicorn</td>
+                         <td>European</td>
+                         <td>Single horn with healing powers</td>
+                     </tr>
+                     <tr>
+                         <td>Kraken</td>
+                         <td>Norse</td>
+                         <td>Giant sea monster</td>
+                     </tr>
+                     <tr>
+                         <td>Chimera</td>
+                         <td>Greek</td>
+                         <td>Part lion, goat, and snake</td>
+                     </tr>
+                     <tr>
+                         <td>Griffin</td>
+                         <td>Ancient Egyptian and Greek</td>
+                         <td>Body of a lion and the head and wings of an eagle</td>
+                     </tr>
+                 </tbody>
+             </table>
+             
+            </z-col>
+        </z-row>
+ 
+         <z-row>
+             <z-col>
+                 <div class="accordion">
+                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                     <div id="content1" class="expanded-content" aria-hidden="true">
+                         <pre class="copy-text square"><code class="language-html">&lt;table class="responsive-table striped zebra"&gt;
+     &lt;thead&gt;
+         &lt;tr&gt;
+         &lt;th&gt;Header 1&lt;/th&gt;
+         &lt;th&gt;Header 2&lt;/th&gt;
+         &lt;th&gt;Header 3&lt;/th&gt;
+         &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+         &lt;tr&gt;
+         &lt;td&gt;Data 1&lt;/td&gt;
+         &lt;td&gt;Data 2&lt;/td&gt;
+         &lt;td&gt;Data 3&lt;/td&gt;
+         &lt;/tr&gt;
+     ...
+     &lt;/tbody&gt;
+ &lt;/table&gt;</code></pre>
+                     </div>
+                 </div>
+             </z-col>
+         </z-row>
+     </z-container>
+     
+ 
+ 
+    
+   <z-container>
+    <z-row>
+        <z-col>
+         <table class="responsive-table">
+             <thead>
+                 <tr>
+                     <th>Creature</th>
+                     <th>Origin Mythology</th>
+                     <th>Notable Feature</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>Phoenix</td>
+                     <td>Greek</td>
+                     <td>Regenerates from ashes</td>
+                 </tr>
+                 <tr>
+                     <td>Dragon</td>
+                     <td>Multiple cultures</td>
+                     <td>Fire-breathing</td>
+                 </tr>
+                 <tr>
+                     <td>Unicorn</td>
+                     <td>European</td>
+                     <td>Single horn with healing powers</td>
+                 </tr>
+                 <tr>
+                     <td>Kraken</td>
+                     <td>Norse</td>
+                     <td>Giant sea monster</td>
+                 </tr>
+                 <tr>
+                     <td>Chimera</td>
+                     <td>Greek</td>
+                     <td>Part lion, goat, and snake</td>
+                 </tr>
+                 <tr>
+                     <td>Griffin</td>
+                     <td>Ancient Egyptian and Greek</td>
+                     <td>Body of a lion and the head and wings of an eagle</td>
+                 </tr>
+             </tbody>
+         </table>
+         
+        </z-col>
+    </z-row>
+
+     <z-row>
+         <z-col>
+             <div class="accordion">
+                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                 <div id="content1" class="expanded-content" aria-hidden="true">
+                     <pre class="copy-text square"><code class="language-html">&lt;table class="responsive-table"&gt;
+ &lt;thead&gt;
+     &lt;tr&gt;
+     &lt;th&gt;Header 1&lt;/th&gt;
+     &lt;th&gt;Header 2&lt;/th&gt;
+     &lt;th&gt;Header 3&lt;/th&gt;
+     &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+     &lt;tr&gt;
+     &lt;td&gt;Data 1&lt;/td&gt;
+     &lt;td&gt;Data 2&lt;/td&gt;
+     &lt;td&gt;Data 3&lt;/td&gt;
+     &lt;/tr&gt;
+ ...
+ &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                 </div>
+             </div>
+         </z-col>
+     </z-row>
+ </z-container>
+
+
+    
     
 
     

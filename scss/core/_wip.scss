@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //---------------------------------------------
@@ -25,4 +25,16 @@
 .icon-off.show,
 .icon-on.show {
   display: inline;
+}
+
+//---------------------------------------------
+// heart toggle
+//---------------------------------------------
+.icon-toggle .zenicon-favorite-border:hover::before, .zenicon-favorite:hover {
+    color: $red;
+}
+
+ /* Color for the fill effect on click */
+.zenicon-favorite.icon-on.show {
+  color: $red;
 }

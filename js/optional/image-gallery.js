@@ -1,3 +1,9 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 function preloadImage(src) {
     const img = new Image();
     img.src = src;

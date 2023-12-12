@@ -9,10 +9,9 @@
         <ul class="pr-2">
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Desk</a>
-                <div class="dropdown-content">
-                    <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
-    
+                <div class="dropdown-content">    
     <a href="../help-desk/index.html">Getting Started</a>
+    <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
     <a href="../help-desk/installation.html">Installation</a>
     <a href="../help-desk/core-concepts.html">Core Concepts</a>
     <a href="../help-desk/page-sections.html">Site Sections</a>
@@ -26,7 +25,7 @@
                     <a href="smart-align-framework.html">Smart-Align Framework</a>
                     <a href="smart-color-system.html">Smart-Color System</a>
                     <a href="smart-text.html">Smart-Text System</a>  
-                    <a href="themes.html">Modes & Themes</a>
+                    <a href="themes.html">Themes & Modes</a>
                     <a href="zen-system.html">The ZEN Ideology</a>                      
                     <a href="zentax.html">Intro to Zentax</a>                      
                 </div>
@@ -59,26 +58,34 @@
                                 <a href="dropdown.html">Dropdown</a>
                                 <a href="exit-intent.html">Exit Popup</a>
                                 <a href="form-elements.html">Form Elements</a>
-                            </z-col>
-                            <z-col class="small">
                                 <a href="contact-form.html">Form - Sign Up</a>
                                 <a href="sign-in-form.html">Form - Sign In</a>
-                                <a href="responsive-table.html">HTML Table</a>
-                                <a href="icons.html">Icons</a>
-                                <a href="icon.html">Icon Container</a>
-                                <a href="image.html">Image Styling</a>
-                                <a href="image-carousel.html">Image Carousel</a>
-                                <a href="image-gallery.html">Image Gallery</a>
-                                <a href="list-group.html">List Groups</a>
-                                <a href="logos.html">Logo Bar</a>
                             </z-col>
                             <z-col class="small">
+
+                                <a href="responsive-table.html">HTML Table</a>
+                                <a href="icons.html">Icons</a>
+                                <a href="icon-toggle.html">Icon Toggle</a>
+                                <a href="image.html">Image/Icon Styling</a>
+                                <a href="image-carousel.html">Image Carousel</a>
+                                <a href="image-gallery.html">Image Gallery</a>
+                                <a href="labels.html">Labels</a>
+                                <a href="links.html">Links</a>
+                                <a href="list-group.html">List Groups</a>
+                                <a href="logos.html">Logo Bar</a>
+                                <a href="menus.html">Menus</a>
                                 <a href="modal.html">Modal</a>
+
+                            </z-col>
+                            <z-col class="small">
                                 <a href="pagination.html">Pagination</a>
+                                <a href="preloaders.html">Preloaders</a>
                                 <a href="pricing-table.html">Pricing Tables</a>
+                                <a href="promo-bars.html">Promo Bars</a>
                                 <a href="quiz.html">Quiz</a>
-                                <a href="decorations.html">Site Extras</a>                                    
+                                <a href="shadows.html">Shadows</a>                                                             
                                 <a href="testimonials.html">Testimonials</a>
+                                <a href="text.html">Text Formatting</a>
                                 <a href="tooltip.html">Tool Tips</a>
                                 <a href="tabs.html">Tabs</a>
                                 <a href="video-player.html">Video Player</a>

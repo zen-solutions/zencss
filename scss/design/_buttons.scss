@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 //------------------------------------------------
@@ -45,14 +45,14 @@ $btn-hover-color: darken($cta-color, 20%);
   padding: 0.3em 1em 0.3em 1em;
   overflow: hidden;
   display: inline;
-  background: lighten($dark-color, 10%); // why
-  color: $light-color; // make smart
+  background: $dark-mode-color; 
+  //border: 1px solid $dark-mode-color; 
+  color: smart-text-color($dark-mode-color);
   position: relative;
   font-size: 11px;
-  line-height: 9px;
+  line-height: 11px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  bottom: -1px;
   width: auto;
 }
 
@@ -61,11 +61,18 @@ $btn-hover-color: darken($cta-color, 20%);
   display: inline-block;
   line-height: 10px;
   position: relative;
-  color: $primary-color; // make smart
+  //color: smart-text-color($primary-color);
   font-size: 11px;
   font-weight: 700;
-  @include font-spacing;
+  //@include font-spacing;
 }
+
+.position-top-right {
+  float: right;
+  padding: 5px 10px;
+  margin-right: 10px; /* Adjust the margin as needed for spacing */
+  border-radius: 5px;
+  }
 
 .label-circle {
   border-radius: 50%;
@@ -95,6 +102,8 @@ $btn-hover-color: darken($cta-color, 20%);
   color: smart-text-color($primary-color) !important;
   @include hover-darken($primary-color);
 }
+
+
 
 .btn-secondary {
   background: $secondary-color !important;
@@ -129,10 +138,9 @@ $btn-hover-color: darken($cta-color, 20%);
 
 //------------------------------------------------------------
 // Ghost Button Definitions - NEW*
-// to do, turn this into scss when done w logic and tested
 //------------------------------------------------------------
 
-// Define a mixin for button outlines
+// Define mixin for button outlines
 @mixin outline-button($color, $bg-color: white) {
   border: 2px solid $color !important;
   background: none;
@@ -140,7 +148,7 @@ $btn-hover-color: darken($cta-color, 20%);
   @include hover-outline($color, smart-text-color($color));
 }
 
-// Define your button colors
+// Define button colors
 $btn-primary-color: $primary-color;
 $btn-secondary-color: $secondary-color;
 $btn-cta-color: $cta-color;
@@ -148,7 +156,7 @@ $btn-accent-color: $accent-color;
 $btn-light-color: white;
 $btn-dark-color: $dark-mode-color;
 
-// Define your button styles
+// Define button styles
 .btn-primary-outline {
   @include outline-button($btn-primary-color);
 }
@@ -340,3 +348,4 @@ $theme-light-text: $light-color;
     @include theme-button-styles($theme-cta-bg, $theme-cta-text);
   }
 }
+

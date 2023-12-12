@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
  
 
@@ -17,7 +17,7 @@
   });
   
   //-------------------------------------
-  // Heart toggle
+  // icon toggle
   //-------------------------------------
   document.addEventListener('DOMContentLoaded', function () {
     var iconToggles = document.querySelectorAll('.icon-toggle');
@@ -164,6 +164,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+  //-------------------------------------
+  // side menus
+  //-------------------------------------
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all the menu items
+    const menuItems = document.querySelectorAll('.nav-menu li');
+  
+    // Only proceed if menu items exist
+    if (menuItems.length) {
+      menuItems.forEach(item => {
+        // Add click event listener to each menu item
+        item.addEventListener('click', function() {
+          // Remove the 'active' class from all items
+          menuItems.forEach(i => i.classList.remove('active'));
+  
+          // Add the 'active' class to the clicked item
+          this.classList.add('active');
+        });
+      });
+    }
+  });
+  
 
   //-------------------------------------
   // Pattern Interrupt

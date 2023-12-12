@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 // Mixin for styling input fields, textarea, and select elements
@@ -9,6 +9,7 @@
   width: 100%;
   padding: 5px;
   border-radius: $border-radius;
+  //border: 1px solid darken($border-color, 40%);
 }
 
 // Mixin for styling button elements
@@ -17,7 +18,7 @@
   border: none;
   border-radius: $border-radius;
   background-color: $primary-color;
-  color: $light-color;
+  color: smart-text-color($primary-color);
   font-size: 16px;
   cursor: pointer;
 

@@ -55,7 +55,7 @@
     <z-container>
         <z-row>
             <z-col>
-                <h2 class="headline"> Buttons & Ghost Buttons</h2>
+                <h2 class="headline">Standard Buttons</h2>
             </z-col>
         </z-row>
         <z-row class="six-up">
@@ -94,55 +94,83 @@
 
     <z-container>
         <z-row>
-            <z-col>new ghost button classes</z-col>
+            <z-col>
+                <span class="label up-6 d-inline-block">NEW</span>   <h2 class="headline d-inline"> Outlined Buttons</h2>
+                <p>In need of a button, but without the hefty background colors? </p>
+            </z-col>
         </z-row>
-        <z-row>
+        <z-row class="six-up">
             <z-col>
                 <button  class="btn-primary-outline">btn-primary-outline</button>
+
+            </z-col>
+
+            <z-col>
                 <button  class="btn-secondary-outline">btn-secondary-outline</button>
-                <button  class="btn-cta-outline">btn-cta-outline</button>
-                <button  class="btn-accent-outline">btn-accent-outline</button>
-                <button  class="btn-dark-outline">btn-dark-outline</button>
-                <button  class="btn-light-outline">btn-light-outline</button>
 
             </z-col>
             <z-col>
+                <button  class="btn-cta-outline">btn-cta-outline</button>
+
+            </z-col>
+            <z-col>
+                <button  class="btn-accent-outline">btn-accent-outline</button>
+
+            </z-col>
+            <z-col>
+                <button  class="btn-dark-outline">btn-dark-outline</button>
+            </z-col>
+            <z-col>
+                <button  class="btn-light-outline">btn-light-outline</button>
+
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <div class="list-group-item list-group-item-notice mb-3">Some of the outline button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.</div>
             </z-col>
         </z-row>
     </z-container>
 
-
-
-    <!--z-container>
+    <z-container>
         <z-row>
             <z-col>
-
-  <button class="btn-slide-underline btn-md">Slide Underline</button>
-
-
-  <button class="btn-icon-pop btn-md"><i class="icon">★</i>Icon Pop</button> 
-
-
-  <button class="btn-shake btn-md bg-red">Shake</button>
-
-  <button class="btn-fill-up btn-md">Fill Up</button>
-
-  <button class="button-63 btn-md" role="button">Button 63</button>
-
-    <button class="btn-slide-underline btn-md">Slide Underline</button>
-
-    <button class="btn-fill-up btn-md">Fill Up</button>
-  
-    <button class="btn-right-arrow btn-md">Right</button>
-  
-    <button class="btn-color-block-arrow btn-md">Block</button>
-                      <a href="#"><button class="right-arrow">Right Arrow</button></a>
-
-
+                <span class="label up-6 d-inline-block">NEW</span>  <h2 class="headline d-inline"> Minimal Buttons</h2>
+                <p>In need of a button, but without the hefty background colors? </p>
+            </z-col>
         </z-row>
-    </z-container-->
+        <z-row class="six-up">
+            <z-col>
+                <button  class="btn-primary-outline bg-primary-minimal">btn-primary-outline bg-primary-minimal</button>
 
+            </z-col>
 
+            <z-col>
+                <button  class="btn-secondary-outline bg-secondary-minimal">btn-secondary-outline</button>
+
+            </z-col>
+            <z-col>
+                <button  class="btn-cta-outline bg-cta-minimal">btn-cta-outline</button>
+
+            </z-col>
+            <z-col>
+                <button  class="btn-accent-outline bg-accent-minimal">btn-accent-outline</button>
+
+            </z-col>
+            <z-col>
+                <button  class="btn-dark-outline bg-dark-minimal">btn-dark-outline</button>
+            </z-col>
+            <z-col>
+                <button  class="btn-light-outline bg-light-minimal">btn-light-outline</button>
+
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <div class="list-group-item list-group-item-notice mb-3">Some of the outline button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.</div>
+            </z-col>
+        </z-row>
+    </z-container>
 
 
     <!----------------------------------------------------------------------->
@@ -152,8 +180,8 @@
     <z-row>
         <z-col>
             <p>Code Example</p>
-            <pre class="copy-text"><code class="language-html">&lt;button class="btn-md btn-primary"&gt;Medium button, primary color theme&lt;/button&gt;
-&lt;button class="theme-cta btn-fill"&gt;Ghost button, primary color theme&lt;/button&gt;</code></pre>
+            <pre class="copy-text"><code class="language-html">&lt;button class="btn-primary"&gt;Standard button, primary color theme&lt;/button&gt;
+&lt;button class="btn-primary-outline"&gt;Outlined button, primary color theme&lt;/button&gt;</code></pre>
         </z-col>
     </z-row>
 </z-container>
@@ -170,31 +198,32 @@
     <z-row class="six-up">
         <z-col>
             <a  class="btn btn-primary">btn btn-primary</a>
-            <a  class="btn theme-cta btn-fill">btn theme-cta btn-fill</a>
+            <a  class="btn btn-primary-outline">btn btn-primary-outline</a>
         </z-col>
 
         <z-col>
             <a  class="btn btn-secondary">btn btn-secondary</a>
-            <a  class="btn theme-accent btn-fill">btn theme-accent btn-fill</a>
+            <a  class="btn btn-secondary-outline">btn btn-secondary-outline</a>
 
         </z-col>
         <z-col>
             <a  class="btn btn-cta">btn btn-cta</a>
-            <a  class="btn theme-primary btn-fill">btn theme-primary btn-fill</a>
+            <a  class="btn btn-cta-outline">btn btn-cta-outline</a>
 
         </z-col>
         <z-col>
             <a  class="btn btn-accent">btn btn-accent</a>
-            <a  class="btn theme-secondary btn-fill">btn theme-secondary btn-fill</a>
+            <a  class="btn btn-accent-outline">btn btn-accent-outline</a>
 
         </z-col>
         <z-col>
             <a  class="btn btn-dark">btn btn-dark</a>
-            <a  class="btn theme-light btn-fill">btn theme-light btn-fill</a>
+            <a  class="btn btn-dark-outline">btn btn-dark-outline</a>
+
         </z-col>
         <z-col>
             <a  class="btn btn-light">btn btn-light</a>
-            <a  class="btn theme-dark btn-fill">btn theme-dark btn-fill</a>
+            <a  class="btn btn-light-outline">btn btn-light-outline</a>
 
         </z-col>
     </z-row>
@@ -205,8 +234,8 @@
     <z-row>
         <z-col>
             <p>Code Example</p>
-            <pre class="copy-text"><code class="language-html">&lt;a class="btn btn-primary"&gt;Standard button, primary color theme&lt;/a&gt;
-&lt;a class="btn theme-cta btn-fill"&gt;Ghost button, primary color theme&lt;/a&gt;</code></pre>
+            <pre class="copy-text"><code class="language-html">&lt;a class="btn btn-primary"&gt;Link displayed as a button, primary color&lt;/a&gt;
+&lt;a class="btn btn-primary-outline"&gt;Link displayed as an outlined button, primary color&lt;/a&gt;</code></pre>
         </z-col>
     </z-row>
 </z-container>

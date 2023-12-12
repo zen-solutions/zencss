@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 /* Generate border color classes */
@@ -27,15 +27,15 @@ $colors: (
 
 //do these with the color map
 .border-success {
-  border: 1px solid $green;
+  border: 2px solid $green;
 }
 
 .border-danger {
-  border: 1px solid $red;
+  border: 2px solid $red;
 }
 
 .border-warning {
-  border: 1px solid $orange;
+  border: 2px solid $orange;
 }
 
 .border-primary {

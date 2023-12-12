@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Desk</a>
                 <div class="dropdown-content">
-                <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
                 <a href="../help-desk/index.html">Getting Started</a>
+                <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
                 <a href="../help-desk/installation.html">Installation</a>
                 <a href="../help-desk/core-concepts.html">Core Concepts</a>
                 <a href="../help-desk/page-sections.html">Site Sections</a>
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/smart-align-framework.html">Smart-Align Framework</a>
                     <a href="../examples/smart-color-system.html">Smart-Color System</a>
                     <a href="../examples/smart-text.html">Smart-Text System</a>  
-                    <a href="../examples/themes.html">Modes & Themes</a>                      
+                    <a href="../examples/themes.html">Themes & Modes</a>                      
 
                     <a href="../examples/test-mode.html">Visual Test Mode</a>
                 </div>
@@ -57,27 +57,35 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/dropdown.html">Dropdown</a>
                                 <a href="../examples/exit-intent.html">Exit Popup</a>
                                 <a href="../examples/form-elements.html">Form Elements</a>
-  </z-col>
-                            <z-col class="small">
                                 <a href="../examples/contact-form.html">Form - Sign Up</a>
                                 <a href="../examples/sign-in-form.html">Form - Sign In</a>
-                                <a href="../examples/responsive-table.html">HTML Table</a>
-                                <a href="../examples/icons.html">Icons</a>
-                                <a href="../examples/icon.html">Icon Container</a>
-                                <a href="../examples/image.html">Image Styling</a>
-                                <a href="../examples/image-carousel.html">Image Carousel</a>
-                                <a href="../examples/image-gallery.html">Image Gallery</a>
-                                <a href="../examples/list-group.html">List Groups</a>
-                                <a href="../examples/logos.html">Logo Bar</a>
                             </z-col>
                             <z-col class="small">
+
+                                <a href="../examples/responsive-table.html">HTML Table</a>
+                                <a href="../examples/icons.html">Icons</a>
+                                <a href="../examples/icon-toggle.html">Icon Toggle</a>
+                                <a href="../examples/image.html">Image/Icon Styling</a>
+                                <a href="../examples/image-carousel.html">Image Carousel</a>
+                                <a href="../examples/image-gallery.html">Image Gallery</a>
+                                <a href="../examples/labels.html">Labels</a>
+                                <a href="../examples/links.html">Links</a>
+                                <a href="../examples/list-group.html">List Groups</a>
+                                <a href="../examples/logos.html">Logo Bar</a>
+                                <a href="../examples/menus.html">Menus</a>
                                 <a href="../examples/modal.html">Modal</a>
+                            </z-col>
+                            <z-col class="small">
                                 <a href="../examples/pagination.html">Pagination</a>
+                                <a href="../examples/preloaders.html">Preloaders</a>
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
+                                <a href="../examples/promo-bars.html">Promo Bars</a>
                                 <a href="../examples/quiz.html">Quiz</a>
-                                <a href="../examples/decorations.html">Site Extras</a>                                <a href="../examples/testimonials.html">Testimonials</a>
+                                <a href="../examples/shadows.html">Shadows</a>                                
+                                <a href="../examples/testimonials.html">Testimonials</a>
+                                <a href="../examples/text.html">Text Formatting</a>
                                 <a href="../examples/tooltip.html">Tool Tips</a>
-                                <a href="../examples/tabs.html">Tabs</a>
+                                <a href="../examples/tabs.html">Tabs/Button Groups</a>
                                   <a href="../examples/video-player.html">Video Player</a>
                                   <a href="../examples/wizard.html">Wizard/Multi-Step</a>
                             </z-col>

@@ -1,0 +1,76 @@
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: $light-mode-color; /* Set background color for the entire menu */
+    flex-direction: column;
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .nav-menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    flex-grow: 1; 
+    justify-content: unset;
+    color: $dark-color;
+    line-height: 1.5em;
+  }
+
+  .active-highlight {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $cta-color; 
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: translateY(-100%); 
+  }
+  
+  .nav-menu li:hover {
+    background-color: $light-ui-hover-color; 
+    
+  }
+  
+  .nav-menu li.active {
+    background: $cta-color; 
+
+    color: white;
+     .icon  {
+        color: white;
+      }
+  }
+  
+  .nav-menu li.active .menu-item .main-text,
+  .nav-menu li.active .menu-item .sub-text {
+    color: white; /* Active item text color */
+  }
+  
+  .nav-menu li .menu-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-menu li .menu-item .main-text {
+    font-weight: bold;
+  }
+  
+  .nav-menu li .menu-item .sub-text {
+    font-size: 0.8em;
+    color: $grey-ui-text-color; /* Subtext color */
+  }
+  
+ .nav-menu .icon {
+    color: $cta-color;
+  }
+  
+  /* Add media queries if necessary for responsiveness */
+  
+  //

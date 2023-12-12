@@ -1,7 +1,7 @@
 /*
   * zenCSS Beta v2.0.0 (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
 // Define the transition mixin
@@ -82,11 +82,11 @@ $themes: (
   ),
   light: (
     $light-mode-color,
-    $dark-color,
-    $dark-color,
+    $dark-mode-color,
+    $dark-mode-color,
     $light-color,
     $light-grey,
-    $dark-color,
+    $dark-mode-color,
   ),                            //---------- $bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color
   cta: (
     $cta-color,
@@ -140,9 +140,9 @@ $themes: (
 }
 
 // Additional theme-specific adjustments
-.theme-light {
-  color: unset;
-}
+// .theme-light {
+//   color: unset;
+// }
 
 // wcag compliance text overrides
 // xxxxxxxx
@@ -199,21 +199,21 @@ $themes: (
 //   color: $dark-color;
 // }
 
-.theme-dark.accent-left {
-  border-left: 10px solid $primary-color;
-}
+// .theme-dark.accent-left {
+//   border-left: 10px solid $primary-color;
+// }
 
-.theme-secondary.accent-left {
-  border-left: 10px solid $cta-color;
-}
+// .theme-secondary.accent-left {
+//   border-left: 10px solid $cta-color;
+// }
 
-.theme-cta.accent-left {
-  border-left: 10px solid $secondary-color;
-}
+// .theme-cta.accent-left {
+//   border-left: 10px solid $secondary-color;
+// }
 
-.theme-light.accent-left {
-  border-left: 10px solid $accent-color;
-}
+// .theme-light.accent-left {
+//   border-left: 10px solid $accent-color;
+// }
 
 // Define mixin for transitions
 @mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
@@ -227,5 +227,5 @@ $themes: (
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  min-height: 41px;
+  min-height: 42px;
 }

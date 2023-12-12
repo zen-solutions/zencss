@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
 
- <link rel="stylesheet" href="../../css/zen.css">
-<link rel="stylesheet" href="../../css/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -20,11 +20,11 @@
         <div class="pl-2" id="header-logo">
             <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
-
-         <div id="nav-placeholder"></div>
+        <div class="docs-nav">
+            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
+        </div>
+        <div id="nav-placeholder"></div>
     </header>
-<main id="main-content">
-
 
 
     <!----------------------------------------------------------------------->
@@ -34,8 +34,9 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline"> Text</h1>
-                    <p>A whole heap of font styles, text-lockups and content.  </p>
+                    <h1 class="headline">
+                        HTML Text Elements</h1>
+                        <p>This document highlights our meticulous approach to styling standard HTML text elements in zenCSS.</p>
                         <hr>
                 </div>
             </z-col>
@@ -45,183 +46,201 @@
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
-<z-container>
-    <z-row>
-        <z-col>
-            <h1> H1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>        </z-col>
-    </z-row>
-    <z-col>
-        <h2> H2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>
-    </z-col>
-</z-row>
-<z-col>
-    <h3> H3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>
-</z-col>
-</z-row>
-<z-col>
-    <h4> H4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>
-</z-col>
-</z-row>
-<z-col>
-    <h5> H5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>
-</z-col>
-</z-row>
-<z-col>
-    <h6> H6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidemLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos nulla magni quia facere rerum quae accusantium nihil quidem</p>
-</z-col>
-</z-row>
-</z-container>
-    <z-container class="page-section">
-        <z-row>
-            <z-col>
-                <span class="label">Tout</span>
 
-                <span class="eyebrow">Eyebrow</span>
-                <h6 class="h1 headline">headline</h6>
-                <h1>heading 1</h1>
-                <h2>heading 2</h2>
-                <h3>heading 3</h3>
-                <h4>heading 4</h4>
-                <h5>heading 5</h5>
-                <h6>heading 6</h6>
-                <small>line of small copy</small>
-                <p class="lead"> line of lead copy</p>
-                <p>line of paragraph copy</p>
-                <blockquote>Blockquote</blockquote>
-            </z-col>
-        </z-row>
-
-        <z-row>
-            <z-col>
-                <h1>heading 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-
-                <h2>heading 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-
-                <h3>heading 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-
-                <h4>heading 4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-                
-                <h5>heading 5</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-
-                <h6>heading 6</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. Id magnam rem vero nostrum quasi mollitia doloribus amet dolorum laboriosam nesciunt, illum quaerat? Aliquam totam minima quidem.</p>
-
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-bottom">
-                <h2 class="headline">Heading, Subline and bottom line in card</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-bottom">
-                <h4 class="headline">Heading, Subline and bottom line in card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-bottom">
-                <h4 class="headline">Heading, Subline and bottom line in card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-
-        </z-row>
-    </z-container>
-    
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-bottom">
-                <h4 class="headline">Heading, Subline and bottom line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-bottom">
-                <h4 class="headline">Heading, Subline and bottom line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-bottom">
-                <h4 class="headline">Heading, Subline and bottom line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-right">
-                <h4 class="headline">Heading, Subline and right line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-right">
-                <h4 class="headline">Heading, Subline and right line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card">
-                <h4 class="headline">Heading, Subline and right line in card</h4>
-                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-top">
-                <h4 class="headline">Heading, Subline and top line in card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-top">
-                <h4 class="headline">Heading, Subline and top line in card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-top">
-                <h4 class="headline">Heading, Subline and top line in card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-
-    <z-container class="page-section">
-        <z-row>
-            <z-col class="card border-3 round">
-                <h4 class="headline">Heading, Subline and round border around card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-3">
-                <h4 class="headline">Heading, Subline and border around card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-            <z-col class="card border-3">
-                <h4 class="headline">Heading, Subline and border around card</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </p>
-            </z-col>
-        </z-row>
-    </z-container>
 
     <z-container>
         <z-row>
             <z-col>
-<div>
-    <span class="center-me w-30 h-30">
-        <img src="../../img/general-icons/expanded/user.svg" class="icon-zencolor" alt=""> 
-     </span>
-<span class="up-5">bob</span>
-</div>
+                <section>
+                    <span class="label">label</span>
+                    <span class="eyebrow">Eyebrow</span>
+                    <h2 class="h1 headline pb-0">Headline</h2>
+                    <h2 class="h1">Heading 1 </h2>
+                    <h2>Heading 2 </h2>
+                    <h3>Heading 3 </h3>
+                    <h4>Heading 4 </h4>
+                    <h5>Heading 5 </h5>
+                    <h6>Heading 6 </h6>
+                    <small>line of small copy</small>
+                    <p class="lead pt-2"> line of lead copy</p>
+                    <p>line of paragraph copy</p>
+                    <blockquote>Blockquote</blockquote>
+                </section>
+        <hr>
+                <section>
+                    <h2>Lists</h2>
+                    <p>Ordered and unordered lists:</p>
+                    <h3>Unordered List (ul)</h3>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                    <h3>Ordered List (ol)</h3>
+                    <ol>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ol>
+                </section>
+                <hr>
+                <section>
+                    <h2>Text Formatting</h2>
+                    <p><strong>Bold text</strong> is defined with the "strong" tag.</p>
+                    <p><em>Italicized text</em> is defined with the "em" tag.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Images with Descriptions</h2>
+                    <p>Images can be included using the "img" tag and can be described using "figcaption" within a "figure".</p>
+                    <figure>
+                        <img src="../../img/placeholder/16x9/MaevaVigier.jpg" alt="">
+                        <figcaption>This is a description of the image.</figcaption>
+                    </figure>
+                </section>
+                <hr>
+                <section>
+                    <h2>Blockquotes</h2>
+                    <p>The blockquote tag is used to define a section that is quoted from another source:</p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, 
+                        WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+                    </blockquote>
+                </section>
+                <hr>
+                <section>
+                    <h2>Inline Code</h2>
+                    <p>Use the <code>code</code> tag to denote inline code:</p>
+                    <p>For example, <code>let x = 10;</code> is a JavaScript declaration.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Preformatted Text</h2>
+                    <p>The <code>pre</code> tag is used to display preformatted text, which preserves both spaces and line breaks:</p>
+                    <pre>
+        function greet(name) {
+          console.log('Hello, ' + name + '!');
+        }
+        greet('World');
+                    </pre>
+                </section>
+                <hr>
+                <section>
+                    <h2>Strong and Emphasized Text</h2>
+                    <p>The <code>strong</code> tag is used to indicate strong emphasis, and the <code>em</code> tag for emphasized text:</p>
+                    <p>This is a <strong>strong</strong> element. This is an <em>emphasized</em> element.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Small Text</h2>
+                    <p>The <code>small</code> tag is used to create smaller text:</p>
+                    <p>This is some text with a <small>small element</small> inside it.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Marked or Highlighted Text</h2>
+                    <p>The <code>mark</code> tag defines text that should be marked or highlighted:</p>
+                    <p>Do not forget to buy <mark>milk</mark> today. Marks <mark class="bg-red">themed</mark> with any of our <code>bg-</code> color classes.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Deleted and Inserted Text</h2>
+                    <p>The <code>del</code> tag can be used to represent deleted text, and the <code>ins</code> tag for inserted text:</p>
+                    <p>She bought <del>two</del> <ins>five</ins> apples.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Subscript and Superscript</h2>
+                    <p>Subscript text appears half a character below the normal line, and superscript text appears half a character above it:</p>
+                    <p>This is <sub>subscript</sub> and <sup>superscript</sup> text.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Abbreviations and Acronyms</h2>
+                    <p>The <code>abbr</code> tag is used to define an abbreviation or an acronym:</p>
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Citations</h2>
+                    <p>Use the <code>cite</code> tag to define the title of a work:</p>
+                    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Address Element</h2>
+                    <p>The <code>address</code> tag is used to define contact information for the author/owner of a document or article:</p>
+                    <address>
+                        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                </section>
+                <hr>
+                <section>
+                    <h2>Bidirectional Override</h2>
+                    <p>The <code>bdo</code> tag is used to override the current text direction:</p>
+                    <p>This text is reversed: <bdo dir="rtl">This example is reversed.</bdo></p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Variable Element</h2>
+                    <p>The <code>var</code> tag is used to denote a variable in programming or in a mathematical expression:</p>
+                    <p>The variable <var>x</var> could be equal to <var>y</var>.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Keyboard Input</h2>
+                    <p>The <code>kbd</code> tag is used to define keyboard input:</p>
+                    <p>To save the document, press <kbd>Ctrl + S</kbd>.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Sample Output from a Computer Program</h2>
+                    <p>The <code>samp</code> tag is used to define sample output from a computer program:</p>
+                    <p><samp>Error: File not found.</samp></p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Definition Element</h2>
+                    <p>The <code>dfn</code> tag is used to specify a term that is being defined within the context of a definition phrase or sentence:</p>
+                    <p>The <dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Code Element</h2>
+                    <p>The <code>code</code> tag is used to define a piece of computer code:</p>
+                    <p><code>console.log('Hello, world!');</code></p>
+                </section>
+        
+         
+            </z-col>
+        </z-row>
+    </z-container>
+
+
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Code Example--->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">
+
+
+
+                        </code></pre>
+                    </div>
+                </div>
             </z-col>
         </z-row>
     </z-container>
@@ -238,15 +257,7 @@
                     <h3 class="h4">The Zen Test</h3>
                     <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
                 <div class="center">
-
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
@@ -254,7 +265,7 @@
             </z-col>
         </z-row>
     </z-container>
-    </main>
+    </main> 
 
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
