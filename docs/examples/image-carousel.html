@@ -35,7 +35,7 @@
             <z-col>
                 <div class="center">
                     <h1 class="headline">Image Carousel</h1>
-                    <p>A slideshow component for cycling through images.</p>
+                    <p>A slideshow component for cycling through images. Enable/disable rotation with the <code>data-auto-rotate</code> attribute.</p>
                     <hr>
                 </div>
             </z-col>
@@ -53,7 +53,7 @@
         </z-row>
         <z-row>
             <z-col>
-                <div class="slider">
+                <div class="slider" data-auto-rotate="true">
                     <div class="slides-container"> 
                       <!-- Original slides -->
                       <div class="slide"><img src="../../docs/images/misc/slider/1.jpg" alt="Slide 1" style="width: 100%;"></div> 
@@ -76,17 +76,13 @@
     <z-row>
         <z-col>
             <div class="accordion">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                <a href="" class="title accordion-toggle" aria-expanded="true" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                 <div id="content1" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;div class="slider"&gt;
+                    <pre class="copy-text square"><code class="language-html">&lt;div class="slider" data-auto-rotate="true"&gt;
     &lt;div class="slides-container"&gt;
         &lt;div class="slide"&gt;&lt;img src="your-image.jpg"&gt;&lt;/div&gt;
         &lt;div class="slide"&gt;&lt;img src="your-image-2.jpg"&gt;&lt;/div&gt;
-
         ...
-        
-        &lt;!-- Duplicate of first image for seamless transition --&gt;
-        &lt;div class="slide"&gt;&lt;img src="your-image.jpg"&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="prev arrow theme-dark"&gt;&#10094;&lt;/div&gt;
     &lt;div class="next arrow theme-dark"&gt;&#10095;&lt;/div&gt;
