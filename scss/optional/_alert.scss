@@ -103,13 +103,13 @@
 }
 .alert-light {
   @include alert(
-    $light-mode-color,
+    darken($light-mode-color, 10%),
     "../img/icons/alerts/circle-check-regular.svg",
     60px
   );
 }
 .alert-light-minimal {
-  @include alert($light-mode-color, "", 4px);
+  @include alert(darken($light-mode-color, 10%), "", 4px);
 }
 
 //override

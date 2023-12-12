@@ -277,26 +277,23 @@ $text-grey-dual: #5e5e5e;
 /* Contextual Classes */
 .list-group-item-success {
   background-color: #d4edda;
-  color: $dark-color;
+  color: $green;
 }
 
 .list-group-item-danger {
   background-color: #f8d7da;
-  color: $dark-color;
+  color: $text-danger;
 }
 
 .list-group-item-notice {
-  background-color: #e5eaef;
-  color: darken(#e5eaef, 50%);
-  font-size: .8em;
-  border:0;
-  border-left: 3px solid darken(#e5eaef, 20%);
+  background-color: #d7eaf8;
+  //color: $text-notice;
 }
 
 
 .list-group-item-warning {
   background-color: #fff3cd;
-  color: $dark-color;
+  //color: $text-warning;
 }
 
 .list-group-horizontal .list-group-item {
