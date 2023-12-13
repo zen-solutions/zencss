@@ -128,7 +128,7 @@
 .expanded-content {
   max-height: 0;
   overflow-y: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.2s ease-out;
   border-left: 1px solid $border-color;
   border-right: 1px solid $border-color;
 }
@@ -166,7 +166,7 @@
   top: calc(100% + 29px);
   background-color: #fdfdfd;
   color: $dark-color;
-  min-width: 220px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
   z-index: 1001;
   border-radius: $border-radius;
@@ -190,7 +190,7 @@
   display: block;
   border-radius: $border-radius;
   padding: 10px;
-  padding-left: 24px;
+  padding-left: 12px;
   margin-left: -1px;
 
   &:hover {
@@ -225,7 +225,7 @@
   border-bottom: 10px solid #fdfdfd;
   position: absolute;
   top: calc(100% + 29px);
-  left: 29px;
+  left: 15px;
   transform: translateY(-100%);
   z-index: 10;
 
@@ -242,7 +242,11 @@
   top: 48px;
 }
 
-
+//override placement for nav
+nav .dropdown-content {
+  left: -5px;
+  min-width: 220px;
+}
 
 
 //fixes. check if overrite abocve
@@ -391,7 +395,7 @@ blockquote em {
 }
 
 .slide {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   flex-shrink: 0;
   background-size: cover;
@@ -408,12 +412,23 @@ blockquote em {
   opacity: 0.4;
 }
 
+
+
 .prev {
   left: 10px;
 }
 
 .next {
   right: 10px;
+}
+
+.arrow.bottom{
+  top:92%;
+}
+
+.arrow.right{
+  right:50px;
+  left: unset;
 }
 
 // .slide img {
@@ -552,7 +567,7 @@ blockquote em {
   bottom: 10px;
   right: 10px;
 }
-.corner-popup-window {
+.corner-popup > div {
   max-width: 285px;
   max-height: 400px;
   overflow: auto;
@@ -568,13 +583,13 @@ blockquote em {
   z-index: 6;
 }
 
-.corner-popup-button {
+.corner-popup >button {
   padding: 5px 10px;
   border: none;
   border-radius: $border-radius;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: 0;
 }
 

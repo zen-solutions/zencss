@@ -131,6 +131,7 @@ $text-grey-dual: #5e5e5e;
 
 .text-50{
   font-size: 50px;
+  line-height: 50px;
 }
 
 // ------------------------------------------
@@ -246,6 +247,7 @@ $text-grey-dual: #5e5e5e;
   border: 1px solid $border-color;
   margin-bottom: -1px;
   margin-top:0;
+  font-size: .8em;
 }
 
 /* Active Items */
@@ -277,7 +279,7 @@ $text-grey-dual: #5e5e5e;
 /* Contextual Classes */
 .list-group-item-success {
   background-color: #d4edda;
-  color: $green;
+  color: darken($green, 15%);
 }
 
 .list-group-item-danger {
@@ -286,14 +288,14 @@ $text-grey-dual: #5e5e5e;
 }
 
 .list-group-item-notice {
-  background-color: #d7eaf8;
-  //color: $text-notice;
+  background-color: #cfe2ff;
+  color: #3e5d8b;
 }
 
 
 .list-group-item-warning {
   background-color: #fff3cd;
-  //color: $text-warning;
+  color: darken(#fff3cd, 63%);
 }
 
 .list-group-horizontal .list-group-item {

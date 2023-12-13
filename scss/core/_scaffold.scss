@@ -257,6 +257,10 @@ img {
   border-radius: $border-radius;
 }
 
+section{
+  padding-bottom: .25em;
+}
+
 // Links with swap-underline class styles
 a.swap-underline {
   color: $cta-color;
@@ -866,3 +870,7 @@ On the rare occasion you need to override it, use something like the following:
 // .unzen{
 
 // // }
+
+.zen-body-bg-color{
+  background: $zen-body-bg-color;
+}

@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
       }
 
-      // Function to stop auto-rotating
+      // Function to stop auto-rotating 
       function stopAutoRotate() {
           clearInterval(autoRotate);
       }

@@ -58,7 +58,7 @@ $grey-6: #0d0d0d;
 // ✓ Global Vars/misc - prolly some cleanup to be done here
 //------------------------------------------
 
-$text-danger: #e03131; // text color for warning messages in light mode
+$text-danger: #a23737; // text color for warning messages in light mode
 $var-white-text: white; // Default font colors for smart-color system - likely obsolete once WCAG functionality is in place and fully tested
 $var-black-text: black;
 $text-white: #eee;
@@ -73,7 +73,7 @@ $bg-default: $dark-color;
 $text-default: $light-color;
 $ui-button-size: 44px;
 $light-ui-hover-color: rgba(169, 169, 169, 0.35);
-$border-color: hsla(0, 0%, 69%, 0.3);
+$border-color: hsla(0, 0%, 69%, 0.5);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.03);
 $bg-ui-hover: hsla(0,0%,93%,0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
@@ -286,7 +286,7 @@ $text-light-colors: (
 // ✓ Rounded corners
 //------------------------------------------
 
-$border-radius: 4px; //on
+$border-radius: 3px; //on
 //$border-radius: 0; //off
 
 //------------------------------------------

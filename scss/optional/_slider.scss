@@ -10,6 +10,8 @@
   overflow: hidden;
 }
 .slides-container {
+  width: 100%;
+
   display: flex;
   transition: transform 0.5s ease;
 }

@@ -36,7 +36,7 @@
   }
 }
 
-//hover state for new ghost buttons (-outline versions, can depricate btn-fill versions unless needed for themes) 
+//hover state for new ghost buttons (-outline versions, can depricate btn-outline versions unless needed for themes) 
 // Purpose: receive the bg color and smart text color as args, use them to define a wcag compliant hover state for -outline buttons
 @mixin hover-outline($bg-color, $text-color) {
   &:hover {

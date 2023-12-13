@@ -71,12 +71,10 @@ $base-text-color: #444444;
   @import "design/border-color";
   @import "general/test";
   @import "general/components";
-  @import "design/layouts";
   @import "core/footer";
   @import "core/wip";
   @import "optional/decoration";
   @import "optional/animation";
-  //@import "optional/charts/pie";
   @import "optional/image-gallery";
   @import "optional/tooltip";
   @import "optional/aria";
@@ -199,9 +197,10 @@ $base-text-color: #444444;
     background: hsla(69, 0%, 79%, 0.3);
   }
 
-  // Adjust the .btn-fill-up to have the text same as the outline
-  .btn-fill,
-  .theme-light .btn-fill {
+  // Adjust the .btn-outline for default theme to have the text same as the outline
+   .btn-outline
+  // ,.theme-light .btn-outline 
+  {
     color: $responsive-text-color;
   }
 

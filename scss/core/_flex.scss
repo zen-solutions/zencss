@@ -220,6 +220,16 @@
   justify-content: center;
   align-items: center;
 }
+
+
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+
 .flex-align-horizontal {
   display: flex;
   flex-direction: row;
