@@ -74,6 +74,15 @@ $btn-hover-color: darken($cta-color, 20%);
   border-radius: 5px;
   }
 
+  .position-top-center {
+    position: absolute;
+    top: -9px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-top: .4em;
+}
+  
+
 .label-circle {
   border-radius: 50%;
   width: 16px;

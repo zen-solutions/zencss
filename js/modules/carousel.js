@@ -1,3 +1,9 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2023 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector('.slider');
 
@@ -92,4 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
       // Start auto-rotating
       startAutoRotate();
   }
-});
+}); 

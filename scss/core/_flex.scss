@@ -9,7 +9,8 @@
   display: flex;
 }
 
-.flex-bottom{
+.card .flex-bottom{
+  flex:0; 
   margin-top: auto;
 }
 .flex-inline {

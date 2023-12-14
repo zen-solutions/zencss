@@ -139,9 +139,9 @@ $sizes: (
     padding: 0;
   }
 
-  div{
-    flex: 1; //1213 new
-  }
+  // div{
+  //   flex: 1; //1213 new //1214 removed. if needed, document why added? broke card footer link/icon circle formatting, etc.
+  // }
 
   ul {
     margin-block-start: 0;

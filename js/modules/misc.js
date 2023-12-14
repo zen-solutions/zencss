@@ -114,61 +114,66 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
   // Lazy Load Test - WIP
   //-------------------------------------
 
-document.addEventListener("DOMContentLoaded", function() {
-    const lazyLoadImages = document.querySelectorAll("img.lazy-load");
+// document.addEventListener("DOMContentLoaded", function() {
+//     const lazyLoadImages = document.querySelectorAll("img.lazy-load");
   
-    if (lazyLoadImages.length > 0) {
-      const imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const image = entry.target;
-            image.src = image.dataset.src;
-            image.classList.remove("lazy-load");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
+//     if (lazyLoadImages.length > 0) {
+//       const imageObserver = new IntersectionObserver(function(entries, observer) {
+//         entries.forEach(function(entry) {
+//           if (entry.isIntersecting) {
+//             const image = entry.target;
+//             image.src = image.dataset.src;
+//             image.classList.remove("lazy-load");
+//             imageObserver.unobserve(image);
+//           }
+//         });
+//       });
   
-      lazyLoadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-    }
-  });
+//       lazyLoadImages.forEach(function(image) {
+//         imageObserver.observe(image);
+//       });
+//     }
+//   });
   
    //-------------------------------------
   // Tabbed Card
   //-------------------------------------
 
-  // JavaScript function to show/hide tab content
   function showTab(tabNumber) {
     const tabbedCard = document.querySelector('.tabbed-card');
     if (tabbedCard) {
         const tabs = tabbedCard.querySelectorAll('.tab');
         const tabContents = tabbedCard.querySelectorAll('.tab-content');
-        
-        tabs.forEach((tab, index) => {
-            if (index + 1 === tabNumber) {
-                tab.classList.add('active');
-                tabContents[index].classList.add('active');
-            } else {
-                tab.classList.remove('active');
-                tabContents[index].classList.remove('active');
-            }
-        });
+
+        if (tabs.length && tabContents.length) {
+            tabs.forEach((tab, index) => {
+                if (index + 1 === tabNumber) {
+                    tab.classList.add('active');
+                    if (tabContents[index]) {
+                        tabContents[index].classList.add('active');
+                    }
+                } else {
+                    tab.classList.remove('active');
+                    if (tabContents[index]) {
+                        tabContents[index].classList.remove('active');
+                    }
+                }
+            });
+        }
     }
 }
 
-// Attach click event listeners to tabs
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', function() {
-            const tabNumber = parseInt(tab.getAttribute('data-tab'));
-            showTab(tabNumber);
+    if (tabs.length) {
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', function() {
+                const tabNumber = parseInt(tab.getAttribute('data-tab'));
+                showTab(tabNumber);
+            });
         });
-    });
+    }
 });
-
 
 
   //-------------------------------------

@@ -129,10 +129,31 @@ $text-grey-dual: #5e5e5e;
   text-align: right;
 }
 
-.text-50{
-  font-size: 50px;
-  line-height: 50px;
+// .text-50{
+//   font-size: 50px;
+//   line-height: 50px;
+// }
+
+.icon-sm{
+  font-size: 16px;
+  line-height: 16px;
 }
+
+.icon-md{
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.icon-lg{
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.icon-xl{
+  font-size: 64px;
+  line-height: 64px;
+}
+
 
 // ------------------------------------------
 // Special Chars - depricated

@@ -211,9 +211,10 @@ button,
   justify-content: center;
   text-wrap: pretty;
   padding: 1em;
-  margin: 0.2em;
-  margin-top: 0;
-  margin-bottom: 1em;
+  // margin: 0.2em;
+  // margin-top: 0;
+  // margin-bottom: 1em; //removed 1214 - due to needing proper margin. this was removed for a reason. clarify upon reexamination and reevaualte.
+  margin:1em;
   text-align: center;
   border: none;
   transition: all 0.25s ease;
