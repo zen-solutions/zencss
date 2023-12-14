@@ -74,6 +74,15 @@ $btn-hover-color: darken($cta-color, 20%);
   border-radius: 5px;
   }
 
+  .position-top-center {
+    position: absolute;
+    top: -9px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-top: .4em;
+}
+  
+
 .label-circle {
   border-radius: 50%;
   width: 16px;
@@ -112,7 +121,7 @@ $btn-hover-color: darken($cta-color, 20%);
 }
 
 .btn-dark {
-  background: $dark-color !important;
+  background: lighten($dark-color, 20%) !important;
   color: smart-text-color($dark-color) !important; //not defined technically
   @include hover-darken($dark-color);
 }
@@ -254,6 +263,11 @@ $btn-dark-color: $dark-mode-color;
   font-size: 12px;
 }
 
+.btn-circle{
+  width:50px;
+  height:50px;
+  border-radius: 50% !important; 
+}
 
 //for poll. misc placement
 #result-types {
@@ -268,8 +282,8 @@ $btn-dark-color: $dark-mode-color;
 $bg-primary: $primary-color; // Example primary color
 $text-cta: $cta-color;
 
-// Adjust the .btn-fill-up to have the text same as the outline
-.btn-fill {
+// Adjust the .btn-outline-up to have the text same as the outline
+.btn-outline {
   @extend %button-basic;
   background-color: transparent;
   border: 2px solid lighten($bg-header-footer, 25%);
@@ -319,8 +333,8 @@ $theme-light-text: $light-color;
   }
 }
 
-// Extend .btn-fill with theme styles
-.btn-fill {
+// Extend .btn-outline with theme styles
+.btn-outline {
   @extend %button-basic;
 
   // Apply theme styles

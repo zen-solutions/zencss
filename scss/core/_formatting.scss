@@ -4,71 +4,11 @@
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
-//-------------------------------------------------
-// undocumented
-//-------------------------------------------------
-
-.img-left {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 7px;
-}
-
-.img-right {
-  float: right;
-  margin-left: 15px;
-  margin-bottom: 7px;
-}
-
-// //----------------------------------------------------
-// /* Generate classes for heights */
-// //----------------------------------------------------
-
-// @for $i from 1 through length($heights) {
-//   .height-#{$i} {
-//     height: nth($heights, $i);
-//   }
-// }
-
-// //----------------------------------------------------
-// /* Generate classes for widths */
-// //----------------------------------------------------
-
-// @for $i from 1 through length($widths) {
-//   .width-#{$i} {
-//     width: nth($widths, $i);
-//   }
-// }
-
 //----------------------------------------------
 // Directional modifiers
 //----------------------------------------------
-
-//BUG
-// up 20 should do margin-bottom: 20px; not margin top - 20 for some reason. test this.
-
-// .up-1 {
-//   position: relative;
-//   bottom: 1px;
-// }
-
-// .down-1 {
-//   position: relative;
-//   top: 1px;
-// }
-
-// .up-5 {
-//   position: relative;
-//   bottom: 5px;
-// }
-
-// .down-5 {
-//   position: relative;
-//   top: 5px;
-// }
-
-// Loop through to generate classes for 1 to 50, incrementing by 1
-@for $i from 1 through 11 {
+// generates x-10 - x-100 for each
+@for $i from 1 through 10 {
   $value: $i * 10;
 
   // Generating classes for negative margin-top (moving up)
@@ -96,7 +36,8 @@
   }
 }
 
-// Loop through 1 to 10 to generate classes for 10 to 50, incrementing by 10
+// generates x-1 - x-9 for each
+
 @for $i from 1 through 9 {
   $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
 
@@ -130,53 +71,38 @@
 //----------------------------------------------------
 
 $sizes: (
-  5: 5px,
   10: 10px,
-  15: 15px,
-  16: 16px,
   20: 20px,
   25: 25px,
   30: 30px,
-  32: 32px,
   40: 40px,
   50: 50px,
-  60: 60px,
-  64: 64px,
   75: 75px,
-  80: 80px,
-  85: 85px,
-  90: 90px,
-  110: 110px,
+  100: 100px,
   125: 125px,
   150: 150px,
   175: 175px,
   200: 200px,
   225: 225px,
   250: 250px,
+  275: 275px,
   300: 300px,
-  325: 325px,
-  350: 350px,
-  375: 375px,
-  400: 400px,
-  450: 450px,
-  500: 500px,
-  600: 600px,
-  700: 700px,
-  800: 800px,
-  900: 900px,
-  1000: 1000px,
 );
 
 @each $key, $value in $sizes {
   .w-#{$key} {
     width: $value !important;
-    max-width: $value;
+    min-width: $value;
   }
 
   .h-#{$key} {
     height: $value !important;
-    max-height:$value;
+    min-height:$value;
   }
+}
+
+.h-full{
+  height:100% !important;
 }
 
 //----------------------------------------------------
@@ -212,6 +138,10 @@ $sizes: (
   div {
     padding: 0;
   }
+
+  // div{
+  //   flex: 1; //1213 new //1214 removed. if needed, document why added? broke card footer link/icon circle formatting, etc.
+  // }
 
   ul {
     margin-block-start: 0;
@@ -286,23 +216,22 @@ $d-values: (
   flex-direction: row-reverse !important;
 }
 
-// .unzen {
-//   display: initial;
-//   text-align: left;
-// }
-
 .overflow-hidden {
   overflow: hidden;
 }
 
-.vertical-center-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+.overflow-auto{
+  overflow:auto;
+}
+.overflow-scroll{
+  overflow: scroll;
 }
 
-.vertical-center {
+.overflow-visible{
+  overflow: visible;
+}
+
+.vertical-center{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -313,14 +242,7 @@ $d-values: (
   background: none; //!?
 }
 
-.w-100 {
-  width: 100%;
-}
 
-.w-sm {
-  width: 50px;
-  height: auto;
-}
 
 .squeeze > * {
   margin-top: 0.3em;
@@ -347,17 +269,12 @@ $d-values: (
   z-index: 5;
 }
 
-//----------------------------------------------------
-/* gaps, heights, and widths */
-//----------------------------------------------------
-
-$gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
-// $heights: (10em, 15em, 20em, 25em, 30em, 40em);
-// $widths: (4rem, 6rem, 9rem, 12rem, 15rem);
 
 //----------------------------------------------------
 /* Generate classes for gaps */
 //----------------------------------------------------
+
+$gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
 
 @for $i from 1 through length($gaps) {
   .gap-#{$i} {
@@ -368,3 +285,18 @@ $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
 .gap-0 {
   gap: 0;
 }
+
+//misc
+
+.img-left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 7px;
+}
+
+.img-right {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+

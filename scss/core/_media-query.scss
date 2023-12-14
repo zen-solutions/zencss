@@ -420,9 +420,9 @@
     order: 1;
   }
 
-  //   .center-tablet{
-  //   text-align: center;
-  // }
+    .center-tablet{
+    text-align: center;
+  }
 
   .eight-up > * {
     flex: 1 0 23.335% !important;
@@ -519,9 +519,8 @@
   }
 }
 
-//needed to overwrite importance. good example of why using important is bad.
+
 .feature {
-  //flex-grow: 2 !important;
   flex-grow: 1.50 !important;
 }
 
@@ -536,3 +535,8 @@
 .feature-lg {
   flex-grow: 8 !important;
 }
+
+.feature-xl {
+  flex-grow: 35 !important;
+}
+

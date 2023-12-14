@@ -129,9 +129,31 @@ $text-grey-dual: #5e5e5e;
   text-align: right;
 }
 
-.text-50{
-  font-size: 50px;
+// .text-50{
+//   font-size: 50px;
+//   line-height: 50px;
+// }
+
+.icon-sm{
+  font-size: 16px;
+  line-height: 16px;
 }
+
+.icon-md{
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.icon-lg{
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.icon-xl{
+  font-size: 64px;
+  line-height: 64px;
+}
+
 
 // ------------------------------------------
 // Special Chars - depricated
@@ -246,6 +268,7 @@ $text-grey-dual: #5e5e5e;
   border: 1px solid $border-color;
   margin-bottom: -1px;
   margin-top:0;
+  font-size: .8em;
 }
 
 /* Active Items */
@@ -277,26 +300,23 @@ $text-grey-dual: #5e5e5e;
 /* Contextual Classes */
 .list-group-item-success {
   background-color: #d4edda;
-  color: $dark-color;
+  color: darken($green, 15%);
 }
 
 .list-group-item-danger {
   background-color: #f8d7da;
-  color: $dark-color;
+  color: $text-danger;
 }
 
 .list-group-item-notice {
-  background-color: #e5eaef;
-  color: darken(#e5eaef, 50%);
-  font-size: .8em;
-  border:0;
-  border-left: 3px solid darken(#e5eaef, 20%);
+  background-color: #cfe2ff;
+  color: #3e5d8b;
 }
 
 
 .list-group-item-warning {
   background-color: #fff3cd;
-  color: $dark-color;
+  color: darken(#fff3cd, 63%);
 }
 
 .list-group-horizontal .list-group-item {

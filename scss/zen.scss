@@ -8,13 +8,17 @@
 // Initialize zenCSS
 //--------------------------------------------------------------
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 //vars
 $zen-font-size: 15px;
 $zen-tablet-mobile-font-size: 14px;
 $zen-large-screen-font-size: 16px;
 $zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//wip
+//font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $zen-font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; //currently not in use. ready to implement
+// $zen-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; //currently not in use. ready to implement
 $zen-body-bg-color: #e2e2e2;
 $zen-dark-text-color: #e5e5e5;
 $zen-dark-link-color: #f0f0f0;
@@ -71,11 +75,11 @@ $base-text-color: #444444;
   @import "design/border-color";
   @import "general/test";
   @import "general/components";
-  @import "design/layouts";
   @import "core/footer";
   @import "core/wip";
   @import "optional/decoration";
   @import "optional/animation";
+  //@import "optional/tabbed-card"; // WIP
   @import "optional/image-gallery";
   @import "optional/tooltip";
   @import "optional/aria";
@@ -198,9 +202,10 @@ $base-text-color: #444444;
     background: hsla(69, 0%, 79%, 0.3);
   }
 
-  // Adjust the .btn-fill-up to have the text same as the outline
-  .btn-fill,
-  .theme-light .btn-fill {
+  // Adjust the .btn-outline for default theme to have the text same as the outline
+   .btn-outline
+  // ,.theme-light .btn-outline 
+  {
     color: $responsive-text-color;
   }
 

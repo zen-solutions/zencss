@@ -41,8 +41,8 @@
     color: $label-text-color;
   }
 
-  // .btn-fill specific styles
-  .btn-fill {
+  // .btn-outline specific styles
+  .btn-outline {
     background: transparent;
     border: 2px solid $button-bg-color;
 
@@ -56,7 +56,7 @@
   }
 
   //override the text for the ones that aren't right
-  .theme-primary btn.btn-fill {
+  .theme-primary btn.btn-outline {
     color: red !important;
   }
 }
@@ -149,9 +149,9 @@ $themes: (
 .theme-primary a,
 .theme-secondary a,
 .theme-dark a,
-.theme-primary .btn-fill,
-.theme-cta .btn-fill,
-.theme-secondary .btn-fill {
+.theme-primary .btn-outline,
+.theme-cta .btn-outline,
+.theme-secondary .btn-outline {
   color: white;
 }
 
@@ -181,11 +181,11 @@ $themes: (
 //bt we have a lot of it baked in here already. so thats an issue to address.
 
 
-// btn-fill ones here - we have not yet dealt with those at the button level, so its logical to go back and do that and not have to do it here
+// btn-outline ones here - we have not yet dealt with those at the button level, so its logical to go back and do that and not have to do it here
 // the issue is we dont know what the bg color will be in that situation. thats the rub.
 
 // the color will be THE SAME as the text color (since its on the same bg). 
-.theme-primary .btn-fill{
+.theme-primary .btn-outline{
   color: smart-text-color($primary-color);  
 }
 
@@ -195,7 +195,7 @@ $themes: (
 
 
 // no longer neede bc of above .theme-accent a,
-// .theme-accent .btn-fill {
+// .theme-accent .btn-outline {
 //   color: $dark-color;
 // }
 

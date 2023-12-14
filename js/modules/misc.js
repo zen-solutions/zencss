@@ -70,10 +70,14 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
   // Corner Popup
   //-------------------------------------
   document.addEventListener('DOMContentLoaded', function() {
-    var button = document.querySelector('.corner-popup-button');
-    var popup = document.querySelector('.corner-popup-window');
+    var cornerPopup = document.querySelector('.corner-popup');
+     
+    if (cornerPopup) {
+        var button = cornerPopup.querySelector('button');
+        var popup = cornerPopup.querySelector('div');
 
-    if (button && popup) {
+        popup.classList.add('card');
+
         button.addEventListener('click', function() {
             popup.classList.toggle('hidden');
             console.log("Button clicked");
@@ -110,61 +114,66 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
   // Lazy Load Test - WIP
   //-------------------------------------
 
-document.addEventListener("DOMContentLoaded", function() {
-    const lazyLoadImages = document.querySelectorAll("img.lazy-load");
+// document.addEventListener("DOMContentLoaded", function() {
+//     const lazyLoadImages = document.querySelectorAll("img.lazy-load");
   
-    if (lazyLoadImages.length > 0) {
-      const imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const image = entry.target;
-            image.src = image.dataset.src;
-            image.classList.remove("lazy-load");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
+//     if (lazyLoadImages.length > 0) {
+//       const imageObserver = new IntersectionObserver(function(entries, observer) {
+//         entries.forEach(function(entry) {
+//           if (entry.isIntersecting) {
+//             const image = entry.target;
+//             image.src = image.dataset.src;
+//             image.classList.remove("lazy-load");
+//             imageObserver.unobserve(image);
+//           }
+//         });
+//       });
   
-      lazyLoadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-    }
-  });
+//       lazyLoadImages.forEach(function(image) {
+//         imageObserver.observe(image);
+//       });
+//     }
+//   });
   
    //-------------------------------------
   // Tabbed Card
   //-------------------------------------
 
-  // JavaScript function to show/hide tab content
   function showTab(tabNumber) {
     const tabbedCard = document.querySelector('.tabbed-card');
     if (tabbedCard) {
         const tabs = tabbedCard.querySelectorAll('.tab');
         const tabContents = tabbedCard.querySelectorAll('.tab-content');
-        
-        tabs.forEach((tab, index) => {
-            if (index + 1 === tabNumber) {
-                tab.classList.add('active');
-                tabContents[index].classList.add('active');
-            } else {
-                tab.classList.remove('active');
-                tabContents[index].classList.remove('active');
-            }
-        });
+
+        if (tabs.length && tabContents.length) {
+            tabs.forEach((tab, index) => {
+                if (index + 1 === tabNumber) {
+                    tab.classList.add('active');
+                    if (tabContents[index]) {
+                        tabContents[index].classList.add('active');
+                    }
+                } else {
+                    tab.classList.remove('active');
+                    if (tabContents[index]) {
+                        tabContents[index].classList.remove('active');
+                    }
+                }
+            });
+        }
     }
 }
 
-// Attach click event listeners to tabs
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', function() {
-            const tabNumber = parseInt(tab.getAttribute('data-tab'));
-            showTab(tabNumber);
+    if (tabs.length) {
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', function() {
+                const tabNumber = parseInt(tab.getAttribute('data-tab'));
+                showTab(tabNumber);
+            });
         });
-    });
+    }
 });
-
 
 
   //-------------------------------------
@@ -189,6 +198,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+
+//   //pie charts
+//   document.addEventListener('DOMContentLoaded', () => {
+//     const chart = document.querySelector('.zen-pie-chart');
+//     let accumulatedRotation = 0;
+
+//     document.querySelectorAll('.zen-pie-chart .zen-slice').forEach(slice => {
+//         const percentage = parseFloat(slice.dataset.percentage);
+//         const rotation = 360 * (percentage / 100);
+//         const sliceRotation = accumulatedRotation + rotation / 2;
+
+//         // Set styles and classes for the slice
+//         slice.style.transform = `rotate(${sliceRotation}deg)`;
+//         slice.style.clip = `rect(0px, ${chart.clientWidth}px, ${chart.clientWidth}px, ${chart.clientWidth / 2}px)`;
+//         slice.style.backgroundColor = getComputedStyle(slice).backgroundColor;
+//         slice.style.opacity = '1';
+
+//         // For more than 50%, create an overlay slice to simulate the additional percentage
+//         if (percentage > 50) {
+//             let overlaySlice = document.createElement('div');
+//             overlaySlice.classList.add('zen-slice', 'overlay');
+//             overlaySlice.style.backgroundColor = slice.style.backgroundColor;
+//             overlaySlice.style.position = 'absolute';
+//             overlaySlice.style.width = '100%';
+//             overlaySlice.style.height = '100%';
+//             overlaySlice.style.transform = `rotate(${sliceRotation + 180}deg)`;
+//             overlaySlice.style.clip = `rect(0px, ${chart.clientWidth}px, ${chart.clientWidth}px, ${chart.clientWidth / 2}px)`;
+//             chart.appendChild(overlaySlice);
+//         }
+
+//         accumulatedRotation += rotation;
+//     });
+// });
+
 
   //-------------------------------------
   // Pattern Interrupt

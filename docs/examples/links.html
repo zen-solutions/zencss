@@ -37,15 +37,13 @@
                     <h1 class="headline">
                         Links
                     </h1>
-                    <p>
-                        
-                    </p>
                         <hr>
                 </div>
             </z-col>
         </z-row>
     </z-container>
 
+    
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
@@ -55,19 +53,34 @@
         <z-row>
             <z-col>
                 <h2>Link Styles</h2>
-                <a href="" class="d-block mb-2">Default </a>
-                <a href="" class="link-classic d-block mb-2">Classic </a>
-                <a href="" class="d-block mb-2">With Icon <i class="zenicon-east down-2"></i></a>
+                <div class="mb-2"><a>Default </a></div>
+                <div class="mb-2"><a class="link-classic">Classic </a></div>
+                <div> <a>With Icon <i class="zenicon-east"></i></a></div>
             </z-col>
         </z-row>
         <z-row>
             <z-col>
+                <z-container>
+                    <z-row>
+                        <z-col>
+                            <div class="accordion">
+                                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                                <div id="content1" class="expanded-content" aria-hidden="true">
+                                    <pre class="copy-text square"><code class="language-html">&lt;a&gt;Default&lt;/a&gt;
+&lt;a class="link-classic"&gt;Classic&lt;/a&gt;
+&lt;a&gt;With Icon &lt;i class="zenicon-east"&gt;&lt;/i&gt;&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                        </z-col>
+                    </z-row>
+                </z-container>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
                 <h2>Animated Link</h2>
-
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
+          
                 <div> <a href="../examples/bootstrap-test.html" class="text-cta-dual link-underline">Hover&nbsp;Me <i class="zenicon-east down-2"></i></a></div>
             </z-col>
         </z-row>
@@ -81,13 +94,10 @@
         <z-row>
             <z-col class="pl-0 pr-0">
                 <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">
-
-
-
-                        </code></pre>
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content2" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;a class="text-cta-dual link-underline"&gt;Hover&lt;i class="zenicon-east down-2"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="text-cta-dual link-underline link-underline-white"&gt;Hover&lt;i class="zenicon-east down-2"&gt;&lt;/i&gt;&lt;/a&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -104,7 +114,7 @@
         <z-row>
             <z-col class="card theme-light h-200 w-200">
                <div class="flex-bottom">
-                <a href="../examples/bootstrap-test.html" class="text-cta-dual link-underline">View&nbsp;Now <i class="zenicon-east down-2"></i></a>
+                <a href="../examples/bootstrap-test.html" class="text-cta link-underline">View&nbsp;Now <i class="zenicon-east down-2"></i></a>
             </div>
             </z-col>
         </z-row>
@@ -112,13 +122,11 @@
         <z-row>
             <z-col class="pl-0 pr-0">
                 <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">
-
-
-
-                        </code></pre>
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content3" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="flex-bottom"&gt;
+  &lt;a class="text-cta link-underline"&gt;Click &lt;i class="zenicon-east down-2"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -141,7 +149,7 @@
                 <div class="center">
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
+                        <a href="../index.html" class="btn btn-md btn-outline">Docs</a>
                 </div>
             </z-col>
         </z-row>

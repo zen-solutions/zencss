@@ -198,6 +198,50 @@ $bg-light-colors: (
     brightness(103%) contrast(84%);
 }
 
+
+.bg-angle {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-angle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    #f0f0f0 10px,
+    #f0f0f0 20px
+  );
+}
+
+
+
+// moore teethier
+//.bg-angle {
+//   background-color: #f0f0f0; /* Example background color */
+//   padding: 20px;
+//   clip-path: polygon(
+//     0 0, 100% 0, 100% 90%, 
+//     95% 90%, 92.5% 85%, 90% 90%, 87.5% 80%, 85% 90%, 
+//     82.5% 85%, 80% 90%, 77.5% 80%, 75% 90%, 72.5% 85%, 
+//     70% 90%, 67.5% 80%, 65% 90%, 62.5% 85%, 60% 90%, 
+//     57.5% 80%, 55% 90%, 52.5% 85%, 50% 90%, 47.5% 80%, 
+//     45% 90%, 42.5% 85%, 40% 90%, 37.5% 80%, 35% 90%, 
+//     32.5% 85%, 30% 90%, 27.5% 80%, 25% 90%, 22.5% 85%, 
+//     20% 90%, 17.5% 80%, 15% 90%, 12.5% 85%, 10% 90%, 
+//     7.5% 80%, 5% 90%, 2.5% 85%, 0% 90%, 0 100%
+//   );
+// }
+
+
 // testing. testing. is this thing on?
 
 // .bg-primary-gradient {
@@ -208,3 +252,17 @@ $bg-light-colors: (
 //   ) !important;
 // //  color: #fff !important;
 // }
+
+
+//exploring bottom div cut outs. this one is jarring but cool
+
+// .bg-angle{
+//   width: 100%;
+//   position: relative;
+//   clip-path: polygon(
+//     0 0, 100% 0, 100% 85%, 
+//     90% 85%, 80% 95%, 70% 85%, 
+//     60% 95%, 50% 85%, 40% 95%, 
+//     30% 85%, 20% 95%, 10% 85%, 
+//     0 95%, 0% 100%, 0 100%
+//   );}

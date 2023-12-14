@@ -252,3 +252,8 @@ border:0;
   display: block !important;
 }
 
+
+[data-tooltip] {
+  position: absolute !important;
+  }
+ 

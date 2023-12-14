@@ -76,14 +76,13 @@ $grey-colors: (
 @include generate-color-classes("purple", $purple-dark, $purple-light);
 
 //contextual
-.text-success {
-  color: $green;
-}
+// .text-success {
+//   color: darken($green, 40%);
+// }
 
 .text-danger {
-  color: $text-warning;
+  color: $text-danger;
 }
 
-.text-warning {
-  color: darken($yellow, 21%);
-}
+
+

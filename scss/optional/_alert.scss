@@ -83,13 +83,13 @@
 }
 .alert-warning {
   @include alert(
-    $orange,
+    darken(#fff3cd, 40%),
     "../img/icons/alerts/circle-exclamation-solid.svg",
     60px
   );
 }
 .alert-warning-minimal {
-  @include alert($orange, "", 4px);
+  @include alert(    darken(#fff3cd, 40%), "", 4px);
 }
 .alert-dark {
   @include alert(
@@ -103,13 +103,17 @@
 }
 .alert-light {
   @include alert(
-    $light-mode-color,
+    darken($light-mode-color, 10%),
     "../img/icons/alerts/circle-check-regular.svg",
     60px
   );
 }
 .alert-light-minimal {
-  @include alert($light-mode-color, "", 4px);
+  @include alert(darken($light-mode-color, 10%), "", 4px);
+}
+
+.alert-warning, .alert-warning-minimal {
+  color: #947100;
 }
 
 //override

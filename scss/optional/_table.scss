@@ -41,7 +41,7 @@ td {
   border-bottom: 1px solid $border-color;
 }
 th{
-  border-bottom: 2px solid $border-color;
+  border-bottom: 1px solid darken($border-color, 10%);
 }
 tbody tr:last-child td {
   border-bottom: none;
@@ -52,7 +52,6 @@ tbody tr:last-child td {
 
 
 th {
-  //background: darken($bg-ui-hover, 35%);
   font-weight: 600;
 }
 

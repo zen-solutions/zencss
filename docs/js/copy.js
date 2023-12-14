@@ -3,32 +3,35 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
- 
+
 var preElements = document.querySelectorAll('pre.copy-text');
 
 preElements.forEach(function (textBox) {
     var copyButton = document.createElement('button');
     var copyText = textBox.innerText;
 
-    // Create a span element with the desired text content for screen readers
     var srOnlySpan = document.createElement('span');
     srOnlySpan.textContent = 'Copy Text'; // Include your desired text here
-
-    // Apply CSS to visually hide the span element while making it accessible
     srOnlySpan.style.cssText = 'position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);';
-
-    // Append the span to the button
     copyButton.appendChild(srOnlySpan);
 
-    // Add the button to the textBox
+    copyButton.setAttribute('data-tooltip', 'Copy to clipboard');
+    copyButton.setAttribute('data-placement', 'left');
+
     textBox.appendChild(copyButton);
 
     copyButton.addEventListener('click', function (event) {
         navigator.clipboard.writeText(copyText)
             .then(() => {
+                // Change tooltip to 'Copied'
+                copyButton.setAttribute('data-tooltip', 'Copied');
+
                 copyButton.style.cssText = 'background-color: green !important; background-image: url("../images/ui/copied.png") !important;';
                 setTimeout(function unCopy() {
                     copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
+
+                    // Reset the tooltip text
+                    copyButton.setAttribute('data-tooltip', 'Copy to clipboard');
                 }, 1500);
             })
             .catch(err => {

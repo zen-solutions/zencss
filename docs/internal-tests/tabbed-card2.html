@@ -96,35 +96,42 @@
     </div>
 
     <script>
-        // JavaScript function to show/hide tab content
-        function showTab(tabNumber) {
-            const tabbedCard = document.querySelector('.tabbed-card');
-            if (tabbedCard) {
-                const tabs = tabbedCard.querySelectorAll('.tab');
-                const tabContents = tabbedCard.querySelectorAll('.tab-content');
-                
-                tabs.forEach((tab, index) => {
-                    if (index + 1 === tabNumber) {
-                        tab.classList.add('active');
+function showTab(tabNumber) {
+    const tabbedCard = document.querySelector('.tabbed-card');
+    if (tabbedCard) {
+        const tabs = tabbedCard.querySelectorAll('.tab');
+        const tabContents = tabbedCard.querySelectorAll('.tab-content');
+
+        if (tabs.length && tabContents.length) {
+            tabs.forEach((tab, index) => {
+                if (index + 1 === tabNumber) {
+                    tab.classList.add('active');
+                    if (tabContents[index]) {
                         tabContents[index].classList.add('active');
-                    } else {
-                        tab.classList.remove('active');
+                    }
+                } else {
+                    tab.classList.remove('active');
+                    if (tabContents[index]) {
                         tabContents[index].classList.remove('active');
                     }
-                });
-            }
+                }
+            });
         }
+    }
+}
 
-        // Attach click event listeners to tabs
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach((tab) => {
-                tab.addEventListener('click', function() {
-                    const tabNumber = parseInt(tab.getAttribute('data-tab'));
-                    showTab(tabNumber);
-                });
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab');
+    if (tabs.length) {
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', function() {
+                const tabNumber = parseInt(tab.getAttribute('data-tab'));
+                showTab(tabNumber);
             });
         });
+    }
+});
+
     </script>
 </body>
 </html>

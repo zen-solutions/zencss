@@ -41,9 +41,11 @@
                   <z-container>
                       <z-row>
                           <z-col>
-                            <h1 class="headline">What is the ZEN ideology?</h1>
-                            <p class="lead center text-balance">The ZEN (Zero Effort Notation) ideology presents a unified approach to styling web applications, reimagining the best practices from BEM, utility-first CSS, and atomic design. 
-                            </p>
+
+
+
+                            <h1 class="headline">ZEN: Effortless Elegance in Web Styling</h1>
+                            <p class="lead center text-balance">Embrace ZEN, where simplicity meets sophistication. </p>
                           </z-col>
                       </z-row>
                   </z-container>
@@ -61,73 +63,60 @@
 <z-container>
     <z-row>
         <z-col>
-     
-          <section class="zen-practice page-section">
-            <h2>Why practice ZEN? </h2>
-            <p>
-              ZEN's structured yet adaptable process simplifies UI development while ensuring consistency across the design. This system is designed for modularity, scalability, and cross-team clarity. The "form before function" strategy facilitates easy design modification without overhauling foundational styles. Intuitive nomenclature reduces maintenance effort.
-            </p>
-            <p>
-              ZEN is ideal for both individual developers and teams, streamlining workflows and promoting efficiency and predictability. Adopt ZEN for a perfect blend of structure and flexibility in your web projects.
-            </p>
-          </section>
-              
-                <section class="zen-core-principles">
-                  <h2>Core Principles</h2>
-              
-                  <article class="zen-hierarchical-structure">
-                    <h3>We Use a Hierarchical Structure:</h3>
-                    <ul>
-                      <li><strong>Elements:</strong> Basic building blocks such as images and buttons.</li>
-                      <li><strong>Components:</strong> Items like a <code>card, modal or z-col</code> that encapsulate a series of elements.</li>
-                      <li><strong>Sections:</strong> Groupings of components to form parts of a webpage.</li>
-                    </ul>
-                    <p>Each unit above is individually themable and customizable for consistent yet flexible styling.</p>
-                    <p><strong>Example:</strong> A headline and text (elements), inside a z-col card (components), making up the right portion of a page content area (section). </p>
-                  </article>
-              
-                  <article class="zen-modifiers page-section">
-                    <h3>We Recognise Style and Functional Modifiers:</h3>
-                    <p>6 distinct types of classes that define the appearance and behavior of your website content.</p>
-                    <p><strong>Order of application:</strong> Type → State → Theme → Background → Text → Style</p>
-
-                    <pre class="copy-text"><code class="language-html">&lt;z-col class="card disabled theme-dark bg-white text-black italic"&gt;
-    &lt;!-- Your content goes here --&gt;
-&lt;/z-col&gt;</code></pre>
-
-                    <small>Note: you'd rarely use all types of modifiers on the same piece of content. This example is for illustration purposes only.</small>
-                  </article>
-              
-                  <article class="zen-state-management">
-                    <h3>We Support State Management (WIP):</h3>
-                    <p>Control the display and visibility of elements through state classes.</p>
-                    <p><strong>States include:</strong> Active, disabled, Hidden, Visible, and display types like Block, Inline-block, etc.</p>
-                  </article>
-              
-                  <article class="zen-structural-layout page-section">
-                    <h3>We Use A Common Structural Layout:</h3>
-                    <p>Organize layouts with a clear structural hierarchy.</p>
-                    <ul>
-                      <li><strong>Elements/Components:</strong> Within Columns for organization.</li>
-                      <li><strong>Columns:</strong> Within Rows for horizontal flow.</li>
-                      <li><strong>Rows/Containers:</strong> Stack to form vertical sections of a page.</li>
-                      <li><strong>Container-fluid:</strong> For full-width sections or vertical spacing.</li>
-                    </ul>
-                  </article>
-
-                  <article class="zen-structural-layout">
-                    <h3>We auto-optimize across all devices - but you have the final say. </h3>
-                    <p>Leverage AI in your optimization process.</p>
-                  <p>Each component is auto-optimized for desktop, tablet and mobile display. Every site section, collection of parts, and elements themselves. Everything is modifiable by the end user. </p>
-                  </article>
-                </section>
+          <h2 class="headline">Introduction to ZEN</h2>
+          <p>ZEN (Zero Effort Notation) harmonizes the best of BEM, utility-first CSS, and atomic design into a singular, effortless approach to styling web applications. This innovative ideology streamlines UI development, ensuring a seamless, consistent design flow. ZEN is more than a styling framework; it's a philosophy that values intuitive structure, adaptability, and clarity, making it a quintessential choice for developers and teams seeking an elegant balance in web design.</p>
+          
+          <h2 class="headline">Why Choose ZEN?</h2>
+          <ul>
+              <li><strong>Structured Adaptability</strong>: Melds a well-organized approach with the flexibility to accommodate dynamic design needs.</li>
+              <li><strong>Intuitive Design Flow</strong>: 'Form before function' principle for effortless design evolution.</li>
+              <li><strong>Cross-team Clarity</strong>: Enhances communication and understanding among diverse team members.</li>
+              <li><strong>Modularity and Scalability</strong>: Ideal for growing projects and diverse applications.</li>
+          </ul>
+          
+          <h2 class="headline">Core Principles of ZEN</h2>
+          <ol>
+              <li><strong>Hierarchical Structure</strong>
+                  <ul>
+                      <li><em>Elements</em>: Fundamental units like buttons and images.</li>
+                      <li><em>Components</em>: Complex units like cards and modals.</li>
+                      <li><em>Sections</em>: Assembly of components forming webpage segments.</li>
+                  </ul>
+              </li>
+              <li><strong>Style and Functional Utility Modifiers</strong>
+                  <ul>
+                      <li>Up to six unique utility classes shape content appearance and behavior.</li>
+                      <li>Order: Type → State → Theme → Background → Text → Style.</li>
+                  </ul>
+              </li>
+              <z-container>
+                <z-row>
+                    <z-col>
+                      <pre class="square"><code class="language-html">&lt;div class="card active theme-dark bg-white text-black text-bold"&gt;...&lt;/div&gt;</code></pre>      
+                    </z-col>
+                </z-row>
+            </z-container>
+              <li><strong>State Management (Work in Progress)</strong>
+                  <ul>
+                      <li>Manage visibility and display properties through state classes.</li>
+                      <li>States include Active, Disabled, Show, Hide, and more.</li>
+                  </ul>
+              </li>
+              <li><strong>Common Structural Layout</strong>
+                  <ul>
+                      <li>Organize using Columns, Rows, and Containers.</li>
+                      <li>Auto-optimized for all devices, with customizable options.</li>
+                  </ul>
+              </li>
+          </ol>
+          
+          <h2 class="headline">Embrace ZEN in Your Web Projects</h2>
+          <p>ZEN is more than a framework; it's a revolution in web design, offering unparalleled ease, efficiency, and elegance. Whether you're an individual developer or part of a large team, ZEN is your key to a more streamlined, predictable, and aesthetically pleasing web development experience.</p>
+          
               
 
-           
-              
-    
-    
         </z-col>
+
     </z-row>
 </z-container>
     
@@ -137,41 +126,13 @@
     <!--- End Component --->
     <!----------------------------------------------------------------------->
     
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
-                <div class="center">
-
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
     </main>
 
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
     </footer>
 
     <script src="../js/copy.js"></script>

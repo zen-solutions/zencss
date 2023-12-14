@@ -105,10 +105,8 @@
                           <span class="sub-text">Access account options</span>
                         </div>
                       </li>
-                      <!-- Repeat for other menu items -->
                     </ul>
                   </nav>
-                  
             </z-col>
         </z-row>
     </z-container>
@@ -124,15 +122,56 @@
 
     <z-container>
         <z-row>
-            <z-col class="pl-0 pr-0">
+            <z-col>
                 <div class="accordion">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">
-
-
-
-                        </code></pre>
+                        <pre class="copy-text square"><code class="language-html">&lt;nav class="nav-menu"&gt;
+    &lt;ul&gt;
+        &lt;li class="active"&gt;
+            &lt;i class="icon big zenicon-person"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Account&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Your personal profile and information&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;i class="icon big zenicon-shield"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Billing&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Manage payments and transactions&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;i class="icon big zenicon-https"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Security&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Enhance account safety&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;i class="icon big zenicon-notifications-off"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Notifications&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Customize your site alerts&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;i class="icon big zenicon-ind-in-page"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Preferences&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Personalize your experience&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;i class="icon big zenicon-settings pl-1"&gt;&lt;/i&gt;
+            &lt;div class="menu-item pl-2"&gt;
+                &lt;span class="main-text"&gt;Settings&lt;/span&gt;
+                &lt;span class="sub-text"&gt;Access account options&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -168,13 +207,18 @@
         <z-row>
             <z-col class="pl-0 pr-0">
                 <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">
-
-
-
-                        </code></pre>
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content2" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;nav class="nav-menu"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-person"&gt;&lt;/i&gt; Account&lt;/li&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-shield"&gt;&lt;/i&gt; Billing&lt;/li&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-https"&gt;&lt;/i&gt; Security&lt;/li&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-notifications-off"&gt;&lt;/i&gt; Notifications&lt;/li&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-ind-in-page"&gt;&lt;/i&gt; Preferences&lt;/li&gt;
+        &lt;li&gt;&lt;i class="icon zenicon-settings"&gt;&lt;/i&gt; Settings&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -199,7 +243,7 @@
                 <div class="center">
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html" class="btn btn-md btn-fill">Docs</a>
+                        <a href="../index.html" class="btn btn-md btn-outline">Docs</a>
                 </div>
             </z-col>
         </z-row>
@@ -210,7 +254,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center mb-0">&copy; 2023. Built using zenCSS. </p>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>
