@@ -36,7 +36,7 @@
             <z-col class="pb-0">
                 <div class="center">
                     <h1 class="headline"> Corner Popup</h1>
-                    <p>A small, unobtrusive popup that appears in the corner of the screen. </p>
+                    <p>A small, unobtrusive popup that appears in the corner of the screen with an optional message notofication.  </p>
                         <hr>
                 </div>
             </z-col>
@@ -47,6 +47,9 @@
         <z-row>
             <z-col>
                 <p class="center">Click the button on the bottom right of your screen to open the popup. </p>
+                <p class="center">To add the message notification: Use  data-unread="1" on the button. (values are 1, 2 or 3) </p>
+                <p class="center">To add the notification bounce animation, add data-animate="true" to the button</p>
+                <p class="center">The notification alert will be hidden for 24 hours upon clicking the button</p>
             </z-col>
         </z-row>
     </z-container>
@@ -56,7 +59,7 @@
         <z-row>
             <z-col class="pl-0 pr-0">
                 <div class="corner-popup">
-                    <button class="btn-circle"><i class="zenicon-local-offer text-bigger"></i></button>
+                    <button class="btn-circle"  data-unread="1" data-animate="true"><i class="zenicon-local-offer text-bigger"></i></button>
                     <div class="hidden">
                         <h5>Pop Up Sale</h5>
                         <p>Lorem ipsum, dolor sit amet consetur adipisicing elit. Incidunt consectetur. </div>
@@ -76,7 +79,7 @@
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
                         <pre class="copy-text square"><code class="language-html">&lt;div class="corner-popup"&gt;
-    &lt;button class="btn-circle"&gt;&lt;i class="zenicon-local-offer text-bigger"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="btn-circle" data-unread="1" data-animate="true"&gt;&lt;i class="zenicon-local-offer text-bigger"&gt;&lt;/i&gt;&lt;/button&gt;
     &lt;div class="hidden"&gt;
         &lt;h5&gt;Pop Up Sale&lt;/h5&gt;
         &lt;p&gt;Lorem ipsum, dolor sit amet consetur adipisicing elit. Incidunt consectetur.&lt;/p&gt;

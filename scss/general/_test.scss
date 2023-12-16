@@ -8,7 +8,7 @@
 // test classes - for on the fly troubleshooting
 //---------------------------------------------------------
 .test-1 {
-  outline: 2px dotted $green;
+  outline: 2px dotted $red;
 }
 
 .test-2 {
@@ -16,15 +16,15 @@
 }
 
 .test-3 {
-  outline: 4px solid $blue;
+  outline: 4px solid $green;
 }
 
 .test-4 {
-  outline: 2px solid $orange;
+  outline: 2px solid $blue;
 }
 
 .test-5 {
-  outline: 2px solid $purple;
+  outline: 2px solid $orange;
 }
 
 //---------------------------------------------------------

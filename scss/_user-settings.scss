@@ -18,15 +18,15 @@ $error-color: #d33331; // used for color system not for UI -prolly wont be neede
 //  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$primary-color: rgb(1, 74, 148);
+$primary-color: #034694;
 //$primary-color: #044384;  
 $secondary-color: #386424;
-$accent-color: #ffd148;
-$cta-color: #0061C2; 
+$accent-color: #f0cd43;
+$cta-color: #1560bd; 
 
 // new - bg colors for light and dark mode themes/buttons etc. 
 $dark-mode-color: rgba(25, 25, 25, 0.84);
-$light-mode-color: rgba(255, 255, 255, 0.85);
+$light-mode-color: rgba(255, 255, 255, 0.75);
 
 //------------------------------------------
 //  ✓ Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly

@@ -199,6 +199,33 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
+
+  //-------------------------------------
+  // unread notifications
+  //-------------------------------------
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var button = document.querySelector('.btn-circle');
+
+    // Check if the button exists
+    if (button) {
+        // Restore the data-unread attribute if 24 hours have not passed
+        var unreadResetTime = localStorage.getItem('unreadResetTime');
+        if (unreadResetTime && new Date().getTime() < unreadResetTime) {
+            button.removeAttribute('data-unread');
+        }
+
+        // Add click event listener to the button
+        button.addEventListener('click', function() {
+            // Remove data-unread attribute and set the reset time in localStorage
+            button.removeAttribute('data-unread');
+            var resetTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 hours from now
+            localStorage.setItem('unreadResetTime', resetTime);
+        });
+    }
+});
+
+
 //   //pie charts
 //   document.addEventListener('DOMContentLoaded', () => {
 //     const chart = document.querySelector('.zen-pie-chart');

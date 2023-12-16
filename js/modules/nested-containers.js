@@ -7,51 +7,52 @@
 
   //-------------------------------------
   // Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
+  //12/15 why though? 
   //-------------------------------------
 
 // -------------------------------------------------------------
 //THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
 // -------------------------------------------------------------
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // Function to apply zero padding to column parents of containers
-    function applyPaddingToColParents() {
-        var containerSelectors = ['z-container', 'div.z-container'];
-        containerSelectors.forEach(function (selector) {
-            var containers = document.querySelectorAll(selector);
-            containers.forEach(function (container) {
-                var col = container.parentElement;
-                // Check if the parent is a z-col or div.z-col
-                if (col.matches('z-col, div.z-col')) {
-                    col.style.padding = '0';
-                }
-            });
-        });
-    }
+//   document.addEventListener('DOMContentLoaded', function () {
+//     // Function to apply zero padding to column parents of containers
+//     function applyPaddingToColParents() {
+//         var containerSelectors = ['z-container', 'div.z-container'];
+//         containerSelectors.forEach(function (selector) {
+//             var containers = document.querySelectorAll(selector);
+//             containers.forEach(function (container) {
+//                 var col = container.parentElement;
+//                 // Check if the parent is a z-col or div.z-col
+//                 if (col.matches('z-col, div.z-col')) {
+//                     col.style.padding = '0';
+//                 }
+//             });
+//         });
+//     }
 
-    // Function to apply zero padding to rows
-    function applyPaddingToRows() {
-        var rowSelectors = ['z-row', 'div.z-row'];
-        rowSelectors.forEach(function (selector) {
-            var rows = document.querySelectorAll(selector);
-            rows.forEach(function (row) {
-                var container = row.closest('z-col > z-container, div.z-col > div.z-container, z-col > div.z-container, div.z-col > z-container');
-                if (container) {
-                    row.style.paddingTop = '0';
-                    row.style.paddingBottom = '0';
-                }
-            });
-        });
-    }
+//     // Function to apply zero padding to rows
+//     function applyPaddingToRows() {
+//         var rowSelectors = ['z-row', 'div.z-row'];
+//         rowSelectors.forEach(function (selector) {
+//             var rows = document.querySelectorAll(selector);
+//             rows.forEach(function (row) {
+//                 var container = row.closest('z-col > z-container, div.z-col > div.z-container, z-col > div.z-container, div.z-col > z-container');
+//                 if (container) {
+//                     row.style.paddingTop = '0';
+//                     row.style.paddingBottom = '0';
+//                 }
+//             });
+//         });
+//     }
 
-    // Apply styles
-    applyPaddingToColParents();
-    applyPaddingToRows();
-});
-
-
+//     // Apply styles
+//     applyPaddingToColParents();
+//     applyPaddingToRows();
+// });
 
 
+//---------------------------------------------------------
+//NOT IN USE
 //   // -------------------------------------------------------------
 //   // THIS VERSION WORKS FOR THE ZENTAX IMPLEMENTATION
 //   // -------------------------------------------------------------

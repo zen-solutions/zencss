@@ -14,7 +14,7 @@
 }
 
 .lead {
-  font-size: 1.25em;
+  font-size: 1.2em;
   @include font-spacing;
   margin-top: 0;
   padding-top: 0;
@@ -134,22 +134,22 @@ $text-grey-dual: #5e5e5e;
 //   line-height: 50px;
 // }
 
-.icon-sm{
+.text-sm{
   font-size: 16px;
   line-height: 16px;
 }
 
-.icon-md{
+.text-md{
   font-size: 32px;
   line-height: 32px;
 }
 
-.icon-lg{
+.text-lg{
   font-size: 48px;
   line-height: 48px;
 }
 
-.icon-xl{
+.text-xl{
   font-size: 64px;
   line-height: 64px;
 }
@@ -298,25 +298,29 @@ $text-grey-dual: #5e5e5e;
 }
 
 /* Contextual Classes */
-.list-group-item-success {
+.success {
   background-color: #d4edda;
   color: darken($green, 15%);
+  @include padding();
 }
 
-.list-group-item-danger {
+.danger {
   background-color: #f8d7da;
   color: $text-danger;
+  @include padding();
 }
 
-.list-group-item-notice {
-  background-color: #cfe2ff;
+.notice {
+  background-color: #d3deec;
   color: #3e5d8b;
+  @include padding();
 }
 
 
-.list-group-item-warning {
+.warning {
   background-color: #fff3cd;
   color: darken(#fff3cd, 63%);
+  @include padding();
 }
 
 .list-group-horizontal .list-group-item {
@@ -512,10 +516,10 @@ a.text-cta-dual {
 
 
 .link-classic:hover {
-  color: #2491FF;
+  color: #0061C2;
   text-decoration: underline; 
 }
 
 .link-classic:active {
-  color: #FF0000; /* Red for active (clicked) state */
+  color: #FF0000; 
 }

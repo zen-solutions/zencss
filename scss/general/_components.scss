@@ -133,6 +133,10 @@
   border-right: 1px solid $border-color;
 }
 
+.expanded-content.static{
+  transition:none;
+}
+
 .expanded-content.show {
   max-height: 300px; /* Adjust as needed */
   border: 1px solid $border-color;
@@ -423,11 +427,13 @@ blockquote em {
 }
 
 .arrow.bottom{
-  top:92%;
+  top:94%;
+  right:0;
+  width: 32px;
 }
 
 .arrow.right{
-  right:50px;
+  right:40px;
   left: unset;
 }
 
@@ -564,11 +570,11 @@ blockquote em {
 
 .corner-popup {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
 }
 .corner-popup > div {
-  max-width: 285px;
+  width: 300px;
   max-height: 400px;
   overflow: auto;
   position: absolute;
@@ -593,6 +599,43 @@ blockquote em {
   right: 0;
 }
 
+
+//circle for corner popup
+.btn-circle[data-unread="1"]::after,
+.btn-circle[data-unread="2"]::after,
+.btn-circle[data-unread="3"]::after {
+    /* Common Styles for Notification Indicator */
+    content: attr(data-unread);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+
+//animation for notification
+@keyframes notificationBounce {
+    0%, 14.29%, 100% { /* 14.29% of 7 seconds is approximately 1 second */
+        transform: translateY(0);
+    }
+    7.14% { /* Halfway of 1 second */
+        transform: translateY(-5px);
+    }
+}
+
+.btn-circle[data-unread][data-animate="true"]::after {
+
+    /* Apply the modified bounce animation */
+    animation: notificationBounce 7s infinite;
+}
 .hidden {
   display: none;
 }

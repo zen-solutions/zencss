@@ -24,7 +24,7 @@
   overflow: hidden;
   transform: translate(-50%, -0.25rem);
   border-radius: $border-radius;
-  background: $dark-color;
+  background:   lighten($bg-header-footer, 20%);
   content: attr(data-tooltip);
   color: $light-color;
   text-decoration: none;
@@ -45,7 +45,7 @@
   border-radius: 0;
   background-color: transparent;
   content: "";
-  color: $dark-color;
+  color: lighten($bg-header-footer, 20%);
 }
 
 [data-tooltip][data-placement="bottom"]::after,

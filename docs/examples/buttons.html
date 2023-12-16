@@ -25,7 +25,6 @@
     </header>
 <main id="main-content">
 
-
     <!----------------------------------------------------------------------->
     <!--- Hero --->
     <!----------------------------------------------------------------------->
@@ -40,7 +39,7 @@
                 <div class="center">
                     <h1 class="headline"> Themed buttons</h1>
                     <p>Interactive elements for initiating actions or linking to other content. </p>
-              
+              <hr>
                 </div>
             </z-col>
         </z-row>
@@ -56,11 +55,11 @@
         <z-row>
             <z-col>
                 <h2 class="headline d-inline">Standard Buttons</h2>
-                <p>For your clicking pleasure </p>
+                <p>Bare bones buttons in every theme. For your clicking pleasure. </p>
 
             </z-col>
         </z-row>
-        <z-row class="six-up">
+        <z-row class="seven-up">
             <z-col>
                 <button  class="btn-primary">Primary</button>
 
@@ -85,6 +84,10 @@
                 <button  class="btn-light">Light</button>
 
             </z-col>
+            <z-col>
+                <button >Default</button>
+
+            </z-col>
         </z-row>
     </z-container>
 
@@ -99,7 +102,8 @@
 &lt;button class="btn-cta"&gt;CTA&lt;/button&gt;
 &lt;button class="btn-accent"&gt;Accent&lt;/button&gt;
 &lt;button class="btn-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-light"&gt;Light&lt;/button&gt; </code></pre>
+&lt;button class="btn-light"&gt;Light&lt;/button&gt;
+&lt;button&gt;Default&lt;/button&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -117,32 +121,32 @@
             </z-col>
         </z-row>
         <z-row class="six-up">
-            <z-col class="zen-body-bg-color right-2 up-8">
-                <button  class="btn-primary-outline left-2 down-8">Primary</button>
+            <z-col class="zen-body-bg-color right-2">
+                <button  class="btn-primary-outline left-2">Primary</button>
 
             </z-col>
 
-            <z-col class="zen-body-bg-color right-2 up-8">
-                <button  class="btn-secondary-outline left-2 down-8">Secondary</button>
+            <z-col class="zen-body-bg-color right-2">
+                <button  class="btn-secondary-outline left-2">Secondary</button>
 
             </z-col>
-            <z-col class="zen-body-bg-color right-2 up-8">
-                <button  class="btn-cta-outline left-2 down-8">CTA</button>
+            <z-col class="zen-body-bg-color right-2">
+                <button  class="btn-cta-outline left-2">CTA</button>
 
             </z-col>
-            <z-col class="zen-dark up-8">
-                <button  class="btn-accent-outline down-8">Accent</button>
+            <z-col class="zen-dark">
+                <button  class="btn-accent-outline">Accent</button>
             </z-col>
-            <z-col class="zen-body-bg-color right-2 up-8">
-                <button  class="btn-dark-outline left-2 down-8">Dark</button>
+            <z-col class="zen-body-bg-color right-2">
+                <button  class="btn-dark-outline left-2">Dark</button>
             </z-col>
-            <z-col class="zen-dark right-2 up-8">
-                <button  class="btn-light-outline down-8">Light</button>
+            <z-col class="zen-dark right-2">
+                <button  class="btn-light-outline">Light</button>
             </z-col>
         </z-row>
         <z-row>
             <z-col>
-                <div class="list-group-item list-group-item-notice mb-3">Ensure sufficient background contrast when using outlined/minimal buttons.</div>
+                <div class="notice mb-3"><i class="zenicon-error-outline down-1"></i> Ensure sufficient background contrast when using outlined/minimal buttons.</div>
             </z-col>
         </z-row>
     </z-container>
@@ -239,41 +243,80 @@
     <z-row class="six-up">
         <z-col>
             <a  class="btn btn-primary">Primary</a>
-            <a  class="btn btn-primary-outline">Primary</a>
-            <a  class="btn btn-primary-outline bg-primary-minimal">Primary</a>
 
         </z-col>
 
         <z-col>
             <a  class="btn btn-secondary">Secondary</a>
-            <a  class="btn btn-secondary-outline">Secondary</a>
-            <a  class="btn btn-secondary-outline bg-secondary-minimal">Secondary</a>
-
         </z-col>
         <z-col>
             <a  class="btn btn-cta">CTA</a>
-            <a  class="btn btn-cta-outline">CTA</a>
-            <a  class="btn btn-cta-outline bg-cta-minimal">CTA</a>
 
         </z-col>
-        <z-col class="zen-dark">
+        <z-col>
             <a  class="btn btn-accent">Accent</a>
-           <a  class="btn btn-accent-outline">Accent</a>
-            <a  class="btn btn-accent-outline bg-accent-minimal">Accent</a>
+
 
         </z-col>
         <z-col>
             <a  class="btn btn-dark">Dark</a>
-            <a  class="btn btn-dark-outline">Dark</a>
-            <a  class="btn btn-dark-outline bg-dark-minimal">Dark</a>
 
         </z-col>
         <z-col>
             <a  class="btn btn-light">Light</a>
+
+        </z-col>
+    </z-row>
+    <z-row class="six-up">
+        <z-col class="zen-body-bg-color">
+            <a  class="btn btn-primary-outline">Primary</a>
+
+        </z-col>
+
+        <z-col class="zen-body-bg-color">
+            <a  class="btn btn-secondary-outline">Secondary</a>
+
+        </z-col>
+        <z-col class="zen-body-bg-color">
+            <a  class="btn btn-cta-outline">CTA</a>
+
+        </z-col>
+        <z-col class="zen-dark">
+            <a class="btn btn-accent-outline">Accent</a>
+        </z-col>
+        <z-col class="zen-body-bg-color">
+            <a  class="btn btn-dark-outline">Dark</a>
+
+        </z-col>
+        <z-col class="zen-dark">
             <a  class="btn btn-light-outline">Light</a>
+
+
+        </z-col>
+    </z-row>
+    <z-row class="six-up">
+        <z-col>
+            <a  class="btn btn-primary-outline bg-primary-minimal">Primary</a>
+
+        </z-col>
+
+        <z-col>
+            <a  class="btn btn-secondary-outline bg-secondary-minimal">Secondary</a>
+
+        </z-col>
+        <z-col>
+            <a  class="btn btn-cta-outline bg-cta-minimal">CTA</a>
+
+        </z-col>
+        <z-col>
+            <a  class="btn btn-accent-outline bg-accent-minimal">Accent</a>
+
+        </z-col>
+        <z-col class="zen-body-bg-color">
+                <a  class="btn btn-dark-outline bg-dark-minimal">Dark</a>
+        </z-col>
+        <z-col>
             <a  class="btn btn-light-outline bg-light-minimal">Light</a>
-
-
         </z-col>
     </z-row>
 </z-container>
@@ -402,7 +445,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

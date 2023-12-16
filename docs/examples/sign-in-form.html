@@ -11,7 +11,7 @@
  <link rel="stylesheet" href="../../docs/css/documentation.css">
  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
-
+ 
 <body class="zen">
 <div id="skip-navigation">
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -34,8 +34,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline"> Sign In form</h1>
-                    <p>A form designed for user authentication and access.</p>
+                    <h1 class="headline"> User Forms</h1>
+                    <p>Forms designed for sign up and sign in.</p>
                         <hr>
                 </div>
             </z-col>
@@ -49,25 +49,92 @@
     <z-container>
         <z-row>
             <z-col class="align-items-center">
+              <z-container class="single">
+                  <z-row>
+                      <z-col>
+                        <div class="form-container theme-light">  
+                            <form>
+                                <h5 class="headline center">Sign Up for Updates</h5>
+                                <p class="small center pt-0 pb-1 up-5">An amazing tagline goes here</p>
+                                <div>
+                                  <input type="text" id="name1" placeholder=" ">
+                                  <label for="name1">Name</label>
+                                </div>
+                                <div>
+                                    <input type="email" id="email1" placeholder=" ">
+                                    <label for="email1">Email</label>
+                                  </div>
+                                  <div class="mb-1">
+                                    <input type="tel" id="tel1" placeholder=" ">
+                                    <label for="tel1">Your Phone Number</label>
+                                  </div>
+                                <button name="submit" type="submit">Sign Up</button>
+                                <small class="form-footer up-5 mb-0"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
+                              </form>
+                          </div>
+                      </z-col>
+                  </z-row>
+              </z-container>
+            </z-col>
+        </z-row>
+    </z-container>
+    
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="form-container theme-light"&gt;  
+    &lt;form&gt;
+        &lt;h5 class="headline center"&gt;Sign Up for Updates&lt;/h5&gt;
+        &lt;p class="small center pt-0 pb-1 up-5"&gt;An amazing tagline goes here&lt;/p&gt;
+        &lt;div&gt;
+            &lt;input type="text" id="name1" placeholder=" "&gt;
+            &lt;label for="name1"&gt;Name&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="email" id="email1" placeholder=" "&gt;
+            &lt;label for="email1"&gt;Email&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="mb-1"&gt;
+            &lt;input type="tel" id="tel1" placeholder=" "&gt;
+            &lt;label for="tel1"&gt;Your Phone Number&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button name="submit" type="submit"&gt;Sign Up&lt;/button&gt;
+        &lt;small class="form-footer up-5 mb-0"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="#"&gt;Terms of Service&lt;/a&gt;&lt;/small&gt;
+    &lt;/form&gt;
+&lt;/div&gt; </code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+
+    <z-container>
+        <z-row>
+            <z-col class="align-items-center">
+                <hr>
                 <z-container class="single">
                     <z-row>
                         <z-col>
                             <div class="form-container theme-light center">  
                                 <form>
-                                    <h5 class="headline">Sign Into Your Account</h5>
+                                    <h5 class="h6 headline">Sign Into Your Account</h5>
                                     <div>
                                         <input type="email" id="email" placeholder=" ">
                                         <label for="email">Email Address</label>
                                       </div>
-                                      <div>
+                                      <div class="mb-1">
                                         <input type="password" id="pass" placeholder=" ">
                                         <label for="tel">Password</label>
                                       </div>
                                     <button name="submit" type="submit">Sign In</button>
-                                    <small class="down-5 small mt-1">Forgot Password?</small>
+                                    <small class="text-smaller mt-1">Forgot Password?</small>
                                   </form>
                               </div>
-                              <p class="up-5 center small">Not a member? <span class="text-cta bold">Start a 14 day free trial</span></p>
+                              <small class="up-5 text-center d-block">Not a member? <span class="text-cta text-semibold">Start a 14 day free trial</span></small>
                         </z-col>
                     </z-row>
                 </z-container>

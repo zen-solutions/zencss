@@ -9,23 +9,18 @@ $colors: (
   1: #f7f7f7,
   2: #d9d9d9,
   3: $border-color,
-  4: #737373,
+  4: #8a8a8a,
   5: #404040,
-  6: #0d0d0d,
 );
 
-@for $i from 1 through 6 {
+@for $i from 1 through 5 {
   .border-#{$i} {
     border: 1px solid map-get($colors, $i);
     border-bottom-color: map-get($colors, $i) !important;
   }
 }
 
-.border {
-  border: 1px solid #c2c2c2;
-}
-
-//do these with the color map
+//do these with a color map
 .border-success {
   border: 2px solid $green;
 }

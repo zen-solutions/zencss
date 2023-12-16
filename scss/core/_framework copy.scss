@@ -18,7 +18,6 @@ z-container,
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  align-items: stretch !important; 
 }
 
 z-container-fluid,
@@ -30,7 +29,6 @@ z-container-fluid,
   flex-direction: column;
   flex-grow: 1;
   border-radius: 0 !important;
-  //align-items: stretch;  // prolly needed, to test
 }
 
 //--------------------------------
@@ -74,10 +72,10 @@ z-col,
 .z-col {
   flex-basis: calc(25% - 20px) !important;
   flex: 1;
-  // display: flex;
+   //display: flex; //1214 fix overflow - on outlined button for exmple
+//flex-direction: column; //1214
   // justify-content: flex-start;
-  // flex-direction: column;
-  // align-self: stretch;
+  //  align-self: stretch;
   width: 100%; // we're back here again
 
   padding: $col-padding;
@@ -91,7 +89,9 @@ z-col,
 .z-col > *,
 z-col > * {
   max-width: 100%;
-  width: 100%; // dont remove
+  width: 100%; //12xx dont remove //1214 causing overflow on buttons, add margin below to test fix
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .z-col > span,

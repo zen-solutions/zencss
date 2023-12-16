@@ -59,37 +59,37 @@ html {
 // Heading styles
 h1,
 .h1 {
-  font-size: 2.7em;
+  font-size: 2.75em;
   line-height: 1.2;
 }
 
 h2,
 .h2 {
-  font-size: 2.4em;
+  font-size: 2.25em;
   //line-height: 1.333;
 }
 
 h3,
 .h3 {
   //line-height: 1.4em;
-  font-size: 2.1em;
+  font-size: 2em;
 }
 
 h4,
 .h4 {
-  font-size: 1.8em;
+  font-size: 1.75em;
   //line-height: 1.5em;
 }
 
 h5,
 .h5 {
   font-size: 1.5em;
-  //line-height: 1.6em;
+  //line-height:51.6em;
 }
 
 h6,
 .h6 {
-  font-size: 1.4em;
+  font-size: 1.25em;
   //line-height: 1.6em;
 }
 
@@ -204,31 +204,33 @@ hr {
   opacity: 0.05;
 }
 
-button,
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-wrap: pretty;
-  padding: 1em;
-  // margin: 0.2em;
-  // margin-top: 0;
-  // margin-bottom: 1em; //removed 1214 - due to needing proper margin. this was removed for a reason. clarify upon reexamination and reevaualte.
-  margin:1em;
-  text-align: center;
-  border: none;
-  transition: all 0.25s ease;
-  cursor: pointer;
-  border-radius: $border-radius;
-  font-size: 0.9em;
-  color: $light-color;
-  background: lighten($bg-header-footer, 20%);
-  z-index: 3;
-  text-decoration: none;
-  font-weight: 500;
-  min-height: 41px;
-  min-width: 41px;
-}
+
+
+// button,
+// .btn {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-wrap: pretty;
+//   //padding: 1em; //remove 12/15 bc button and link button were diff heights. so weird. 
+//   padding:0 1em;
+//   // margin: 0.2em;
+//   // margin-top: 0;
+//   // margin-bottom: 1em; //removed 1214 - due to needing proper margin. this was removed for a reason. clarify upon reexamination and reevaualte.
+//   margin:1em .15em;
+//   text-align: center;
+//   border: none;
+//   transition: all 0.25s ease;
+//   cursor: pointer;
+//   border-radius: $border-radius;
+//   font-size: 0.9em;
+//   color: $light-color;
+//   background: lighten($bg-header-footer, 20%);
+//   z-index: 3;
+//   text-decoration: none;
+//   font-weight: 500;
+//   min-height: 46px;
+// }
 
 button:hover,
 .btn:hover {
@@ -299,7 +301,7 @@ small {
   line-height: calc($line-height / 1.5);
   margin-top: 0;
   margin-bottom: 1rem;
-  display: inline;
+  //display: inline;
 }
 
 input,
@@ -340,8 +342,27 @@ input[type="submit"] {
 }
 
 // Rounded and circle shape classes
-.round {
+.round { //to depricate
   border-radius: 8px !important;
+}
+
+.br-sm {
+  border-radius: 4px !important;
+}
+.br-md {
+  border-radius: 8px !important;
+}
+
+.br-lg {
+  border-radius: 12px !important;
+}
+
+.br-xl {
+  border-radius: 16px !important;
+}
+
+.br-xxl {
+  border-radius: 20px !important;
 }
 
 .square {
@@ -471,6 +492,7 @@ header :link:hover {
 * {
   scrollbar-width: thin;
   scrollbar-color: #a1a1a1 #e8e8e8;
+  box-sizing: border-box;
 }
 
 /* Chrome, Edge, and Safari */
@@ -529,15 +551,15 @@ header :link:hover {
 .border-right::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: -9px;
+  top: 20px;
+  right: 5px;
   width: 0;
-  height: 100%;
-  border-right: 1px solid lighten($border-color, 24%);
+  height: 85%;
+  border-right: 1px solid $border-color;
 }
 
 .border-top {
-  border-top: 1px solid lighten($border-color, 24%);
+  border-top: 1px solid $border-color;
 }
 
 .border-bottom {
@@ -715,8 +737,8 @@ On the rare occasion you need to override it, use something like the following:
 }
 
 .hero-section {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
+  padding-top: 65px !important;
+  padding-bottom: 65px !important;
 }
 
 .underline-handdrawn {
