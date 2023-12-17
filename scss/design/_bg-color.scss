@@ -16,52 +16,92 @@ $bg-default-colors: (
   "green": $green,
   "blue": $blue,
   "purple": $purple,
-  "grey-1": #e5e5e5,
-  "grey-2": #c7c6c6,
-  "grey-3": #a6a6a6,
-  "grey-4": #6e6e6e,
-  "grey-5": #525252,
-  "grey-6": #3d3d3d,
+  "grey-1": $grey-1,
+  "grey-2": $grey-2,
+  "grey-3": $grey-3,
+  "grey-4": $grey-4,
+  "grey-5": $grey-5,
+  "grey-6": $grey-6,
 );
 
 // Dark Background Colors
 $bg-dark-colors: (
   "primary-dark": $primary-color-dark,
+  "primary-darker": $primary-color-darker,
+  "primary-darkest": $primary-color-darkest,
   "secondary-dark": $secondary-color-dark,
+  "secondary-darker": $secondary-color-darker,
+  "secondary-darkest": $secondary-color-darkest,
   "accent-dark": $accent-color-dark,
+  "accent-darker": $accent-color-darker,
+  "accent-darkest": $accent-color-darkest,
   "cta-dark": $cta-color-dark,
+  "cta-darker": $cta-color-darker,
+  "cta-darkest": $cta-color-darkest,
   "red-dark": $red-dark,
+  "red-darker": $red-darker,
+  "red-darkest": $red-darkest,
   "orange-dark": $orange-dark,
+  "orange-darker": $orange-darker,
+  "orange-darkest": $orange-darkest,
   "yellow-dark": $yellow-dark,
   "green-dark": $green-dark,
   "blue-dark": $blue-dark,
   "purple-dark": $purple-dark,
-  "grey-1-dark": #c8c8c8,
-  "grey-2-dark": #b0b0b0,
-  "grey-3-dark": #909090,
-  "grey-4-dark": #616161,
-  "grey-5-dark": #3b3b3b,
-  "grey-6-dark": #1d1d1d,
+  "yellow-darker": $yellow-darker,
+  "green-darker": $green-darker,
+  "blue-darker": $blue-darker,
+  "purple-darker": $purple-darker,
+  "yellow-darkest": $yellow-darkest,
+  "green-darkest": $green-darkest,
+  "blue-darkest": $blue-darkest,
+  "purple-darkest": $purple-darkest,
+  "grey-1-dark": $grey-1-dark,
+  "grey-2-dark": $grey-2-dark,
+  "grey-3-dark":$grey-3-dark,
+  "grey-4-dark": $grey-4-dark,
+  "grey-5-dark": $grey-5-dark,
+  "grey-6-dark": $grey-6-dark,
 );
-
+ 
 // Light Background Colors
 $bg-light-colors: (
   "primary-light": $primary-color-light,
+  "primary-lighter": $primary-color-lighter,
+  "primary-lightest": $primary-color-lightest,
   "secondary-light": $secondary-color-light,
+  "secondary-lighter": $secondary-color-lighter,
+  "secondary-lightest": $secondary-color-lightest,
   "accent-light": $accent-color-light,
+  "accent-lighter": $accent-color-lighter,
+  "accent-lightest": $accent-color-lightest,
   "cta-light": $cta-color-light,
+  "cta-lighter": $cta-color-lighter,
+  "cta-lightest": $cta-color-lightest,
   "red-light": $red-light,
+  "red-lighter": $red-lighter,
+  "red-lightest": $red-lightest,
   "orange-light": $orange-light,
+  "orange-lighter": $orange-lighter,
+  "orange-lightest": $orange-lightest,
   "yellow-light": $yellow-light,
   "green-light": $green-light,
   "blue-light": $blue-light,
   "purple-light": $purple-light,
-  "grey-1-light": #ebebeb,
-  "grey-2-light": #e0e0e0,
-  "grey-3-light": #b5b3b3,
-  "grey-4-light": #8e8e8e,
-  "grey-5-light": #575757,
-  "grey-6-light": #383838,
+  "yellow-lighter": $yellow-lighter,
+  "green-lighter": $green-lighter,
+  "blue-lighter": $blue-lighter,
+  "purple-lighter": $purple-lighter,
+  "yellow-lightest": $yellow-lightest,
+  "green-lightest": $green-lightest,
+  "blue-lightest": $blue-lightest,
+  "purple-lightest": $purple-lightest,
+  "grey-1-light": $grey-1-light,
+  "grey-2-light": $grey-2-light,
+  "grey-3-light": $grey-3-light,
+  "grey-4-light": $grey-4-light,
+  "grey-5-light": $grey-5-light,
+  "grey-6-light": $grey-6-light,
 );
 
 //------------------------------------------
@@ -82,9 +122,29 @@ $bg-light-colors: (
     color: map-get($text-dark-colors, $bg-key + "-dark") !important;
   }
 
+  .bg-#{$bg-key}-darker {
+    background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
+    color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+  }
+
+  .bg-#{$bg-key}-darkest {
+    background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
+    color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+  }
+
   .bg-#{$bg-key}-light {
     background: map-get($bg-light-colors, $bg-key + "-light") !important;
     color: map-get($text-light-colors, $bg-key + "-light") !important;
+  }
+
+  .bg-#{$bg-key}-lighter {
+    background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
+    color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+  }
+
+  .bg-#{$bg-key}-lightest {
+    background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
+    color: map-get($text-light-colors, $bg-key + "-lightest") !important;
   }
 
   .bg-#{$bg-key}-minimal {

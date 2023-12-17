@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Center</a>
                 <div class="dropdown-content">
-                <a href="../help-desk/index.html">Getting Started</a>
-                <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
+                <a href="../help-desk/index.html">Quick-Start Guide</a>
                 <a href="../help-desk/installation.html">Installation</a>
+                <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
                 <a href="../help-desk/core-concepts.html">Core Concepts</a>
-                <a href="../help-desk/page-sections.html">Site Sections</a>
+                <a href="../help-desk/site-sections.html">Site Sections</a>
                 <a href="../help-desk/site-parts.html">Components</a>
                 <a href="../help-desk/utilities.html">Utilities</a>
 </div></div>
@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/responsive-table.html">HTML Table</a>
                                 <a href="../examples/icons.html">Icons</a>
                                 <a href="../examples/icon-toggle.html">Icon Toggle</a>
-                                <a href="../examples/image.html">Image/Icon Styling</a>
                                 <a href="../examples/image-carousel.html">Image Carousel</a>
                                 <a href="../examples/image-gallery.html">Image Gallery</a>
                                 <a href="../examples/labels.html">Labels</a>
@@ -95,15 +94,16 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Utilities</a>
                 <div class="dropdown-content left-150">
-                <a href="../examples/text.html">Text Formatting</a>
+                <a href="../examples/text.html">Font Treatments</a>
+                <a href="../examples/image.html">Image/Icon Styling</a>
                     <a href="../examples/text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                     <a href="../examples/padding-margin-utilities.html">Padding & Margin</a>
-                    <a href="../examples/animations.html">Animation Utilities</a>
+                    <a href="../examples/animations.html">Animations</a>
                     <a href="../examples/formatting.html">Gap, Height, and Width</a>
                     <a href="../examples/flex.html">Flex</a>
-                    <a href="../examples/test-classes.html">Test Classes</a>
+                    <a href="../examples/test-classes.html">Testing Tools</a>
                     <a href="../examples/shadows.html">Shadows</a>                                
-                    <a href="../examples/border-utilities.html">Border Classes</a>
+                    <a href="../examples/border-utilities.html">Border Styling</a>
                 </div>
             </div>
         </ul>

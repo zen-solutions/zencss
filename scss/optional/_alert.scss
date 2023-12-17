@@ -56,10 +56,10 @@
 
 // Apply the alert mixin to each alert class, passing the background color and icon url
 .alert-primary {
-  @include alert($blue, "../img/icons/alerts/thumbs-up-solid.svg", 60px);
+  @include alert($blue-darkest, "../img/icons/alerts/thumbs-up-solid.svg", 60px);
 }
 .alert-primary-minimal {
-  @include alert($blue, "", 4px);
+  @include alert($blue-darkest, "", 4px);
 }
 .alert-danger {
   @include alert(

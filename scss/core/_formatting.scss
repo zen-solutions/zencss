@@ -109,6 +109,17 @@ $sizes: (
   width:100% !important;
 }
 
+//min height
+//100-500
+
+$heights: 100 200 300 400 500;
+
+@each $height in $heights {
+  .mh-#{$height} {
+    min-height: #{$height}px;
+  }
+}
+
 //----------------------------------------------------
 //card//
 //----------------------------------------------------
@@ -121,8 +132,6 @@ $sizes: (
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
-  //max-width: 100%;
-  overflow: hidden;
 
   h1,
   h2,
@@ -167,7 +176,7 @@ $sizes: (
   padding: 0 !important;
 }
 
-.img-bg {
+.bg-img {
   position: absolute;
   left: 0;
   right: 0;

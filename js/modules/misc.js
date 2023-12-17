@@ -225,6 +225,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+  //-------------------------------------
+  // fade in animation
+  //-------------------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elementsToAnimate = document.querySelectorAll('.fade-in');
+
+    if (elementsToAnimate.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        elementsToAnimate.forEach(el => observer.observe(el));
+    }
+});
+
 
 //   //pie charts
 //   document.addEventListener('DOMContentLoaded', () => {

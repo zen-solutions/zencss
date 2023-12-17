@@ -13,13 +13,12 @@
 //---------------------------------------------
 @import "core/color-contrast-checker";
 $error-color: #d33331; // used for color system not for UI -prolly wont be needed much longer
-
+ 
 //------------------------------------------
 //  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
 $primary-color: #034694;
-//$primary-color: #044384;  
 $secondary-color: #386424;
 $accent-color: #f0cd43;
 $cta-color: #1560bd; 
@@ -32,25 +31,24 @@ $light-mode-color: rgba(255, 255, 255, 0.75);
 //  ✓ Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$red: #c22a27;
-$orange: #ef7b02;
-$yellow: #ecc500;
-$green: #599d03;
-$blue: #1252a9;
-$purple: #6d45dc;
+$red: #EA4335;
+$orange: #efa608;
+$yellow: #efc239;
+$green: #34A853;
+$blue: #4285F4;
+$purple: #A142F4;
 
 
 //------------------------------------------
 //  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
-// BUG - these are overwritten in bg color i think
 //------------------------------------------
 
-$grey-1: #f7f7f7;
-$grey-2: #c7c6c6;
-$grey-3: #a6a6a6;
-$grey-4: #616161;
-$grey-5: #404040;
-$grey-6: #0d0d0d;
+$grey-1: #f0f0f0;
+$grey-2: #d2d2d2;
+$grey-3: #c3c3c3;
+$grey-4: #9E9E9E;
+$grey-5: #707070;
+$grey-6: #484848;
 
 
 
@@ -92,45 +90,89 @@ $grey-ui-text-color: #727272;
 //------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color, 10%);
-$secondary-color-dark: darken($secondary-color, 10%);
-$accent-color-dark: darken($accent-color, 10%);
-$cta-color-dark: darken($cta-color, 10%);
+$primary-color-dark: darken($primary-color, 7%);
+$primary-color-darker: darken($primary-color, 12%);
+$primary-color-darkest: darken($primary-color, 16%);
+$secondary-color-dark: darken($secondary-color, 7%);
+$secondary-color-darker: darken($secondary-color, 12%);
+$secondary-color-darkest: darken($secondary-color, 16%);
+$cta-color-dark: darken($cta-color, 7%);
+$cta-color-darker: darken($cta-color, 12%);
+$cta-color-darkest: darken($cta-color, 16%);
+$accent-color-dark: darken($accent-color, 7%);
+$accent-color-darker: darken($accent-color, 12%);
+$accent-color-darkest: darken($accent-color, 16%);
 
 //brand palette light
-$primary-color-light: lighten($primary-color, 10%);
-$secondary-color-light: lighten($secondary-color, 10%);
-$accent-color-light: lighten($accent-color, 10%);
-$cta-color-light: lighten($cta-color, 10%);
+$primary-color-light: lighten($primary-color, 7%);
+$primary-color-lighter: lighten($primary-color, 12%);
+$primary-color-lightest: lighten($primary-color, 16%);
+$secondary-color-light: lighten($secondary-color, 7%);
+$secondary-color-lighter: lighten($secondary-color, 12%);
+$secondary-color-lightest: lighten($secondary-color, 16%);
+$cta-color-light: lighten($cta-color, 7%);
+$cta-color-lighter: lighten($cta-color, 12%);
+$cta-color-lightest: lighten($cta-color, 16%);
+$accent-color-light: lighten($accent-color, 7%);
+$accent-color-lighter: lighten($accent-color, 12%);
+$accent-color-lightest: lighten($accent-color, 16%);
 
 // Generic palette dark
-$red-dark: darken($red, 10%);
-$orange-dark: darken($orange, 6%);
-$yellow-dark: darken($yellow, 4%);
-$green-dark: darken($green, 5%);
-$blue-dark: darken($blue, 10%);
-$purple-dark: darken($purple, 10%);
+$red-dark: darken($red, 7%);
+$orange-dark: darken($orange, 7%);
+$yellow-dark: darken($yellow, 7%);
+$green-dark: darken($green, 7%);
+$blue-dark: darken($blue, 7%);
+$purple-dark: darken($purple, 7%);
+
+$red-darker: darken($red, 12%);
+$orange-darker: darken($orange, 12%);
+$yellow-darker: darken($yellow, 12%);
+$green-darker: darken($green, 12%);
+$blue-darker: darken($blue, 12%);
+$purple-darker: darken($purple, 12%);
+
+$red-darkest: darken($red, 16%);
+$orange-darkest: darken($orange, 16%);
+$yellow-darkest: darken($yellow, 16%);
+$green-darkest: darken($green, 16%);
+$blue-darkest: darken($blue, 16%);
+$purple-darkest: darken($purple, 16%);
 
 // Generic palette light
-$red-light: lighten($red, 5%);
-$orange-light: lighten($orange, 10%);
-$yellow-light: lighten($yellow, 5%);
-$green-light: lighten($green, 6%);
-$blue-light: lighten($blue, 10%);
-$purple-light: lighten($purple, 5%);
+$red-light: lighten($red, 7%);
+$orange-light: lighten($orange, 7%);;
+$yellow-light: lighten($yellow, 7%);
+$green-light: lighten($green, 7%);
+$blue-light: lighten($blue, 7%);
+$purple-light: lighten($purple,7%);
+
+$red-lighter: lighten($red, 12%);
+$orange-lighter: lighten($orange, 12%);
+$yellow-lighter: lighten($yellow, 12%);
+$green-lighter: lighten($green, 12%);
+$blue-lighter: lighten($blue, 12%);
+$purple-lighter: lighten($purple, 12%);
+
+$red-lightest: lighten($red, 16%);
+$orange-lightest: lighten($orange, 16%);
+$yellow-lightest: lighten($yellow, 16%);
+$green-lightest: lighten($green, 16%);
+$blue-lightest: lighten($blue, 16%);
+$purple-lightest: lighten($purple, 16%);
 
 // Grey palette dark
 $grey-1-dark: darken($grey-1, 10%);
-$grey-2-dark: darken($grey-2, 6%);
-$grey-3-dark: darken($grey-3, 4%);
-$grey-4-dark: darken($grey-4, 5%);
+$grey-2-dark: darken($grey-2, 10%);
+$grey-3-dark: darken($grey-3, 10%);
+$grey-4-dark: darken($grey-4, 10%);
 $grey-5-dark: darken($grey-5, 10%);
 $grey-6-dark: darken($grey-6, 10%);
 
 // Grey palette light
 $grey-1-light: lighten($grey-1, 10%);
-$grey-2-light: lighten($grey-2, 6%);
-$grey-3-light: lighten($grey-3, 4%);
+$grey-2-light: lighten($grey-2, 10%);
+$grey-3-light: lighten($grey-3, 10%);
 $grey-4-light: lighten($grey-4, 5%);
 $grey-5-light: lighten($grey-5, 10%);
 $grey-6-light: lighten($grey-6, 10%);
@@ -143,7 +185,10 @@ $grey-6-light: lighten($grey-6, 10%);
 //------------------------------------------------------------------------------
 
 
-
+//to add new colors
+//1: add them in these maps
+//2: add them in the text maps below (for smart color assignment)
+//3: add them in the bg-colors maps (for class assignment)
 //Smart Color Maps - Text color is figured automatically based on your input color and adherance to 4.5/1 color contrast minimum
 // the smart-text-color() function includes the wcag-compliant font color for that particular background color
 $text-default-colors: (
@@ -238,15 +283,35 @@ $text-default-colors: (
 // Dark Text Colors
 $text-dark-colors: (
   "primary-dark": smart-text-color($primary-color-dark),
+  "primary-darker": smart-text-color($primary-color-darker),
+  "primary-darkest": smart-text-color($primary-color-darkest),
   "secondary-dark": smart-text-color($secondary-color-dark),
-  "accent-dark": smart-text-color($accent-color-dark),
+  "secondary-darker": smart-text-color($secondary-color-darker),
+  "secondary-darkest": smart-text-color($secondary-color-darkest),
   "cta-dark": smart-text-color($cta-color-dark),
+  "cta-darker": smart-text-color($cta-color-darker),
+  "cta-darkest": smart-text-color($cta-color-darkest),
+  "accent-dark": smart-text-color($accent-color-dark),
+  "accent-darker": smart-text-color($accent-color-darker),
+  "accent-darkest": smart-text-color($accent-color-darkest),
   "red-dark": smart-text-color($red-dark),
+  "red-darker": smart-text-color($red-darker),
+  "red-darkest": smart-text-color($red-darkest),
   "orange-dark": smart-text-color($orange-dark),
+  "orange-darker": smart-text-color($orange-darker),
+  "orange-darkest": smart-text-color($orange-darkest),
   "yellow-dark": smart-text-color($yellow-dark),
+  "yellow-darker": smart-text-color($yellow-darker),
+  "yellow-darkest": smart-text-color($yellow-darkest),
   "green-dark": smart-text-color($green-dark),
+  "green-darker": smart-text-color($green-darker),
+  "green-darkest": smart-text-color($green-darkest),
   "blue-dark": smart-text-color($blue-dark),
+  "blue-darker": smart-text-color($blue-darker),
+  "blue-darkest": smart-text-color($blue-darkest),
   "purple-dark": smart-text-color($purple-dark),
+  "purple-darker": smart-text-color($purple-darker),
+  "purple-darkest": smart-text-color($purple-darkest),
   "grey-1-dark": smart-text-color($grey-1-dark),
   "grey-2-dark": smart-text-color($grey-2-dark),
   "grey-3-dark": smart-text-color($grey-3-dark),
@@ -258,15 +323,35 @@ $text-dark-colors: (
 // Light Text Colors
 $text-light-colors: (
   "primary-light": smart-text-color($primary-color-light),
+  "primary-lighter": smart-text-color($primary-color-lighter),
+  "primary-lightest": smart-text-color($primary-color-lightest),
   "secondary-light": smart-text-color($secondary-color-light),
+  "secondary-lighter": smart-text-color($secondary-color-lighter),
+  "secondary-lightest": smart-text-color($secondary-color-lightest),
   "accent-light": smart-text-color($accent-color-light),
+  "accent-lighter": smart-text-color($accent-color-lighter),
+  "accent-lightest": smart-text-color($accent-color-lightest),
   "cta-light": smart-text-color($cta-color-light),
+  "cta-lighter": smart-text-color($cta-color-lighter),
+  "cta-lightest": smart-text-color($cta-color-lightest),
   "red-light": smart-text-color($red-light),
+  "red-lighter": smart-text-color($red-lighter),
+  "red-lightest": smart-text-color($red-lightest),
   "orange-light": smart-text-color($orange-light),
+  "orange-lighter": smart-text-color($orange-lighter),
+  "orange-lightest": smart-text-color($orange-lightest),
   "yellow-light": smart-text-color($yellow-light),
   "green-light": smart-text-color($green-light),
   "blue-light": smart-text-color($blue-light),
   "purple-light": smart-text-color($purple-light),
+  "yellow-lighter": smart-text-color($yellow-lighter),
+  "green-lighter": smart-text-color($green-lighter),
+  "blue-lighter": smart-text-color($blue-lighter),
+  "purple-lighter": smart-text-color($purple-lighter),
+  "yellow-lightest": smart-text-color($yellow-lightest),
+  "green-lightest": smart-text-color($green-lightest),
+  "blue-lightest": smart-text-color($blue-lightest),
+  "purple-lightest": smart-text-color($purple-lightest),
   "grey-1-light": smart-text-color($grey-1-light),
   "grey-2-light": smart-text-color($grey-2-light),
   "grey-3-light": smart-text-color($grey-3-light),
@@ -276,7 +361,7 @@ $text-light-colors: (
 );
 
 //end ✕ - color system maps
-
+ 
 
 .light-color {
   color: $light-color;
@@ -286,9 +371,9 @@ $text-light-colors: (
 // ✓ Rounded corners
 //------------------------------------------
 
-$border-radius: 3px; //on
+$border-radius: 4px; //on
 //$border-radius: 0; //off
-
+ 
 //------------------------------------------
 // ✓ Default Spacing 
 //------------------------------------------
