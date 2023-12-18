@@ -4,31 +4,22 @@
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
 
-// Main configuration file for zenCSS
-// ✓ = ok to override
-//  ✕ = do not override/modify
-
-//---------------------------------------------
-//  ✕ Initialization - Don't touch these 2 lines
-//---------------------------------------------
-@import "core/color-contrast-checker";
-$error-color: #d33331; // used for color system not for UI -prolly wont be needed much longer
- 
 //------------------------------------------
-//  ✓ Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+//   Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
 $primary-color: #034694;
-$secondary-color: #386424;
-$accent-color: #f0cd43;
+$secondary-color: #43742c;
+$accent-color: #e7c129;
 $cta-color: #1560bd; 
 
 // new - bg colors for light and dark mode themes/buttons etc. 
 $dark-mode-color: rgba(25, 25, 25, 0.84);
-$light-mode-color: rgba(255, 255, 255, 0.75);
+$light-mode-color: rgba(255, 255, 255, 0.70);
+
 
 //------------------------------------------
-//  ✓ Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+//  Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
 $red: #EA4335;
@@ -40,7 +31,7 @@ $purple: #A142F4;
 
 
 //------------------------------------------
-//  ✓ Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
+//  Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
 $grey-1: #f0f0f0;
@@ -51,9 +42,8 @@ $grey-5: #707070;
 $grey-6: #484848;
 
 
-
 //------------------------------------------
-// ✓ Global Vars/misc - prolly some cleanup to be done here
+// Global Vars/misc - prolly some cleanup to be done here
 //------------------------------------------
 
 $text-danger: #a23737; // text color for warning messages in light mode
@@ -77,16 +67,9 @@ $bg-ui-hover: hsla(0,0%,93%,0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
 
-// - todo: we could add a "color-overrides.scss" file that they could use to override the colors. it could have the vars w no values filled in. 
-// or we could just create a folder, user overrides, and put the color-overrides above in there, then iinclude that file here. that would be smoother. 
-// then do that down the page for the other overrides, and they have one place to go.
-// we need to keep OUR values here tho, bc for upgrades, then they can just copy their new overrides files into the system and they're good to go.
-
-
 //------------------------------------------
-// ✓ Light and Dark Color Variables for zenCSS color system
+//  Light and Dark Color Variables for zenCSS color system
 // Override as needed for desired darkness and lightness for your theme/universal color background color variations
-// TODO - make a new user settings folder, chop this up with all the stuff they can override, and rename this file as its now more like autoformatting vs user settings
 //------------------------------------------
 
 //brand palette dark
@@ -118,14 +101,14 @@ $accent-color-lighter: lighten($accent-color, 12%);
 $accent-color-lightest: lighten($accent-color, 16%);
 
 // Generic palette dark
-$red-dark: darken($red, 7%);
+$red-dark: darken($red, 3%);
 $orange-dark: darken($orange, 7%);
 $yellow-dark: darken($yellow, 7%);
 $green-dark: darken($green, 7%);
 $blue-dark: darken($blue, 7%);
 $purple-dark: darken($purple, 7%);
 
-$red-darker: darken($red, 12%);
+$red-darker: darken($red, 6%);
 $orange-darker: darken($orange, 12%);
 $yellow-darker: darken($yellow, 12%);
 $green-darker: darken($green, 12%);
@@ -177,195 +160,6 @@ $grey-4-light: lighten($grey-4, 5%);
 $grey-5-light: lighten($grey-5, 10%);
 $grey-6-light: lighten($grey-6, 10%);
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//  ✕ zenCSS Color Map System - Auto-WCAG Compliant color map generator
-//  ✕ do not modify
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-
-
-//to add new colors
-//1: add them in these maps
-//2: add them in the text maps below (for smart color assignment)
-//3: add them in the bg-colors maps (for class assignment)
-//Smart Color Maps - Text color is figured automatically based on your input color and adherance to 4.5/1 color contrast minimum
-// the smart-text-color() function includes the wcag-compliant font color for that particular background color
-$text-default-colors: (
-  "primary": smart-text-color($primary-color),
-  "dark": smart-text-color($dark-mode-color),
-  "light": smart-text-color($light-mode-color),
-  "secondary": smart-text-color($secondary-color),
-  "accent": smart-text-color($accent-color),
-  "cta": smart-text-color($cta-color),
-  "red": smart-text-color($red),
-  "orange": smart-text-color($orange),
-  "yellow": smart-text-color($yellow),
-  "green": smart-text-color($green),
-  "blue": smart-text-color($blue),
-  "purple": smart-text-color($purple),
-  "grey-1": smart-text-color($grey-1),
-  "grey-2": smart-text-color($grey-2),
-  "grey-3": smart-text-color($grey-3),
-  "grey-4": smart-text-color($grey-4),
-  "grey-5": smart-text-color($grey-5),
-  "grey-6": smart-text-color($grey-6),
-);
-
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//  ✕ zenCSS Gradient Map System - Auto-WCAG Compliant gradient class generator
-//  ✕ do not modify
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-
-//-----------------
-// Mixin for creating the gradient background
-
-// Purpose: We check if the gradient should be made with the light or dark + base color,
-// depending on which ones match for the same wcag-compliant text color.
-// Pretty schnazzy huh? 
-//-----------------
-
-@mixin gradient-background($color, $color-dark, $color-light) {
-
-  $text-color: smart-text-color($color);
-
-  $gradient-end-color: if($text-color == black, $color-light, $color-dark);
-
-  background: linear-gradient(to bottom, $color, $gradient-end-color) !important;
-
-  color: $text-color !important;
-}
-
-// Applying the mixin to each gradient class
-.bg-primary-gradient {
-  @include gradient-background($primary-color, $primary-color-dark, $primary-color-light);
-}
-
-.bg-secondary-gradient {
-  @include gradient-background($secondary-color, $secondary-color-dark, $secondary-color-light);
-}
-
-.bg-cta-gradient {
-  @include gradient-background($cta-color, $cta-color-dark, $cta-color-light);
-}
-
-.bg-accent-gradient {
-  @include gradient-background($accent-color, $accent-color-dark, $accent-color-light);
-}
-
-.bg-red-gradient {
-  @include gradient-background($red, $red-dark, $red-light);
-}
-
-.bg-orange-gradient {
-  @include gradient-background($orange, $orange-dark, $orange-light);
-}
-
-.bg-yellow-gradient {
-  @include gradient-background($yellow, $yellow-dark, $yellow-light);
-}
-
-.bg-green-gradient {
-  @include gradient-background($green, $green-dark, $green-light);
-}
-
-.bg-blue-gradient {
-  @include gradient-background($blue, $blue-dark, $blue-light);
-}
-
-.bg-purple-gradient {
-  @include gradient-background($purple, $purple-dark, $purple-light);
-}
-
-
-// Dark Text Colors
-$text-dark-colors: (
-  "primary-dark": smart-text-color($primary-color-dark),
-  "primary-darker": smart-text-color($primary-color-darker),
-  "primary-darkest": smart-text-color($primary-color-darkest),
-  "secondary-dark": smart-text-color($secondary-color-dark),
-  "secondary-darker": smart-text-color($secondary-color-darker),
-  "secondary-darkest": smart-text-color($secondary-color-darkest),
-  "cta-dark": smart-text-color($cta-color-dark),
-  "cta-darker": smart-text-color($cta-color-darker),
-  "cta-darkest": smart-text-color($cta-color-darkest),
-  "accent-dark": smart-text-color($accent-color-dark),
-  "accent-darker": smart-text-color($accent-color-darker),
-  "accent-darkest": smart-text-color($accent-color-darkest),
-  "red-dark": smart-text-color($red-dark),
-  "red-darker": smart-text-color($red-darker),
-  "red-darkest": smart-text-color($red-darkest),
-  "orange-dark": smart-text-color($orange-dark),
-  "orange-darker": smart-text-color($orange-darker),
-  "orange-darkest": smart-text-color($orange-darkest),
-  "yellow-dark": smart-text-color($yellow-dark),
-  "yellow-darker": smart-text-color($yellow-darker),
-  "yellow-darkest": smart-text-color($yellow-darkest),
-  "green-dark": smart-text-color($green-dark),
-  "green-darker": smart-text-color($green-darker),
-  "green-darkest": smart-text-color($green-darkest),
-  "blue-dark": smart-text-color($blue-dark),
-  "blue-darker": smart-text-color($blue-darker),
-  "blue-darkest": smart-text-color($blue-darkest),
-  "purple-dark": smart-text-color($purple-dark),
-  "purple-darker": smart-text-color($purple-darker),
-  "purple-darkest": smart-text-color($purple-darkest),
-  "grey-1-dark": smart-text-color($grey-1-dark),
-  "grey-2-dark": smart-text-color($grey-2-dark),
-  "grey-3-dark": smart-text-color($grey-3-dark),
-  "grey-4-dark": smart-text-color($grey-4-dark),
-  "grey-5-dark": smart-text-color($grey-5-dark),
-  "grey-6-dark": smart-text-color($grey-6-dark),
-);
-
-// Light Text Colors
-$text-light-colors: (
-  "primary-light": smart-text-color($primary-color-light),
-  "primary-lighter": smart-text-color($primary-color-lighter),
-  "primary-lightest": smart-text-color($primary-color-lightest),
-  "secondary-light": smart-text-color($secondary-color-light),
-  "secondary-lighter": smart-text-color($secondary-color-lighter),
-  "secondary-lightest": smart-text-color($secondary-color-lightest),
-  "accent-light": smart-text-color($accent-color-light),
-  "accent-lighter": smart-text-color($accent-color-lighter),
-  "accent-lightest": smart-text-color($accent-color-lightest),
-  "cta-light": smart-text-color($cta-color-light),
-  "cta-lighter": smart-text-color($cta-color-lighter),
-  "cta-lightest": smart-text-color($cta-color-lightest),
-  "red-light": smart-text-color($red-light),
-  "red-lighter": smart-text-color($red-lighter),
-  "red-lightest": smart-text-color($red-lightest),
-  "orange-light": smart-text-color($orange-light),
-  "orange-lighter": smart-text-color($orange-lighter),
-  "orange-lightest": smart-text-color($orange-lightest),
-  "yellow-light": smart-text-color($yellow-light),
-  "green-light": smart-text-color($green-light),
-  "blue-light": smart-text-color($blue-light),
-  "purple-light": smart-text-color($purple-light),
-  "yellow-lighter": smart-text-color($yellow-lighter),
-  "green-lighter": smart-text-color($green-lighter),
-  "blue-lighter": smart-text-color($blue-lighter),
-  "purple-lighter": smart-text-color($purple-lighter),
-  "yellow-lightest": smart-text-color($yellow-lightest),
-  "green-lightest": smart-text-color($green-lightest),
-  "blue-lightest": smart-text-color($blue-lightest),
-  "purple-lightest": smart-text-color($purple-lightest),
-  "grey-1-light": smart-text-color($grey-1-light),
-  "grey-2-light": smart-text-color($grey-2-light),
-  "grey-3-light": smart-text-color($grey-3-light),
-  "grey-4-light": smart-text-color($grey-4-light),
-  "grey-5-light": smart-text-color($grey-5-light),
-  "grey-6-light": smart-text-color($grey-6-light),
-);
-
-//end ✕ - color system maps
- 
-
-.light-color {
-  color: $light-color;
-}
 
 //------------------------------------------
 // ✓ Rounded corners

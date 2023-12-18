@@ -197,15 +197,32 @@ $themes: (
   color: smart-text-color($primary-color);  
 }
 
+.theme-secondary .btn-outline{
+  color: smart-text-color($secondary-color);  
+}
+
+.theme-cta .btn-outline{
+  color: smart-text-color($cta-color);  
+}
+
+.theme-accent .btn-outline{
+  color: smart-text-color($accent-color);  
+}
+
+.theme-dark .btn-outline{
+  color: smart-text-color($dark-color);  
+}
+
+.theme-light .btn-outline{
+  color: smart-text-color($light-color);  
+}
 
 
 
 
 
-// no longer neede bc of above .theme-accent a,
-// .theme-accent .btn-outline {
-//   color: $dark-color;
-// }
+
+// to come back to
 
 // .theme-dark.accent-left {
 //   border-left: 10px solid $primary-color;

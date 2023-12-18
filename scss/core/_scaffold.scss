@@ -369,6 +369,14 @@ input[type="submit"] {
   border-radius: 0 !important;
 }
 
+.br-bottom{
+  border-bottom-left-radius: $border-radius !important;
+  border-bottom-right-radius: $border-radius !important;
+  overflow: hidden;
+}
+
+
+
 .circle {
   border-radius: 100%;
   width: 56px !important;

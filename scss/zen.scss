@@ -51,7 +51,7 @@ $base-text-color: #444444;
   // Import core files
   //--------------------------------------------------------------
 
-  @import "user-settings";
+  @import "core/config";
   @import "core/mixins";
   @import "core/framework";
   @import "core/scaffold";
