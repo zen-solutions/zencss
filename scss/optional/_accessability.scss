@@ -12,37 +12,36 @@
 // Accessibility
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
 }
-
 
 // Change the cursor on control elements in all browsers (opinionated)
 [aria-controls] {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 // Change the cursor on disabled, not-editable, or otherwise inoperable elements in all browsers (opinionated)
 [aria-disabled="true"],
 [disabled] {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 // Change the display on visually hidden accessible elements in all browsers (opinionated)
 [aria-hidden="false"][hidden] {
-  display: initial;
+    display: initial;
 }
 
 [aria-hidden="false"][hidden]:not(:focus) {
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }
 
 // User interaction
@@ -56,39 +55,37 @@ select,
 summary,
 textarea,
 [tabindex] {
-  -ms-touch-action: manipulation;
+    -ms-touch-action: manipulation;
 }
-
-
 
 /* RTL Enhancements */
 
 [dir="rtl"] {
-  direction: rtl;
-  text-align: right;
+    direction: rtl;
+    text-align: right;
 }
 
 [dir="rtl"] .sidebar {
-  float: right;
+    float: right;
 }
 
 [dir="rtl"] .element {
-  padding-right: 10px;
-  margin-right: 20px;
+    padding-right: 10px;
+    margin-right: 20px;
 }
 
 [dir="rtl"] .element {
-  background-position: right top;
-  border-right: 2px solid $border-color;
+    background-position: right top;
+    border-right: 2px solid $border-color;
 }
 
 [dir="rtl"] .icon {
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 /* Logical Properties for automatic RTL adaptation */
 .element {
-  margin-inline-start: 10px;
-  padding-inline-start: 10px;
-  border-inline-start: 2px solid $border-color;
+    margin-inline-start: 10px;
+    padding-inline-start: 10px;
+    border-inline-start: 2px solid $border-color;
 }

@@ -6,62 +6,102 @@
 
 // Default Background Colors
 $bg-default-colors: (
-  "primary": $primary-color,
-  "secondary": $secondary-color,
-  "accent": $accent-color,
-  "cta": $cta-color,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "blue": $blue,
-  "purple": $purple,
-  "grey-1": #e5e5e5,
-  "grey-2": #c7c6c6,
-  "grey-3": #a6a6a6,
-  "grey-4": #6e6e6e,
-  "grey-5": #525252,
-  "grey-6": #3d3d3d,
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "accent": $accent-color,
+    "cta": $cta-color,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "blue": $blue,
+    "purple": $purple,
+    "grey-1": $grey-1,
+    "grey-2": $grey-2,
+    "grey-3": $grey-3,
+    "grey-4": $grey-4,
+    "grey-5": $grey-5,
+    "grey-6": $grey-6,
 );
 
 // Dark Background Colors
 $bg-dark-colors: (
-  "primary-dark": $primary-color-dark,
-  "secondary-dark": $secondary-color-dark,
-  "accent-dark": $accent-color-dark,
-  "cta-dark": $cta-color-dark,
-  "red-dark": $red-dark,
-  "orange-dark": $orange-dark,
-  "yellow-dark": $yellow-dark,
-  "green-dark": $green-dark,
-  "blue-dark": $blue-dark,
-  "purple-dark": $purple-dark,
-  "grey-1-dark": #c8c8c8,
-  "grey-2-dark": #b0b0b0,
-  "grey-3-dark": #909090,
-  "grey-4-dark": #616161,
-  "grey-5-dark": #3b3b3b,
-  "grey-6-dark": #1d1d1d,
+    "primary-dark": $primary-color-dark,
+    "primary-darker": $primary-color-darker,
+    "primary-darkest": $primary-color-darkest,
+    "secondary-dark": $secondary-color-dark,
+    "secondary-darker": $secondary-color-darker,
+    "secondary-darkest": $secondary-color-darkest,
+    "accent-dark": $accent-color-dark,
+    "accent-darker": $accent-color-darker,
+    "accent-darkest": $accent-color-darkest,
+    "cta-dark": $cta-color-dark,
+    "cta-darker": $cta-color-darker,
+    "cta-darkest": $cta-color-darkest,
+    "red-dark": $red-dark,
+    "red-darker": $red-darker,
+    "red-darkest": $red-darkest,
+    "orange-dark": $orange-dark,
+    "orange-darker": $orange-darker,
+    "orange-darkest": $orange-darkest,
+    "yellow-dark": $yellow-dark,
+    "green-dark": $green-dark,
+    "blue-dark": $blue-dark,
+    "purple-dark": $purple-dark,
+    "yellow-darker": $yellow-darker,
+    "green-darker": $green-darker,
+    "blue-darker": $blue-darker,
+    "purple-darker": $purple-darker,
+    "yellow-darkest": $yellow-darkest,
+    "green-darkest": $green-darkest,
+    "blue-darkest": $blue-darkest,
+    "purple-darkest": $purple-darkest,
+    "grey-1-dark": $grey-1-dark,
+    "grey-2-dark": $grey-2-dark,
+    "grey-3-dark": $grey-3-dark,
+    "grey-4-dark": $grey-4-dark,
+    "grey-5-dark": $grey-5-dark,
+    "grey-6-dark": $grey-6-dark,
 );
 
 // Light Background Colors
 $bg-light-colors: (
-  "primary-light": $primary-color-light,
-  "secondary-light": $secondary-color-light,
-  "accent-light": $accent-color-light,
-  "cta-light": $cta-color-light,
-  "red-light": $red-light,
-  "orange-light": $orange-light,
-  "yellow-light": $yellow-light,
-  "green-light": $green-light,
-  "blue-light": $blue-light,
-  "purple-light": $purple-light,
-  "grey-1-light": #ebebeb,
-  "grey-2-light": #e0e0e0,
-  "grey-3-light": #b5b3b3,
-  "grey-4-light": #8e8e8e,
-  "grey-5-light": #575757,
-  "grey-6-light": #383838,
+    "primary-light": $primary-color-light,
+    "primary-lighter": $primary-color-lighter,
+    "primary-lightest": $primary-color-lightest,
+    "secondary-light": $secondary-color-light,
+    "secondary-lighter": $secondary-color-lighter,
+    "secondary-lightest": $secondary-color-lightest,
+    "accent-light": $accent-color-light,
+    "accent-lighter": $accent-color-lighter,
+    "accent-lightest": $accent-color-lightest,
+    "cta-light": $cta-color-light,
+    "cta-lighter": $cta-color-lighter,
+    "cta-lightest": $cta-color-lightest,
+    "red-light": $red-light,
+    "red-lighter": $red-lighter,
+    "red-lightest": $red-lightest,
+    "orange-light": $orange-light,
+    "orange-lighter": $orange-lighter,
+    "orange-lightest": $orange-lightest,
+    "yellow-light": $yellow-light,
+    "green-light": $green-light,
+    "blue-light": $blue-light,
+    "purple-light": $purple-light,
+    "yellow-lighter": $yellow-lighter,
+    "green-lighter": $green-lighter,
+    "blue-lighter": $blue-lighter,
+    "purple-lighter": $purple-lighter,
+    "yellow-lightest": $yellow-lightest,
+    "green-lightest": $green-lightest,
+    "blue-lightest": $blue-lightest,
+    "purple-lightest": $purple-lightest,
+    "grey-1-light": $grey-1-light,
+    "grey-2-light": $grey-2-light,
+    "grey-3-light": $grey-3-light,
+    "grey-4-light": $grey-4-light,
+    "grey-5-light": $grey-5-light,
+    "grey-6-light": $grey-6-light,
 );
 
 //------------------------------------------
@@ -69,48 +109,67 @@ $bg-light-colors: (
 //------------------------------------------
 
 @each $bg-key in map-keys($bg-default-colors) {
-  .bg-#{$bg-key} {
-    background: map-get($bg-default-colors, $bg-key) !important;
+    .bg-#{$bg-key} {
+        background: map-get($bg-default-colors, $bg-key) !important;
 
-    @if map-has-key($text-default-colors, $bg-key) {
-      color: map-get($text-default-colors, $bg-key) !important;
+        @if map-has-key($text-default-colors, $bg-key) {
+            color: map-get($text-default-colors, $bg-key) !important;
+        }
     }
-  }
 
-  .bg-#{$bg-key}-dark {
-    background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
-    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
-  }
+    .bg-#{$bg-key}-dark {
+        background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+        color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+    }
 
-  .bg-#{$bg-key}-light {
-    background: map-get($bg-light-colors, $bg-key + "-light") !important;
-    color: map-get($text-light-colors, $bg-key + "-light") !important;
-  }
+    .bg-#{$bg-key}-darker {
+        background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
+        color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+    }
 
-  .bg-#{$bg-key}-minimal {
-    background: none;
-    background: lighten(
-      map-get($bg-dark-colors, $bg-key + "-dark"),
-      62%
-    ) !important;
-    border: 1px solid map-get($text-dark-colors, $bg-key) !important;
-    color: map-get($bg-default-colors, $bg-key) !important;
-  
-  }
+    .bg-#{$bg-key}-darkest {
+        background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
+        color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+    }
 
-  //overrides
-  .bg-accent-minimal {
-    color: black !important;
-    background: lighten($accent-color, 25%) !important;
-    border: 1px solid $accent-color !important;
-  }
+    .bg-#{$bg-key}-light {
+        background: map-get($bg-light-colors, $bg-key + "-light") !important;
+        color: map-get($text-light-colors, $bg-key + "-light") !important;
+    }
 
-  .bg-light-minimal {
-    //background: none;
-    background: $text-white !important;
-    //border: 1px solid map-get($text-dark-colors, $bg-key) !important;
-    color: $dark-color !important;
-  }
+    .bg-#{$bg-key}-lighter {
+        background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
+        color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+    }
+
+    .bg-#{$bg-key}-lightest {
+        background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
+        color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+    }
+
+    .bg-#{$bg-key}-minimal {
+        background: none;
+        background: lighten(
+            map-get($bg-dark-colors, $bg-key + "-dark"),
+            62%
+        ) !important;
+        border: 1px solid map-get($text-dark-colors, $bg-key) !important;
+        color: map-get($bg-default-colors, $bg-key) !important;
+    }
+
+    //overrides
+    .bg-accent-minimal {
+        color: black !important;
+        background: lighten($accent-color, 25%) !important;
+        border: 1px solid $accent-color !important;
+    }
+
+    .bg-light-minimal {
+        //background: none;
+        background: $text-white !important;
+        //border: 1px solid map-get($text-dark-colors, $bg-key) !important;
+        color: $dark-color !important;
+    }
 }
 
 //-------------------------------------
@@ -119,62 +178,62 @@ $bg-light-colors: (
 // css stuff
 //-------------------------------------
 .bg-opaque {
-  background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bg-blur {
-  backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 //random colors
 
 .text-dark-green {
-  color: hsl(117, 39%, 37%);
+    color: hsl(117, 39%, 37%);
 }
 
 .highlight {
-  background-color: $yellow;
+    background-color: $yellow;
 }
 
 .text-black {
-  color: $text-black;
+    color: $text-black;
 }
 
 .bg-white {
-  background-color: white;
+    background-color: white;
 }
 
 .bg-text-color {
-  background: $base-text-color;
+    background: $base-text-color;
 }
 
 .bg-primary-hover:hover {
-  background: darken($primary-color, 10%) !important;
-  color: $text-white;
+    background: darken($primary-color, 10%) !important;
+    color: $text-white;
 }
 
 .bg-secondary-hover:hover {
-  background: darken($secondary-color, 10%) !important;
-  color: $text-white !important;
+    background: darken($secondary-color, 10%) !important;
+    color: $text-white !important;
 }
 
 .bg-cta-hover:hover {
-  background: darken($cta-color, 10%) !important;
-  color: $text-white;
+    background: darken($cta-color, 10%) !important;
+    color: $text-white;
 }
 
 .bg-light-hover:hover {
-  background: darken($light-color, 10%) !important;
-  color: $text-black;
+    background: darken($light-color, 10%) !important;
+    color: $text-black;
 }
 
 .bg-dark-hover:hover {
-  background: darken($dark-color, 10%) !important;
-  color: $text-white;
+    background: darken($dark-color, 10%) !important;
+    color: $text-white;
 }
 .bg-accent-hover:hover {
-  background: darken($accent-color, 10%) !important;
-  color: $text-white;
+    background: darken($accent-color, 10%) !important;
+    color: $text-white;
 }
 
 //-------------------------------------
@@ -183,64 +242,70 @@ $bg-light-colors: (
 //-------------------------------------
 
 .icon-invert {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 .icon-gold {
-  width: 9px;
-  filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg)
-    brightness(96%) contrast(97%);
+    width: 9px;
+    filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg)
+        brightness(96%) contrast(97%);
 }
 
 .icon-silver {
-  width: 9px;
-  filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg)
-    brightness(103%) contrast(84%);
+    width: 9px;
+    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg)
+        brightness(103%) contrast(84%);
 }
 
-
 .bg-angle {
-  background-color: #f0f0f0; /* Example background color */
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .bg-angle::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    #f0f0f0 10px,
-    #f0f0f0 20px
-  );
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 10px,
+        #f0f0f0 10px,
+        #f0f0f0 20px
+    );
 }
 
+// .bg-gradient{
+//   background: linear-gradient(90deg, #d9e1ff 0.07%, #b7c7dc 16.73%, #c7dcff 34.48%, #d1e2f4 49.98%, #f4f5d8 66.12%, #faf2da 81.95%, #fbe5d8 99.9%);
+// }
 
+// .bg-gradient{
+//   background: linear-gradient(90deg, #b1b0e3 0.07%, #b2c7e2 16.73%, #c7dcff 34.48%, #ddeaf7 49.98%, #f4f5d8 66.12%, #f7e6d5 81.95%, #e7e4e3 99.9%);
+// }
+
+//
 
 // moore teethier
 //.bg-angle {
 //   background-color: #f0f0f0; /* Example background color */
 //   padding: 20px;
 //   clip-path: polygon(
-//     0 0, 100% 0, 100% 90%, 
-//     95% 90%, 92.5% 85%, 90% 90%, 87.5% 80%, 85% 90%, 
-//     82.5% 85%, 80% 90%, 77.5% 80%, 75% 90%, 72.5% 85%, 
-//     70% 90%, 67.5% 80%, 65% 90%, 62.5% 85%, 60% 90%, 
-//     57.5% 80%, 55% 90%, 52.5% 85%, 50% 90%, 47.5% 80%, 
-//     45% 90%, 42.5% 85%, 40% 90%, 37.5% 80%, 35% 90%, 
-//     32.5% 85%, 30% 90%, 27.5% 80%, 25% 90%, 22.5% 85%, 
-//     20% 90%, 17.5% 80%, 15% 90%, 12.5% 85%, 10% 90%, 
+//     0 0, 100% 0, 100% 90%,
+//     95% 90%, 92.5% 85%, 90% 90%, 87.5% 80%, 85% 90%,
+//     82.5% 85%, 80% 90%, 77.5% 80%, 75% 90%, 72.5% 85%,
+//     70% 90%, 67.5% 80%, 65% 90%, 62.5% 85%, 60% 90%,
+//     57.5% 80%, 55% 90%, 52.5% 85%, 50% 90%, 47.5% 80%,
+//     45% 90%, 42.5% 85%, 40% 90%, 37.5% 80%, 35% 90%,
+//     32.5% 85%, 30% 90%, 27.5% 80%, 25% 90%, 22.5% 85%,
+//     20% 90%, 17.5% 80%, 15% 90%, 12.5% 85%, 10% 90%,
 //     7.5% 80%, 5% 90%, 2.5% 85%, 0% 90%, 0 100%
 //   );
 // }
-
 
 // testing. testing. is this thing on?
 
@@ -253,16 +318,15 @@ $bg-light-colors: (
 // //  color: #fff !important;
 // }
 
-
 //exploring bottom div cut outs. this one is jarring but cool
 
 // .bg-angle{
 //   width: 100%;
 //   position: relative;
 //   clip-path: polygon(
-//     0 0, 100% 0, 100% 85%, 
-//     90% 85%, 80% 95%, 70% 85%, 
-//     60% 95%, 50% 85%, 40% 95%, 
-//     30% 85%, 20% 95%, 10% 85%, 
+//     0 0, 100% 0, 100% 85%,
+//     90% 85%, 80% 95%, 70% 85%,
+//     60% 95%, 50% 85%, 40% 95%,
+//     30% 85%, 20% 95%, 10% 85%,
 //     0 95%, 0% 100%, 0 100%
 //   );}

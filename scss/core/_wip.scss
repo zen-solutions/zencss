@@ -8,33 +8,34 @@
 // icon toggle
 //---------------------------------------------
 .icon-toggle {
-  cursor: pointer;
-  position: relative;
-  display: inline;
+    cursor: pointer;
+    position: relative;
+    display: inline;
 }
 
 .icon-off,
 .icon-on {
-  transition: opacity 0.3s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .icon-off.show,
 .icon-on.show {
-  display: inline;
+    display: inline;
 }
 
 //---------------------------------------------
 // heart toggle
 //---------------------------------------------
-.icon-toggle .zenicon-favorite-border:hover::before, .zenicon-favorite:hover {
+.icon-toggle .zenicon-favorite-border:hover::before,
+.zenicon-favorite:hover {
     color: $red;
 }
 
- /* Color for the fill effect on click */
+/* Color for the fill effect on click */
 .zenicon-favorite.icon-on.show {
-  color: $red;
+    color: $red;
 }

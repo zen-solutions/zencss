@@ -8,148 +8,216 @@
 
     <link rel="stylesheet" href="../../css/zen.css">
     <link rel="stylesheet" href="../../css/icons.css">
- <link rel="stylesheet" href="../../docs/css/documentation.css">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-</div>
+    <div id="skip-navigation">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+    </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
             <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
 
-         <div id="nav-placeholder"></div>
+        <div id="nav-placeholder"></div>
     </header>
-<main id="main-content">
+    <main id="main-content">
 
 
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Sign In form</h1>
-                    <p>A form designed for user authentication and access.</p>
+        <!----------------------------------------------------------------------->
+        <!--- Page Title  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline"> User Forms</h1>
+                        <p>Forms designed for sign up and sign in.</p>
                         <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Component --->
+        <!----------------------------------------------------------------------->
 
-    <z-container>
-        <z-row>
-            <z-col class="align-items-center">
-                <z-container class="single">
-                    <z-row>
-                        <z-col>
-                            <div class="form-container theme-light center">  
-                                <form>
-                                    <h5 class="headline">Sign Into Your Account</h5>
-                                    <div>
-                                        <input type="email" id="email" placeholder=" ">
-                                        <label for="email">Email Address</label>
-                                      </div>
-                                      <div>
-                                        <input type="password" id="pass" placeholder=" ">
-                                        <label for="tel">Password</label>
-                                      </div>
-                                    <button name="submit" type="submit">Sign In</button>
-                                    <small class="down-5 small mt-1">Forgot Password?</small>
-                                  </form>
-                              </div>
-                              <p class="up-5 center small">Not a member? <span class="text-cta bold">Start a 14 day free trial</span></p>
-                        </z-col>
-                    </z-row>
-                </z-container>
-            
-            </z-col>
-        </z-row>
-    </z-container>
-    <z-container>
-        <z-row>
-            <z-col>
+        <z-container>
+            <z-row>
+                <z-col class="align-items-center">
+                    <z-container class="single">
+                        <z-row>
+                            <z-col>
+                                <div class="card form-container theme-light">
+                                    <h5 class="headline center">Sign Up for Updates</h5>
+                                    <p class="center">An amazing tagline goes here</p>
+                                    <form>
+                                        <div>
+                                            <input type="text" id="name1" placeholder=" ">
+                                            <label for="name1">Name</label>
+                                        </div>
+                                        <div>
+                                            <input type="email" id="email1" placeholder=" ">
+                                            <label for="email1">Email</label>
+                                        </div>
+                                        <div class="mb-1">
+                                            <input type="tel" id="tel1" placeholder=" ">
+                                            <label for="tel1">Your Phone Number</label>
+                                        </div>
+                                        <button name="submit" type="submit">Sign Up</button>
+                                        <small class="form-footer mb-0"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
+                                    </form>
+                                </div>
+                            </z-col>
+                        </z-row>
+                    </z-container>
+                </z-col>
+            </z-row>
+        </z-container>
 
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content  full-height" aria-hidden="true">
-<pre class="copy-text square"><code class="language-html">&lt;div class="form-container theme-primary center"&gt;  
-&lt;form&gt;
-    &lt;h5 class="headline pb-1"&gt;Sign Into Your Account&lt;/h5&gt;
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                        <div id="content1" class="expanded-content" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
+  &lt;h5 class="headline center"&gt;Sign Up for Updates&lt;/h5&gt;
+  &lt;p class="center"&gt;An amazing tagline goes here&lt;/p&gt;
+  &lt;form&gt;
     &lt;div&gt;
-        &lt;input type="email" id="email" placeholder=" "&gt;
-        &lt;label for="email"&gt;Email Address&lt;/label&gt;
+      &lt;input type="text" id="name1" placeholder=" "&gt;
+      &lt;label for="name1"&gt;Name&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input type="email" id="email1" placeholder=" "&gt;
+      &lt;label for="email1"&gt;Email&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="mb-1"&gt;
-        &lt;input type="password" id="pass" placeholder=" "&gt;
-        &lt;label for="tel"&gt;Password&lt;/label&gt;
+      &lt;input type="tel" id="tel1" placeholder=" "&gt;
+      &lt;label for="tel1"&gt;Your Phone Number&lt;/label&gt;
     &lt;/div&gt;
-    &lt;button name="submit" type="submit" class="mb-1"&gt;Sign In&lt;/button&gt;
-    &lt;small class="down-5 smaller mt-1"&gt;Forgot Password? &lt;/small&gt;
-&lt;/form&gt;
-&lt;/div&gt;
-&lt;p class="up-5 center small"&gt;Not a member? &lt;span class="text-cta bold"&gt;Start a 14 day free trial&lt;/span&gt;&lt;/p&gt;</code></pre>                   
+    &lt;button name="submit" type="submit"&gt;Sign Up&lt;/button&gt;
+    &lt;small class="form-footer mb-0"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="#"&gt;Terms of Service&lt;/a&gt;&lt;/small&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</code></pre>
                         </div>
                     </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    
+                </z-col>
+            </z-row>
+        </z-container>
 
 
-
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
+        <z-container>
+            <z-row>
+                <z-col class="align-items-center">
                     <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                    <z-container class="single">
+                        <z-row>
+                            <z-col>
+                                <div class="card form-container theme-light">
+                                    <h5 class="h6 headline pb-2">Sign Into Your Account</h5>
+                                    <form>
+                                        <div>
+                                            <input type="email" id="email" placeholder=" ">
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                        <div class="mb-1">
+                                            <input type="password" id="pass" placeholder=" ">
+                                            <label for="pass">Password</label>
+                                        </div>
+                                        <button name="submit" type="submit">Sign In</button>
+                                        <small class="form-footer mb-0"><a href="#">Forgot Password?</a></a></small>
+                                    </form>
+                                </div>
+                                <small class="text-center d-block down-10">Not a member? <span class="text-cta text-semibold">Start a 14 day free trial</span></small>
+                            </z-col>
+                        </z-row>
+                    </z-container>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
-                <div class="center">
+                </z-col>
+            </z-row>
+        </z-container>
+        <z-container>
+            <z-row>
+                <z-col>
+
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                        <div id="content2" class="expanded-content  full-height" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
+    &lt;h5 class="h6 headline pb-2"&gt;Sign Into Your Account&lt;/h5&gt;
+    &lt;form&gt;
+      &lt;div&gt;
+        &lt;input type="email" id="email" placeholder=" "&gt;
+        &lt;label for="email"&gt;Email Address&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="mb-1"&gt;
+        &lt;input type="password" id="pass" placeholder=" "&gt;
+        &lt;label for="pass"&gt;Password&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;button name="submit" type="submit"&gt;Sign In&lt;/button&gt;
+      &lt;small class="form-footer mb-0"&gt;&lt;a href="#"&gt;Forgot Password?&lt;/a&gt;&lt;/small&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;small class="text-center d-block down-10"&gt;Not a member? &lt;span class="text-cta text-semibold"&gt;Start a 14 day free trial&lt;/span&gt;&lt;/small&gt;</code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+
+
+
+
+        <!----------------------------------------------------------------------->
+        <!---  The Zen Test --->
+        <!----------------------------------------------------------------------->
+
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center up-20">
+                        <hr>
+                        <h3 class="h4">The Zen Test</h3>
+                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <p> So you can be assured it "just works". Try it out below. </p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row class="up-40">
+                <z-col>
+                    <div class="center">
 
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-outline">Docs</a>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
     </main>
 
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
+    <script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-  <script src="../js/copy.js"></script>
+    <script src="../js/copy.js"></script>
 </body>
 
 </html>

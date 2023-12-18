@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
+    <link rel="stylesheet" href="../../css/zen.css">
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../docs/css/documentation.css">
 
- <link rel="stylesheet" href="../../css/zen.css">
-<link rel="stylesheet" href="../../css/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
@@ -20,11 +20,11 @@
         <div class="pl-2" id="header-logo">
             <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
-
-         <div id="nav-placeholder"></div>
+        <div class="docs-nav">
+            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
+        </div>
+        <div id="nav-placeholder"></div>
     </header>
-<main id="main-content">
-
 
 
     <!----------------------------------------------------------------------->
@@ -34,7 +34,12 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline"> Border Utilities</h1>
+                    <h1 class="headline">
+                        Borders
+                    </h1>
+                    <p>
+                       Frame your content with style
+                    </p>
                         <hr>
                 </div>
             </z-col>
@@ -44,19 +49,76 @@
     <!----------------------------------------------------------------------->
     <!--- Component --->
     <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col><h2>Border Color Utilities</h2></z-col>
+        </z-row>
+        <z-row class="five-up">
+            <z-col class="border-1">Border 1</z-col>
+            <z-col class="border-2">Border 2</z-col>
+            <z-col class="border-3">Border 3</z-col>
+            <z-col class="border-4">Border 4</z-col>
+            <z-col class="border-5">Border 5</z-col>
+        </z-row>
+        <z-row>
+            <z-col class="border-success">Border Success</z-col>
+            <z-col class="border-danger">Border Danger</z-col>
+            <z-col class="border-warning">Border Warning</z-col>
+            <z-col class="border-primary">Border Primary</z-col>
+            <z-col class="border-cta">Border CTA</z-col>
+            <z-col class="border-secondary">Border Secondary</z-col>
+            <z-col class="border-accent">Border Accent</z-col>
+        </z-row>
+        <z-row>
+            <z-col><h2>Border Radius Utilities</h2></z-col>
+        </z-row>
+        <z-row class="five-up">
+            <z-col class="br-sm border-4">Border Radius - small</z-col>
+            <z-col class="br-md border-4">Border Radius - medium</z-col>
+            <z-col class="br-lg border-4">Border Radius - large</z-col>
+            <z-col class="br-xl border-4">Border Radius - xl</z-col>
+            <z-col class="br-xxl border-4">Border Radius - xxl</z-col>
+        </z-row>
+    </z-container>
 
-<z-container>
-    <z-row>
-        <z-col>
-            <h3>Border Color Generation</h3>
-            <p>This set of classes is designed to easily apply grey border colors to HTML elements. 
-                
-            </p>
-            <p>Values are border-0 to border-6.</p>
-        </z-col>
-    </z-row>
-</z-container>
 
+
+
+
+
+    <!----------------------------------------------------------------------->
+    <!--- Code Example--->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="border-1"&gt;Border 1&lt;/div&gt;
+&lt;div class="border-2"&gt;Border 2&lt;/div&gt;
+&lt;div class="border-3"&gt;Border 3&lt;/div&gt;
+&lt;div class="border-4"&gt;Border 4&lt;/div&gt;
+&lt;div class="border-5"&gt;Border 5&lt;/div&gt;
+
+&lt;div class="border-danger"&gt;Border Danger&lt;/div&gt;
+&lt;div class="border-warning"&gt;Border Warning&lt;/div&gt;
+&lt;div class="border-primary"&gt;Border Primary&lt;/div&gt;
+&lt;div class="border-cta"&gt;Border CTA&lt;/div&gt;
+&lt;div class="border-secondary"&gt;Border Secondary&lt;/div&gt;
+&lt;div class="border-accent"&gt;Border Accent&lt;/div&gt;
+
+&lt;z-col class="br-sm border-4"&gt;Border Radius - small&lt;/z-col&gt;
+&lt;z-col class="br-md border-4"&gt;Border Radius - medium&lt;/z-col&gt;
+&lt;z-col class="br-lg border-4"&gt;Border Radius - large&lt;/z-col&gt;
+&lt;z-col class="br-xl border-4"&gt;Border Radius - xl&lt;/z-col&gt;
+&lt;z-col class="br-xxl border-4"&gt;Border Radius - xxl&lt;/z-col&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
     
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
@@ -70,15 +132,7 @@
                     <h3 class="h4">The Zen Test</h3>
                     <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
                 <div class="center">
-
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
                         <a href="../index.html" class="btn btn-md btn-outline">Docs</a>
@@ -92,7 +146,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt=""></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

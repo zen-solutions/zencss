@@ -9,61 +9,62 @@
 //----------------------------------------------
 // generates x-10 - x-100 for each
 @for $i from 1 through 10 {
-  $value: $i * 10;
+    $value: $i * 10;
 
-  // Generating classes for negative margin-top (moving up)
-  .up-#{$value} {
-    position: relative;
-    top: -#{$value}px !important;
-  }
+    // Generating classes for negative margin-top (moving up)
+    .up-#{$value} {
+        position: relative;
+        top: -#{$value}px !important;
+    }
 
-  // Generating classes for positive margin-top (moving down)
-  .down-#{$value} {
-    position: relative;
-    top: #{$value}px !important;
-  }
+    // Generating classes for positive margin-top (moving down)
+    .down-#{$value} {
+        position: relative;
+        top: #{$value}px !important;
+    }
 
-  // Generating classes for negative margin-left (moving left)
-  .left-#{$value} {
-    position: relative;
-    left: -#{$value}px !important;
-  }
+    // Generating classes for negative margin-left (moving left)
+    .left-#{$value} {
+        position: relative;
+        left: -#{$value}px !important;
+    }
 
-  // Generating classes for positive margin-right (moving right)
-  .right-#{$value} {
-    position: relative;
-    right: -#{$value}px !important;
-  }
+    // Generating classes for positive margin-right (moving right)
+    .right-#{$value} {
+        position: relative;
+        right: -#{$value}px !important;
+    }
 }
 
 // generates x-1 - x-9 for each
 
 @for $i from 1 through 9 {
-  $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
+    $value: $i *
+        1; // Multiply the loop variable by 10 to get the desired values
 
-  // Generating classes for negative margin-top (moving up)
-  .up-#{$value} {
-    position: relative;
-    top: -#{$value}px !important;
-  }
+    // Generating classes for negative margin-top (moving up)
+    .up-#{$value} {
+        position: relative;
+        top: -#{$value}px !important;
+    }
 
-  // Generating classes for positive margin-top (moving down)
-  .down-#{$value} {
-    position: relative;
-    top: #{$value}px !important;
-  }
+    // Generating classes for positive margin-top (moving down)
+    .down-#{$value} {
+        position: relative;
+        top: #{$value}px !important;
+    }
 
-  // Generating classes for negative margin-left (moving left)
-  .left-#{$value} {
-    position: relative;
-    left: -#{$value}px !important;
-  }
+    // Generating classes for negative margin-left (moving left)
+    .left-#{$value} {
+        position: relative;
+        left: -#{$value}px !important;
+    }
 
-  // Generating classes for positive margin-right (moving right)
-  .right-#{$value} {
-    position: relative;
-    right: -#{$value}px !important;
-  }
+    // Generating classes for positive margin-right (moving right)
+    .right-#{$value} {
+        position: relative;
+        right: -#{$value}px !important;
+    }
 }
 
 //----------------------------------------------------
@@ -71,38 +72,53 @@
 //----------------------------------------------------
 
 $sizes: (
-  10: 10px,
-  20: 20px,
-  25: 25px,
-  30: 30px,
-  40: 40px,
-  50: 50px,
-  75: 75px,
-  100: 100px,
-  125: 125px,
-  150: 150px,
-  175: 175px,
-  200: 200px,
-  225: 225px,
-  250: 250px,
-  275: 275px,
-  300: 300px,
+    10: 10px,
+    20: 20px,
+    25: 25px,
+    30: 30px,
+    40: 40px,
+    50: 50px,
+    75: 75px,
+    100: 100px,
+    125: 125px,
+    150: 150px,
+    175: 175px,
+    200: 200px,
+    225: 225px,
+    250: 250px,
+    275: 275px,
+    300: 300px,
 );
 
 @each $key, $value in $sizes {
-  .w-#{$key} {
-    width: $value !important;
-    min-width: $value;
-  }
+    .w-#{$key} {
+        width: $value !important;
+        min-width: $value;
+    }
 
-  .h-#{$key} {
-    height: $value !important;
-    min-height:$value;
-  }
+    .h-#{$key} {
+        height: $value !important;
+        min-height: $value;
+    }
 }
 
-.h-full{
-  height:100% !important;
+.h-full {
+    height: 100% !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+//min height
+//100-500
+
+$heights: 100 200 300 400 500;
+
+@each $height in $heights {
+    .mh-#{$height} {
+        min-height: #{$height}px;
+    }
 }
 
 //----------------------------------------------------
@@ -110,68 +126,67 @@ $sizes: (
 //----------------------------------------------------
 
 .card {
-  position: relative;
-  padding: 1.2rem;
-  font-size: 0.95em;
-  gap: 0.7em;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: start;
-  //max-width: 100%;
-  //overflow: hidden;
+    position: relative;
+    padding: 1.2rem;
+    font-size: 0.9em;
+    gap: 0.7em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  small,
-  .eyebrow {
-    margin: 0;
-    border: 0;
-    padding: 0;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    small,
+    .eyebrow {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
 
-  p,
-  div {
-    padding: 0;
-  }
+    p,
+    div {
+        padding: 0;
+        //flex-grow:1; //1215
+    }
 
-  // div{
-  //   flex: 1; //1213 new //1214 removed. if needed, document why added? broke card footer link/icon circle formatting, etc.
-  // }
+    // div{
+    //   flex: 1; //1213 new //1214 removed. if needed, document why added? broke card footer link/icon circle formatting, etc.
+    // }
 
-  ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
+    ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
 }
 .card > img {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 .img-full {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 !important;
 }
 
-.img-bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 //----------------------------------------------------
@@ -179,23 +194,23 @@ $sizes: (
 //----------------------------------------------------
 
 $d-values: (
-  block: block,
-  inline: inline,
-  "inline-block": inline-block,
-  flex: flex,
-  "inline-flex": inline-flex,
-  grid: grid,
-  "inline-grid": inline-grid,
-  table: table,
-  "table-row": table-row,
-  "table-cell": table-cell,
-  none: none,
+    block: block,
+    inline: inline,
+    "inline-block": inline-block,
+    flex: flex,
+    "inline-flex": inline-flex,
+    grid: grid,
+    "inline-grid": inline-grid,
+    table: table,
+    "table-row": table-row,
+    "table-cell": table-cell,
+    none: none,
 );
 
 @each $name, $value in $d-values {
-  .d-#{$name} {
-    display: $value;
-  }
+    .d-#{$name} {
+        display: $value;
+    }
 }
 
 //----------------------------------------------
@@ -203,72 +218,69 @@ $d-values: (
 //----------------------------------------------
 
 .row {
-  flex-direction: row;
-  gap: 1em;
+    flex-direction: row;
+    gap: 1em;
 }
 
 .column {
-  flex-direction: column;
-  gap: 1em;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .reverse {
-  flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
 }
 
 .overflow-hidden {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-.overflow-auto{
-  overflow:auto;
+.overflow-auto {
+    overflow: auto;
 }
-.overflow-scroll{
-  overflow: scroll;
-}
-
-.overflow-visible{
-  overflow: visible;
+.overflow-scroll {
+    overflow: scroll;
 }
 
-.vertical-center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.overflow-visible {
+    overflow: visible;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bg-none {
-  background: none; //!?
+    background: none; //!?
 }
 
-
-
 .squeeze > * {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 .z-index-2 {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .z-index-3 {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
 }
 
 .z-index-4 {
-  position: relative;
-  z-index: 4;
+    position: relative;
+    z-index: 4;
 }
 
 .z-index-5 {
-  position: relative;
-  z-index: 5;
+    position: relative;
+    z-index: 5;
 }
-
 
 //----------------------------------------------------
 /* Generate classes for gaps */
@@ -277,26 +289,25 @@ $d-values: (
 $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
 
 @for $i from 1 through length($gaps) {
-  .gap-#{$i} {
-    gap: nth($gaps, $i);
-  }
+    .gap-#{$i} {
+        gap: nth($gaps, $i);
+    }
 }
 
 .gap-0 {
-  gap: 0;
+    gap: 0;
 }
 
 //misc
 
 .img-left {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 7px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 7px;
 }
 
 .img-right {
-  float: right;
-  margin-left: 15px;
-  margin-bottom: 7px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 7px;
 }
-

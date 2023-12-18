@@ -8,45 +8,45 @@ $primary-color: $primary-color;
 $cta-color: $cta-color;
 
 .promo-banner {
-  width: 100%;
-  height: auto;
-  background: $primary-color;
-  color: $light-color;
-  line-height: normal;
-  word-wrap: break-word;
-  white-space: normal;
-  padding: 0.8rem !important;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    background: $primary-color;
+    color: $light-color;
+    line-height: normal;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 0.8rem !important;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-  &-text {
-    color: #fff;
-    font-size: 18px;
-  }
+    &-text {
+        color: #fff;
+        font-size: 18px;
+    }
 
-  &-input,
-  &-button,
-  &-icon {
-    vertical-align: middle;
-  }
+    &-input,
+    &-button,
+    &-icon {
+        vertical-align: middle;
+    }
 
-  &-input {
-    margin-right: 10px;
-    padding: 5px;
-  }
+    &-input {
+        margin-right: 10px;
+        padding: 5px;
+    }
 
-  &-button {
-    background-color: $cta-color;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
+    &-button {
+        background-color: $cta-color;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
 
-  &-icon {
-    margin-right: 10px;
-  }
+    &-icon {
+        margin-right: 10px;
+    }
 }

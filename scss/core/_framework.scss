@@ -10,25 +10,27 @@
 
 z-container,
 .z-container {
-  max-width: 1140px;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  border-radius: $border-radius;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch !important;
 }
 
 z-container-fluid,
 .z-container-fluid {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border-radius: 0 !important;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 0 !important;
+    //align-items: stretch;  // prolly needed, to test
 }
 
 //--------------------------------
@@ -37,31 +39,31 @@ z-container-fluid,
 
 z-row,
 .z-row {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 100%;
-  flex-wrap: wrap; //nowrap is interesting too
-  gap: 1em;
-  padding-top: 0.5em; // removed via js when nesting logic applied
-  padding-bottom: 0.5em; // removed via js when nesting logic applied
-  flex-grow: 1;
-  border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap; //nowrap is interesting too
+    gap: 1em;
+    padding-top: 0.5em; // removed via js when nesting logic applied
+    padding-bottom: 0.5em; // removed via js when nesting logic applied
+    flex-grow: 1;
+    border-radius: $border-radius;
 }
 
 .z-row-vcenter {
-  align-items: center;
+    align-items: center;
 }
 
 .z-row-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 z-row > *,
 .z-row > * {
-  flex: 1;
-  align-items: flex-start;
-  justify-content: space-between;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 //--------------------------------
@@ -70,16 +72,16 @@ z-row > *,
 
 z-col,
 .z-col {
-  flex-basis: calc(25% - 20px) !important;
-  flex: 1;
-  // display: flex;
-  // justify-content: flex-start;
-  // flex-direction: column;
-  // align-self: stretch;
-  width: 100%; // we're back here again
+    flex-basis: calc(25% - 20px) !important;
+    flex: 1;
+    // display: flex;
+    // justify-content: flex-start;
+    // flex-direction: column;
+    // align-self: stretch;
+    width: 100%; // we're back here again
 
-  padding: $col-padding;
-  margin: 0;
+    padding: $col-padding;
+    margin: 0;
 }
 
 //--------------------------------
@@ -88,13 +90,13 @@ z-col,
 
 .z-col > *,
 z-col > * {
-  max-width: 100%;
-  width: 100%; // dont remove
+    max-width: 100%;
+    width: 100%; // dont remove
 }
 
 .z-col > span,
 z-col > span {
-  display: inline;
+    display: inline;
 }
 
 //fix the annoying nested margin for rows
@@ -105,6 +107,6 @@ z-col > span {
 
 z-col :has(z-row),
 .z-col :has(.z-row) {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }

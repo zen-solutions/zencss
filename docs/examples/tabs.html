@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/zen.css">
 <link rel="stylesheet" href="../../css/icons.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
+   <meta name="theme-color" content="#317EFB"/>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
@@ -35,7 +36,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline"> Tab Nav </h1>
+                    <h1 class="headline"> Tabs </h1>
                     <p>Components for organizing content in a tabbed interface.</p>
                     <hr>
                 </div>
@@ -47,140 +48,248 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
 
+<z-container class="center">
 
-    <z-container>
         <z-row>
             <z-col>
-                <div class="tab-nav-round-thin center-flex">
-                    <a href="#" class="item bg-ui-hover border-5">item 1</a>
-                    <a href="#" class="item bg-ui-hover border-0">item 2</a>
-                    <a href="#" class="item bg-ui-hover border-0">item 3</a>
-
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    <z-container>
-        <z-row>
-            <z-col class="center">
-
-                <!-- tabs -->
-
                 <h2>Round/Thin</h2>
                 <p>use class <code>.tab-nav-round-thin</code></p>
-                <div class="tab-nav-round-thin center-flex">
-                    <a href="#" class="item bg-ui-hover">item 1</a>
-                    <a href="#" class="item bg-ui-hover">item 2</a>
-                    <a href="#" class="item bg-ui-hover">item 3</a>
-                    <a href="#" class="item bg-ui-hover">item 4</a>
+                <div class="tab-nav-round-thin">
+                    <a class="item bg-ui-hover">item 1</a>
+                    <a class="item bg-ui-hover">item 2</a>
+                    <a class="item bg-ui-hover">item 3</a>
+                    <a class="item bg-ui-hover">item 4</a>
                 </div>
 
-                <div class="tab-nav-round-thin center-flex">
-                    <a href="#" class="item current">Left Item</a>
-                    <a href="#" class="item">Right Item</a>
+                <div class="tab-nav-round-thin">
+                    <a class="item current">Left Item</a>
+                    <a class="item">Right Item</a>
                 </div>
-
-                <h2>Thin</h2>
-                <p>use class <code>.tab-nav-thin</code></p>
-                <div class="tab-nav-thin center-flex">
-                    <a href="#" class="item">item 1</a>
-                    <a href="#" class="item">item 2</a>
-                    <a href="#" class="item current">item 3</a>
-                    <a href="#" class="item">item 4</a>
-                </div>
-
-
-                <h2>Square</h2> 
-                <p>use class <code>.tab-nav</code></p>
-                <div class="tab-nav center-flex">
-                    <a href="#" class="item current">item 1</a>
-                    <a href="#" class="item">item 2</a>
-                    <a href="#" class="item">item 3</a>
-                    <a href="#" class="item">item 4</a>
-                </div>
-
-
-                <h2>Round</h2>
-                <p>use class <code>.tab-nav-round</code></p>
-                <div class="tab-nav-round center-flex">
-                    <a href="#" class="item">item 1</a>
-                    <a href="#" class="item current">item 2</a>
-                    <a href="#" class="item">item 3</a>
-                    <a href="#" class="item">item 4</a>
-                </div>
-
-
-                <h2>Themed</h2>
-                <p>Use any of our themes</code></p>
-                <div class="tab-nav-round center-flex">
-                    <a href="#" class="item bg-secondary bg-secondary-hover">item 1</a>
-                    <a href="#" class="item bg-secondary-dark bg-secondary-hover current">item 2</a>
-                    <a href="#" class="item bg-secondary bg-secondary-hover">item 3</a>
-                    <a href="#" class="item text-secondary-light bg-secondary-hover">item 4</a>
-                </div>
-
-          
 
             </z-col>
         </z-row>
-    </z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round-thin"&gt;
+    &lt;a class="item bg-ui-hover"&gt;item 1&lt;/a&gt;
+    &lt;a class="item bg-ui-hover"&gt;item 2&lt;/a&gt;
+    &lt;a class="item bg-ui-hover"&gt;item 3&lt;/a&gt;
+    &lt;a class="item bg-ui-hover"&gt;item 4&lt;/a&gt;
+&lt;/div&gt;
 
-        <!----------------------------------------------------------------------->
-    <!--- Code Block  --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
+&lt;div class="tab-nav-round-thin"&gt;
+    &lt;a class="item current"&gt;Left Item&lt;/a&gt;
+    &lt;a class="item"&gt;Right Item&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Thin</h2>
+                <p>use class <code>.tab-nav-thin</code></p>
+                <div class="tab-nav-thin">
+                    <a class="item">item 1</a>
+                    <a class="item">item 2</a>
+                    <a class="item current">item 3</a>
+                    <a class="item">item 4</a>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-thin"&gt;
+    &lt;a class="item"&gt;item 1&lt;/a&gt;
+    &lt;a class="item"&gt;item 2&lt;/a&gt;
+    &lt;a class="item current"&gt;item 3&lt;/a&gt;
+    &lt;a class="item"&gt;item 4&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Square</h2> 
+                <p>use class <code>.tab-nav</code></p>
+                <div class="tab-nav">
+                    <a class="item current">item 1</a>
+                    <a class="item">item 2</a>
+                    <a class="item">item 3</a>
+                    <a class="item">item 4</a>
+                </div>
+            </z-col>
+        </z-row>
         <z-row>
             <z-col class="pl-0 pr-0">
                 <div class="accordion center">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
                         <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
-    &lt;a href="#" class="item"&gt;item 1&lt;/a&gt;
-    &lt;a href="#" class="item current"&gt;item 2&lt;/a&gt;
-    &lt;a href="#" class="item"&gt;item 3&lt;/a&gt;
-    &lt;a href="#" class="item"&gt;item 4&lt;/a&gt;
+    &lt;a class="item current"&gt;item 1&lt;/a&gt;
+    &lt;a class="item"&gt;item 2&lt;/a&gt;
+    &lt;a class="item"&gt;item 3&lt;/a&gt;
+    &lt;a class="item"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
         </z-row>
-    </z-container>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Round</h2>
+                <p>use class <code>.tab-nav-round</code></p>
+                <div class="tab-nav-round">
+                    <a class="item">item 1</a>
+                    <a class="item current">item 2</a>
+                    <a class="item">item 3</a>
+                    <a class="item">item 4</a>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round"&gt;
+    &lt;a class="item"&gt;item 1&lt;/a&gt;
+    &lt;a class="item current"&gt;item 2&lt;/a&gt;
+    &lt;a class="item"&gt;item 3&lt;/a&gt;
+    &lt;a class="item"&gt;item 4&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Themed</h2>
+                <p>Use any of our themes</p>
+                <div class="tab-nav-round">
+                    <a class="item bg-secondary bg-secondary-hover">item 1</a>
+                    <a class="item current bg-secondary-dark bg-secondary-hover">item 2</a>
+                    <a class="item bg-secondary bg-secondary-hover">item 3</a>
+                    <a class="item bg-secondary bg-secondary-hover">item 4</a>
+                </div>
+
+          
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round"&gt;
+    &lt;a class="item bg-secondary bg-secondary-hover"&gt;item 1&lt;/a&gt;
+    &lt;a class="item current bg-secondary-dark bg-secondary-hover"&gt;item 2&lt;/a&gt;
+    &lt;a class="item bg-secondary bg-secondary-hover"&gt;item 3&lt;/a&gt;
+    &lt;a class="item bg-secondary bg-secondary-hover"&gt;item 4&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Pills</h2> 
+                <p>use class <code>.item-minimal on the children</code></p>
+                <div class="tab-nav">
+                    <a class="item-minimal current">item 1</a>
+                    <a class="item-minimal">item 2</a>
+                    <a class="item-minimal">item 3</a>
+                    <a class="item-minimal">item 4</a>
+                </div>
+
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
+    &lt;a class="item-minimal current"&gt;item 1&lt;/a&gt;
+    &lt;a class="item-minimal"&gt;item 2&lt;/a&gt;
+    &lt;a class="item-minimal"&gt;item 3&lt;/a&gt;
+    &lt;a class="item-minimal"&gt;item 4&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Themed Pills</h2> 
+                <p>use class <code>.item-minimal on the children</code></p>
+                <div class="tab-nav theme-secondary">
+                    <a class="item-minimal current btn-secondary">item 1</a>
+                    <a class="item-minimal btn-secondary">item 2</a>
+                    <a class="item-minimal btn-secondary">item 3</a>
+                    <a class="item-minimal btn-secondary">item 4</a>
+                </div>
     
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav theme-secondary"&gt;
+    &lt;a class="item-minimal current btn-secondary"&gt;item 1&lt;/a&gt;
+    &lt;a class="item-minimal btn-secondary"&gt;item 2&lt;/a&gt;
+    &lt;a class="item-minimal btn-secondary"&gt;item 3&lt;/a&gt;
+    &lt;a class="item-minimal btn-secondary"&gt;item 4&lt;/a&gt;
+&lt;/div&gt; </code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Themed Pills 2</h2> 
+                <div class="tab-nav">
+                    <a class="item-minimal current bg-secondary bg-secondary-hover">item 1</a>
+                    <a class="item-minimal text-secondary bg-secondary-hover">item 2</a>
+                    <a class="item-minimal text-secondary bg-secondary-hover">item 3</a>
+                    <a class="item-minimal text-secondary  bg-secondary-hover">item 4</a>
+                </div>
+            </z-col>
 
+        </z-row>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content1" class="expanded-content" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
+    &lt;a class="item-minimal current bg-secondary bg-secondary-hover"&gt;item 1&lt;/a&gt;
+    &lt;a class="item-minimal text-secondary bg-secondary-hover"&gt;item 2&lt;/a&gt;
+    &lt;a class="item-minimal text-secondary bg-secondary-hover"&gt;item 3&lt;/a&gt;
+    &lt;a class="item-minimal text-secondary bg-secondary-hover"&gt;item 4&lt;/a&gt;
+&lt;/div&gt; </code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
 
-<z-container>
-    <z-row>
-        <z-col>
-            <h2>Pills</h2> 
-            <p>use class <code>.item-minimal on the children</code></p>
-            <div class="tab-nav center-flex">
-                <a href="#" class="item-minimal current">item 1</a>
-                <a href="#" class="item-minimal">item 2</a>
-                <a href="#" class="item-minimal">item 3</a>
-                <a href="#" class="item-minimal">item 4</a>
-            </div>
-      
-
-            <h2>Themed Pills</h2> 
-            <p>use class <code>.item-minimal on the children</code></p>
-            <div class="tab-nav center-flex theme-secondary">
-                <a href="#" class="item-minimal current btn-secondary">item 1</a>
-                <a href="#" class="item-minimal btn-secondary">item 2</a>
-                <a href="#" class="item-minimal btn-secondary">item 3</a>
-                <a href="#" class="item-minimal btn-secondary">item 4</a>
-            </div>
-
-            <h2>Themed Pills2</h2> 
-            <div class="tab-nav center-flex ">
-                <a href="#" class="item-minimal current bg-secondary bg-secondary-hover">item 1</a>
-                <a href="#" class="item-minimal text-secondary bg-secondary-hover">item 2</a>
-                <a href="#" class="item-minimal text-secondary bg-secondary-hover">item 3</a>
-                <a href="#" class="item-minimal text-secondary  bg-secondary-hover">item 4</a>
-            </div>
-        </z-col>
-    </z-row>
-</z-container>
           
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->

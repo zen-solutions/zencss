@@ -49,7 +49,7 @@
         <z-container>
             <z-row>
                 <z-col>
-                    <p> zenCSS provides you with cards (<code>.card</code>), general-purpose containers that help you organize the content of your web apps. Cards are typically used in combination with the Smart-Align System, meaning that they are placed inside a column (or defined on a column) to work properly. 
+                    <p> zenCSS provides you with cards (<code>.card</code>), general-purpose containers that help you organize the content of your web apps. Cards are typically used in combination with the Smart-Align System, meaning that they are defined on a column to work properly. 
                     </p>
                 </z-col>
             </z-row>
@@ -78,11 +78,11 @@
                     <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content1" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-light"&gt;
     &lt;img src="16x9.jpg" class="img-full square"&gt;
     &lt;h3&gt;card title&lt;/h3&gt;
     &lt;p&gt;lorem ipsum dolor&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>
@@ -108,12 +108,12 @@
             </z-row>
            
             <z-row>
-                <z-col class="card theme-dark gap-3 h-300">
+                <z-col class="card theme-dark gap-3 h-300 overflow-hidden">
                     <div class="overlay"></div> 
-                    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" class="img-bg">
-                    <span class="eyebrow">NATURE</span>
+                    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" class="bg-img">
+                    <span class="eyebrow text-yellow-light">NATURE</span>
                     <h4 class="headline text-balance">Best places to visit this summer</h4>
-                    <a href="" class="btn  btn-light w-150 flex-bottom">Learn More</a>
+                    <a href="" class="btn  btn-light w-150 card-bottom">Learn More</a>
                 </z-col>
             </z-row>
 
@@ -122,13 +122,13 @@
                     <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content2" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-dark gap-3 h-300"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-dark gap-3 h-300  overflow-hidden"&gt;
     &lt;div class="overlay"&gt;&lt;/div&gt; 
-    &lt;img src="image.jpg" class="img-bg"&gt;
+    &lt;img src="image.jpg" class="bg-img"&gt;
     &lt;span class="eyebrow"&gt;NATURE&lt;/span&gt;
     &lt;h4 class="headline text-balance"&gt;Best places to visit this summer&lt;/h4&gt;
-    &lt;a href="" class="btn  btn-light w-150 flex-bottom"&gt;Learn More&lt;/a&gt;
-&lt;/div&gt;</code></pre>
+    &lt;a href="" class="btn btn-light w-150 card-bottom"&gt;Learn More&lt;/a&gt;
+&lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>
@@ -162,11 +162,11 @@
                     <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content3" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-dark"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-dark"&gt;
     &lt;img src="16x9.jpg" class="square"&gt;
-    &lt;h4 class="headline"&gt;A title goes here&lt;/h4&gt;
+    &lt;h4 class="headline"&gt;A title...&lt;/h4&gt;
     &lt;p&gt;Fugit ratione natus... &lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>
@@ -201,13 +201,13 @@
                     <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content4" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-light"&gt;
   &lt;div&gt;
-      &lt;img src="your-image.jpg" class="img-left w-75 h-75 img-round"&gt;
-      &lt;h4 class="headline mb-1"&gt;A title goes here&lt;/h4&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ... &lt;/p&gt;
+    &lt;img src="your-image.jpg" class="img-left w-75 h-75 img-round"&gt;
+    &lt;h4 class="headline mb-1"&gt;A title...&lt;/h4&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet... &lt;/p&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>
@@ -239,14 +239,14 @@
                     <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content5" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card theme-light center"&gt;
+                            <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-light center"&gt;
  &lt;div class="center-me icon-circle bg-grey-1-dark mt-1 mb-1"&gt;
   &lt;i class="zenicon-ind-in-page text-bigger"&gt;
   &lt;/i&gt;
  &lt;/div&gt;
  &lt;h4&gt;A title goes here&lt;/h4&gt;
  &lt;p&gt;Fugit ratione natus ... &lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>

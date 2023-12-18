@@ -1,11 +1,11 @@
 {
-    "printWidth": 80,           
-    "tabWidth": 4,              
-    "useTabs": true,           
-    "semi": true,               
-    "singleQuote": false,          
-    "quoteProps": "as-needed",    
-    "proseWrap": "preserve",  
-    "htmlWhitespaceSensitivity": "css", 
-    "endOfLine": "auto"      
-  }
+    "printWidth": 80,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "proseWrap": "always",
+    "htmlWhitespaceSensitivity": "strict",
+    "endOfLine": "auto"
+}

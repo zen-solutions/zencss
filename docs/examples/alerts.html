@@ -52,13 +52,19 @@
 
         <z-container>
             <z-row>
+                <z-col class="pb-0">
+                    <h3 class="pb-0">General Alerts</h3>
+                </z-col>
+            </z-row>
+            <z-row>
                 <z-col>
                     <div class="alert-primary" role="alert">
-                        primary alert—use alert-primary class
+                        <a class="close position-corner"></a>
+                       Primary (with close button example)
                     </div>
 
                     <div class="alert-primary-minimal" role="alert">
-                        primary alert—use alert-primary-minimal class
+                        primary (minimal)
                     </div>
 
 
@@ -68,20 +74,20 @@
 
                 <z-col>
                         <div class="alert-success" role="alert">
-                            success alert—use alert-success class
+                            success
                         </div>
 
                         <div class="alert-success-minimal" role="alert">
-                            success alert—use alert-success-minimal class
+                            success (minimal)
                         </div>
 
                     </z-col>
                     <z-col>
                         <div class="alert-danger" role="alert">
-                            danger alert—use alert-danger class
+                            danger
                         </div>
                         <div class="alert-danger-minimal" role="alert">
-                            danger alert—use alert-danger-minimal class
+                            danger (minimal)
                         </div>
 
                     </z-col>
@@ -89,31 +95,32 @@
             <z-row>
                 <z-col>
                     <div class="alert-warning" role="alert">
-                        warning alert—use alert-warning class
+                        warning
                     </div>
                     <div class="alert-warning-minimal" role="alert">
-                        warning alert—use alert-warning class
+                        warning (minimal)
                     </div>
 
 
                 </z-col>
                 <z-col>
                     <div class="alert-dark" role="alert">
-                        dark alert—use alert-dark class
+                        dark
                     </div>
                     <div class="alert-dark-minimal" role="alert">
-                        dark alert—use alert-dark-minimal class
+                        dark (minimal)
                     </div>
                 </z-col>
                 <z-col>
                     <div class="alert-light" role="alert">
-                        light alert—use alert-light-minimal class
+                        light
                     </div>
                     <div class="alert-light-minimal" role="alert">
-                        light alert—use alert-light-minimal class
+                        light (minimal)
                     </div>
                 </z-col>
             </z-row>
+
             <z-row>
                 <z-col>
                     <z-container>
@@ -121,28 +128,53 @@
                             <z-col class="pl-0 pr-0">
                                 <div class="accordion">
                                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                                    <div id="content1" class="expanded-content" aria-hidden="true"><pre class="copy-text square"><code class="language-html">&lt;div class="alert-warning" role="alert"&gt;
-    warning alert—use alert-warning class
+                                    <div id="content1" class="expanded-content" aria-hidden="true"><pre class="copy-text square"><code class="language-html">&lt;div class="alert-primary" role="alert"&gt;
+    &lt;a class="close position-corner"&gt;&lt;/a&gt;
+    primary alert—use alert-primary class
+&lt;/div&gt;
+
+&lt;div class="alert-primary-minimal" role="alert"&gt;
+    primary alert
+&lt;/div&gt;
+
+&lt;div class="alert-success" role="alert"&gt;
+    success alert
+&lt;/div&gt;
+
+&lt;div class="alert-success-minimal" role="alert"&gt;
+    success alert
+&lt;/div&gt;
+
+&lt;div class="alert-danger" role="alert"&gt;
+    danger alert
+&lt;/div&gt;
+
+&lt;div class="alert-danger-minimal" role="alert"&gt;
+    danger alert
+&lt;/div&gt;
+
+&lt;div class="alert-warning" role="alert"&gt;
+    warning alert
 &lt;/div&gt;
 
 &lt;div class="alert-warning-minimal" role="alert"&gt;
-    warning alert—use alert-warning class
+    warning alert
 &lt;/div&gt;
 
 &lt;div class="alert-dark" role="alert"&gt;
-    dark alert—use alert-dark class
+    dark alert
 &lt;/div&gt;
 
 &lt;div class="alert-dark-minimal" role="alert"&gt;
-    dark alert—use alert-dark-minimal class
+    dark alert
 &lt;/div&gt;
 
 &lt;div class="alert-light" role="alert"&gt;
-    light alert—use alert-light-minimal class
+    light alert
 &lt;/div&gt;
 
 &lt;div class="alert-light-minimal" role="alert"&gt;
-    light alert—use alert-light-minimal class
+    light alert
 &lt;/div&gt;</code></pre>
                                     </div>
                                 </div>
@@ -154,17 +186,15 @@
             </z-row>
             <z-row>
                 <z-col>
-                    <h3>Generic Notice Example</h3>
-                    <!-- Basic Example -->
-                  
-<div class="list-group-item list-group-item-success mb-3">Success</div>
-<div class="list-group-item list-group-item-warning mb-3">Warning</div>
-<div class="list-group-item list-group-item-danger mb-3">Danger</div>
-<div class="list-group-item list-group-item-notice">Notice</div>
-
-
-
+                    <h3>State Alerts</h3>
                 </z-col>
+            </z-row>
+            <z-row>
+                <z-col class="success">Success</z-col>
+<z-col class="warning">Warning</z-col>
+<z-col class="danger">Danger</z-col>
+<z-col class="notice">Notice</z-col>
+
             </z-row>
 
   
@@ -180,10 +210,10 @@
                     <div class="accordion">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content2" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="list-group-item list-group-item-success"&gt;Success&lt;/div&gt;
-&lt;div class="list-group-item list-group-item-warning"&gt;Warning&lt;/div&gt;
-&lt;div class="list-group-item list-group-item-danger"&gt;Danger&lt;/div&gt;
-&lt;div class="list-group-item list-group-item-notice"&gt;Notice&lt;/div&gt;</code></pre>
+                            <pre class="copy-text square"><code class="language-html">&lt;div class="success"&gt;Success&lt;/div&gt;
+&lt;div class="warning"&gt;Warning&lt;/div&gt;
+&lt;div class="danger"&gt;Danger&lt;/div&gt;
+&lt;div class="notice"&gt;Notice&lt;/div&gt;</code></pre>
                         </div>
                     </div>
                 </z-col>

@@ -1,63 +1,63 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
-  */
- 
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+ */
+
 //--------------------------------------------------------
 // Modal
 //--------------------------------------------------------
 
 class ZModal extends HTMLElement {
-  constructor() {
-      super();
-      this.attachShadow({ mode: "open" });
-      this.render();
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+        this.render();
+    }
 
-  connectedCallback() {
-      this.shadowRoot
-          .querySelector(".close")
-          .addEventListener("click", () => {
-              this.close();
-          });
-      this.shadowRoot
-          .querySelector(".modal")
-          .addEventListener("click", (event) => {
-              if (event.target === event.currentTarget) {
-                  this.close();
-              }
-          });
-      document.addEventListener("click", (event) => {
-          if (event.target.classList.contains("modal-close")) {
-              this.close();
-          }
-
-          document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-              this.close();
+    connectedCallback() {
+        this.shadowRoot
+            .querySelector(".close")
+            .addEventListener("click", () => {
+                this.close();
+            });
+        this.shadowRoot
+            .querySelector(".modal")
+            .addEventListener("click", (event) => {
+                if (event.target === event.currentTarget) {
+                    this.close();
+                }
+            });
+        document.addEventListener("click", (event) => {
+            if (event.target.classList.contains("modal-close")) {
+                this.close();
             }
-          });
-      });
-  
-      const openModalButton = document.querySelector(".modal-open");
-      if (openModalButton) {
-          openModalButton.addEventListener("click", () => {
-              this.open();
-          });
-      }
-  }
-      
-  open() {
-      this.shadowRoot.querySelector(".modal").style.display = "flex";
-  }
 
-  close() {
-      this.shadowRoot.querySelector(".modal").style.display = "none";
-  }
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    this.close();
+                }
+            });
+        });
 
-  render() {
-      this.shadowRoot.innerHTML = `
+        const openModalButton = document.querySelector(".modal-open");
+        if (openModalButton) {
+            openModalButton.addEventListener("click", () => {
+                this.open();
+            });
+        }
+    }
+
+    open() {
+        this.shadowRoot.querySelector(".modal").style.display = "flex";
+    }
+
+    close() {
+        this.shadowRoot.querySelector(".modal").style.display = "none";
+    }
+
+    render() {
+        this.shadowRoot.innerHTML = `
           <style>
           .modal {
               position: fixed;
@@ -152,9 +152,7 @@ class ZModal extends HTMLElement {
           </div>
       </div>
       `;
-  }
-  
+    }
 }
 
 customElements.define("z-modal", ZModal);
-

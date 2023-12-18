@@ -5,69 +5,67 @@
   */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $bg-header-footer;
-  padding: 10px 20px;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $bg-header-footer;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 #header-logo,
 #header-logo img {
-  max-height: 43px;
+    max-height: 43px;
 
-  & a {
-    &:hover {
-      background: none;
+    & a {
+        &:hover {
+            background: none;
+        }
     }
-  }
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
 }
 
 nav li {
-  margin-left: 20px;
-  height: 4%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+    margin-left: 20px;
+    height: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 nav :link {
-  color: $light-color;
-  text-decoration: none;
+    color: $light-color;
+    text-decoration: none;
 }
 
 nav a:hover {
-  color: $light-color;
-  text-decoration: underline;
-  background: hsla(0, 0%, 30%, 0.3);
+    color: $light-color;
+    text-decoration: underline;
+    background: hsla(0, 0%, 60%, 0.1);
 }
 
 .nav-dropdown {
-  padding: 1em 0.5em;
+    padding: 1em 0.5em;
 
-  .dropdown-content {
-    top: 115%;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    padding-top: 1em;
-    padding-bottom: .9em;
+    .dropdown-content {
+        top: 115%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding-top: 1em;
+        padding-bottom: 0.9em;
+    }
 
-  }
-
-
-  .caret-up {
-    top: calc(100% + 12px);
-  }
+    .caret-up {
+        top: calc(100% + 12px);
+    }
 }
 
 //-----------------------------------------
@@ -75,90 +73,90 @@ nav a:hover {
 //-----------------------------------------
 
 header {
-  padding: 10px;
-  z-index: 1001;
+    padding: 10px;
+    z-index: 1001;
 }
 
 .nav .li {
-  max-height: 52px;
+    max-height: 52px;
 }
 
 #header-logo img {
-  height: 40px;
+    height: 40px;
 }
 
 #hamburger-button,
 #close-button {
-  font-size: 30px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: $light-grey;
-  display: none;
-  margin: 5px;
-  padding: 0;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $light-grey;
+    display: none;
+    margin: 5px;
+    padding: 0;
 }
 
 nav {
-  display: flex;
+    display: flex;
 }
 
 nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 nav a {
-  color: $nav-link-color;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  transition: color 0.3s;
+    color: $nav-link-color;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
 }
 
 /* Mobile & Tablet Styles */
 @media (max-width: 768px) {
-  #hamburger-button {
-    display: block;
-  }
+    #hamburger-button {
+        display: block;
+    }
 
-  nav {
-    position: fixed;
-    top: 50px;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    transition: left 0.3s;
-    display: block;
-    overflow: auto;
-    background: $nav-color;
-  }
+    nav {
+        position: fixed;
+        top: 50px;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        transition: left 0.3s;
+        display: block;
+        overflow: auto;
+        background: $nav-color;
+    }
 
-  nav ul {
-    flex-direction: column;
-    padding-top: 20px;
-  }
+    nav ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
 
-  nav li {
-    margin: 0;
-    height: 40px;
-    display: block;
-    width: 100%;
-    margin-left: 1.5em;
-  }
+    nav li {
+        margin: 0;
+        height: 40px;
+        display: block;
+        width: 100%;
+        margin-left: 1.5em;
+    }
 
-  #close-button {
-    display: block;
-    position: absolute;
-    top: -10px;
-    right: 0;
-    width: $ui-button-size;
-    height: $ui-button-size;
-  }
+    #close-button {
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: $ui-button-size;
+        height: $ui-button-size;
+    }
 }

@@ -7,7 +7,7 @@
     <title>Welcome to zenCSS</title>
 
     <link rel="stylesheet" href="../../css/zen.css">
-<link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -35,7 +35,7 @@
         <!----------------------------------------------------------------------->
         <!--- Page Title  --->
         <!----------------------------------------------------------------------->
-        
+
         <z-container>
             <z-row>
                 <z-col>
@@ -51,65 +51,53 @@
         <!----------------------------------------------------------------------->
         <!--- Component  --->
         <!----------------------------------------------------------------------->
+
+
+
         <z-container>
             <z-row>
-                <z-col class="theme-dark center d-flex flex-direction-column justify-content-center">
-                    <p class="text-50 up-3">🎉</p>
-                    <p class="text-50 headline">319</p>
-                    <p>Happy customers and counting</p>
-            
+                <z-col class="card p-0 m-0 mh-400">
+                    <img src="../../docs/images/misc/slider/2.jpg" alt="" class="flex-grow-1 br-xxl overflow-hidden bg-img">
                 </z-col>
-                <z-col class="theme-light h-300 card">
-                    <div class="slider" data-auto-rotate="true">
-                        <div class="slides-container flex-grow-1"> 
-                          <!-- Original slides -->
-        
-        
-                          <div class="slide">
-                            <div class="card center">
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" class="w-75 center-me img-round" alt="">
-                                <star-component stars="5"></star-component>
-                                <p>Our agency switched to zenCSS last quarter, and we've seen a noticeable improvement in both productivity and the quality of our web projects. It's incredible how much difference a good design framework can make.</p>
-                                <small class="signature smaller">- Sarah, Project Manager</small>
+                <z-container class="mobile:two-up gap-4">
+                    <z-row class="mt-0 mb-0 pb-0 pt-0">
+                        <z-col class="card bg-grey-2 br-xxl">
+                            <i class="zenicon-build-circle text-md"></i>
+                            <div class="card-bottom">
+                                <p>Bento box layouts are all the rage right now, so why not lead with one of our own?  </p>
                             </div>
-                          </div> 
-                          <div class="slide">
-                            <div class="card center">
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/6.jpg" class="w-75 center-me img-round" alt="">
-                                <star-component stars="5" ></star-component>
-                                <p class="text-balance">Using zenCSS has been a game-changer for our team. The simplicity and elegance of the framework allowed us to cut down development time significantly. Highly recommended for any serious web developer!</p>
-                                <small class="signature smaller">-Alex, front-end developer</small>
+                        </z-col>
+                    </z-row>
+                    <z-row class="mt-0 mb-0 pb-0 pt-0">
+                        <z-col class="card  bg-grey-2 br-xxl">
+                            <i class="zenicon-verified text-md"></i>
+                            <div class="card-bottom">
+                                <p>The main cel features a hero image, while the sidebar allows for two supporting columns, stacked. </p>
                             </div>
-                          </div> 
-                          <div class="slide">
-                            <div class="card center">
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" class="w-75 center-me img-round" alt="">
-                                <star-component stars="5" ></star-component>
-                                <p class="text-balance">As a freelancer, I always look for tools that make my work efficient and high-quality. zenCSS fits the bill perfectly with its intuitive design and robust features. </p>
-                                <small class="signature smaller">- Maria, Web Designer</small>
-                            </div>
-                          </div> 
-        
-                          <div class="slide">
-                            <div class="card center">
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" class="w-75 center-me img-round" alt="">
-                                <star-component stars="5" ></star-component>
-                                <p class="text-balance">As an educator, I recommend zenCSS to my students as a great starting point for learning modern web design practices. It's accessible yet powerful enough for creating professional-grade websites. </p>
-                                <small class="signature smaller">- Tony, Computer Science Professor</small>
-                            </div>
-                          </div> 
-        
-        
-        
-        
-                       
+                        </z-col>
+                    </z-row>
+            </z-row>
+        </z-container>
+        </z-row>
+        </z-container>
+
+        <z-container>
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                        <div id="content1" class="expanded-content" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">
+                            
+                        </code></pre>
                         </div>
-                        <div class="prev arrow bottom right theme-dark"><i class="zenicon-arrow-back-ios  up-1 left-1"></i></div>
-                        <div class="next arrow bottom theme-dark"><i class="zenicon-arrow-forward-ios up-1 right-1"></i></div>
-                      </div>
+                    </div>
                 </z-col>
             </z-row>
         </z-container>
+
+
+        <hr>
 
 
         <z-container class="page-section">
@@ -144,7 +132,7 @@
         <!--- End Component  --->
         <!----------------------------------------------------------------------->
 
-        <br>
+        <hr>
 
 
         <!----------------------------------------------------------------------->
@@ -180,8 +168,7 @@
             </z-row>
         </z-container>
 
-        
-
+        <hr>
         <z-container class="page-section">
             <z-row class="p-0 border-3 square"> <!--- needs a +1 on boarder radius of 4. weird, test this  --->
                 <z-col class="p-0">
@@ -212,7 +199,7 @@
             </z-row>
         </z-container>
 
-
+        <hr>
 
         <z-container class="page-section">
             <z-row class="p-0 tablet-reverse">
@@ -245,90 +232,12 @@
             </z-row>
         </z-container>
 
-
+        <hr>
         <!----------------------------------------------------------------------->
         <!--- End Component  --->
         <!----------------------------------------------------------------------->
 
-       
 
-
-
-
-
-        <!----------------------------------------------------------------------->
-        <!--- End Component  --->
-        <!----------------------------------------------------------------------->
-
-        <z-container class="page-section">
-            <z-row>
-                <z-col>
-                    <div class="center-vertical ">
-                        <span class="eyebrow up-1">BACK IN STOCK</span>
-                        <h2 class="h3 headline">Text + Product Row </h2>
-                        <p> Images switch to a grid when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-            </z-row>
-            <z-row class="p-0 ">
-
-                <z-col class="p-0">
-                    <z-container>
-                        <z-row class="mobile:two-up gap-0">
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/3.jpg" alt="">
-                                <div class="card  p-0 m-0">
-                                    <p class="headline mt-4">Aatque &nbsp;<span class="bolder text-primary">$27</span> 
-
-                                    </p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/2.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Blanditis &nbsp;<span class="bolder text-primary">$47</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/1.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Adelorem &nbsp;<span class="bolder text-primary">$67</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/4.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Aatque blanditiis &nbsp;<span class="bolder text-primary">$97</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-                </z-col>
-
-            </z-row>
-        </z-container>
-
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">
-                            
-                        </code></pre>
-                        </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
 
 
 
@@ -439,11 +348,11 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
+    <script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
     <script src="../js/copy.js"></script>

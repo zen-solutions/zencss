@@ -9,44 +9,44 @@
 //-------------------------------------------------
 
 .icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 //-------------------------------------------------
 // modal
 //-------------------------------------------------
 .modal {
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-modal {
-  width: 150px;
+    width: 150px;
 }
 
 .modal-content {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #212121;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 400px;
-  border-radius: $border-radius;
-  position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #212121;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: $border-radius;
+    position: relative;
 }
 
 .modal-content > .text {
-  width: 91%;
+    width: 91%;
 }
 
 // .close {
@@ -72,14 +72,14 @@
 // }
 
 .left-child {
-  width: 95%;
-  background-color: lightblue;
-  white-space: pre-wrap;
+    width: 95%;
+    background-color: lightblue;
+    white-space: pre-wrap;
 }
 
 .right-child {
-  width: 5%;
-  background-color: lightcoral;
+    width: 5%;
+    background-color: lightcoral;
 }
 
 //-------------------------------------------------
@@ -87,67 +87,71 @@
 //-------------------------------------------------
 
 .accordion {
-  gap: 0;
+    gap: 0;
 
-  p {
-    margin: 0;
-    padding:1em;
-  }
+    p {
+        margin: 0;
+        padding: 1em;
+    }
 
-  a {
-    //color:$text-grey-dual; //interfere w themes
-    padding-bottom: 0.5em;
-    text-decoration: none;
-    padding-left: 10px;
-    margin-left: -24px;
-  }
+    a {
+        //color:$text-grey-dual; //interfere w themes
+        padding-bottom: 0.5em;
+        text-decoration: none;
+        padding-left: 10px;
+        margin-left: -24px;
+    }
 
-  a:hover {
-    background-color: $border-color; //dark mode top color
-  }
+    a:hover {
+        background-color: $border-color; //dark mode top color
+    }
 }
 
 .accordion .toggle {
-  display: none;
+    display: none;
 }
 
 .accordion .title {
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-  margin: 0;
-  border: 1px solid $border-color;
-  transition: background-color 0.3s;
-  @include default-state;
-  @include hover-state;
-  margin-top: -1px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    border: 1px solid $border-color;
+    transition: background-color 0.3s;
+    @include default-state;
+    @include hover-state;
+    margin-top: -1px;
 }
 
 //toggle
 
 .expanded-content {
-  max-height: 0;
-  overflow-y: hidden;
-  transition: max-height 0.2s ease-out;
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease-out;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+}
+
+.expanded-content.static {
+    transition: none;
 }
 
 .expanded-content.show {
-  max-height: 300px; /* Adjust as needed */
-  border: 1px solid $border-color;
+    max-height: 300px; /* Adjust as needed */
+    border: 1px solid $border-color;
 }
 
 .expanded-content.full-height.show {
-  max-height: none;
+    max-height: none;
 }
 
 .accordion .title {
-  border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
 }
 
 .accordion .title:not(:last-of-type) {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 //-------------------------------------------------
@@ -155,170 +159,163 @@
 //-------------------------------------------------
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  left: -50px;
-  top: calc(100% + 29px);
-  background-color: #fdfdfd;
-  color: $dark-color;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
-  z-index: 1001;
-  border-radius: $border-radius;
-  padding: $col-padding;
-  font-size: 0.9em;
+    display: none;
+    position: absolute;
+    left: -50px;
+    top: calc(100% + 29px);
+    background-color: #fdfdfd;
+    color: $dark-color;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);
+    z-index: 1001;
+    border-radius: $border-radius;
+    padding: $col-padding;
+    font-size: 0.9em;
 }
 
 .dropdown-content.megamenu {
-  min-width: 650px;
-  left: -539px;
-  top: 79px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  z-index: 1001;
-
+    min-width: 650px;
+    left: -539px;
+    top: 79px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 1001;
 }
 
 .dropdown-content a {
-  color: $dark-color;
-  text-decoration: none;
-  display: block;
-  border-radius: $border-radius;
-  padding: 10px;
-  padding-left: 12px;
-  margin-left: -1px;
-
-  &:hover {
-    background: $light-ui-hover-color;
     color: $dark-color;
     text-decoration: none;
-    
-  }
+    display: block;
+    border-radius: $border-radius;
+    padding: 10px;
+    padding-left: 12px;
+    margin-left: -1px;
+
+    &:hover {
+        background: $light-ui-hover-color;
+        color: $dark-color;
+        text-decoration: none;
+    }
 }
 
 .dropdown-link-container {
-  position: absolute;
-  display: inline-block;
-  color: $dark-color;
+    position: absolute;
+    display: inline-block;
+    color: $dark-color;
 }
 
 .megamenu {
-  color: $var-black-text;
-  padding: 0;
+    color: $var-black-text;
+    padding: 0;
 
-  a {
-    margin-left: -15px;
-  }
+    a {
+        margin-left: -15px;
+    }
 }
 
 .caret-up {
-  background: none !important;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #fdfdfd;
-  position: absolute;
-  top: calc(100% + 29px);
-  left: 15px;
-  transform: translateY(-100%);
-  z-index: 10;
+    background: none !important;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fdfdfd;
+    position: absolute;
+    top: calc(100% + 29px);
+    left: 15px;
+    transform: translateY(-100%);
+    z-index: 10;
 
-  /* Adjust this value to align the caret as needed */
-  transform: translateY(-100%);
-  display: none;
+    /* Adjust this value to align the caret as needed */
+    transform: translateY(-100%);
+    display: none;
 }
 
 //dupe class of above, combine
 .dropdown-content {
-  display: none;
-  position: absolute;
-  left: 2px;
-  top: 48px;
+    display: none;
+    position: absolute;
+    left: 2px;
+    top: 48px;
 }
 
 //override placement for nav
 nav .dropdown-content {
-  left: -5px;
-  min-width: 220px;
+    left: -5px;
+    min-width: 220px;
 }
-
 
 //fixes. check if overrite abocve
 
-
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-
-  nav .dropdown-content {
-    background-color: unset;
-    a {
-      color: $text-white;
+    nav .dropdown-content {
+        background-color: unset;
+        a {
+            color: $text-white;
+        }
     }
-  }
-  .dropdown-content {
-    //background-color: unset;
-    position: static;
-    display: block;
-    left: auto;
-    top: auto;
-    box-shadow: none;
-    z-index: auto;
-    max-height: 300px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: auto;
-    min-width: 225px !important;
-    border-radius: unset;
+    .dropdown-content {
+        //background-color: unset;
+        position: static;
+        display: block;
+        left: auto;
+        top: auto;
+        box-shadow: none;
+        z-index: auto;
+        max-height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: auto;
+        min-width: 225px !important;
+        border-radius: unset;
+    }
 
+    .dropdown-link-container {
+        position: static; /* Resets the absolute positioning */
+    }
 
-  }
-
-  .dropdown-link-container {
-    position: static; /* Resets the absolute positioning */
-  }
-
-  .nav-dropdown .caret-up,
-  .dropdown .caret-up {
-    display: none !important;
-  }
+    .nav-dropdown .caret-up,
+    .dropdown .caret-up {
+        display: none !important;
+    }
 }
 
 //-------------------------------------------------
 // testimonials
 //-------------------------------------------------
 .card-split {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 
-  .text-group {
-    flex-basis: 95%;
-    gap: 1;
+    .text-group {
+        flex-basis: 95%;
+        gap: 1;
 
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 0;
-      //line-height: 1.7em;
-      letter-spacing: normal;
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            //line-height: 1.7em;
+            letter-spacing: normal;
+        }
     }
-  }
 
-  .image-group {
-    flex-basis: 110px;
-  }
+    .image-group {
+        flex-basis: 110px;
+    }
 }
 
 //-------------------------------------------------
@@ -326,57 +323,57 @@ nav .dropdown-content {
 //-------------------------------------------------
 
 blockquote {
-  display: block;
-  padding: 15px 5px;
-  margin-top: 0;
-  position: relative;
-  line-height: 2em;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1.1rem;
+    display: block;
+    padding: 15px 5px;
+    margin-top: 0;
+    position: relative;
+    line-height: 2em;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1rem;
 
-  p {
-    margin-bottom: 0;
-  }
+    p {
+        margin-bottom: 0;
+    }
 }
 
 blockquote::before {
-  content: "";
-  position: absolute;
-  left: -26px;
-  top: 0;
-  bottom: 0;
-  border-left: 4px solid $border-color;
-  width: 0;
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 0;
+    bottom: 0;
+    border-left: 4px solid $border-color;
+    width: 0;
 }
 
 blockquote::after {
-  content: "";
+    content: "";
 }
 
 blockquote a {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 0 3px;
-  color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 3px;
+    color: $primary-color;
 }
 
 blockquote a:hover {
-  color: #666;
+    color: #666;
 }
 
 blockquote em {
-  font-style: italic;
+    font-style: italic;
 }
 
 .slide-figure {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
 }
 
 .carousel-slide {
-  min-width: 100%;
-  box-sizing: border-box;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 //-------------------------------------------------
@@ -384,51 +381,51 @@ blockquote em {
 //-------------------------------------------------
 
 .slider {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .slides-container {
-  display: flex;
+    display: flex;
 }
 
 .slide {
-  max-width: 100%;
-  height: auto;
-  flex-shrink: 0;
-  background-size: cover;
-  background-position: center;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  z-index: 100;
-  cursor: pointer;
-  opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0.4;
 }
 
-
-
 .prev {
-  left: 10px;
+    left: 10px;
 }
 
 .next {
-  right: 10px;
+    right: 10px;
 }
 
-.arrow.bottom{
-  top:92%;
+.arrow.bottom {
+    top: 94%;
+    right: 0;
+    width: 32px;
 }
 
-.arrow.right{
-  right:50px;
-  left: unset;
+.arrow.right {
+    right: 40px;
+    left: unset;
 }
 
 // .slide img {
@@ -439,45 +436,45 @@ blockquote em {
 
 //wizard
 .wizard-step {
-  border: 1px solid lighten($border-color, 20%);
-  display: none;
-  padding: 1em;
-  margin-top: 1em;
+    border: 1px solid lighten($border-color, 20%);
+    display: none;
+    padding: 1em;
+    margin-top: 1em;
 }
 
 .wizard-step.active {
-  display: block;
+    display: block;
 }
 
 //wizard step used as form
 .wizard-step {
-  label {
-    display: block;
-    padding: 0.45em;
-  }
+    label {
+        display: block;
+        padding: 0.45em;
+    }
 }
 
 //spinner
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .spin {
-  animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
 
 //do we need this anymore?
 .card-split {
-  position: relative;
-  /* Ensure the positioning context is set for children */
-  overflow: hidden;
-  /* Let the child image be visible outside the bounds */
+    position: relative;
+    /* Ensure the positioning context is set for children */
+    overflow: hidden;
+    /* Let the child image be visible outside the bounds */
 }
 
 // //testing fs image card
@@ -505,28 +502,28 @@ blockquote em {
 // Image classes - responsive/round/rounded/outline
 //-------------------------------------------------
 .img-responsive {
-  flex-shrink: 0;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .img-round {
-  border-radius: 50%;
-  max-width: 100%;
-  height: auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-rounded {
-  border-radius: 15px;
+    border-radius: 15px;
 }
 
 .img-round-outline {
-  border-radius: 50%;
-  padding: 5px !important;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-sizing: content-box;
+    border-radius: 50%;
+    padding: 5px !important;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
 }
 
 //-------------------------------------------------
@@ -535,64 +532,101 @@ blockquote em {
 
 .hidden,
 .d-none {
-  display: none !important;
+    display: none !important;
 }
 
-.visible {
-  display: block !important;
-}
+// .visible {
+//   display: block !important;
+// }
 
 .opacity-50 {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .opacity-75 {
-  opacity: 0.75;
+    opacity: 0.75;
 }
 
 .opacity-25 {
-  opacity: 0.25;
+    opacity: 0.25;
 }
 
 // feature one col and one col only
 .single {
-  max-width: 390px;
-  min-width: 330px;
+    max-width: 390px;
+    min-width: 330px;
 }
 
 // corner popup
 
 .corner-popup {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 .corner-popup > div {
-  max-width: 285px;
-  max-height: 400px;
-  overflow: auto;
-  position: absolute;
-  bottom: 66px;
-  right: 3px;
-  background: $light-color;
-  color: $dark-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  padding: 1em;
-  font-size: 0.9em;
-  z-index: 6;
+    width: 300px;
+    max-height: 400px;
+    overflow: auto;
+    position: absolute;
+    bottom: 66px;
+    right: 3px;
+    background: $light-color;
+    color: $dark-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 1em;
+    font-size: 0.9em;
+    z-index: 6;
 }
 
-.corner-popup >button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: $border-radius;
-  cursor: pointer;
-  position: absolute;
-  bottom: -10px;
-  right: 0;
+.corner-popup > button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
 }
 
+//circle for corner popup
+.btn-circle[data-unread="1"]::after,
+.btn-circle[data-unread="2"]::after,
+.btn-circle[data-unread="3"]::after {
+    /* Common Styles for Notification Indicator */
+    content: attr(data-unread);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+//animation for notification
+@keyframes notificationBounce {
+    0%,
+    14.29%,
+    100% {
+        /* 14.29% of 7 seconds is approximately 1 second */
+        transform: translateY(0);
+    }
+    7.14% {
+        /* Halfway of 1 second */
+        transform: translateY(-5px);
+    }
+}
+
+.btn-circle[data-unread][data-animate="true"]::after {
+    /* Apply the modified bounce animation */
+    animation: notificationBounce 7s infinite;
+}
 .hidden {
-  display: none;
+    display: none;
 }

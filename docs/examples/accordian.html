@@ -38,8 +38,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Accordian</h1>
-                    <p>A collapsible content panel for presenting information in a limited space. </p>
+                    <h1 class="headline">Accordions</h1>
+                    <p>Collapsible content panels for presenting information in a limited space. </p>
 
                     <hr>
                 </div>
@@ -53,6 +53,12 @@
 
 
     <z-container>
+        <z-row>
+            <z-col>
+                <h2>General accordian</h2>
+            </z-col>
+        </z-row>
+        <z-row>
         <z-row>
             <z-col>
                 <div class="accordion">
@@ -94,7 +100,15 @@
     <z-container>
         <z-row>
             <z-col>
-                <div class="accordion">
+                <hr>
+
+                <h2>Naked Accordian </h2>
+            </z-col>
+        </z-row>
+        <z-row>
+        <z-row>
+            <z-col>
+                <div class="accordion" data-reduce-motion="true">
                     <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content4"><i class="zenicon-keyboard-arrow-right"></i> This is an expandable section</a>
                     <div id="content4" class="expanded-content naked" aria-hidden="true">
                         <p>
@@ -130,6 +144,50 @@
 
 
 
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <hr>
+                <h2>Animation disabled</h2>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col>
+                <div class="accordion" data-reduce-motion="true">
+                    <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content7"><i class="zenicon-keyboard-arrow-right"></i> Expandable section (animation disabled)</a>
+                    <div id="content7" class="expanded-content naked static" aria-hidden="true">
+                        <p>
+                            
+                            Sed magna mauris, hendrerit sit amet nisi a, ornare cursus mauris. Morbi vitae finibus neque. Nulla dignissim aliquam diam eget finibus. Nam nec turpis non justo elementum cursus. Etiam vel pellentesque nisl. Suspendisse potenti. Etiam in laoreet orci, in aliquam enim. Nullam condimentum elementum congue. Vestibulum semper justo vitae sollicitudin tempus. Praesent dictum pharetra interdum.</p>
+                    </div>
+
+                    <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content8"><i class="zenicon-keyboard-arrow-right"></i>  Expandable section 2 (animation disabled)</a>
+                    <div id="content8" class="expanded-content naked static" aria-hidden="true">
+                        <p>Sed magna mauris, hendrerit sit amet nisi a, ornare cursus mauris. Morbi vitae finibus neque. Nulla dignissim aliquam diam eget finibus. Nam nec turpis non justo elementum cursus. Etiam vel pellentesque nisl. Suspendisse potenti. Etiam in laoreet orci, in aliquam enim. Nullam condimentum elementum congue. Vestibulum semper justo vitae sollicitudin tempus. Praesent dictum pharetra interdum. Etiam vitae viverra elit. Pellentesque a ipsum in turpis consequat euismod.</p>
+                    </div>
+
+                    <a class="title accordion-toggle  naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content9"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content9" class="expanded-content naked static" aria-hidden="true">
+                        <pre class="copy-text square mt-0"><code class="language-html">&lt;div class="accordion theme-light"&gt;
+    &lt;a href="" class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content1"&gt;
+    &lt;i class="zenicon-keyboard-arrow-right"&gt;&lt;/i&gt; The title&lt;/a&gt;
+    &lt;div id="content1" class="expanded-content naked static" aria-hidden="true"&gt;
+        &lt;p&gt;Expanded content here...&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content2"&gt;
+    &lt;i class="zenicon-keyboard-arrow-right"&gt;&lt;/i&gt; The title 2&lt;/a&gt;
+    &lt;div id="content2" class="expanded-content naked static" aria-hidden="true"&gt;
+        &lt;p&gt;Expanded content here...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>  
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+<hr>
 
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->

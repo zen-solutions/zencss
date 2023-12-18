@@ -6,50 +6,45 @@
 
 /* Generate border color classes */
 $colors: (
-  1: #f7f7f7,
-  2: #d9d9d9,
-  3: $border-color,
-  4: #737373,
-  5: #404040,
-  6: #0d0d0d,
+    1: #f7f7f7,
+    2: #d9d9d9,
+    3: $border-color,
+    4: #8a8a8a,
+    5: #404040,
 );
 
-@for $i from 1 through 6 {
-  .border-#{$i} {
-    border: 1px solid map-get($colors, $i);
-    border-bottom-color: map-get($colors, $i) !important;
-  }
+@for $i from 1 through 5 {
+    .border-#{$i} {
+        border: 1px solid map-get($colors, $i);
+        border-bottom-color: map-get($colors, $i) !important;
+    }
 }
 
-.border {
-  border: 1px solid #c2c2c2;
-}
-
-//do these with the color map
+//do these with a color map
 .border-success {
-  border: 2px solid $green;
+    border: 2px solid $green;
 }
 
 .border-danger {
-  border: 2px solid $red;
+    border: 2px solid $red;
 }
 
 .border-warning {
-  border: 2px solid $orange;
+    border: 2px solid $orange;
 }
 
 .border-primary {
-  border: 2px solid $primary-color;
+    border: 2px solid $primary-color;
 }
 
 .border-cta {
-  border: 2px solid $cta-color;
+    border: 2px solid $cta-color;
 }
 
 .border-secondary {
-  border: 2px solid $secondary-color;
+    border: 2px solid $secondary-color;
 }
 
 .border-accent {
-  border: 2px solid $accent-color;
+    border: 2px solid $accent-color;
 }

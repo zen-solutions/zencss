@@ -5,113 +5,125 @@
   */
 
 $increment: 0.2;
-$steps: 5;
+$steps: 8;
 
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes slideUpDown {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideInFromRight {
-  0% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes fadeIn {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0%,
+    100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional styling for better visualization */
+
 .blink {
-  animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 
 .slide-up {
-  animation: slideUpDown 0.5s ease-out;
+    animation: slideUpDown 0.5s ease-out;
 }
 
 @keyframes slideDown {
-  0% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .slide-down {
-  animation: slideDown 0.5s ease-out;
+    animation: slideDown 0.5s ease-out;
 }
 
 .slide-left {
-  animation: slideInFromLeft 0.5s ease-out;
+    animation: slideInFromLeft 0.5s ease-out;
 }
 
 .slide-right {
-  animation: slideInFromRight 0.5s ease-out;
+    animation: slideInFromRight 0.5s ease-out;
 }
 
 @for $i from 1 through $steps {
-  $delay: $increment * $i;
-  .fade-in-#{$i} {
-    opacity: 0;
-    animation: fadeIn 1s $delay + s forwards;
-  }
+    $delay: $increment * $i;
+    .fade-in-#{$i} {
+        opacity: 0;
+        animation: fadeIn 1s $delay + s forwards;
+    }
 }
 
 .btn-hover {
-  transition: transform 0.3s ease-in-out;
-  display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .btn-hover:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
-.breathe{
-  animation: subtleZoom 10s infinite alternate;
+.breathe {
+    animation: subtleZoom 10s infinite alternate;
 }
 
 @keyframes subtleZoom {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.05); 
-  }
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
-
-
-

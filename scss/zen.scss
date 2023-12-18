@@ -11,8 +11,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 //vars
-$zen-font-size: 15px;
 $zen-tablet-mobile-font-size: 14px;
+$zen-font-size: 15px;
 $zen-large-screen-font-size: 16px;
 $zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 //wip
@@ -26,128 +26,118 @@ $base-text-color: #444444;
 //$text-light-dual: #000000;
 
 .zen {
-  //base stuff
-  background: $zen-body-bg-color;
-  font-family: $zen-font-family;
-  font-size: $zen-font-size;
-  color: $base-text-color;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+    //base stuff
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
-
-  //color tweak
-  // background-image: -webkit-gradient(radial, center center, 0, center center, 212, from(rgb(241, 241, 241)), to(#c7c7c7));
-  // background-image: -webkit-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -moz-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -o-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: -ms-radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-  // background-image: radial-gradient(center center, cover, rgb(241, 241, 241), #c7c7c7);
-
-  //--------------------------------------------------------------
-  // Import core files
-  //--------------------------------------------------------------
-
-  @import "user-settings";
-  @import "core/mixins";
-  @import "core/framework";
-  @import "core/scaffold";
-  @import "optional/marketing/marketing-promos";
-  @import "core/header";
-  @import "general/form";
-  @import "optional/slider";
-  @import "design/buttons";
-  @import "optional/table";
-  @import "core/formatting";
-  @import "optional/alert";
-  @import "design/text";
-  @import "design/border-color";
-  @import "general/test";
-  @import "general/components";
-  @import "core/footer";
-  @import "core/wip";
-  @import "optional/decoration";
-  @import "optional/animation";
-  //@import "optional/tabbed-card"; // WIP
-  @import "optional/image-gallery";
-  @import "optional/tooltip";
-  @import "optional/aria";
-  @import "optional/accessability";
-  @import "design/themes";
-  @import "design/bg-color";
-  @import "design/text-color";
-  @import "optional/marketing/exit-intent";
-  @import "optional/marketing/contact-form";
-  @import "optional/menus";
-  @import "core/flex";
-
-
-  //--------------------------------------------------------------
-  //  Things that should go last
-  //--------------------------------------------------------------
-  @import "core/media-query";
-  // @import 'optional/stacking'; // not in use currently
-  @import "general/margin-padding";
-
-  //--------------------------------------------------------------
-  // Media queries for font size change
-  //--------------------------------------------------------------
-
-  //contextual
-  .text-success {
-    color: darken($green, 11%);
-  }
-
-  .text-failure {
-    color: darken($red, 4%);
-  }
-
-  @media (max-width: 575.98px) {
-    font-size: $zen-tablet-mobile-font-size;
-
-    p {
-      line-height: 1.4rem;
-      letter-spacing: -0.2px;
-    }
-
-    //  h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
-    //   line-height: 2rem;
-    //  }
-  }
-
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: $zen-tablet-mobile-font-size;
-    p {
-      line-height: 1.4rem;
-      letter-spacing: -0.1px;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: $zen-font-size;
-    p {
-      line-height: 1.5rem;
-    }
-  }
-
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: $zen-font-size;
-  }
-
-  @media (min-width: 1200px) {
+    background: $zen-body-bg-color;
+    font-family: $zen-font-family;
     font-size: $zen-large-screen-font-size;
-  }
+    color: $base-text-color;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+    //--------------------------------------------------------------
+    // Import core files
+    //--------------------------------------------------------------
+
+    @import "core/config";
+    @import "core/mixins";
+    @import "core/framework";
+    @import "core/scaffold";
+    @import "optional/marketing/marketing-promos";
+    @import "core/header";
+    @import "general/form";
+    @import "optional/slider";
+    @import "design/buttons";
+    @import "optional/table";
+    @import "core/formatting";
+    @import "optional/alert";
+    @import "design/text";
+    @import "design/border-color";
+    @import "general/test";
+    @import "general/components";
+    @import "core/footer";
+    @import "core/wip";
+    @import "optional/decoration";
+    @import "optional/animation";
+    //@import "optional/tabbed-card"; // WIP
+    @import "optional/image-gallery";
+    @import "optional/tooltip";
+    @import "optional/aria";
+    @import "optional/accessability";
+    @import "design/themes";
+    @import "design/bg-color";
+    @import "design/text-color";
+    @import "optional/marketing/exit-intent";
+    @import "optional/marketing/contact-form";
+    @import "optional/menus";
+    @import "core/flex";
+
+    //--------------------------------------------------------------
+    //  Things that should go last
+    //--------------------------------------------------------------
+    @import "core/media-query";
+    // @import 'optional/stacking'; // not in use currently
+    @import "general/margin-padding";
+
+    //--------------------------------------------------------------
+    // Media queries for font size change
+    //--------------------------------------------------------------
+
+    //contextual
+    .text-success {
+        color: darken($green, 11%);
+    }
+
+    .text-failure {
+        color: darken($red, 4%);
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: $zen-tablet-mobile-font-size;
+
+        p {
+            line-height: 1.4rem;
+            letter-spacing: -0.2px;
+        }
+
+        //  h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
+        //   line-height: 2rem;
+        //  }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: $zen-tablet-mobile-font-size;
+        p {
+            line-height: 1.4rem;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: $zen-font-size;
+        p {
+            line-height: 1.5rem;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        font-size: $zen-font-size;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: $zen-large-screen-font-size;
+    }
 }
 
 //--------------------------------------------------------------
@@ -155,66 +145,65 @@ $base-text-color: #444444;
 //--------------------------------------------------------------
 
 .zen-dark {
-  color: $zen-dark-text-color;
-  background: #292929;
-  $responsive-text-color: #ededed;
-
-  // .text-success {
-  //   color: lighten(green, 10%);
-  // }
-
-  // .text-failure {
-  //   color: lighten(red, 16%);
-  // }
-
-  td,
-  th {
     color: $zen-dark-text-color;
-  }
+    background: #2a2a2a;
+    $responsive-text-color: #ededed;
 
-  .text-dual {
-    color: $zen-dark-text-color !important;
-  }
+    // .text-success {
+    //   color: lighten(green, 10%);
+    // }
 
-  a {
-    color: $zen-dark-text-color;
-    cursor: pointer;
-    text-decoration: underline;
-  }
+    // .text-failure {
+    //   color: lighten(red, 16%);
+    // }
 
-  label {
-    color: $zen-dark-text-color !important;
-  }
+    td,
+    th {
+        color: $zen-dark-text-color;
+    }
 
-  a:hover {
-    color: #e8e8e8;
-    text-decoration: none;
-  }
+    .text-dual {
+        color: $zen-dark-text-color !important;
+    }
 
-  .text-grey-dual {
-    color: #8c8c8c;
-  }
+    a {
+        color: $zen-dark-text-color;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 
-  $text-grey-dual: #8c8c8c;
+    // label {
+    //   color: $zen-dark-text-color !important;
+    // }
 
-  .bg-ui-hover:hover,
-  .tab-nav .item-minimal:hover {
-    background: hsla(69, 0%, 79%, 0.3);
-  }
+    a:hover {
+        color: #e8e8e8;
+        text-decoration: none;
+    }
 
-  // Adjust the .btn-outline for default theme to have the text same as the outline
-   .btn-outline
-  // ,.theme-light .btn-outline 
-  {
-    color: $responsive-text-color;
-  }
+    .text-grey-dual {
+        color: #8c8c8c;
+    }
 
-  .text-cta-dual {
-    color: $responsive-text-color;
-  }
+    $text-grey-dual: #8c8c8c;
 
-  .link-classic {
-    color: #2491FF;
-    text-decoration: none;
-  }
+    .bg-ui-hover:hover,
+    .tab-nav .item-minimal:hover {
+        background: hsla(69, 0%, 79%, 0.3);
+    }
+
+    // Adjust the .btn-outline for default theme to have the text same as the outline
+    .btn-outline
+    {
+        color: $responsive-text-color;
+    }
+
+    .text-cta-dual {
+        color: $responsive-text-color;
+    }
+
+    .link-classic {
+        color: #2491ff;
+        text-decoration: none;
+    }
 }

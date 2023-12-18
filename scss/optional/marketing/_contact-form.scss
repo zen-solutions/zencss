@@ -13,63 +13,63 @@ $btn-bg-hover: #09c;
 $placeholder-color: #888;
 
 %input-styles {
-  width: 100%;
-  border: 0;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: $border-radius;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: $border-radius;
 }
 
-.form-container {
-  width: 100%;
-  margin: 1em auto;
-  padding: 0.4em;
+// .form-container {
+//   width: 100%;
+//   margin: 1em auto;
+//   padding: 0.4em;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    padding-top: 0;
-  }
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     margin: 0;
+//     padding-top: 0;
+//   }
 
-  p {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-}
+//   p {
+//     margin-top: 0;
+//     margin-bottom: 1em;
+//   }
+// }
 
 #contact {
-  background: $secondary-color;
-  padding: 25px;
-  gap: 1em;
-  display: flex;
-  flex-direction: column;
-  border-radius: $border-radius;
+    background: $secondary-color;
+    padding: 25px;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius;
 
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="url"],
-  textarea,
-  button[type="submit"] {
-    @extend %input-styles;
-  }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    textarea,
+    button[type="submit"] {
+        @extend %input-styles;
+    }
 
-  textarea {
-    height: 100px;
-    resize: none;
-  }
+    textarea {
+        height: 100px;
+        resize: none;
+    }
 
-  button[type="submit"] {
-    cursor: pointer;
-  }
+    button[type="submit"] {
+        cursor: pointer;
+    }
 }
 
 ::placeholder,
 ::-webkit-input-placeholder,
 :-ms-input-placeholder {
-  color: $placeholder-color;
+    color: $placeholder-color;
 }

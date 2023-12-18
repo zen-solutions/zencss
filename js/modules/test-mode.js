@@ -1,9 +1,9 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
- 
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
+
 //--------------------------------------------------------
 //Toggle  test mode
 //--------------------------------------------------------
@@ -38,4 +38,4 @@ if (toggleButton) {
             toggleClassOnElements(selector, className);
         });
     });
-} 
+}

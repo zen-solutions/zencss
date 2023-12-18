@@ -1,16 +1,16 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
-
-  //-------------------------------------
-  // Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
-  //-------------------------------------
+//-------------------------------------
+// Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
+//12/15 why though?
+//-------------------------------------
 
 // -------------------------------------------------------------
-//THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
+// THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
 // -------------------------------------------------------------
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -49,9 +49,8 @@
     applyPaddingToRows();
 });
 
-
-
-
+//---------------------------------------------------------
+//NOT IN USE
 //   // -------------------------------------------------------------
 //   // THIS VERSION WORKS FOR THE ZENTAX IMPLEMENTATION
 //   // -------------------------------------------------------------
@@ -109,27 +108,7 @@
 //     });
 // });
 
-
-
-
-
-
-
-
 //---------- END
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //below is old and prolly working but ignoring it for now
 //   document.addEventListener('DOMContentLoaded', function () {
@@ -158,13 +137,7 @@
 //     });
 // });
 
-
-
-
-
-
-
-  //   document.addEventListener('DOMContentLoaded', function () {
+//   document.addEventListener('DOMContentLoaded', function () {
 //     // Handle the padding for <z-col> elements
 //     var cols = document.querySelectorAll('z-col');
 
@@ -186,4 +159,4 @@
 //             row.style.paddingBottom = '0';
 //         }
 //     });
-// }); 
+// });
