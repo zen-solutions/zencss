@@ -6,101 +6,100 @@
 
 // Mixin for styling input fields, textarea, and select elements
 @mixin input-styles {
-  width: 100%;
-  padding: 0;
-  padding-left:10px;
-  padding-right:10px;
-  border-radius: $border-radius;
-  border: 1px solid $border-color;
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
 }
 
 // Mixin for styling button elements
 @mixin button-styles {
-  padding: 10px 20px;
-  border: none;
-  border-radius: $border-radius;
-  background-color: $primary-color;
-  color: smart-text-color($primary-color);
-  font-size: 16px;
-  cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+    color: smart-text-color($primary-color);
+    font-size: 16px;
+    cursor: pointer;
 
-  &:hover {
-    background: darken($cta-color, 10%);
-  }
+    &:hover {
+        background: darken($cta-color, 10%);
+    }
 }
 
 form {
+    fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: none;
+    }
 
-  fieldset {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: none;
-  }
+    p {
+        margin-bottom: 1em;
+    }
 
-  p {
-    margin-bottom: 1em;
-  }
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
 
-  label {
-    display: block;
-    margin-bottom: 0.5em;
-  }
+    /* Style the input fields, textarea, and select elements */
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="color"],
+    input[type="range"],
+    textarea,
+    select {
+        @include input-styles;
+    }
 
-  /* Style the input fields, textarea, and select elements */
-  input[type="text"],
-  input[type="password"],
-  input[type="number"],
-  input[type="email"],
-  input[type="url"],
-  input[type="tel"],
-  input[type="search"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="datetime-local"],
-  input[type="month"],
-  input[type="week"],
-  input[type="time"],
-  input[type="color"],
-  input[type="range"],
-  textarea,
-  select {
-    @include input-styles;
-  }
+    // input[type="text"],
+    // input[type="email"],
+    // input[type="tel"] {
+    //   padding-top: 12px !important;
+    // }
 
-  // input[type="text"],
-  // input[type="email"],
-  // input[type="tel"] {
-  //   padding-top: 12px !important;
-  // }
+    input[type="color"] {
+        height: 200px;
+    }
 
-  input[type="color"] {
-    height: 200px;
-  }
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
 
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin-right: 10px;
-  }
+    /* Style the button elements */
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button {
+        margin-left: -1px;
+        @include button-styles;
+    }
 
-  /* Style the button elements */
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"],
-  button {
-    margin-left: -1px;
-    @include button-styles;
-  }
+    input[type="file"] {
+        @include input-styles;
+        border: none;
+    }
 
-  input[type="file"] {
-    @include input-styles;
-    border: none;
-  }
-
-  output {
-    display: block;
-    margin-bottom: 10px;
-    color: $primary-color;
-  }
+    output {
+        display: block;
+        margin-bottom: 10px;
+        color: $primary-color;
+    }
 }
 
 form select,
@@ -109,54 +108,54 @@ form input[type="datetime-local"],
 form input[type="time"],
 form input[type="week"],
 form input[type="month"] {
-  color: $dark-color;
-  border: 0;
+    color: $dark-color;
+    border: 0;
 }
 
 .form-footer {
-  font-size: 0.7rem;
-  display: block;
-  margin-top: 1em;
-  opacity: 0.5;
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 1em;
+    opacity: 0.5;
 }
 //-------------------------------
 // Shrinking form label
 //-------------------------------
 
 form div {
-  position: relative;
-  margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 input {
-  width: 100%;
-  padding: 5px;
-  font-size: 13px;
-  //border: 1px solid $border-color;
-  //color: $border-color;
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    //border: 1px solid $border-color;
+    //color: $border-color;
 }
 
 .form-container form label {
-  position: absolute;
-  left: 10px;
-  top: 13px;
-  font-size: 0.8em;
-  //color: $dark-color !important;
-  transition: 0.3s all;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-size: 0.8em;
+    //color: $dark-color !important;
+    transition: 0.3s all;
 }
 
 /* Shrink and move label on input focus or if there is content in the input field */
 form input:focus + label,
 form input:not(:placeholder-shown) + label {
-  top: 3px;
-  left: 10px;
-  font-size: 8px;
-  color: #b9b9b9 !important;
+    top: 3px;
+    left: 10px;
+    font-size: 8px;
+    color: #b9b9b9 !important;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  width: 12px;
-  height: 12px;
-  min-height: 12px;
+    width: 12px;
+    height: 12px;
+    min-height: 12px;
 }

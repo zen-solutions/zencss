@@ -5,49 +5,49 @@
   */
 
 footer {
-  background: $bg-header-footer;
-  color: $light-color;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-
-  a {
+    background: $bg-header-footer;
     color: $light-color;
-  }
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 
-  a:hover {
-    color: darken($light-color, 10%);
-  }
+    a {
+        color: $light-color;
+    }
+
+    a:hover {
+        color: darken($light-color, 10%);
+    }
 }
 
 .social-icons {
-  margin-top: 1em;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-
-  a {
-    display: flex;
-    justify-content: center;
+    margin-top: 1em;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-    background-color: $light-color;
-    border-radius: $border-radius;
-    transition: background-color 0.3s ease;
-    overflow: hidden;
+    justify-content: center;
+    gap: 1em;
 
-    &:hover {
-      background-color: darken($light-color, 20%);
-    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+        background-color: $light-color;
+        border-radius: $border-radius;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
 
-    img {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
+        &:hover {
+            background-color: darken($light-color, 20%);
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
     }
-  }
 }

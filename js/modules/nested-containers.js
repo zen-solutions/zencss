@@ -1,55 +1,53 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
-
-  //-------------------------------------
-  // Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
-  //12/15 why though? 
-  //-------------------------------------
+//-------------------------------------
+// Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
+//12/15 why though?
+//-------------------------------------
 
 // -------------------------------------------------------------
-//THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
+// THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
 // -------------------------------------------------------------
 
-//   document.addEventListener('DOMContentLoaded', function () {
-//     // Function to apply zero padding to column parents of containers
-//     function applyPaddingToColParents() {
-//         var containerSelectors = ['z-container', 'div.z-container'];
-//         containerSelectors.forEach(function (selector) {
-//             var containers = document.querySelectorAll(selector);
-//             containers.forEach(function (container) {
-//                 var col = container.parentElement;
-//                 // Check if the parent is a z-col or div.z-col
-//                 if (col.matches('z-col, div.z-col')) {
-//                     col.style.padding = '0';
-//                 }
-//             });
-//         });
-//     }
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to apply zero padding to column parents of containers
+    function applyPaddingToColParents() {
+        var containerSelectors = ['z-container', 'div.z-container'];
+        containerSelectors.forEach(function (selector) {
+            var containers = document.querySelectorAll(selector);
+            containers.forEach(function (container) {
+                var col = container.parentElement;
+                // Check if the parent is a z-col or div.z-col
+                if (col.matches('z-col, div.z-col')) {
+                    col.style.padding = '0';
+                }
+            });
+        });
+    }
 
-//     // Function to apply zero padding to rows
-//     function applyPaddingToRows() {
-//         var rowSelectors = ['z-row', 'div.z-row'];
-//         rowSelectors.forEach(function (selector) {
-//             var rows = document.querySelectorAll(selector);
-//             rows.forEach(function (row) {
-//                 var container = row.closest('z-col > z-container, div.z-col > div.z-container, z-col > div.z-container, div.z-col > z-container');
-//                 if (container) {
-//                     row.style.paddingTop = '0';
-//                     row.style.paddingBottom = '0';
-//                 }
-//             });
-//         });
-//     }
+    // Function to apply zero padding to rows
+    function applyPaddingToRows() {
+        var rowSelectors = ['z-row', 'div.z-row'];
+        rowSelectors.forEach(function (selector) {
+            var rows = document.querySelectorAll(selector);
+            rows.forEach(function (row) {
+                var container = row.closest('z-col > z-container, div.z-col > div.z-container, z-col > div.z-container, div.z-col > z-container');
+                if (container) {
+                    row.style.paddingTop = '0';
+                    row.style.paddingBottom = '0';
+                }
+            });
+        });
+    }
 
-//     // Apply styles
-//     applyPaddingToColParents();
-//     applyPaddingToRows();
-// });
-
+    // Apply styles
+    applyPaddingToColParents();
+    applyPaddingToRows();
+});
 
 //---------------------------------------------------------
 //NOT IN USE
@@ -110,27 +108,7 @@
 //     });
 // });
 
-
-
-
-
-
-
-
 //---------- END
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //below is old and prolly working but ignoring it for now
 //   document.addEventListener('DOMContentLoaded', function () {
@@ -159,13 +137,7 @@
 //     });
 // });
 
-
-
-
-
-
-
-  //   document.addEventListener('DOMContentLoaded', function () {
+//   document.addEventListener('DOMContentLoaded', function () {
 //     // Handle the padding for <z-col> elements
 //     var cols = document.querySelectorAll('z-col');
 
@@ -187,4 +159,4 @@
 //             row.style.paddingBottom = '0';
 //         }
 //     });
-// }); 
+// });

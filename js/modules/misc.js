@@ -1,122 +1,122 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
- 
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
-  //-------------------------------------
-  // Dynamic year in footer
-  //-------------------------------------
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const yearSpan = document.getElementById('current-year');
+//-------------------------------------
+// Dynamic year in footer
+//-------------------------------------
+document.addEventListener("DOMContentLoaded", (event) => {
+    const yearSpan = document.getElementById("current-year");
     if (yearSpan) {
-      const currentYear = new Date().getFullYear();
-      yearSpan.textContent = currentYear;
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
     }
-  });
-  
-  //-------------------------------------
-  // icon toggle
-  //-------------------------------------
-  document.addEventListener('DOMContentLoaded', function () {
-    var iconToggles = document.querySelectorAll('.icon-toggle');
+});
 
-    iconToggles.forEach(function(toggle) {
-        toggle.addEventListener('click', function () {
-            var iconOff = this.querySelector('.icon-off');
-            var iconOn = this.querySelector('.icon-on');
+//-------------------------------------
+// icon toggle
+//-------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    var iconToggles = document.querySelectorAll(".icon-toggle");
+
+    iconToggles.forEach(function (toggle) {
+        toggle.addEventListener("click", function () {
+            var iconOff = this.querySelector(".icon-off");
+            var iconOn = this.querySelector(".icon-on");
 
             // Toggle the 'show' class
-            iconOff.classList.toggle('show');
-            iconOn.classList.toggle('show');
+            iconOff.classList.toggle("show");
+            iconOn.classList.toggle("show");
         });
     });
 });
 
+// New stuff here after modules were created. If we need to revert, include this stuff.
+document.querySelectorAll(".accordion-toggle").forEach((item) => {
+    item.addEventListener("click", (event) => {
+        event.preventDefault();
 
+        const contentId = item.getAttribute("aria-controls");
+        const content = document.getElementById(contentId);
 
-// New stuff here after modules were created. If we need to revert, include this stuff. 
-document.querySelectorAll('.accordion-toggle').forEach(item => {
-  item.addEventListener('click', event => {
-      event.preventDefault();
+        // Close other expanded contents
+        document.querySelectorAll(".expanded-content").forEach((el) => {
+            if (el.id !== contentId) {
+                el.classList.remove("show");
+                el.style.overflowY = "hidden";
+            }
+        });
 
-      const contentId = item.getAttribute('aria-controls');
-      const content = document.getElementById(contentId);
+        // Toggle current content
+        content.classList.toggle("show");
 
-      // Close other expanded contents
-      document.querySelectorAll('.expanded-content').forEach(el => {
-          if (el.id !== contentId) {
-              el.classList.remove('show');
-              el.style.overflowY = 'hidden';
-          }
-      });
-
-      // Toggle current content
-      content.classList.toggle('show');
-
-      setTimeout(() => {
-          if (content.scrollHeight > content.clientHeight) {
-              content.style.overflowY = 'auto';
-          } else {
-              content.style.overflowY = 'hidden';
-          }
-      }, 500); // Match this with your CSS transition duration
-  });
+        setTimeout(() => {
+            if (content.scrollHeight > content.clientHeight) {
+                content.style.overflowY = "auto";
+            } else {
+                content.style.overflowY = "hidden";
+            }
+        }, 500); // Match this with your CSS transition duration
+    });
 });
 
+//-------------------------------------
+// Corner Popup
+//-------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    var cornerPopup = document.querySelector(".corner-popup");
 
-  //-------------------------------------
-  // Corner Popup
-  //-------------------------------------
-  document.addEventListener('DOMContentLoaded', function() {
-    var cornerPopup = document.querySelector('.corner-popup');
-     
     if (cornerPopup) {
-        var button = cornerPopup.querySelector('button');
-        var popup = cornerPopup.querySelector('div');
+        var button = cornerPopup.querySelector("button");
+        var popup = cornerPopup.querySelector("div");
 
-        popup.classList.add('card');
+        popup.classList.add("card");
 
-        button.addEventListener('click', function() {
-            popup.classList.toggle('hidden');
+        button.addEventListener("click", function () {
+            popup.classList.toggle("hidden");
             console.log("Button clicked");
         });
     }
 });
 
-  //-------------------------------------
-  // Responsive Table
-  //-------------------------------------
-  document.addEventListener('DOMContentLoaded', () => {
+//-------------------------------------
+// Responsive Table
+//-------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
     // Function to apply data labels to a table
     function applyDataLabelsToTable(table) {
         // Get all the headers from the direct child thead of the table
-        const headers = Array.from(table.querySelectorAll(':scope > thead > tr > th')).map(th => th.textContent.trim());
+        const headers = Array.from(
+            table.querySelectorAll(":scope > thead > tr > th"),
+        ).map((th) => th.textContent.trim());
 
         // Iterate over each row in the direct child tbody of the table
-        table.querySelectorAll(':scope > tbody > tr').forEach(row => {
+        table.querySelectorAll(":scope > tbody > tr").forEach((row) => {
             // Get all cells (td) in this row
-            row.querySelectorAll(':scope > td').forEach((cell, index) => {
+            row.querySelectorAll(":scope > td").forEach((cell, index) => {
                 // Assign the corresponding header text to the data-label attribute of the cell
                 if (headers[index]) {
-                    cell.setAttribute('data-label', headers[index]);
+                    cell.setAttribute("data-label", headers[index]);
                 }
             });
         });
     }
 
     // Select all tables with class 'responsive-table' and apply data labels to each
-    document.querySelectorAll('.responsive-table').forEach(applyDataLabelsToTable);
+    document
+        .querySelectorAll(".responsive-table")
+        .forEach(applyDataLabelsToTable);
 });
 
-  //-------------------------------------
-  // Lazy Load Test - WIP
-  //-------------------------------------
+//-------------------------------------
+// Lazy Load Test - WIP
+//-------------------------------------
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     const lazyLoadImages = document.querySelectorAll("img.lazy-load");
-  
+
 //     if (lazyLoadImages.length > 0) {
 //       const imageObserver = new IntersectionObserver(function(entries, observer) {
 //         entries.forEach(function(entry) {
@@ -128,34 +128,34 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
 //           }
 //         });
 //       });
-  
+
 //       lazyLoadImages.forEach(function(image) {
 //         imageObserver.observe(image);
 //       });
 //     }
 //   });
-  
-   //-------------------------------------
-  // Tabbed Card
-  //-------------------------------------
 
-  function showTab(tabNumber) {
-    const tabbedCard = document.querySelector('.tabbed-card');
+//-------------------------------------
+// Tabbed Card
+//-------------------------------------
+
+function showTab(tabNumber) {
+    const tabbedCard = document.querySelector(".tabbed-card");
     if (tabbedCard) {
-        const tabs = tabbedCard.querySelectorAll('.tab');
-        const tabContents = tabbedCard.querySelectorAll('.tab-content');
+        const tabs = tabbedCard.querySelectorAll(".tab");
+        const tabContents = tabbedCard.querySelectorAll(".tab-content");
 
         if (tabs.length && tabContents.length) {
             tabs.forEach((tab, index) => {
                 if (index + 1 === tabNumber) {
-                    tab.classList.add('active');
+                    tab.classList.add("active");
                     if (tabContents[index]) {
-                        tabContents[index].classList.add('active');
+                        tabContents[index].classList.add("active");
                     }
                 } else {
-                    tab.classList.remove('active');
+                    tab.classList.remove("active");
                     if (tabContents[index]) {
-                        tabContents[index].classList.remove('active');
+                        tabContents[index].classList.remove("active");
                     }
                 }
             });
@@ -163,90 +163,89 @@ document.querySelectorAll('.accordion-toggle').forEach(item => {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.tab');
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".tab");
     if (tabs.length) {
         tabs.forEach((tab) => {
-            tab.addEventListener('click', function() {
-                const tabNumber = parseInt(tab.getAttribute('data-tab'));
+            tab.addEventListener("click", function () {
+                const tabNumber = parseInt(tab.getAttribute("data-tab"));
                 showTab(tabNumber);
             });
         });
     }
 });
 
-
-  //-------------------------------------
-  // side menus
-  //-------------------------------------
-  document.addEventListener('DOMContentLoaded', function() {
+//-------------------------------------
+// side menus
+//-------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
     // Select all the menu items
-    const menuItems = document.querySelectorAll('.nav-menu li');
-  
+    const menuItems = document.querySelectorAll(".nav-menu li");
+
     // Only proceed if menu items exist
     if (menuItems.length) {
-      menuItems.forEach(item => {
-        // Add click event listener to each menu item
-        item.addEventListener('click', function() {
-          // Remove the 'active' class from all items
-          menuItems.forEach(i => i.classList.remove('active'));
-  
-          // Add the 'active' class to the clicked item
-          this.classList.add('active');
+        menuItems.forEach((item) => {
+            // Add click event listener to each menu item
+            item.addEventListener("click", function () {
+                // Remove the 'active' class from all items
+                menuItems.forEach((i) => i.classList.remove("active"));
+
+                // Add the 'active' class to the clicked item
+                this.classList.add("active");
+            });
         });
-      });
     }
-  });
-  
+});
 
+//-------------------------------------
+// unread notifications
+//-------------------------------------
 
-  //-------------------------------------
-  // unread notifications
-  //-------------------------------------
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var button = document.querySelector('.btn-circle');
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector(".btn-circle");
 
     // Check if the button exists
     if (button) {
         // Restore the data-unread attribute if 24 hours have not passed
-        var unreadResetTime = localStorage.getItem('unreadResetTime');
+        var unreadResetTime = localStorage.getItem("unreadResetTime");
         if (unreadResetTime && new Date().getTime() < unreadResetTime) {
-            button.removeAttribute('data-unread');
+            button.removeAttribute("data-unread");
         }
 
         // Add click event listener to the button
-        button.addEventListener('click', function() {
+        button.addEventListener("click", function () {
             // Remove data-unread attribute and set the reset time in localStorage
-            button.removeAttribute('data-unread');
+            button.removeAttribute("data-unread");
             var resetTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 hours from now
-            localStorage.setItem('unreadResetTime', resetTime);
+            localStorage.setItem("unreadResetTime", resetTime);
         });
     }
 });
 
-  //-------------------------------------
-  // fade in animation
-  //-------------------------------------
+//-------------------------------------
+// fade in animation
+//-------------------------------------
 
-document.addEventListener('DOMContentLoaded', () => {
-    const elementsToAnimate = document.querySelectorAll('.fade-in');
+document.addEventListener("DOMContentLoaded", () => {
+    const elementsToAnimate = document.querySelectorAll(".fade-in");
 
     if (elementsToAnimate.length > 0) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.3
-        });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            {
+                threshold: 0.3,
+            },
+        );
 
-        elementsToAnimate.forEach(el => observer.observe(el));
+        elementsToAnimate.forEach((el) => observer.observe(el));
     }
 });
-
 
 //   //pie charts
 //   document.addEventListener('DOMContentLoaded', () => {
@@ -281,10 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //     });
 // });
 
-
-  //-------------------------------------
-  // Pattern Interrupt
-  //-------------------------------------
+//-------------------------------------
+// Pattern Interrupt
+//-------------------------------------
 //   document.addEventListener('DOMContentLoaded', function() {
 //     var modalShown = false;
 //     var modal = document.querySelector('.pattern-interrupt');
@@ -322,9 +320,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //     }
 // });
 
-  //-------------------------------------
-  // Dynamic Navigation
-  //-------------------------------------
+//-------------------------------------
+// Dynamic Navigation
+//-------------------------------------
 //   document.addEventListener('DOMContentLoaded', function() {
 //     const header = document.querySelector('.header-sticky.slide-down');
 //     console.log("Script running");
@@ -342,8 +340,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //   // Video Player
 //   //-------------------------------------
 
-
-
 //   class VideoPlayer extends HTMLElement {
 //     constructor() {
 //         super();
@@ -351,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //         const style = document.createElement('style');
 //         style.textContent = `
-       
+
 //         `;
 
 //         const container = document.createElement('div');

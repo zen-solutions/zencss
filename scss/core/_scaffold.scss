@@ -5,8 +5,8 @@
   */
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 // Test dark mode
@@ -16,31 +16,31 @@ html {
 
 // Header styles
 .header {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0.618rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  min-height: 89px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.618rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    min-height: 89px;
 }
 
 .bg-dark {
-  background: $dark-color !important;
-  color: $light-color;
+    background: $dark-color !important;
+    color: $light-color;
 
-  button {
-    color: $dark-color;
-    background: $light-color;
-    text-decoration: none;
-    display: inline;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    button {
+        color: $dark-color;
+        background: $light-color;
+        text-decoration: none;
+        display: inline;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
 
-    &:hover {
-      background: darken($light-color, 15%);
+        &:hover {
+            background: darken($light-color, 15%);
+        }
     }
-  }
 }
 
 // Hero section styles
@@ -59,38 +59,38 @@ html {
 // Heading styles
 h1,
 .h1 {
-  font-size: 2.75em;
-  line-height: 1.2;
+    font-size: 2.75em;
+    line-height: 1.2;
 }
 
 h2,
 .h2 {
-  font-size: 2.25em;
-  //line-height: 1.333;
+    font-size: 2.25em;
+    //line-height: 1.333;
 }
 
 h3,
 .h3 {
-  //line-height: 1.4em;
-  font-size: 2em;
+    //line-height: 1.4em;
+    font-size: 2em;
 }
 
 h4,
 .h4 {
-  font-size: 1.75em;
-  //line-height: 1.5em;
+    font-size: 1.75em;
+    //line-height: 1.5em;
 }
 
 h5,
 .h5 {
-  font-size: 1.5em;
-  //line-height:51.6em;
+    font-size: 1.5em;
+    //line-height:51.6em;
 }
 
 h6,
 .h6 {
-  font-size: 1.25em;
-  //line-height: 1.6em;
+    font-size: 1.25em;
+    //line-height: 1.6em;
 }
 
 h1,
@@ -105,11 +105,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  position: relative;
-  z-index: 2;
-  text-wrap: pretty;
-  @include font-spacing;
-  @include headline;
+    position: relative;
+    z-index: 2;
+    text-wrap: pretty;
+    @include font-spacing;
+    @include headline;
 }
 
 //Remove padding from 2nd stacked header
@@ -134,77 +134,75 @@ h4 + h6,
 h5 + h5,
 h5 + h6,
 h6 + h6 {
-  padding-top: 0;
+    padding-top: 0;
 }
 
 p {
-  line-height: $line-height;
-  letter-spacing: 0;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 0.85rem;
-  text-wrap: pretty;
+    line-height: $line-height;
+    letter-spacing: 0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+    text-wrap: pretty;
 }
 
 span {
-  align-self: flex-start;
-  display: inline;
+    align-self: flex-start;
+    display: inline;
 }
 
 ol {
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-bottom: 1em;
-  padding-inline-start: 35px;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 1em;
+    padding-inline-start: 35px;
 }
 
 ul {
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  list-style-type: disc;
-  padding-left: 30px;
-  margin-bottom: 1em;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 1em;
 }
 
 li {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.8rem;
-  padding-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.8rem;
+    padding-left: 0.5em;
 }
 
 li::marker {
-  color: grey;
+    color: grey;
 }
 
 ul li > ul {
-  list-style-type: circle;
+    list-style-type: circle;
 }
 
 ul li > ul li > ul {
-  list-style-type: square;
+    list-style-type: square;
 }
 
 ul li > ul > li {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 hr {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
-  height: 1px;
-  opacity: 0.28;
-  width: 100%;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    height: 1px;
+    opacity: 0.28;
+    width: 100%;
 }
 
 .hr-light {
-  opacity: 0.05;
+    opacity: 0.05;
 }
-
-
 
 // button,
 // .btn {
@@ -212,7 +210,7 @@ hr {
 //   align-items: center;
 //   justify-content: center;
 //   text-wrap: pretty;
-//   //padding: 1em; //remove 12/15 bc button and link button were diff heights. so weird. 
+//   //padding: 1em; //remove 12/15 bc button and link button were diff heights. so weird.
 //   padding:0 1em;
 //   // margin: 0.2em;
 //   // margin-top: 0;
@@ -234,14 +232,13 @@ hr {
 
 button:hover,
 .btn:hover {
-  cursor: pointer;
-  background: lighten($bg-header-footer, 10%);
-  color: $light-color;
+    cursor: pointer;
+    background: lighten($bg-header-footer, 10%);
+    color: $light-color;
 }
 
-
 button.bg-cta:hover {
-  background: darken($cta-color, 8%);
+    background: darken($cta-color, 8%);
 }
 
 z-container,
@@ -249,78 +246,78 @@ z-row,
 z-col,
 .z-row,
 .z-col {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  border-radius: $border-radius;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: $border-radius;
 }
 
-section{
-  padding-bottom: .25em;
+section {
+    padding-bottom: 0.25em;
 }
 
 // Links with swap-underline class styles
 a.swap-underline {
-  color: $cta-color;
-  text-decoration: none;
+    color: $cta-color;
+    text-decoration: none;
 }
 
 a.swap-underline:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 pre {
-  padding: 10px 20px;
-  font-size: 0.8em;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: $border-radius;
-  width: 100%;
-  white-space: pre-line;
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
-  border: 1px solid $border-color;
-  margin-bottom: 2em;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius;
+    width: 100%;
+    white-space: pre-line;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    border: 1px solid $border-color;
+    margin-bottom: 2em;
 }
 
 figure {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
 figcaption {
-  font-size: 0.875em;
-  line-height: 1.4285714;
-  margin-top: 0.8571429em;
-  color: lighten($text-black, 50%);
+    font-size: 0.875em;
+    line-height: 1.4285714;
+    margin-top: 0.8571429em;
+    color: lighten($text-black, 50%);
 }
 
 small {
-  line-height: calc($line-height / 1.5);
-  margin-top: 0;
-  margin-bottom: 1rem;
-  //display: inline;
+    line-height: calc($line-height / 1.5);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    //display: inline;
 }
 
 input,
 textarea,
 button[type="submit"] {
-  font-family: $zen-font-family;
-  width: 100%;
-  min-height: 39px;
-  border: 0;
-  padding: 5px;
+    font-family: $zen-font-family;
+    width: 100%;
+    min-height: 39px;
+    border: 0;
+    padding: 5px;
 }
 
 input[type="submit"] {
-  padding-left: 10px;
-  padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tout {
-  width: auto;
+    width: auto;
 }
 
 //----------------------------------------------
@@ -329,316 +326,315 @@ input[type="submit"] {
 
 // Border thickness classes
 .thick {
-  border-width: 2px;
+    border-width: 2px;
 }
 
 .thicker {
-  border-width: 3px;
+    border-width: 3px;
 }
 
 .thickest {
-  border-width: 4px;
-  outline-width: 4px;
+    border-width: 4px;
+    outline-width: 4px;
 }
 
 // Rounded and circle shape classes
-.round { //to depricate
-  border-radius: 8px !important;
+.round {
+    //to depricate
+    border-radius: 8px !important;
 }
 
 .br-sm {
-  border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 .br-md {
-  border-radius: 8px !important;
+    border-radius: 8px !important;
 }
 
 .br-lg {
-  border-radius: 12px !important;
+    border-radius: 12px !important;
 }
 
 .br-xl {
-  border-radius: 16px !important;
+    border-radius: 16px !important;
 }
 
 .br-xxl {
-  border-radius: 20px !important;
+    border-radius: 20px !important;
 }
 
 .square {
-  border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
-.br-bottom{
-  border-bottom-left-radius: $border-radius !important;
-  border-bottom-right-radius: $border-radius !important;
-  overflow: hidden;
+.br-bottom {
+    border-bottom-left-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+    overflow: hidden;
 }
-
-
 
 .circle {
-  border-radius: 100%;
-  width: 56px !important;
-  height: 56px;
+    border-radius: 100%;
+    width: 56px !important;
+    height: 56px;
 }
 
 .circle-border {
-  border-radius: 100%;
+    border-radius: 100%;
 }
 
 // Pill shape class
 
 .pill-1 {
-  border-radius: 8px;
+    border-radius: 8px;
 }
 
 .border-0 {
-  border: none !important;
+    border: none !important;
 }
 
 .page-section {
-  padding-top: $page-section-padding-top;
-  padding-bottom: $page-section-padding-bottom;
+    padding-top: $page-section-padding-top;
+    padding-bottom: $page-section-padding-bottom;
 }
 
 // Normal link styles.
 a {
-  color: #5e5e5e;
-  cursor: pointer;
-  text-decoration: underline;
+    color: #5e5e5e;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 a:hover {
-  color: #636363;
-  text-decoration: none;
+    color: #636363;
+    text-decoration: none;
 }
 
 header :link {
-  text-decoration: none;
-  font-size: 0.88rem;
+    text-decoration: none;
+    font-size: 0.88rem;
 }
 
 header :link:hover {
-  background: hsl(0 0% 0% / 0.65);
-  text-decoration: none;
-  border-radius: $border-radius;
+    background: hsl(0 0% 0% / 0.65);
+    text-decoration: none;
+    border-radius: $border-radius;
 }
 
 //-----------------------------
 // bg image (old)
 //-----------------------------
 .image-container {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .image-container img {
-  display: none;
+    display: none;
 }
 
 //testimonials
 .image-text-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 0.7em;
-  gap: 0.2em;
-  box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7em;
+    gap: 0.2em;
+    box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
 
-  .left-group {
-    margin-right: 20px;
-    width: 28%;
-    align-self: center;
-  }
+    .left-group {
+        margin-right: 20px;
+        width: 28%;
+        align-self: center;
+    }
 }
 
 .text-group {
-  gap: 0.3em;
-  display: flex;
-  flex-direction: column;
-  flex: 4;
+    gap: 0.3em;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
 
-  .signature {
-    font-size: 0.7em;
-    font-style: italic;
-    margin-top: 5px;
-  }
+    .signature {
+        font-size: 0.7em;
+        font-style: italic;
+        margin-top: 5px;
+    }
 }
 
 //cookie consent
 .cookie-consent-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: $light-color;
-  color: $dark-color;
-  text-align: center;
-  padding: 15px;
-  z-index: 1100;
-  display: none;
-
-  a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $light-color;
     color: $dark-color;
+    text-align: center;
+    padding: 15px;
+    z-index: 1100;
+    display: none;
 
-    &:hover {
-      color: darken($dark-color, 10%);
+    a {
+        color: $dark-color;
+
+        &:hover {
+            color: darken($dark-color, 10%);
+        }
     }
-  }
 
-  p {
-    margin: 0;
-    margin-right: 10px;
-    display: inline-block;
-  }
+    p {
+        margin: 0;
+        margin-right: 10px;
+        display: inline-block;
+    }
 }
 
 // custom scrollbars
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: #a1a1a1 #e8e8e8;
-  box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #a1a1a1 #e8e8e8;
+    box-sizing: border-box;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #e8e8e8;
+    background: #e8e8e8;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #b0b0b0;
-  border-radius: 8px;
-  border: 1px solid #b0b0b0;
+    background-color: #b0b0b0;
+    border-radius: 8px;
+    border: 1px solid #b0b0b0;
 }
 
 //sticky header
 .header-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 //-------------------------------------------------
 // Icon classes - circle
 //-------------------------------------------------
 .icon-circle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: $border-color;
-  color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $border-color;
+    color: white;
 }
 
 .nav-dropdown {
-  .dropdown-content {
-    a {
-      padding-left: 12px;
+    .dropdown-content {
+        a {
+            padding-left: 12px;
+        }
     }
-  }
 }
 
 //fix for code formatting
 .language-html,
 .language-scss,
 .language-css {
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .border-right::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 5px;
-  width: 0;
-  height: 85%;
-  border-right: 1px solid $border-color;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 0;
+    height: 85%;
+    border-right: 1px solid $border-color;
 }
 
 .border-top {
-  border-top: 1px solid $border-color;
+    border-top: 1px solid $border-color;
 }
 
 .border-bottom {
-  position: relative;
+    position: relative;
 }
 
 .border-bottom::after {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $border-color;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $border-color;
+    z-index: -1;
 }
 
 .text-decoration-none {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #skip-navigation {
-  position: absolute;
-  left: -9999px;
+    position: absolute;
+    left: -9999px;
 }
 
 .skip-link:focus {
-  left: 0;
-  top: 0;
-  width: auto;
-  height: auto;
-  padding: 5px;
-  z-index: 999;
-  background-color: #fff;
-  text-align: center;
-  font-weight: bold;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    z-index: 999;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
 
 .video-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .video-container video {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .youtube\:video-container {
-  display: block;
-  /* Ensures block-level element behavior */
-  width: 100%;
-  /* Full width of the container */
-  aspect-ratio: 16 / 9;
-  /* Maintains a 16:9 aspect ratio */
-  margin: 0 auto;
-  /* Center align if necessary and add some space around */
+    display: block;
+    /* Ensures block-level element behavior */
+    width: 100%;
+    /* Full width of the container */
+    aspect-ratio: 16 / 9;
+    /* Maintains a 16:9 aspect ratio */
+    margin: 0 auto;
+    /* Center align if necessary and add some space around */
 }
 
 .youtube\:video-container iframe {
-  display: block;
-  /* Remove default inline framing */
-  width: 100%;
-  /* Full width of the container */
-  height: 100%;
-  /* Full height based on the aspect ratio */
-  border: none;
-  /* Optional, removes the border */
+    display: block;
+    /* Remove default inline framing */
+    width: 100%;
+    /* Full width of the container */
+    height: 100%;
+    /* Full height based on the aspect ratio */
+    border: none;
+    /* Optional, removes the border */
 }
 
 /*
@@ -648,181 +644,181 @@ For more straightforward sizing in CSS, we switch the global box-sizing value fr
 On the rare occasion you need to override it, use something like the following:
 */
 .content-box {
-  box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .text-superscript {
-  vertical-align: super;
-  font-size: 0.5em;
-  position: relative;
+    vertical-align: super;
+    font-size: 0.5em;
+    position: relative;
 }
 
 .bg-black {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 .modal-sm {
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .link-white {
-  color: white;
+    color: white;
 
-  &:hover {
-    color: darken(white, 10%);
-  }
+    &:hover {
+        color: darken(white, 10%);
+    }
 }
 
 .fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .fade-in {
-  opacity: 1;
-  transition: opacity 0.5s ease;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .br-left {
-  border-top-left-radius: $border-radius !important;
-  border-bottom-left-radius: $border-radius !important;
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
 }
 
 .br-right {
-  border-top-right-radius: $border-radius !important;
-  border-bottom-right-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
 }
 
 //Utilities for clamping text to a specific number of lines.
 .line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .line-clamp-3 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 .line-clamp-4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .line-clamp-5 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
 }
 
 .line-clamp-6 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
 }
 
 .line-clamp-none {
-  overflow: visible;
-  display: block;
-  -webkit-box-orient: horizontal;
-  -webkit-line-clamp: none;
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: none;
 }
 
 .hero-section {
-  padding-top: 65px !important;
-  padding-bottom: 65px !important;
+    padding-top: 65px !important;
+    padding-bottom: 65px !important;
 }
 
 .underline-handdrawn {
-  background-image: url("../img/placeholder/underline.svg");
-  background-repeat: repeat-x;
-  background-position: bottom center;
-  background-size: 100%;
-  padding-bottom: 8px;
-  text-decoration: none;
-  display: inline-block;
+    background-image: url("../img/placeholder/underline.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .code {
-  margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .border-top-0 {
-  border-top: none !important;
+    border-top: none !important;
 }
 
 .border-bottom-0 {
-  border-bottom: none !important;
+    border-bottom: none !important;
 }
 
 /* Styles for the tabbed card */
 .tabbed-card {
-  margin: 0 auto;
-  padding: 0;
-  gap: 0 !important;
-  border-radius: $border-radius;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0 !important;
+    border-radius: $border-radius;
 }
 
 /* Styles for the tab header container */
 .tab-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding-bottom: 0;
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  border: 1px solid $border-color;
-  border-bottom: none;
-  padding-left: 10px;
-  padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 0;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border: 1px solid $border-color;
+    border-bottom: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Styles for individual tabs */
 
 /* Styles for tab content */
 .tab-content {
-  padding: 20px;
-  border: 1px solid $border-color;
-  border-radius: 0 0 $border-radius $border-radius;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 0 0 $border-radius $border-radius;
 }
 
 .panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
 
 .panel::after {
-  content: "";
-  display: block;
-  height: 200px;
+    content: "";
+    display: block;
+    height: 200px;
 }
 
 .active-toggle {
-  background-color: rgba(199, 199, 199, 0.3) !important;
+    background-color: rgba(199, 199, 199, 0.3) !important;
 }
 
 // .bg-ui-hover
 
 /* Hide tab content by default */
 .tab-content:not(.active) {
-  display: none;
+    display: none;
 }
 
 //----------------
@@ -830,39 +826,42 @@ On the rare occasion you need to override it, use something like the following:
 //---------------
 
 .close {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 16px; /* Adjust as needed */
-  padding: 8px; 
-  color: $grey-3;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust as needed */
+    padding: 8px;
+    color: $grey-3;
 }
 
 .close:before {
-  content: '\ea29';
-  font-family: 'zenicons'; 
-  display: inline-block;
-
+    content: "\ea29";
+    font-family: "zenicons";
+    display: inline-block;
 }
 
 .close:hover:before {
-  content: '\ea04'; 
-  color: $grey-3;
+    content: "\ea04";
+    color: $grey-3;
 }
 
-.naked{
-  background: unset !important;
-  border: unset !important;
+.naked {
+    background: unset !important;
+    border: unset !important;
 }
 
 .overlay {
-  position: absolute; /* Absolute position to overlay on top of the image */
-  top: 0; /* Align to top */
-  right: 0; /* Align to right */
-  bottom: 0; /* Align to bottom */
-  left: 0; /* Align to left */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Gradient effect */
-  z-index: 1; /* Ensure it's above the image */
+    position: absolute; /* Absolute position to overlay on top of the image */
+    top: 0; /* Align to top */
+    right: 0; /* Align to right */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        transparent
+    ); /* Gradient effect */
+    z-index: 1; /* Ensure it's above the image */
 }
 
 // .pattern-interrupt {
@@ -880,18 +879,17 @@ On the rare occasion you need to override it, use something like the following:
 // }
 
 // .lazy-load {
-//   font-size: 0; 
-//   background-color: red; 
-//   max-width: 100%; 
-//   min-height: 100px; 
+//   font-size: 0;
+//   background-color: red;
+//   max-width: 100%;
+//   min-height: 100px;
 //   display: block;
 // }
 
 // .lazy-load[src=""]::after {
 //   content: attr(alt);
-//   font-size: initial; 
+//   font-size: initial;
 // }
-
 
 //docyument these in bgcolor for primary themes
 //.bg-accent-hover:hover{
@@ -902,6 +900,6 @@ On the rare occasion you need to override it, use something like the following:
 
 // // }
 
-.zen-body-bg-color{
-  background: $zen-body-bg-color;
+.zen-body-bg-color {
+    background: $zen-body-bg-color;
 }

@@ -8,23 +8,23 @@
 // test classes - for on the fly troubleshooting
 //---------------------------------------------------------
 .test-1 {
-  outline: 2px dotted $red;
+    outline: 2px dotted $red;
 }
 
 .test-2 {
-  outline: 2px solid $red;
+    outline: 2px solid $red;
 }
 
 .test-3 {
-  outline: 4px solid $green;
+    outline: 4px solid $green;
 }
 
 .test-4 {
-  outline: 2px solid $blue;
+    outline: 2px solid $blue;
 }
 
 .test-5 {
-  outline: 2px solid $orange;
+    outline: 2px solid $orange;
 }
 
 //---------------------------------------------------------
@@ -32,42 +32,42 @@
 //---------------------------------------------------------
 
 .z-container-outline-on {
-  outline: 2px dashed $blue;
-  border-radius: 0;
-  //outline-offset: 2px;
+    outline: 2px dashed $blue;
+    border-radius: 0;
+    //outline-offset: 2px;
 }
 
 .z-container-fluid-outline-on {
-  outline: 2px dashed $purple;
-  border-radius: 0;
+    outline: 2px dashed $purple;
+    border-radius: 0;
 }
 
 .z-row-outline-on {
-  // outline: 3px solid $green;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 1px green; /* Creates a 1px inset 'outline' */
+    // outline: 3px solid $green;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1px green; /* Creates a 1px inset 'outline' */
 }
 
 .z-col-outline-on {
-  //outline: 2px solid $red;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 1px red; /* Creates a 1px inset 'outline' */
+    //outline: 2px solid $red;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1px red; /* Creates a 1px inset 'outline' */
 }
 
 .p-outline-on {
-  outline: 1px solid $orange;
+    outline: 1px solid $orange;
 }
 
 .h1-outline-on {
-  outline: 2px dotted $orange;
+    outline: 2px dotted $orange;
 }
 
 .h-outline-on {
-  outline: 2px solid $orange;
+    outline: 2px solid $orange;
 }
 
 .center-line {
-  display: none;
+    display: none;
 }
 
 //---------------------------------------------------------
@@ -76,12 +76,12 @@
 
 /*  test in docs to see if its good. need to integrate into testing vs being a div */
 .center-line-outline-on {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 130%;
-  z-index: 10000;
-  background-color: rgb(191, 191, 191);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 130%;
+    z-index: 10000;
+    background-color: rgb(191, 191, 191);
 }

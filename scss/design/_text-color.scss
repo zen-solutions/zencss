@@ -6,66 +6,66 @@
 
 // Define a map for colors
 $colors: (
-  "primary": $primary-color,
-  "secondary": $secondary-color,
-  "accent": $accent-color,
-  "cta": $cta-color,
-  "ghost": $light-color,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "blue": $blue,
-  "purple": $purple,
-  "white": $text-white,
-  "black": $text-black,
-  "grey": $grey,
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "accent": $accent-color,
+    "cta": $cta-color,
+    "ghost": $light-color,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "blue": $blue,
+    "purple": $purple,
+    "white": $text-white,
+    "black": $text-black,
+    "grey": $grey,
 );
 
 // Mixin to generate text color classes
 @mixin text-color-classes($color-name, $color-value) {
-  .text-#{$color-name} {
-    color: $color-value !important;
-  }
-  .text-#{$color-name}-dark {
-    color: darken($color-value, 10%) !important;
-  }
-  .text-#{$color-name}-light {
-    color: lighten($color-value, 10%) !important;
-  }
+    .text-#{$color-name} {
+        color: $color-value !important;
+    }
+    .text-#{$color-name}-dark {
+        color: darken($color-value, 10%) !important;
+    }
+    .text-#{$color-name}-light {
+        color: lighten($color-value, 10%) !important;
+    }
 }
 
 // generate text color classes for all colors
 @each $color-name, $color-value in $colors {
-  @include text-color-classes($color-name, $color-value);
+    @include text-color-classes($color-name, $color-value);
 }
 
 // grey light and darks
 $grey-colors: (
-  "grey-1": #f7f7f7,
-  "grey-2": #c7c6c6,
-  "grey-3": #a6a6a6,
-  "grey-4": #616161,
-  "grey-5": #404040,
-  "grey-6": #0d0d0d,
+    "grey-1": #f7f7f7,
+    "grey-2": #c7c6c6,
+    "grey-3": #a6a6a6,
+    "grey-4": #616161,
+    "grey-5": #404040,
+    "grey-6": #0d0d0d,
 );
 
 // create base grey colors - bg and text
 @each $color-name, $color-value in $grey-colors {
-  .text-#{$color-name} {
-    color: $color-value !important;
-  }
+    .text-#{$color-name} {
+        color: $color-value !important;
+    }
 }
 
 // Light and dark universal colors
 // Define a mixin to generate text color classes for dark and light variations
 @mixin generate-color-classes($color-name, $color-dark, $color-light) {
-  .text-#{$color-name}-dark {
-    color: $color-dark !important;
-  }
-  .text-#{$color-name}-light {
-    color: $color-light !important;
-  }
+    .text-#{$color-name}-dark {
+        color: $color-dark !important;
+    }
+    .text-#{$color-name}-light {
+        color: $color-light !important;
+    }
 }
 
 /* Apply the mixin for each color */
@@ -82,8 +82,5 @@ $grey-colors: (
 // }
 
 .text-danger {
-  color: $text-danger;
+    color: $text-danger;
 }
-
-
-

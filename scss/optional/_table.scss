@@ -8,91 +8,80 @@ $responsive-breakpoint: 767px;
 
 .responsive-table,
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 
 th,
 td {
-  padding: 8px;
-  text-align: left;
+    padding: 8px;
+    text-align: left;
 }
 
-.zebra{
-  th{
-    background: darken($bg-ui-hover, 24%);
-  }
-  tr:nth-child(odd) td {
-    background: darken($bg-ui-hover, 16%);
-  }
-  tr:nth-child(even) td {
-    background: darken($bg-ui-hover, 8%);
-  }
+.zebra {
+    th {
+        background: darken($bg-ui-hover, 24%);
+    }
+    tr:nth-child(odd) td {
+        background: darken($bg-ui-hover, 16%);
+    }
+    tr:nth-child(even) td {
+        background: darken($bg-ui-hover, 8%);
+    }
 }
 
-.striped{
-
-
-  th,
-td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid $border-color;
+.striped {
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid $border-color;
+    }
+    th {
+        border-bottom: 1px solid darken($border-color, 10%);
+    }
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
 }
-th{
-  border-bottom: 1px solid darken($border-color, 10%);
-}
-tbody tr:last-child td {
-  border-bottom: none;
-}
-
-}
-
-
 
 th {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .responsive-table thead {
-  @media (max-width: $responsive-breakpoint) {
-    display: none;
-    th {
-      background-color: inherit;
+    @media (max-width: $responsive-breakpoint) {
+        display: none;
+        th {
+            background-color: inherit;
+        }
     }
-  }
 }
 
 @media (max-width: $responsive-breakpoint) {
-  .responsive-table tbody {
-    .responsive-table tr {
-      @include default-state;
-      // @include hover-state;
+    .responsive-table tbody {
+        .responsive-table tr {
+            @include default-state;
+            // @include hover-state;
 
-      background-color: rgba(
-        111,
-        111,
-        111,
-        0.1
-      ); 
+            background-color: rgba(111, 111, 111, 0.1);
 
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    td {
-      @media (max-width: $responsive-breakpoint) {
-        display: flex;
-
-        &:before {
-          content: attr(data-label);
-          font-weight: bold;
-          margin-right: 10px;
-          text-align: left;
+            display: block;
+            margin-bottom: 20px;
         }
-      }
-    }
-  }
-}
 
+        td {
+            @media (max-width: $responsive-breakpoint) {
+                display: flex;
+
+                &:before {
+                    content: attr(data-label);
+                    font-weight: bold;
+                    margin-right: 10px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -5,13 +5,13 @@
   */
 
 @mixin default-state {
-  background: lighten($bg-ui-hover, 5%);
+    background: lighten($bg-ui-hover, 5%);
 }
 
 @mixin hover-state {
-  &:hover {
-    background: darken($bg-ui-hover, 15%);
-  }
+    &:hover {
+        background: darken($bg-ui-hover, 15%);
+    }
 }
 
 // @mixin default-state {
@@ -28,36 +28,35 @@
 //   }
 // }
 
-
 //hover state for buttons
 @mixin hover-darken($color, $amount: 12%) {
-  &:hover {
-    background: darken($color, $amount) !important;
-  }
+    &:hover {
+        background: darken($color, $amount) !important;
+    }
 }
 
-//hover state for new ghost buttons (-outline versions, can depricate btn-outline versions unless needed for themes) 
+//hover state for new ghost buttons (-outline versions, can depricate btn-outline versions unless needed for themes)
 // Purpose: receive the bg color and smart text color as args, use them to define a wcag compliant hover state for -outline buttons
 @mixin hover-outline($bg-color, $text-color) {
-  &:hover {
-    background: $bg-color !important;
-    color: $text-color !important;
-  }
+    &:hover {
+        background: $bg-color !important;
+        color: $text-color !important;
+    }
 }
 
 //spacing for h1-h6
 @mixin font-spacing {
-  margin: 0;
-  padding: 1rem 0;
+    margin: 0;
+    padding: 1rem 0;
 }
 
 //headline for h1/h6
 
 @mixin headline {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 
 @mixin padding {
-padding: 1em;
+    padding: 1em;
 }

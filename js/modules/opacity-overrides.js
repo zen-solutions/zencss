@@ -1,19 +1,19 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
 //--------------------------------------------------------
 // Bg-blur and opacity overrides
 //--------------------------------------------------------
 
 const elements = document.querySelectorAll(
-  '[class*="bg-opaque"], [class*="bg-blur"]'
+    '[class*="bg-opaque"], [class*="bg-blur"]',
 );
 elements.forEach((element) => {
-  const descendants = element.querySelectorAll("*");
-  descendants.forEach((descendant) => {
-      descendant.style.opacity = "100%";
-  });
+    const descendants = element.querySelectorAll("*");
+    descendants.forEach((descendant) => {
+        descendant.style.opacity = "100%";
+    });
 });

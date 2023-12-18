@@ -1,25 +1,27 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2023 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
-document.addEventListener('DOMContentLoaded', function() {
-    var accordionToggles = document.querySelectorAll('.accordion-toggle');
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2023 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    var accordionToggles = document.querySelectorAll(".accordion-toggle");
 
-    accordionToggles.forEach(function(accordionToggle) {
-        accordionToggle.addEventListener('click', function() {
+    accordionToggles.forEach(function (accordionToggle) {
+        accordionToggle.addEventListener("click", function () {
             // Determine if the clicked toggle is being expanded
-            var isExpanding = this.getAttribute('aria-expanded') === 'false';
+            var isExpanding = this.getAttribute("aria-expanded") === "false";
 
             // Remove active class from all toggles and reset icons
-            accordionToggles.forEach(function(otherToggle) {
-                otherToggle.classList.remove('active-toggle');
-                otherToggle.setAttribute('aria-expanded', 'false');
-                
-                var otherIcon = otherToggle.querySelector('.zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down');
+            accordionToggles.forEach(function (otherToggle) {
+                otherToggle.classList.remove("active-toggle");
+                otherToggle.setAttribute("aria-expanded", "false");
+
+                var otherIcon = otherToggle.querySelector(
+                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
+                );
                 if (otherIcon) {
-                    otherIcon.classList.remove('zenicon-keyboard-arrow-down');
-                    otherIcon.classList.add('zenicon-keyboard-arrow-right');
+                    otherIcon.classList.remove("zenicon-keyboard-arrow-down");
+                    otherIcon.classList.add("zenicon-keyboard-arrow-right");
                 }
 
                 var otherPanel = otherToggle.nextElementSibling;
@@ -28,23 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Set the clicked toggle as active if it's expanding
             if (isExpanding) {
-                this.classList.add('active-toggle');
-                this.setAttribute('aria-expanded', 'true');
+                this.classList.add("active-toggle");
+                this.setAttribute("aria-expanded", "true");
 
-                var icon = this.querySelector('.zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down');
+                var icon = this.querySelector(
+                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
+                );
                 if (icon) {
-                    icon.classList.remove('zenicon-keyboard-arrow-right');
-                    icon.classList.add('zenicon-keyboard-arrow-down');
+                    icon.classList.remove("zenicon-keyboard-arrow-right");
+                    icon.classList.add("zenicon-keyboard-arrow-down");
                 }
 
                 var panel = this.nextElementSibling;
-                panel.style.maxHeight = panel.scrollHeight > 200 ? '1000px' : (panel.scrollHeight + 10) + "px";
+                panel.style.maxHeight =
+                    panel.scrollHeight > 200
+                        ? "1000px"
+                        : panel.scrollHeight + 10 + "px";
             }
         });
     });
 });
-
-
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const accordion = document.querySelector('.accordion');
@@ -82,5 +87,3 @@ document.addEventListener('DOMContentLoaded', function() {
 //     });
 //   }
 // });
-
-

@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/layout-grids.html">Layout Grids</a>
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
                     <a href="../examples/product-row.html">Product Row</a>
+                    <a href="../examples/faq.html">FAQ</a>
                     <a href="../examples/footer.html">Footer</a>
                 </div>
             </div>

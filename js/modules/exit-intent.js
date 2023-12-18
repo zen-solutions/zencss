@@ -1,9 +1,8 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
-
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
 // ----------------------------------------
 // Exit Intent
@@ -23,7 +22,7 @@ function closeModal() {
     if (modal) {
         modal.style.display = "none";
         // Set the flag in local storage with the current timestamp
-        localStorage.setItem('modalClosed', new Date().getTime());
+        localStorage.setItem("modalClosed", new Date().getTime());
     }
 }
 
@@ -41,7 +40,7 @@ if (span) {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         closeModal();
     }
@@ -49,23 +48,22 @@ window.onclick = function(event) {
 
 // Check local storage to see if we should show the modal
 function shouldShowModal() {
-    var modalClosedTime = localStorage.getItem('modalClosed');
+    var modalClosedTime = localStorage.getItem("modalClosed");
     if (modalClosedTime) {
         var now = new Date();
-        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
+        var daysPassed =
+            (now.getTime() - parseInt(modalClosedTime, 10)) /
+            (1000 * 3600 * 24);
         return daysPassed >= 7;
     }
     return true;
 }
 
 // Trigger the modal after 8 seconds if the user hasn't closed it already
-setTimeout(function() {
-    document.addEventListener('mousemove', function(e) {
+setTimeout(function () {
+    document.addEventListener("mousemove", function (e) {
         if (e.clientY <= 5) {
             tryToShowModal();
         }
     });
 }, 8000);
-
-
- 

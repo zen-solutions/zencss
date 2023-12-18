@@ -1,51 +1,50 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
- 
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
 
 // ----------------------------------------
 // Star component
 // ----------------------------------------
 class StarComponent extends HTMLElement {
-  constructor() {
-      super();
-      this.attachShadow({ mode: "open" });
-      this.render();
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+        this.render();
+    }
 
-  static get observedAttributes() {
-      return ["stars", "half"];
-  }
+    static get observedAttributes() {
+        return ["stars", "half"];
+    }
 
-  attributeChangedCallback(name, oldValue, newValue) {
-      this.render();
-  }
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.render();
+    }
 
-  render() {
-      const starCount = parseInt(this.getAttribute("stars")) || 1;
-      const half = this.getAttribute("half") === "true";
-      const fragment = document.createDocumentFragment();
+    render() {
+        const starCount = parseInt(this.getAttribute("stars")) || 1;
+        const half = this.getAttribute("half") === "true";
+        const fragment = document.createDocumentFragment();
 
-      for (let i = 0; i < starCount; i++) {
-          const starImg = document.createElement("img");
-          starImg.src = "../../img/icons/alerts/star-solid.svg";
-          starImg.alt = "";
-          starImg.className = "icon icon-gold";
-          fragment.appendChild(starImg);
-      }
+        for (let i = 0; i < starCount; i++) {
+            const starImg = document.createElement("img");
+            starImg.src = "../../img/icons/alerts/star-solid.svg";
+            starImg.alt = "";
+            starImg.className = "icon icon-gold";
+            fragment.appendChild(starImg);
+        }
 
-      if (half && starCount < 5) {
-          const halfStarImg = document.createElement("img");
-          halfStarImg.src =
-              "../../img/icons/alerts/star-half-stroke-regular.svg";
-          halfStarImg.alt = "";
-          halfStarImg.className = "icon icon-gold";
-          fragment.appendChild(halfStarImg);
-      }
+        if (half && starCount < 5) {
+            const halfStarImg = document.createElement("img");
+            halfStarImg.src =
+                "../../img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.alt = "";
+            halfStarImg.className = "icon icon-gold";
+            fragment.appendChild(halfStarImg);
+        }
 
-      this.shadowRoot.innerHTML = `
+        this.shadowRoot.innerHTML = `
           <style>
               .icon {
                   width: 24px;
@@ -62,8 +61,8 @@ class StarComponent extends HTMLElement {
         }
           </style>
       `;
-      this.shadowRoot.appendChild(fragment);
-  }
+        this.shadowRoot.appendChild(fragment);
+    }
 }
 
 customElements.define("star-component", StarComponent);
