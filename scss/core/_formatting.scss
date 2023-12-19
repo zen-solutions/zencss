@@ -232,18 +232,18 @@ $d-values: (
 }
 
 .overflow-hidden {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .overflow-auto {
-    overflow: auto;
+    overflow: auto !important;
 }
 .overflow-scroll {
-    overflow: scroll;
+    overflow: scroll !important;
 }
 
 .overflow-visible {
-    overflow: visible;
+    overflow: visible !important;
 }
 
 .vertical-center {

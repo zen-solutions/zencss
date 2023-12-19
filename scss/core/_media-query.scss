@@ -395,6 +395,11 @@
     padding-right: 2em;
 }
 
+.narrow-xl {
+    padding-left: 15%;
+    padding-right:15%;
+}
+
 //---------------------------------------------
 // Devices with Max 992px width
 //---------------------------------------------
@@ -411,6 +416,11 @@
     .narrow-right {
         padding-left: 1.2em;
         padding-right: 1.2em;
+    }
+
+    .narrow-xl {
+        padding-left: unset;
+        padding-right: unset;
     }
     .tablet-reverse > :nth-z-col(1) {
         order: 2;
