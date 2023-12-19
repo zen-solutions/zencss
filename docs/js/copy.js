@@ -87,19 +87,29 @@ preElements.forEach(function (textBox) {
 
 
 //dupe hamburger for header page
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
-	const hamburgerButton2 = document.getElementById("hamburger-button-2");
+	//const hamburgerButton2 = document.getElementById("hamburger-button-2");
 	const closeButton = document.getElementById("close-button");
-	const nav = document.querySelector("nav");
+    const nav = document.querySelector(".top-nav"); 
   
 	const toggleMenu = () => {
 		nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
 	};
   
-	if (hamburgerButton2) {
-		hamburgerButton2.addEventListener("click", toggleMenu);
-	}
+    if (hamburgerButton2 && closeButton && nav) {
+       // hamburgerButton.addEventListener("click", toggleMenu);
+        closeButton.addEventListener("click", toggleMenu);
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", toggleMenu); 
+        });
+    }
+    
   });
+
+
 
   //add remove on framework page
   document.addEventListener('DOMContentLoaded', function() {

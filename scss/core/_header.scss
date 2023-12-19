@@ -1,8 +1,9 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
+
 
 header {
     display: flex;
@@ -24,7 +25,7 @@ header {
     }
 }
 
-nav ul {
+.top-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ nav ul {
     height: 100%;
 }
 
-nav li {
+.top-nav li {
     margin-left: 20px;
     height: 4%;
     display: flex;
@@ -41,15 +42,15 @@ nav li {
     align-self: center;
 }
 
-nav :link {
+.top-nav :link {
     color: $light-color;
     text-decoration: none;
 }
 
-nav a:hover {
+.top-nav a:hover {
     color: $light-color;
-    text-decoration: underline;
-    background: hsla(0, 0%, 60%, 0.1);
+    text-decoration: none;
+    background: hsla(0, 0%, 60%, 0.3);
 }
 
 .nav-dropdown {
@@ -77,7 +78,7 @@ header {
     z-index: 1001;
 }
 
-.nav .li {
+.top-nav .li {
     max-height: 52px;
 }
 
@@ -85,7 +86,7 @@ header {
     height: 40px;
 }
 
-#hamburger-button,
+#hamburger-button-2,
 #close-button {
     font-size: 30px;
     cursor: pointer;
@@ -97,22 +98,22 @@ header {
     padding: 0;
 }
 
-nav {
+.top-nav {
     display: flex;
 }
 
-nav ul {
+.top-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+.top-nav li {
     margin: 0 10px;
 }
 
-nav a {
+.top-nav a {
     color: $nav-link-color;
     text-decoration: none;
     padding: 10px;
@@ -120,13 +121,24 @@ nav a {
     transition: color 0.3s;
 }
 
+@media (min-width: 768px) {
+    #hamburger-button {
+        display: none;
+    }
+
+}
+
 /* Mobile & Tablet Styles */
 @media (max-width: 768px) {
-    #hamburger-button {
+    #hamburger-button-2 {
         display: block;
     }
 
-    nav {
+    .nav-link{
+        width: 90%;
+    }
+
+    .top-nav {
         position: fixed;
         top: 50px;
         left: -250px;
@@ -138,12 +150,12 @@ nav a {
         background: $nav-color;
     }
 
-    nav ul {
+    .top-nav ul {
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
-    nav li {
+    .top-nav li {
         margin: 0;
         height: 40px;
         display: block;
@@ -155,8 +167,14 @@ nav a {
         display: block;
         position: absolute;
         top: -10px;
-        right: 0;
+        right: -5px;
         width: $ui-button-size;
         height: $ui-button-size;
     }
 }
+
+.icon-header{
+    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
+    margin-right: 5px;
+}
+
