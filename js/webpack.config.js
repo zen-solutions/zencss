@@ -37,5 +37,7 @@ module.exports = {
         filename: "zencss.js",
         path: path.resolve(__dirname, "../js"),
     },
-    mode: "production", // Use 'development' for non-minified output
+    mode: "development", // Use 'development' for non-minified output
+
+    devtool: false
 };
