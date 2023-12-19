@@ -10,7 +10,7 @@
 
 /* Variables */
 $btn-color: $cta-color;
-$btn-hover-color: darken($cta-color, 20%);
+$btn-hover-color: darken($cta-color, 10%);
 
 /* Mixin for hover styles */
 @mixin btn-hover($bg-color, $border-color: $bg-color) {
@@ -21,8 +21,6 @@ $btn-hover-color: darken($cta-color, 20%);
 
 button,
 .btn {
-    @include btn-hover($btn-hover-color);
-
     box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
@@ -40,6 +38,11 @@ button,
     font-size: 0.9em;
     font-family: $zen-font-family;
     z-index: 3;
+
+    &:hover{
+        background: lighten($bg-header-footer, 30%);
+
+    }
 }
 
 .disabled {
@@ -51,7 +54,7 @@ button,
 //css stuff
 .btn {
     // this should already be in scaffold. dupe attributes or why needed?
-    background-color: $btn-color;
+   // background-color: $btn-color;
     display: inline-flex !important;
     position: relative;
 }
@@ -307,8 +310,8 @@ $text-cta: $cta-color;
     padding: 11px;
 
     &:hover {
-        background: lighten($dark-color, 10%);
-        border: 2px solid lighten($dark-color, 10%);
+        background: darken($light-color, 15%);
+        border: 2px solid darken($light-color, 50%);
     }
 }
 
