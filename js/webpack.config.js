@@ -10,12 +10,12 @@ module.exports = {
     entry: {
         app: [
             "/modules/custom-elements.js",
-            "/modules/nested-containers.js",
+           // "/modules/nested-containers.js", //depricated
             "/modules/carousel.js",
             "/modules/dropdown.js",
             "/optional/image-gallery.js",
             "/modules/accordian.js",
-            //      '/optional/lazy-load.js',
+            //      '/optional/lazy-load.js',  //wip
             "/modules/misc.js",
             "/modules/opacity-overrides.js",
             "/modules/dark-mode.js",

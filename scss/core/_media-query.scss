@@ -174,7 +174,7 @@
 
 @media (min-width: 992px) {
     .zen {
-        font-size: $zen-font-size; // Override the base font size for desktops
+        font-size: $zen-large-screen-font-size; // Override the base font size for desktops
     }
 
     & .z-container,

@@ -8,9 +8,9 @@
 //   Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$primary-color: #034694;
+$primary-color: rgb(3, 69, 145);
 $secondary-color: #43742c;
-$accent-color: #e7c129;
+$accent-color: #f4d24b;
 $cta-color: #1560bd;
 
 // new - bg colors for light and dark mode themes/buttons etc.
@@ -21,12 +21,12 @@ $light-mode-color: rgba(255, 255, 255, 0.7);
 //  Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$red: #d82b1c;
-$orange: #efa608;
-$yellow: #efc239;
-$green: #34a853;
-$blue: #4285f4;
-$purple: #a142f4;
+$red: #ff2222;
+$orange: rgb(251, 174, 66);
+$yellow: #fbcd43;
+$green: #48cc6b;
+$blue: #5394fc;
+$purple: #ab56f4;
 
 //------------------------------------------
 //  Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
@@ -74,76 +74,76 @@ $grey-ui-text-color: #727272;
 //------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color, 7%);
+$primary-color-dark: darken($primary-color, 10%);
 $primary-color-darker: darken($primary-color, 12%);
 $primary-color-darkest: darken($primary-color, 16%);
-$secondary-color-dark: darken($secondary-color, 7%);
+$secondary-color-dark: darken($secondary-color,10%);
 $secondary-color-darker: darken($secondary-color, 12%);
-$secondary-color-darkest: darken($secondary-color, 16%);
-$cta-color-dark: darken($cta-color, 7%);
+$secondary-color-darkest: darken($secondary-color, 15%);
+$cta-color-dark: darken($cta-color, 10%);
 $cta-color-darker: darken($cta-color, 12%);
 $cta-color-darkest: darken($cta-color, 16%);
-$accent-color-dark: darken($accent-color, 7%);
+$accent-color-dark: darken($accent-color, 10%);
 $accent-color-darker: darken($accent-color, 12%);
-$accent-color-darkest: darken($accent-color, 16%);
+$accent-color-darkest: darken($accent-color, 15%);
 
 //brand palette light
-$primary-color-light: lighten($primary-color, 7%);
+$primary-color-light: lighten($primary-color, 10%);
 $primary-color-lighter: lighten($primary-color, 12%);
 $primary-color-lightest: lighten($primary-color, 16%);
-$secondary-color-light: lighten($secondary-color, 7%);
+$secondary-color-light: lighten($secondary-color,10%);
 $secondary-color-lighter: lighten($secondary-color, 12%);
 $secondary-color-lightest: lighten($secondary-color, 16%);
-$cta-color-light: lighten($cta-color, 7%);
+$cta-color-light: lighten($cta-color, 10%);
 $cta-color-lighter: lighten($cta-color, 12%);
 $cta-color-lightest: lighten($cta-color, 16%);
-$accent-color-light: lighten($accent-color, 7%);
+$accent-color-light: lighten($accent-color, 10%);
 $accent-color-lighter: lighten($accent-color, 12%);
 $accent-color-lightest: lighten($accent-color, 16%);
 
 // Generic palette dark
-$red-dark: darken($red, 3%);
-$orange-dark: darken($orange, 7%);
-$yellow-dark: darken($yellow, 7%);
-$green-dark: darken($green, 7%);
-$blue-dark: darken($blue, 7%);
-$purple-dark: darken($purple, 7%);
+$red-dark: darken($red, 9%);
+$orange-dark: darken($orange, 9%);
+$yellow-dark: darken($yellow, 9%);
+$green-dark: darken($green, 9%);
+$blue-dark: darken($blue, 9%);
+$purple-dark: darken($purple,9%);
 
-$red-darker: darken($red, 6%);
+$red-darker: darken($red, 11%);
 $orange-darker: darken($orange, 12%);
 $yellow-darker: darken($yellow, 12%);
 $green-darker: darken($green, 12%);
 $blue-darker: darken($blue, 12%);
 $purple-darker: darken($purple, 12%);
 
-$red-darkest: darken($red, 16%);
-$orange-darkest: darken($orange, 16%);
-$yellow-darkest: darken($yellow, 16%);
-$green-darkest: darken($green, 16%);
-$blue-darkest: darken($blue, 16%);
-$purple-darkest: darken($purple, 16%);
+$red-darkest: darken($red, 13%);
+$orange-darkest: darken($orange, 15%);
+$yellow-darkest: darken($yellow, 15%);
+$green-darkest: darken($green, 15%);
+$blue-darkest: darken($blue, 15%);
+$purple-darkest: darken($purple, 15%);
 
 // Generic palette light
-$red-light: lighten($red, 7%);
-$orange-light: lighten($orange, 7%);
-$yellow-light: lighten($yellow, 7%);
-$green-light: lighten($green, 7%);
-$blue-light: lighten($blue, 7%);
-$purple-light: lighten($purple, 7%);
+$red-light: lighten($red, 8%);
+$orange-light: lighten($orange, 9%);
+$yellow-light: lighten($yellow, 9%);
+$green-light: lighten($green,9%);
+$blue-light: lighten($blue, 9%);
+$purple-light: lighten($purple, 9%);
 
-$red-lighter: lighten($red, 12%);
+$red-lighter: lighten($red, 11%);
 $orange-lighter: lighten($orange, 12%);
 $yellow-lighter: lighten($yellow, 12%);
 $green-lighter: lighten($green, 12%);
 $blue-lighter: lighten($blue, 12%);
 $purple-lighter: lighten($purple, 12%);
 
-$red-lightest: lighten($red, 16%);
-$orange-lightest: lighten($orange, 16%);
-$yellow-lightest: lighten($yellow, 16%);
-$green-lightest: lighten($green, 16%);
-$blue-lightest: lighten($blue, 16%);
-$purple-lightest: lighten($purple, 16%);
+$red-lightest: lighten($red, 13%);
+$orange-lightest: lighten($orange, 15%);
+$yellow-lightest: lighten($yellow, 15%);
+$green-lightest: lighten($green, 15%);
+$blue-lightest: lighten($blue, 15%);
+$purple-lightest: lighten($purple, 15%);
 
 // Grey palette dark
 $grey-1-dark: darken($grey-1, 10%);

@@ -178,3 +178,41 @@ header {
     margin-right: 5px;
 }
 
+//floating header - early experiment
+
+// .header-float {
+//     position: fixed; /* Keeps the header at the top */
+//     top: 10px; /* Space from the top */
+//     left: 50%; /* Center align the header */
+//     transform: translateX(-50%); /* Adjust for exact center alignment */
+//     width: 80%; /* Width of the header, adjust as needed */
+//     border-radius: 25px; /* Rounded corners for pill shape */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+//     z-index: 3; /* Ensures the header is above other content */
+//     padding: 10px 0; /* Vertical padding */
+//     text-align: center; /* Center the text or any inline content */
+//     transition: all 0.3s; /* Smooth transition for any changes */
+// }
+
+/* Styling for navigation and links */
+// .header-float .top-nav ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center; /* Center the navigation items */
+// }
+
+// .header-float .top-nav ul li {
+//     margin: 0 10px; /* Spacing between nav items */
+// }
+
+// .header-float .top-nav a.nav-link {
+//     text-decoration: none;
+//     color: #333;
+//     padding: 5px 10px;
+// }
+
+// /* Additional responsive adjustments as needed */
+// @media (max-width: 768px) {
+// }

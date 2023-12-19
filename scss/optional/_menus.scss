@@ -19,6 +19,12 @@
     justify-content: unset;
     color: $dark-color;
     line-height: 1.5em;
+    padding-left: 20px;
+    margin:0;
+
+    i{
+        margin-top:3px;
+    }
 }
 
 .active-highlight {

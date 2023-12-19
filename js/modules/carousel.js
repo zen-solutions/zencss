@@ -3,12 +3,10 @@
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
-
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".slider");
+    const sliders = document.querySelectorAll(".slider");
 
-    // Check if the slider element exists
-    if (slider) {
+    sliders.forEach((slider) => {
         const slidesContainer = slider.querySelector(".slides-container");
         const originalSlides = Array.from(slidesContainer.children);
         const totalOriginalSlides = originalSlides.length;
@@ -103,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         prevButton.addEventListener("mouseenter", stopAutoRotate);
         prevButton.addEventListener("mouseleave", startAutoRotate);
 
-        // Start auto-rotating
+        // Start auto-rotating for this slider
         startAutoRotate();
-    }
+    });
 });
