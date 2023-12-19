@@ -230,12 +230,12 @@ hr {
 //   min-height: 46px;
 // }
 
-button:hover,
-.btn:hover {
-    cursor: pointer;
-    background: lighten($bg-header-footer, 10%);
-    color: $light-color;
-}
+// button:hover,
+// .btn:hover {
+//     cursor: pointer;
+//     background: lighten($bg-header-footer, 10%);
+//     color: $light-color;
+// }
 
 button.bg-cta:hover {
     background: darken($cta-color, 8%);
