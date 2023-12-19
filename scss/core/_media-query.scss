@@ -453,6 +453,20 @@
         border-bottom: 1px solid $border-color;
     }
 
+    .tablet-order-0{
+        order:0;
+    }
+
+    .tablet-order-1{
+        order:1;
+    }
+
+    .tablet-order-2{
+        order:2;
+    }
+
+
+
     // h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     //margin: 0.15rem 0;
     // }
