@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
         var navHtml = `
         <div class="docs-nav">
-        <button id="hamburger-button">☰</button>
-    </div>
-        <nav>
-        <button id="close-button">×</button>
+        <a id="hamburger-button"><img src="../../img/icons/bars.svg" class="icon-header" alt="Menu"></a>
+        </div>
+        <nav class="top-nav">
+        <button id="close-button"><a class="close"></a></button>
         <ul class="pr-2">
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Center</a>

@@ -2,22 +2,22 @@
 
 An open-source, website authoring and design toolkit that helps you build, style, and debug websites. Currently working on RC for Beta v2.0.0. Est. launch - Q1 2024
 
-### Installation
+### Installation (WIP)
 
 - Download or clone the files [from the zencss repository](https://github.com/zen-solutions/zencss).
-- Follow the instructions in the [zenCSS setup documentation](https://zencss.com/docs/index.html#setup).
+- Follow the instructions in the [zenCSS setup documentation](https://zencss.com/docs/help-desk/installation.html).
 
 
 ## Features
 
-- Website Framework
-- Design System 
-- 6 color themes - customize for any brand
+- Smart-Align Framework
+- Smart-Color System
+- Smart-Text System
+- 7 color themes - customize for any brand
 - Shorthand HTML syntax - write less code
 - Utility Toolkit 
 - CSS Test mode
 - Design Library + components
-- Typography design system 
 
 ### Dependencies
 

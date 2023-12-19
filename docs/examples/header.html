@@ -20,9 +20,7 @@
         <div class="pl-2" id="header-logo">
             <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
-        <div class="docs-nav">
-            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
-        </div>
+
         <div id="nav-placeholder"></div>
 
     </header>
@@ -53,18 +51,20 @@
                     <div class="pl-2" id="header-logo">
                         <a href="../index.html"><img src="../../img/logo.png" alt=""></a>
                     </div>
-                    <div class="docs-nav" >
-<button id="hamburger-button-2"><i class="zenicon-dehaze h-30"></i></button>
-</div>
-                    <nav>
-                        <button id="close-button">×</button>
-                        <ul class="pr-2">
+                    <div>
+                        <a id="hamburger-button-2"><img src="../../img/icons/bars.svg" class="icon-header up-3" alt="Menu"></a>
+                    </div>
+                    <nav class="top-nav"> 
+                        <button id="close-button"><a class="close"></a></button>
+                        <ul>
                             <li><a href="#" class="nav-link">Home</a></li>
                             <li><a href="#" class="nav-link">Services</a></li>
                             <li><a href="#" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
+
+                
             </z-col>
         </z-row>
     </z-container>
@@ -76,20 +76,22 @@
                 <div class="accordion">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;header class="header-sticky"&gt;
-    &lt;div class="pl-2" id="header-logo"&gt;
-        &lt;img src="logo.png" alt=""&gt;
-    &lt;/div&gt;
-    &lt;button id="hamburger-button" aria-label="Open menu"&gt;☰&lt;/button&gt;
-    &lt;nav&gt;
-        &lt;button id="close-button" aria-label="Close menu"&gt;×&lt;/button&gt;
-        &lt;ul class="pr-2"&gt;
-            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Services&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;</code></pre>
+                        <pre class="copy-text square"><code class="language-html">&lt;header class="header-sticky zindex-override"&gt;
+  &lt;div class="pl-2" id="header-logo"&gt;
+    &lt;a&gt;&lt;img src="../../img/logo.png" alt=""&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;a id="hamburger-button-2"&gt;&lt;img src="../../img/icons/bars.svg" class="icon-header up-3" alt="Menu"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;nav class="top-nav"&gt; 
+    &lt;button id="close-button"&gt;&lt;a class="close"&gt;&lt;/a&gt;&lt;/button&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;;</code></pre>
                     </div>
                 </div>
             </z-col>
