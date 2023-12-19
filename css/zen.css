@@ -4455,58 +4455,25 @@
   background: #022d5f !important;
   color: white !important;
 }
-.zen .bg-primary-dark a {
-  color: white !important;
-}
 .zen .bg-primary-darker {
   background: #022855 !important;
-  color: white !important;
-}
-.zen .bg-primary-darker a {
   color: white !important;
 }
 .zen .bg-primary-darkest {
   background: #011f41 !important;
   color: white !important;
 }
-.zen .bg-primary-darkest a {
-  color: white !important;
-}
 .zen .bg-primary-light {
   background: #045dc3 !important;
-  color: white !important;
-}
-.zen .bg-primary-light a {
   color: white !important;
 }
 .zen .bg-primary-lighter {
   background: #0462cd !important;
   color: white !important;
 }
-.zen .bg-primary-lighter a {
-  color: white !important;
-}
 .zen .bg-primary-lightest {
   background: #056be1 !important;
   color: white !important;
-}
-.zen .bg-primary-lightest a {
-  color: white !important;
-}
-.zen .bg-primary-minimal {
-  background: none;
-  background: #a0cbfd !important;
-  border: 1px solid !important;
-  color: rgb(3, 69, 145) !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
-  color: black !important;
 }
 .zen .bg-secondary {
   background: #43742c !important;
@@ -4516,57 +4483,24 @@
   background: #2e4f1e !important;
   color: white !important;
 }
-.zen .bg-secondary-dark a {
-  color: white !important;
-}
 .zen .bg-secondary-darker {
   background: #29481b !important;
-  color: white !important;
-}
-.zen .bg-secondary-darker a {
   color: white !important;
 }
 .zen .bg-secondary-darkest {
   background: #233d17 !important;
   color: white !important;
 }
-.zen .bg-secondary-darkest a {
-  color: white !important;
-}
 .zen .bg-secondary-light {
   background: #58993a !important;
-  color: black !important;
-}
-.zen .bg-secondary-light a {
   color: black !important;
 }
 .zen .bg-secondary-lighter {
   background: #5da03d !important;
   color: black !important;
 }
-.zen .bg-secondary-lighter a {
-  color: black !important;
-}
 .zen .bg-secondary-lightest {
   background: #65af42 !important;
-  color: black !important;
-}
-.zen .bg-secondary-lightest a {
-  color: black !important;
-}
-.zen .bg-secondary-minimal {
-  background: none;
-  background: #cee8c2 !important;
-  border: 1px solid !important;
-  color: #43742c !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-accent {
@@ -4577,57 +4511,24 @@
   background: #f1c61b !important;
   color: black !important;
 }
-.zen .bg-accent-dark a {
-  color: black !important;
-}
 .zen .bg-accent-darker {
   background: #f0c411 !important;
-  color: black !important;
-}
-.zen .bg-accent-darker a {
   color: black !important;
 }
 .zen .bg-accent-darkest {
   background: #e5b90e !important;
   color: black !important;
 }
-.zen .bg-accent-darkest a {
-  color: black !important;
-}
 .zen .bg-accent-light {
   background: #f7de7b !important;
-  color: black !important;
-}
-.zen .bg-accent-light a {
   color: black !important;
 }
 .zen .bg-accent-lighter {
   background: #f8e085 !important;
   color: black !important;
 }
-.zen .bg-accent-lighter a {
-  color: black !important;
-}
 .zen .bg-accent-lightest {
   background: #f9e598 !important;
-  color: black !important;
-}
-.zen .bg-accent-lightest a {
-  color: black !important;
-}
-.zen .bg-accent-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #f4d24b !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-cta {
@@ -4638,57 +4539,24 @@
   background: #10498f !important;
   color: white !important;
 }
-.zen .bg-cta-dark a {
-  color: white !important;
-}
 .zen .bg-cta-darker {
   background: #0f4486 !important;
-  color: white !important;
-}
-.zen .bg-cta-darker a {
   color: white !important;
 }
 .zen .bg-cta-darkest {
   background: #0d3b74 !important;
   color: white !important;
 }
-.zen .bg-cta-darkest a {
-  color: white !important;
-}
 .zen .bg-cta-light {
   background: #1f78e6 !important;
-  color: black !important;
-}
-.zen .bg-cta-light a {
   color: black !important;
 }
 .zen .bg-cta-lighter {
   background: #287de7 !important;
   color: black !important;
 }
-.zen .bg-cta-lighter a {
-  color: black !important;
-}
 .zen .bg-cta-lightest {
   background: #3a88e9 !important;
-  color: black !important;
-}
-.zen .bg-cta-lightest a {
-  color: black !important;
-}
-.zen .bg-cta-minimal {
-  background: none;
-  background: #e0ecfc !important;
-  border: 1px solid !important;
-  color: #1560bd !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-red {
@@ -4699,57 +4567,24 @@
   background: #f30000 !important;
   color: black !important;
 }
-.zen .bg-red-dark a {
-  color: black !important;
-}
 .zen .bg-red-darker {
   background: #e90000 !important;
-  color: white !important;
-}
-.zen .bg-red-darker a {
   color: white !important;
 }
 .zen .bg-red-darkest {
   background: #df0000 !important;
   color: white !important;
 }
-.zen .bg-red-darkest a {
-  color: white !important;
-}
 .zen .bg-red-light {
   background: #ff4b4b !important;
-  color: black !important;
-}
-.zen .bg-red-light a {
   color: black !important;
 }
 .zen .bg-red-lighter {
   background: #ff5a5a !important;
   color: black !important;
 }
-.zen .bg-red-lighter a {
-  color: black !important;
-}
 .zen .bg-red-lightest {
   background: #ff6464 !important;
-  color: black !important;
-}
-.zen .bg-red-lightest a {
-  color: black !important;
-}
-.zen .bg-red-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #ff2222 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-orange {
@@ -4760,57 +4595,24 @@
   background: #fa9b15 !important;
   color: black !important;
 }
-.zen .bg-orange-dark a {
-  color: black !important;
-}
 .zen .bg-orange-darker {
   background: #fa9406 !important;
-  color: black !important;
-}
-.zen .bg-orange-darker a {
   color: black !important;
 }
 .zen .bg-orange-darkest {
   background: #ec8c05 !important;
   color: black !important;
 }
-.zen .bg-orange-darkest a {
-  color: black !important;
-}
 .zen .bg-orange-light {
   background: #fcc16f !important;
-  color: black !important;
-}
-.zen .bg-orange-light a {
   color: black !important;
 }
 .zen .bg-orange-lighter {
   background: #fcc87e !important;
   color: black !important;
 }
-.zen .bg-orange-lighter a {
-  color: black !important;
-}
 .zen .bg-orange-lightest {
   background: #fdce8d !important;
-  color: black !important;
-}
-.zen .bg-orange-lightest a {
-  color: black !important;
-}
-.zen .bg-orange-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: rgb(251, 174, 66) !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-yellow {
@@ -4821,57 +4623,24 @@
   background: #fac116 !important;
   color: black !important;
 }
-.zen .bg-yellow-dark a {
-  color: black !important;
-}
 .zen .bg-yellow-darker {
   background: #fabd07 !important;
-  color: black !important;
-}
-.zen .bg-yellow-darker a {
   color: black !important;
 }
 .zen .bg-yellow-darkest {
   background: #ecb305 !important;
   color: black !important;
 }
-.zen .bg-yellow-darkest a {
-  color: black !important;
-}
 .zen .bg-yellow-light {
   background: #fcd970 !important;
-  color: black !important;
-}
-.zen .bg-yellow-light a {
   color: black !important;
 }
 .zen .bg-yellow-lighter {
   background: #fcdd7f !important;
   color: black !important;
 }
-.zen .bg-yellow-lighter a {
-  color: black !important;
-}
 .zen .bg-yellow-lightest {
   background: #fde18e !important;
-  color: black !important;
-}
-.zen .bg-yellow-lightest a {
-  color: black !important;
-}
-.zen .bg-yellow-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #fbcd43 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-green {
@@ -4882,57 +4651,24 @@
   background: #32b455 !important;
   color: black !important;
 }
-.zen .bg-green-dark a {
-  color: black !important;
-}
 .zen .bg-green-darker {
   background: #2fa84f !important;
-  color: black !important;
-}
-.zen .bg-green-darker a {
   color: black !important;
 }
 .zen .bg-green-darkest {
   background: #2b9c49 !important;
   color: black !important;
 }
-.zen .bg-green-darkest a {
-  color: black !important;
-}
 .zen .bg-green-light {
   background: #6cd688 !important;
-  color: black !important;
-}
-.zen .bg-green-light a {
   color: black !important;
 }
 .zen .bg-green-lighter {
   background: #78d992 !important;
   color: black !important;
 }
-.zen .bg-green-lighter a {
-  color: black !important;
-}
 .zen .bg-green-lightest {
   background: #84dd9b !important;
-  color: black !important;
-}
-.zen .bg-green-lightest a {
-  color: black !important;
-}
-.zen .bg-green-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #48cc6b !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-blue {
@@ -4943,57 +4679,24 @@
   background: #2678fb !important;
   color: black !important;
 }
-.zen .bg-blue-dark a {
-  color: black !important;
-}
 .zen .bg-blue-darker {
   background: #176ffb !important;
-  color: black !important;
-}
-.zen .bg-blue-darker a {
   color: black !important;
 }
 .zen .bg-blue-darkest {
   background: #0865fb !important;
   color: white !important;
 }
-.zen .bg-blue-darkest a {
-  color: white !important;
-}
 .zen .bg-blue-light {
   background: #80b0fd !important;
-  color: black !important;
-}
-.zen .bg-blue-light a {
   color: black !important;
 }
 .zen .bg-blue-lighter {
   background: #8fb9fd !important;
   color: black !important;
 }
-.zen .bg-blue-lighter a {
-  color: black !important;
-}
 .zen .bg-blue-lightest {
   background: #9ec3fd !important;
-  color: black !important;
-}
-.zen .bg-blue-lightest a {
-  color: black !important;
-}
-.zen .bg-blue-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #5394fc !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-purple {
@@ -5004,57 +4707,24 @@
   background: #962bf1 !important;
   color: white !important;
 }
-.zen .bg-purple-dark a {
-  color: white !important;
-}
 .zen .bg-purple-darker {
   background: #8e1df0 !important;
-  color: white !important;
-}
-.zen .bg-purple-darker a {
   color: white !important;
 }
 .zen .bg-purple-darkest {
   background: #870fee !important;
   color: white !important;
 }
-.zen .bg-purple-darkest a {
-  color: white !important;
-}
 .zen .bg-purple-light {
   background: #c081f7 !important;
-  color: black !important;
-}
-.zen .bg-purple-light a {
   color: black !important;
 }
 .zen .bg-purple-lighter {
   background: #c88ff8 !important;
   color: black !important;
 }
-.zen .bg-purple-lighter a {
-  color: black !important;
-}
 .zen .bg-purple-lightest {
   background: #cf9ef9 !important;
-  color: black !important;
-}
-.zen .bg-purple-lightest a {
-  color: black !important;
-}
-.zen .bg-purple-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #ab56f4 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-1 {
@@ -5065,57 +4735,8 @@
   background: #d7d7d7 !important;
   color: black !important;
 }
-.zen .bg-grey-1-dark a {
-  color: black !important;
-}
-.zen .bg-grey-1-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-1-darker a {
-  color: !important;
-}
-.zen .bg-grey-1-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-1-darkest a {
-  color: !important;
-}
 .zen .bg-grey-1-light {
   background: white !important;
-  color: black !important;
-}
-.zen .bg-grey-1-light a {
-  color: black !important;
-}
-.zen .bg-grey-1-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-1-lighter a {
-  color: !important;
-}
-.zen .bg-grey-1-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-1-lightest a {
-  color: !important;
-}
-.zen .bg-grey-1-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #f0f0f0 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-2 {
@@ -5126,57 +4747,8 @@
   background: #b9b9b9 !important;
   color: black !important;
 }
-.zen .bg-grey-2-dark a {
-  color: black !important;
-}
-.zen .bg-grey-2-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-2-darker a {
-  color: !important;
-}
-.zen .bg-grey-2-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-2-darkest a {
-  color: !important;
-}
 .zen .bg-grey-2-light {
   background: #ececec !important;
-  color: black !important;
-}
-.zen .bg-grey-2-light a {
-  color: black !important;
-}
-.zen .bg-grey-2-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-2-lighter a {
-  color: !important;
-}
-.zen .bg-grey-2-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-2-lightest a {
-  color: !important;
-}
-.zen .bg-grey-2-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #d2d2d2 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-3 {
@@ -5187,57 +4759,8 @@
   background: #aaaaaa !important;
   color: black !important;
 }
-.zen .bg-grey-3-dark a {
-  color: black !important;
-}
-.zen .bg-grey-3-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-3-darker a {
-  color: !important;
-}
-.zen .bg-grey-3-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-3-darkest a {
-  color: !important;
-}
 .zen .bg-grey-3-light {
   background: #dddddd !important;
-  color: black !important;
-}
-.zen .bg-grey-3-light a {
-  color: black !important;
-}
-.zen .bg-grey-3-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-3-lighter a {
-  color: !important;
-}
-.zen .bg-grey-3-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-3-lightest a {
-  color: !important;
-}
-.zen .bg-grey-3-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #c3c3c3 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-4 {
@@ -5248,57 +4771,8 @@
   background: #858585 !important;
   color: black !important;
 }
-.zen .bg-grey-4-dark a {
-  color: black !important;
-}
-.zen .bg-grey-4-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-4-darker a {
-  color: !important;
-}
-.zen .bg-grey-4-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-4-darkest a {
-  color: !important;
-}
 .zen .bg-grey-4-light {
   background: #ababab !important;
-  color: black !important;
-}
-.zen .bg-grey-4-light a {
-  color: black !important;
-}
-.zen .bg-grey-4-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-4-lighter a {
-  color: !important;
-}
-.zen .bg-grey-4-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-4-lightest a {
-  color: !important;
-}
-.zen .bg-grey-4-minimal {
-  background: none;
-  background: white !important;
-  border: 1px solid !important;
-  color: #9e9e9e !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-5 {
@@ -5309,57 +4783,8 @@
   background: #575757 !important;
   color: white !important;
 }
-.zen .bg-grey-5-dark a {
-  color: white !important;
-}
-.zen .bg-grey-5-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-5-darker a {
-  color: !important;
-}
-.zen .bg-grey-5-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-5-darkest a {
-  color: !important;
-}
 .zen .bg-grey-5-light {
   background: #8a8a8a !important;
-  color: black !important;
-}
-.zen .bg-grey-5-light a {
-  color: black !important;
-}
-.zen .bg-grey-5-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-5-lighter a {
-  color: !important;
-}
-.zen .bg-grey-5-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-5-lightest a {
-  color: !important;
-}
-.zen .bg-grey-5-minimal {
-  background: none;
-  background: whitesmoke !important;
-  border: 1px solid !important;
-  color: #707070 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
   color: black !important;
 }
 .zen .bg-grey-6 {
@@ -5370,58 +4795,9 @@
   background: #2f2f2f !important;
   color: white !important;
 }
-.zen .bg-grey-6-dark a {
-  color: white !important;
-}
-.zen .bg-grey-6-darker {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-6-darker a {
-  color: !important;
-}
-.zen .bg-grey-6-darkest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-6-darkest a {
-  color: !important;
-}
 .zen .bg-grey-6-light {
   background: #626262 !important;
   color: white !important;
-}
-.zen .bg-grey-6-light a {
-  color: white !important;
-}
-.zen .bg-grey-6-lighter {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-6-lighter a {
-  color: !important;
-}
-.zen .bg-grey-6-lightest {
-  background: !important;
-  color: !important;
-}
-.zen .bg-grey-6-lightest a {
-  color: !important;
-}
-.zen .bg-grey-6-minimal {
-  background: none;
-  background: #cdcdcd !important;
-  border: 1px solid !important;
-  color: #484848 !important;
-}
-.zen .bg-accent-minimal {
-  color: black !important;
-  background: #fbf0c3 !important;
-  border: 1px solid #f4d24b !important;
-}
-.zen .bg-light-minimal {
-  background: #eee !important;
-  color: black !important;
 }
 .zen .bg-opaque {
   background-color: rgba(255, 255, 255, 0.2);

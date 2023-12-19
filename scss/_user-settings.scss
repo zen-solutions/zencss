@@ -13,9 +13,6 @@ $secondary-color: #43742c;
 $accent-color: #f4d24b;
 $cta-color: #1560bd;
 
-// new - bg colors for light and dark mode themes/buttons etc.
-$dark-mode-color: rgba(25, 25, 25, 0.84);
-$light-mode-color: rgba(255, 255, 255, 0.7);
 
 //------------------------------------------
 //  Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
@@ -28,6 +25,7 @@ $green: #48cc6b;
 $blue: #5394fc;
 $purple: #ab56f4;
 
+
 //------------------------------------------
 //  Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
@@ -38,6 +36,11 @@ $grey-3: #c3c3c3;
 $grey-4: #9e9e9e;
 $grey-5: #707070;
 $grey-6: #484848;
+
+// new - bg colors for light and dark mode themes/buttons etc.
+$dark-mode-color: rgba(25, 25, 25, 0.84);
+$light-mode-color: rgba(255, 255, 255, 0.7);
+
 
 //------------------------------------------
 // Global Vars/misc - prolly some cleanup to be done here

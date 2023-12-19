@@ -62,18 +62,6 @@ $bg-dark-colors: (
     "grey-4-dark": $grey-4-dark,
     "grey-5-dark": $grey-5-dark,
     "grey-6-dark": $grey-6-dark,
-    // "grey-1-darker": $grey-1-darker,
-    // "grey-2-darker": $grey-2-darker,
-    // "grey-3-darker": $grey-3-darker,
-    // "grey-4-darker": $grey-4-darker,
-    // "grey-5-darker": $grey-5-darker,
-    // "grey-6-darker": $grey-6-darker,
-    // "grey-1-darkest": $grey-1-darkest,
-    // "grey-2-darkest": $grey-2-darkest,
-    // "grey-3-darkest": $grey-3-darkest,
-    // "grey-4-darkest": $grey-4-darkest,
-    // "grey-5-darkest": $grey-5-darkest,
-    // "grey-6-darkest": $grey-6-darkest,
 );
 
 // Light Background Colors
@@ -114,109 +102,102 @@ $bg-light-colors: (
     "grey-4-light": $grey-4-light,
     "grey-5-light": $grey-5-light,
     "grey-6-light": $grey-6-light,
-    // "grey-1-lighter": $grey-1-lighter,
-    // "grey-2-lighter": $grey-2-lighter,
-    // "grey-3-lighter": $grey-3-lighter,
-    // "grey-4-lighter": $grey-4-lighter,
-    // "grey-5-lighter": $grey-5-lighter,
-    // "grey-6-lighter": $grey-6-lighter,
-    // "grey-1-lightest": $grey-1-lightest,
-    // "grey-2-lightest": $grey-2-lightest,
-    // "grey-3-lightest": $grey-3-lightest,
-    // "grey-4-lightest": $grey-4-lightest,
-    // "grey-5-lightest": $grey-5-lightest,
-    // "grey-6-lightest": $grey-6-lightest,
 );
 
 //------------------------------------------
 // Background and Text Color Classes
 //------------------------------------------
-
 @each $bg-key in map-keys($bg-default-colors) {
     .bg-#{$bg-key} {
         background: map-get($bg-default-colors, $bg-key) !important;
-
         @if map-has-key($text-default-colors, $bg-key) {
             color: map-get($text-default-colors, $bg-key) !important;
         }
     }
 
-    .bg-#{$bg-key}-dark {
-        background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
-        color: map-get($text-dark-colors, $bg-key + "-dark") !important;
-
-        a{
-            color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+    // Dark Variations (excluding grey colors)
+    @if (str-index($bg-key, 'grey') == null) {
+        @if map-has-key($bg-dark-colors, $bg-key + "-dark") {
+            .bg-#{$bg-key}-dark {
+                background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+                color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+            }
+        }
+        @if map-has-key($bg-dark-colors, $bg-key + "-darker") {
+            .bg-#{$bg-key}-darker {
+                background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
+                color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+            }
+        }
+        @if map-has-key($bg-dark-colors, $bg-key + "-darkest") {
+            .bg-#{$bg-key}-darkest {
+                background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
+                color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+            }
         }
     }
 
-    .bg-#{$bg-key}-darker {
-        background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
-        color: map-get($text-dark-colors, $bg-key + "-darker") !important;
-
-        a{
-            color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+    // Light Variations (excluding grey colors)
+    @if (str-index($bg-key, 'grey') == null) {
+        @if map-has-key($bg-light-colors, $bg-key + "-light") {
+            .bg-#{$bg-key}-light {
+                background: map-get($bg-light-colors, $bg-key + "-light") !important;
+                color: map-get($text-light-colors, $bg-key + "-light") !important;
+            }
+        }
+        @if map-has-key($bg-light-colors, $bg-key + "-lighter") {
+            .bg-#{$bg-key}-lighter {
+                background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
+                color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+            }
+        }
+        @if map-has-key($bg-light-colors, $bg-key + "-lightest") {
+            .bg-#{$bg-key}-lightest {
+                background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
+                color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+            }
         }
     }
 
-    .bg-#{$bg-key}-darkest {
-        background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
-        color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
-
-        a{
-            color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+    // Dark and Light Variations specifically for grey colors
+    @if (str-index($bg-key, 'grey') != null) {
+        @if map-has-key($bg-dark-colors, $bg-key + "-dark") {
+            .bg-#{$bg-key}-dark {
+                background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+                color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+            }
+        }
+        @if map-has-key($bg-light-colors, $bg-key + "-light") {
+            .bg-#{$bg-key}-light {
+                background: map-get($bg-light-colors, $bg-key + "-light") !important;
+                color: map-get($text-light-colors, $bg-key + "-light") !important;
+            }
         }
     }
 
-    .bg-#{$bg-key}-light {
-        background: map-get($bg-light-colors, $bg-key + "-light") !important;
-        color: map-get($text-light-colors, $bg-key + "-light") !important;
+    // Minimal Variations
+    // .bg-#{$bg-key}-minimal {
+    //     background: lighten(
+    //         map-get($bg-dark-colors, $bg-key + "-dark"),
+    //         62%
+    //     ) !important;
+    //     border: 1px solid map-get($text-dark-colors, $bg-key) !important;
+    //     color: map-get($bg-default-colors, $bg-key) !important;
+    // }
 
-        a{
-            color: map-get($text-light-colors, $bg-key + "-light") !important;
-        }
-    }
 
-    .bg-#{$bg-key}-lighter {
-        background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
-        color: map-get($text-light-colors, $bg-key + "-lighter") !important;
-        a{
-            color: map-get($text-light-colors, $bg-key + "-lighter") !important;
-        }
-    }
-
-    .bg-#{$bg-key}-lightest {
-        background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
-        color: map-get($text-light-colors, $bg-key + "-lightest") !important;
-        a{
-            color: map-get($text-light-colors, $bg-key + "-lightest") !important;
-        }
-    }
-
-    .bg-#{$bg-key}-minimal {
-        background: none;
-        background: lighten(
-            map-get($bg-dark-colors, $bg-key + "-dark"),
-            62%
-        ) !important;
-        border: 1px solid map-get($text-dark-colors, $bg-key) !important;
-        color: map-get($bg-default-colors, $bg-key) !important;
-    }
-
-    //overrides
-    .bg-accent-minimal {
-        color: black !important;
-        background: lighten($accent-color, 25%) !important;
-        border: 1px solid $accent-color !important;
-    }
-
-    .bg-light-minimal {
-        //background: none;
-        background: $text-white !important;
-        //border: 1px solid map-get($text-dark-colors, $bg-key) !important;
-        color: $dark-color !important;
-    }
 }
+    // Specific Overrides
+    // .bg-accent-minimal {
+    //     color: black !important;
+    //     background: lighten($accent-color, 25%) !important;
+    //     border: 1px solid $accent-color !important;
+    // }
+
+    // .bg-light-minimal {
+    //     background: $text-white !important;
+    //     color: $dark-color !important;
+    // }
 
 //-------------------------------------
 //override
