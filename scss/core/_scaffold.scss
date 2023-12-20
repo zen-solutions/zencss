@@ -917,4 +917,28 @@ On the rare occasion you need to override it, use something like the following:
     display: inline-block;
 }
 
+// .beautiful-gradient {
+//     position: relative; /* Required for absolute positioning of pseudo-element */
+//     /* Additional styles for your element */
+// }
 
+// .beautiful-gradient::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 410px; /* Height of the gradient area */
+//     z-index: -1; /* Place the gradient behind the content */
+
+//     background: linear-gradient(
+//       to bottom, 
+//       rgba(157, 123, 200, 1) 0%, /* Start of purple */
+//       rgba(122, 123, 200, 15%), /* Transition to blue */
+//       rgba(255, 200, 112, 30%), /* Transition to yellow */
+//       rgba(255, 140, 112, 45%), /* Transition to orange */
+//       rgba(255, 107, 107, 60%), /* Transition to red */
+//       transparent 100% /* Fully transparent at the bottom */
+//     );
+//     background-repeat: no-repeat;
+// }
