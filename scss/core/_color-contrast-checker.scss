@@ -11,7 +11,7 @@
    This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
 
    It evaluates each color in each map against WCAG recommended color contrast ratio
-   of 4.5/1 (adds a buffer) and chooses the appropriate text color that will pass compliance.
+   of 4.5/1 (adds a small buffer) and chooses the appropriate text color that will pass compliance.
 
    Finally, it autoassigns that color to the font color associated with that background, ensuring WCAG color compliance out of the box. 
 
@@ -55,7 +55,7 @@
     $light-color: white;
     $dark-color: black;
     $minimum-contrast: 4.5;
-    $buffer: 0.00001; //can cause errors with both colors passing and this causing a threashhold issue.. put more 0 for less buffer would work too.
+    $buffer: 0.00001; //can cause errors with both colors passing and this causing a threashhold issue..  decreasing size seems to work.
 
     $light-contrast: contrast-ratio($bg-color, $light-color);
     $dark-contrast: contrast-ratio($bg-color, $dark-color);
@@ -68,7 +68,7 @@
         $minimum-contrast +
         $buffer
     {
-        // Pick the color with better contrast
+        // if there's support for both, pick the color with better contrast
         @if $light-contrast >= $dark-contrast {
             @return $light-color;
         } @else {
@@ -79,6 +79,6 @@
     } @else if $dark-contrast >= $minimum-contrast + $buffer {
         @return $dark-color;
     } @else {
-        @return red; // default error color
+        @return red; // error color if something above failed
     }
 }

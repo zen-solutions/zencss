@@ -62,14 +62,15 @@ $text-default-colors: (
 // Mixin for creating the gradient background
 
 // Purpose: We check if the gradient should be made with the light or dark + base color,
-// depending on which ones match for the same wcag-compliant text color.
+// depending on which ones match for the same wcag-compliant text color. Then we amp it up a bit and spit out a complient color.
 // Pretty schnazzy huh?
 //-----------------
 
 @mixin gradient-background($color, $color-dark, $color-light) {
     $text-color: smart-text-color($color);
 
-    $gradient-end-color: if($text-color == black, $color-light, $color-dark);
+    // Lighten/darken the gradient a bit to make it more distinct
+    $gradient-end-color: if($text-color == black, lighten($color-light, 7%), darken($color-dark, 10%));
 
     background: linear-gradient(
         to bottom,
@@ -79,6 +80,7 @@ $text-default-colors: (
 
     color: $text-color !important;
 }
+
 
 // Applying the mixin to each gradient class
 .bg-primary-gradient {

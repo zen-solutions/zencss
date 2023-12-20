@@ -7,19 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
         <button id="close-button"><a class="close"></a></button>
         <ul class="pr-2">
             <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Help Center</a>
+                <a href="#" class="dropdown-link">Help Desk</a>
                 <div class="dropdown-content">
                 <a href="../help-desk/index.html">Quick-Start Guide</a>
                 <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
                 <a href="../help-desk/installation.html">Installation</a>
-                <a href="../help-desk/core-concepts.html">Core Concepts</a>
+                <a href="../help-desk/features.html">Features</a>
                 <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
                 <a href="../examples/zentax.html">Intro to Zentax</a>     
 
 </div></div>
 
             <div class="dropdown nav-dropdown">
-                <a href="#" class="dropdown-link">Core Concepts</a>
+                <a href="#" class="dropdown-link">Features</a>
                 <div class="dropdown-content">
                     <a href="../examples/smart-align-framework.html">Smart-Align Framework</a>
                     <a href="../examples/smart-color-system.html">Smart-Color System</a>

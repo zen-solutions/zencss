@@ -10,6 +10,7 @@ $responsive-breakpoint: 767px;
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -21,13 +22,15 @@ td {
 
 .zebra {
     th {
-        background: darken($bg-ui-hover, 24%);
+        background: darken($dual-mode-bg-color, 100%);
     }
     tr:nth-child(odd) td {
-        background: darken($bg-ui-hover, 16%);
+                background: lighten($dual-mode-bg-color, 84%);
+
     }
     tr:nth-child(even) td {
-        background: darken($bg-ui-hover, 8%);
+        background: lighten($dual-mode-bg-color, 42%);
+
     }
 }
 

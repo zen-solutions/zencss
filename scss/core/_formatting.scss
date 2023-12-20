@@ -248,8 +248,9 @@ $d-values: (
 
 .vertical-center {
     position: absolute;
+    width: 60%;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 

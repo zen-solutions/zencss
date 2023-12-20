@@ -52,6 +52,7 @@ class StarComponent extends HTMLElement {
               }
       .icon-gold{
         width: 9px;
+        
         filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg) brightness(96%) contrast(97%);
         }
         

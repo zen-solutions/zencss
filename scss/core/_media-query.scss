@@ -174,7 +174,7 @@
 
 @media (min-width: 992px) {
     .zen {
-        font-size: $zen-font-size; // Override the base font size for desktops
+        font-size: $zen-large-screen-font-size; // Override the base font size for desktops
     }
 
     & .z-container,
@@ -284,6 +284,10 @@
     .z-container-fluid .z-col {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+
+    .br-left, .br-right{
+        border-radius: unset !important;
     }
 }
 

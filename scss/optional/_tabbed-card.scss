@@ -1,61 +1,61 @@
-/*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-*/
+// /*
+//   * zenCSS Beta v2.0.0 (https://zencss.com/)
+//   * Copyright 2022-2024 Shaun Mackey
+//   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+// */
 
-// /* Styles for the tabbed card */
-// .tabbed-card {
-//     margin: 0 auto;
-//     padding: 0;
-//     border-radius: 5px;
+// // /* Styles for the tabbed card */
+// // .tabbed-card {
+// //     margin: 0 auto;
+// //     padding: 0;
+// //     border-radius: 5px;
+// // }
+
+// /* Styles for the tab header container */
+// .tab-header {
+//     display: flex;
+//     justify-content: space-between;
+//     background-color: #f0f0f0;
+//     padding: 10px;
+//     padding-bottom: 0;
+//     border-top-left-radius: 5px;
+//     border-top-right-radius: 5px;
+//     border: 1px solid #ccc;
 // }
 
-/* Styles for the tab header container */
-.tab-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 10px;
-    padding-bottom: 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 1px solid #ccc;
-}
+// /* Styles for individual tabs */
+// .tab {
+//     display: flex;
+//     flex: 1;
+//     text-align: center;
+//     cursor: pointer;
+//     border: 1px solid transparent;
+//     transition:
+//         background-color 0.3s ease,
+//         border-color 0.3s ease;
+//     margin: 1em;
+//     padding-top: 0.5em;
+//     align-items: center;
+// }
 
-/* Styles for individual tabs */
-.tab {
-    display: flex;
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease;
-    margin: 1em;
-    padding-top: 0.5em;
-    align-items: center;
-}
+// /* Styles for active tab */
+// .tab.active {
+//     background-color: #fff;
+//     border: 1px solid $border-color;
+//     border-bottom: 1px solid transparent;
+//     margin-bottom: -1px;
+//     border-radius: $border-radius $border-radius 0 0;
+// }
 
-/* Styles for active tab */
-.tab.active {
-    background-color: #fff;
-    border: 1px solid $border-color;
-    border-bottom: 1px solid transparent;
-    margin-bottom: -1px;
-    border-radius: $border-radius $border-radius 0 0;
-}
+// /* Styles for tab content */
+// .tab-content {
+//     padding: 20px;
+//     border: 1px solid #ccc;
+//     border-top: none;
+//     border-radius: 0 0 5px 5px;
+// }
 
-/* Styles for tab content */
-.tab-content {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-}
-
-/* Hide tab content by default */
-.tab-content:not(.active) {
-    display: none;
-}
+// /* Hide tab content by default */
+// .tab-content:not(.active) {
+//     display: none;
+// }

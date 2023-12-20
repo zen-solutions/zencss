@@ -79,11 +79,11 @@ $themes: (
         //$text-color
         $cta-color,
         //$button-bg-color
-        smart-text-color($primary-color),
+        smart-text-color($cta-color),
         // $button-text-color
         $cta-color,
         //$label-bg-color,
-        smart-text-color($primary-color),
+        smart-text-color($cta-color),
         //$label-text-color
     ),
     dark: (
@@ -109,9 +109,9 @@ $themes: (
             $cta-color,
             smart-text-color($cta-color),
             $primary-color,
-            smart-text-color($cta-color),
+            smart-text-color($primary-color),
             $primary-color,
-            smart-text-color($cta-color),
+            smart-text-color($primary-color),
         ),
     accent: (
         $accent-color,
@@ -163,14 +163,14 @@ $themes: (
 
 // wcag compliance text overrides
 // xxxxxxxx
-.theme-primary a,
-.theme-secondary a,
-.theme-dark a,
-.theme-primary .btn-outline,
-.theme-cta .btn-outline,
-.theme-secondary .btn-outline {
-    color: white;
-}
+// .theme-primary a,
+// .theme-secondary a,
+// .theme-dark a,
+// .theme-primary .btn-outline,
+// .theme-cta .btn-outline,
+// .theme-secondary .btn-outline {
+//     color: white;
+// }
 
 //---------------------------------------------
 // Correcting above -  wcag compliant links for each theme
