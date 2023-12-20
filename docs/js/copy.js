@@ -26,7 +26,7 @@ preElements.forEach(function (textBox) {
                 // Change tooltip to 'Copied'
                 copyButton.setAttribute('data-tooltip', 'Copied');
 
-                copyButton.style.cssText = 'background-color: green !important; background-image: url("../images/ui/copied.png") !important;';
+                copyButton.style.cssText = 'background-color: #343434 !important; background-image: url("../images/ui/copied.png") !important;';
                 setTimeout(function unCopy() {
                     copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
 

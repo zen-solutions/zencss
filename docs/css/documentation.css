@@ -258,4 +258,18 @@ border:0;
   position: absolute !important;
   }
  
+  :not(pre)>code[class*=language-], pre[class*=language-] {
+    background: #2E2E2E !important;
+}
 
+.accordion{
+  pre[class*="language-"] {
+    padding: 18px !important;
+    margin: 0 !important;
+}
+
+.expanded-content {
+
+  border:none;
+}
+}

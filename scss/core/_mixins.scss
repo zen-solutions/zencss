@@ -5,7 +5,7 @@
   */
 
 @mixin default-state {
-    background: lighten($bg-ui-hover, 55%);
+    background: lighten($dual-mode-bg-color, 20%);
 }
 
 @mixin hover-state {

@@ -43,6 +43,24 @@ html {
     }
 }
 
+.bg-light {
+    background: $light-color !important;
+    color: $dark-color !important;
+
+    button {
+        color: $light-color;
+        background: $dark-color;
+        text-decoration: none;
+        display: inline;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            background: lighten($dark-color, 15%);
+        }
+    }
+}
+
 // Hero section styles
 // .hero {
 //   background-image: $hero-image;
@@ -196,7 +214,7 @@ hr {
     margin-top: 1.25em;
     margin-bottom: 1.25em;
     height: 1px;
-    opacity: 0.28;
+    opacity: 0.15;
     width: 100%;
 }
 
@@ -894,7 +912,7 @@ On the rare occasion you need to override it, use something like the following:
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: 100%;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     text-decoration: none;
     display: inline-block;
 }

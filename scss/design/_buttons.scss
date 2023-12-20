@@ -61,10 +61,10 @@ button,
 
 .label {
     border-radius: $border-radius;
-    padding: 0.3em 1em 0.3em 1em;
+    padding: 3px 15px;
     overflow: hidden;
     display: inline;
-    background: $dark-mode-color;
+    background: lighten($bg-header-footer, 20%);
     color: smart-text-color($dark-mode-color);
     position: relative;
     font-size: 11px;

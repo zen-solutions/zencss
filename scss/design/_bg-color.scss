@@ -247,21 +247,21 @@ $bg-light-colors: (
 
 .bg-cta-hover:hover {
     background: darken($cta-color, 10%) !important;
-    color: $text-white;
+    color: $text-white !important;
 }
 
 .bg-light-hover:hover {
     background: darken($light-color, 10%) !important;
-    color: $text-black;
+    color: $text-black !important;
 }
 
 .bg-dark-hover:hover {
     background: darken($dark-color, 10%) !important;
-    color: $text-white;
+    color: $text-white !important;
 }
 .bg-accent-hover:hover {
     background: darken($accent-color, 10%) !important;
-    color: $text-white;
+    color: $text-white !important;
 }
 
 //-------------------------------------

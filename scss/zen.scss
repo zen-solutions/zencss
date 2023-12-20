@@ -20,7 +20,7 @@ $zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $zen-font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; //currently not in use. ready to implement
 // $zen-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; //currently not in use. ready to implement
 $zen-body-bg-color: #e2e2e2;
-$zen-dark-text-color: #e5e5e5;
+$zen-dark-text-color: #eaeaea;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
 //$text-light-dual: #000000;
@@ -39,7 +39,9 @@ $base-text-color: #444444;
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
     
+
     *::before,
     *::after {
         box-sizing: border-box;
