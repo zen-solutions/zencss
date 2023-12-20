@@ -105,7 +105,8 @@ $bg-light-colors: (
 );
 
 //------------------------------------------
-// Background and Text Color Classes
+// Main loop for Smart-Color System
+// - Generates Background and Text Color Classes
 //------------------------------------------
 @each $bg-key in map-keys($bg-default-colors) {
     .bg-#{$bg-key} {
@@ -274,8 +275,9 @@ $bg-light-colors: (
 
 .icon-gold {
     width: 9px;
-    filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg)
-        brightness(96%) contrast(97%);
+    // filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg)
+    //     brightness(96%) contrast(97%);
+    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
 }
 
 .icon-silver {

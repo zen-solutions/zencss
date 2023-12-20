@@ -1276,6 +1276,7 @@ class StarComponent extends HTMLElement {
               }
       .icon-gold{
         width: 9px;
+        
         filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg) brightness(96%) contrast(97%);
         }
         
@@ -1305,7 +1306,7 @@ customElements.define("star-component", StarComponent);
  */
 
 // ----------------------------------------
-// Hack for card with full screen image ;)
+// Card/Full bleed
 // ----------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -1326,18 +1327,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var cards = document.querySelectorAll(".card");
-
-//   cards.forEach(function (card) {
-//       var image = card.querySelector(".img-full");
-//       if (image) {
-//           var imageHeight = image.offsetHeight + 13;
-//           card.style.paddingTop = imageHeight + "px" ;
-//       }
-//   });
-// });
 
 })();
 
@@ -1629,6 +1618,35 @@ document.addEventListener("DOMContentLoaded", function () {
         var radioButtons = wizard.querySelectorAll('input[type="radio"]');
         radioButtons.forEach(function (radioButton) {
             radioButton.addEventListener("change", handleOptionSelect);
+        });
+    }
+});
+
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!********************************!*\
+  !*** ./modules/link-scroll.js ***!
+  \********************************/
+/*
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    const anchors = document.querySelectorAll('a[href^="#"]');
+
+    if (anchors.length > 0) {
+        anchors.forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
     }
 });

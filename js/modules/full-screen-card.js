@@ -5,7 +5,7 @@
  */
 
 // ----------------------------------------
-// Hack for card with full screen image ;)
+// Card/Full bleed
 // ----------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,15 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var cards = document.querySelectorAll(".card");
-
-//   cards.forEach(function (card) {
-//       var image = card.querySelector(".img-full");
-//       if (image) {
-//           var imageHeight = image.offsetHeight + 13;
-//           card.style.paddingTop = imageHeight + "px" ;
-//       }
-//   });
-// });

@@ -29,6 +29,7 @@ module.exports = {
             "/modules/tabs.js",
             "/modules/spin.js",
             "/modules/poll.js",
+            "/modules/link-scroll.js",
             "/optional/cookie-consent.js",
             "/modules/test-mode.js",
         ],

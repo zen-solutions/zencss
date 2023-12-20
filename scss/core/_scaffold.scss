@@ -339,10 +339,10 @@ input[type="submit"] {
 }
 
 // Rounded and circle shape classes
-.round {
-    //to depricate
-    border-radius: 8px !important;
-}
+// .round {
+//     //to depricate
+//     border-radius: 8px !important;
+// }
 
 .br-sm {
     border-radius: 4px !important;
@@ -383,11 +383,6 @@ input[type="submit"] {
     border-radius: 100%;
 }
 
-// Pill shape class
-
-.pill-1 {
-    border-radius: 8px;
-}
 
 .border-0 {
     border: none !important;
@@ -745,15 +740,6 @@ On the rare occasion you need to override it, use something like the following:
     padding-bottom: 65px !important;
 }
 
-.underline-handdrawn {
-    background-image: url("../img/placeholder/underline.svg");
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    background-size: 100%;
-    padding-bottom: 8px;
-    text-decoration: none;
-    display: inline-block;
-}
 
 .code {
     margin-bottom: 1.5em;
@@ -829,7 +815,7 @@ On the rare occasion you need to override it, use something like the following:
     background: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px; 
     padding: 8px;
     color: $grey-3;
 }
@@ -852,16 +838,16 @@ On the rare occasion you need to override it, use something like the following:
 
 .overlay {
     position: absolute; /* Absolute position to overlay on top of the image */
-    top: 0; /* Align to top */
-    right: 0; /* Align to right */
-    bottom: 0; /* Align to bottom */
-    left: 0; /* Align to left */
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.7),
         transparent
-    ); /* Gradient effect */
-    z-index: 1; /* Ensure it's above the image */
+    ); 
+    z-index: 1; 
 }
 
 // .pattern-interrupt {
@@ -903,4 +889,14 @@ On the rare occasion you need to override it, use something like the following:
 .zen-body-bg-color {
     background: $zen-body-bg-color;
 }
+.underline-handdrawn {
+    background-image: url("../img/placeholder/underline.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
 

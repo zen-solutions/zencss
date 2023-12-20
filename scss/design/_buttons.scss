@@ -153,7 +153,7 @@ button,
 .btn-light {
     background: $light-color !important;
     color: smart-text-color($light-color) !important;
-    @include hover-darken($light-color);
+    @include hover-darken(darken($light-color, 5%));
 }
 
 .btn-cta {
