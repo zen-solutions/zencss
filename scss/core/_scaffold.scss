@@ -269,10 +269,15 @@ z-col,
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
     padding: 0;
     margin: 0;
     border-radius: $border-radius;
+}
+
+.image-left-fullbleed{
+    height: 100%;
+    width: auto;
 }
 
 section {
@@ -389,6 +394,16 @@ input[type="submit"] {
     border-bottom-left-radius: $border-radius !important;
     border-bottom-right-radius: $border-radius !important;
     overflow: hidden;
+}
+
+.br-top-0{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.br-bottom-0{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .circle {
@@ -942,3 +957,10 @@ On the rare occasion you need to override it, use something like the following:
 //     );
 //     background-repeat: no-repeat;
 // }
+
+//left side clipping idea. stage 1. some cliping
+
+.clip-circle-left{
+    clip-path: ellipse(44% 51% at 9% 50%);
+}
+

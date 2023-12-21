@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="../help-desk/features.html">Features</a>
                 <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
                 <a href="../examples/zentax.html">Intro to Zentax</a>     
-                <a href="../examples/about.html">About the Author</a>     
+                <a href="../examples/about.html">About</a>     
 
 </div></div>
 
@@ -39,10 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/header.html">Header</a>
                     <a href="../examples/jumbotron.html">Hero Sections</a>
                     <a href="../examples/image-text.html">Image/Text Sections</a>
-                    <a href="../examples/text-card-carousel.html">Text/Carousels</a>
+                    <a href="../examples/text-content-row.html">Text/Content Row</a>
                     <a href="../examples/layout-grids.html">Layout Grids</a>
                     <a href="../examples/product-row.html">Product Grids</a>
                     <a href="../examples/faq.html">FAQs</a>
+                    <a href="../examples/text-card-carousel.html">Text/Carousels</a>
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
                     <a href="../examples/footer.html">Footer</a>
                 </div>
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/cards.html">Cards</a>
                                 <a href="../examples/cookie-consent.html">Cookie Consent</a>
                                 <a href="../examples/corner-popup.html">Corner Popup</a>
-                                <a href="../examples/dropdown.html">Dropdown</a>
+                                <!--a href="../examples/dropdown.html">Dropdown</a-->
                                 <a href="../examples/exit-intent.html">Exit Popup</a>
                                 <a href="../examples/form-elements.html">Form Elements</a>
                                 <a href="../examples/sign-in-form.html">Forms (sign up/opt in)</a>

@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 otherToggle.classList.remove("active-toggle");
                 otherToggle.setAttribute("aria-expanded", "false");
 
-                var otherIcon = otherToggle.querySelector(
-                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
-                );
+                var otherIcon = otherToggle.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
                 if (otherIcon) {
                     otherIcon.classList.remove("zenicon-keyboard-arrow-down");
                     otherIcon.classList.add("zenicon-keyboard-arrow-right");
@@ -26,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 var otherPanel = otherToggle.nextElementSibling;
                 otherPanel.style.maxHeight = null;
+                otherPanel.setAttribute("aria-hidden", "true"); // Hide other panels
             });
 
             // Set the clicked toggle as active if it's expanding
@@ -33,57 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.classList.add("active-toggle");
                 this.setAttribute("aria-expanded", "true");
 
-                var icon = this.querySelector(
-                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
-                );
+                var icon = this.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
                 if (icon) {
                     icon.classList.remove("zenicon-keyboard-arrow-right");
                     icon.classList.add("zenicon-keyboard-arrow-down");
                 }
 
                 var panel = this.nextElementSibling;
-                panel.style.maxHeight =
-                    panel.scrollHeight > 200
-                        ? "1000px"
-                        : panel.scrollHeight + 10 + "px";
+                panel.style.maxHeight = panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });
     });
 });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const accordion = document.querySelector('.accordion');
-
-//   if (accordion) {
-//     const toggles = accordion.querySelectorAll('.toggle');
-
-//     toggles.forEach(toggle => {
-//       toggle.addEventListener('change', () => {
-//         // Define the expanded content area
-//         const contentArea = document.getElementById(toggle.id).nextElementSibling.nextElementSibling;
-
-//         if (toggle.checked) {
-//           // When the toggle is checked, set overflow to hidden to prevent scrollbar
-//           contentArea.style.overflow = 'hidden';
-
-//           // Set a timeout that matches your CSS transition time
-//           setTimeout(() => {
-//             // After the transition, set overflow to auto if content is taller than the container
-//             contentArea.style.overflow = 'auto';
-//           }, 500); // Adjust the time to match your CSS transition-duration
-//         } else {
-//           // When the toggle is not checked, immediately set overflow to hidden
-//           contentArea.style.overflow = 'hidden';
-//         }
-
-//         toggles.forEach(t => {
-//           if (t !== toggle) {
-//             t.checked = false;
-//             // Reset the overflow for other content areas that are not active
-//             t.nextElementSibling.nextElementSibling.style.overflow = 'hidden';
-//           }
-//         });
-//       });
-//     });
-//   }
-// });

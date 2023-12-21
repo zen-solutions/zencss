@@ -11,7 +11,7 @@
 $primary-color: #094394;
 $secondary-color: #0c760a;
 $accent-color: #f7d62e;
-$cta-color: #1c62d4;
+$cta-color: #1e66db;
 
 
 //------------------------------------------
@@ -36,9 +36,15 @@ $grey-4: #838383;
 $grey-5: #6d6d6d;
 $grey-6: #585858;
 
-// new - bg colors for light and dark mode themes/buttons etc.
+
+//------------------------------------------
+// Background colors for light and dark mode themes/buttons etc.
+//------------------------------------------
+
 $dark-mode-color: rgba(13, 17, 23, .8);
-$light-mode-color: rgba(255, 255, 255, 0.7);
+$light-mode-color: rgba(255, 255, 255, 0.75);
+
+
 //------------------------------------------
 // Global Vars/misc - prolly some cleanup to be done here
 //------------------------------------------
@@ -60,12 +66,7 @@ $ui-button-size: 44px;
 $light-ui-hover-color: rgba(169, 169, 169, 0.35);
 $border-color: rgba(115, 130, 140, 0.2);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.06);
-$bg-ui-hover: hsla(
-    0,
-    0%,
-    93%,
-    0.3
-); // used for white bg for tabs/pagination, etc.
+$bg-ui-hover: hsla(0,0%,93%,0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
 //------------------------------------------
@@ -162,32 +163,37 @@ $grey-5-light: lighten($grey-5, 10%);
 $grey-6-light: lighten($grey-6, 10%);
 
 //------------------------------------------
-// ✓ Rounded corners
+//  Rounded corners
 //------------------------------------------
 
-$border-radius: 4px; //on
+$border-radius: 6px; //on
 //$border-radius: 0; //off
 
 //------------------------------------------
-// ✓ Default Spacing
+//  Default Spacing
 //------------------------------------------
 
 $page-section-padding-top: 50px;
 $page-section-padding-bottom: 50px;
 
 //------------------------------------------
-// ✓ set master padding and margin for columns - Likely being depricated
+//  Set master padding and margin for columns - Likely being depricated
 //------------------------------------------
 
 $col-padding: 0.8em;
 $col-margin: 0.8em;
 
 //------------------------------------------
-// ✓ Below is experimental
+//  Line height for base (p)
+//------------------------------------------
+
+$line-height: 1.650; 
+
+//------------------------------------------
+//  Below is experimental
 //------------------------------------------
 
 $bg-header-footer: #212121;
 $container-margin: 2em;
 $shadow-color: rgba(0, 0, 0, 0.2);
-$line-height: 1.65rem; // base
 $nav-color: #303030;

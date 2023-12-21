@@ -209,4 +209,22 @@ $base-text-color: #444444;
         color: #2491ff;
         text-decoration: none;
     }
+
+    .theme-light {
+        background: rgba(255,255,255,.10);
+        color: $zen-dark-text-color;
+
+        a{
+            color: $zen-dark-text-color;
+        }
+
+        .btn-outline{
+            color: $zen-dark-text-color;
+
+        }
+    }
+
+    .theme-dark{
+        background: rgba(13, 17, 23, .25);
+    }
 }
