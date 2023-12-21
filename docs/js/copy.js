@@ -41,56 +41,10 @@ preElements.forEach(function (textBox) {
 });
 
 
-//   //fix for hamburger broken on docs
-//   document.addEventListener("DOMContentLoaded", (event) => {
-//     console.log("DOM fully loaded and parsed");
-
-//     // Select the hamburger button by class
-//     const hamburgerButton = document.querySelector(".docs-menu");
-//     console.log("Hamburger Button:", hamburgerButton);
-
-//     // Select the close button by ID
-//     const closeButton = document.getElementById("close-button");
-//     console.log("Close Button:", closeButton);
-
-//     // Select the navigation element
-//     const nav = document.querySelector("nav");
-//     console.log("Nav Element:", nav);
-
-//     // Define the toggleMenu function
-//     const toggleMenu = () => {
-//         console.log("toggleMenu function executed");
-//         // Assuming "0px" is the open state and "-250px" is the closed state
-//         nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
-//     };
-
-//     // Attach event listener to the hamburger button if it exists
-//     if (hamburgerButton) {
-//         hamburgerButton.addEventListener("click", () => {
-//             console.log("Hamburger clicked");
-//             toggleMenu();
-//         });
-//     }
-
-//     // Attach event listener to the close button if it exists
-//     if (closeButton) {
-//         closeButton.addEventListener("click", toggleMenu);
-//     }
-
-//     // Optional: Attach event listeners to each navigation link
-//     // Uncomment the following lines if you want to close the menu when a nav link is clicked
-//     // const navLinks = document.querySelectorAll(".nav-link");
-//     // navLinks.forEach((link) => {
-//     //     link.addEventListener("click", toggleMenu);
-//     // });
-// });
-
-
-//dupe hamburger for header page
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-	//const hamburgerButton2 = document.getElementById("hamburger-button-2");
+	//=const hamburgerButton2 = document.getElementById("hamburger-button-2");
 	const closeButton = document.getElementById("close-button");
     const nav = document.querySelector(".top-nav"); 
   
@@ -98,14 +52,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
 	};
   
-    if (hamburgerButton2 && closeButton && nav) {
-       // hamburgerButton.addEventListener("click", toggleMenu);
-        closeButton.addEventListener("click", toggleMenu);
+    // if (hamburgerButton2 && closeButton && nav) {
+    //    // hamburgerButton.addEventListener("click", toggleMenu);
+    //     closeButton.addEventListener("click", toggleMenu);
 
-        navLinks.forEach((link) => {
-            link.addEventListener("click", toggleMenu); 
-        });
-    }
+    //     navLinks.forEach((link) => {
+    //         link.addEventListener("click", toggleMenu); 
+    //     });
+    // }
     
   });
 

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS - Hello World</title>
-    <link rel="stylesheet" href="../../css/zen.css">
-    <!-- <link rel="stylesheet" href="../../css/zen.min.css"> -->
+    <link rel="stylesheet" href="../../css/zen.min.css">
     <link rel="stylesheet" href="../../css/icons.min.css">
 </head>
+
 <body class="zen">
-    
-    <z-container-fluid class="pt-0">
-        <z-row class="pt-0">
+
+    <z-container-fluid>
+        <z-row class="pt-0 pb-0">
             <z-col class="m-0 p-0">
                 <header class="header-sticky zindex-override">
                     <div class="pl-2" id="header-logo">
@@ -20,7 +21,7 @@
                     <div>
                         <a id="hamburger-button-2"><img src="../../img/icons/bars.svg" class="icon-header up-3" alt="Menu"></a>
                     </div>
-                    <nav class="top-nav"> 
+                    <nav class="top-nav">
                         <button id="close-button"><a class="close"></a></button>
                         <ul>
                             <li><a href="#" class="nav-link">Home</a></li>
@@ -35,49 +36,50 @@
 
     <main class="container-fluid page-title-here">
 
-        <z-container class="page-section">
-            <z-row>
-                <z-col class="center">
-                    <h1 class="headline">Hello World</h1>
-                    <p>What will you create from here?</p>
-                </z-col>
-            </z-row>
-        </z-container>
-        <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+        <z-container-fluid class="theme-cta card hero-section m-0">
             <z-container>
-                    <img src="../../docs/images/website/gradient.jpg" class="bg-img">
-                    <z-row>
-                        <z-col class="card center">       
-                       
-                          
-                                    <span class="label center-me">new</span>
-                                    <h2 class="h1 headline">Full Width + Background image
-                                    </h2>
-                                    <p class="lead">Eos tenetur corrupti, minima doloribus quam eveniet libero.
-                                        </p><p>
-                                     <a href="../docs/help-desk/installation.html" class="btn  btn-md center-me">Lorem Ipsum</a>
-                                </p>
-        
-                        </z-col>
-                    </z-row>
-                </z-container>
-            </z-container-fluid>
-        
-        <z-container class="page-section">
-            <z-row>
-                <z-col>
-                    <div class="tab-nav-round">
-                        <a class="item" id="toggleButton">Test Mode</a>
-                        <a class="item" id="toggleDarkMode">Dark Mode</a>
-                        <a href="../index.html" class="item">Docs</a>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                <z-row>
+                    <z-col class="card center">
+                        <h2 class="h1 headline">Hello World
+                        </h2>
+                        <p class="lead">What will you create from here?
+                        <p>
+                            <a href="../docs/help-desk/installation.html" class="btn  btn-md center-me">CTA Button</a>
+                        </p>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
+        <z-container-fluid class="name-of-section bg-grey-2">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col>Another Section</z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
+        <z-container-fluid class="name-of-section bg-grey-3">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col>Another Section </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
+        <z-container-fluid class="name-of-section  bg-grey-4">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col> Another Section</z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
     </main>
     <footer>
-        <p class="center smaller">&copy; <span id="current-year"></span>. Built using zenCSS. </p>
+        <small class="center">&copy; <span id="current-year"></span>. Built using zenCSS. </small>
     </footer>
     <script src="../../js/zencss.min.js"></script>
 </body>
+
 </html>
