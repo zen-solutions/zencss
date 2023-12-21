@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../../css/zen.css">
+   <meta name="robots" content="index, follow">
+<link rel="stylesheet" href="../../css/zen.css">
     <link rel="stylesheet" href="../../css/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
@@ -16,16 +17,13 @@
 <div id="skip-navigation">
     <a href="#main-content" class="skip-link">Skip to main content</a>
 </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-        </div>
-        <div class="docs-nav">
-            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
-        </div>
-        <div id="nav-placeholder"></div>
+<header class="header-sticky">
+    <div class="pl-2" id="header-logo">
+        <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    </div>
 
-    </header>
+     <div id="nav-placeholder"></div>
+</header>
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -54,28 +52,27 @@
                 <z-container class="text-left">
                     <z-row>
                         <z-col class="card">
-                            <div class="accordion" data-reduce-motion="true">
+                            <div class="accordion">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content6"><i class="zenicon-keyboard-arrow-right down-3"></i>How many CSS programmers does it take to change a lightbulb?</a>
+                                        <a class="title accordion-toggle naked text-semibold aria-expanded="false" aria-controls="content6"><i class="zenicon-keyboard-arrow-right down-3"></i>How many CSS programmers does it take to change a lightbulb?</a>
                                         <div id="content6" class="expanded-content naked" aria-hidden="true">
-                                            <p> None, just add some "brightness" to the background color!  💀</p>
+                                            <p> None, just add some "brightness" to the background color! 💀</p>
                                         </div>
-                                </li>
+                                    </li>
                                     <li class="list-group-item">
-                                <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content4"><i class="zenicon-keyboard-arrow-right down-3"></i>What do you call a group of CSS developers in a room?</a>
-                                <div id="content4" class="expanded-content naked" aria-hidden="true">
-                                    <p>A "div"erse assembly of "selectors"! 🤣</p>
-                                </div>
-                                </li>
-            
-                                <li class="list-group-item">
-                                <a class="title accordion-toggle naked text-semibold accordion-workaround" aria-expanded="false" aria-controls="content5"><i class="zenicon-keyboard-arrow-right down-3"></i>Can CSS magically make my website compatible with older browsers?</a>
-                                <div id="content5" class="expanded-content naked" aria-hidden="true">
-                                    <p>CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists.  🦕</p>
-                                </div>
-                            </li>
-                              
+                                        <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"><i class="zenicon-keyboard-arrow-right down-3"></i>What do you call a group of CSS developers in a room?</a>
+                                        <div id="content4" class="expanded-content naked" aria-hidden="true">
+                                            <p>A "div"erse assembly of "selectors"! 🤣</p>
+                                        </div>
+                                    </li>
+                            
+                                    <li class="list-group-item">
+                                        <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content5"><i class="zenicon-keyboard-arrow-right down-3"></i>Can CSS magically make my website compatible with older browsers?</a>
+                                        <div id="content5" class="expanded-content naked" aria-hidden="true">
+                                            <p>CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists. 🦕</p>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </z-col>
@@ -88,14 +85,32 @@
     
     <z-container>
         <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion">
+            <z-col>
+                <div class="accordion center">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                     <div id="content1" class="expanded-content" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">
-
-
-                        </code></pre>
+                        <pre class="copy-text square"><code class="language-html">&lt;div class="accordion"&gt;
+  &lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;
+      &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content6"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;How many CSS programmers does it take to change a lightbulb?&lt;/a&gt;
+      &lt;div id="content6" class="expanded-content naked" aria-hidden="true"&gt;
+        &lt;p&gt; None, just add some "brightness" to the background color! 💀&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item"&gt;
+      &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;What do you call a group of CSS developers in a room?&lt;/a&gt;
+      &lt;div id="content4" class="expanded-content naked" aria-hidden="true"&gt;
+        &lt;p&gt;A "div"erse assembly of "selectors"! 🤣&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item"&gt;
+      &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content5"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;Can CSS magically make my website compatible with older browsers?&lt;/a&gt;
+      &lt;div id="content5" class="expanded-content naked" aria-hidden="true"&gt;
+        &lt;p&gt;CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists. 🦕&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
             </z-col>

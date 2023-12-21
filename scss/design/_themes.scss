@@ -246,9 +246,9 @@ $themes: (
 //   border-left: 10px solid $secondary-color;
 // }
 
-// .theme-light.accent-left {
-//   border-left: 10px solid $accent-color;
-// }
+.theme-light.accent-left {
+  border-left: 10px solid $accent-color;
+}
 
 // Define mixin for transitions
 @mixin transition($properties: all, $duration: 0.3s, $ease: ease) {

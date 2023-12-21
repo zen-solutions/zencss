@@ -77,23 +77,23 @@
 }
 .alert-success {
     @include alert(
-        $secondary-color,
+       darken( $secondary-color, 6%),
         "../img/icons/alerts/circle-check-solid.svg",
         60px
     );
 }
 .alert-success-minimal {
-    @include alert($secondary-color, "", 4px);
+    @include alert(darken( $secondary-color, 6%), "", 4px);
 }
 .alert-warning {
     @include alert(
-        darken($yellow-lightest, 25%),
+        darken($yellow-light, 39%),
         "../img/icons/alerts/circle-exclamation-solid.svg",
         60px
     );
 }
 .alert-warning-minimal {
-    @include alert(darken($yellow-lightest, 25%), "", 4px);
+    @include alert(darken($yellow-light, 39%), "", 4px);
 }
 .alert-dark {
     @include alert(

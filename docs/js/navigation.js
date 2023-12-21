@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="../help-desk/features.html">Features</a>
                 <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
                 <a href="../examples/zentax.html">Intro to Zentax</a>     
+                <a href="../examples/about.html">About the Author</a>     
 
 </div></div>
 
@@ -36,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="#" class="dropdown-link">Site Sections</a>
                 <div class="dropdown-content">
                     <a href="../examples/header.html">Header</a>
-                    <a href="../examples/jumbotron.html">Hero Section</a>
-                    <a href="../examples/image-text.html">Image/Text Section</a>
-                    <a href="../examples/text-card-carousel.html">Text/Card Carousel</a>
+                    <a href="../examples/jumbotron.html">Hero Sections</a>
+                    <a href="../examples/image-text.html">Image/Text Sections</a>
+                    <a href="../examples/text-card-carousel.html">Text/Carousels</a>
                     <a href="../examples/layout-grids.html">Layout Grids</a>
+                    <a href="../examples/product-row.html">Product Grids</a>
+                    <a href="../examples/faq.html">FAQs</a>
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
-                    <a href="../examples/product-row.html">Product Row</a>
-                    <a href="../examples/faq.html">FAQ</a>
                     <a href="../examples/footer.html">Footer</a>
                 </div>
             </div>

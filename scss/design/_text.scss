@@ -291,7 +291,7 @@ $text-grey-dual: #5e5e5e;
 /* Contextual Classes */
 .success {
     background-color: #d4edda;
-    color: darken($green, 15%);
+    color: darken($green, 25%);
     @include padding();
 }
 
