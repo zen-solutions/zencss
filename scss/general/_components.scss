@@ -131,6 +131,9 @@
     transition: max-height 0.2s ease-out;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
+    padding: 0 1.05em;
+    padding-top:1px; //fix for padding jump
+
 }
 
 .expanded-content.static {

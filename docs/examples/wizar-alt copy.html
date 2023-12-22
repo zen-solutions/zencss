@@ -11,6 +11,49 @@
 <link rel="stylesheet" href="../../css/icons.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+<style>
+    .progress-bar-container {
+    position: relative;
+    height: 30px; /* Makes the progress bar taller */
+}
+
+.wizard-progress {
+    width: 100%;
+    height: 100%; /* Match the container's height */
+}
+
+.progress-percentage {
+    position: absolute;
+    left: 0; /* Start at the beginning and will be adjusted by JavaScript */
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white; /* Assuming the text color should be white */
+    background: none; /* Remove any background to let the progress bar show through */
+    padding: 0 5px; /* Add some padding on both sides of the text */
+    margin-left:-20px;
+    font-size: .7em;
+}
+
+
+.wizard-progress[value]::-webkit-progress-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    visibility: visible;
+}
+
+.step-info {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: .7em;
+}
+
+</style>
 </head>
 
 <body class="zen">
@@ -53,38 +96,37 @@
     <z-container>
         <z-row>
                 <z-col>
-
                     <div class="wizard">
-                        <!-- <div class="pagination-nav pagination-nav-alt center-flex">
-                            <a href="#" class="item wizard-nav" data-direction="prev">&laquo;</a>
-                            <a href="#" class="item wizard-nav" data-step="1">1</a>
-                            <a href="#" class="item wizard-nav current" data-step="2">2</a>
-                            <a href="#" class="item wizard-nav" data-step="3">3</a>
-                            <a href="#" class="item wizard-nav" data-direction="next">&raquo;</a> -->
-
-
-
-                        <!-- </div> -->
-
-                        <div class="pagination-nav center-flex">
-                            <!-- <a class="item-minimal wizard-nav" data-direction="prev">← Prev</a> -->
-                            <a class="item-minimal wizard-nav" data-step="1">Section 1</a>
-                            <a class="item-minimal wizard-nav" data-step="2">Section 2</a>
-                            <a class="item-minimal wizard-nav" data-step="3">Section 3</a>
-                            <!-- <a class="item-minimal wizard-nav" data-direction="next">Next →</a> -->
+                        <!-- Progress Bar -->
+                        <div class="step-info">Step <span id="current-step">1</span> of <span id="total-steps">5</span></div>
+                        <!-- Progress Bar -->
+                        <div class="progress-bar-container">
+                            <progress class="wizard-progress" value="0" max="100"></progress>
+                            <div class="progress-percentage">0%</div>
                         </div>
 
-                        <div class="wizard-step card bg-grey-1-dark" id="step-1">
-                           Step 1 Content
-                        </div>
-                        <div class="wizard-step card bg-grey-2" id="step-2">
-                            Step 2 Content
-                        </div>
-                        <div class="wizard-step card bg-grey-2-dark" id="step-3">
-                            Step 3 Content
+                        <div class="wizard-step theme-light" id="step-1">
+                            <p>Step 1 content</p>
+
                         </div>
 
+                        <div class="wizard-step theme-light" id="step-2">
+                            <p>Step 2 content</p>
+                        </div>
+
+                        <div class="wizard-step theme-light" id="step-3">
+                            <p>Step 3 content</p>
+                        </div>
+
+                        <div class="wizard-step theme-light" id="step-4">
+                            <p>Step 4 content</p>
+                        </div>
+
+                        <div class="wizard-step theme-light" id="step-5">
+                            <p>Success content goes here</p>
+                        </div>
                     </div>
+                    
                 </z-col>
         </z-row>
 </z-container>
@@ -167,6 +209,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const wizard = document.querySelector('.wizard');
+    if (!wizard) return;
+    const progressBar = wizard.querySelector('.wizard-progress');
+    const currentStepSpan = wizard.querySelector('#current-step');
+    const totalStepsSpan = wizard.querySelector('#total-steps');
+    const progressPercentage = wizard.querySelector('.progress-percentage');
+    const steps = wizard.querySelectorAll('.wizard-step');
+    const totalSteps = steps.length;
+    totalStepsSpan.textContent = totalSteps;
+    progressBar.max = 100;
+
+    function updateWizardStep(stepNumber) {
+        steps.forEach(step => step.style.display = 'none');
+        wizard.querySelector(`#step-${stepNumber}`).style.display = 'block';
+        currentStepSpan.textContent = stepNumber;
+        const progressValue = ((stepNumber - 1) / (totalSteps - 1)) * 100;
+        progressBar.value = progressValue;
+        progressPercentage.textContent = `${Math.round(progressValue)}%`;
+        const percentagePosition = progressBar.offsetWidth * (progressValue / 100) - progressPercentage.offsetWidth / 2;
+        progressPercentage.style.left = `${Math.max(0, percentagePosition)}px`;
+        progressPercentage.style.visibility = progressValue >= 5 ? 'visible' : 'hidden';
+    }
+
+    steps.forEach((step, index) => {
+        if (index === totalSteps - 1) return; // No buttons on the last step
+
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
+
+        // Always add the Previous button except on the last step
+        const prevButton = document.createElement('button');
+        prevButton.textContent = 'Previous';
+        prevButton.className = 'prev-btn';
+        prevButton.setAttribute('role', 'button');
+        prevButton.setAttribute('aria-label', `Go back to step ${index}`);
+        if (index === 0) {
+            prevButton.disabled = true;
+            prevButton.classList.add('disabled');
+        } else {
+            prevButton.addEventListener('click', () => updateWizardStep(index));
+        }
+        buttonContainer.appendChild(prevButton);
+
+        // Add the Next/Finish button to all steps except the last
+        const nextButton = document.createElement('button');
+        nextButton.textContent = index === totalSteps - 2 ? 'Finish' : 'Next';
+        nextButton.className = 'next-btn';
+        nextButton.setAttribute('role', 'button');
+        nextButton.setAttribute('aria-label', `Go to step ${index + 2}`);
+        nextButton.addEventListener('click', () => updateWizardStep(index + 2));
+        buttonContainer.appendChild(nextButton);
+        
+        step.appendChild(buttonContainer);
+    });
+
+    updateWizardStep(1);
+});
+
+  </script>
   </body>
 
 </html>
