@@ -26,6 +26,7 @@ module.exports = {
             "/modules/full-screen-card.js",
             "/modules/exit-intent.js",
             "/modules/wizard.js",
+            "/optional/multistep-wizard.js",
             "/modules/tabs.js",
             "/modules/spin.js",
             "/modules/poll.js",

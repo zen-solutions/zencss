@@ -72,6 +72,7 @@ $base-text-color: #444444;
     @import "core/footer";
     @import "core/wip";
     @import "optional/decoration";
+    @import "optional/multistep-wizard";
     @import "optional/animation";
     //@import "optional/tabbed-card"; // WIP
     @import "optional/image-gallery";

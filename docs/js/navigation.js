@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/faq.html">FAQs</a>
                     <a href="../examples/text-card-carousel.html">Text/Carousels</a>
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
-                    <a href="../examples/footer.html">Footer</a>
+                    <a href="../examples/footer.html">Footer</a> 
                 </div>
             </div>
             <div class="dropdown nav-dropdown">
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/exit-intent.html">Exit Popup</a>
                                 <a href="../examples/form-elements.html">Form Elements</a>
                                 <a href="../examples/sign-in-form.html">Forms (sign up/opt in)</a>
+                                <a href="../examples/responsive-table.html">HTML Table</a>
                             </z-col>
                             <z-col class="small">
 
-                                <a href="../examples/responsive-table.html">HTML Table</a>
                                 <a href="../examples/icons.html">Icons</a>
                                 <a href="../examples/icon-toggle.html">Icon Toggle</a>
                                 <a href="../examples/image-carousel.html">Image Carousel</a>
@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/logos.html">Logo Bar</a>
                                 <a href="../examples/menus.html">Menus</a>
                                 <a href="../examples/modal.html">Modal</a>
+                                <a href="../examples/pagination.html">Pagination</a>
 
                             </z-col>
                             <z-col class="small">
-                                <a href="../examples/pagination.html">Pagination</a>
                                 <a href="../examples/preloaders.html">Preloaders</a>
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
                                 <a href="../examples/promo-bars.html">Promo Bars</a>
@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/sidebars.html">Side Bars</a>
                                 <a href="../examples/testimonials.html">Testimonials</a>
                                 <a href="../examples/tooltip.html">Tool Tips</a>
-                                <a href="../examples/tabs.html">Tabs/Button Groups</a>
+                                <a href="../examples/tabs.html">Tabs</a>
+                                <a href="../examples/tabbed-interface.html">Tabbed Interface</a>
                                   <a href="../examples/video-player.html">Video Player</a>
                                   <a href="../examples/wizard.html">Wizard/Multi-Step</a>
                             </z-col>

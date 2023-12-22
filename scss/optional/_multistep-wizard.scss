@@ -1,0 +1,46 @@
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+
+
+  .progress-bar-container {
+    position: relative;
+    height: 30px;
+}
+
+.mswizard-progress {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-percentage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: none;
+    padding: 0 5px;
+    margin-left: -20px;
+    font-size: .7em;
+}
+
+.mswizard-progress[value]::-webkit-progress-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    visibility: visible;
+}
+
+.step-info {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: .7em;
+}
+

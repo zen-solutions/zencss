@@ -17,14 +17,17 @@
 <div id="skip-navigation">
     <a href="#main-content" class="skip-link">Skip to main content</a>
 </div>
-    <header class="header-sticky">
+    <header class="header-sticky ">
         <div class="pl-2" id="header-logo">
             <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
 
-         <div id="nav-placeholder"></div>
+        <div id="nav-placeholder"></div>
+       
     </header>
+   
 <main id="main-content">
+
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -33,8 +36,10 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h4> Contact form</h4>
-                    <p> We offer a classic opt-in form with a stylish, modern UI/UX.  </p>
+                    <h1 class="headline"> Tabbed interface</h1>
+                    <p>A tabbed interface for displaying muiltiple content items or a workflow.
+                    </p>
+
                         <hr>
                 </div>
             </z-col>
@@ -42,41 +47,47 @@
     </z-container>
 
     <!----------------------------------------------------------------------->
-    <!--- Component --->
+    <!---  Component  --->
     <!----------------------------------------------------------------------->
-<z-container>
-    <z-row>
-        <z-col class="align-items-center">
-          <z-container class="single">
-              <z-row>
-                  <z-col>
-                    <div class="form-container theme-primary">  
-                        <form>
-                            <h5 class="headline center">Sign Up for Updates</h5>
-                            <p class="small center pt-0 pb-1 up-5">An amazing tagline goes here</p>
-                            <div>
-                              <input type="text" id="name1" placeholder=" ">
-                              <label for="name1">Name</label>
-                            </div>
-                            <div>
-                                <input type="email" id="email1" placeholder=" ">
-                                <label for="email1">Email</label>
-                              </div>
-                              <div class="mb-1">
-                                <input type="tel" id="tel1" placeholder=" ">
-                                <label for="tel1">Your Phone Number</label>
-                              </div>
-                            <button name="submit" type="submit">Sign Up</button>
-                            <small class="form-footer up-5 mb-0"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
-                            redo code
-                          </form>
-                      </div>
-                  </z-col>
-              </z-row>
-          </z-container>
-        </z-col>
-    </z-row>
+
+    <z-container>
+        <z-row>
+                <z-col>
+
+                    <div class="wizard">
+                        <!-- <div class="pagination-nav pagination-nav-alt center-flex">
+                            <a href="#" class="item wizard-nav" data-direction="prev">&laquo;</a>
+                            <a href="#" class="item wizard-nav" data-step="1">1</a>
+                            <a href="#" class="item wizard-nav current" data-step="2">2</a>
+                            <a href="#" class="item wizard-nav" data-step="3">3</a>
+                            <a href="#" class="item wizard-nav" data-direction="next">&raquo;</a> </div> -->
+
+                        <div class="pagination-nav center-flex">
+                            <!-- <a class="item-minimal wizard-nav" data-direction="prev">← Prev</a> -->
+                            <a class="item-minimal wizard-nav" data-step="1">Section 1</a>
+                            <a class="item-minimal wizard-nav" data-step="2">Section 2</a>
+                            <a class="item-minimal wizard-nav" data-step="3">Section 3</a>
+                            <!-- <a class="item-minimal wizard-nav" data-direction="next">Next →</a> -->
+                        </div>
+
+                        <div class="wizard-step card bg-grey-1-dark" id="step-1">
+                            Section 1 Content
+                        </div>
+                        <div class="wizard-step card bg-grey-2" id="step-2">
+                            Section 2 Content
+                        </div>
+                        <div class="wizard-step card bg-grey-2-dark" id="step-3">
+                            Section 3 Content
+                        </div>
+
+                    </div>
+                </z-col>
+        </z-row>
 </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Code Block  --->
+    <!----------------------------------------------------------------------->
 
 <z-container>
     <z-row>
@@ -84,30 +95,25 @@
             <div class="accordion">
                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                 <div id="content1" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;div class="form-container theme-primary"&gt;  
-&lt;form&gt;
-  &lt;h5 class="headline"&gt;Sign Up for Updates&lt;/h5&gt;
-  &lt;p class="small center pt-0 pb-1 up-5"&gt;An amazing tagline goes here&lt;/p&gt;
-  &lt;div&gt;
-    &lt;input type="text" id="name" placeholder=" "&gt;
-    &lt;label for="name"&gt;Name&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;input type="email" id="email" placeholder=" "&gt;
-    &lt;label for="email"&gt;Email&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class="mb-1"&gt;
-    &lt;input type="tel" id="tel" placeholder=" "&gt;
-    &lt;label for="tel"&gt;Your Phone Number&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;button name="submit" type="submit"&gt;Sign Up&lt;/button&gt;
-  &lt;small class="form-footer up-5"&gt;
-    &lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and
-    &lt;a href="#"&gt;Terms of Service&lt;/a&gt;
-  &lt;/small&gt;
-&lt;/form&gt;
-&lt;/div&gt;
-</code></pre>
+                    <pre class="copy-text square"><code class="language-html">&lt;div class="wizard"&gt;
+    &lt;div class="pagination-nav pagination-nav-alt center-flex"&gt;
+        &lt;a href="#" class="item wizard-nav" data-direction="prev"&gt;&laquo;&lt;/a&gt;
+        &lt;!-- Links for direct navigation (optional) --&gt;
+        &lt;a href="#" class="item wizard-nav" data-step="1"&gt;1&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav current" data-step="2"&gt;2&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav" data-step="3"&gt;3&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav" data-direction="next"&gt;&raquo;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-1"&gt;
+        Step 1 Content
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-2"&gt;
+        Step 2 Content
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-3"&gt;
+       Step 3 Content
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
             </div>
         </z-col>
@@ -115,9 +121,8 @@
 </z-container>
 
 
-
     <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
+    <!--- Zen Test  --->
     <!----------------------------------------------------------------------->
 
     <z-container>
@@ -153,6 +158,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
-</body>
+  </body>
 
 </html>
