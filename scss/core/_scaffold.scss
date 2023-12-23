@@ -269,10 +269,15 @@ z-col,
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
     padding: 0;
     margin: 0;
     border-radius: $border-radius;
+}
+
+.image-left-fullbleed{
+    height: 100%;
+    width: auto;
 }
 
 section {
@@ -309,11 +314,11 @@ figcaption {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-    color: lighten($text-black, 50%);
-}
+    color: $text-grey-dual;
+} 
 
 small {
-    line-height: calc($line-height / 1.5);
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1rem;
     //display: inline;
@@ -389,6 +394,16 @@ input[type="submit"] {
     border-bottom-left-radius: $border-radius !important;
     border-bottom-right-radius: $border-radius !important;
     overflow: hidden;
+}
+
+.br-top-0{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.br-bottom-0{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .circle {
@@ -469,7 +484,7 @@ header :link:hover {
     flex: 4;
 
     .signature {
-        font-size: 0.7em;
+        font-size: 11px;
         font-style: italic;
         margin-top: 5px;
     }
@@ -942,3 +957,10 @@ On the rare occasion you need to override it, use something like the following:
 //     );
 //     background-repeat: no-repeat;
 // }
+
+//left side clipping idea. stage 1. some cliping
+
+.clip-circle-left{
+    clip-path: ellipse(44% 51% at 9% 50%);
+}
+

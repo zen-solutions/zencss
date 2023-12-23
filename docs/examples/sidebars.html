@@ -15,19 +15,16 @@
 
 <body class="zen">
 <div id="skip-navigation">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-        </div>
-        <div class="docs-nav">
-            <button id="hamburger-button"><i class="zenicon-dehaze h-30"></i></button>
-        </div>
-        <div id="nav-placeholder"></div>
+<header class="header-sticky">
+    <div class="pl-2" id="header-logo">
+        <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    </div>
 
-    </header>
-
+    <div id="nav-placeholder"></div>
+</header>
+    <main id="main-content">
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
     <!----------------------------------------------------------------------->
@@ -106,7 +103,7 @@
                     <z-container>
                         <z-row>
                             <z-col class="card p-0">
-                                <nav class="nav-menu">
+                                <nav class="nav-menu theme-light">
                                     <ul class=" flex-grow-1">
                                       <li class="active"><i class="icon zenicon-person"></i> Account</li>
                                       <li><i class="icon zenicon-shield"></i> Billing</li>
@@ -164,11 +161,11 @@
                     <h2>Content + Left/Right Sidebars</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, laudantium numquam odit soluta iusto maiores voluptatibus voluptatum rerum laborum assumenda debitis ducimus quibusdam recusandae similique quia iste nam perferendis reprehenderit?</p>
                 </z-col>
-                <z-col class="flex align-items-stretch p-0 tablet-order-1">
+                <z-col class="flex align-items-stretch p-0 tablet-order-1 ">
                     <z-container>
                         <z-row>
                             <z-col class="card p-0">
-                                <nav class="nav-menu">
+                                <nav class="nav-menu theme-light">
                                     <ul class=" flex-grow-1">
                                       <li><i class="icon zenicon-person pr-2"></i> Account</li>
                                       <li><i class="icon zenicon-shield"></i> Billing</li>
@@ -196,20 +193,15 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
+        <z-row>
+            <z-col class="center">
+                <div>
                     <hr>
                     <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
+                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </z-col>
-        </z-row>
-    </z-container>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
                 <div class="center">
 
                         <button id="toggleButton" class="btn-md">Test</button>
@@ -225,7 +217,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

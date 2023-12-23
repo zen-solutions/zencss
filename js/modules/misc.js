@@ -58,7 +58,7 @@ document.querySelectorAll(".accordion-toggle").forEach((item) => {
             } else {
                 content.style.overflowY = "hidden";
             }
-        }, 500); // Match this with your CSS transition duration
+        }, 500); 
     });
 });
 
@@ -139,41 +139,41 @@ document.addEventListener("DOMContentLoaded", () => {
 // Tabbed Card
 //-------------------------------------
 
-function showTab(tabNumber) {
-    const tabbedCard = document.querySelector(".tabbed-card");
-    if (tabbedCard) {
-        const tabs = tabbedCard.querySelectorAll(".tab");
-        const tabContents = tabbedCard.querySelectorAll(".tab-content");
+// function showTab(tabNumber) {
+//     const tabbedCard = document.querySelector(".tabbed-card");
+//     if (tabbedCard) {
+//         const tabs = tabbedCard.querySelectorAll(".tab");
+//         const tabContents = tabbedCard.querySelectorAll(".tab-content");
 
-        if (tabs.length && tabContents.length) {
-            tabs.forEach((tab, index) => {
-                if (index + 1 === tabNumber) {
-                    tab.classList.add("active");
-                    if (tabContents[index]) {
-                        tabContents[index].classList.add("active");
-                    }
-                } else {
-                    tab.classList.remove("active");
-                    if (tabContents[index]) {
-                        tabContents[index].classList.remove("active");
-                    }
-                }
-            });
-        }
-    }
-}
+//         if (tabs.length && tabContents.length) {
+//             tabs.forEach((tab, index) => {
+//                 if (index + 1 === tabNumber) {
+//                     tab.classList.add("active");
+//                     if (tabContents[index]) {
+//                         tabContents[index].classList.add("active");
+//                     }
+//                 } else {
+//                     tab.classList.remove("active");
+//                     if (tabContents[index]) {
+//                         tabContents[index].classList.remove("active");
+//                     }
+//                 }
+//             });
+//         }
+//     }
+// }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".tab");
-    if (tabs.length) {
-        tabs.forEach((tab) => {
-            tab.addEventListener("click", function () {
-                const tabNumber = parseInt(tab.getAttribute("data-tab"));
-                showTab(tabNumber);
-            });
-        });
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     const tabs = document.querySelectorAll(".tab");
+//     if (tabs.length) {
+//         tabs.forEach((tab) => {
+//             tab.addEventListener("click", function () {
+//                 const tabNumber = parseInt(tab.getAttribute("data-tab"));
+//                 showTab(tabNumber);
+//             });
+//         });
+//     }
+// });
 
 //-------------------------------------
 // side menus

@@ -1,8 +1,14 @@
-.nav-menu ul {
+/*
+  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+
+  .nav-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: $light-mode-color; /* Set background color for the entire menu */
+    //background: $light-mode-color; /* Set background color for the entire menu */
     flex-direction: column;
     border-radius: $border-radius;
     overflow: hidden;
@@ -17,7 +23,7 @@
     width: 100%;
     flex-grow: 1;
     justify-content: unset;
-    color: $dark-color;
+   // color: $dark-color;
     line-height: 1.5em;
     padding-left: 20px;
     margin:0;
@@ -66,14 +72,14 @@
     font-weight: bold;
 }
 
-.nav-menu li .menu-item .sub-text {
+.sub-text {
     font-size: 0.8em;
-    color: $grey-ui-text-color; /* Subtext color */
+    opacity:.7;
 }
-
-.nav-menu .icon {
-    color: $cta-color;
-}
+ 
+// .nav-menu .icon {
+//     color: $cta-color;
+// }
 
 /* Add media queries if necessary for responsiveness */
 

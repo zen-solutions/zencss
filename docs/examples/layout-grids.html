@@ -15,7 +15,7 @@
 
 <body class="zen">
     <div id="skip-navigation">
-        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
     </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
@@ -54,7 +54,7 @@
         <z-container>
             <z-row>
                 <z-col>
-                    <h3>Large Hero + 4 across</h3>
+                    <h2 class="h3">Large Hero + 4 across</h2>
                 </z-col>
             </z-row>
         </z-container>
@@ -223,7 +223,13 @@
 
         <p class="center">note: Some items have height set, this is only to demonstrate the layouts. It's usually best to let the content dictate height. . </p>
 
-
+        <z-container>
+            <z-row>
+                <z-col>
+                    <h3>Featured Columns</h3>
+                </z-col>
+            </z-row>
+        </z-container>
         <z-container>
             <z-row>
                 <z-col class="feature-lg bg-grey-3">feature-lg</z-col>
@@ -245,42 +251,38 @@
 
         <br>
        
-
         <z-container>
             <z-row>
-                <z-col class="card theme-light">1</z-col>
-                <z-col class="card theme-light">2</z-col>
-                <z-col class="card theme-light">3</z-col>
-                <z-col class="card theme-light">4</z-col>
-                <z-col class="card theme-light">1</z-col>
-                <z-col class="card theme-light feature-xl">2 and 3</z-col>
-                <z-col class="card theme-light">4</z-col>
+                <z-col>
+                    <h3>Double Wide Columns</h3>
+                </z-col>
+            </z-row>
+        </z-container>
+        <z-container>
+            <z-row>
+                <z-col class="card bg-grey-3 feature-xl">1 and 2</z-col>
+                <z-col class="card bg-grey-3">3</z-col>
+                <z-col class="card bg-grey-3">4</z-col>
+            </z-row>
+            <z-row>
+
+                <z-col class="card bg-grey-3">1</z-col>
+                <z-col class="card bg-grey-3 feature-xl">2 and 3</z-col>
+                <z-col class="card bg-grey-3">4</z-col>
             </z-row>
         </z-container>
         <z-container>
             <z-row>
 
-                <z-col class="card theme-light">1</z-col>
-                <z-col class="card theme-light">2</z-col>
-                <z-col class="card theme-light feature-xl">3 and 4</z-col>
+                <z-col class="card bg-grey-3">1</z-col>
+                <z-col class="card bg-grey-3">2</z-col>
+                <z-col class="card bg-grey-3 feature-xl">3 and 4</z-col>
             </z-row>
         </z-container>
 <br><br><br>
 <hr>
 <br><br><br>
 
-        <z-container>
-            <z-row class="gap-0">
-                <z-col class="card theme-dark square br-left narrow-lg h-300 justify-content-center align-items-center">
-                    <h2>Hey I'm Bob Ross</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </z-col>
-                <z-col class="card theme-light square">
-                    <img src="../images/website/gradient.jpg" class="bg-img square br-right">
-                    
-                    right</z-col>
-            </z-row>
-        </z-container>
 
         <br><br><br>
 
@@ -353,7 +355,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

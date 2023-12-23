@@ -15,7 +15,7 @@
 
 <body class="zen">
 <div id="skip-navigation">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
@@ -35,7 +35,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Test Classes</h1>
+                    <h1 class="headline">Testing/Debugging in zenCSS</h1>
                     <p>
                         These classes are designed for on-the-fly troubleshooting, especially useful during the development phase to highlight elements on the page.
                     </p>
@@ -54,17 +54,17 @@
             <z-col class="m-0 p-0">
 
                 <ul>
-                    <li><code class="test-1">.test-1</code> adds a dotted outline around the element with a green color.</li>
+                    <li><code class="test-1">.test-1</code> adds a dotted outline around the element with a red color.</li>
                     <li><code class="test-2">.test-2</code> ads a solid outline around the element with a red color.</li>
-                    <li><code class="test-3">.test-3</code> adds a solid outline around the element with a blue color.</li>
-                    <li><code class="test-4">.test-4</code> adds a solid outline around the element with an orange color.</li>
-                    <li><code class="test-5">.test-5</code> adds a solid outline around the element with a purple color.</li>
+                    <li><code class="test-3">.test-3</code> adds a solid outline around the element with a green color.</li>
+                    <li><code class="test-4">.test-4</code> adds a solid outline around the element with an blue color.</li>
+                    <li><code class="test-5">.test-5</code> adds a solid outline around the element with a orange color.</li>
                 </ul>
                 <p>
                     Utilizing these test classes makes it easier to visually identify elements and their dimensions on the page, aiding in debugging and layout adjustments.
                 </p>
 
-                To add the zen test button (shown below) to any page, just use set <code> id="toggleButton"</code> on a button or link. 
+                We are also developing a "zen test" tool which you can preview below. To add the Zen Test button to any page, just use set <code> id="toggleButton"</code> on a button or link. 
 
 
             </z-col>
@@ -76,20 +76,15 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
+        <z-row>
+            <z-col class="center">
+                <div>
                     <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <h2 class="h4">The Zen Test</h2>
+                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
+                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </z-col>
-        </z-row>
-    </z-container>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
                 <div class="center">
 
                         <button id="toggleButton" class="btn-md">Test</button>
@@ -105,7 +100,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

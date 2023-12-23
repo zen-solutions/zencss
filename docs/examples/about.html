@@ -15,7 +15,7 @@
 
 <body class="zen">
 <div id="skip-navigation">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
@@ -25,55 +25,70 @@
         <div id="nav-placeholder"></div>
 
     </header>
-
+<main>
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
     <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> About zenCSS</h1>
-                    <p>Who, what, when, where etc.</p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
-<z-container>
+
+    <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+        <z-container>
+                <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="">
+                <z-row>
+                    <z-col class="card center">       
+                        <img src="../../docs/images/white-tree.png" alt="" class="w-50 center-me">
+
+                        <h1 class="headline"> About zenCSS</h1>
+                        <p class="lead">Embark on a Styling Odyssey</p>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
+        <z-container>
+            <z-row>
+              <z-col>
+                <z-container>
+                    <z-row>
+                        <z-col> <img src="../../docs/images/website/file.jpg" alt="" class="w-300 down-20"></z-col>
+                        <z-col class="feature-lg up-10">
+                            <h2>Our story begins with a secret file... </h2>
+                            <p> A catalyst in the transformative journey of web design. </p>
+                            <p > <strong>Picture this</strong>: a dedicated team, immersed in the complexities of a framework upgrade. Among them, a figure quietly leading the charge, their insights pivotal in steering the course of action. While the exact leap  isn't specified, the challenge was clear: streamline the process, enhance functionality, and embrace simplicity.</p>
+                            <p> It was in this moment of innovation that a secret override file emerged, shared among the team. This file, initially a tool to ease the transition, held within it the seeds of something greater. It was a bridge between what was and what could be, subtly integrating select new methodologies with the existing framework to create a harmonious blend.</p>                    
+                            <p> From this blend, zenCSS was born. It represented a paradigm shift in CSS frameworks, one that prioritized clarity, efficiency, and elegance.</p>            
+
+                            
+                        </z-col>
+                    </z-row>
+                </z-container>
+               
+               
+              </z-col>
+            </z-row>
+        </z-container>
+
+
+<z-container-fluid class="bg-cta-gradient">
+    <z-container>
+
+
     <z-row>
-        <z-col>
-            <div class="up-5">
-                <div class="img-left down-10">
-                <img src="../../docs/images/misc/14338176.png" class="w-125 h-125 img-round down-10" alt="author profile picture">
-                <p class="p-3 text-semibold">Shaun Mackey</p>
-                <p class="pl-4 up-30 text-grey-4 text-small">Author, zenCSS</p>
-            </div>  
-                
-                <h2 class="h3">Embark on a Styling Odyssey</h2>
-                <p > Welcome to the exciting journey of zenCSS! Here, your insights and feedback aren't just valuable; they're the driving force that shapes the future of this toolkit. 
-                </p>
-                <p>Although our language is inclusive, know that this is a solo endeavor, powered by one man's determination and the innovative integration of ChatGPT and custom AI technologies. What started as a personal CSS endeavor has evolved into a comprehensive open source framework, and your contributions will guide its evolution. 
-                </p>
-                <h3>Join Us in Shaping the Future</h3>
-                <p>Your journey with zenCSS is just beginning. As you delve into its features, your experiences and feedback become the cornerstone of its continuous improvement. This is more than a toolkit; it's a community-driven project, and every insight you share helps pave the way forward. Onward, to destiny.</p>
-                <h3>Support the Mission</h3>
-                <p>Feeling inspired? Your generosity fuels this project. Donations are appreciated and empower us to keep enhancing zenCSS. Click <a href="https://paypal.me/shaunmackey">here</a> to donate.</p>
-            </div>
-        <div class="bg-blue-lightest p-5 round mb-3">
-                <p class=" mb-0"><img src="../../docs/images/ui/browserstack.svg" class="w-20 mr-3 down-3" alt="">A heartfelt thanks to <a href="https://browserstack.com">Browserstack</a>  for their invaluable support in browser testing, ensuring zenCSS excels across platforms. </p>
-        
-        </div>
-        <h3 >Credit where credit is due</h3>
-        <p>A massive shoutout to the stellar folks who've helped inspire my career. Joe Dauz, Paolo, Carrot, Niko and Hilary, Tyler Olli, Mike V, the creative teams at Interval, Elastic, Rire, Kenn and every SolGats holder. A growing list of folks I borrowed code, inspiration or ideas from: Lucas Calloch, Chris Smith, Kevin Powell, Hyperplexed, and you.
+      <z-col>
+        <h3>Join Us in Shaping the Future</h3>
+        <p>Although our language is often plural, know that this project is a solo endeavor, powered by one man's determination and the innovative integration of ChatGPT and custom AI technologies. What started as a personal CSS file has evolved into a comprehensive open source framework, and your contributions will guide its evolution. 
         </p>
-        </z-col>
+        <p>Your journey with zenCSS is just beginning. As you delve into its features, your experiences and feedback become the cornerstone of its continuous improvement. This is more than a toolkit; it's a community-driven project, and every insight you share helps pave the way forward. Onward, to destiny.</p>
+        
+      </z-col>
     </z-row>
 </z-container>
+</z-container-fluid>
+
+        
+  
+
+
    
     </main>
 
@@ -81,7 +96,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

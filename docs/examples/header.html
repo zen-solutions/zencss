@@ -15,7 +15,7 @@
 
 <body class="zen">
 <div id="skip-navigation">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
@@ -25,6 +25,7 @@
         <div id="nav-placeholder"></div>
 
     </header>
+    <main id="main-content">
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
@@ -50,13 +51,13 @@
             <z-col class="m-0 p-0">
                 <header class="header-sticky zindex-override">
                     <div class="pl-2" id="header-logo">
-                        <a href="../index.html"><img src="../../img/logo.png" alt=""></a>
+                        <a href="../index.html"><img src="../../img/logo.png" alt="brand logo"></a>
                     </div>
                     <div>
                         <a id="hamburger-button-2"><img src="../../img/icons/bars.svg" class="icon-header up-3" alt="Menu"></a>
                     </div>
                     <nav class="top-nav"> 
-                        <button id="close-button"><a class="close"></a></button>
+                        <button id="close-button" aria-label="Close"><a class="close"></a></button>
                         <ul>
                             <li><a href="#" class="nav-link">Home</a></li>
                             <li><a href="#" class="nav-link">Services</a></li>
@@ -79,15 +80,15 @@
                         <pre class="copy-text square"><code class="language-html">&lt;z-container-fluid&gt;
   &lt;z-row class="pt-0 pb-0"&gt;
     &lt;z-col class="m-0 p-0"&gt;
-      &lt;header class="header-sticky zindex-override"&gt;
+      &lt;header class="header-sticky"&gt;
         &lt;div class="pl-2" id="header-logo"&gt;
-          &lt;a href="../index.html"&gt;&lt;img src="../../img/logo.png" alt=""&gt;&lt;/a&gt;
+          &lt;a href="../index.html"&gt;&lt;img src="../../img/logo.png" alt="brand logo"&gt;&lt;/a&gt;
         &lt;/div&gt;
         &lt;div&gt;
           &lt;a id="hamburger-button-2"&gt;&lt;img src="../../img/icons/bars.svg" class="icon-header up-3" alt="Menu"&gt;&lt;/a&gt;
         &lt;/div&gt;
         &lt;nav class="top-nav"&gt; 
-          &lt;button id="close-button"&gt;&lt;a class="close"&gt;&lt;/a&gt;&lt;/button&gt;
+          &lt;button id="close-button" aria-label="Close"&gt;&lt;a class="close"&gt;&lt;/a&gt;&lt;/button&gt;
           &lt;ul&gt;
             &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href="#" class="nav-link"&gt;Services&lt;/a&gt;&lt;/li&gt;
@@ -109,20 +110,15 @@
     <!----------------------------------------------------------------------->
 
     <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
+        <z-row>
+            <z-col class="center">
+                <div>
                     <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <h2 class="h4">The Zen Test</h2>
+                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
+                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </z-col>
-        </z-row>
-    </z-container>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
                 <div class="center">
 
                         <button id="toggleButton" class="btn-md">Test</button>
@@ -138,7 +134,7 @@
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt=""></a>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../js/zencss.js"></script>

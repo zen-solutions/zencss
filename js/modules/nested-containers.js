@@ -4,14 +4,16 @@
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
-//-------------------------------------
-// Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
-//12/15 why though?
-//-------------------------------------
 
-// -------------------------------------------------------------
-// THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
-// -------------------------------------------------------------
+
+// //-------------------------------------
+// // Nested containers - kill parent padding + if i am a row, and im inide a container that i neted in a column, then i need to have my martin top and bottom set to 0
+// //12/15 why though?
+// //-------------------------------------
+
+// // -------------------------------------------------------------
+// // THIS VERSION APPEARS TO WORK FOR BOTH/MIXED. SAVING
+// // -------------------------------------------------------------
 
 //   document.addEventListener('DOMContentLoaded', function () {
 //     // Function to apply zero padding to column parents of containers

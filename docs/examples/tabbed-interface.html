@@ -17,15 +17,16 @@
 <div id="skip-navigation">
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 </div>
-    <header class="header-sticky">
+    <header class="header-sticky ">
         <div class="pl-2" id="header-logo">
             <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
         </div>
 
-         <div id="nav-placeholder"></div>
+        <div id="nav-placeholder"></div>
+       
     </header>
+   
 <main id="main-content">
-
 
 
     <!----------------------------------------------------------------------->
@@ -35,8 +36,10 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Logo Bar</h1>
-                    <p>A dedicated area for displaying one or more logos.</p>
+                    <h1 class="headline"> Tabbed interface</h1>
+                    <p>A tabbed interface for displaying muiltiple content items or a workflow.
+                    </p>
+
                         <hr>
                 </div>
             </z-col>
@@ -44,36 +47,47 @@
     </z-container>
 
     <!----------------------------------------------------------------------->
-    <!--- Component --->
+    <!---  Component  --->
     <!----------------------------------------------------------------------->
 
-    <z-container class="bg-opaque">
-        <z-row class="six-up mobile:max-up">
-            <z-col>
-                <img src="/docs/images/logos/3.svg"class="flex-grow-1 w-125 h-50 center-me logo-bar-logo"  alt="">
-            </z-col>
-            <z-col>
-                <img src="/docs/images/logos/7.svg"class="flex-grow-1 w-125 h-50 center-me logo-bar-logo"  alt="">
-            </z-col>
-            <z-col>
-                <img src="/docs/images/logos/1.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="">
-            </z-col>
-            <z-col>
-                <img src="/docs/images/logos/2.svg"class="flex-grow-1 w-125 h-50 center-me logo-bar-logo"  alt="">
-            </z-col>
-            <z-col>
-                <img src="/docs/images/logos/5.svg"class="flex-grow-1 w-125 h-50 center-me logo-bar-logo"  alt="">
-            </z-col>
-            <z-col>
-                <img src="/docs/images/logos/6.svg"class="flex-grow-1 w-125 h-50 center-me logo-bar-logo"  alt="">
-            </z-col>
+    <z-container>
+        <z-row>
+                <z-col>
+
+                    <div class="wizard">
+                        <!-- <div class="pagination-nav pagination-nav-alt center-flex">
+                            <a href="#" class="item wizard-nav" data-direction="prev">&laquo;</a>
+                            <a href="#" class="item wizard-nav" data-step="1">1</a>
+                            <a href="#" class="item wizard-nav current" data-step="2">2</a>
+                            <a href="#" class="item wizard-nav" data-step="3">3</a>
+                            <a href="#" class="item wizard-nav" data-direction="next">&raquo;</a> </div> -->
+
+                        <div class="pagination-nav center-flex">
+                            <!-- <a class="item-minimal wizard-nav" data-direction="prev">← Prev</a> -->
+                            <a class="item-minimal wizard-nav" data-step="1">Section 1</a>
+                            <a class="item-minimal wizard-nav" data-step="2">Section 2</a>
+                            <a class="item-minimal wizard-nav" data-step="3">Section 3</a>
+                            <!-- <a class="item-minimal wizard-nav" data-direction="next">Next →</a> -->
+                        </div>
+
+                        <div class="wizard-step card bg-grey-1-dark" id="step-1">
+                            Section 1 Content
+                        </div>
+                        <div class="wizard-step card bg-grey-2" id="step-2">
+                            Section 2 Content
+                        </div>
+                        <div class="wizard-step card bg-grey-2-dark" id="step-3">
+                            Section 3 Content
+                        </div>
+
+                    </div>
+                </z-col>
         </z-row>
-    </z-container>
+</z-container>
 
-
-<!----------------------------------------------------------------------->
-<!--- Code Block  --->
-<!----------------------------------------------------------------------->
+    <!----------------------------------------------------------------------->
+    <!--- Code Block  --->
+    <!----------------------------------------------------------------------->
 
 <z-container>
     <z-row>
@@ -81,20 +95,25 @@
             <div class="accordion">
                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                 <div id="content1" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;z-container class="bg-opaque"&gt;
-    &lt;z-row class="six-up mobile:max-up"&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
-        &lt;/z-col&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
-        &lt;/z-col&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
-        &lt;/z-col&gt;
-        &lt;!-- three more logos here --&gt;
-    &lt;/z-row&gt;
-&lt;/z-container&gt;</code></pre>
+                    <pre class="copy-text square"><code class="language-html">&lt;div class="wizard"&gt;
+    &lt;div class="pagination-nav pagination-nav-alt center-flex"&gt;
+        &lt;a href="#" class="item wizard-nav" data-direction="prev"&gt;&laquo;&lt;/a&gt;
+        &lt;!-- Links for direct navigation (optional) --&gt;
+        &lt;a href="#" class="item wizard-nav" data-step="1"&gt;1&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav current" data-step="2"&gt;2&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav" data-step="3"&gt;3&lt;/a&gt;
+        &lt;a href="#" class="item wizard-nav" data-direction="next"&gt;&raquo;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-1"&gt;
+        Step 1 Content
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-2"&gt;
+        Step 2 Content
+    &lt;/div&gt;
+    &lt;div class="wizard-step" id="step-3"&gt;
+       Step 3 Content
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
             </div>
         </z-col>
@@ -102,9 +121,8 @@
 </z-container>
 
 
-    
     <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
+    <!--- Zen Test  --->
     <!----------------------------------------------------------------------->
 
     <z-container>
@@ -140,6 +158,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
-</body>
+  </body>
 
 </html>

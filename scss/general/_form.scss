@@ -150,7 +150,7 @@ form input:not(:placeholder-shown) + label {
     top: 3px;
     left: 10px;
     font-size: 8px;
-    color: #b9b9b9 !important;
+   // color: #b9b9b9 !important;
 }
 
 input[type="checkbox"],
@@ -159,3 +159,50 @@ input[type="radio"] {
     height: 12px;
     min-height: 12px;
 }
+
+
+//dropdown for MS wizard
+form select, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default arrow icon */
+    border: 1px solid $border-color;
+    padding: 10px 4px;
+    width: 100%;
+    background-image: url('../img/icons/zenicon-arrow-down.svg'); /* Path to your custom dropdown icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position for the background icon */
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+    cursor: pointer;
+    padding-right:20px;
+    text-indent: 10px;
+}
+
+
+
+// select {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none; /* Remove default arrow icon */
+//     background-color: #fff; /* Background color */
+//     border: 1px solid #ccc; /* Border color */
+//     padding: 10px; /* Padding inside the select box */
+//     width: 100%; /* Full width */
+//     border-radius: 5px; /* Rounded corners */
+//     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for some depth */
+//     font-size: 16px; /* Text size */
+//     color: #333; /* Text color */
+//     background-image: url('path-to-your-dropdown-icon.svg'); /* Path to your custom dropdown icon */
+//     background-repeat: no-repeat;
+//     background-position: right 10px center; /* Position for the background icon */
+//     cursor: pointer; /* Change the cursor to indicate it's clickable */
+//   }
+
+  
+
+// select:focus {
+//     outline: none;
+//     border-color: #66afe9;
+//     box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+// }
