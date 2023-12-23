@@ -91,7 +91,7 @@
 
     p {
         margin: 0;
-        padding: 1em;
+        padding: .6em;
     }
 
     a {
@@ -128,11 +128,11 @@
 .expanded-content {
     max-height: 0;
     overflow-y: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     padding: 0 1.05em;
-    padding-top:1px; //fix for padding jump
+    //padding-right:1px; //fix for padding jump
 
 }
 
@@ -143,7 +143,7 @@
 .expanded-content.show {
     max-height: 300px; /* Adjust as needed */
     border: 1px solid $border-color;
-    padding: 0 1em;
+    padding: 0 1.05em; //fix for padding jump
 }
 
 .expanded-content.full-height.show {
@@ -172,7 +172,7 @@
     position: absolute;
     left: -50px;
     top: calc(100% + 29px);
-    background-color: #fdfdfd;
+    background: #fdfdfd;
     color: $dark-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(122, 122, 122, 0.1);

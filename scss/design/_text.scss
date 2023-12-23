@@ -256,7 +256,7 @@ $text-grey-dual: #5e5e5e;
 .list-group-item {
     position: relative;
     display: block;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75em;
     border: 1px solid $border-color;
     margin-bottom: -1px;
     margin-top: 0;
@@ -462,11 +462,10 @@ $text-grey-dual: #5e5e5e;
 }
 
 .text-cta-dual {
-    color: $cta-color;
+    color: darken($cta-color, 10%); // not smart color bc we dont know bg color. 
 }
 
 a.text-cta-dual {
-    font-weight: 600;
     text-decoration: none;
     position: relative;
     display: inline-block;

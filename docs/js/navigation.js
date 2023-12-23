@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a id="hamburger-button"><img src="../../img/icons/bars.svg" class="icon-header" alt="Menu"></a>
         </div>
         <nav class="top-nav">
-        <button id="close-button"><a class="close"></a></button>
+        <button id="close-button" aria-label="Close"><a class="close"></a></button>
         <ul class="pr-2">
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Desk</a>
@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/formatting.html">Gap, Height, and Width</a>
                     <a href="../examples/flex.html">Flex</a>
                     <a href="../examples/test-classes.html">Testing Tools</a>
+                    <a href="../examples/accessability.html">Accessability</a>
                     <a href="../examples/shadows.html">Shadows</a>                                
                     <a href="../examples/emoji.html">Emoji</a>                                
                     <a href="../examples/border-utilities.html">Border Styling</a>

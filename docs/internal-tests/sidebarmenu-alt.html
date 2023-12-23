@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Sidebar Menu</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  #sidebar ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  #sidebar ul li.active {
+    font-weight: bold;
+  }
+  #sidebar ul li:not(.active):hover {
+    background-color: #e0e0e0;
+  }
+  #rail {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 40px; /* Top padding + top border */
+    width: 5px;
+    background-color: grey;
+    z-index: 0;
+  }
+  #activeIndicator {
+    content: '';
+    position: absolute;
+    left: 15px;
+    width: 5px;
+    background-color: black;
+    transition: top 0.3s;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <ul>
+    <li data-target="design" class="active">Design principles</li>
+    <li data-target="grid">Grid and keyline shapes</li>
+    <li data-target="specs">Specs</li>
+    <li data-target="icons">Icon treatments</li>
+  </ul>
+  <div id="rail"></div>
+  <div id="activeIndicator"></div>
+</div>
+
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const activeIndicator = document.getElementById('activeIndicator');
+  const menuItems = document.querySelectorAll('#sidebar ul li');
+  const rail = document.getElementById('rail');
+
+  function updateIndicator() {
+    // Calculate the total height of all menu items
+    let menuHeight = 0;
+    menuItems.forEach(item => {
+      menuHeight += item.offsetHeight;
+    });
+
+    // Update the rail to match the height of the menu items
+    rail.style.height = `${menuHeight}px`;
+
+    // Update the position of the active indicator
+    const activeItem = document.querySelector('.active');
+    if (activeItem) {
+      activeIndicator.style.height = `${activeItem.offsetHeight}px`;
+      // Adjust the top position to align perfectly with the active menu item
+      activeIndicator.style.top = `${activeItem.offsetTop + sidebar.offsetTop - 30}px`; // Adjusted by 30px
+    }
+  }
+
+  function handleMenuItemClick(event) {
+    menuItems.forEach(item => item.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    updateIndicator();
+  }
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', handleMenuItemClick);
+  });
+
+  // Initial call to set the heights and positions correctly
+  updateIndicator();
+</script>
+
+</body>
+</html>
