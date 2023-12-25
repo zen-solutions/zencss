@@ -43,7 +43,7 @@
     content: '';
     position: absolute;
     left: 15px;
-    top: 40px;
+    top: 20px;
     width: 5px;
     background-color: grey;
     z-index: 0;
@@ -63,15 +63,28 @@
 
 <div id="sidebar">
   <ul>
-    <li data-target="design" class="active">Design principles</li>
-    <li data-target="grid">Grid and keyline shapes</li>
-    <li data-target="specs">Specs</li>
-    <li data-target="icons">Icon treatments</li>
+    <li data-target="design" class="active">This is alice</li>
+    <li data-target="grid">Alice and bob</li>
+    <li data-target="specs">Eve</li>
+    <li data-target="design" >This is alice</li>
+    <li data-target="grid">Alice and bob</li>
+    <li data-target="specs">Eve</li>
+    <li data-target="design">This is alice</li>
+    <li data-target="grid">Alice and bob</li>
+    <li data-target="specs">Eve</li>
+
   </ul>
   <div id="rail"></div>
   <div id="activeIndicator"></div>
 </div>
 
+<div id="design">this is design</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="specs">this is specs</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="icons">this is icon</div>
 <script>
   const sidebar = document.getElementById('sidebar');
   const activeIndicator = document.getElementById('activeIndicator');
