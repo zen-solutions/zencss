@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Title</title>
+    <meta name="description" content="Default Description">
+    <meta property="og:title" content="Default OG Title">
+    <meta property="og:description" content="Default OG Description">
+    <meta property="og:image" content="/images/default.jpg">
+    <meta property="twitter:title" content="Default Twitter Title">
+    <meta property="twitter:description" content="Default Twitter Description">
+    <meta property="twitter:image" content="/images/default.jpg">
+    <script>
+        function updateSEO() {
+            const h1Element = document.querySelector('h1');
+            let descriptionContent;
+
+            // Check if there's an element with class 'lead'
+            const leadElement = document.querySelector('.lead');
+            if (leadElement) {
+                descriptionContent = leadElement.textContent;
+            } else if (h1Element) {
+                // If no 'lead' class, use the first <p> element after the <h1>
+                const nextPElement = h1Element.nextElementSibling;
+                if (nextPElement && nextPElement.tagName.toLowerCase() === 'p') {
+                    descriptionContent = nextPElement.textContent;
+                }
+            }
+
+            // Update the title tag to "zenCSS - [h1 content]"
+            if (h1Element) {
+                const newTitle = `zenCSS - ${h1Element.textContent}`;
+                document.title = newTitle;
+                updateMetaContent('og:title', newTitle);
+                updateMetaContent('twitter:title', newTitle);
+            }
+
+            // Update the meta description
+            if (descriptionContent) {
+                updateMetaContent('description', descriptionContent);
+                updateMetaContent('og:description', descriptionContent);
+                updateMetaContent('twitter:description', descriptionContent);
+            }
+        }
+
+        function updateMetaContent(name, content) {
+            let meta = document.querySelector(`meta[name="${name}"]`);
+            if (!meta) meta = document.querySelector(`meta[property="${name}"]`);
+            if (meta) {
+                meta.setAttribute('content', content);
+            } else {
+                // Create a new meta tag if it doesn't exist
+                meta = document.createElement('meta');
+                if (name.startsWith('og:')) {
+                    meta.setAttribute('property', name);
+                } else {
+                    meta.setAttribute('name', name);
+                }
+                meta.setAttribute('content', content);
+                document.head.appendChild(meta);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', updateSEO);
+    </script>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p class="lead">This is the main description of the page.</p>
+</body>
+</html>
