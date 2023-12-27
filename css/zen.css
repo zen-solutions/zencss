@@ -3,10 +3,9 @@
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 .zen {
-  background: #e2e2e2;
+  background: #e4e4e4;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #444444;
@@ -17,6 +16,238 @@
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Purpose: 
+     This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
+
+     It evaluates each color in each map against WCAG recommended color contrast ratio
+     of 4.5/1 (adds a small buffer) and chooses the appropriate text color that will pass compliance.
+
+     Finally, it autoassigns that color to the font color associated with that background, ensuring WCAG color compliance out of the box. 
+
+     Change colors, and this script will update the color value with a new compliant match for the font color. */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2023-2023 Shaun Mackey
+    * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Firefox */
+  /* Chrome, Edge, and Safari */
+  /*
+  Box-sizinghttps://getbootstrap.com/docs/4.6/getting-started/introduction/#css-files
+  For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+
+  On the rare occasion you need to override it, use something like the following:
+  */
+  /* Styles for the tabbed card */
+  /* Styles for the tab header container */
+  /* Styles for individual tabs */
+  /* Styles for tab content */
+  /* Hide tab content by default */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+   * zenCSS Beta v2.0.0 (https://zencss.com/)
+   * Copyright 2022-2024 Shaun Mackey
+   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+   */
+  /* Mobile & Tablet Styles */
+  /* Styling for navigation and links */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Shrink and move label on input focus or if there is content in the input field */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Variables */
+  /* Mixin for hover styles */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Width and height */
+  /* Generate classes for gaps */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Active Items */
+  /* Disabled Items */
+  /* Flush */
+  /* Horizontal */
+  /* Contextual Classes */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Generate border color classes */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*  test in docs to see if its good. need to integrate into testing vs being a div */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Mobile Styles */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Color for the fill effect on click */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Additional styling for better visualization */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Image Gallery Styles */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* RTL Enhancements */
+  /* Logical Properties for automatic RTL adaptation */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Apply the mixin for each color */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Add media queries if necessary for responsiveness */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Flex Container Classes */
+  /* Wrap and No-Wrap Classes */
+  /* Justify Content Classes */
+  /* Align Items Classes */
+  /* Align Content Classes */
+  /* Align Self Classes */
+  /* Flex Grow and Shrink Classes */
+  /* Order Classes */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Medium devices (tablets, 768px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* X-Large devices (large desktops, 1200px and up) */
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  /*
+    * zenCSS Beta v2.0.0 (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* ------------------------------------------------- */
+  /* ----- Padding & Margin 
+  /* ------------------------------------------------- */
+  /* ------------------------------------------------- */
+  /* -----  Top/Bottom/Left/Right Margins/Padding 
+  /* ------------------------------------------------- */
 }
 .zen *::before,
 .zen *::after {
@@ -160,9 +391,7 @@
   text-decoration: none;
   display: inline;
   cursor: pointer;
-  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .zen .bg-dark button:hover {
   background: #d9d9d9;
@@ -177,9 +406,7 @@
   text-decoration: none;
   display: inline;
   cursor: pointer;
-  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .zen .bg-light button:hover {
   background: #262626;
@@ -266,20 +493,15 @@
 }
 .zen ol {
   padding: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin-bottom: 1em;
-  -webkit-padding-start: 35px;
-          padding-inline-start: 35px;
+  padding-inline-start: 35px;
 }
 .zen ul {
   padding: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   list-style-type: disc;
   padding-left: 30px;
   margin-bottom: 1em;
@@ -619,9 +841,13 @@
 }
 .zen .youtube\:video-container iframe {
   display: block;
+  /* Remove default inline framing */
   width: 100%;
+  /* Full width of the container */
   height: 100%;
+  /* Full height based on the aspect ratio */
   border: none;
+  /* Optional, removes the border */
 }
 .zen .content-box {
   box-sizing: content-box;
@@ -785,7 +1011,7 @@
   z-index: 1;
 }
 .zen .zen-body-bg-color {
-  background: #e2e2e2;
+  background: #e4e4e4;
 }
 .zen .underline-handdrawn {
   background-image: url("../img/placeholder/underline.svg");
@@ -797,8 +1023,7 @@
   display: inline-block;
 }
 .zen .clip-circle-left {
-  -webkit-clip-path: ellipse(44% 51% at 9% 50%);
-          clip-path: ellipse(44% 51% at 9% 50%);
+  clip-path: ellipse(44% 51% at 9% 50%);
 }
 .zen .promo-banner {
   width: 100%;
@@ -972,8 +1197,7 @@
   }
 }
 .zen .icon-header {
-  -webkit-filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
-          filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
+  filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
   margin-right: 5px;
 }
 .zen form {
@@ -1087,11 +1311,6 @@
   font-size: 0.8em;
   transition: 0.3s all;
 }
-.zen form input:not(:-moz-placeholder-shown) + label {
-  top: 3px;
-  left: 10px;
-  font-size: 8px;
-}
 .zen form input:focus + label,
 .zen form input:not(:placeholder-shown) + label {
   top: 3px;
@@ -1111,9 +1330,9 @@
   border: 1px solid rgba(115, 130, 140, 0.2);
   padding: 10px 4px;
   width: 100%;
-  background-image: url("../img/icons/zenicon-arrow-down.svg"); 
+  background-image: url("../img/icons/zenicon-arrow-down.svg"); /* Path to your custom dropdown icon */
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 10px center; /* Position for the background icon */
   background-repeat: no-repeat;
   background-position: right 7px center;
   cursor: pointer;
@@ -1128,21 +1347,16 @@
 .zen .slides-container {
   width: 100%;
   display: flex;
-  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .zen .slide {
   min-width: 100%;
-  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .zen .arrow {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 24px;
   z-index: 100;
   cursor: pointer;
@@ -1224,8 +1438,7 @@
   position: absolute;
   top: -9px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   padding-top: 0.4em;
 }
 .zen .position-corner {
@@ -1986,10 +2199,8 @@
   padding: 0;
 }
 .zen .card ul {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .zen .card > img {
   border: 0;
@@ -2009,8 +2220,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -2076,8 +2286,7 @@
   width: 60%;
   top: 50%;
   left: 55%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .zen .bg-none {
   background: none !important;
@@ -2137,8 +2346,7 @@
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #0865fb;
   width: 100%;
   box-sizing: border-box;
@@ -2158,12 +2366,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-primary.alert-light-minimal {
   color: black;
@@ -2174,15 +2380,13 @@
   border-left: 60px solid #0347b3;
 }
 .zen .alert-primary.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-primary-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #0865fb;
   width: 100%;
   box-sizing: border-box;
@@ -2202,12 +2406,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-primary-minimal.alert-light-minimal {
   color: black;
@@ -2218,15 +2420,13 @@
   border-left: 60px solid #0347b3;
 }
 .zen .alert-primary-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-danger {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #e9370b;
   width: 100%;
   box-sizing: border-box;
@@ -2246,12 +2446,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-danger.alert-light-minimal {
   color: black;
@@ -2262,15 +2460,13 @@
   border-left: 60px solid #a02607;
 }
 .zen .alert-danger.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-danger-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #e9370b;
   width: 100%;
   box-sizing: border-box;
@@ -2290,12 +2486,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-danger-minimal.alert-light-minimal {
   color: black;
@@ -2306,15 +2500,13 @@
   border-left: 60px solid #a02607;
 }
 .zen .alert-danger-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-success {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #085207;
   width: 100%;
   box-sizing: border-box;
@@ -2334,12 +2526,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-success.alert-light-minimal {
   color: black;
@@ -2350,15 +2540,13 @@
   border-left: 60px solid #010b01;
 }
 .zen .alert-success.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-success-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #085207;
   width: 100%;
   box-sizing: border-box;
@@ -2378,12 +2566,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-success-minimal.alert-light-minimal {
   color: black;
@@ -2394,15 +2580,13 @@
   border-left: 60px solid #010b01;
 }
 .zen .alert-success-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-warning {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #a29503;
   width: 100%;
   box-sizing: border-box;
@@ -2422,12 +2606,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-warning.alert-light-minimal {
   color: black;
@@ -2438,15 +2620,13 @@
   border-left: 60px solid #575002;
 }
 .zen .alert-warning.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-warning-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: #a29503;
   width: 100%;
   box-sizing: border-box;
@@ -2466,12 +2646,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-warning-minimal.alert-light-minimal {
   color: black;
@@ -2482,15 +2660,13 @@
   border-left: 60px solid #575002;
 }
 .zen .alert-warning-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-dark {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: rgba(13, 17, 23, 0.8);
   width: 100%;
   box-sizing: border-box;
@@ -2510,12 +2686,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-dark.alert-light-minimal {
   color: black;
@@ -2526,15 +2700,13 @@
   border-left: 60px solid rgba(0, 0, 0, 0.8);
 }
 .zen .alert-dark.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-dark-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: rgba(13, 17, 23, 0.8);
   width: 100%;
   box-sizing: border-box;
@@ -2554,12 +2726,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-dark-minimal.alert-light-minimal {
   color: black;
@@ -2570,15 +2740,13 @@
   border-left: 60px solid rgba(0, 0, 0, 0.8);
 }
 .zen .alert-dark-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-light {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: rgba(230, 230, 230, 0.55);
   width: 100%;
   box-sizing: border-box;
@@ -2598,12 +2766,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-light.alert-light-minimal {
   color: black;
@@ -2614,15 +2780,13 @@
   border-left: 60px solid rgba(191, 191, 191, 0.55);
 }
 .zen .alert-light.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-light-minimal {
   background: white;
   border-spacing: 1px;
   padding: 1em 1em 1em 16px;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  filter: grayscale(10%);
   color: rgba(230, 230, 230, 0.55);
   width: 100%;
   box-sizing: border-box;
@@ -2642,12 +2806,10 @@
   position: absolute;
   left: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
-          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+  filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
 }
 .zen .alert-light-minimal.alert-light-minimal {
   color: black;
@@ -2658,8 +2820,7 @@
   border-left: 60px solid rgba(191, 191, 191, 0.55);
 }
 .zen .alert-light-minimal.alert-light::before {
-  -webkit-filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
-          filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+  filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
 }
 .zen .alert-warning,
 .zen .alert-warning-minimal {
@@ -2977,8 +3138,7 @@
   height: 2px;
   width: 20px;
   background-color: rgba(115, 130, 140, 0.2);
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 0;
 }
 .zen .text-height-lg {
@@ -3075,8 +3235,7 @@
   content: "";
   position: absolute;
   left: 0; /* Line at the very left of the padding area */
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%); /* Move the line to the left of the content */
+  transform: translateX(-100%); /* Move the line to the left of the content */
   margin-left: -5px; /* Additional 5px space from the content */
   top: 20%;
   bottom: 0;
@@ -3298,8 +3457,7 @@
   position: absolute;
   top: calc(100% + 29px);
   left: 15px;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   z-index: 10;
   /* Adjust this value to align the caret as needed */
   transform: translateY(-100%);
@@ -3407,9 +3565,7 @@
 }
 .zen .slide-figure {
   display: flex;
-  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .zen .carousel-slide {
   min-width: 100%;
@@ -3435,8 +3591,7 @@
 .zen .arrow {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 24px;
   z-index: 100;
   cursor: pointer;
@@ -3470,29 +3625,16 @@
   display: block;
   padding: 0.45em;
 }
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .zen .spin {
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 .zen .card-split {
   position: relative;
@@ -3504,8 +3646,7 @@
   flex-shrink: 0;
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .zen .img-round {
   border-radius: 50%;
@@ -3585,34 +3726,19 @@
   line-height: 20px;
   font-size: 12px;
 }
-@-webkit-keyframes notificationBounce {
-  0%, 14.29%, 100% {
-    /* 14.29% of 7 seconds is approximately 1 second */
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  7.14% {
-    /* Halfway of 1 second */
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-}
 @keyframes notificationBounce {
   0%, 14.29%, 100% {
     /* 14.29% of 7 seconds is approximately 1 second */
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   7.14% {
     /* Halfway of 1 second */
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 .zen .btn-circle[data-unread][data-animate=true]::after {
   /* Apply the modified bounce animation */
-  -webkit-animation: notificationBounce 7s infinite;
-          animation: notificationBounce 7s infinite;
+  animation: notificationBounce 7s infinite;
 }
 .zen .hidden {
   display: none;
@@ -3656,8 +3782,7 @@
 .zen .social-icons a img {
   width: 20px;
   height: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .zen .icon-toggle {
   cursor: pointer;
@@ -3732,14 +3857,6 @@
   font-size: 0.7em;
   margin-left: 5px;
 }
-@-webkit-keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -3748,72 +3865,28 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes slideUpDown {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 @keyframes slideUpDown {
   0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateY(0);
   }
 }
 @keyframes slideInFromLeft {
   0% {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-webkit-keyframes slideInFromRight {
-  0% {
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes slideInFromRight {
   0% {
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-webkit-keyframes fadeIn {
-  0%, 100% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes fadeIn {
@@ -3826,129 +3899,84 @@
 }
 .zen .fade-in {
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
 }
 .zen .fade-in.visible {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .zen .blink {
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 .zen .slide-up {
-  -webkit-animation: slideUpDown 0.5s ease-out;
-          animation: slideUpDown 0.5s ease-out;
-}
-@-webkit-keyframes slideDown {
-  0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  animation: slideUpDown 0.5s ease-out;
 }
 @keyframes slideDown {
   0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .zen .slide-down {
-  -webkit-animation: slideDown 0.5s ease-out;
-          animation: slideDown 0.5s ease-out;
+  animation: slideDown 0.5s ease-out;
 }
 .zen .slide-left {
-  -webkit-animation: slideInFromLeft 0.5s ease-out;
-          animation: slideInFromLeft 0.5s ease-out;
+  animation: slideInFromLeft 0.5s ease-out;
 }
 .zen .slide-right {
-  -webkit-animation: slideInFromRight 0.5s ease-out;
-          animation: slideInFromRight 0.5s ease-out;
+  animation: slideInFromRight 0.5s ease-out;
 }
 .zen .fade-in-1 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 0.2s forwards;
-          animation: fadeIn 1s 0.2s forwards;
+  animation: fadeIn 1s 0.2s forwards;
 }
 .zen .fade-in-2 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 0.4s forwards;
-          animation: fadeIn 1s 0.4s forwards;
+  animation: fadeIn 1s 0.4s forwards;
 }
 .zen .fade-in-3 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 0.6s forwards;
-          animation: fadeIn 1s 0.6s forwards;
+  animation: fadeIn 1s 0.6s forwards;
 }
 .zen .fade-in-4 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 0.8s forwards;
-          animation: fadeIn 1s 0.8s forwards;
+  animation: fadeIn 1s 0.8s forwards;
 }
 .zen .fade-in-5 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 1s forwards;
-          animation: fadeIn 1s 1s forwards;
+  animation: fadeIn 1s 1s forwards;
 }
 .zen .fade-in-6 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 1.2s forwards;
-          animation: fadeIn 1s 1.2s forwards;
+  animation: fadeIn 1s 1.2s forwards;
 }
 .zen .fade-in-7 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 1.4s forwards;
-          animation: fadeIn 1s 1.4s forwards;
+  animation: fadeIn 1s 1.4s forwards;
 }
 .zen .fade-in-8 {
   opacity: 0;
-  -webkit-animation: fadeIn 1s 1.6s forwards;
-          animation: fadeIn 1s 1.6s forwards;
+  animation: fadeIn 1s 1.6s forwards;
 }
 .zen .btn-hover {
-  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   display: inline-block;
 }
 .zen .btn-hover:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 .zen .breathe {
-  -webkit-animation: subtleZoom 10s infinite alternate;
-          animation: subtleZoom 10s infinite alternate;
-}
-@-webkit-keyframes subtleZoom {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
+  animation: subtleZoom 10s infinite alternate;
 }
 @keyframes subtleZoom {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 .zen .image-gallery {
@@ -3982,8 +4010,7 @@
   left: 50%;
   padding: 0.25rem 0.5rem;
   overflow: hidden;
-  -webkit-transform: translate(-50%, -0.25rem);
-          transform: translate(-50%, -0.25rem);
+  transform: translate(-50%, -0.25rem);
   border-radius: 6px;
   background: #545454;
   content: attr(data-tooltip);
@@ -3998,8 +4025,7 @@
 .zen [data-tooltip]::after,
 .zen [data-tooltip][data-placement=top]::after {
   padding: 0;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   border-top: 0.3rem solid;
   border-right: 0.3rem solid transparent;
   border-left: 0.3rem solid transparent;
@@ -4012,12 +4038,10 @@
 .zen [data-tooltip][data-placement=bottom]::before {
   top: 110%;
   bottom: auto;
-  -webkit-transform: translate(-50%, 0.25rem);
-          transform: translate(-50%, 0.25rem);
+  transform: translate(-50%, 0.25rem);
 }
 .zen [data-tooltip][data-placement=bottom]:after {
-  -webkit-transform: translate(-50%, -0.25rem);
-          transform: translate(-50%, -0.25rem);
+  transform: translate(-50%, -0.25rem);
   border: 0.3rem solid transparent;
   border-bottom: 0.3rem solid;
 }
@@ -4027,12 +4051,10 @@
   right: 110%;
   bottom: auto;
   left: auto;
-  -webkit-transform: translate(-0.25rem, -50%);
-          transform: translate(-0.25rem, -50%);
+  transform: translate(-0.25rem, -50%);
 }
 .zen [data-tooltip][data-placement=left]:after {
-  -webkit-transform: translate(0.3rem, -50%);
-          transform: translate(0.3rem, -50%);
+  transform: translate(0.3rem, -50%);
   border: 0.3rem solid transparent;
   border-left: 0.3rem solid;
 }
@@ -4042,12 +4064,10 @@
   right: auto;
   bottom: auto;
   left: 110%;
-  -webkit-transform: translate(0.2rem, -50%);
-          transform: translate(0.2rem, -50%);
+  transform: translate(0.2rem, -50%);
 }
 .zen [data-tooltip][data-placement=right]:after {
-  -webkit-transform: translate(-0.3rem, -50%);
-          transform: translate(-0.3rem, -50%);
+  transform: translate(-0.3rem, -50%);
   border: 0.3rem solid transparent;
   border-right: 0.3rem solid;
 }
@@ -4064,96 +4084,55 @@
   .zen [data-tooltip][data-placement=bottom]:focus::before,
   .zen [data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus::after,
   .zen [data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus::before {
-    -webkit-animation-duration: 0.2s;
-            animation-duration: 0.2s;
-    -webkit-animation-name: tooltip-slide-top;
-            animation-name: tooltip-slide-top;
+    animation-duration: 0.2s;
+    animation-name: tooltip-slide-top;
   }
   .zen [data-tooltip]:hover::after,
   .zen [data-tooltip][data-placement=bottom]:focus::after,
   .zen [data-tooltip][data-placement=bottom]:hover [data-tooltip]:focus::after {
-    -webkit-animation-name: tooltip-caret-slide-top;
-            animation-name: tooltip-caret-slide-top;
+    animation-name: tooltip-caret-slide-top;
   }
   .zen [data-tooltip][data-placement=bottom]:focus::after,
   .zen [data-tooltip][data-placement=bottom]:focus::before,
   .zen [data-tooltip][data-placement=bottom]:hover::after,
   .zen [data-tooltip][data-placement=bottom]:hover::before {
-    -webkit-animation-duration: 0.2s;
-            animation-duration: 0.2s;
-    -webkit-animation-name: tooltip-slide-bottom;
-            animation-name: tooltip-slide-bottom;
+    animation-duration: 0.2s;
+    animation-name: tooltip-slide-bottom;
   }
   .zen [data-tooltip][data-placement=bottom]:focus::after,
   .zen [data-tooltip][data-placement=bottom]:hover::after {
-    -webkit-animation-name: tooltip-caret-slide-bottom;
-            animation-name: tooltip-caret-slide-bottom;
+    animation-name: tooltip-caret-slide-bottom;
   }
   .zen [data-tooltip][data-placement=left]:focus::after,
   .zen [data-tooltip][data-placement=left]:focus::before,
   .zen [data-tooltip][data-placement=left]:hover::after,
   .zen [data-tooltip][data-placement=left]:hover::before {
-    -webkit-animation-duration: 0.2s;
-            animation-duration: 0.2s;
-    -webkit-animation-name: tooltip-slide-left;
-            animation-name: tooltip-slide-left;
+    animation-duration: 0.2s;
+    animation-name: tooltip-slide-left;
   }
   .zen [data-tooltip][data-placement=left]:focus::after,
   .zen [data-tooltip][data-placement=left]:hover::after {
-    -webkit-animation-name: tooltip-caret-slide-left;
-            animation-name: tooltip-caret-slide-left;
+    animation-name: tooltip-caret-slide-left;
   }
   .zen [data-tooltip][data-placement=right]:focus::after,
   .zen [data-tooltip][data-placement=right]:focus::before,
   .zen [data-tooltip][data-placement=right]:hover::after,
   .zen [data-tooltip][data-placement=right]:hover::before {
-    -webkit-animation-duration: 0.2s;
-            animation-duration: 0.2s;
-    -webkit-animation-name: tooltip-slide-right;
-            animation-name: tooltip-slide-right;
+    animation-duration: 0.2s;
+    animation-name: tooltip-slide-right;
   }
   .zen [data-tooltip][data-placement=right]:focus::after,
   .zen [data-tooltip][data-placement=right]:hover::after {
-    -webkit-animation-name: tooltip-caret-slide-right;
-            animation-name: tooltip-caret-slide-right;
-  }
-}
-@-webkit-keyframes tooltip-slide-top {
-  from {
-    -webkit-transform: translate(-50%, 0.75rem);
-            transform: translate(-50%, 0.75rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-50%, -0.25rem);
-            transform: translate(-50%, -0.25rem);
-    opacity: 1;
+    animation-name: tooltip-caret-slide-right;
   }
 }
 @keyframes tooltip-slide-top {
   from {
-    -webkit-transform: translate(-50%, 0.75rem);
-            transform: translate(-50%, 0.75rem);
+    transform: translate(-50%, 0.75rem);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-50%, -0.25rem);
-            transform: translate(-50%, -0.25rem);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-caret-slide-top {
-  from {
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(-50%, -0.25rem);
-            transform: translate(-50%, -0.25rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, -0.25rem);
     opacity: 1;
   }
 }
@@ -4162,52 +4141,21 @@
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(-50%, -0.25rem);
-            transform: translate(-50%, -0.25rem);
+    transform: translate(-50%, -0.25rem);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-slide-bottom {
-  from {
-    -webkit-transform: translate(-50%, -0.75rem);
-            transform: translate(-50%, -0.75rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-50%, 0.25rem);
-            transform: translate(-50%, 0.25rem);
+    transform: translate(-50%, 0);
     opacity: 1;
   }
 }
 @keyframes tooltip-slide-bottom {
   from {
-    -webkit-transform: translate(-50%, -0.75rem);
-            transform: translate(-50%, -0.75rem);
+    transform: translate(-50%, -0.75rem);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-50%, 0.25rem);
-            transform: translate(-50%, 0.25rem);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-caret-slide-bottom {
-  from {
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(-50%, -0.5rem);
-            transform: translate(-50%, -0.5rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-50%, -0.3rem);
-            transform: translate(-50%, -0.3rem);
+    transform: translate(-50%, 0.25rem);
     opacity: 1;
   }
 }
@@ -4216,52 +4164,21 @@
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(-50%, -0.5rem);
-            transform: translate(-50%, -0.5rem);
+    transform: translate(-50%, -0.5rem);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-50%, -0.3rem);
-            transform: translate(-50%, -0.3rem);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-slide-left {
-  from {
-    -webkit-transform: translate(0.75rem, -50%);
-            transform: translate(0.75rem, -50%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-0.25rem, -50%);
-            transform: translate(-0.25rem, -50%);
+    transform: translate(-50%, -0.3rem);
     opacity: 1;
   }
 }
 @keyframes tooltip-slide-left {
   from {
-    -webkit-transform: translate(0.75rem, -50%);
-            transform: translate(0.75rem, -50%);
+    transform: translate(0.75rem, -50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-0.25rem, -50%);
-            transform: translate(-0.25rem, -50%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-caret-slide-left {
-  from {
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(0.05rem, -50%);
-            transform: translate(0.05rem, -50%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(0.3rem, -50%);
-            transform: translate(0.3rem, -50%);
+    transform: translate(-0.25rem, -50%);
     opacity: 1;
   }
 }
@@ -4270,52 +4187,21 @@
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(0.05rem, -50%);
-            transform: translate(0.05rem, -50%);
+    transform: translate(0.05rem, -50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(0.3rem, -50%);
-            transform: translate(0.3rem, -50%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-slide-right {
-  from {
-    -webkit-transform: translate(-0.75rem, -50%);
-            transform: translate(-0.75rem, -50%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(0.25rem, -50%);
-            transform: translate(0.25rem, -50%);
+    transform: translate(0.3rem, -50%);
     opacity: 1;
   }
 }
 @keyframes tooltip-slide-right {
   from {
-    -webkit-transform: translate(-0.75rem, -50%);
-            transform: translate(-0.75rem, -50%);
+    transform: translate(-0.75rem, -50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(0.25rem, -50%);
-            transform: translate(0.25rem, -50%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes tooltip-caret-slide-right {
-  from {
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(-0.05rem, -50%);
-            transform: translate(-0.05rem, -50%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translate(-0.3rem, -50%);
-            transform: translate(-0.3rem, -50%);
+    transform: translate(0.25rem, -50%);
     opacity: 1;
   }
 }
@@ -4324,13 +4210,11 @@
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(-0.05rem, -50%);
-            transform: translate(-0.05rem, -50%);
+    transform: translate(-0.05rem, -50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(-0.3rem, -50%);
-            transform: translate(-0.3rem, -50%);
+    transform: translate(-0.3rem, -50%);
     opacity: 1;
   }
 }
@@ -4347,8 +4231,7 @@
   content: "";
   vertical-align: text-bottom;
   vertical-align: -0.125em;
-  -webkit-animation: spinner 0.75s linear infinite;
-          animation: spinner 0.75s linear infinite;
+  animation: spinner 0.75s linear infinite;
   opacity: 0.5;
 }
 .zen [aria-busy=true]:not(input, select, textarea, html):not(:empty)::before {
@@ -4369,16 +4252,9 @@
 .zen input[type=submit][aria-busy=true] {
   pointer-events: none;
 }
-@-webkit-keyframes spinner {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .zen .sr-only {
@@ -4433,16 +4309,12 @@
   border-right: 2px solid rgba(115, 130, 140, 0.2);
 }
 .zen [dir=rtl] .icon {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .zen .element {
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
-  -webkit-padding-start: 10px;
-          padding-inline-start: 10px;
-  -webkit-border-start: 2px solid rgba(115, 130, 140, 0.2);
-          border-inline-start: 2px solid rgba(115, 130, 140, 0.2);
+  margin-inline-start: 10px;
+  padding-inline-start: 10px;
+  border-inline-start: 2px solid rgba(115, 130, 140, 0.2);
 }
 .zen .theme-primary {
   background: #094394;
@@ -5026,8 +4898,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 .zen .bg-blur {
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 .zen .text-dark-green {
   color: hsl(117, 39%, 37%);
@@ -5069,18 +4940,15 @@
   color: #eee !important;
 }
 .zen .icon-invert {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 .zen .icon-gold {
   width: 9px;
-  -webkit-filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
-          filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
+  filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
 }
 .zen .icon-silver {
   width: 9px;
-  -webkit-filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
-          filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+  filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
 }
 .zen .bg-angle {
   background-color: #f0f0f0; /* Example background color */
@@ -5342,9 +5210,6 @@
 .zen #contact button[type=submit] {
   cursor: pointer;
 }
-.zen ::-webkit-input-placeholder {
-  color: #888;
-}
 .zen ::placeholder,
 .zen ::-webkit-input-placeholder,
 .zen :-ms-input-placeholder {
@@ -5382,11 +5247,8 @@
   left: 0;
   background-color: #2b66c5;
   z-index: -1;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .zen .nav-menu li:hover {
   background-color: rgba(169, 169, 169, 0.35);
@@ -5966,10 +5828,8 @@
 @media (max-width: 767px) {
   .zen .mobile\:thin {
     aspect-ratio: 16/9;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
   .zen .mobile\:max-up {
     flex-direction: row;
@@ -6301,8 +6161,9 @@
   top: calc(100% + 29px);
   left: 15px;
   z-index: 10;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   display: none;
   background: none !important;
 }
+
+/*# sourceMappingURL=zen.css.map */

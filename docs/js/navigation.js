@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Utilities</a>
                 <div class="dropdown-content left-150">
-                <a href="../examples/text.html">Text Treatments</a>
                 <a href="../examples/image.html">Image/Icon Styling</a>
                     <a href="../examples/text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                     <a href="../examples/padding-margin-utilities.html">Padding & Margin</a>
