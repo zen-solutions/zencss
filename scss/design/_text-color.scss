@@ -83,4 +83,11 @@ $grey-colors: (
 
 .text-danger {
     color: $text-danger;
+    position: relative;
+    top: -5px;
+}
+
+.text-warning {
+    position: relative;
+    top: -5px;
 }

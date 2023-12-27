@@ -106,6 +106,8 @@ $base-text-color: #444444;
     //contextual
     .text-success {
         color: darken($green, 11%);
+        position: relative;
+        top: -5px;
     }
 
     .text-failure {

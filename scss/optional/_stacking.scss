@@ -1,79 +1,79 @@
-/*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
+// /*
+//   * zenCSS Beta v2.0.0 (https://zencss.com/)
+//   * Copyright 2022-2024 Shaun Mackey
+//   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+//   */
 
-//NOTE: This is old and not currently in use. May be depricated or deployed. TBD.
+// //NOTE: This is old and not currently in use. May be depricated or deployed. TBD.
 
-// Define common styles for all stack z-containers
-@mixin stack-z-container {
-    flex-direction: column !important; //only need cause of important in media query. solve those, remove this.
-    text-align: center;
-}
+// // Define common styles for all stack z-containers
+// @mixin stack-z-container {
+//     flex-direction: column !important; //only need cause of important in media query. solve those, remove this.
+//     text-align: center;
+// }
 
-// Define alignment variables
-$align-start: start;
-$align-center: center;
-$align-end: end;
+// // Define alignment variables
+// $align-start: start;
+// $align-center: center;
+// $align-end: end;
 
-// Define justification variables
-$justify-start: flex-start;
-$justify-center: center;
-$justify-end: flex-end;
+// // Define justification variables
+// $justify-start: flex-start;
+// $justify-center: center;
+// $justify-end: flex-end;
 
-// Generate Flex z-container classes with different alignments and justifications
-.stack,
-.middle {
-    @include stack-z-container;
-    align-items: $align-center;
-    justify-content: $justify-center;
-}
+// // Generate Flex z-container classes with different alignments and justifications
+// .stack,
+// .middle {
+//     @include stack-z-container;
+//     align-items: $align-center;
+//     justify-content: $justify-center;
+// }
 
-.stack-left {
-    @include stack-z-container;
-    align-items: $align-start;
-    justify-content: $justify-center;
-}
+// .stack-left {
+//     @include stack-z-container;
+//     align-items: $align-start;
+//     justify-content: $justify-center;
+// }
 
-.stack-right {
-    @include stack-z-container;
-    align-items: $align-end;
-    justify-content: $justify-center;
-}
+// .stack-right {
+//     @include stack-z-container;
+//     align-items: $align-end;
+//     justify-content: $justify-center;
+// }
 
-.stack-top {
-    @include stack-z-container;
-    align-items: $align-center;
-    justify-content: $justify-start;
-}
+// .stack-top {
+//     @include stack-z-container;
+//     align-items: $align-center;
+//     justify-content: $justify-start;
+// }
 
-.stack-top-left {
-    @include stack-z-container;
-    align-items: $align-start;
-    justify-content: $justify-start;
-}
+// .stack-top-left {
+//     @include stack-z-container;
+//     align-items: $align-start;
+//     justify-content: $justify-start;
+// }
 
-.stack-top-right {
-    @include stack-z-container;
-    align-items: $align-end;
-    justify-content: $justify-start;
-}
+// .stack-top-right {
+//     @include stack-z-container;
+//     align-items: $align-end;
+//     justify-content: $justify-start;
+// }
 
-.stack-bottom {
-    @include stack-z-container;
-    align-items: $align-center;
-    justify-content: $justify-end;
-}
+// .stack-bottom {
+//     @include stack-z-container;
+//     align-items: $align-center;
+//     justify-content: $justify-end;
+// }
 
-.stack-bottom-left {
-    @include stack-z-container;
-    align-items: $align-start;
-    justify-content: $justify-end;
-}
+// .stack-bottom-left {
+//     @include stack-z-container;
+//     align-items: $align-start;
+//     justify-content: $justify-end;
+// }
 
-.stack-bottom-right {
-    @include stack-z-container;
-    align-items: $align-end;
-    justify-content: $justify-end;
-}
+// .stack-bottom-right {
+//     @include stack-z-container;
+//     align-items: $align-end;
+//     justify-content: $justify-end;
+// }

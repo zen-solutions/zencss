@@ -22,29 +22,49 @@ $colors: (
 
 //do these with a color map
 .border-success {
-    border: 2px solid $green;
+    border: 2px solid $green !important;
 }
 
 .border-danger {
-    border: 2px solid $red;
+    border: 2px solid $red !important;
 }
 
 .border-warning {
-    border: 2px solid $orange;
+    border: 2px solid $orange !important;
 }
 
 .border-primary {
-    border: 2px solid $primary-color;
+    border: 2px solid $primary-color !important;
 }
 
 .border-cta {
-    border: 2px solid $cta-color;
+    border: 2px solid $cta-color !important;
 }
 
 .border-secondary {
-    border: 2px solid $secondary-color;
+    border: 2px solid $secondary-color !important;
 }
 
 .border-accent {
-    border: 2px solid $accent-color;
+    border: 2px solid $accent-color !important;
+}
+
+//line to left of content
+.left-line {
+    display: inline-block; /* Wrap content width */
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    padding-left: 10px; /* Space for the line and some padding */
+}
+
+.left-line::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Line at the very left of the padding area */
+    transform: translateX(-100%); /* Move the line to the left of the content */
+    margin-left: -5px; /* Additional 5px space from the content */
+    top:20%;
+    bottom: 0;
+    width: 5px; /* Width of the line */
+    background-color: $cta-color; /* Color of the line */
+    height: 60%; /* Adjust if needed */
 }

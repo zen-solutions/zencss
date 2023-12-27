@@ -36,8 +36,8 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Text/Content Row</h1>
-                    <p>A classic design for your website </p>
+                    <h1 class="headline">Text/Content Rows</h1>
+                    <p>Multiple variations on a classic design</p>
                     <hr>
                 </div>
             </z-col>
@@ -55,11 +55,9 @@
                 <div class="center">
                     <span class="label">TESTIMONIALS</span>
                     <h2 class="headline">See What Our Customers Are Saying! </h2>
-
                 </div>
             </z-col>
         </z-row>
-
         <z-row>
             <z-col class="card theme-light center">
                 <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-75 center-me img-round">
@@ -93,11 +91,38 @@
     <z-row>
         <z-col>
             <div class="accordion">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                <div id="content2" class="expanded-content" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">
-
-                    </code></pre>
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                    <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col&gt;
+      &lt;div class="center"&gt;
+        &lt;span class="label"&gt;TESTIMONIALS&lt;/span&gt;
+        &lt;h2 class="headline"&gt;See What Our Customers Are Saying!&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="card theme-light center"&gt;
+      &lt;img src="your-image.jpg" alt="" class="w-75 center-me img-round"&gt;
+      &lt;star-component stars="5"&gt;&lt;/star-component&gt;
+      &lt;p&gt;Lorem ipsum... &lt;/p&gt;
+      &lt;small class="signature smaller"&gt;-Jane Doe&lt;/small&gt;
+    &lt;/z-col&gt;
+    &lt;z-col class="card theme-light center"&gt;
+      &lt;img src="your-image.jpg" alt="" class="w-75 center-me img-round"&gt;
+      &lt;star-component stars="5"&gt;&lt;/star-component&gt;
+      &lt;p&gt;Lorem ipsum... &lt;/p&gt;
+      &lt;small class="signature smaller"&gt;-Bill Franklin&lt;/small&gt;
+    &lt;/z-col&gt;
+    &lt;z-col class="card theme-light center"&gt;
+      &lt;img src="your-image.jpg" alt="" class="w-75 center-me img-round"&gt;
+      &lt;star-component stars="4" half="true"&gt;&lt;/star-component&gt;
+      &lt;p&gt;Lorem ipsum... &lt;/p&gt;
+      &lt;small class="signature smaller"&gt;-Jim Jones&lt;/small&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</code></pre>
                 </div>
             </div>
         </z-col>
@@ -117,7 +142,6 @@
             <div class="center">
                 <span class="label bg-cta-dark">WHY CHOOSE US</span>
                 <h2 class="headline">What Can You Expect From Our Company?</h2>
-
             </div>
         </z-col>
     </z-row>
@@ -164,9 +188,6 @@
             <h3>Responsibility</h3>
             <p>Committed to a better future, we implement eco-friendly practices in our web development process.</p>
         </z-col>
-
-
-
     </z-row>
 </z-container>
 
@@ -180,10 +201,49 @@
     <z-col>
         <div class="accordion">
             <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-            <div id="content2" class="expanded-content" aria-hidden="true">
-                <pre class="copy-text square"><code class="language-html">
+            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col&gt;
+      &lt;div class="center"&gt;
+        &lt;span class="label bg-cta-dark"&gt;WHY CHOOSE US&lt;/span&gt;
+        &lt;h2 class="headline"&gt;What Can You Expect From Our Company?&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
 
-                </code></pre>
+  &lt;z-row class="five-up text-small"&gt;
+    &lt;z-col class="card center"&gt;
+      &lt;img src="your-image.jpg"&gt;
+      &lt;h3&gt;Experience&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+    &lt;/z-col&gt;
+
+    &lt;z-col class="card center"&gt;
+      &lt;img src="your-image.jpg"&gt;
+      &lt;h3&gt;Trust&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+    &lt;/z-col&gt;
+
+    &lt;z-col class="card center"&gt;
+      &lt;img src="your-image.jpg"&gt;
+      &lt;h3&gt;Expertise&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+    &lt;/z-col&gt;
+
+    &lt;z-col class="card center"&gt;
+      &lt;img src="your-image.jpg"&gt;
+      &lt;h3&gt;Protection&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+    &lt;/z-col&gt;
+
+    &lt;z-col class="card center"&gt;
+      &lt;img src="your-image.jpg"&gt;
+      &lt;h3&gt;Responsibility&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt; </code></pre>
             </div>
         </div>
     </z-col>
@@ -211,7 +271,7 @@
 
                         <button id="toggleButton" class="btn-md">Test</button>
                         <button id="toggleDarkMode" class="btn-md">Dark</button>
-                        <a href="../index.html" class="btn btn-md btn-outline">Docs</a>
+                        
                 </div>
             </z-col>
         </z-row>
