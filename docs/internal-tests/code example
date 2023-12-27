@@ -3,7 +3,7 @@
         <z-col>
             <div class="accordion">
                 <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                <div id="content1" class="expanded-content" aria-hidden="true">
+                <div id="content1" class="expanded-content p-0" aria-hidden="true">
                     <pre class="copy-text square"><code class="language-html">
 
                     </code></pre>
