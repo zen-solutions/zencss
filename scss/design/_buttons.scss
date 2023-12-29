@@ -16,12 +16,12 @@ $btn-hover-color: darken($cta-color, 10%);
 @mixin btn-hover($bg-color, $border-color: $bg-color) {
     &:hover {
         background-color: $bg-color;
-    }
+    } 
 }
 
 button,
 .btn {
-    font-size: $zen-font-size;
+    font-size: $zen-tablet-mobile-font-size;
     box-sizing: border-box;
     display: inline-flex;
     justify-content: center;

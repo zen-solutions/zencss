@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                             </z-col>
                             <z-col class="small">
-                                <a href="../examples/preloaders.html">Preloaders</a>
+                                <a href="../examples/preloaders.html">Preload/Lazy Load</a>
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
                                 <a href="../examples/promo-bars.html">Promo Bars</a>
                                 <a href="../examples/quiz.html">Quiz</a>

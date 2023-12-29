@@ -406,6 +406,16 @@ input[type="submit"] {
     border-bottom-right-radius: 0 !important;
 }
 
+.br-left-0{
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.br-right-0{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
 .circle {
     border-radius: 100%;
     width: 56px !important;
@@ -882,6 +892,16 @@ On the rare occasion you need to override it, use something like the following:
     ); 
     z-index: 1; 
 }
+
+
+
+//lazy load take 2
+.lazy-load {
+    background-color: grey;
+    width: 100%; 
+    height: auto; 
+  }
+
 
 // .pattern-interrupt {
 //   display: none;
