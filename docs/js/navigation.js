@@ -109,10 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/formatting.html">Gap, Height, and Width</a>
                     <a href="../examples/flex.html">Flex</a>
                     <a href="../examples/test-classes.html">Testing Tools</a>
-                    <a href="../examples/accessability.html">Accessability</a>
                     <a href="../examples/shadows.html">Shadows</a>                                
                     <a href="../examples/emoji.html">Emoji</a>                                
                     <a href="../examples/border-utilities.html">Border Styling</a>
+                    <a href="../examples/misc.html">Misc</a>
+
                 </div>
             </div>
         </ul>

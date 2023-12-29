@@ -102,20 +102,12 @@ $text-grey-dual: #5e5e5e;
 // Text Size
 //------------------------------------------
 
-.text-small {
+.text-xs {
     font-size: 0.8em !important;
 }
 
-.text-smaller {
+.text-xxs {
     font-size: 0.6em;
-}
-
-.text-big {
-    font-size: 1.2em;
-}
-
-.text-bigger {
-    font-size: 1.4em;
 }
 
 .text-align-right {
@@ -128,23 +120,23 @@ $text-grey-dual: #5e5e5e;
 // }
 
 .text-sm {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 0.9em;
 }
 
 .text-md {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 1.2em;
 }
 
 .text-lg {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 1.5em;
 }
 
 .text-xl {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 2.5em;
+}
+
+.text-xxl {
+    font-size: 4em;
 }
 
 // ------------------------------------------

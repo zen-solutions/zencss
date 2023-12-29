@@ -104,10 +104,26 @@ $sizes: (
 
 .h-full {
     height: 100% !important;
+    max-height: 100% !important;
+
 }
 
 .w-full {
     width: 100% !important;
+    max-width: 100% !important;
+}
+
+.w-sm{
+    width: 25% !important;
+    max-width: 25% !important;
+}
+.w-md{
+    width: 50% !important;
+    max-width: 50% !important;
+}
+.w-lg{
+    width: 75% !important;
+    max-width: 75% !important;
 }
 
 //min height

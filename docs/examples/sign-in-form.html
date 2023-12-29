@@ -7,8 +7,8 @@
     <title>zenCSS Components</title>
 
    <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../css/zen.css">
-    <link rel="stylesheet" href="../../css/icons.css">
+<link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="../../docs/js/updateseo.js"></script>
@@ -48,10 +48,10 @@
         <!--- Component --->
         <!----------------------------------------------------------------------->
 
-        <z-container>
+        <z-container class="single">
             <z-row>
                 <z-col class="align-items-center">
-                    <z-container class="single">
+                    <z-container>
                         <z-row>
                             <z-col>
                                 <div class="card form-container theme-light">
@@ -66,7 +66,7 @@
                                             <input type="email" id="email1" placeholder=" ">
                                             <label for="email1">Email</label>
                                         </div>
-                                        <div class="mb-1">
+                                        <div class="mb-3">
                                             <input type="tel" id="tel1" placeholder=" ">
                                             <label for="tel1">Your Phone Number</label>
                                         </div>
@@ -84,7 +84,7 @@
         <z-container>
             <z-row>
                 <z-col>
-                    <div class="accordion">
+                    <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content1" class="expanded-content p-0" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
@@ -99,7 +99,7 @@
       &lt;input type="email" id="email1" placeholder=" "&gt;
       &lt;label for="email1"&gt;Email&lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class="mb-1"&gt;
+    &lt;div class="mb-3"&gt;
       &lt;input type="tel" id="tel1" placeholder=" "&gt;
       &lt;label for="tel1"&gt;Your Phone Number&lt;/label&gt;
     &lt;/div&gt;
@@ -114,21 +114,21 @@
         </z-container>
 
 
-        <z-container>
+        <z-container class="single">
             <z-row>
                 <z-col class="align-items-center">
                     <hr>
-                    <z-container class="single">
+                    <z-container>
                         <z-row>
                             <z-col>
                                 <div class="card form-container theme-light">
-                                    <h2 class="h5 headline pb-2">Sign Into Your Account</h2>
+                                    <h2 class="h5 headline pb-0">Sign Into Your Account</h2>
                                     <form>
                                         <div>
                                             <input type="email" id="email" placeholder=" ">
                                             <label for="email">Email Address</label>
                                         </div>
-                                        <div class="mb-1">
+                                        <div class="mb-3">
                                             <input type="password" id="pass" placeholder=" ">
                                             <label for="pass">Password</label>
                                         </div>
@@ -148,17 +148,17 @@
             <z-row>
                 <z-col>
 
-                    <div class="accordion">
+                    <div class="accordion center">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                         <div id="content2" class="expanded-content  full-height" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
-    &lt;h5 class="h6 headline pb-2"&gt;Sign Into Your Account&lt;/h5&gt;
+    &lt;h5 class="h6 headline pb-0"&gt;Sign Into Your Account&lt;/h5&gt;
     &lt;form&gt;
       &lt;div&gt;
         &lt;input type="email" id="email" placeholder=" "&gt;
         &lt;label for="email"&gt;Email Address&lt;/label&gt;
       &lt;/div&gt;
-      &lt;div class="mb-1"&gt;
+      &lt;div class="mb-3"&gt;
         &lt;input type="password" id="pass" placeholder=" "&gt;
         &lt;label for="pass"&gt;Password&lt;/label&gt;
       &lt;/div&gt;
@@ -215,7 +215,7 @@
         <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
-    <script src="../../js/zencss.js"></script>
+    <script src="../../dist/zencss.js"></script>
     <script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 

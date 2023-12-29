@@ -12,10 +12,9 @@ $error-color: #d33331; // used for color system not for UI -prolly wont be neede
 
 @import "../user-settings";
 
-// - todo: we could add a "color-overrides.scss" file that they could use to override the colors. it could have the vars w no values filled in.
-// or we could just create a folder, user overrides, and put the color-overrides above in there, then iinclude that file here. that would be smoother.
-// then do that down the page for the other overrides, and they have one place to go.
-// we need to keep OUR values here tho, bc for upgrades, then they can just copy their new overrides files into the system and they're good to go.
+// -- Optional: Add overrides for user-settings
+// @import "path-to-your-overrides-folder/user-settings-overrides";
+
 
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------

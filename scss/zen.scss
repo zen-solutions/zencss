@@ -27,7 +27,9 @@ $zen-body-bg-color: #e4e4e4;
 $zen-dark-text-color: #cacaca;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
-//$text-light-dual: #000000;
+
+// -- Optional: Add overrides for variables above
+// @import "path-to-your-overrides-folder/zen-variables-overrides";
 
 .zen {
     //base stuff

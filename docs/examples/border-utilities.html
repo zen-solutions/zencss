@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
    <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../css/zen.css">
-    <link rel="stylesheet" href="../../css/icons.css">
+<link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -121,6 +121,48 @@
             </z-col>
         </z-row>
     </z-container>
+
+    <z-container>
+        <z-row>
+            <z-col class="border-bottom">
+                <h2>Additional Border Utilities</h2>
+                <p>Border bottom</p>
+            </z-col>
+        </z-row>
+        <z-row>
+            <z-col >
+
+                <p>Border Sides (switches to border bottom on tablet/mobile)</p>
+
+            </z-col>
+        </z-row>
+        <z-row>
+
+            <z-col class="card border-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta error animi quod eius, ex perspiciatis magnam quas quia quae a, assumenda ducimus ipsa reprehenderit voluptate incidunt fuga est.</z-col>
+            <z-col class="card border-right ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta error animi quod eius, ex perspiciatis magnam quas quia quae a, assumenda ducimus ipsa reprehenderit voluptate incidunt fuga est.</z-col>
+            <z-col class="card ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta error animi quod eius, ex perspiciatis magnam quas quia quae a, assumenda ducimus ipsa reprehenderit voluptate incidunt fuga est.</z-col>
+        </z-row>
+    </z-container>
+
+
+
+    <z-container>
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;z-col class="border-bottom"&gt;Lorem ipsum dolor...&lt;/z-col&gt;
+
+&lt;z-col class="card border-right"&gt;Lorem ipsum dolor...&lt;/z-col&gt;
+&lt;z-col class="card border-right"&gt;Lorem ipsum dolor...&lt;/z-col&gt;
+&lt;z-col class="card"&gt;Lorem ipsum dolor...&lt;/z-col&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
     
     <!----------------------------------------------------------------------->
     <!---  The Zen Test --->
@@ -154,7 +196,7 @@
             <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt="zenCSS"></a>
     </footer>
 
-    <script src="../../js/zencss.js"></script>
+    <script src="../../dist/zencss.js"></script>
 <script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 

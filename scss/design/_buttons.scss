@@ -21,6 +21,7 @@ $btn-hover-color: darken($cta-color, 10%);
 
 button,
 .btn {
+    font-size: $zen-font-size;
     box-sizing: border-box;
     display: inline-flex;
     justify-content: center;

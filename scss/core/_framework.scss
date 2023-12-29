@@ -23,7 +23,7 @@ z-container,
 
 z-container-fluid,
 .z-container-fluid {
-    width: 100%;
+    width: 100% !important;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -82,6 +82,7 @@ z-col,
 
     padding: $col-padding;
     margin: 0;
+
 }
 
 //--------------------------------

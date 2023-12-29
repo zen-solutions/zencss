@@ -583,10 +583,10 @@ header :link:hover {
 .border-right::after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: 0;
+    right: -5px;
     width: 0;
-    height: 85%;
+    height: 100%;
     border-right: 1px solid $border-color;
 }
 
@@ -666,7 +666,7 @@ header :link:hover {
 }
 
 /*
-Box-sizinghttps://getbootstrap.com/docs/4.6/getting-started/introduction/#css-files
+
 For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
 
 On the rare occasion you need to override it, use something like the following:
@@ -960,7 +960,7 @@ On the rare occasion you need to override it, use something like the following:
 
 //left side clipping idea. stage 1. some cliping
 
-.clip-circle-left{
-    clip-path: ellipse(44% 51% at 9% 50%);
-}
+// .clip-circle-left{
+//     clip-path: ellipse(44% 51% at 9% 50%);
+// }
 

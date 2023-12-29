@@ -7,8 +7,8 @@
     <title>zenCSS Components</title>
     <link rel="stylesheet" href="../css/documentation.css">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../css/zen.css">
-<link rel="stylesheet" href="../../css/icons.css">
+<link rel="stylesheet" href="../../dist/zen.css">
+<link rel="stylesheet" href="../../dist/icons.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="../../docs/js/updateseo.js"></script>
@@ -253,9 +253,12 @@ img/
                 <h3>Compile SCSS to CSS:</h3>
                 <p>You can compile your SCSS files into CSS using the following commands:</p>
                 <p>For compressed CSS output, use:</p>
-                <pre class="copy-text mt-3"><code class="language-html">sass --style=compressed zen.scss:../css/zen.min.css</code></pre>
+                <pre class="copy-text mt-3"><code class="language-html">sass --style=compressed zen.scss:../dist/zen.min.css</code></pre>
                 <p>For expanded CSS output, use:</p>
-                <pre class="copy-text mt-3"><code class="language-html">sass --style=expanded zen.scss:../css/zen.css</code></pre>
+                <pre class="copy-text mt-3"><code class="language-html">sass --style=expanded zen.scss:../dist/zen.css</code></pre>
+
+                <p>To watch the folder and autogenerate CSS output, use:</p>
+                <pre class="copy-text mt-3"><code class="language-html">sass --style=expanded zen.scss:../dist/zen.css --watch</code></pre>
                 
                 <p>Remember, every time you make changes to the SCSS files, you'll need to recompile them to see the changes reflected in your project.</p>
                 
@@ -367,7 +370,7 @@ mode: 'development' // Change to 'production' for minified output
         <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
     </footer>
 
-    <script src="../../js/zencss.js"></script>
+    <script src="../../dist/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
     <script src="../../docs/js/navigation.js"></script>
 
