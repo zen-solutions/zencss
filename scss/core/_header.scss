@@ -140,13 +140,14 @@ header {
 
     .top-nav {
         position: fixed;
-        top: 50px;
+        top: 0;
         left: -250px;
         width: 250px;
         height: 100%;
         transition: left 0.3s;
         display: block;
         overflow: auto;
+        overflow-x:hidden;
         background: $nav-color;
     }
 

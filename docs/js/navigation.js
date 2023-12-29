@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Utilities</a>
                 <div class="dropdown-content left-150">
-                <a href="../examples/text.html">Text Treatments</a>
                 <a href="../examples/image.html">Image/Icon Styling</a>
                     <a href="../examples/text-formatting-alignment-and-size-classes.html">Text, Alignment, and Size</a>
                     <a href="../examples/padding-margin-utilities.html">Padding & Margin</a>
@@ -110,10 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="../examples/formatting.html">Gap, Height, and Width</a>
                     <a href="../examples/flex.html">Flex</a>
                     <a href="../examples/test-classes.html">Testing Tools</a>
-                    <a href="../examples/accessability.html">Accessability</a>
                     <a href="../examples/shadows.html">Shadows</a>                                
                     <a href="../examples/emoji.html">Emoji</a>                                
                     <a href="../examples/border-utilities.html">Border Styling</a>
+                    <a href="../examples/misc.html">Misc</a>
+
                 </div>
             </div>
         </ul>

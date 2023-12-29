@@ -9,8 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (anchors.length > 0) {
         anchors.forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const hrefAttribute = this.getAttribute('href');
+
+                // Skip processing if href is only '#'
+                if (hrefAttribute === '#') {
+                    return;
+                }
+
                 e.preventDefault();
-                const targetElement = document.querySelector(this.getAttribute('href'));
+                const targetElement = document.querySelector(hrefAttribute);
 
                 if (targetElement) {
                     targetElement.scrollIntoView({ behavior: 'smooth' });

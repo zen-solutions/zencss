@@ -25,6 +25,7 @@ $green: #48cc6b;
 $blue: #5394fc;
 $purple: #ab56f4;
 
+
 //------------------------------------------
 //  Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
@@ -166,7 +167,7 @@ $grey-6-light: lighten($grey-6, 10%);
 //  Rounded corners
 //------------------------------------------
 
-$border-radius: 6px; //on
+$border-radius: 4px; //on
 //$border-radius: 0; //off
 
 //------------------------------------------

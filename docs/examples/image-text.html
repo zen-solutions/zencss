@@ -7,8 +7,8 @@
     <title>Welcome to zenCSS</title>
 
    <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../css/zen.css">
-    <link rel="stylesheet" href="../../css/icons.css">
+<link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -58,13 +58,13 @@
 
         <z-container>
             <z-row>
-                <z-col class="card p-0 m-0 mh-400">
+                <z-col class="card p-0 w-full m-0 mh-400">
                     <img src="../../docs/images/misc/slider/2.jpg" alt="" class="flex-grow-1 br-xxl overflow-hidden bg-img">
                 </z-col>
                 <z-container class="mobile:two-up gap-4">
                     <z-row class="mt-0 mb-0 pb-0 pt-0">
                         <z-col class="card bg-grey-2 br-xxl">
-                            <i class="zenicon-build-circle text-md"></i>
+                            <i class="zenicon-build-circle text-sm"></i>
                             <div class="card-bottom">
                                 <p>Bento box layouts are all the rage right now, so why not lead with one of our own?  </p>
                             </div>
@@ -72,7 +72,7 @@
                     </z-row>
                     <z-row class="mt-0 mb-0 pb-0 pt-0">
                         <z-col class="card  bg-grey-2 br-xxl">
-                            <i class="zenicon-verified text-md"></i>
+                            <i class="zenicon-verified text-sm"></i>
                             <div class="card-bottom">
                                 <p>The main cel features a hero image, while the sidebar allows for two supporting columns, stacked. </p>
                             </div>
@@ -189,8 +189,8 @@
 
         <hr>
         <z-container class="page-section">
-            <z-row class="p-0 border-3 square"> <!--- needs a +1 on boarder radius of 4. weird, test this  --->
-                <z-col class="p-0">
+            <z-row class="p-0 border-3 square"> 
+                <z-col class="p-0 d-flex">
                     <img src="../../docs/images/misc/1024-square.jpg" class="mobile:thin square" alt="">
                 </z-col>
                 <z-col class="flex">
@@ -252,68 +252,7 @@
         </z-container>
 
         <hr>
-        <!----------------------------------------------------------------------->
-        <!--- End Component  --->
-        <!----------------------------------------------------------------------->
-
-
-
-
-
-
-        <!----------------------------------------------------------------------->
-        <!--- End Component  --->
-        <!----------------------------------------------------------------------->
-
-        <!--z-container class="page-section">
-            <z-row class="p-0">
-                <z-col>
-                    <div class="center-vertical narrow-sm">
-                        <h2 class="h3 headline">Text + Multiple Image/text fields</h2 >
-                        <p> Images stay in a row when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-                <z-col class="p-0">
-                    <z-container>
-                        <z-row class="mobile:two-up">
-                            <z-col>
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-90 img-round">
-                                <p class="headline semibold mb-2 mt-2">Jane Doe</p>
-                                <small class="text-grey-dual  semibold up-10">Co-Founder</small>
-                            </z-col>
-                            <z-col>
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-90 img-round">
-                                <p class="headline semibold mb-2 mt-2">John Smith</p>
-                                <small class="text-grey-dual  semibold up-10">Product Dev</small>
-                            </z-col>
-                            <z-col>
-                                <img src="../../img/placeholder/placeholders/unsplash/headshots/150x150/2.jpg" alt="" class="w-90 img-round">
-                                <p class="headline semibold mb-2 mt-2">Jen Cole</p>
-                                <small class="text-grey-dual semibold up-10">Sales/Marketing</small>
-                            </z-col>
-
-                        </z-row>
-                    </z-container>
-                </z-col>
-
-            </z-row>
-        </z-container>
-
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">
-                            
-                        </code></pre>
-                        </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container-->
+       
 
 
 
@@ -369,7 +308,7 @@
         <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
-    <script src="../../js/zencss.js"></script>
+    <script src="../../dist/zencss.js"></script>
     <script src="../../docs/js/navigation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
