@@ -558,6 +558,10 @@
         justify-content: center;
     }
 
+    .tablet\:text-center {
+        text-align: center !important;
+    }
+
     .mobile\:two-up {
         flex-direction: row;
         justify-content: center;

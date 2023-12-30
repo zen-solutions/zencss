@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
    <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.css">
+<link rel="stylesheet" href="../../dist/zen.min.css">
     <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
@@ -80,6 +80,10 @@
             <z-col class="br-lg border-4">Border Radius - large</z-col>
             <z-col class="br-xl border-4">Border Radius - xl</z-col>
             <z-col class="br-xxl border-4">Border Radius - xxl</z-col>
+            <z-col class="br-top-0 br-lg border-4">No top border radius</z-col>
+            <z-col class="br-bottom-0 br-lg border-4">No bottom border radius</z-col>
+            <z-col class="br-right-0 br-lg border-4">No right border radius</z-col>
+            <z-col class="br-left-0 br-lg border-4">No left border radius</z-col>
         </z-row>
     </z-container>
 
@@ -115,7 +119,12 @@
 &lt;z-col class="br-md border-4"&gt;Border Radius - medium&lt;/z-col&gt;
 &lt;z-col class="br-lg border-4"&gt;Border Radius - large&lt;/z-col&gt;
 &lt;z-col class="br-xl border-4"&gt;Border Radius - xl&lt;/z-col&gt;
-&lt;z-col class="br-xxl border-4"&gt;Border Radius - xxl&lt;/z-col&gt;</code></pre>
+&lt;z-col class="br-xxl border-4"&gt;Border Radius - xxl&lt;/z-col&gt;
+
+&lt;z-col class="br-top-0 br-lg border-4"&gt;No top border radius&lt;/z-col&gt;
+&lt;z-col class="br-bottom-0 br-lg border-4"&gt;No bottom border radius&lt;/z-col&gt;
+&lt;z-col class="br-right-0 br-lg border-4"&gt;No right border radius&lt;/z-col&gt;
+&lt;z-col class="br-left-0 br-lg border-4"&gt;No left border radius&lt;/z-col&gt;</code></pre>
                     </div>
                 </div>
             </z-col>
@@ -174,16 +183,17 @@
                 <div>
                     <hr>
                     <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
+                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
                     <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
 
                 <div class="center">
 
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <button id="toggleButton" class="btn-md m-0">Layout</button>
+                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
                         
                 </div>
+
             </z-col>
         </z-row>
     </z-container>

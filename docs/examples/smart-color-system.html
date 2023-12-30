@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-    <link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/zen.min.css">
     <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
     <link rel="stylesheet" href="../../docs/css/docs-icons.css">
@@ -574,10 +574,10 @@
                 </z-col>
             </z-row>
 
-            <z-row class="gap-1 mt-0 pt-0">
-                <z-col class="card">
+            <z-row class="gap-1 m-0 p-0">
+                <z-col class="card p-0">
                     <z-container>
-                        <z-row class="gap-1">
+                        <z-row class="gap-1 p-0 pt-1">
                             <z-col class="card bg-opaque">
                                 <div class="small down-5 left-5">bg-opaque</div>
                             </z-col>
@@ -597,10 +597,7 @@
 
             <z-row>
                 <z-col>
-                    <p class="small">Note: bg-opaque triggers a JavaScript function which
-                        sets the opacity of all child elements back to 1. bg-blur does
-                        this as well,
-                        but it can be used in conjunction with bg-opaque
+                    <p class="small">Note: bg-opaque sets a white opaque background. bg-blur can be used in conjunction with bg-opaque
                         and will blur the background of anything it covers.
                     </p>
                 </z-col>
@@ -662,9 +659,9 @@
 
 
             </z-col>
-            <z-col>
+            <z-col class="p-0">
                 <z-container>
-                    <z-row>
+                    <z-row class="p-0">
                         <z-col class="card bg-black round center">
                             <h2 class="pt-1">Light Font Colors</h2>
                             <z-container>
@@ -738,7 +735,7 @@
                 <div class="center up-20">
                     <hr>
                     <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                     <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
             </z-col>
@@ -750,8 +747,8 @@
             <z-col>
                 <div class="center">
 
-                    <button id="toggleButton" class="btn-md">Test</button>
-                    <button id="toggleDarkMode" class="btn-md">Dark</button>
+                    <button id="toggleButton" class="btn-md">Layout</button>
+                    <button id="toggleDarkMode" class="btn-md">Color</button>
                     
                 </div>
             </z-col>

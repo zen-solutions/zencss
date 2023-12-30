@@ -13,6 +13,7 @@ const commonConfig = {
             "./modules/accordian.js",
             "./modules/misc.js",
             "./modules/dark-mode.js",
+            "./modules/lazy-load.js",
             "./modules/background-image.js",
             "./modules/mobile-nav.js",
             "./modules/modal.js",

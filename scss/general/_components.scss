@@ -334,7 +334,6 @@ blockquote {
     line-height: 2em;
     font-weight: 500;
     font-style: italic;
-    font-size: 1.1rem;
 
     p {
         margin-bottom: 0;
@@ -584,7 +583,7 @@ blockquote em {
     border-radius: $border-radius;
     cursor: pointer;
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     right: 0;
 }
 

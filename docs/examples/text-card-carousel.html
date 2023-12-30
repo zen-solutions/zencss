@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
     <title>Welcome to zenCSS</title>
 
    <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.css">
+<link rel="stylesheet" href="../../dist/zen.min.css">
     <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
@@ -170,7 +171,7 @@
             <img src="../../docs/images/white-tree.png" class="w-50 center-me pb-3 pt-3" alt="">
             <p>Photo Montage</p>
         </z-col>
-        <z-col class="card p-0 feature-md">
+        <z-col class="p-0 feature-md">
             <div class="slider" data-auto-rotate="true">
                 <div class="slides-container"> 
                   <div class="slide"><img src="../../docs/images/misc/slider/1.jpg" alt="Slide 1" ></div> 
@@ -198,7 +199,7 @@
       &lt;img src="../../docs/images/white-tree.png" class="w-50 center-me pb-3 pt-3" alt=""&gt;
       &lt;p&gt;Photo Montage&lt;/p&gt;
     &lt;/z-col&gt;
-    &lt;z-col class="card p-0 feature-md"&gt;
+    &lt;z-col class="p-0 feature-md"&gt;
       &lt;div class="slider" data-auto-rotate="true"&gt;
         &lt;div class="slides-container"&gt; 
           &lt;div class="slide"&gt;&lt;img src="../../docs/images/misc/slider/1.jpg" alt="Slide 1" &gt;&lt;/div&gt; 
@@ -292,28 +293,25 @@
         <!--- Zen Test --->
         <!----------------------------------------------------------------------->
 
-        <z-container>
+ <z-container>
             <z-row>
                 <z-col>
-                    <div class="center up-20">
+                    <div class="center">
                         <hr>
                         <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                         <p> So you can be assured it "just works". Try it out below. </p>
                     </div>
                 </z-col>
             </z-row>
-        </z-container>
 
-        <z-container>
-            <z-row class="up-40">
-                <z-col>
+            <z-row>
+                <z-col class="pt-0">
                     <div class="center">
-                        <p>
-                            <button id="toggleButton" class="btn-md">Test</button>
-                            <button id="toggleDarkMode" class="btn-md">Dark</button>
-                            
-                        </p>
+
+                        <button id="toggleButton" class="btn-md m-0">Layout</button>
+                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        
                     </div>
                 </z-col>
             </z-row>

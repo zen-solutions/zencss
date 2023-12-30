@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
-    <link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/zen.min.css">
     <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -164,6 +164,7 @@
                 </z-col>
             </z-row>
 
+
             <z-row>
                 <z-col class="card theme-dark gap-3 h-300 overflow-hidden">
                     <div class="overlay"></div>
@@ -194,6 +195,56 @@
 
 
 
+        <z-container class="single page-section">
+            <z-row>
+                <z-col class="pb-0">
+                    <div class="center">
+                        <h3 class="headline">Hover/Pan Image Card</h3>
+                        <p>Card as interactive element with Background Image, overlay & Text. use <code>card-hover</code> or <code>card-pan</code> on the column. </p>
+                        <hr>
+                    </div>
+                </z-col>
+            </z-row>
+
+
+        <z-container>
+            <z-row>
+                <a href=""><z-col class="card theme-dark gap-3 h-300 overflow-hidden card-pan">
+                    <div class="overlay"></div>
+                    <img src="../../img/placeholder/16x9/neom.jpg" class="bg-img" alt="">
+                    <span class="eyebrow text-yellow-light">NATURE</span>
+                    <h4 class="headline text-balance">Best places to visit this summer</h4>
+                    <button class=" btn-light w-150 card-bottom">Learn More</button>
+                </z-col></a>
+            </z-row>
+        </z-container>
+
+
+        <z-row>
+            <z-col class="pl-0 pr-0">
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;a href=""&gt;&lt;z-col class="card theme-dark gap-3 h-300 overflow-hidden card-hover"&gt;
+      &lt;div class="overlay"&gt;&lt;/div&gt;
+      &lt;img src="../../img/placeholder/16x9/neom.jpg" class="bg-img" alt=""&gt;
+      &lt;span class="eyebrow text-yellow-light"&gt;NATURE&lt;/span&gt;
+      &lt;h4 class="headline text-balance"&gt;Best places to visit this summer&lt;/h4&gt;
+      &lt;button class="btn-light w-150 card-bottom"&gt;Learn More&lt;/button&gt;
+    &lt;/z-col&gt;&lt;/a&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+
+
+
         <z-container class="single">
             <z-row>
                 <z-col class="pb-0">
@@ -207,8 +258,8 @@
             <z-row>
                 <z-col class="card theme-light">
                     <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" class="square" alt="">
-                    <h4 class="headline">A title goes here</h4>
-                    <p>Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
+                    <h4 class="headline down-7">A title goes here</h4>
+                    <p class="down-5">Fugit ratione natus minus magnam magni labore voluptatibus impedit sit voluptatum nobis? </p>
                 </z-col>
             </z-row>
 
@@ -220,8 +271,8 @@
                         <div id="content3" class="expanded-content p-0" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;z-col class="card theme-dark"&gt;
     &lt;img src="16x9.jpg" class="square" alt=""&gt;
-    &lt;h4 class="headline"&gt;A title...&lt;/h4&gt;
-    &lt;p&gt;Fugit ratione natus... &lt;/p&gt;
+    &lt;h4 class="headline down-7"&gt;A title...&lt;/h4&gt;
+    &lt;p class="down-5"&gt;Fugit ratione natus... &lt;/p&gt;
 &lt;/z-col&gt;</code></pre>
                         </div>
                     </div>
@@ -522,7 +573,7 @@
                     <div class="center up-20">
                         <hr>
                         <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                         <p> So you can be assured it "just works". Try it out below. </p>
                     </div>
                 </z-col>
@@ -534,8 +585,8 @@
                 <z-col>
                     <div class="center">
 
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <button id="toggleButton" class="btn-md m-0">Layout</button>
+                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
 
                     </div>
                 </z-col>

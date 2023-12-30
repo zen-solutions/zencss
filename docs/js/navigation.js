@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="docs-nav">
         <a id="hamburger-button"><img src="../../img/icons/bars.svg" class="icon-header" alt="Menu"></a>
         </div>
-        <nav class="top-nav">
+        <nav class="top-nav sticky-nav">
         <button id="close-button" aria-label="Close"><a class="close"></a></button>
         <ul class="pr-2">
             <div class="dropdown nav-dropdown">
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../examples/alerts.html">Alert Messages</a>
                                 <a href="../examples/buttons.html">Buttons</a>
                                 <a href="../examples/breadcrumb.html">Breadcrumbs</a>
-                                <a href="../examples/cards.html">Cards</a>
+                                <a href="../examples/cards.html"><i class="zenicon-star down-2"></i> Cards</a>
                                 <a href="../examples/cookie-consent.html">Cookie Consent</a>
                                 <a href="../examples/corner-popup.html">Corner Popup</a>
                                 <!--a href="../examples/dropdown.html">Dropdown</a-->
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                             </z-col>
                             <z-col class="small">
-                                <a href="../examples/preloaders.html">Preloaders</a>
+                                <a href="../examples/preloaders.html">Preload/Lazy Load</a>
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
                                 <a href="../examples/promo-bars.html">Promo Bars</a>
                                 <a href="../examples/quiz.html">Quiz</a>
@@ -125,66 +125,96 @@ document.addEventListener('DOMContentLoaded', function() {
             navPlaceholder.innerHTML = navHtml;
             initializeDropdowns();
             bindHamburgerFunctionality();
+            addPrevNextLinks();
         }
-    });
     
-    function initializeDropdowns() {
-        var dropdownLinks = document.querySelectorAll('.dropdown-link');
-    
-        dropdownLinks.forEach(function(link) {
-            var caret = document.createElement('div');
-            caret.className = 'caret-up';
-            link.parentNode.insertBefore(caret, link.nextSibling);
-    
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                var isCurrentDropdownOpen = link.nextElementSibling.nextElementSibling.style.display === "block";
-                closeAllDropdowns();
-                if (!isCurrentDropdownOpen) {
-                    toggleDropdown(link.nextElementSibling.nextElementSibling, caret);
-                }
+        function initializeDropdowns() {
+            var dropdownLinks = document.querySelectorAll('.dropdown-link');
+            dropdownLinks.forEach(function(link) {
+                var caret = document.createElement('div');
+                caret.className = 'caret-up';
+                link.parentNode.insertBefore(caret, link.nextSibling);
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    var isCurrentDropdownOpen = link.nextElementSibling.nextElementSibling.style.display === "block";
+                    closeAllDropdowns();
+                    if (!isCurrentDropdownOpen) {
+                        toggleDropdown(link.nextElementSibling.nextElementSibling, caret);
+                    }
+                });
             });
-        });
     
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropdown-link')) {
-                closeAllDropdowns();
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropdown-link')) {
+                    closeAllDropdowns();
+                }
+            };
+        }
+    
+        function toggleDropdown(dropdownContent, caret) {
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+            caret.style.display = caret.style.display === "block" ? "none" : "block";
+        }
+    
+        function closeAllDropdowns() {
+            var dropdowns = document.querySelectorAll('.dropdown-content');
+            var carets = document.querySelectorAll('.caret-up');
+            dropdowns.forEach(function(dropdown) {
+                dropdown.style.display = "none";
+            });
+            carets.forEach(function(caret) {
+                caret.style.display = "none";
+            });
+        }
+    
+        function bindHamburgerFunctionality() {
+            const hamburgerButton = document.getElementById("hamburger-button");
+            const closeButton = document.getElementById("close-button");
+            const nav = document.querySelector("nav");
+    
+            const toggleMenu = () => {
+                nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
+            };
+    
+            if (hamburgerButton) {
+                hamburgerButton.addEventListener("click", toggleMenu);
             }
-        };
-    }
     
-    function toggleDropdown(dropdownContent, caret) {
-        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-        caret.style.display = caret.style.display === "block" ? "none" : "block";
-    }
-    
-    function closeAllDropdowns() {
-        var dropdowns = document.querySelectorAll('.dropdown-content');
-        var carets = document.querySelectorAll('.caret-up');
-        dropdowns.forEach(function(dropdown) {
-            dropdown.style.display = "none";
-        });
-        carets.forEach(function(caret) {
-            caret.style.display = "none";
-        });
-    }
-    
-    function bindHamburgerFunctionality() {
-        const hamburgerButton = document.getElementById("hamburger-button");
-        const closeButton = document.getElementById("close-button");
-        const nav = document.querySelector("nav");
-    
-        const toggleMenu = () => {
-            nav.style.left = nav.style.left === "0px" ? "-250px" : "0px";
-        };
-    
-        if (hamburgerButton) {
-            hamburgerButton.addEventListener("click", toggleMenu);
+            if (closeButton) {
+                closeButton.addEventListener("click", toggleMenu);
+            }
         }
     
-        if (closeButton) {
-            closeButton.addEventListener("click", toggleMenu);
+        function addPrevNextLinks() {
+            var links = document.querySelectorAll('.dropdown-content a');
+            var currentUrl = window.location.href;
+            var pages = Array.from(links).map(a => a.href);
+            var currentIndex = pages.findIndex(url => url === currentUrl);
+        
+            var prevNextHtml = '<z-container-fluid class="prev-next theme-light mt-5">';
+            prevNextHtml += '<z-row class="down-5"><z-col class="text-center"><p class="h3 p-0">You might also like..</p></z-col></z-row>';
+            prevNextHtml += '<z-row class="gap-0">';
+        
+            var hasPrev = currentIndex > 0;
+            var hasNext = currentIndex < pages.length - 1;
+        
+            if (hasPrev) {
+                var prevUrl = pages[currentIndex - 1];
+                var prevTitle = links[currentIndex - 1].textContent;
+                prevNextHtml += `<z-col class="${hasNext ? 'text-right tablet:text-center' : 'text-center'} p-0"><a class="btn btn-cta btn-xl text-xs" href="${prevUrl}">Prev: ${prevTitle}</a></z-col>`;
+            }
+        
+            if (hasNext) {
+                var nextUrl = pages[currentIndex + 1];
+                var nextTitle = links[currentIndex + 1].textContent;
+                prevNextHtml += `<z-col class="${hasPrev ? 'p-0 tablet:text-center' : 'text-center'}"><a class="btn btn-cta btn-xl text-xs" href="${nextUrl}">Next: ${nextTitle}</a></z-col>`;
+            }
+        
+            prevNextHtml += '</z-row></z-container-fluid>';
+        
+            var footer = document.querySelector('footer'); 
+            footer.insertAdjacentHTML('beforebegin', prevNextHtml);
         }
-    }
-    
+        
+    });
