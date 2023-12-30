@@ -151,6 +151,11 @@ header {
         background: $nav-color;
     }
 
+
+    #nav-placeholder .sticky-nav {
+        top: 50px; 
+    }
+
     .top-nav ul {
         flex-direction: column;
         padding-top: 30px;

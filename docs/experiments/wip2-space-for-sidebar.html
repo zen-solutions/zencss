@@ -1,35 +1,38 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenCSS Components</title>
 
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.css">
+<link rel="stylesheet" href="../../dist/zen.min.css">
 <link rel="stylesheet" href="../../dist/icons.css">
    <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="zen">
                
-<main>
+<main style="margin-left:200px;">
 
 
 
     <!----------------------------------------------------------------------->
     <!--- Page Title  --->
     <!----------------------------------------------------------------------->
-    <section class="z-container">
-        <div class="z-row">
-            <div class="z-col">
+    <z-container>
+        <z-row>
+            <z-col>
                 <div class="center">
                     <h1 class="headline"> Header</h1>
                     <p>A simple header you can use for your website. Mobile version coming soon. </p>
                         <hr>
                 </div>
-            </div>
-        </div>
-    </section>
+            </z-col>
+        </z-row>
+    </z-container>
 
     <!----------------------------------------------------------------------->
     <!--- Component --->
@@ -37,47 +40,47 @@
 
 <p class="center">1 container 1 row 3 cols, 3 time repeated</p>
 
-<section class="z-container">
-    <div class="z-row">
-        <div class="z-col card theme-dark">a</div>
-        <div class="z-col card theme-dark">b</div>
-        <div class="z-col card theme-dark">c</div>
-    </div>
-</section>
-<section class="z-container">
-    <div class="z-row">
-        <div class="z-col card theme-dark">1</div>
-        <div class="z-col card theme-dark">2</div>
-        <div class="z-col card theme-dark">3</div>
-    </div>
-</section>
-<section class="z-container">
-    <div class="z-row">
-        <div class="z-col card theme-dark">11</div>
-        <div class="z-col card theme-dark">2</div>
-        <div class="z-col card theme-dark">3</div>
-    </div>
-</section>
+<z-container>
+    <z-row>
+        <z-col class="card theme-dark">a</z-col>
+        <z-col class="card theme-dark">b</z-col>
+        <z-col class="card theme-dark">c</z-col>
+    </z-row>
+</z-container>
+<z-container>
+    <z-row>
+        <z-col class="card theme-dark">1</z-col>
+        <z-col class="card theme-dark">2</z-col>
+        <z-col class="card theme-dark">3</z-col>
+    </z-row>
+</z-container>
+<z-container>
+    <z-row>
+        <z-col class="card theme-dark">11</z-col>
+        <z-col class="card theme-dark">2</z-col>
+        <z-col class="card theme-dark">3</z-col>
+    </z-row>
+</z-container>
 
 
 <p class="center">1 container 1 row 9 col</p>
 
-<section class="z-container">
-    <div class="z-row">
-        <div class="z-col card theme-dark">1</div>
-        <div class="z-col card theme-dark">2</div>
-        <div class="z-col card theme-dark">3</div>
-        <div class="z-col card theme-dark">1</div>
-        <div class="z-col card theme-dark">2</div>
-        <div class="z-col card theme-dark">3</div>
-        <div class="z-col card theme-dark">1</div>
-        <div class="z-col card theme-dark">2</div>
-        <div class="z-col card theme-dark">3</div>
-    </div>
-</section>
-<section class="z-container">
-    <div class="z-row">
-    <div class="z-col card theme-light">
+<z-container>
+    <z-row>
+        <z-col class="card theme-dark">1</z-col>
+        <z-col class="card theme-dark">2</z-col>
+        <z-col class="card theme-dark">3</z-col>
+        <z-col class="card theme-dark">1</z-col>
+        <z-col class="card theme-dark">2</z-col>
+        <z-col class="card theme-dark">3</z-col>
+        <z-col class="card theme-dark">1</z-col>
+        <z-col class="card theme-dark">2</z-col>
+        <z-col class="card theme-dark">3</z-col>
+    </z-row>
+</z-container>
+<z-container>
+    <z-row>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -91,8 +94,8 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -106,10 +109,10 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-</div>
-<div class="z-row">
-    <div class="z-col card theme-light">
+    </z-col>
+</z-row>
+<z-row>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -123,8 +126,8 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -138,8 +141,8 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -153,11 +156,11 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-</div>
+    </z-col>
+</z-row>
 
-<div class="z-row">
-    <div class="z-col card theme-light">
+<z-row>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -171,8 +174,8 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -186,10 +189,10 @@
                 <z-col class="card theme-cta">3</z-col>
             </z-row>
         </z-container>  
-    </div>
-</div>
-<div class="z-row">
-    <div class="z-col card theme-light">
+    </z-col>
+</z-row>
+<z-row>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -198,18 +201,18 @@
 
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-accent">
+    </z-col>
+    <z-col class="card theme-accent">
 4
-    </div>
-    <div class="z-col card theme-primary">
+    </z-col>
+    <z-col class="card theme-primary">
 5
-    </div>
-</div>
+    </z-col>
+</z-row>
 
 
-<div class="z-row">
-    <div class="z-col card theme-light">
+<z-row>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">1</z-col>
@@ -218,8 +221,8 @@
                 <z-col class="card theme-accent">4</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">5</z-col>
@@ -228,8 +231,8 @@
                 <z-col class="card theme-accent">8</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">9</z-col>
@@ -238,8 +241,8 @@
                 <z-col class="card theme-accent">12</z-col>
             </z-row>
         </z-container>  
-    </div>
-    <div class="z-col card theme-light">
+    </z-col>
+    <z-col class="card theme-light">
         <z-container>
             <z-row>
                 <z-col class="card theme-primary">13</z-col>
@@ -264,9 +267,9 @@
                 </z-col>
             </z-row>
         </z-container>  
-    </div>
-</div>
-</section>
+    </z-col>
+</z-row>
+</z-container>
 
 
 
@@ -276,43 +279,38 @@
     <!---  The Zen Test --->
     <!----------------------------------------------------------------------->
 
-    <section class="z-container">
-        <div class="z-row">
-            <div class="z-col">
-                <div class="center up-20">
+    <z-container>
+        <z-row>
+            <z-col class="center">
+                <div>
                     <hr>
                     <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
+                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
+                    <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="z-container">
-        <div class="z-row up-40">
-            <div class="z-col">
                 <div class="center">
 
-                        <button id="toggleButton" class="btn-md">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Dark</button>
+                        <button id="toggleButton" class="btn-md m-0">Layout</button>
+                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
                         
                 </div>
-            </div>
-        </div>
-    </section>
+            </z-col>
+        </z-row>
+    </z-container>
     </main>
 
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
     <footer>
-        <p class="center mb-0">© 2023. Built using zenCSS. </p>
+            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
     </footer>
 
     <script src="../../dist/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
+</body>
 
-
-</body></html>
+</html>

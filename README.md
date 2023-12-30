@@ -21,7 +21,7 @@ An open-source, website authoring and design toolkit that helps you build, style
 
 ### Dependencies
 
-For the core framework, none - just pure CSS and Vanilla JavaScript. If you want to work with our SASS files or JavaScript modules, we provide [instructions for that](https://zencss.com/docs/help-desk/installation-source.html).
+For the core framework, none - just pure CSS and Vanilla JavaScript. If you want to work with our SASS files or JavaScript modules, there are a few dependencies. We provide [instructions for that here](https://zencss.com/docs/help-desk/installation-source.html).
 
 ### Best Practices for Customization
 

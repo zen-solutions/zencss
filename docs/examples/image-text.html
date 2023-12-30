@@ -7,7 +7,7 @@
     <title>Welcome to zenCSS</title>
 
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="../../dist/zen.css">
+    <link rel="stylesheet" href="../../dist/zen.min.css">
     <link rel="stylesheet" href="../../dist/icons.css">
     <link rel="stylesheet" href="../../docs/css/documentation.css">
 
@@ -61,19 +61,19 @@
                     <img src="../../docs/images/misc/slider/5.jpg" alt="" class="flex-grow-1 square overflow-hidden bg-img">
                 </z-col>
                 <z-container class="mobile:two-up gap-0">
-                    <z-row class="mt-0 mb-0 pb-0 pt-0">
+                    <z-row class="mt-0 mb-0 pb-0 pt-0 h-250">
                         <z-col class="card bg-cta">
                             <div class="center-vertical ">
-                                <h2 class="h5">An amazing headline</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                <h2 class="h5">A featured headline</h2>
+                                <p>This site section contains a hero image with two color blocked supporting sections. These stack 2/up on tablet/mobile (configurable). </p>
                             </div>
                         </z-col>
                     </z-row>
                     <z-row class="mt-0 mb-0 pb-0 pt-0">
                         <z-col class="card bg-primary">
                             <div class="center-vertical ">
-                                <h2 class="h5">Another headline</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem odio rerum.</p>
+                                <h2 class="h5">Another section</h2>
+                                <p>Supporting content could go here. Your imagination is the only limit. </p>
                             </div>
                         </z-col>
                     </z-row>
@@ -93,7 +93,7 @@
       &lt;img src="../../docs/images/misc/slider/5.jpg" alt="" class="flex-grow-1 square overflow-hidden bg-img"&gt;
     &lt;/z-col&gt;
     &lt;z-container class="mobile:two-up gap-0"&gt;
-      &lt;z-row class="mt-0 mb-0 pb-0 pt-0"&gt;
+      &lt;z-row class="mt-0 mb-0 pb-0 pt-0 h-250"&gt;
         &lt;z-col class="card bg-cta"&gt;
           &lt;div class="center-vertical "&gt;
             &lt;h2 class="h5"&gt;An amazing headline&lt;/h2&gt;
@@ -428,25 +428,22 @@
         <z-container>
             <z-row>
                 <z-col>
-                    <div class="center up-20">
+                    <div class="center">
                         <hr>
                         <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass alignment, style, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
+                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
                         <p> So you can be assured it "just works". Try it out below. </p>
                     </div>
                 </z-col>
             </z-row>
-        </z-container>
 
-        <z-container>
-            <z-row class="up-40">
-                <z-col>
+            <z-row>
+                <z-col class="pt-0">
                     <div class="center">
-                        <p>
-                            <button id="toggleButton" class="btn-md">Test</button>
-                            <button id="toggleDarkMode" class="btn-md">Dark</button>
 
-                        </p>
+                        <button id="toggleButton" class="btn-md m-0">Layout</button>
+                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        
                     </div>
                 </z-col>
             </z-row>

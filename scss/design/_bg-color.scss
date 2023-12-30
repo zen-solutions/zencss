@@ -122,18 +122,28 @@ $bg-light-colors: (
             .bg-#{$bg-key}-dark {
                 background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
                 color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+                a{
+                    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+                }
+
             }
         }
         @if map-has-key($bg-dark-colors, $bg-key + "-darker") {
             .bg-#{$bg-key}-darker {
                 background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
                 color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+                a{
+                    color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+                }
             }
         }
         @if map-has-key($bg-dark-colors, $bg-key + "-darkest") {
             .bg-#{$bg-key}-darkest {
                 background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
                 color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+                a{
+                    color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+                }
             }
         }
     }
@@ -144,18 +154,28 @@ $bg-light-colors: (
             .bg-#{$bg-key}-light {
                 background: map-get($bg-light-colors, $bg-key + "-light") !important;
                 color: map-get($text-light-colors, $bg-key + "-light") !important;
+                a{
+                    color: map-get($text-light-colors, $bg-key + "-light") !important;
+                }
             }
         }
         @if map-has-key($bg-light-colors, $bg-key + "-lighter") {
             .bg-#{$bg-key}-lighter {
                 background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
                 color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+                a{
+                    color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+                }
             }
         }
         @if map-has-key($bg-light-colors, $bg-key + "-lightest") {
             .bg-#{$bg-key}-lightest {
                 background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
                 color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+
+                a{
+                    color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+                }
             }
         }
     }
