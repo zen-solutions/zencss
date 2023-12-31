@@ -11,14 +11,15 @@
         <link rel="stylesheet" href="../../docs/css/documentation.css" />
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
-            rel="stylesheet"
-        />
+            rel="stylesheet" />
         <script src="../../docs/js/updateseo.js"></script>
     </head>
     <body class="zen">
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
-                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+                <a href="../../index.html"
+                    ><img src="../../img/logo.png" alt="zenCSS logo"
+                /></a>
             </div>
 
             <div id="nav-placeholder"></div>
@@ -31,13 +32,17 @@
 
             <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
                 <z-container>
-                    <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="" />
+                    <img
+                        src="../../docs/images/website/gradient.jpg"
+                        class="bg-img"
+                        alt="" />
                     <z-row>
                         <z-col class="card center">
                             <h1 class="headline">Install zenCSS</h1>
                             <p class="lead">
-                                Get started with zenCSS, the world’s newest framework for building
-                                responsive, auto-formatting websites.
+                                Get started with zenCSS, the world’s newest
+                                framework for building responsive,
+                                auto-formatting websites.
                             </p>
                         </z-col>
                     </z-row>
@@ -53,7 +58,10 @@
                             <z-row>
                                 <z-col class="card theme-cta w-300">
                                     <h3>Download zenCSS</h3>
-                                    <p>Get the latest 2.0.0-Beta pre-release here.</p>
+                                    <p>
+                                        Get the latest 2.0.0-Beta pre-release
+                                        here.
+                                    </p>
                                     <a
                                         href="https://github.com/zen-solutions/zencss"
                                         class="button btn-md"
@@ -66,7 +74,8 @@
                         <div class="page-section">
                             <h3>File Structure Overview</h3>
                             <p>Familiarize yourself with the core files:</p>
-                            <pre class="mt-3"><code class="language-html">index.html (main website)
+                            <pre
+                                class="mt-3"><code class="language-html">index.html (main website)
                 
 dist/ (source files)
      ├── zencss.min.css
@@ -106,14 +115,17 @@ scss/ (optional: if you want to compile your own CSS)
                         <section>
                             <h2>Starter Template</h2>
                             <p>
-                                Our starter template at <code>dist/hello-world</code> contains the
-                                configuration below, and starts you off with a header, hero area, 3
-                                content sections and a footer.
+                                Our starter template at
+                                <code>dist/hello-world</code> contains the
+                                configuration below, and starts you off with a
+                                header, hero area, 3 content sections and a
+                                footer.
                             </p>
                             <p>
-                                Copy any of the examples from the <code>docs/examples</code> folder
-                                to the <code>dist/hello-world</code> folder to begin experiementing
-                                with them in this sandbox.
+                                Copy any of the examples from the
+                                <code>docs/examples</code> folder to the
+                                <code>dist/hello-world</code> folder to begin
+                                experiementing with them in this sandbox.
                             </p>
                         </section>
                     </z-col>
@@ -124,70 +136,76 @@ scss/ (optional: if you want to compile your own CSS)
                         <h3>Manual Installation</h3>
                         <ol>
                             <li>
-                                <strong>CSS Linking</strong>: Add the minified stylesheets in your
-                                HTML's head section.
+                                <strong>CSS Linking</strong>: Add the minified
+                                stylesheets in your HTML's head section.
                                 <pre
-                                    class="copy-text mt-3"
-                                ><code class="language-html">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;
+                                    class="copy-text mt-3"><code class="language-html">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;
 &lt;link rel="stylesheet" href="path-to/icons.min.css"&gt;</code></pre>
                             </li>
                             <li>
-                                <strong>JavaScript Inclusion</strong>: Include the minified script
-                                before the closing <code>&lt;/body&gt;</code> tag.
+                                <strong>JavaScript Inclusion</strong>: Include
+                                the minified script before the closing
+                                <code>&lt;/body&gt;</code> tag.
                                 <pre
-                                    class="copy-text mt-3"
-                                ><code class="language-html">&lt;script src="path-to/zencss.min.js"&gt;&lt;/script&gt;</code></pre>
+                                    class="copy-text mt-3"><code class="language-html">&lt;script src="path-to/zencss.min.js"&gt;&lt;/script&gt;</code></pre>
                             </li>
                         </ol>
 
                         <section class="page-section">
                             <h2>Usage</h2>
                             <h3>Applying zenCSS</h3>
-                            <p>You can integrate zenCSS either globally or selectively:</p>
+                            <p>
+                                You can integrate zenCSS either globally or
+                                selectively:
+                            </p>
                             <ul>
                                 <li>
-                                    <strong>Globally</strong>: To apply zenCSS styles throughout
-                                    your website, add the <code>zen</code> class to the
+                                    <strong>Globally</strong>: To apply zenCSS
+                                    styles throughout your website, add the
+                                    <code>zen</code> class to the
                                     <code>&lt;body&gt;</code> tag.
                                     <pre
-                                        class="copy-text mt-3"
-                                    ><code class="language-html">&lt;body class="zen"&gt; 
+                                        class="copy-text mt-3"><code class="language-html">&lt;body class="zen"&gt; 
 &lt;!-- Your content here --&gt;
 &lt;/body&gt;</code></pre>
                                 </li>
                                 <li>
-                                    <strong>Selectively</strong>: For specific sections, use the
-                                    <code>zen</code> class on individual elements. This method
-                                    allows zenCSS styling without affecting the rest of your
-                                    website.
+                                    <strong>Selectively</strong>: For specific
+                                    sections, use the <code>zen</code> class on
+                                    individual elements. This method allows
+                                    zenCSS styling without affecting the rest of
+                                    your website.
                                     <pre
-                                        class="copy-text mt-3"
-                                    ><code class="language-html">&lt;section class="zen"&gt; 
+                                        class="copy-text mt-3"><code class="language-html">&lt;section class="zen"&gt; 
 &lt;!-- Your content here --&gt;
 &lt;/section&gt;</code></pre>
                                 </li>
                             </ul>
                             <h3 class="mt-5">
                                 Working with our
-                                <a href="../../docs/examples/smart-align-framework.html"
+                                <a
+                                    href="../../docs/examples/smart-align-framework.html"
                                     >Smart-Align Framework</a
                                 >
                             </h3>
                             <p>
-                                We suggest using the following structure where you wrap your page
-                                content in a <code>container-fluid</code>. This way you can use
-                                <code>container</code> or
-                                <code>container-fluid</code> interchangably on any section of the
-                                page. The <code>page-name</code> class is optional but useful to
-                                target specific pages. The <code>page-section</code> class is also
-                                optional and sets spacing between sections. The default is 2em at
-                                the top and bottom of every page-section. This value is defined in
+                                We suggest using the following structure where
+                                you wrap your page content in a
+                                <code>container-fluid</code>. This way you can
+                                use <code>container</code> or
+                                <code>container-fluid</code> interchangably on
+                                any section of the page. The
+                                <code>page-name</code> class is optional but
+                                useful to target specific pages. The
+                                <code>page-section</code> class is also optional
+                                and sets spacing between sections. The default
+                                is 2em at the top and bottom of every
+                                page-section. This value is defined in
                                 user-settings.scss, overwrite as needed.
                             </p>
                             <p><strong>Basic Layout Example</strong>:</p>
                             <pre
-                                class="copy-text mt-3"
-                            ><code class="language-html">&lt;main class="z-container-fluid page-name"&gt;
+                                class="copy-text mt-3"><code class="language-html">&lt;main class="z-container-fluid page-name"&gt;
     &lt;section class="z-container page-section"&gt;
         &lt;div class="z-row"&gt;
             &lt;div class="z-col"&gt; ... &lt;/div&gt;
@@ -195,13 +213,13 @@ scss/ (optional: if you want to compile your own CSS)
     &lt;/section&gt;
 &lt;/main&gt;</code></pre>
                             <p>
-                                <strong>Zentax Shorthand Syntax</strong>: Use our streamlined syntax
-                                for quicker coding. A shortcut user snippet file and a converter for
+                                <strong>Zentax Shorthand Syntax</strong>: Use
+                                our streamlined syntax for quicker coding. A
+                                shortcut user snippet file and a converter for
                                 semantic HTML are available.
                             </p>
                             <pre
-                                class="copy-text mt-3"
-                            ><code class="language-html">&lt;z-container-fluid class="page-name"&gt;
+                                class="copy-text mt-3"><code class="language-html">&lt;z-container-fluid class="page-name"&gt;
     &lt;z-container class="page-section"&gt;
         &lt;z-row&gt;
             &lt;z-col&gt; ... &lt;/z-col&gt;
@@ -215,26 +233,35 @@ scss/ (optional: if you want to compile your own CSS)
 
                             <div class="content">
                                 <p>
-                                    It's worth noting any changes you make to our source files may
-                                    be overwritten in future software updates. To safely customize
-                                    your settings and ensure they are preserved across updates to
-                                    the zenCSS framework, follow these steps:
+                                    It's worth noting any changes you make to
+                                    our source files may be overwritten in
+                                    future software updates. To safely customize
+                                    your settings and ensure they are preserved
+                                    across updates to the zenCSS framework,
+                                    follow these steps:
                                 </p>
 
                                 <ol>
                                     <li>
-                                        <strong>Create an Override File:</strong>
-                                        Create a new file named <code>zencss-overrides.css</code> in
-                                        a separate directory, such as a
-                                        <code>custom</code> directory within your project's root.
+                                        <strong
+                                            >Create an Override File:</strong
+                                        >
+                                        Create a new file named
+                                        <code>zencss-overrides.css</code> in a
+                                        separate directory, such as a
+                                        <code>custom</code> directory within
+                                        your project's root.
                                     </li>
                                     <li>
-                                        <strong>Set Your Override Classes:</strong>
-                                        Inside <code>zencss-overrides.css</code>, define your custom
-                                        classes as needed. For example:
+                                        <strong
+                                            >Set Your Override Classes:</strong
+                                        >
+                                        Inside
+                                        <code>zencss-overrides.css</code>,
+                                        define your custom classes as needed.
+                                        For example:
                                         <pre
-                                            class="copy-text"
-                                        ><code class="language-css">.bg-primary {
+                                            class="copy-text"><code class="language-css">.bg-primary {
   background: blue;
   color: white;
 }</code></pre>
@@ -242,19 +269,20 @@ scss/ (optional: if you want to compile your own CSS)
                                     <li>
                                         <strong>Load Overrides File:</strong>
                                         In your HTML file, add your
-                                        <code>zencss-overrides.css</code> right after the
-                                        zencss.min.css fie . Ensure the path to your custom file is
-                                        correct based on its location. For example:
+                                        <code>zencss-overrides.css</code> right
+                                        after the zencss.min.css fie . Ensure
+                                        the path to your custom file is correct
+                                        based on its location. For example:
                                         <pre
-                                            class="copy-text"
-                                        ><code class="language-html">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;
+                                            class="copy-text"><code class="language-html">&lt;link rel="stylesheet" href="path-to/zencss.min.css"&gt;
 &lt;link rel="stylesheet" href="path-to/zencss-overrides.css"&gt;</code></pre>
                                     </li>
                                 </ol>
 
                                 <p>
-                                    Following these steps will allow you to customize the framework
-                                    to fit your needs while keeping your changes intact through
+                                    Following these steps will allow you to
+                                    customize the framework to fit your needs
+                                    while keeping your changes intact through
                                     updates.
                                 </p>
                             </div>
@@ -263,20 +291,26 @@ scss/ (optional: if you want to compile your own CSS)
                         <section>
                             <h2>Working with our SCSS/JS modules</h2>
                             <p>
-                                For those who prefer a tailored approach, our SCSS and JS modules
-                                allow you to integrate zenCSS into your own asset pipeline.
-                                Customize the framework to meet the specific demands of your
-                                project. In addition to the compiled and minified files, you'll be
-                                working with:
+                                For those who prefer a tailored approach, our
+                                SCSS and JS modules allow you to integrate
+                                zenCSS into your own asset pipeline. Customize
+                                the framework to meet the specific demands of
+                                your project. In addition to the compiled and
+                                minified files, you'll be working with:
                             </p>
                             <ul>
-                                <li>Sass source files for compiling into custom CSS</li>
                                 <li>
-                                    JavaScript source files for extending and customizing
-                                    functionality
+                                    Sass source files for compiling into custom
+                                    CSS
+                                </li>
+                                <li>
+                                    JavaScript source files for extending and
+                                    customizing functionality
                                 </li>
                             </ul>
-                            <a class="btn btn-cta" href="installation-source.html"
+                            <a
+                                class="btn btn-cta"
+                                href="installation-source.html"
                                 >Go to Advanced Setup</a
                             >
                         </section>
@@ -284,14 +318,17 @@ scss/ (optional: if you want to compile your own CSS)
                         <section>
                             <h2>Community</h2>
                             <p>
-                                Stay up to date on the development of zenCSS and reach out to the
-                                community...
+                                Stay up to date on the development of zenCSS and
+                                reach out to the community...
                             </p>
                         </section>
 
                         <p class="mb-0">
-                            Follow <a href="https://twitter.com/tryzencss">@tryzencss</a> on Twitter
-                            for the latest updates.
+                            Follow
+                            <a href="https://twitter.com/tryzencss"
+                                >@tryzencss</a
+                            >
+                            on Twitter for the latest updates.
                         </p>
                     </z-col>
                 </z-row>

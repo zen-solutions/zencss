@@ -41,15 +41,27 @@
     color: black !important;
 }
 .zen .bg-red-gradient {
-    background: linear-gradient(to bottom, rgb(245, 76, 34), #f87b5d) !important;
+    background: linear-gradient(
+        to bottom,
+        rgb(245, 76, 34),
+        #f87b5d
+    ) !important;
     color: black !important;
 }
 .zen .bg-orange-gradient {
-    background: linear-gradient(to bottom, rgb(247, 196, 78), #fbde9c) !important;
+    background: linear-gradient(
+        to bottom,
+        rgb(247, 196, 78),
+        #fbde9c
+    ) !important;
     color: black !important;
 }
 .zen .bg-yellow-gradient {
-    background: linear-gradient(to bottom, rgb(251, 236, 67), #fdf493) !important;
+    background: linear-gradient(
+        to bottom,
+        rgb(251, 236, 67),
+        #fdf493
+    ) !important;
     color: black !important;
 }
 .zen .bg-green-gradient {
@@ -974,7 +986,8 @@
 }
 .zen .icon-header {
     height: 20px;
-    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
+    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg)
+        brightness(85%) contrast(91%);
     margin-right: 5px;
 }
 .zen form {
@@ -2155,7 +2168,8 @@
 }
 .zen .alert-primary::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/thumbs-up-solid.svg") no-repeat center center;
+    background: url("../img/icons/alerts/thumbs-up-solid.svg") no-repeat center
+        center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2164,7 +2178,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-primary.alert-light-minimal {
     color: black;
@@ -2175,7 +2190,8 @@
     border-left: 60px solid #0347b3;
 }
 .zen .alert-primary.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-primary-minimal {
     background: white;
@@ -2203,7 +2219,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-primary-minimal.alert-light-minimal {
     color: black;
@@ -2214,7 +2231,8 @@
     border-left: 60px solid #0347b3;
 }
 .zen .alert-primary-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-danger {
     background: white;
@@ -2233,7 +2251,8 @@
 }
 .zen .alert-danger::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/triangle-exclamation-solid.svg") no-repeat center center;
+    background: url("../img/icons/alerts/triangle-exclamation-solid.svg")
+        no-repeat center center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2242,7 +2261,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-danger.alert-light-minimal {
     color: black;
@@ -2253,7 +2273,8 @@
     border-left: 60px solid #a02607;
 }
 .zen .alert-danger.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-danger-minimal {
     background: white;
@@ -2281,7 +2302,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-danger-minimal.alert-light-minimal {
     color: black;
@@ -2292,7 +2314,8 @@
     border-left: 60px solid #a02607;
 }
 .zen .alert-danger-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-success {
     background: white;
@@ -2311,7 +2334,8 @@
 }
 .zen .alert-success::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/circle-check-solid.svg") no-repeat center center;
+    background: url("../img/icons/alerts/circle-check-solid.svg") no-repeat
+        center center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2320,7 +2344,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-success.alert-light-minimal {
     color: black;
@@ -2331,7 +2356,8 @@
     border-left: 60px solid #010b01;
 }
 .zen .alert-success.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-success-minimal {
     background: white;
@@ -2359,7 +2385,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-success-minimal.alert-light-minimal {
     color: black;
@@ -2370,7 +2397,8 @@
     border-left: 60px solid #010b01;
 }
 .zen .alert-success-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning {
     background: white;
@@ -2389,7 +2417,8 @@
 }
 .zen .alert-warning::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/circle-exclamation-solid.svg") no-repeat center center;
+    background: url("../img/icons/alerts/circle-exclamation-solid.svg")
+        no-repeat center center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2398,7 +2427,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-warning.alert-light-minimal {
     color: black;
@@ -2409,7 +2439,8 @@
     border-left: 60px solid #575002;
 }
 .zen .alert-warning.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning-minimal {
     background: white;
@@ -2437,7 +2468,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-warning-minimal.alert-light-minimal {
     color: black;
@@ -2448,7 +2480,8 @@
     border-left: 60px solid #575002;
 }
 .zen .alert-warning-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-dark {
     background: white;
@@ -2467,7 +2500,8 @@
 }
 .zen .alert-dark::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/circle-check-regular.svg") no-repeat center center;
+    background: url("../img/icons/alerts/circle-check-regular.svg") no-repeat
+        center center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2476,7 +2510,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-dark.alert-light-minimal {
     color: black;
@@ -2487,7 +2522,8 @@
     border-left: 60px solid rgba(0, 0, 0, 0.8);
 }
 .zen .alert-dark.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-dark-minimal {
     background: white;
@@ -2515,7 +2551,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-dark-minimal.alert-light-minimal {
     color: black;
@@ -2526,7 +2563,8 @@
     border-left: 60px solid rgba(0, 0, 0, 0.8);
 }
 .zen .alert-dark-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-light {
     background: white;
@@ -2545,7 +2583,8 @@
 }
 .zen .alert-light::before {
     margin-left: -56px;
-    background: url("../img/icons/alerts/circle-check-regular.svg") no-repeat center center;
+    background: url("../img/icons/alerts/circle-check-regular.svg") no-repeat
+        center center;
     background-size: contain;
     content: "";
     position: absolute;
@@ -2554,7 +2593,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-light.alert-light-minimal {
     color: black;
@@ -2565,7 +2605,8 @@
     border-left: 60px solid rgba(191, 191, 191, 0.55);
 }
 .zen .alert-light.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-light-minimal {
     background: white;
@@ -2593,7 +2634,8 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
 }
 .zen .alert-light-minimal.alert-light-minimal {
     color: black;
@@ -2604,7 +2646,8 @@
     border-left: 60px solid rgba(191, 191, 191, 0.55);
 }
 .zen .alert-light-minimal.alert-light::before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning,
 .zen .alert-warning-minimal {
@@ -3881,14 +3924,20 @@
     .zen [data-tooltip]:hover::before,
     .zen [data-tooltip][data-placement="bottom"]:focus::after,
     .zen [data-tooltip][data-placement="bottom"]:focus::before,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus::after,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus::before {
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus::after,
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus::before {
         animation-duration: 0.2s;
         animation-name: tooltip-slide-top;
     }
     .zen [data-tooltip]:hover::after,
     .zen [data-tooltip][data-placement="bottom"]:focus::after,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus::after {
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus::after {
         animation-name: tooltip-caret-slide-top;
     }
     .zen [data-tooltip][data-placement="bottom"]:focus::after,
@@ -4923,11 +4972,13 @@
 }
 .zen .icon-gold {
     width: 9px;
-    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
+    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg)
+        brightness(105%) contrast(98%);
 }
 .zen .icon-silver {
     width: 9px;
-    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg)
+        brightness(103%) contrast(84%);
 }
 .zen .bg-angle {
     background-color: #f0f0f0; /* Example background color */

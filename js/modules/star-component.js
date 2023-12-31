@@ -37,7 +37,8 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
-            halfStarImg.src = "../../img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.src =
+                "../../img/icons/alerts/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);

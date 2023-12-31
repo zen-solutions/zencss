@@ -58,16 +58,19 @@
             const sliders = document.querySelectorAll(".slider");
 
             sliders.forEach((slider) => {
-                const slidesContainer = slider.querySelector(".slides-container");
+                const slidesContainer =
+                    slider.querySelector(".slides-container");
                 const originalSlides = Array.from(slidesContainer.children);
                 const totalOriginalSlides = originalSlides.length;
                 const nextButton = slider.querySelector(".next");
                 const prevButton = slider.querySelector(".prev");
-                const shouldAutoRotate = slider.getAttribute("data-auto-rotate") === "true";
+                const shouldAutoRotate =
+                    slider.getAttribute("data-auto-rotate") === "true";
 
                 // Clone the first and last slides to create an infinite loop effect
                 const firstSlideClone = originalSlides[0].cloneNode(true);
-                const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
+                const lastSlideClone =
+                    originalSlides[totalOriginalSlides - 1].cloneNode(true);
                 slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
                 slidesContainer.appendChild(firstSlideClone);
 
@@ -89,7 +92,9 @@
 
                 // Initialize position to the first original slide
                 slidesContainer.style.transition = "none";
-                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slidesContainer.style.transform = `translateX(-${
+                    currentIndex * 100
+                }%)`;
 
                 // Re-enable transitions after initial positioning
                 setTimeout(() => {
@@ -97,7 +102,9 @@
                 }, 0);
 
                 function updateSlidePosition() {
-                    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    slidesContainer.style.transform = `translateX(-${
+                        currentIndex * 100
+                    }%)`;
                 }
 
                 function moveToNext() {
@@ -118,16 +125,22 @@
                     if (currentIndex >= totalOriginalSlides + 1) {
                         slidesContainer.style.transition = "none";
                         currentIndex = 1;
-                        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                        slidesContainer.style.transform = `translateX(-${
+                            currentIndex * 100
+                        }%)`;
                         setTimeout(() => {
-                            slidesContainer.style.transition = "transform 0.5s ease";
+                            slidesContainer.style.transition =
+                                "transform 0.5s ease";
                         }, 0);
                     } else if (currentIndex === 0) {
                         slidesContainer.style.transition = "none";
                         currentIndex = totalOriginalSlides;
-                        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                        slidesContainer.style.transform = `translateX(-${
+                            currentIndex * 100
+                        }%)`;
                         setTimeout(() => {
-                            slidesContainer.style.transition = "transform 0.5s ease";
+                            slidesContainer.style.transition =
+                                "transform 0.5s ease";
                         }, 0);
                     }
                     isTransitioning = false;
@@ -165,7 +178,9 @@
         // Dropdown
         //-------------------------------------
         document.addEventListener("DOMContentLoaded", function () {
-            var dropdownLinks = document.querySelectorAll(".dropdown .dropdown-link");
+            var dropdownLinks = document.querySelectorAll(
+                ".dropdown .dropdown-link",
+            );
 
             dropdownLinks.forEach(function (link) {
                 link.addEventListener("click", function (event) {
@@ -185,7 +200,9 @@
         });
 
         function closeAllDropdowns() {
-            var dropdowns = document.querySelectorAll(".dropdown .dropdown-content");
+            var dropdowns = document.querySelectorAll(
+                ".dropdown .dropdown-content",
+            );
             dropdowns.forEach(function (dropdown) {
                 dropdown.style.display = "none";
             });
@@ -236,23 +253,31 @@
 
                 Array.from(gallery.children).forEach((img, index) => {
                     const wrapper = document.createElement("div");
-                    wrapper.style.display = index < imagesPerPage ? "block" : "none";
+                    wrapper.style.display =
+                        index < imagesPerPage ? "block" : "none";
                     const clonedImg = img.cloneNode(true);
                     clonedImg.addEventListener("click", () => {
                         currentModalIndex = index;
-                        openModal(clonedImg.src, clonedImg.getAttribute("data-text"), index);
+                        openModal(
+                            clonedImg.src,
+                            clonedImg.getAttribute("data-text"),
+                            index,
+                        );
                     });
                     wrapper.appendChild(clonedImg);
                     imageWrappers.push(wrapper);
                 });
 
-                const totalPages = Math.ceil(imageWrappers.length / imagesPerPage);
+                const totalPages = Math.ceil(
+                    imageWrappers.length / imagesPerPage,
+                );
 
                 function updateImagesForPage(pageNumber) {
                     imageWrappers.forEach((wrapper, index) => {
                         const start = (pageNumber - 1) * imagesPerPage;
                         const end = start + imagesPerPage;
-                        wrapper.style.display = index >= start && index < end ? "block" : "none";
+                        wrapper.style.display =
+                            index >= start && index < end ? "block" : "none";
                     });
                 }
 
@@ -269,9 +294,12 @@
 
                 function openModal(src, text, index) {
                     currentModalIndex = index;
-                    const modalBody = modal.shadowRoot.querySelector(".modal-body");
-                    const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
-                    const modalHeader = modal.shadowRoot.querySelector(".modal-header");
+                    const modalBody =
+                        modal.shadowRoot.querySelector(".modal-body");
+                    const modalWrapper =
+                        modal.shadowRoot.querySelector(".modal-wrapper");
+                    const modalHeader =
+                        modal.shadowRoot.querySelector(".modal-header");
 
                     if (modalBody && modalWrapper && modalHeader) {
                         const currentWidth = modalWrapper.clientWidth;
@@ -293,14 +321,16 @@
                         prevArrow.style.top = "50%";
                         prevArrow.style.left = "7px";
                         prevArrow.style.padding = "10px";
-                        prevArrow.style.backgroundColor = "rgba(255,255,255,.5)";
+                        prevArrow.style.backgroundColor =
+                            "rgba(255,255,255,.5)";
                         prevArrow.style.transform = "translateY(-50%)";
                         prevArrow.onclick = function () {
                             currentModalIndex =
                                 currentModalIndex > 0
                                     ? currentModalIndex - 1
                                     : imageWrappers.length - 1;
-                            const newImg = imageWrappers[currentModalIndex].firstChild;
+                            const newImg =
+                                imageWrappers[currentModalIndex].firstChild;
                             openModal(
                                 newImg.src,
                                 newImg.getAttribute("data-text"),
@@ -328,7 +358,8 @@
                         nextArrow.style.position = "absolute";
                         nextArrow.style.padding = "10px";
                         nextArrow.style.top = "50%";
-                        nextArrow.style.backgroundColor = "rgba(255,255,255,.5)";
+                        nextArrow.style.backgroundColor =
+                            "rgba(255,255,255,.5)";
                         nextArrow.style.right = "7px";
                         nextArrow.style.transform = "translateY(-50%)";
                         nextArrow.onclick = function () {
@@ -336,7 +367,8 @@
                                 currentModalIndex < imageWrappers.length - 1
                                     ? currentModalIndex + 1
                                     : 0;
-                            const newImg = imageWrappers[currentModalIndex].firstChild;
+                            const newImg =
+                                imageWrappers[currentModalIndex].firstChild;
                             openModal(
                                 newImg.src,
                                 newImg.getAttribute("data-text"),
@@ -356,10 +388,13 @@
                         modalBody.style.maxHeight = "80vh";
                         modalHeader.style.display = "none";
 
-                        modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                        modalWrapper.style.maxWidth =
+                            window.innerWidth >= 1070 ? "860px" : "80%";
 
                         const nextIndex = (index + 1) % imageWrappers.length;
-                        const prevIndex = (index - 1 + imageWrappers.length) % imageWrappers.length;
+                        const prevIndex =
+                            (index - 1 + imageWrappers.length) %
+                            imageWrappers.length;
                         preloadImage(imageWrappers[nextIndex].firstChild.src);
                         preloadImage(imageWrappers[prevIndex].firstChild.src);
 
@@ -373,9 +408,11 @@
                     if (target.tagName === "A" && target.dataset.page) {
                         let newPage = currentPage;
                         if (target.dataset.page === "prev") {
-                            newPage = currentPage > 1 ? currentPage - 1 : totalPages;
+                            newPage =
+                                currentPage > 1 ? currentPage - 1 : totalPages;
                         } else if (target.dataset.page === "next") {
-                            newPage = currentPage < totalPages ? currentPage + 1 : 1;
+                            newPage =
+                                currentPage < totalPages ? currentPage + 1 : 1;
                         } else {
                             newPage = parseInt(target.dataset.page);
                         }
@@ -389,14 +426,18 @@
                 });
 
                 window.addEventListener("resize", function () {
-                    const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
+                    const modalWrapper =
+                        modal.shadowRoot.querySelector(".modal-wrapper");
                     if (modalWrapper) {
-                        modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                        modalWrapper.style.maxWidth =
+                            window.innerWidth >= 1070 ? "860px" : "80%";
                     }
                 });
 
                 gallery.innerHTML = "";
-                imageWrappers.forEach((wrapper) => gallery.appendChild(wrapper));
+                imageWrappers.forEach((wrapper) =>
+                    gallery.appendChild(wrapper),
+                );
                 updateImagesForPage(currentPage);
                 updatePaginationNav();
             }
@@ -609,12 +650,14 @@
          * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
          */
         document.addEventListener("DOMContentLoaded", function () {
-            var accordionToggles = document.querySelectorAll(".accordion-toggle");
+            var accordionToggles =
+                document.querySelectorAll(".accordion-toggle");
 
             accordionToggles.forEach(function (accordionToggle) {
                 accordionToggle.addEventListener("click", function () {
                     // Determine if the clicked toggle is being expanded
-                    var isExpanding = this.getAttribute("aria-expanded") === "false";
+                    var isExpanding =
+                        this.getAttribute("aria-expanded") === "false";
 
                     // Remove active class from all toggles and reset icons
                     accordionToggles.forEach(function (otherToggle) {
@@ -625,8 +668,12 @@
                             ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
                         );
                         if (otherIcon) {
-                            otherIcon.classList.remove("zenicon-keyboard-arrow-down");
-                            otherIcon.classList.add("zenicon-keyboard-arrow-right");
+                            otherIcon.classList.remove(
+                                "zenicon-keyboard-arrow-down",
+                            );
+                            otherIcon.classList.add(
+                                "zenicon-keyboard-arrow-right",
+                            );
                         }
 
                         var otherPanel = otherToggle.nextElementSibling;
@@ -643,13 +690,17 @@
                             ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
                         );
                         if (icon) {
-                            icon.classList.remove("zenicon-keyboard-arrow-right");
+                            icon.classList.remove(
+                                "zenicon-keyboard-arrow-right",
+                            );
                             icon.classList.add("zenicon-keyboard-arrow-down");
                         }
 
                         var panel = this.nextElementSibling;
                         panel.style.maxHeight =
-                            panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                            panel.scrollHeight > 200
+                                ? "1000px"
+                                : panel.scrollHeight + 10 + "px";
                         panel.setAttribute("aria-hidden", "false"); // Show the current panel
                     }
                 });
@@ -752,24 +803,28 @@
             // Function to apply data labels to a table
             function applyDataLabelsToTable(table) {
                 // Get all the headers from the direct child thead of the table
-                const headers = Array.from(table.querySelectorAll(":scope > thead > tr > th")).map(
-                    (th) => th.textContent.trim(),
-                );
+                const headers = Array.from(
+                    table.querySelectorAll(":scope > thead > tr > th"),
+                ).map((th) => th.textContent.trim());
 
                 // Iterate over each row in the direct child tbody of the table
                 table.querySelectorAll(":scope > tbody > tr").forEach((row) => {
                     // Get all cells (td) in this row
-                    row.querySelectorAll(":scope > td").forEach((cell, index) => {
-                        // Assign the corresponding header text to the data-label attribute of the cell
-                        if (headers[index]) {
-                            cell.setAttribute("data-label", headers[index]);
-                        }
-                    });
+                    row.querySelectorAll(":scope > td").forEach(
+                        (cell, index) => {
+                            // Assign the corresponding header text to the data-label attribute of the cell
+                            if (headers[index]) {
+                                cell.setAttribute("data-label", headers[index]);
+                            }
+                        },
+                    );
                 });
             }
 
             // Select all tables with class 'responsive-table' and apply data labels to each
-            document.querySelectorAll(".responsive-table").forEach(applyDataLabelsToTable);
+            document
+                .querySelectorAll(".responsive-table")
+                .forEach(applyDataLabelsToTable);
         });
 
         //-------------------------------------
@@ -1060,8 +1115,8 @@
                     element.classList.toggle("zen-dark");
                 });
 
-                const isDarkModeEnabled = Array.from(zenElements).some((element) =>
-                    element.classList.contains("zen-dark"),
+                const isDarkModeEnabled = Array.from(zenElements).some(
+                    (element) => element.classList.contains("zen-dark"),
                 );
                 localStorage.setItem("darkMode", isDarkModeEnabled);
             }
@@ -1093,7 +1148,9 @@
          */
 
         document.addEventListener("DOMContentLoaded", function () {
-            var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
+            var lazyImages = [].slice.call(
+                document.querySelectorAll(".zen img.lazy-load"),
+            );
 
             if (lazyImages.length === 0) {
                 //console.log('No lazy-load images found.');
@@ -1101,7 +1158,10 @@
             }
 
             if ("IntersectionObserver" in window) {
-                let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                let lazyImageObserver = new IntersectionObserver(function (
+                    entries,
+                    observer,
+                ) {
                     entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
                             let lazyImage = entry.target;
@@ -1227,7 +1287,8 @@
         // });
 
         document.addEventListener("DOMContentLoaded", (event) => {
-            const hamburgerButton = document.getElementById("hamburger-button-2");
+            const hamburgerButton =
+                document.getElementById("hamburger-button-2");
             const closeButton = document.getElementById("close-button");
             const nav = document.querySelector(".top-nav");
             const navLinks = document.querySelectorAll(".nav-link");
@@ -1270,14 +1331,18 @@
             }
 
             connectedCallback() {
-                this.shadowRoot.querySelector(".close").addEventListener("click", () => {
-                    this.close();
-                });
-                this.shadowRoot.querySelector(".modal").addEventListener("click", (event) => {
-                    if (event.target === event.currentTarget) {
+                this.shadowRoot
+                    .querySelector(".close")
+                    .addEventListener("click", () => {
                         this.close();
-                    }
-                });
+                    });
+                this.shadowRoot
+                    .querySelector(".modal")
+                    .addEventListener("click", (event) => {
+                        if (event.target === event.currentTarget) {
+                            this.close();
+                        }
+                    });
                 document.addEventListener("click", (event) => {
                     if (event.target.classList.contains("modal-close")) {
                         this.close();
@@ -1452,7 +1517,8 @@
 
                 if (half && starCount < 5) {
                     const halfStarImg = document.createElement("img");
-                    halfStarImg.src = "../../img/icons/alerts/star-half-stroke-regular.svg";
+                    halfStarImg.src =
+                        "../../img/icons/alerts/star-half-stroke-regular.svg";
                     halfStarImg.alt = "";
                     halfStarImg.className = "icon icon-gold";
                     fragment.appendChild(halfStarImg);
@@ -1542,7 +1608,8 @@
             if (modalClosedTime) {
                 var now = new Date();
                 var daysPassed =
-                    (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
+                    (now.getTime() - parseInt(modalClosedTime, 10)) /
+                    (1000 * 3600 * 24);
                 return daysPassed >= 7;
             }
             return true;
@@ -1585,7 +1652,9 @@
                     steps.forEach((step) => {
                         step.style.display = "none"; // Hide all steps
                     });
-                    document.getElementById(`step-${stepNumber}`).style.display = "block"; // Show the desired step
+                    document.getElementById(
+                        `step-${stepNumber}`,
+                    ).style.display = "block"; // Show the desired step
 
                     // Update the current class on pagination
                     navItems.forEach((item) => {
@@ -1602,9 +1671,15 @@
                         e.preventDefault();
                         let direction = item.dataset.direction;
                         if (direction) {
-                            if (direction === "next" && currentStep < totalSteps) {
+                            if (
+                                direction === "next" &&
+                                currentStep < totalSteps
+                            ) {
                                 currentStep++;
-                            } else if (direction === "prev" && currentStep > 1) {
+                            } else if (
+                                direction === "prev" &&
+                                currentStep > 1
+                            ) {
                                 currentStep--;
                             }
                         } else if (item.dataset.step) {
@@ -1637,7 +1712,9 @@
             const progressBar = mswizard.querySelector(".mswizard-progress");
             const currentStepSpan = mswizard.querySelector("#current-step");
             const totalStepsSpan = mswizard.querySelector("#total-steps");
-            const progressPercentage = mswizard.querySelector(".progress-percentage");
+            const progressPercentage = mswizard.querySelector(
+                ".progress-percentage",
+            );
             const steps = mswizard.querySelectorAll(".mswizard-step");
             const totalSteps = steps.length;
             totalStepsSpan.textContent = totalSteps;
@@ -1645,16 +1722,24 @@
 
             function updatemswizardStep(stepNumber) {
                 steps.forEach((step) => (step.style.display = "none"));
-                mswizard.querySelector(`#step-${stepNumber}`).style.display = "block";
+                mswizard.querySelector(`#step-${stepNumber}`).style.display =
+                    "block";
                 currentStepSpan.textContent = stepNumber;
-                const progressValue = ((stepNumber - 1) / (totalSteps - 1)) * 100;
+                const progressValue =
+                    ((stepNumber - 1) / (totalSteps - 1)) * 100;
                 progressBar.value = progressValue;
-                progressPercentage.textContent = `${Math.round(progressValue)}%`;
+                progressPercentage.textContent = `${Math.round(
+                    progressValue,
+                )}%`;
                 const percentagePosition =
                     progressBar.offsetWidth * (progressValue / 100) -
                     progressPercentage.offsetWidth / 2;
-                progressPercentage.style.left = `${Math.max(0, percentagePosition)}px`;
-                progressPercentage.style.visibility = progressValue >= 5 ? "visible" : "hidden";
+                progressPercentage.style.left = `${Math.max(
+                    0,
+                    percentagePosition,
+                )}px`;
+                progressPercentage.style.visibility =
+                    progressValue >= 5 ? "visible" : "hidden";
             }
 
             steps.forEach((step, index) => {
@@ -1668,22 +1753,33 @@
                 prevButton.textContent = "Previous";
                 prevButton.className = "prev-btn";
                 prevButton.setAttribute("role", "button");
-                prevButton.setAttribute("aria-label", `Go back to step ${index}`);
+                prevButton.setAttribute(
+                    "aria-label",
+                    `Go back to step ${index}`,
+                );
                 if (index === 0) {
                     prevButton.disabled = true;
                     prevButton.classList.add("disabled");
                 } else {
-                    prevButton.addEventListener("click", () => updatemswizardStep(index));
+                    prevButton.addEventListener("click", () =>
+                        updatemswizardStep(index),
+                    );
                 }
                 buttonContainer.appendChild(prevButton);
 
                 // Add the Next/Finish button to all steps except the last
                 const nextButton = document.createElement("button");
-                nextButton.textContent = index === totalSteps - 2 ? "Finish" : "Next";
+                nextButton.textContent =
+                    index === totalSteps - 2 ? "Finish" : "Next";
                 nextButton.className = "next-btn";
                 nextButton.setAttribute("role", "button");
-                nextButton.setAttribute("aria-label", `Go to step ${index + 2}`);
-                nextButton.addEventListener("click", () => updatemswizardStep(index + 2));
+                nextButton.setAttribute(
+                    "aria-label",
+                    `Go to step ${index + 2}`,
+                );
+                nextButton.addEventListener("click", () =>
+                    updatemswizardStep(index + 2),
+                );
                 buttonContainer.appendChild(nextButton);
 
                 step.appendChild(buttonContainer);
@@ -1808,16 +1904,20 @@
 
                 // Calculate the most chosen answer
                 var max = Math.max(...Object.values(results));
-                var mostChosenResults = Object.keys(results).filter(function (key) {
-                    return results[key] === max;
-                });
+                var mostChosenResults = Object.keys(results).filter(
+                    function (key) {
+                        return results[key] === max;
+                    },
+                );
 
                 // Take the first result if there's a tie
                 var mostChosen = mostChosenResults[0];
                 var resultElement = document.querySelector(
                     '#result-types [data-result="' + mostChosen + '"]',
                 );
-                var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
+                var resultContent = resultElement
+                    ? resultElement.innerHTML
+                    : mostChosen;
 
                 // Update the result div and make the result visible
                 var resultDiv = document.getElementById("result-text");
@@ -1833,7 +1933,9 @@
             // Attaching change event listeners to radio buttons
             var wizard = document.querySelector(".wizard");
             if (wizard) {
-                var radioButtons = wizard.querySelectorAll('input[type="radio"]');
+                var radioButtons = wizard.querySelectorAll(
+                    'input[type="radio"]',
+                );
                 radioButtons.forEach(function (radioButton) {
                     radioButton.addEventListener("change", handleOptionSelect);
                 });
@@ -1865,10 +1967,13 @@
                         }
 
                         e.preventDefault();
-                        const targetElement = document.querySelector(hrefAttribute);
+                        const targetElement =
+                            document.querySelector(hrefAttribute);
 
                         if (targetElement) {
-                            targetElement.scrollIntoView({ behavior: "smooth" });
+                            targetElement.scrollIntoView({
+                                behavior: "smooth",
+                            });
                         }
                     });
                 });

@@ -74,18 +74,30 @@ $text-default-colors: (
         darken($color-dark, 10%)
     );
 
-    background: linear-gradient(to bottom, $color, $gradient-end-color) !important;
+    background: linear-gradient(
+        to bottom,
+        $color,
+        $gradient-end-color
+    ) !important;
 
     color: $text-color !important;
 }
 
 // Applying the mixin to each gradient class
 .bg-primary-gradient {
-    @include gradient-background($primary-color, $primary-color-dark, $primary-color-light);
+    @include gradient-background(
+        $primary-color,
+        $primary-color-dark,
+        $primary-color-light
+    );
 }
 
 .bg-secondary-gradient {
-    @include gradient-background($secondary-color, $secondary-color-dark, $secondary-color-light);
+    @include gradient-background(
+        $secondary-color,
+        $secondary-color-dark,
+        $secondary-color-light
+    );
 }
 
 .bg-cta-gradient {
@@ -93,7 +105,11 @@ $text-default-colors: (
 }
 
 .bg-accent-gradient {
-    @include gradient-background($accent-color, $accent-color-dark, $accent-color-light);
+    @include gradient-background(
+        $accent-color,
+        $accent-color-dark,
+        $accent-color-light
+    );
 }
 
 .bg-red-gradient {

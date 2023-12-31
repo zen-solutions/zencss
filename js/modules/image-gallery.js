@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const clonedImg = img.cloneNode(true);
             clonedImg.addEventListener("click", () => {
                 currentModalIndex = index;
-                openModal(clonedImg.src, clonedImg.getAttribute("data-text"), index);
+                openModal(
+                    clonedImg.src,
+                    clonedImg.getAttribute("data-text"),
+                    index,
+                );
             });
             wrapper.appendChild(clonedImg);
             imageWrappers.push(wrapper);
@@ -46,23 +50,27 @@ document.addEventListener("DOMContentLoaded", function () {
             imageWrappers.forEach((wrapper, index) => {
                 const start = (pageNumber - 1) * imagesPerPage;
                 const end = start + imagesPerPage;
-                wrapper.style.display = index >= start && index < end ? "block" : "none";
+                wrapper.style.display =
+                    index >= start && index < end ? "block" : "none";
             });
         }
 
         function updatePaginationNav() {
-            paginationNav.innerHTML = '<a href="#" class="item" data-page="prev">&laquo;</a>';
+            paginationNav.innerHTML =
+                '<a href="#" class="item" data-page="prev">&laquo;</a>';
             for (let i = 1; i <= totalPages; i++) {
                 const classCurrent = i === currentPage ? "current" : "";
                 paginationNav.innerHTML += `<a href="#" class="item ${classCurrent}" data-page="${i}">${i}</a>`;
             }
-            paginationNav.innerHTML += '<a href="#" class="item" data-page="next">&raquo;</a>';
+            paginationNav.innerHTML +=
+                '<a href="#" class="item" data-page="next">&raquo;</a>';
         }
 
         function openModal(src, text, index) {
             currentModalIndex = index;
             const modalBody = modal.shadowRoot.querySelector(".modal-body");
-            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper =
+                modal.shadowRoot.querySelector(".modal-wrapper");
             const modalHeader = modal.shadowRoot.querySelector(".modal-header");
 
             if (modalBody && modalWrapper && modalHeader) {
@@ -89,9 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevArrow.style.transform = "translateY(-50%)";
                 prevArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex > 0 ? currentModalIndex - 1 : imageWrappers.length - 1;
+                        currentModalIndex > 0
+                            ? currentModalIndex - 1
+                            : imageWrappers.length - 1;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
+                    openModal(
+                        newImg.src,
+                        newImg.getAttribute("data-text"),
+                        currentModalIndex,
+                    );
                 };
                 imageContainer.appendChild(prevArrow);
 
@@ -119,9 +133,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextArrow.style.transform = "translateY(-50%)";
                 nextArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex < imageWrappers.length - 1 ? currentModalIndex + 1 : 0;
+                        currentModalIndex < imageWrappers.length - 1
+                            ? currentModalIndex + 1
+                            : 0;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
+                    openModal(
+                        newImg.src,
+                        newImg.getAttribute("data-text"),
+                        currentModalIndex,
+                    );
                 };
                 imageContainer.appendChild(nextArrow);
 
@@ -136,10 +156,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 modalBody.style.maxHeight = "80vh";
                 modalHeader.style.display = "none";
 
-                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth =
+                    window.innerWidth >= 1070 ? "860px" : "80%";
 
                 const nextIndex = (index + 1) % imageWrappers.length;
-                const prevIndex = (index - 1 + imageWrappers.length) % imageWrappers.length;
+                const prevIndex =
+                    (index - 1 + imageWrappers.length) % imageWrappers.length;
                 preloadImage(imageWrappers[nextIndex].firstChild.src);
                 preloadImage(imageWrappers[prevIndex].firstChild.src);
 
@@ -169,9 +191,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         window.addEventListener("resize", function () {
-            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper =
+                modal.shadowRoot.querySelector(".modal-wrapper");
             if (modalWrapper) {
-                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth =
+                    window.innerWidth >= 1070 ? "860px" : "80%";
             }
         });
 

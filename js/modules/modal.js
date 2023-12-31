@@ -16,14 +16,18 @@ class ZModal extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot.querySelector(".close").addEventListener("click", () => {
-            this.close();
-        });
-        this.shadowRoot.querySelector(".modal").addEventListener("click", (event) => {
-            if (event.target === event.currentTarget) {
+        this.shadowRoot
+            .querySelector(".close")
+            .addEventListener("click", () => {
                 this.close();
-            }
-        });
+            });
+        this.shadowRoot
+            .querySelector(".modal")
+            .addEventListener("click", (event) => {
+                if (event.target === event.currentTarget) {
+                    this.close();
+                }
+            });
         document.addEventListener("click", (event) => {
             if (event.target.classList.contains("modal-close")) {
                 this.close();

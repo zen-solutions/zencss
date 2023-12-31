@@ -971,7 +971,8 @@
     }
 }
 .zen .icon-header {
-    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
+    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg)
+        brightness(85%) contrast(91%);
     height: 20px;
     margin-right: 5px;
 }
@@ -2130,7 +2131,8 @@
     background: url(../img/icons/alerts/thumbs-up-solid.svg) no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2148,7 +2150,8 @@
     color: #000;
 }
 .zen .alert-primary.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-primary-minimal {
     background: #fff;
@@ -2169,7 +2172,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2187,7 +2191,8 @@
     color: #000;
 }
 .zen .alert-primary-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-danger {
     background: #fff;
@@ -2205,10 +2210,12 @@
     width: 100%;
 }
 .zen .alert-danger:before {
-    background: url(../img/icons/alerts/triangle-exclamation-solid.svg) no-repeat 50%;
+    background: url(../img/icons/alerts/triangle-exclamation-solid.svg)
+        no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2226,7 +2233,8 @@
     color: #000;
 }
 .zen .alert-danger.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-danger-minimal {
     background: #fff;
@@ -2247,7 +2255,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2265,7 +2274,8 @@
     color: #000;
 }
 .zen .alert-danger-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-success {
     background: #fff;
@@ -2286,7 +2296,8 @@
     background: url(../img/icons/alerts/circle-check-solid.svg) no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2304,7 +2315,8 @@
     color: #000;
 }
 .zen .alert-success.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-success-minimal {
     background: #fff;
@@ -2325,7 +2337,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2343,7 +2356,8 @@
     color: #000;
 }
 .zen .alert-success-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning {
     background: #fff;
@@ -2361,10 +2375,12 @@
     width: 100%;
 }
 .zen .alert-warning:before {
-    background: url(../img/icons/alerts/circle-exclamation-solid.svg) no-repeat 50%;
+    background: url(../img/icons/alerts/circle-exclamation-solid.svg) no-repeat
+        50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2382,7 +2398,8 @@
     color: #000;
 }
 .zen .alert-warning.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning-minimal {
     background: #fff;
@@ -2403,7 +2420,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2421,7 +2439,8 @@
     color: #000;
 }
 .zen .alert-warning-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-dark {
     background: #fff;
@@ -2442,7 +2461,8 @@
     background: url(../img/icons/alerts/circle-check-regular.svg) no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2460,7 +2480,8 @@
     color: #000;
 }
 .zen .alert-dark.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-dark-minimal {
     background: #fff;
@@ -2481,7 +2502,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2499,7 +2521,8 @@
     color: #000;
 }
 .zen .alert-dark-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-light {
     background: #fff;
@@ -2520,7 +2543,8 @@
     background: url(../img/icons/alerts/circle-check-regular.svg) no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2538,7 +2562,8 @@
     color: #000;
 }
 .zen .alert-light.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-light-minimal {
     background: #fff;
@@ -2559,7 +2584,8 @@
     background: url() no-repeat 50%;
     background-size: contain;
     content: "";
-    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg) brightness(101%) contrast(104%);
+    filter: invert(100%) sepia(0) saturate(7497%) hue-rotate(25deg)
+        brightness(101%) contrast(104%);
     height: 15px;
     left: 18px;
     margin-left: -56px;
@@ -2577,7 +2603,8 @@
     color: #000;
 }
 .zen .alert-light-minimal.alert-light:before {
-    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
+    filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+        brightness(92%) contrast(77%);
 }
 .zen .alert-warning,
 .zen .alert-warning-minimal {
@@ -3822,14 +3849,20 @@
     .zen [data-tooltip]:hover:before,
     .zen [data-tooltip][data-placement="bottom"]:focus:after,
     .zen [data-tooltip][data-placement="bottom"]:focus:before,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus:after,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus:before {
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus:after,
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus:before {
         animation-duration: 0.2s;
         animation-name: tooltip-slide-top;
     }
     .zen [data-tooltip]:hover:after,
     .zen [data-tooltip][data-placement="bottom"]:focus:after,
-    .zen [data-tooltip][data-placement="bottom"]:hover [data-tooltip]:focus:after {
+    .zen
+        [data-tooltip][data-placement="bottom"]:hover
+        [data-tooltip]:focus:after {
         animation-name: tooltip-caret-slide-top;
     }
     .zen [data-tooltip][data-placement="bottom"]:focus:after,
@@ -4850,11 +4883,13 @@
     filter: invert(1);
 }
 .zen .icon-gold {
-    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
+    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg)
+        brightness(105%) contrast(98%);
     width: 9px;
 }
 .zen .icon-silver {
-    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg)
+        brightness(103%) contrast(84%);
     width: 9px;
 }
 .zen .bg-angle {

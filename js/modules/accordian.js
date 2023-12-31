@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 var panel = this.nextElementSibling;
                 panel.style.maxHeight =
-                    panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                    panel.scrollHeight > 200
+                        ? "1000px"
+                        : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });

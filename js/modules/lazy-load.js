@@ -5,7 +5,9 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
+    var lazyImages = [].slice.call(
+        document.querySelectorAll(".zen img.lazy-load"),
+    );
 
     if (lazyImages.length === 0) {
         //console.log('No lazy-load images found.');
@@ -13,7 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        let lazyImageObserver = new IntersectionObserver(function (
+            entries,
+            observer,
+        ) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;

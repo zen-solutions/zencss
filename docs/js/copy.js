@@ -35,7 +35,10 @@ preElements.forEach(function (textBox) {
                         'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
 
                     // Reset the tooltip text
-                    copyButton.setAttribute("data-tooltip", "Copy to clipboard");
+                    copyButton.setAttribute(
+                        "data-tooltip",
+                        "Copy to clipboard",
+                    );
                 }, 1500);
             })
             .catch((err) => {

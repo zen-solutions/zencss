@@ -362,7 +362,10 @@ $theme-light-text: $light-color;
     }
 
     &.theme-secondary {
-        @include theme-button-styles($theme-secondary-bg, $theme-secondary-text);
+        @include theme-button-styles(
+            $theme-secondary-bg,
+            $theme-secondary-text
+        );
     }
 
     &.theme-accent {
