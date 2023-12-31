@@ -1,7 +1,7 @@
 # zencss
 
 An open-source, website authoring and design toolkit that helps you build,
-style, and debug websites. Current Branch is for nightly builds of v2.0.0-beta
+style, and debug websites. Current Release is v2.0.1-beta
 
 ### Pre-Launch Installation
 
