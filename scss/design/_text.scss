@@ -114,11 +114,6 @@ $text-grey-dual: #5e5e5e;
     text-align: right;
 }
 
-// .text-50{
-//   font-size: 50px;
-//   line-height: 50px;
-// }
-
 .text-sm {
     font-size: 0.9em;
 }
@@ -137,71 +132,9 @@ $text-grey-dual: #5e5e5e;
 
 .text-xxl {
     font-size: 4em;
+    line-height: 1em;
 }
 
-// ------------------------------------------
-// Special Chars - depricated
-//------------------------------------------
-
-// .label-circle-floated {
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%;
-//     color: white;
-//     font-size: 14px;
-//     text-align: center;
-//     line-height: 20px;
-//     position: absolute;
-//     top: 19px;
-//     right: 19px;
-//     padding-left: 0 !important;
-//     padding-right: 0 !important;
-// }
-
-// .label-circle {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%;
-//     background: $green;
-//     color: white;
-//     font-size: 14px;
-//     text-align: center;
-//     line-height: 20px;
-//     padding-left: 0 !important;
-//     padding-right: 0 !important;
-// }
-
-// ------------------------------------------
-// Tooltips - depricated
-//------------------------------------------
-
-// .tooltip {
-//     position: relative;
-//     display: inline-block;
-//     cursor: pointer;
-// }
-
-// .text-tooltip {
-//     visibility: hidden;
-//     max-width: 200px;
-//     background: #555;
-//     color: #fff;
-//     text-align: center;
-//     border-radius: 6px;
-//     padding: 5px 5px 9px 5px;
-//     position: absolute;
-//     z-index: 1;
-//     bottom: 125%;
-//     margin-left: -145px;
-//     opacity: 0;
-// }
-
-// .tooltip:hover .text-tooltip {
-//     visibility: visible;
-//     opacity: 1;
-//     transition: opacity 0.3s;
-// }
 
 //-----------------------------------------------------
 //breadcrumb
@@ -307,6 +240,7 @@ $text-grey-dual: #5e5e5e;
 
 .list-group-horizontal .list-group-item {
     border-bottom: 1px solid $border-color;
+    margin-bottom: 0.3em;
 }
 
 .list-group .list-group-item-action:hover {
@@ -500,6 +434,6 @@ a.text-cta-dual {
     text-decoration: underline;
 }
 
-.link-classic:active {
-    color: #ff0000;
-}
+// .link-classic:active {
+//     color: #ff0000;
+// }

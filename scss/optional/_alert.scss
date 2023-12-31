@@ -17,7 +17,7 @@
     position: relative;
     opacity: 0.9;
     border-left: $left-width solid lighten($background-color, 15%);
-    line-height: 1.6em;
+   // line-height: 1.6em;
     font-size: 0.8em;
 
     &::before {

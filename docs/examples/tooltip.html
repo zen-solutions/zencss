@@ -9,6 +9,7 @@
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="../../dist/zen.min.css">
 <link rel="stylesheet" href="../../dist/icons.css">
+   <link rel="stylesheet" href="../../docs/css/documentation.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="../../docs/js/updateseo.js"></script>
 </head>
@@ -25,8 +26,8 @@
         <div id="nav-placeholder"></div>
 
     </header>
+   
 <main id="main-content">
-
 
 
     <!----------------------------------------------------------------------->
@@ -36,8 +37,10 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline"> Tooltip</h1>
+                    <h1 class="headline">Tooltips</h1>
                     <p>Small messages that appear when hovering over an element. Choose from left, right, top or bottom. </p>
+                   
+
                         <hr>
                 </div>
             </z-col>
@@ -45,29 +48,29 @@
     </z-container>
 
     <!----------------------------------------------------------------------->
-    <!--- Component --->
+    <!---  Component  --->
     <!----------------------------------------------------------------------->
 
+    
+    <!----------------------------------------------------------------------->
+    <!--- Code Block  --->
+    <!----------------------------------------------------------------------->
+
+<z-container>
+    <z-row>
+        <z-col>
+            <p>Tooltip on a <a href="#" data-tooltip="In a gentle way,you can shake the world.">text link</a></p>
+            <p><button data-tooltip="In a gentle way, you can shake the world."  data-placement="bottom">Tooltip on a button</button>
+            </p>
+        </z-col>
+    </z-row>
+</z-container>
     <z-container>
-
-
         <z-row>
-            <z-col class="center">
-                <p>Tooltip on a <a href="#" data-tooltip="In a gentle way,you can shake the world.">text link</a></p>
-<p>Tooltip on <em data-tooltip="In a gentle way, you can shake the world." data-placement="right">inline element</em></p>
-<p><button data-tooltip="In a gentle way, you can shake the world."  data-placement="bottom">Tooltip on a button</button>
-</p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row>
-            <z-col class="pl-0 pr-0">
+            <z-col>
                 <div class="accordion center">
                     <a href="" class="title accordion-toggle w-200" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true"><pre class="square m-0"><code class="language-html">&lt;p&gt;Tooltip on a &lt;a href="#" data-tooltip="In a gentle way, you can shake the world."&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tooltip on &lt;em data-tooltip="In a gentle way, you can shake the world." data-placement="right"&gt;inline element&lt;/em&gt;&lt;/p&gt;
+                    <div id="content1" class="expanded-content p-0" aria-hidden="true"><pre class="copy-text square m-0"><code class="language-html">&lt;p&gt;Tooltip on a &lt;a href="#" data-tooltip="In a gentle way, you can shake the world."&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;button data-tooltip="In a gentle way, you can shake the world." data-placement="bottom"&gt;Tooltip on a button&lt;/button&gt;</code></pre>
                     </div>
                 </div>
@@ -76,9 +79,8 @@
     </z-container>
     
 
-    
     <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
+    <!--- Zen Test  --->
     <!----------------------------------------------------------------------->
 
     <z-container>
@@ -86,7 +88,7 @@
             <z-col class="center">
                 <div>
                     <hr>
-                    <h2 class="h4">The Zen Test</h2>
+                    <h3 class="h4">The Zen Test</h3>
                     <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
                     <p> So you can be assured it "just works". Try it out below. </p>
                 </div>
@@ -114,6 +116,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
   <script src="../js/copy.js"></script>
-</body>
+
+
+  </body>
 
 </html>

@@ -27,7 +27,7 @@ $zen-large-screen-font-size: 16px;
 // $zen-font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; //currently not in use. ready to implement
 // $zen-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; //currently not in use. ready to implement
 
-$zen-body-bg-color: #e4e4e4;
+$zen-body-bg-color: #e2e2e2;
 $zen-dark-text-color: #cacaca;
 $zen-dark-link-color: #f0f0f0;
 $base-text-color: #444444;
@@ -85,7 +85,7 @@ $base-text-color: #444444;
     @import "optional/decoration";
     @import "optional/multistep-wizard";
     @import "optional/animation";
-    //@import "optional/tabbed-card"; // WIP
+    //@import "optional/tabbed-card"; // WIP - for later release
     @import "optional/image-gallery";
     @import "optional/tooltip";
     @import "optional/aria";
@@ -128,9 +128,6 @@ $base-text-color: #444444;
             letter-spacing: -0.2px;
         }
 
-        //  h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6{
-        //   line-height: 2rem;
-        //  }
     }
 
     @media (min-width: 576px) and (max-width: 767.98px) {
@@ -168,19 +165,6 @@ $base-text-color: #444444;
     background: #2a2a2a;
     $responsive-text-color: #ededed;
 
-    // .text-success {
-    //   color: lighten(green, 10%);
-    // }
-
-    // .text-failure {
-    //   color: lighten(red, 16%);
-    // }
-
-    // td,
-    // th {
-    //     color: $zen-dark-text-color;
-    // }
-
     .text-dual {
         color: $zen-dark-text-color !important;
     }
@@ -190,10 +174,6 @@ $base-text-color: #444444;
         cursor: pointer;
         text-decoration: underline;
     }
-
-    // label {
-    //   color: $zen-dark-text-color !important;
-    // }
 
     a:hover {
         color: #e8e8e8;
@@ -261,5 +241,4 @@ $base-text-color: #444444;
         display: none;
         background: none !important;
     }
-
 }

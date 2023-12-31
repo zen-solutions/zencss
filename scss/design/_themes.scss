@@ -18,7 +18,6 @@
     $label-text-color
 ) {
     background: $bg-color;
-    //border-bottom-color: $bg-color;
     color: $text-color;
     border-radius: $border-radius;
 
@@ -63,10 +62,7 @@
         }
     }
 
-    // //override the text for the ones that aren't right
-    // .theme-primary btn.btn-outline {
-    //   color: red !important;
-    // }
+
 }
 
 // Your themes map
@@ -143,37 +139,11 @@ $themes: (
             nth($colors, 6)
         );
 
-        // // Override styles for hyperlinks - This is likely coming out today
-        // a {
-        //   @if $theme== "secondary" {
-        //     color: $accent-color;
-        //   } @else if $theme== "cta" {
-        //     color: nth($colors, 4);
-        //   } @else if $theme== "accent" {
-        //     color: $secondary-color;
-        //   }
-        // }
     }
 }
 
-// Additional theme-specific adjustments
-// .theme-light {
-//   color: unset;
-// }
-
-// wcag compliance text overrides
-// xxxxxxxx
-// .theme-primary a,
-// .theme-secondary a,
-// .theme-dark a,
-// .theme-primary .btn-outline,
-// .theme-cta .btn-outline,
-// .theme-secondary .btn-outline {
-//     color: white;
-// }
-
 //---------------------------------------------
-// Correcting above -  wcag compliant links for each theme
+//  wcag compliant links for each theme
 //---------------------------------------------
 
 .theme-primary a {
@@ -200,12 +170,13 @@ $themes: (
     color: smart-text-color($dark-color);
 }
 
-// i think we need to override the theme button colors here (from above) or rip them out if not too complicated
+// consider overriding the theme button colors here (from above) or rip them out if not too complicated
 // reason being, we already handle them in the button (bg color/text color is set) so we dont need to deal w that here technically
 //bt we have a lot of it baked in here already. so thats an issue to address.
 
 // btn-outline ones here - we have not yet dealt with those at the button level, so its logical to go back and do that and not have to do it here
 // the issue is we dont know what the bg color will be in that situation. thats the rub.
+//12/31 - need to check if this is still a valid todo
 
 // the color will be THE SAME as the text color (since its on the same bg).
 .theme-primary .btn-outline {

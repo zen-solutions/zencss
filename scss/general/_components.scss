@@ -49,28 +49,6 @@
     width: 91%;
 }
 
-// .close {
-//   color: $dark-color;
-//   font-size: 28px;
-//   font-weight: bold;
-//   width: 15px;
-//   height: 15px;
-//   position: absolute;
-//   // top: 45%;
-//   // right: 0;
-//   top: 0;
-//   right: 5px;
-//   transform: translateY(-50%);
-//   opacity: 0.5;
-// }
-
-// .close:hover,
-// .close:focus {
-//   color: $cta-color;
-//   text-decoration: none;
-//   cursor: pointer;
-// }
-
 .left-child {
     width: 95%;
     background-color: lightblue;
@@ -95,7 +73,6 @@
     }
 
     a {
-        //color:$text-grey-dual; //interfere w themes
         padding-bottom: 0.5em;
         text-decoration: none;
         padding-left: 10px;
@@ -132,7 +109,6 @@
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     padding: 0 1.05em;
-    //padding-right:1px; //fix for padding jump
 
 }
 
@@ -141,7 +117,7 @@
 }
 
 .expanded-content.show {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px; 
     border: 1px solid $border-color;
     padding: 0 1.05em; //fix for padding jump
 }
@@ -254,7 +230,6 @@ nav .dropdown-content {
     min-width: 220px;
 }
 
-//fixes. check if overrite abocve
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
@@ -265,7 +240,6 @@ nav .dropdown-content {
         }
     }
     .dropdown-content {
-        //background-color: unset;
         position: static;
         display: block;
         left: auto;
@@ -281,7 +255,7 @@ nav .dropdown-content {
     }
 
     .dropdown-link-container {
-        position: static; /* Resets the absolute positioning */
+        position: static; 
     }
 
     .nav-dropdown .caret-up,
@@ -432,11 +406,6 @@ blockquote em {
     left: unset;
 }
 
-// .slide img {
-//   width: 100%;
-//   height: auto;
-//   display: block; /* remove space below image */
-// }
 
 //wizard
 .wizard-step {
@@ -473,34 +442,10 @@ blockquote em {
     animation: spin 2s linear infinite;
 }
 
-//do we need this anymore?
 .card-split {
     position: relative;
-    /* Ensure the positioning context is set for children */
     overflow: hidden;
-    /* Let the child image be visible outside the bounds */
 }
-
-// //testing fs image card
-// .image-group {
-//   position: absolute; /* Position absolutely to break out of the flow */
-//   top: 0; /* Align with the top of the card-split */
-//   left: 0; /* Align with the left of the card-split */
-//   height: 100%; /* Full height of the parent */
-//   width: 100px; /* Fixed width as per your requirement */
-// }
-
-// .image-group img {
-//   height: 101%; /* Stretch to the full height of the image-group */
-//   width: 100%; /* The image will naturally take the width of the image-group */
-//   object-fit: cover; /* Cover the area, may crop the image */
-//   border-radius: 0;
-//   margin-left: -1px;
-// }
-
-// .text-group {
-//   margin-left: 105px; /* Add left margin to push the text to the right */
-// }
 
 //-------------------------------------------------
 // Image classes - responsive/round/rounded/outline
@@ -591,7 +536,6 @@ blockquote em {
 .btn-circle[data-unread="1"]::after,
 .btn-circle[data-unread="2"]::after,
 .btn-circle[data-unread="3"]::after {
-    /* Common Styles for Notification Indicator */
     content: attr(data-unread);
     position: absolute;
     top: -5px;
@@ -611,17 +555,14 @@ blockquote em {
     0%,
     14.29%,
     100% {
-        /* 14.29% of 7 seconds is approximately 1 second */
         transform: translateY(0);
     }
     7.14% {
-        /* Halfway of 1 second */
         transform: translateY(-5px);
     }
 }
 
 .btn-circle[data-unread][data-animate="true"]::after {
-    /* Apply the modified bounce animation */
     animation: notificationBounce 7s infinite;
 }
 .hidden {

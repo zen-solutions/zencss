@@ -8,7 +8,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    //background: $light-mode-color; /* Set background color for the entire menu */
     flex-direction: column;
     border-radius: $border-radius;
     overflow: hidden;
@@ -23,7 +22,6 @@
     width: 100%;
     flex-grow: 1;
     justify-content: unset;
-   // color: $dark-color;
     line-height: 1.5em;
     padding-left: 20px;
     margin:0;
@@ -60,7 +58,7 @@
 
 .nav-menu li.active .menu-item .main-text,
 .nav-menu li.active .menu-item .sub-text {
-    color: white; /* Active item text color */
+    color: white; 
 }
 
 .nav-menu li .menu-item {
@@ -77,10 +75,3 @@
     opacity:.7;
 }
  
-// .nav-menu .icon {
-//     color: $cta-color;
-// }
-
-/* Add media queries if necessary for responsiveness */
-
-//

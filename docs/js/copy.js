@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         addColBtn.addEventListener('click', function() {
             if (row) {
                 var newCol = document.createElement('z-col');
-                newCol.className = 'center theme-light';
+                newCol.className = 'center card theme-light';
                 row.appendChild(newCol);
                 updateZColNumbers(); // Update numbers after adding a column
             }

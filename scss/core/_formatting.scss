@@ -67,6 +67,7 @@
     }
 }
 
+
 //----------------------------------------------------
 /* Width and height */
 //----------------------------------------------------
@@ -137,6 +138,7 @@ $heights: 100 200 300 400 500;
     }
 }
 
+
 //----------------------------------------------------
 //card//
 //----------------------------------------------------
@@ -148,7 +150,7 @@ $heights: 100 200 300 400 500;
     gap: 0.5em;
     display: inline-flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start; //changed from start 12/31
 
     h1,
     h2,
@@ -167,12 +169,7 @@ $heights: 100 200 300 400 500;
     p,
     div {
         padding: 0;
-        //flex-grow:1; //1215
     }
-
-    // div{
-    //   flex: 1; //1213 new //1214 removed. if needed, document why added? broke card footer link/icon circle formatting, etc.
-    // }
 
     ul {
         margin-block-start: 0;
@@ -204,6 +201,7 @@ $heights: 100 200 300 400 500;
     height: 100%;
     z-index: 0;
 }
+
 
 //----------------------------------------------------
 // Display values - d-block, d-flex, etc.
@@ -298,6 +296,7 @@ $d-values: (
     position: relative;
     z-index: 5;
 }
+
 
 //----------------------------------------------------
 /* Generate classes for gaps */

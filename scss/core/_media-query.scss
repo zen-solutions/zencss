@@ -323,10 +323,7 @@
         padding-bottom: 0;
     }
 
-    .list-group-item{
-        padding-left: 0.25em;
-        padding-right: 0.25em;
-    }
+
 
     li {
         padding-left: 0.1em;
@@ -336,13 +333,6 @@
         top: 0;
         left: 0;
     }
-
-    // // Removed due to multiple overflow issues
-    // .card, .card-split{
-    //     margin-left: 1em;
-    //     margin-right: 1em;
-    //     max-width: 95%; // exploration of a compomise for a fix
-    // }
 
     .mobile-square {
         border-radius: 0;

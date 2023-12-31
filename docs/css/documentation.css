@@ -254,7 +254,7 @@ border:0;
 }
 
 
-[data-tooltip] {
+.copy-text [data-tooltip] {
   position: absolute !important;
   }
  
@@ -276,7 +276,7 @@ border:0;
 .icon-examples{
   margin-left: -5px;
   margin-right: 5px;
-  margin-top: -3px;
+  margin-top: 2px;
 }
 }
 

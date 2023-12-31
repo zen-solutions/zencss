@@ -222,39 +222,6 @@ hr {
     opacity: 0.05;
 }
 
-// button,
-// .btn {
-//   display: inline-flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-wrap: pretty;
-//   //padding: 1em; //remove 12/15 bc button and link button were diff heights. so weird.
-//   padding:0 1em;
-//   // margin: 0.2em;
-//   // margin-top: 0;
-//   // margin-bottom: 1em; //removed 1214 - due to needing proper margin. this was removed for a reason. clarify upon reexamination and reevaualte.
-//   margin:1em .15em;
-//   text-align: center;
-//   border: none;
-//   transition: all 0.25s ease;
-//   cursor: pointer;
-//   border-radius: $border-radius;
-//   font-size: 0.9em;
-//   color: $light-color;
-//   background: lighten($bg-header-footer, 20%);
-//   z-index: 3;
-//   text-decoration: none;
-//   font-weight: 500;
-//   min-height: 46px;
-// }
-
-// button:hover,
-// .btn:hover {
-//     cursor: pointer;
-//     background: lighten($bg-header-footer, 10%);
-//     color: $light-color;
-// }
-
 button.bg-cta:hover {
     background: darken($cta-color, 8%);
 }
@@ -314,14 +281,12 @@ figcaption {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-    //color: $text-grey-dual;
 } 
 
 small {
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1rem;
-    //display: inline;
 }
 
 input,
@@ -361,11 +326,6 @@ input[type="submit"] {
     outline-width: 4px;
 }
 
-// Rounded and circle shape classes
-// .round {
-//     //to depricate
-//     border-radius: 8px !important;
-// }
 
 .br-sm {
     border-radius: 4px !important;
@@ -655,31 +615,21 @@ header :link:hover {
 
 .youtube\:video-container {
     display: block;
-    /* Ensures block-level element behavior */
     width: 100%;
-    /* Full width of the container */
     aspect-ratio: 16 / 9;
-    /* Maintains a 16:9 aspect ratio */
     margin: 0 auto;
-    /* Center align if necessary and add some space around */
 }
 
 .youtube\:video-container iframe {
     display: block;
-    /* Remove default inline framing */
     width: 100%;
-    /* Full width of the container */
     height: 100%;
-    /* Full height based on the aspect ratio */
     border: none;
-    /* Optional, removes the border */
 }
 
 /*
-
-For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
-
-On the rare occasion you need to override it, use something like the following:
+border-box can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+If you need to override it, use:
 */
 .content-box {
     box-sizing: content-box;
@@ -903,41 +853,10 @@ On the rare occasion you need to override it, use something like the following:
   }
 
 
-// .pattern-interrupt {
-//   display: none;
-// }
-
-// .close {
-//   float: right;
-//   font-size: 1.2rem;
-//   cursor: pointer;
-// }
-
 // .hide-mobile{
 // //hide at media query for mobile. do one for tablet too
 // }
 
-// .lazy-load {
-//   font-size: 0;
-//   background-color: red;
-//   max-width: 100%;
-//   min-height: 100px;
-//   display: block;
-// }
-
-// .lazy-load[src=""]::after {
-//   content: attr(alt);
-//   font-size: initial;
-// }
-
-//docyument these in bgcolor for primary themes
-//.bg-accent-hover:hover{
-
-// // undo all the text styling and just be default like out of the box
-//inspiration https://play.tailwindcss.com/uj1vGACRJA?layout=preview
-// .unzen{
-
-// // }
 
 .zen-body-bg-color {
     background: $zen-body-bg-color;
@@ -951,32 +870,6 @@ On the rare occasion you need to override it, use something like the following:
     text-decoration: none;
     display: inline-block;
 }
-
-// .beautiful-gradient {
-//     position: relative; /* Required for absolute positioning of pseudo-element */
-//     /* Additional styles for your element */
-// }
-
-// .beautiful-gradient::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 410px; /* Height of the gradient area */
-//     z-index: -1; /* Place the gradient behind the content */
-
-//     background: linear-gradient(
-//       to bottom, 
-//       rgba(157, 123, 200, 1) 0%, /* Start of purple */
-//       rgba(122, 123, 200, 15%), /* Transition to blue */
-//       rgba(255, 200, 112, 30%), /* Transition to yellow */
-//       rgba(255, 140, 112, 45%), /* Transition to orange */
-//       rgba(255, 107, 107, 60%), /* Transition to red */
-//       transparent 100% /* Fully transparent at the bottom */
-//     );
-//     background-repeat: no-repeat;
-// }
 
 //left side clipping idea. stage 1. some cliping
 

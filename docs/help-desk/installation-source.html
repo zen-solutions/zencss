@@ -47,7 +47,7 @@
 <z-container>
     <z-row>
         <z-col>
-            <h2>Prerequisites</h2>
+            <h3>Prerequisites</h3>
 
 
 
@@ -57,33 +57,68 @@
                 <li>A JavaScript compiler for compiling our JavaScript modules.</li>
                 <li>Autoprefixer for handling CSS vendor prefixes to ensure cross-browser compatibility.</li>
             </ul>
-            <p> Follow the instructions below to set them up.</p>
+            <p> We'll also cover how to customize zenCSS with your brand colors/overrides. Follow the instructions below to dive in.</p>
             
-         
+            <p>This guide will help you set up the ZenCSS project environment on your system.</p>
+
+            <h2>1. Clone the Repository</h2>
+            <p>Clone the ZenCSS repository from GitHub:</p>
+            <pre><code>git clone https://github.com/zen-solutions/zencss.git</code></pre>
+            <p>Navigate into the cloned directory:</p>
+            <pre><code>cd zencss</code></pre>
+        
+            <h2>2. Install Node.js</h2>
+            <p>Ensure Node.js (version 12.0.0 or higher) is installed on your system. Download and install from <a href="https://nodejs.org/" target="_blank">Node.js official website</a>.</p>
+        
+            <h2>3. Install Dependencies</h2>
+            <p>Install all necessary dependencies by running:</p>
+            <pre><code>npm install</code></pre>
+        
+            <h2>4. Compile SCSS to CSS</h2>
+            <p>Compile SCSS files to CSS using the build-css script:</p>
+            <pre><code>npm run build-css</code></pre>
+            <p>This compiles <code>zen.scss</code> into <code>zen.css</code> and <code>zen.min.css</code>.</p>
+        
+            <h2>5. JavaScript Compilation with Webpack</h2>
+            <p>Compile JS modules using Webpack:</p>
+            <p>Run the script with:</p>
+            <pre><code>npm run build-js</code></pre>
+            <p>This compiles <code>zencss.js</code> and <code>zencss.min.js</code>.</p>
+
+            <h2>6. Using Prettier for Code Formatting</h2>
+            <p>To ensure consistent code formatting, use Prettier:</p>
+            <pre><code>npx prettier --write .</code></pre>
+            <p>This command formats your code according to the project's Prettier settings.</p>
+        
+            <h2>7. Development and Contributions</h2>
+            <p>For development, refer to the <code>README.md</code> and documentation in the <code>docs</code> folder. Contributions can be made via pull requests to the GitHub repository, adhering to the contribution guidelines.</p>
+        
+            <p><em>Note: The provided instructions assume basic familiarity with Git, Node.js, and npm.</em></p>
+        
           
-             <section>
-                <h2 class="h1"> Setup your SASS Compiler</h2>
+             <!-- <section>
+                <h3> Setup your SASS Compiler</h3>
                                 <p>zenCSS offers a robust way to customize your styles using SCSS, a preprocessor scripting language that is interpreted or compiled into CSS. To get started, you'll first need to set up SASS, the compiler for SCSS.</p>
                 
-                <h2>Installing SASS via NPM</h2>
+                <h3>Installing SASS via NPM</h3>
                 <p>Before proceeding, ensure that you have Node.js installed on your system. If not, visit the official Node.js website to download the latest version. Once Node.js is installed, you can install Dart SASS on your machine.</p>
                 
-                <h3>Installation:</h3>
+                <h3>Installation</h3>
                 <p>Open your terminal or command prompt and execute the following command to install SASS:</p>
                 <pre class="copy-text mt-3"><code class="language-html">npm install sass</code></pre>
                 
-                <h3>Navigate to the SCSS Directory:</h3>
+                <h3>Navigate to the SCSS Directory</h3>
                 <p>Change your current directory to where the SCSS files are located:</p>
                 <pre class="copy-text mt-3"><code class="language-html">cd path-to-your-project/scss</code></pre>
                 
-                <h3>Compile SCSS to CSS:</h3>
+                <h3>Compile SCSS to CSS</h3>
                 <p>You can compile your SCSS files into CSS using the following commands:</p>
                 <p>For compressed CSS output, use:</p>
                 <pre class="copy-text mt-3"><code class="language-html">sass --style=compressed zen.scss:../dist/zen.min.css</code></pre>
                 <p>For expanded CSS output, use:</p>
                 <pre class="copy-text mt-3"><code class="language-html">sass --style=expanded zen.scss:../dist/zen.css</code></pre>
 
-                <p>To watch the folder and autogenerate CSS output, use:</p>
+                <p>To watch the folder and autogenerate CSS output, use <code>--watch</code>:</p>
                 <pre class="copy-text mt-3"><code class="language-html">sass --style=expanded zen.scss:../dist/zen.css --watch</code></pre>
                 
                 <p>Remember, every time you make changes to the SCSS files, you'll need to recompile them to see the changes reflected in your project.</p>
@@ -92,26 +127,25 @@
 
            <hr>
             <section>
-                <h2 class="h1"> Setup Webpack for JavaScript modules</h2>
+                <h2> Setup Webpack for JavaScript modules</h2>
 
-<h2>Introduction</h2>
+<h3>Introduction</h3>
 <p>This guide outlines the steps to set up Webpack for bundling JavaScript modules in the zenCSS project.</p>
 
-<h2>Prerequisites</h2>
+<h3>Prerequisites</h3>
 <ul>
 <li>Node.js installed on your system</li>
 <li>npm (Node Package Manager), typically bundled with Node.js</li>
 </ul>
 
-<h2>Installation and Configuration</h2>
 
-<h3>Step 1: Install Webpack and Webpack CLI</h3>
+<h3>Install Webpack and Webpack CLI</h3>
 <p>Install Webpack and the Webpack CLI as development dependencies in your project.</p>
 <pre class="copy-text mt-3"><code class="language-html">npm install webpack webpack-cli --save-dev</code></pre>
 
-<h3>Step 2: Configure <code>webpack.config.js</code></h3>
-<p>When configuring your <code>webpack.config.js</code>, set up separate entry points for the zenCSS core modules and your custom modules.</p>
-<p>This approach allows you to keep the original source intact and manage your custom scripts separately. Here's an updated example configuration:</p>
+<h3>Configure webpack.config.js</h3>
+<p>When configuring your <code>webpack.config.js</code>, you may consider seting up separate entry points for the zenCSS core modules and your custom modules.</p>
+<p>This approach would allow you to keep the original source intact and manage your custom scripts separately. Here's an example configuration:</p>
 <pre class="copy-text mt-3"><code class="language-javascript">
 const path = require('path');
 
@@ -122,13 +156,12 @@ custom: ['./js/custom/custom-module1.js', './js/custom/custom-module2.js'] // Yo
 },
 output: {
 filename: 'zencss.bundle.js', // This will create separate bundles for core and custom modules
-path: path.resolve(__dirname, 'dist/js'),
+path: path.resolve(__dirname, 'dist/'),
 },
 mode: 'development' // Change to 'production' for minified output
-}
-</code></pre>
+}</code></pre>
 
-<h2>To run:</h2>
+<h3>Run it</h3>
 <pre class="copy-text mt-3"><code class="language-html">npx webpack</code></pre>
             </section>
             
@@ -149,7 +182,7 @@ mode: 'development' // Change to 'production' for minified output
                 <div class="content">
                     <p>Autoprefixer is a crucial tool for handling CSS vendor prefixes to ensure cross-browser compatibility. It automatically adds the necessary prefixes to your CSS properties to make your styles work correctly across various browsers.</p>
                     
-                    <h3>Installation:</h3>
+                    <h3>Installation</h3>
                     <p>You can install Autoprefixer as part of your SASS workflow. Here are the steps to set it up:</p>
                     
                     <ol>
@@ -167,8 +200,9 @@ mode: 'development' // Change to 'production' for minified output
                     </ol>
                     
                     <p>With Autoprefixer integrated into your SASS compilation, you can write CSS without worrying about manually adding browser-specific prefixes.</p>
+                    <p>Another option is <a href="https://autoprefixer.github.io/">https://autoprefixer.github.io/</a>.</p>
                 </div>
-            </section>
+            </section> -->
             
         </z-col>
     </z-row>
@@ -178,44 +212,36 @@ mode: 'development' // Change to 'production' for minified output
      <z-row>
          <z-col>
             <section id="customizing-zenCSS">
-                <h2>Customizing zenCSS</h2>
+                <h3>Customizing zenCSS</h3>
                 
                 <div class="content">
-                    <p>zenCSS provides a robust user settings file allowing control over everything from the color system to your preferred border radius setting. It's worth noting any changes made to our source files will be lost in future software updates. To safely customize your settings and ensure they are preserved across updates to the zenCSS framework, follow these steps:</p>
+                    <p>zenCSS allows for extensive customization in two primary areas. This ensures your settings are preserved across framework updates and gives you control over foundational aspects like colors and initial variables.</p>
                     
                     <ol>
                         <li>
-                            <strong>Create a Custom Settings File:</strong>
-                            Create a new file named <code>custom-settings.scss</code> in a separate directory, such as a <code>custom</code> directory within your project's root.
+                            <strong>Update SCSS Core Config:</strong>
+                            Override the <code>scss/core/config.scss</code> file to define or override brand colors, universal/black and grey colors, among other settings. For example, to override user settings, modify this line:
+                            <pre class="copy-text"><code class="language-scss">// -- Optional: Add overrides for user-settings
+@import "path-to-your-overrides-folder/user-settings-overrides";</code></pre>
+                            Duplicate or update user settings as needed right after this import.
                         </li>
                         <li>
-                            <strong>Set Your Custom Variables:</strong>
-                            Inside <code>custom-settings.scss</code>, define your custom variables such as colors, fonts, and others. For example:
-                            <pre class="copy-text"><code class="language-scss">$primary-color: #yourColorValue;</code></pre>
+                            <strong>Update zen.css:</strong>
+                            In <code>zen.css</code>, add overrides as needed for initial variables that are defined earlier in the stylesheet. For instance:
+                            <pre class="copy-text"><code class="language-scss">// -- Optional: Add overrides for variables above
+@import "path-to-your-overrides-folder/zen-variables-overrides";</code></pre>
                         </li>
-                        <li>
-                            <strong>Import Custom Settings:</strong>
-                            In the main SCSS file (<code>zen.scss</code>), import your <code>custom-settings.scss</code> right after the default settings to override them. Ensure the path to your custom file is correct based on its location. For example:
-                            <pre class="copy-text"><code class="language-scss">@import 'core/user-settings.scss';
-@import '../custom/custom-settings.scss'; // Path to your custom overrides
-// ... rest of the SCSS imports</code></pre>
-                        </li>
-                        <li>
-                            <strong>Review Documentation:</strong>
-                            Always refer to the official documentation for detailed examples and guidelines on creating custom variables.
-                        </li>
-                        <li>
-                            <strong>Use Version Control:</strong>
-                            Employ a version control system like Git to manage your customizations, which will also facilitate easy updating when new versions of the framework are released.
-                        </li>
+ 
+
                     </ol>
-                
-                    <p>Following these steps will allow you to customize the framework to fit your needs while keeping your changes intact through updates.</p>
+            
+                    <p>By following these steps, you can tailor the framework to meet your specific requirements, ensuring your changes remain intact through any updates.</p>
                 </div>
                 
             </section>
+            
             <section>
-                <h2>Community</h2>
+                <h3>Community</h3>
                 <p>Stay up to date on the development of zenCSS and reach out to the community...</p>
               </section>
           

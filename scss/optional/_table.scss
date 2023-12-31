@@ -14,6 +14,8 @@ table {
     margin-bottom: 1rem;
 }
 
+
+
 th,
 td {
     padding: 8px;
@@ -63,6 +65,11 @@ th {
 }
 
 @media (max-width: $responsive-breakpoint) {
+
+    .responsive-table tr td:last-child {
+        margin-bottom: 20px;
+      }
+
     .responsive-table tbody {
         .responsive-table tr {
             @include default-state;
@@ -71,7 +78,8 @@ th {
             background-color: rgba(111, 111, 111, 0.1);
 
             display: block;
-            margin-bottom: 20px;
+           
+         
         }
 
         td {
