@@ -2,7 +2,7 @@
     "name": "zencss",
     "version": "2.0.0-beta",
     "description": "An intelligent web development framework, design system and toolkit.",
-    "main": "index.js",
+    "main": "index.html",
     "scripts": {
         "build-css": "sass scss/zen.scss dist/zen.css --source-map && sass scss/zen.scss dist/zen.min.css --style=compressed --source-map && postcss dist/zen.min.css --use autoprefixer cssnano --map --output dist/zen.min.css",
         "build-js": "cd js && npx webpack"
