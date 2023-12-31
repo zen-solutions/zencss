@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalOriginalSlides = originalSlides.length;
         const nextButton = slider.querySelector(".next");
         const prevButton = slider.querySelector(".prev");
-        const shouldAutoRotate = slider.getAttribute("data-auto-rotate") === "true";
+        const shouldAutoRotate =
+            slider.getAttribute("data-auto-rotate") === "true";
 
         // Clone the first and last slides to create an infinite loop effect
         const firstSlideClone = originalSlides[0].cloneNode(true);
-        const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
+        const lastSlideClone =
+            originalSlides[totalOriginalSlides - 1].cloneNode(true);
         slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
         slidesContainer.appendChild(firstSlideClone);
 
@@ -46,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 0);
 
         function updateSlidePosition() {
-            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slidesContainer.style.transform = `translateX(-${
+                currentIndex * 100
+            }%)`;
         }
 
         function moveToNext() {
@@ -67,14 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentIndex >= totalOriginalSlides + 1) {
                 slidesContainer.style.transition = "none";
                 currentIndex = 1;
-                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slidesContainer.style.transform = `translateX(-${
+                    currentIndex * 100
+                }%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);
             } else if (currentIndex === 0) {
                 slidesContainer.style.transition = "none";
                 currentIndex = totalOriginalSlides;
-                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slidesContainer.style.transform = `translateX(-${
+                    currentIndex * 100
+                }%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);

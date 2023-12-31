@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -37,7 +37,8 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
-            halfStarImg.src = "../../img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.src =
+                "../../img/icons/alerts/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);

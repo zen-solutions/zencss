@@ -1,11 +1,13 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
+    var lazyImages = [].slice.call(
+        document.querySelectorAll(".zen img.lazy-load"),
+    );
 
     if (lazyImages.length === 0) {
         //console.log('No lazy-load images found.');
@@ -13,7 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        let lazyImageObserver = new IntersectionObserver(function (
+            entries,
+            observer,
+        ) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;

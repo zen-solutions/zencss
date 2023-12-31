@@ -11,18 +11,21 @@
 
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
-            rel="stylesheet"
-        />
+            rel="stylesheet" />
         <script src="../../docs/js/updateseo.js"></script>
     </head>
 
     <body class="zen">
         <div id="skip-navigation">
-            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+            <a href="#main-content" class="skip-link sr-only"
+                >Skip to main content</a
+            >
         </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
-                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+                <a href="../../index.html"
+                    ><img src="../../img/logo.png" alt="zenCSS logo"
+                /></a>
             </div>
 
             <div id="nav-placeholder"></div>
@@ -37,8 +40,8 @@
                         <div class="center">
                             <h1 class="headline">Preloaders</h1>
                             <p>
-                                A spinner and progress bars to keep users informed about application
-                                state.
+                                A spinner and progress bars to keep users
+                                informed about application state.
                             </p>
                             <hr />
                         </div>
@@ -59,7 +62,8 @@
                 <z-row>
                     <z-col class="card">
                         <span aria-busy="true"
-                            >add aria-busy="true" to an element to add a spinner</span
+                            >add aria-busy="true" to an element to add a
+                            spinner</span
                         >
                     </z-col>
                 </z-row>
@@ -73,12 +77,15 @@
                                 class="title accordion-toggle"
                                 aria-expanded="false"
                                 aria-controls="content1"
-                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
                             >
-                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                            <div
+                                id="content1"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
                                 <pre
-                                    class="copy-text square"
-                                ><code class="language-html">&lt;span aria-busy="true"&gt;Loading&lt;/span&gt; </code></pre>
+                                    class="copy-text square"><code class="language-html">&lt;span aria-busy="true"&gt;Loading&lt;/span&gt; </code></pre>
                             </div>
                         </div>
                     </z-col>
@@ -94,8 +101,12 @@
                 </z-row>
                 <z-row class="five-up">
                     <z-col class="card"><progress></progress></z-col>
-                    <z-col class="card"><progress value="25" max="100"></progress></z-col>
-                    <z-col class="card"><progress value="100" max="100"></progress></z-col>
+                    <z-col class="card"
+                        ><progress value="25" max="100"></progress
+                    ></z-col>
+                    <z-col class="card"
+                        ><progress value="100" max="100"></progress
+                    ></z-col>
                 </z-row>
             </z-container>
 
@@ -112,12 +123,15 @@
                                 class="title accordion-toggle"
                                 aria-expanded="false"
                                 aria-controls="content2"
-                                ><i class="zenicon-build-circle down-2"></i> Code Example</a
+                                ><i class="zenicon-build-circle down-2"></i>
+                                Code Example</a
                             >
-                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                            <div
+                                id="content2"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
                                 <pre
-                                    class="copy-text square"
-                                ><code class="language-html">&lt;progress&gt;&lt;/progress&gt;
+                                    class="copy-text square"><code class="language-html">&lt;progress&gt;&lt;/progress&gt;
 &lt;progress value="25" max="100"&gt;&lt;/progress&gt;
 &lt;progress value="100" max="100"&gt;&lt;/progress&gt;</code></pre>
                             </div>
@@ -149,8 +163,7 @@
                             class="lazy-load"
                             src="../../img/lazyload/lazyload-16x9.png"
                             data-src="../../img/placeholder/16x9/bailey-burton.jpg"
-                            alt="description"
-                        />
+                            alt="description" />
                     </z-col>
                 </z-row>
             </z-container>
@@ -168,12 +181,15 @@
                                 class="title accordion-toggle"
                                 aria-expanded="false"
                                 aria-controls="content4"
-                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
                             >
-                            <div id="content4" class="expanded-content p-0" aria-hidden="true">
+                            <div
+                                id="content4"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
                                 <pre
-                                    class="copy-text square"
-                                ><code class="language-html"> &lt;img class="lazy-load" src="../../img/lazyload/lazyload-16x9.png" data-src="your-image.jpg" alt="description"&gt;</code></pre>
+                                    class="copy-text square"><code class="language-html"> &lt;img class="lazy-load" src="../../img/lazyload/lazyload-16x9.png" data-src="your-image.jpg" alt="description"&gt;</code></pre>
                             </div>
                         </div>
                     </z-col>
@@ -191,15 +207,23 @@
                             <hr />
                             <h3 class="h4">The Zen Test</h3>
                             <p class="text-balance">
-                                Every component, section, and utility we ship will pass layout,
-                                color, and functional tests to ensure they perform flawlessly in
-                                today's modern browsers.
+                                Every component, section, and utility we ship
+                                will pass layout, color, and functional tests to
+                                ensure they perform flawlessly in today's modern
+                                browsers.
                             </p>
-                            <p>So you can be assured it "just works". Try it out below.</p>
+                            <p>
+                                So you can be assured it "just works". Try it
+                                out below.
+                            </p>
                         </div>
                         <div class="center">
-                            <button id="toggleButton" class="btn-md">Layout</button>
-                            <button id="toggleDarkMode" class="btn-md">Color</button>
+                            <button id="toggleButton" class="btn-md">
+                                Layout
+                            </button>
+                            <button id="toggleDarkMode" class="btn-md">
+                                Color
+                            </button>
                         </div>
                     </z-col>
                 </z-row>

@@ -1,3 +1,9 @@
+/*
+  * zenCSS v2.0.1-beta (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
@@ -5,11 +11,7 @@ var __webpack_exports__ = {};
 /*!************************************!*\
   !*** ./modules/custom-elements.js ***!
   \************************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Define zenCSS elements for use in JS
@@ -50,7 +52,7 @@ customElements.define("z-col", ZCol);
   !*** ./modules/carousel.js ***!
   \*****************************/
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -63,11 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalOriginalSlides = originalSlides.length;
         const nextButton = slider.querySelector(".next");
         const prevButton = slider.querySelector(".prev");
-        const shouldAutoRotate = slider.getAttribute("data-auto-rotate") === "true";
+        const shouldAutoRotate =
+            slider.getAttribute("data-auto-rotate") === "true";
 
         // Clone the first and last slides to create an infinite loop effect
         const firstSlideClone = originalSlides[0].cloneNode(true);
-        const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
+        const lastSlideClone =
+            originalSlides[totalOriginalSlides - 1].cloneNode(true);
         slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
         slidesContainer.appendChild(firstSlideClone);
 
@@ -97,7 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 0);
 
         function updateSlidePosition() {
-            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slidesContainer.style.transform = `translateX(-${
+                currentIndex * 100
+            }%)`;
         }
 
         function moveToNext() {
@@ -118,14 +124,18 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentIndex >= totalOriginalSlides + 1) {
                 slidesContainer.style.transition = "none";
                 currentIndex = 1;
-                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slidesContainer.style.transform = `translateX(-${
+                    currentIndex * 100
+                }%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);
             } else if (currentIndex === 0) {
                 slidesContainer.style.transition = "none";
                 currentIndex = totalOriginalSlides;
-                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slidesContainer.style.transform = `translateX(-${
+                    currentIndex * 100
+                }%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);
@@ -156,11 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!*****************************!*\
   !*** ./modules/dropdown.js ***!
   \*****************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 // Dropdown
@@ -207,18 +213,14 @@ window.onclick = function (event) {
   !*** ./modules/image-gallery.js ***!
   \**********************************/
 // /*
-//  * zenCSS Beta v2.0.0 (https://zencss.com/)
+//  * zenCSS v2.0.1-beta (https://zencss.com/)
 //  * Copyright 2022-2024 Shaun Mackey
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
 
 //12/29 removing lazy load
 
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 function preloadImage(src) {
     const img = new Image();
@@ -242,7 +244,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const clonedImg = img.cloneNode(true);
             clonedImg.addEventListener("click", () => {
                 currentModalIndex = index;
-                openModal(clonedImg.src, clonedImg.getAttribute("data-text"), index);
+                openModal(
+                    clonedImg.src,
+                    clonedImg.getAttribute("data-text"),
+                    index,
+                );
             });
             wrapper.appendChild(clonedImg);
             imageWrappers.push(wrapper);
@@ -254,23 +260,27 @@ document.addEventListener("DOMContentLoaded", function () {
             imageWrappers.forEach((wrapper, index) => {
                 const start = (pageNumber - 1) * imagesPerPage;
                 const end = start + imagesPerPage;
-                wrapper.style.display = index >= start && index < end ? "block" : "none";
+                wrapper.style.display =
+                    index >= start && index < end ? "block" : "none";
             });
         }
 
         function updatePaginationNav() {
-            paginationNav.innerHTML = '<a href="#" class="item" data-page="prev">&laquo;</a>';
+            paginationNav.innerHTML =
+                '<a href="#" class="item" data-page="prev">&laquo;</a>';
             for (let i = 1; i <= totalPages; i++) {
                 const classCurrent = i === currentPage ? "current" : "";
                 paginationNav.innerHTML += `<a href="#" class="item ${classCurrent}" data-page="${i}">${i}</a>`;
             }
-            paginationNav.innerHTML += '<a href="#" class="item" data-page="next">&raquo;</a>';
+            paginationNav.innerHTML +=
+                '<a href="#" class="item" data-page="next">&raquo;</a>';
         }
 
         function openModal(src, text, index) {
             currentModalIndex = index;
             const modalBody = modal.shadowRoot.querySelector(".modal-body");
-            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper =
+                modal.shadowRoot.querySelector(".modal-wrapper");
             const modalHeader = modal.shadowRoot.querySelector(".modal-header");
 
             if (modalBody && modalWrapper && modalHeader) {
@@ -297,9 +307,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevArrow.style.transform = "translateY(-50%)";
                 prevArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex > 0 ? currentModalIndex - 1 : imageWrappers.length - 1;
+                        currentModalIndex > 0
+                            ? currentModalIndex - 1
+                            : imageWrappers.length - 1;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
+                    openModal(
+                        newImg.src,
+                        newImg.getAttribute("data-text"),
+                        currentModalIndex,
+                    );
                 };
                 imageContainer.appendChild(prevArrow);
 
@@ -327,9 +343,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextArrow.style.transform = "translateY(-50%)";
                 nextArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex < imageWrappers.length - 1 ? currentModalIndex + 1 : 0;
+                        currentModalIndex < imageWrappers.length - 1
+                            ? currentModalIndex + 1
+                            : 0;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
+                    openModal(
+                        newImg.src,
+                        newImg.getAttribute("data-text"),
+                        currentModalIndex,
+                    );
                 };
                 imageContainer.appendChild(nextArrow);
 
@@ -344,10 +366,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 modalBody.style.maxHeight = "80vh";
                 modalHeader.style.display = "none";
 
-                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth =
+                    window.innerWidth >= 1070 ? "860px" : "80%";
 
                 const nextIndex = (index + 1) % imageWrappers.length;
-                const prevIndex = (index - 1 + imageWrappers.length) % imageWrappers.length;
+                const prevIndex =
+                    (index - 1 + imageWrappers.length) % imageWrappers.length;
                 preloadImage(imageWrappers[nextIndex].firstChild.src);
                 preloadImage(imageWrappers[prevIndex].firstChild.src);
 
@@ -377,9 +401,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         window.addEventListener("resize", function () {
-            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper =
+                modal.shadowRoot.querySelector(".modal-wrapper");
             if (modalWrapper) {
-                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth =
+                    window.innerWidth >= 1070 ? "860px" : "80%";
             }
         });
 
@@ -593,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/accordian.js ***!
   \******************************/
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -638,7 +664,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 var panel = this.nextElementSibling;
                 panel.style.maxHeight =
-                    panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                    panel.scrollHeight > 200
+                        ? "1000px"
+                        : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });
@@ -652,11 +680,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************!*\
   !*** ./modules/misc.js ***!
   \*************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 // Dynamic year in footer
@@ -742,9 +766,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to apply data labels to a table
     function applyDataLabelsToTable(table) {
         // Get all the headers from the direct child thead of the table
-        const headers = Array.from(table.querySelectorAll(":scope > thead > tr > th")).map((th) =>
-            th.textContent.trim(),
-        );
+        const headers = Array.from(
+            table.querySelectorAll(":scope > thead > tr > th"),
+        ).map((th) => th.textContent.trim());
 
         // Iterate over each row in the direct child tbody of the table
         table.querySelectorAll(":scope > tbody > tr").forEach((row) => {
@@ -759,7 +783,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Select all tables with class 'responsive-table' and apply data labels to each
-    document.querySelectorAll(".responsive-table").forEach(applyDataLabelsToTable);
+    document
+        .querySelectorAll(".responsive-table")
+        .forEach(applyDataLabelsToTable);
 });
 
 //-------------------------------------
@@ -1034,11 +1060,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!******************************!*\
   !*** ./modules/dark-mode.js ***!
   \******************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //  Toggle Dark Mode Option
@@ -1078,14 +1100,12 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!******************************!*\
   !*** ./modules/lazy-load.js ***!
   \******************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", function () {
-    var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
+    var lazyImages = [].slice.call(
+        document.querySelectorAll(".zen img.lazy-load"),
+    );
 
     if (lazyImages.length === 0) {
         //console.log('No lazy-load images found.');
@@ -1093,7 +1113,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        let lazyImageObserver = new IntersectionObserver(function (
+            entries,
+            observer,
+        ) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;
@@ -1162,11 +1185,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************************!*\
   !*** ./modules/background-image.js ***!
   \*************************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //Background image
@@ -1191,11 +1210,7 @@ window.addEventListener("DOMContentLoaded", function () {
 /*!*******************************!*\
   !*** ./modules/mobile-nav.js ***!
   \*******************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // //--------------------------------------------------------
 // // Mobile Nav
@@ -1248,7 +1263,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   !*** ./modules/modal.js ***!
   \**************************/
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
  */
@@ -1265,14 +1280,18 @@ class ZModal extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot.querySelector(".close").addEventListener("click", () => {
-            this.close();
-        });
-        this.shadowRoot.querySelector(".modal").addEventListener("click", (event) => {
-            if (event.target === event.currentTarget) {
+        this.shadowRoot
+            .querySelector(".close")
+            .addEventListener("click", () => {
                 this.close();
-            }
-        });
+            });
+        this.shadowRoot
+            .querySelector(".modal")
+            .addEventListener("click", (event) => {
+                if (event.target === event.currentTarget) {
+                    this.close();
+                }
+            });
         document.addEventListener("click", (event) => {
             if (event.target.classList.contains("modal-close")) {
                 this.close();
@@ -1409,11 +1428,7 @@ customElements.define("z-modal", ZModal);
 /*!***********************************!*\
   !*** ./modules/star-component.js ***!
   \***********************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Star component
@@ -1448,7 +1463,8 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
-            halfStarImg.src = "../../img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.src =
+                "../../img/icons/alerts/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);
@@ -1485,11 +1501,7 @@ customElements.define("star-component", StarComponent);
 /*!********************************!*\
   !*** ./modules/exit-intent.js ***!
   \********************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Exit Intent
@@ -1538,7 +1550,9 @@ function shouldShowModal() {
     var modalClosedTime = localStorage.getItem("modalClosed");
     if (modalClosedTime) {
         var now = new Date();
-        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
+        var daysPassed =
+            (now.getTime() - parseInt(modalClosedTime, 10)) /
+            (1000 * 3600 * 24);
         return daysPassed >= 7;
     }
     return true;
@@ -1560,11 +1574,7 @@ setTimeout(function () {
 /*!***************************!*\
   !*** ./modules/wizard.js ***!
   \***************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Wizard
@@ -1582,7 +1592,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             steps.forEach((step) => {
                 step.style.display = "none"; // Hide all steps
             });
-            document.getElementById(`step-${stepNumber}`).style.display = "block"; // Show the desired step
+            document.getElementById(`step-${stepNumber}`).style.display =
+                "block"; // Show the desired step
 
             // Update the current class on pagination
             navItems.forEach((item) => {
@@ -1623,11 +1634,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /*!*************************************!*\
   !*** ./modules/multistep-wizard.js ***!
   \*************************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const mswizard = document.querySelector(".mswizard");
@@ -1649,9 +1656,11 @@ document.addEventListener("DOMContentLoaded", function () {
         progressBar.value = progressValue;
         progressPercentage.textContent = `${Math.round(progressValue)}%`;
         const percentagePosition =
-            progressBar.offsetWidth * (progressValue / 100) - progressPercentage.offsetWidth / 2;
+            progressBar.offsetWidth * (progressValue / 100) -
+            progressPercentage.offsetWidth / 2;
         progressPercentage.style.left = `${Math.max(0, percentagePosition)}px`;
-        progressPercentage.style.visibility = progressValue >= 5 ? "visible" : "hidden";
+        progressPercentage.style.visibility =
+            progressValue >= 5 ? "visible" : "hidden";
     }
 
     steps.forEach((step, index) => {
@@ -1670,7 +1679,9 @@ document.addEventListener("DOMContentLoaded", function () {
             prevButton.disabled = true;
             prevButton.classList.add("disabled");
         } else {
-            prevButton.addEventListener("click", () => updatemswizardStep(index));
+            prevButton.addEventListener("click", () =>
+                updatemswizardStep(index),
+            );
         }
         buttonContainer.appendChild(prevButton);
 
@@ -1680,7 +1691,9 @@ document.addEventListener("DOMContentLoaded", function () {
         nextButton.className = "next-btn";
         nextButton.setAttribute("role", "button");
         nextButton.setAttribute("aria-label", `Go to step ${index + 2}`);
-        nextButton.addEventListener("click", () => updatemswizardStep(index + 2));
+        nextButton.addEventListener("click", () =>
+            updatemswizardStep(index + 2),
+        );
         buttonContainer.appendChild(nextButton);
 
         step.appendChild(buttonContainer);
@@ -1696,11 +1709,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************!*\
   !*** ./modules/tabs.js ***!
   \*************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Tabs
@@ -1734,11 +1743,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************!*\
   !*** ./modules/spin.js ***!
   \*************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 //Spin
@@ -1766,11 +1771,7 @@ document.addEventListener("DOMContentLoaded", startSpinning);
 /*!*************************!*\
   !*** ./modules/poll.js ***!
   \*************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 //Poll
@@ -1817,7 +1818,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var resultElement = document.querySelector(
             '#result-types [data-result="' + mostChosen + '"]',
         );
-        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
+        var resultContent = resultElement
+            ? resultElement.innerHTML
+            : mostChosen;
 
         // Update the result div and make the result visible
         var resultDiv = document.getElementById("result-text");
@@ -1847,11 +1850,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!********************************!*\
   !*** ./modules/link-scroll.js ***!
   \********************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 document.addEventListener("DOMContentLoaded", () => {
     const anchors = document.querySelectorAll('a[href^="#"]');
 
@@ -1883,11 +1882,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!***********************************!*\
   !*** ./modules/cookie-consent.js ***!
   \***********************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const banner = document.querySelector(".cookie-consent-banner");
@@ -1919,11 +1914,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /*!******************************!*\
   !*** ./modules/test-mode.js ***!
   \******************************/
-/*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //Toggle  test mode

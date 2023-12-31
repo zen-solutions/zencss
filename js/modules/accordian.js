@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 var panel = this.nextElementSibling;
                 panel.style.maxHeight =
-                    panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                    panel.scrollHeight > 200
+                        ? "1000px"
+                        : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });

@@ -1,93 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to zenCSS</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to zenCSS</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet" />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only"
+                >Skip to main content</a
+            >
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"
+                    ><img src="../../img/logo.png" alt="zenCSS logo"
+                /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
-    </header>
-    <main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Hero --->
+            <!----------------------------------------------------------------------->
 
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Hero --->
-        <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Image/Text Site Sections</h1>
+                            <p>
+                                Examples of site sections with text and image
+                                pairings in various styles.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Page Title  --->
-        <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row class="gap-0">
+                    <z-col class="card p-0 w-full m-0 mh-400">
+                        <img
+                            src="../../docs/images/misc/slider/5.jpg"
+                            alt=""
+                            class="flex-grow-1 square overflow-hidden bg-img" />
+                    </z-col>
+                    <z-container class="mobile:two-up gap-0">
+                        <z-row class="mt-0 mb-0 pb-0 pt-0 h-250">
+                            <z-col class="card bg-cta">
+                                <div class="center-vertical">
+                                    <h2 class="h5">A featured headline</h2>
+                                    <p>
+                                        This site section contains a hero image
+                                        with two color blocked supporting
+                                        sections. These stack 2/up on
+                                        tablet/mobile (configurable).
+                                    </p>
+                                </div>
+                            </z-col>
+                        </z-row>
+                        <z-row class="mt-0 mb-0 pb-0 pt-0">
+                            <z-col class="card bg-primary">
+                                <div class="center-vertical">
+                                    <h2 class="h5">Another section</h2>
+                                    <p>
+                                        Supporting content could go here. Your
+                                        imagination is the only limit.
+                                    </p>
+                                </div>
+                            </z-col>
+                        </z-row>
+                    </z-container>
+                </z-row>
+            </z-container>
 
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <h1 class="headline"> Image/Text Site Sections</h1>
-                        <p>Examples of site sections with text and image pairings in various styles. </p>
-                        <hr>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <!----------------------------------------------------------------------->
-        <!--- Component  --->
-        <!----------------------------------------------------------------------->
-
-
-        <z-container>
-            <z-row class="gap-0">
-                <z-col class="card p-0 w-full m-0 mh-400">
-                    <img src="../../docs/images/misc/slider/5.jpg" alt="" class="flex-grow-1 square overflow-hidden bg-img">
-                </z-col>
-                <z-container class="mobile:two-up gap-0">
-                    <z-row class="mt-0 mb-0 pb-0 pt-0 h-250">
-                        <z-col class="card bg-cta">
-                            <div class="center-vertical ">
-                                <h2 class="h5">A featured headline</h2>
-                                <p>This site section contains a hero image with two color blocked supporting sections. These stack 2/up on tablet/mobile (configurable). </p>
-                            </div>
-                        </z-col>
-                    </z-row>
-                    <z-row class="mt-0 mb-0 pb-0 pt-0">
-                        <z-col class="card bg-primary">
-                            <div class="center-vertical ">
-                                <h2 class="h5">Another section</h2>
-                                <p>Supporting content could go here. Your imagination is the only limit. </p>
-                            </div>
-                        </z-col>
-                    </z-row>
-                </z-container>
-            </z-row>
-        </z-container>
-
-        <z-container>
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content1"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row class="gap-0"&gt;
     &lt;z-col class="card p-0 w-full m-0 mh-400"&gt;
       &lt;img src="../../docs/images/misc/slider/5.jpg" alt="" class="flex-grow-1 square overflow-hidden bg-img"&gt;
@@ -112,51 +138,69 @@
     &lt;/z-container&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <hr />
 
+            <z-container>
+                <z-row>
+                    <z-col class="card p-0 w-full m-0 mh-400">
+                        <img
+                            src="../../docs/images/misc/slider/2.jpg"
+                            alt=""
+                            class="flex-grow-1 br-xxl overflow-hidden bg-img" />
+                    </z-col>
+                    <z-container class="mobile:two-up gap-4">
+                        <z-row class="mt-0 mb-0 pb-0 pt-0">
+                            <z-col class="card theme-light br-xxl">
+                                <i class="zenicon-build-circle text-lg"></i>
+                                <div class="card-bottom">
+                                    <p>
+                                        Bento box layouts are all the rage right
+                                        now, so why not lead with one of our
+                                        own?
+                                    </p>
+                                </div>
+                            </z-col>
+                        </z-row>
+                        <z-row class="mt-0 mb-0 pb-0 pt-0">
+                            <z-col class="card theme-light br-xxl">
+                                <i class="zenicon-verified text-lg"></i>
+                                <div class="card-bottom">
+                                    <p>
+                                        The main cel features a hero image,
+                                        while the sidebar allows for two
+                                        supporting columns, stacked.
+                                    </p>
+                                </div>
+                            </z-col>
+                        </z-row>
+                    </z-container>
+                </z-row>
+            </z-container>
 
-        <hr>
-
-
-        <z-container>
-            <z-row>
-                <z-col class="card p-0 w-full m-0 mh-400">
-                    <img src="../../docs/images/misc/slider/2.jpg" alt="" class="flex-grow-1 br-xxl overflow-hidden bg-img">
-                </z-col>
-                <z-container class="mobile:two-up gap-4">
-                    <z-row class="mt-0 mb-0 pb-0 pt-0">
-                        <z-col class="card theme-light br-xxl">
-                            <i class="zenicon-build-circle text-lg"></i>
-                            <div class="card-bottom">
-                                <p>Bento box layouts are all the rage right now, so why not lead with one of our own? </p>
-                            </div>
-                        </z-col>
-                    </z-row>
-                    <z-row class="mt-0 mb-0 pb-0 pt-0">
-                        <z-col class="card theme-light br-xxl">
-                            <i class="zenicon-verified text-lg"></i>
-                            <div class="card-bottom">
-                                <p>The main cel features a hero image, while the sidebar allows for two supporting columns, stacked. </p>
-                            </div>
-                        </z-col>
-                    </z-row>
-            </z-row>
-        </z-container>
-        </z-row>
-        </z-container>
-
-        <z-container>
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content2"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row&gt;
     &lt;z-col class="card p-0 w-full m-0 mh-400"&gt;
       &lt;img src="../../docs/images/misc/slider/2.jpg" alt="" class="flex-grow-1 br-xxl overflow-hidden bg-img"&gt;
@@ -181,31 +225,49 @@
     &lt;/z-container&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-        <hr>
-        <z-container>
-            <z-row class="gap-0">
-                <z-col class="card theme-light square br-left narrow-lg h-300 justify-content-center align-items-center">
-                    <h2 class="headline">Text/Image Block</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </z-col>
-                <z-col class="card theme-light square h-300">
-                    <img src="../images/misc/slider/3.jpg" class="bg-img square br-right" alt="">
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
+            <hr />
+            <z-container>
+                <z-row class="gap-0">
+                    <z-col
+                        class="card theme-light square br-left narrow-lg h-300 justify-content-center align-items-center">
+                        <h2 class="headline">Text/Image Block</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </z-col>
+                    <z-col class="card theme-light square h-300">
+                        <img
+                            src="../images/misc/slider/3.jpg"
+                            class="bg-img square br-right"
+                            alt="" />
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <z-container>
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content3" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content3"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content3"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row class="gap-0"&gt;
     &lt;z-col class="card theme-light square br-left narrow-lg h-300 justify-content-center align-items-center"&gt;
       &lt;h2 class="headline"&gt;Text/Image Block&lt;/h2&gt;
@@ -216,38 +278,51 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <hr />
 
+            <z-container class="page-section">
+                <z-row>
+                    <z-col>
+                        <img
+                            src="../../img/placeholder/fernando-jorge.jpg"
+                            alt="" />
+                    </z-col>
+                    <z-col class="flex">
+                        <div class="center-vertical">
+                            <h2 class="h3 headline">Text With a 16/9 Image</h2>
+                            <p>
+                                Eos tenetur corrupti, minima doloribus quam
+                                eveniet libero.
+                            </p>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-
-        <hr>
-
-        <z-container class="page-section">
-            <z-row>
-                <z-col>
-                    <img src="../../img/placeholder/fernando-jorge.jpg" alt="">
-                </z-col>
-                <z-col class="flex">
-                    <div class="center-vertical">
-                        <h2 class="h3 headline">Text With a 16/9 Image</h2>
-                        <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col>
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content4" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
+            <z-container class="up-50">
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content4"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content4"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
   &lt;z-row&gt;
     &lt;z-col&gt;
       &lt;img src="../../img/placeholder/fernando-jorge.jpg" alt=""&gt;
@@ -260,43 +335,58 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-        <!----------------------------------------------------------------------->
-        <!--- End Component  --->
-        <!----------------------------------------------------------------------->
+                    </z-col>
+                </z-row>
+            </z-container>
+            <!----------------------------------------------------------------------->
+            <!--- End Component  --->
+            <!----------------------------------------------------------------------->
 
-        <hr>
+            <hr />
 
+            <!----------------------------------------------------------------------->
+            <!--- Component  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Component  --->
-        <!----------------------------------------------------------------------->
+            <z-container class="page-section">
+                <z-row class="theme-light p-0 gap-0">
+                    <z-col class="flex">
+                        <div class="center-vertical narrow-left-sm">
+                            <h2 class="h3 headline">
+                                Image/Text in a Themed Card
+                            </h2>
+                            <p>
+                                Eos tenetur corrupti, minima doloribus quam
+                                eveniet libero.
+                            </p>
+                        </div>
+                    </z-col>
+                    <z-col>
+                        <img src="../../docs/images/misc/slider/1.jpg" alt="" />
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <z-container class="page-section">
-            <z-row class="theme-light p-0 gap-0">
-                <z-col class="flex">
-                    <div class="center-vertical narrow-left-sm">
-                        <h2 class="h3 headline">Image/Text in a Themed Card</h2>
-                        <p> Eos tenetur corrupti, minima doloribus quam eveniet libero. </p>
-                    </div>
-                </z-col>
-                <z-col>
-                    <img src="../../docs/images/misc/slider/1.jpg" alt="">
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content5" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
+            <z-container class="up-50">
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content5"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content5"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
   &lt;z-row class="theme-light p-0 gap-0"&gt;
     &lt;z-col class="flex"&gt;
       &lt;div class="center-vertical narrow-left-sm"&gt;
@@ -309,35 +399,53 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <hr>
-        <z-container class="page-section">
-            <z-row class="p-0 border-3 square">
-                <z-col class="p-0 d-flex">
-                    <img src="../../docs/images/misc/1024-square.jpg" class="mobile:thin square" alt="">
-                </z-col>
-                <z-col class="flex">
-                    <div class="center-vertical narrow-sm">
-                        <h2 class="h3 headline">Split Image/Text with a Border</h2>
-                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+            <hr />
+            <z-container class="page-section">
+                <z-row class="p-0 border-3 square">
+                    <z-col class="p-0 d-flex">
+                        <img
+                            src="../../docs/images/misc/1024-square.jpg"
+                            class="mobile:thin square"
+                            alt="" />
+                    </z-col>
+                    <z-col class="flex">
+                        <div class="center-vertical narrow-sm">
+                            <h2 class="h3 headline">
+                                Split Image/Text with a Border
+                            </h2>
+                            <p>
+                                Image reformats to 16/9 aspect ratio when
+                                transitioning to mobile.
+                            </p>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content6"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content6" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
+            <z-container class="up-50">
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content6"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content6"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
   &lt;z-row class="p-0 border-3 square"&gt;
     &lt;z-col class="p-0 d-flex"&gt;
       &lt;img src="../../docs/images/misc/1024-square.jpg" class="mobile:thin square" alt=""&gt;
@@ -350,41 +458,54 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <hr>
+            <hr />
 
-        <z-container class="page-section">
-            <z-row class="p-0 tablet-reverse">
-                <z-col class="flex">
-                    <div class="center-vertical narrow-sm">
-                        <h2 class="h3 headline">Text With a Square Image</h2>
-                        <p> Image reformats to 16/9 aspect ratio when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-                <z-col class="p-0">
-                    <img src="../../docs/images/misc/1024-square-2.jpg" class="mobile:thin" alt="">
-                </z-col>
-            </z-row>
-        </z-container>
+            <z-container class="page-section">
+                <z-row class="p-0 tablet-reverse">
+                    <z-col class="flex">
+                        <div class="center-vertical narrow-sm">
+                            <h2 class="h3 headline">
+                                Text With a Square Image
+                            </h2>
+                            <p>
+                                Image reformats to 16/9 aspect ratio when
+                                transitioning to mobile.
+                            </p>
+                        </div>
+                    </z-col>
+                    <z-col class="p-0">
+                        <img
+                            src="../../docs/images/misc/1024-square-2.jpg"
+                            class="mobile:thin"
+                            alt="" />
+                    </z-col>
+                </z-row>
+            </z-container>
 
-
-
-
-
-
-
-        <z-container class="up-50">
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content7"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content7" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
+            <z-container class="up-50">
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content7"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content7"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
   &lt;z-row class="p-0 tablet-reverse"&gt;
     &lt;z-col class="flex"&gt;
       &lt;div class="center-vertical narrow-sm"&gt;
@@ -397,71 +518,79 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <hr>
+            <hr />
 
+            <!----------------------------------------------------------------------->
+            <!--- End Component  --->
+            <!----------------------------------------------------------------------->
 
+            <br />
 
+            <!----------------------------------------------------------------------->
+            <!--- 2nd row text/img  --->
+            <!----------------------------------------------------------------------->
 
+            <!----------------------------------------------------------------------->
+            <!--- Zen Test --->
+            <!----------------------------------------------------------------------->
+
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship
+                                will pass layout, color, and functional tests to
+                                ensure they perform flawlessly in today's modern
+                                browsers.
+                            </p>
+                            <p>
+                                So you can be assured it "just works". Try it
+                                out below.
+                            </p>
+                        </div>
+                    </z-col>
+                </z-row>
+
+                <z-row>
+                    <z-col class="pt-0">
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">
+                                Layout
+                            </button>
+                            <button id="toggleDarkMode" class="btn-md m-0">
+                                Color
+                            </button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
         <!----------------------------------------------------------------------->
-        <!--- End Component  --->
+        <!--- Footer  --->
         <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-        <br>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-        <!----------------------------------------------------------------------->
-        <!--- 2nd row text/img  --->
-        <!----------------------------------------------------------------------->
-
-
-
-        <!----------------------------------------------------------------------->
-        <!--- Zen Test --->
-        <!----------------------------------------------------------------------->
-
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <hr>
-                        <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                        <p> So you can be assured it "just works". Try it out below. </p>
-                    </div>
-                </z-col>
-            </z-row>
-
-            <z-row>
-                <z-col class="pt-0">
-                    <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

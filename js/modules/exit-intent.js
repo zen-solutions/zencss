@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -51,7 +51,9 @@ function shouldShowModal() {
     var modalClosedTime = localStorage.getItem("modalClosed");
     if (modalClosedTime) {
         var now = new Date();
-        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
+        var daysPassed =
+            (now.getTime() - parseInt(modalClosedTime, 10)) /
+            (1000 * 3600 * 24);
         return daysPassed >= 7;
     }
     return true;

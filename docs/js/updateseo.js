@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -27,7 +27,9 @@ function updateSEO() {
 
     // Update the meta description
     if (descriptionContent) {
-        const metaDescription = document.querySelector('meta[name="description"]');
+        const metaDescription = document.querySelector(
+            'meta[name="description"]',
+        );
         if (metaDescription) {
             metaDescription.setAttribute("content", descriptionContent);
         } else {

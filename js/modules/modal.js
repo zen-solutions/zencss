@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
  */
@@ -16,14 +16,18 @@ class ZModal extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot.querySelector(".close").addEventListener("click", () => {
-            this.close();
-        });
-        this.shadowRoot.querySelector(".modal").addEventListener("click", (event) => {
-            if (event.target === event.currentTarget) {
+        this.shadowRoot
+            .querySelector(".close")
+            .addEventListener("click", () => {
                 this.close();
-            }
-        });
+            });
+        this.shadowRoot
+            .querySelector(".modal")
+            .addEventListener("click", (event) => {
+                if (event.target === event.currentTarget) {
+                    this.close();
+                }
+            });
         document.addEventListener("click", (event) => {
             if (event.target.classList.contains("modal-close")) {
                 this.close();

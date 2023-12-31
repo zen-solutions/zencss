@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -49,7 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var resultElement = document.querySelector(
             '#result-types [data-result="' + mostChosen + '"]',
         );
-        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
+        var resultContent = resultElement
+            ? resultElement.innerHTML
+            : mostChosen;
 
         // Update the result div and make the result visible
         var resultDiv = document.getElementById("result-text");

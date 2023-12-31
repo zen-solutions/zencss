@@ -1,5 +1,5 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * zenCSS v2.0.1-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -120,28 +120,52 @@ $bg-light-colors: (
     @if (str-index($bg-key, "grey") == null) {
         @if map-has-key($bg-dark-colors, $bg-key + "-dark") {
             .bg-#{$bg-key}-dark {
-                background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+                background: map-get(
+                    $bg-dark-colors,
+                    $bg-key + "-dark"
+                ) !important;
                 color: map-get($text-dark-colors, $bg-key + "-dark") !important;
                 a {
-                    color: map-get($text-dark-colors, $bg-key + "-dark") !important;
+                    color: map-get(
+                        $text-dark-colors,
+                        $bg-key + "-dark"
+                    ) !important;
                 }
             }
         }
         @if map-has-key($bg-dark-colors, $bg-key + "-darker") {
             .bg-#{$bg-key}-darker {
-                background: map-get($bg-dark-colors, $bg-key + "-darker") !important;
-                color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+                background: map-get(
+                    $bg-dark-colors,
+                    $bg-key + "-darker"
+                ) !important;
+                color: map-get(
+                    $text-dark-colors,
+                    $bg-key + "-darker"
+                ) !important;
                 a {
-                    color: map-get($text-dark-colors, $bg-key + "-darker") !important;
+                    color: map-get(
+                        $text-dark-colors,
+                        $bg-key + "-darker"
+                    ) !important;
                 }
             }
         }
         @if map-has-key($bg-dark-colors, $bg-key + "-darkest") {
             .bg-#{$bg-key}-darkest {
-                background: map-get($bg-dark-colors, $bg-key + "-darkest") !important;
-                color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+                background: map-get(
+                    $bg-dark-colors,
+                    $bg-key + "-darkest"
+                ) !important;
+                color: map-get(
+                    $text-dark-colors,
+                    $bg-key + "-darkest"
+                ) !important;
                 a {
-                    color: map-get($text-dark-colors, $bg-key + "-darkest") !important;
+                    color: map-get(
+                        $text-dark-colors,
+                        $bg-key + "-darkest"
+                    ) !important;
                 }
             }
         }
@@ -151,29 +175,56 @@ $bg-light-colors: (
     @if (str-index($bg-key, "grey") == null) {
         @if map-has-key($bg-light-colors, $bg-key + "-light") {
             .bg-#{$bg-key}-light {
-                background: map-get($bg-light-colors, $bg-key + "-light") !important;
-                color: map-get($text-light-colors, $bg-key + "-light") !important;
+                background: map-get(
+                    $bg-light-colors,
+                    $bg-key + "-light"
+                ) !important;
+                color: map-get(
+                    $text-light-colors,
+                    $bg-key + "-light"
+                ) !important;
                 a {
-                    color: map-get($text-light-colors, $bg-key + "-light") !important;
+                    color: map-get(
+                        $text-light-colors,
+                        $bg-key + "-light"
+                    ) !important;
                 }
             }
         }
         @if map-has-key($bg-light-colors, $bg-key + "-lighter") {
             .bg-#{$bg-key}-lighter {
-                background: map-get($bg-light-colors, $bg-key + "-lighter") !important;
-                color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+                background: map-get(
+                    $bg-light-colors,
+                    $bg-key + "-lighter"
+                ) !important;
+                color: map-get(
+                    $text-light-colors,
+                    $bg-key + "-lighter"
+                ) !important;
                 a {
-                    color: map-get($text-light-colors, $bg-key + "-lighter") !important;
+                    color: map-get(
+                        $text-light-colors,
+                        $bg-key + "-lighter"
+                    ) !important;
                 }
             }
         }
         @if map-has-key($bg-light-colors, $bg-key + "-lightest") {
             .bg-#{$bg-key}-lightest {
-                background: map-get($bg-light-colors, $bg-key + "-lightest") !important;
-                color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+                background: map-get(
+                    $bg-light-colors,
+                    $bg-key + "-lightest"
+                ) !important;
+                color: map-get(
+                    $text-light-colors,
+                    $bg-key + "-lightest"
+                ) !important;
 
                 a {
-                    color: map-get($text-light-colors, $bg-key + "-lightest") !important;
+                    color: map-get(
+                        $text-light-colors,
+                        $bg-key + "-lightest"
+                    ) !important;
                 }
             }
         }
@@ -183,14 +234,23 @@ $bg-light-colors: (
     @if (str-index($bg-key, "grey") != null) {
         @if map-has-key($bg-dark-colors, $bg-key + "-dark") {
             .bg-#{$bg-key}-dark {
-                background: map-get($bg-dark-colors, $bg-key + "-dark") !important;
+                background: map-get(
+                    $bg-dark-colors,
+                    $bg-key + "-dark"
+                ) !important;
                 color: map-get($text-dark-colors, $bg-key + "-dark") !important;
             }
         }
         @if map-has-key($bg-light-colors, $bg-key + "-light") {
             .bg-#{$bg-key}-light {
-                background: map-get($bg-light-colors, $bg-key + "-light") !important;
-                color: map-get($text-light-colors, $bg-key + "-light") !important;
+                background: map-get(
+                    $bg-light-colors,
+                    $bg-key + "-light"
+                ) !important;
+                color: map-get(
+                    $text-light-colors,
+                    $bg-key + "-light"
+                ) !important;
             }
         }
     }
@@ -294,12 +354,14 @@ $bg-light-colors: (
     width: 9px;
     // filter: invert(85%) sepia(36%) saturate(2389%) hue-rotate(345deg)
     //     brightness(96%) contrast(97%);
-    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg) brightness(105%) contrast(98%);
+    filter: invert(76%) sepia(83%) saturate(556%) hue-rotate(344deg)
+        brightness(105%) contrast(98%);
 }
 
 .icon-silver {
     width: 9px;
-    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg) brightness(103%) contrast(84%);
+    filter: invert(50%) sepia(8%) saturate(15%) hue-rotate(314deg)
+        brightness(103%) contrast(84%);
 }
 
 .bg-angle {
