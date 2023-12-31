@@ -14,20 +14,6 @@
     }
 }
 
-// @mixin default-state {
-//   //background: lighten($bg-ui-hover, 5%);
-//   background: $light-mode-color;
-//   color: $dark-mode-color;
-// }
-
-// @mixin hover-state {
-//   &:hover {
-//     background: $light-ui-hover-color;
-//     //color: $light-mode-color;
-
-//   }
-// }
-
 //hover state for buttons
 @mixin hover-darken($color, $amount: 12%) {
     &:hover {

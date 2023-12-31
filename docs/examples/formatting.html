@@ -1,275 +1,769 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-<main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Formatting</h1>
+                            <p>
+                                Formatting utilities allow for a wide range of styling adjustments
+                                pertaining to dimensions, alignment, and more.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="content">
+                            <!-- Gap Classes -->
+                            <section>
+                                <h3>Gap Classes</h3>
+                                <p>
+                                    These classes are used to set the gap property for an element,
+                                    ranging from <code>.gap-0</code> (no gap) to
+                                    <code>.gap-6</code> (2em gap).
+                                </p>
+                                <table class="responsive-table striped zebra">
+                                    <thead>
+                                        <tr>
+                                            <th>Class Name</th>
+                                            <th>Description</th>
+                                            <th>CSS Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>.gap-0</td>
+                                            <td>No gap</td>
+                                            <td>gap: 0;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-1</td>
+                                            <td>0.25em gap</td>
+                                            <td>gap: 0.25em;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-2</td>
+                                            <td>0.5em gap</td>
+                                            <td>gap: 0.5em;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-3</td>
+                                            <td>0.75em gap</td>
+                                            <td>gap: 0.75em;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-4</td>
+                                            <td>1em gap</td>
+                                            <td>gap: 1em;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-5</td>
+                                            <td>1.5em gap</td>
+                                            <td>gap: 1.5em;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.gap-6</td>
+                                            <td>2em gap</td>
+                                            <td>gap: 2em;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
 
+                            <!-- Width and Height Classes -->
+                            <section>
+                                <h3>Width and Height Classes</h3>
+                                <p>
+                                    These classes define specific width and height for elements,
+                                    ranging from 10px to 300px.
+                                </p>
+                                <table class="responsive-table striped zebra">
+                                    <thead>
+                                        <tr>
+                                            <th>Class Name</th>
+                                            <th>Description</th>
+                                            <th>CSS Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>.w-sm</td>
+                                            <td>Quarter width</td>
+                                            <td>width: 25%;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-md</td>
+                                            <td>Half width</td>
+                                            <td>width: 50%;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-lg</td>
+                                            <td>Three-Quarters width</td>
+                                            <td>width: 75%;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-full</td>
+                                            <td>Full width</td>
+                                            <td>width: 100%;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-full</td>
+                                            <td>Full height</td>
+                                            <td>height: 100%;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-10</td>
+                                            <td>Width: 10px</td>
+                                            <td>width: 10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-20</td>
+                                            <td>Width: 20px</td>
+                                            <td>width: 20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-25</td>
+                                            <td>Width: 25px</td>
+                                            <td>width: 25px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-30</td>
+                                            <td>Width: 30px</td>
+                                            <td>width: 30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-40</td>
+                                            <td>Width: 40px</td>
+                                            <td>width: 40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-50</td>
+                                            <td>Width: 50px</td>
+                                            <td>width: 50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-75</td>
+                                            <td>Width: 75px</td>
+                                            <td>width: 75px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-100</td>
+                                            <td>Width: 100px</td>
+                                            <td>width: 100px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-125</td>
+                                            <td>Width: 125px</td>
+                                            <td>width: 125px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-150</td>
+                                            <td>Width: 150px</td>
+                                            <td>width: 150px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-175</td>
+                                            <td>Width: 175px</td>
+                                            <td>width: 175px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-200</td>
+                                            <td>Width: 200px</td>
+                                            <td>width: 200px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-225</td>
+                                            <td>Width: 225px</td>
+                                            <td>width: 225px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-250</td>
+                                            <td>Width: 250px</td>
+                                            <td>width: 250px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-275</td>
+                                            <td>Width: 275px</td>
+                                            <td>width: 275px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.w-300</td>
+                                            <td>Width: 300px</td>
+                                            <td>width: 300px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-10</td>
+                                            <td>Height: 10px</td>
+                                            <td>height: 10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-20</td>
+                                            <td>Height: 20px</td>
+                                            <td>height: 20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-25</td>
+                                            <td>Height: 25px</td>
+                                            <td>height: 25px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-30</td>
+                                            <td>Height: 30px</td>
+                                            <td>height: 30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-40</td>
+                                            <td>Height: 40px</td>
+                                            <td>height: 40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-50</td>
+                                            <td>Height: 50px</td>
+                                            <td>height: 50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-75</td>
+                                            <td>Height: 75px</td>
+                                            <td>height: 75px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-100</td>
+                                            <td>Height: 100px</td>
+                                            <td>height: 100px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-125</td>
+                                            <td>Height: 125px</td>
+                                            <td>height: 125px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-150</td>
+                                            <td>Height: 150px</td>
+                                            <td>height: 150px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-175</td>
+                                            <td>Height: 175px</td>
+                                            <td>height: 175px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-200</td>
+                                            <td>Height: 200px</td>
+                                            <td>height: 200px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-225</td>
+                                            <td>Height: 225px</td>
+                                            <td>height: 225px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-250</td>
+                                            <td>Height: 250px</td>
+                                            <td>height: 250px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-275</td>
+                                            <td>Height: 275px</td>
+                                            <td>height: 275px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.h-300</td>
+                                            <td>Height: 300px</td>
+                                            <td>height: 300px;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Formatting</h1>
-                    <p>  Formatting utilities allow for a wide range of styling adjustments pertaining to dimensions, alignment, and more.</p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            <!-- Directional Modifiers -->
+                            <section>
+                                <h3>Directional Modifiers</h3>
+                                <p>
+                                    These classes adjust the position of an element in specific
+                                    directions.
+                                </p>
+                                <table class="responsive-table striped zebra">
+                                    <thead>
+                                        <tr>
+                                            <th>Class Name</th>
+                                            <th>Description</th>
+                                            <th>CSS Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Directional Modifiers 1-10 -->
+                                        <tr>
+                                            <td>.up-1</td>
+                                            <td>Move up 1px</td>
+                                            <td>top: -1px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-1</td>
+                                            <td>Move down 1px</td>
+                                            <td>top: 1px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-1</td>
+                                            <td>Move left 1px</td>
+                                            <td>left: -1px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-1</td>
+                                            <td>Move right 1px</td>
+                                            <td>right: -1px;</td>
+                                        </tr>
+                                        <!-- Directional Modifiers 2-9 -->
+                                        <tr>
+                                            <td>.up-2</td>
+                                            <td>Move up 2px</td>
+                                            <td>top: -2px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-2</td>
+                                            <td>Move down 2px</td>
+                                            <td>top: 2px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-2</td>
+                                            <td>Move left 2px</td>
+                                            <td>left: -2px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-2</td>
+                                            <td>Move right 2px</td>
+                                            <td>right: -2px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-3</td>
+                                            <td>Move up 3px</td>
+                                            <td>top: -3px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-3</td>
+                                            <td>Move down 3px</td>
+                                            <td>top: 3px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-3</td>
+                                            <td>Move left 3px</td>
+                                            <td>left: -3px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-3</td>
+                                            <td>Move right 3px</td>
+                                            <td>right: -3px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-4</td>
+                                            <td>Move up 4px</td>
+                                            <td>top: -4px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-4</td>
+                                            <td>Move down 4px</td>
+                                            <td>top: 4px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-4</td>
+                                            <td>Move left 4px</td>
+                                            <td>left: -4px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-4</td>
+                                            <td>Move right 4px</td>
+                                            <td>right: -4px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-5</td>
+                                            <td>Move up 5px</td>
+                                            <td>top: -5px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-5</td>
+                                            <td>Move down 5px</td>
+                                            <td>top: 5px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-5</td>
+                                            <td>Move left 5px</td>
+                                            <td>left: -5px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-5</td>
+                                            <td>Move right 5px</td>
+                                            <td>right: -5px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-6</td>
+                                            <td>Move up 6px</td>
+                                            <td>top: -6px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-6</td>
+                                            <td>Move down 6px</td>
+                                            <td>top: 6px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-6</td>
+                                            <td>Move left 6px</td>
+                                            <td>left: -6px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-6</td>
+                                            <td>Move right 6px</td>
+                                            <td>right: -6px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-7</td>
+                                            <td>Move up 7px</td>
+                                            <td>top: -7px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-7</td>
+                                            <td>Move down 7px</td>
+                                            <td>top: 7px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-7</td>
+                                            <td>Move left 7px</td>
+                                            <td>left: -7px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-7</td>
+                                            <td>Move right 7px</td>
+                                            <td>right: -7px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-8</td>
+                                            <td>Move up 8px</td>
+                                            <td>top: -8px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-8</td>
+                                            <td>Move down 8px</td>
+                                            <td>top: 8px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-8</td>
+                                            <td>Move left 8px</td>
+                                            <td>left: -8px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-8</td>
+                                            <td>Move right 8px</td>
+                                            <td>right: -8px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-9</td>
+                                            <td>Move up 9px</td>
+                                            <td>top: -9px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-9</td>
+                                            <td>Move down 9px</td>
+                                            <td>top: 9px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-9</td>
+                                            <td>Move left 9px</td>
+                                            <td>left: -9px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-9</td>
+                                            <td>Move right 9px</td>
+                                            <td>right: -9px;</td>
+                                        </tr>
+                                        <!-- Directional Modifiers 10-100 -->
+                                        <tr>
+                                            <td>.up-10</td>
+                                            <td>Move up 10px</td>
+                                            <td>top: -10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-10</td>
+                                            <td>Move down 10px</td>
+                                            <td>top: 10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-10</td>
+                                            <td>Move left 10px</td>
+                                            <td>left: -10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-10</td>
+                                            <td>Move right 10px</td>
+                                            <td>right: -10px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-20</td>
+                                            <td>Move up 20px</td>
+                                            <td>top: -20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-20</td>
+                                            <td>Move down 20px</td>
+                                            <td>top: 20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-20</td>
+                                            <td>Move left 20px</td>
+                                            <td>left: -20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-20</td>
+                                            <td>Move right 20px</td>
+                                            <td>right: -20px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-30</td>
+                                            <td>Move up 30px</td>
+                                            <td>top: -30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-30</td>
+                                            <td>Move down 30px</td>
+                                            <td>top: 30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-30</td>
+                                            <td>Move left 30px</td>
+                                            <td>left: -30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-30</td>
+                                            <td>Move right 30px</td>
+                                            <td>right: -30px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-40</td>
+                                            <td>Move up 40px</td>
+                                            <td>top: -40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-40</td>
+                                            <td>Move down 40px</td>
+                                            <td>top: 40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-40</td>
+                                            <td>Move left 40px</td>
+                                            <td>left: -40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-40</td>
+                                            <td>Move right 40px</td>
+                                            <td>right: -40px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-50</td>
+                                            <td>Move up 50px</td>
+                                            <td>top: -50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-50</td>
+                                            <td>Move down 50px</td>
+                                            <td>top: 50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-50</td>
+                                            <td>Move left 50px</td>
+                                            <td>left: -50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-50</td>
+                                            <td>Move right 50px</td>
+                                            <td>right: -50px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-60</td>
+                                            <td>Move up 60px</td>
+                                            <td>top: -60px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-60</td>
+                                            <td>Move down 60px</td>
+                                            <td>top: 60px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-60</td>
+                                            <td>Move left 60px</td>
+                                            <td>left: -60px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-60</td>
+                                            <td>Move right 60px</td>
+                                            <td>right: -60px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-70</td>
+                                            <td>Move up 70px</td>
+                                            <td>top: -70px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-70</td>
+                                            <td>Move down 70px</td>
+                                            <td>top: 70px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-70</td>
+                                            <td>Move left 70px</td>
+                                            <td>left: -70px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-70</td>
+                                            <td>Move right 70px</td>
+                                            <td>right: -70px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-80</td>
+                                            <td>Move up 80px</td>
+                                            <td>top: -80px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-80</td>
+                                            <td>Move down 80px</td>
+                                            <td>top: 80px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-80</td>
+                                            <td>Move left 80px</td>
+                                            <td>left: -80px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-80</td>
+                                            <td>Move right 80px</td>
+                                            <td>right: -80px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-90</td>
+                                            <td>Move up 90px</td>
+                                            <td>top: -90px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-90</td>
+                                            <td>Move down 90px</td>
+                                            <td>top: 90px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-90</td>
+                                            <td>Move left 90px</td>
+                                            <td>left: -90px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-90</td>
+                                            <td>Move right 90px</td>
+                                            <td>right: -90px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.up-100</td>
+                                            <td>Move up 100px</td>
+                                            <td>top: -100px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.down-100</td>
+                                            <td>Move down 100px</td>
+                                            <td>top: 100px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.left-100</td>
+                                            <td>Move left 100px</td>
+                                            <td>left: -100px;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.right-100</td>
+                                            <td>Move right 100px</td>
+                                            <td>right: -100px;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col class="m-0 p-0">
-                <div class="content">
-    
-                    <!-- Gap Classes -->
-                    <section>
-                        <h3>Gap Classes</h3>
-                        <p>These classes are used to set the gap property for an element, ranging from <code>.gap-0</code> (no gap) to <code>.gap-6</code> (2em gap).</p>
-                        <table class="responsive-table striped">
-                            <thead>
-                                <tr>
-                                    <th>Class Name</th>
-                                    <th>Description</th>
-                                    <th>CSS Code</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>.gap-0</td><td>No gap</td><td>gap: 0;</td></tr>
-                                <tr><td>.gap-1</td><td>0.25em gap</td><td>gap: 0.25em;</td></tr>
-                                <tr><td>.gap-2</td><td>0.5em gap</td><td>gap: 0.5em;</td></tr>
-                                <tr><td>.gap-3</td><td>0.75em gap</td><td>gap: 0.75em;</td></tr>
-                                <tr><td>.gap-4</td><td>1em gap</td><td>gap: 1em;</td></tr>
-                                <tr><td>.gap-5</td><td>1.5em gap</td><td>gap: 1.5em;</td></tr>
-                                <tr><td>.gap-6</td><td>2em gap</td><td>gap: 2em;</td></tr>
-                            </tbody>
-                        </table>
-                    </section>
-    
-                    <!-- Width and Height Classes -->
-                    <section>
-                        <h3>Width and Height Classes</h3>
-                        <p>These classes define specific width and height for elements, ranging from 10px to 300px.</p>
-                        <table class="responsive-table striped">
-                            <thead>
-                                <tr>
-                                    <th>Class Name</th>
-                                    <th>Description</th>
-                                    <th>CSS Code</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>.w-sm</td><td>Quarter width</td><td>width: 25%;</td></tr>
-                                <tr><td>.w-md</td><td>Half width</td><td>width: 50%;</td></tr>
-                                <tr><td>.w-lg</td><td>Three-Quarters width</td><td>width: 75%;</td></tr>
-                                <tr><td>.w-full</td><td>Full width</td><td>width: 100%;</td></tr>
-                                <tr><td>.h-full</td><td>Full height</td><td>height: 100%;</td></tr>
-                                <tr><td>.w-10</td><td>Width: 10px</td><td>width: 10px;</td></tr>
-                                <tr><td>.w-20</td><td>Width: 20px</td><td>width: 20px;</td></tr>
-                                <tr><td>.w-25</td><td>Width: 25px</td><td>width: 25px;</td></tr>
-                                <tr><td>.w-30</td><td>Width: 30px</td><td>width: 30px;</td></tr>
-                                <tr><td>.w-40</td><td>Width: 40px</td><td>width: 40px;</td></tr>
-                                <tr><td>.w-50</td><td>Width: 50px</td><td>width: 50px;</td></tr>
-                                <tr><td>.w-75</td><td>Width: 75px</td><td>width: 75px;</td></tr>
-                                <tr><td>.w-100</td><td>Width: 100px</td><td>width: 100px;</td></tr>
-                                <tr><td>.w-125</td><td>Width: 125px</td><td>width: 125px;</td></tr>
-                                <tr><td>.w-150</td><td>Width: 150px</td><td>width: 150px;</td></tr>
-                                <tr><td>.w-175</td><td>Width: 175px</td><td>width: 175px;</td></tr>
-                                <tr><td>.w-200</td><td>Width: 200px</td><td>width: 200px;</td></tr>
-                                <tr><td>.w-225</td><td>Width: 225px</td><td>width: 225px;</td></tr>
-                                <tr><td>.w-250</td><td>Width: 250px</td><td>width: 250px;</td></tr>
-                                <tr><td>.w-275</td><td>Width: 275px</td><td>width: 275px;</td></tr>
-                                <tr><td>.w-300</td><td>Width: 300px</td><td>width: 300px;</td></tr>
-                                <tr><td>.h-10</td><td>Height: 10px</td><td>height: 10px;</td></tr>
-                                <tr><td>.h-20</td><td>Height: 20px</td><td>height: 20px;</td></tr>
-                                <tr><td>.h-25</td><td>Height: 25px</td><td>height: 25px;</td></tr>
-                                <tr><td>.h-30</td><td>Height: 30px</td><td>height: 30px;</td></tr>
-                                <tr><td>.h-40</td><td>Height: 40px</td><td>height: 40px;</td></tr>
-                                <tr><td>.h-50</td><td>Height: 50px</td><td>height: 50px;</td></tr>
-                                <tr><td>.h-75</td><td>Height: 75px</td><td>height: 75px;</td></tr>
-                                <tr><td>.h-100</td><td>Height: 100px</td><td>height: 100px;</td></tr>
-                                <tr><td>.h-125</td><td>Height: 125px</td><td>height: 125px;</td></tr>
-                                <tr><td>.h-150</td><td>Height: 150px</td><td>height: 150px;</td></tr>
-                                <tr><td>.h-175</td><td>Height: 175px</td><td>height: 175px;</td></tr>
-                                <tr><td>.h-200</td><td>Height: 200px</td><td>height: 200px;</td></tr>
-                                <tr><td>.h-225</td><td>Height: 225px</td><td>height: 225px;</td></tr>
-                                <tr><td>.h-250</td><td>Height: 250px</td><td>height: 250px;</td></tr>
-                                <tr><td>.h-275</td><td>Height: 275px</td><td>height: 275px;</td></tr>
-                                <tr><td>.h-300</td><td>Height: 300px</td><td>height: 300px;</td></tr>
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-                            </tbody>
-                        </table>
-                    </section>
-    
-                    <!-- Directional Modifiers -->
-                    <section>
-                        <h3>Directional Modifiers</h3>
-                        <p>These classes adjust the position of an element in specific directions.</p>
-                        <table class="responsive-table striped">
-                            <thead>
-                                <tr>
-                                    <th>Class Name</th>
-                                    <th>Description</th>
-                                    <th>CSS Code</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Directional Modifiers 1-10 -->
-                                <tr><td>.up-1</td><td>Move up 1px</td><td>top: -1px;</td></tr>
-                                <tr><td>.down-1</td><td>Move down 1px</td><td>top: 1px;</td></tr>
-                                <tr><td>.left-1</td><td>Move left 1px</td><td>left: -1px;</td></tr>
-                                <tr><td>.right-1</td><td>Move right 1px</td><td>right: -1px;</td></tr>
-                              <!-- Directional Modifiers 2-9 -->
-                              <tr><td>.up-2</td><td>Move up 2px</td><td>top: -2px;</td></tr>
-                              <tr><td>.down-2</td><td>Move down 2px</td><td>top: 2px;</td></tr>
-                              <tr><td>.left-2</td><td>Move left 2px</td><td>left: -2px;</td></tr>
-                              <tr><td>.right-2</td><td>Move right 2px</td><td>right: -2px;</td></tr>
-                              <tr><td>.up-3</td><td>Move up 3px</td><td>top: -3px;</td></tr>
-                              <tr><td>.down-3</td><td>Move down 3px</td><td>top: 3px;</td></tr>
-                              <tr><td>.left-3</td><td>Move left 3px</td><td>left: -3px;</td></tr>
-                              <tr><td>.right-3</td><td>Move right 3px</td><td>right: -3px;</td></tr>
-                              <tr><td>.up-4</td><td>Move up 4px</td><td>top: -4px;</td></tr>
-                              <tr><td>.down-4</td><td>Move down 4px</td><td>top: 4px;</td></tr>
-                              <tr><td>.left-4</td><td>Move left 4px</td><td>left: -4px;</td></tr>
-                              <tr><td>.right-4</td><td>Move right 4px</td><td>right: -4px;</td></tr>
-                              <tr><td>.up-5</td><td>Move up 5px</td><td>top: -5px;</td></tr>
-                              <tr><td>.down-5</td><td>Move down 5px</td><td>top: 5px;</td></tr>
-                              <tr><td>.left-5</td><td>Move left 5px</td><td>left: -5px;</td></tr>
-                              <tr><td>.right-5</td><td>Move right 5px</td><td>right: -5px;</td></tr>
-                              <tr><td>.up-6</td><td>Move up 6px</td><td>top: -6px;</td></tr>
-                              <tr><td>.down-6</td><td>Move down 6px</td><td>top: 6px;</td></tr>
-                              <tr><td>.left-6</td><td>Move left 6px</td><td>left: -6px;</td></tr>
-                              <tr><td>.right-6</td><td>Move right 6px</td><td>right: -6px;</td></tr>
-                              <tr><td>.up-7</td><td>Move up 7px</td><td>top: -7px;</td></tr>
-                              <tr><td>.down-7</td><td>Move down 7px</td><td>top: 7px;</td></tr>
-                              <tr><td>.left-7</td><td>Move left 7px</td><td>left: -7px;</td></tr>
-                              <tr><td>.right-7</td><td>Move right 7px</td><td>right: -7px;</td></tr>
-                              <tr><td>.up-8</td><td>Move up 8px</td><td>top: -8px;</td></tr>
-                              <tr><td>.down-8</td><td>Move down 8px</td><td>top: 8px;</td></tr>
-                              <tr><td>.left-8</td><td>Move left 8px</td><td>left: -8px;</td></tr>
-                              <tr><td>.right-8</td><td>Move right 8px</td><td>right: -8px;</td></tr>
-                              <tr><td>.up-9</td><td>Move up 9px</td><td>top: -9px;</td></tr>
-                              <tr><td>.down-9</td><td>Move down 9px</td><td>top: 9px;</td></tr>
-                              <tr><td>.left-9</td><td>Move left 9px</td><td>left: -9px;</td></tr>
-                              <tr><td>.right-9</td><td>Move right 9px</td><td>right: -9px;</td></tr>
-                              <!-- Directional Modifiers 10-100 -->
-                              <tr><td>.up-10</td><td>Move up 10px</td><td>top: -10px;</td></tr>
-                              <tr><td>.down-10</td><td>Move down 10px</td><td>top: 10px;</td></tr>
-                              <tr><td>.left-10</td><td>Move left 10px</td><td>left: -10px;</td></tr>
-                              <tr><td>.right-10</td><td>Move right 10px</td><td>right: -10px;</td></tr>
-                              <tr><td>.up-20</td><td>Move up 20px</td><td>top: -20px;</td></tr>
-                              <tr><td>.down-20</td><td>Move down 20px</td><td>top: 20px;</td></tr>
-                              <tr><td>.left-20</td><td>Move left 20px</td><td>left: -20px;</td></tr>
-                              <tr><td>.right-20</td><td>Move right 20px</td><td>right: -20px;</td></tr>
-                              <tr><td>.up-30</td><td>Move up 30px</td><td>top: -30px;</td></tr>
-                              <tr><td>.down-30</td><td>Move down 30px</td><td>top: 30px;</td></tr>
-                              <tr><td>.left-30</td><td>Move left 30px</td><td>left: -30px;</td></tr>
-                              <tr><td>.right-30</td><td>Move right 30px</td><td>right: -30px;</td></tr>
-                              <tr><td>.up-40</td><td>Move up 40px</td><td>top: -40px;</td></tr>
-                              <tr><td>.down-40</td><td>Move down 40px</td><td>top: 40px;</td></tr>
-                              <tr><td>.left-40</td><td>Move left 40px</td><td>left: -40px;</td></tr>
-                              <tr><td>.right-40</td><td>Move right 40px</td><td>right: -40px;</td></tr>
-                              <tr><td>.up-50</td><td>Move up 50px</td><td>top: -50px;</td></tr>
-                              <tr><td>.down-50</td><td>Move down 50px</td><td>top: 50px;</td></tr>
-                              <tr><td>.left-50</td><td>Move left 50px</td><td>left: -50px;</td></tr>
-                              <tr><td>.right-50</td><td>Move right 50px</td><td>right: -50px;</td></tr>
-                              <tr><td>.up-60</td><td>Move up 60px</td><td>top: -60px;</td></tr>
-                              <tr><td>.down-60</td><td>Move down 60px</td><td>top: 60px;</td></tr>
-                              <tr><td>.left-60</td><td>Move left 60px</td><td>left: -60px;</td></tr>
-                              <tr><td>.right-60</td><td>Move right 60px</td><td>right: -60px;</td></tr>
-                              <tr><td>.up-70</td><td>Move up 70px</td><td>top: -70px;</td></tr>
-                              <tr><td>.down-70</td><td>Move down 70px</td><td>top: 70px;</td></tr>
-                              <tr><td>.left-70</td><td>Move left 70px</td><td>left: -70px;</td></tr>
-                              <tr><td>.right-70</td><td>Move right 70px</td><td>right: -70px;</td></tr>
-                              <tr><td>.up-80</td><td>Move up 80px</td><td>top: -80px;</td></tr>
-                              <tr><td>.down-80</td><td>Move down 80px</td><td>top: 80px;</td></tr>
-                              <tr><td>.left-80</td><td>Move left 80px</td><td>left: -80px;</td></tr>
-                              <tr><td>.right-80</td><td>Move right 80px</td><td>right: -80px;</td></tr>
-                              <tr><td>.up-90</td><td>Move up 90px</td><td>top: -90px;</td></tr>
-                              <tr><td>.down-90</td><td>Move down 90px</td><td>top: 90px;</td></tr>
-                              <tr><td>.left-90</td><td>Move left 90px</td><td>left: -90px;</td></tr>
-                              <tr><td>.right-90</td><td>Move right 90px</td><td>right: -90px;</td></tr>
-                              <tr><td>.up-100</td><td>Move up 100px</td><td>top: -100px;</td></tr>
-                              <tr><td>.down-100</td><td>Move down 100px</td><td>top: 100px;</td></tr>
-                              <tr><td>.left-100</td><td>Move left 100px</td><td>left: -100px;</td></tr>
-                              <tr><td>.right-100</td><td>Move right 100px</td><td>right: -100px;</td></tr>
-                                                  </tbody>
-                      </table>
-                  </section>
-              </div>
-          </z-col>
-      </z-row>
-    </z-container>
-    
-    
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-                <div class="center">
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

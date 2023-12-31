@@ -34,7 +34,6 @@
 .z-container-outline-on {
     outline: 2px dashed $blue;
     border-radius: 0;
-    //outline-offset: 2px;
 }
 
 .z-container-fluid-outline-on {
@@ -45,13 +44,13 @@
 .z-row-outline-on {
     // outline: 3px solid $green;
     border-radius: 0;
-    box-shadow: inset 0 0 0 1px green; /* Creates a 1px inset 'outline' */
+    box-shadow: inset 0 0 0 1px green;
 }
 
 .z-col-outline-on {
     //outline: 2px solid $red;
     border-radius: 0;
-    box-shadow: inset 0 0 0 1px red; /* Creates a 1px inset 'outline' */
+    box-shadow: inset 0 0 0 1px red;
 }
 
 .p-outline-on {
@@ -68,20 +67,4 @@
 
 .center-line {
     display: none;
-}
-
-//---------------------------------------------------------
-//  Experimental
-//---------------------------------------------------------
-
-/*  test in docs to see if its good. need to integrate into testing vs being a div */
-.center-line-outline-on {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-    height: 130%;
-    z-index: 10000;
-    background-color: rgb(191, 191, 191);
 }

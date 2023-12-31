@@ -5,7 +5,7 @@
  */
 
 //-------------------------------------
-// Dropdown 
+// Dropdown
 //-------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     var dropdownLinks = document.querySelectorAll(".dropdown .dropdown-link");

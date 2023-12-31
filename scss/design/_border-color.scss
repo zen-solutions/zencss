@@ -51,20 +51,20 @@ $colors: (
 
 //line to left of content
 .left-line {
-    display: inline-block; /* Wrap content width */
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
-    padding-left: 10px; /* Space for the line and some padding */
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
 }
 
 .left-line::before {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0; /* Line at the very left of the padding area */
-    transform: translateX(-100%); /* Move the line to the left of the content */
-    margin-left: -5px; /* Additional 5px space from the content */
-    top:20%;
+    left: 0;
+    transform: translateX(-100%);
+    margin-left: -5px;
+    top: 20%;
     bottom: 0;
-    width: 5px; /* Width of the line */
-    background-color: $cta-color; /* Color of the line */
-    height: 60%; /* Adjust if needed */
+    width: 5px;
+    background-color: $cta-color;
+    height: 60%;
 }

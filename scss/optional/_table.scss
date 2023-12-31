@@ -25,12 +25,10 @@ td {
         background: darken($dual-mode-bg-color, 100%);
     }
     tr:nth-child(odd) td {
-                background: lighten($dual-mode-bg-color, 84%);
-
+        background: lighten($dual-mode-bg-color, 84%);
     }
     tr:nth-child(even) td {
         background: lighten($dual-mode-bg-color, 42%);
-
     }
 }
 
@@ -63,6 +61,10 @@ th {
 }
 
 @media (max-width: $responsive-breakpoint) {
+    .responsive-table tr td:last-child {
+        margin-bottom: 20px;
+    }
+
     .responsive-table tbody {
         .responsive-table tr {
             @include default-state;
@@ -71,7 +73,6 @@ th {
             background-color: rgba(111, 111, 111, 0.1);
 
             display: block;
-            margin-bottom: 20px;
         }
 
         td {

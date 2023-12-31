@@ -1,146 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Image Gallery with Pagination</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Gallery with Pagination</title>
-
-
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
 
         <script src="../../docs/js/updateseo.js"></script>
-</head>
+    </head>
 
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
+            <div id="nav-placeholder"></div>
+        </header>
 
-    <main id="main-content">
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Image Gallery</h1>
+                            <p>
+                                A component for displaying a collection of images in an organized
+                                layout.
+                            </p>
 
-        <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Image Gallery</h1>
-                    <p> A component for displaying a collection of images in an organized layout.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                    <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <!----------------------------------------------------------------------->
+            <!--- Content  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <!-- Image Gallery -->
+                        <div class="image-gallery">
+                            <!-- page 1 -->
+                            <img
+                                src="../../img/placeholder/SimonBerger.png"
+                                alt="Photo: Simon Berger"
+                                data-text="Photo: Simon Berger"
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/AliKazal.jpg"
+                                data-text="Photo: Ali Kazal"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/MaevaVigier.jpg"
+                                data-text="Photo: Maeva Viegier"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom.jpg"
+                                data-text="Photo: Neom"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/tonyhughes.jpg"
+                                data-text="Photo: Tony Hughes"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom2.jpg"
+                                data-text="Photo: Neom"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/haotain-zheng.jpg"
+                                alt="Photo: Haotain-Zheng"
+                                data-text="PhotoHaotain-Zheng"
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/douglas-bagg.jpg"
+                                data-text="Photo: Doublas Bagg"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/daniel-schwartz.jpg"
+                                data-text="Photo: Daniel Schwartz"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/lerone-pieters.jpg"
+                                data-text="Photo: Lerone Pieters"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/adrian-korte.jpg"
+                                data-text="Photo: Adrian Korte"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/KamilWroblewski.jpg"
+                                data-text="Photo: Kamil Wroblewski"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/nathan-cima.jpg"
+                                data-text="Photo: Nathan Cima"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/bailey-burton.jpg"
+                                data-text="Photo: Bailey Burton"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/masahiro-miyagi.jpg"
+                                data-text="Photo: Masahiro Miyagi"
+                                alt=""
+                            />
 
+                            <!-- page 2 -->
+                            <img
+                                src="../../img/placeholder/16x9/douglas-bagg.jpg"
+                                data-text="Photo: Doublas Bagg"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/daniel-schwartz.jpg"
+                                data-text="Photo: Daniel Schwartz"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/lerone-pieters.jpg"
+                                data-text="Photo: Lerone Pieters"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/adrian-korte.jpg"
+                                data-text="Photo: Adrian Korte"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/KamilWroblewski.jpg"
+                                data-text="Photo: Kamil Wroblewski"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/nathan-cima.jpg"
+                                data-text="Photo: Nathan Cima"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/bailey-burton.jpg"
+                                data-text="Photo: Bailey Burton"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/masahiro-miyagi.jpg"
+                                data-text="Photo: Masahiro Miyagi"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/SimonBerger.png"
+                                alt="Photo: Simon Berger"
+                                data-text="Photo: Simon Berger"
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/AliKazal.jpg"
+                                data-text="Photo: Ali Kazal"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/MaevaVigier.jpg"
+                                data-text="Photo: Maeva Viegier"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom.jpg"
+                                data-text="Photo: Neom"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/tonyhughes.jpg"
+                                data-text="Photo: Tony Hughes"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom2.jpg"
+                                data-text="Photo: Neom"
+                                alt="last2"
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/haotain-zheng.jpg"
+                                alt="Photo: Haotain-Zheng"
+                                data-text="PhotoHaotain-Zheng"
+                            />
+                            <!-- page 3 -->
+                            <img
+                                src="../../img/placeholder/SimonBerger.png"
+                                alt="Photo: Simon Berger"
+                                data-text="Photo: Simon Berger"
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/AliKazal.jpg"
+                                data-text="Photo: Ali Kazal"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/MaevaVigier.jpg"
+                                data-text="Photo: Maeva Viegier"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom.jpg"
+                                data-text="Photo: Neom"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/tonyhughes.jpg"
+                                data-text="Photo: Tony Hughes"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/neom2.jpg"
+                                data-text="Photo: Neom"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/douglas-bagg.jpg"
+                                data-text="Photo: Doublas Bagg"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/daniel-schwartz.jpg"
+                                data-text="Photo: Daniel Schwartz"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/lerone-pieters.jpg"
+                                data-text="Photo: Lerone Pieters"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/adrian-korte.jpg"
+                                data-text="Photo: Adrian Korte"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/KamilWroblewski.jpg"
+                                data-text="Photo: Kamil Wroblewski"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/nathan-cima.jpg"
+                                data-text="Photo: Nathan Cima"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/bailey-burton.jpg"
+                                data-text="Photo: Bailey Burton"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/masahiro-miyagi.jpg"
+                                data-text="Photo: Masahiro Miyagi"
+                                alt=""
+                            />
+                            <img
+                                src="../../img/placeholder/16x9/haotain-zheng.jpg"
+                                alt="Photo: Haotain-Zheng"
+                                data-text="PhotoHaotain-Zheng"
+                            />
+                        </div>
 
-  <!----------------------------------------------------------------------->
-    <!--- Content  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-<!-- Image Gallery -->
-<div class="image-gallery">
-    <!-- page 1 -->
-    <img src="../../img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
-    <img src="../../img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
-    <img src="../../img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
-    <img src="../../img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
-    <img src="../../img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
-    <img src="../../img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
-    <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
-    <img src="../../img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
-    <img src="../../img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
-    <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
-    <img src="../../img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
-    <img src="../../img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
-    <img src="../../img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
+                        <!-- Pagination -->
+                        <div class="pagination-nav">
+                            <!--  will be generated by JavaScript -->
+                        </div>
 
-        <!-- page 2 -->
-        <img src="../../img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
-        <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
-        <img src="../../img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
-        <img src="../../img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
-        <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
-        <img src="../../img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
-        <img src="../../img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
-        <img src="../../img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
-         <img src="../../img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
-        <img src="../../img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
-        <img src="../../img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
-        <img src="../../img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
-        <img src="../../img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
-        <img src="../../img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="last2">
-        <img src="../../img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
-    <!-- page 3 -->
-    <img src="../../img/placeholder/SimonBerger.png" alt="Photo: Simon Berger" data-text="Photo: Simon Berger">
-    <img src="../../img/placeholder/16x9/AliKazal.jpg" data-text="Photo: Ali Kazal" alt="">
-    <img src="../../img/placeholder/16x9/MaevaVigier.jpg" data-text="Photo: Maeva Viegier" alt="">
-    <img src="../../img/placeholder/16x9/neom.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/tonyhughes.jpg" data-text="Photo: Tony Hughes" alt="">
-    <img src="../../img/placeholder/16x9/neom2.jpg" data-text="Photo: Neom" alt="">
-    <img src="../../img/placeholder/16x9/douglas-bagg.jpg" data-text="Photo: Doublas Bagg" alt="">
-    <img src="../../img/placeholder/16x9/daniel-schwartz.jpg" data-text="Photo: Daniel Schwartz" alt="">
-    <img src="../../img/placeholder/16x9/lerone-pieters.jpg" data-text="Photo: Lerone Pieters" alt="">
-    <img src="../../img/placeholder/16x9/adrian-korte.jpg" data-text="Photo: Adrian Korte" alt="">
-    <img src="../../img/placeholder/16x9/KamilWroblewski.jpg" data-text="Photo: Kamil Wroblewski" alt="">
-    <img src="../../img/placeholder/16x9/nathan-cima.jpg" data-text="Photo: Nathan Cima" alt="">
-    <img src="../../img/placeholder/16x9/bailey-burton.jpg" data-text="Photo: Bailey Burton" alt="">
-    <img src="../../img/placeholder/16x9/masahiro-miyagi.jpg" data-text="Photo: Masahiro Miyagi" alt="">
-    <img src="../../img/placeholder/16x9/haotain-zheng.jpg" alt="Photo: Haotain-Zheng" data-text="PhotoHaotain-Zheng">
+                        <!-- Modal -->
+                        <z-modal>
+                            <div class="modal-body">
+                                <img src="" id="modal-image" />
+                                <p id="modal-description"></p>
+                            </div>
+                            <button slot="footer" class="modal-close">Close</button>
+                        </z-modal>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Code Block  --->
+            <!----------------------------------------------------------------------->
 
-
-</div>
-
-<!-- Pagination -->
-<div class="pagination-nav">
-    <!--  will be generated by JavaScript -->
-</div>
-
-<!-- Modal -->
-<z-modal>
-    <div class="modal-body">
-        <img src="" id="modal-image">
-        <p id="modal-description"></p>
-    </div>
-    <button slot="footer" class="modal-close">Close</button>
-</z-modal>
-
-            </z-col>
-        </z-row>
-    </z-container>
-
-
-        <!----------------------------------------------------------------------->
-        <!--- Code Block  --->
-        <!----------------------------------------------------------------------->
-
-
-        <z-container>
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;!-- Image Gallery --&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;!-- Image Gallery --&gt;
 &lt;div class="image-gallery"&gt;
     &lt;!-- page 1 --&gt;
     &lt;img src="your-img.jpg" alt="" data-text="photo description here"&gt;
@@ -166,22 +349,22 @@
     &lt;/div&gt;
     &lt;button slot="footer" class="modal-close"&gt;Close&lt;/button&gt;
 &lt;/z-modal&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-        
-        
-
-    </main> 
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-</body>
-
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+    </body>
 </html>

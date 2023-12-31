@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -43,7 +42,7 @@ header {
 }
 
 .top-nav :link {
-   // color: $zen-dark-text-color;
+    // color: $zen-dark-text-color;
     text-decoration: none;
 }
 
@@ -125,7 +124,6 @@ header {
     #hamburger-button {
         display: none;
     }
-
 }
 
 /* Mobile & Tablet Styles */
@@ -134,7 +132,7 @@ header {
         display: block;
     }
 
-    .nav-link{
+    .nav-link {
         width: 90%;
     }
 
@@ -147,13 +145,12 @@ header {
         transition: left 0.3s;
         display: block;
         overflow: auto;
-        overflow-x:hidden;
+        overflow-x: hidden;
         background: $nav-color;
     }
 
-
     #nav-placeholder .sticky-nav {
-        top: 50px; 
+        top: 50px;
     }
 
     .top-nav ul {
@@ -179,7 +176,8 @@ header {
     }
 }
 
-.icon-header{
+.icon-header {
+    height: 20px;
     filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
     margin-right: 5px;
 }

@@ -1,250 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-<main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Hero --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Hero --->
-    <!----------------------------------------------------------------------->
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Themed buttons</h1>
+                            <p>
+                                Interactive elements for initiating actions or linking to other
+                                content.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!---  Component  --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Themed buttons</h1>
-                    <p>Interactive elements for initiating actions or linking to other content. </p>
-              <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <h2 class="headline d-inline">Standard Buttons</h2>
+                        <p>Bare bones buttons in every theme. For your clicking pleasure.</p>
+                    </z-col>
+                </z-row>
+                <z-row class="seven-up">
+                    <z-col>
+                        <button class="btn-primary">Primary</button>
+                    </z-col>
 
+                    <z-col>
+                        <button class="btn-secondary">Secondary</button>
+                    </z-col>
+                    <z-col>
+                        <button class="btn-cta">CTA</button>
+                    </z-col>
+                    <z-col>
+                        <button class="btn-accent">Accent</button>
+                    </z-col>
+                    <z-col>
+                        <button class="btn-dark">Dark</button>
+                    </z-col>
+                    <z-col>
+                        <button class="btn-light">Light</button>
+                    </z-col>
+                    <z-col>
+                        <button>Default</button>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    
-    <!----------------------------------------------------------------------->
-    <!---  Component  --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <h2 class="headline d-inline">Standard Buttons</h2>
-                <p>Bare bones buttons in every theme. For your clicking pleasure. </p>
-
-            </z-col>
-        </z-row>
-        <z-row class="seven-up">
-            <z-col>
-                <button  class="btn-primary">Primary</button>
-
-            </z-col>
-
-            <z-col>
-                <button  class="btn-secondary">Secondary</button>
-
-            </z-col>
-            <z-col>
-                <button  class="btn-cta">CTA</button>
-
-            </z-col>
-            <z-col>
-                <button  class="btn-accent">Accent</button>
-
-            </z-col>
-            <z-col>
-                <button  class="btn-dark">Dark</button>
-            </z-col>
-            <z-col>
-                <button  class="btn-light">Light</button>
-
-            </z-col>
-            <z-col>
-                <button >Default</button>
-
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
 &lt;button class="btn-secondary"&gt;Secondary&lt;/button&gt;
 &lt;button class="btn-cta"&gt;CTA&lt;/button&gt;
 &lt;button class="btn-accent"&gt;Accent&lt;/button&gt;
 &lt;button class="btn-dark"&gt;Dark&lt;/button&gt;
 &lt;button class="btn-light"&gt;Light&lt;/button&gt;
 &lt;button&gt;Default&lt;/button&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <z-container>
-        <z-row>
-            <z-col><hr></z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                 <h2 class="headline d-inline"> Outlined Buttons</h2>
-                <p>In need of a button, but without the hefty background colors? </p>
-            </z-col>
-        </z-row>
-        <z-row class="six-up">
-            <z-col class="zen-body-bg-color right-2">
-                <button  class="btn-primary-outline left-2">Primary</button>
+            <z-container>
+                <z-row>
+                    <z-col><hr /></z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <h2 class="headline d-inline">Outlined Buttons</h2>
+                        <p>In need of a button, but without the hefty background colors?</p>
+                    </z-col>
+                </z-row>
+                <z-row class="six-up">
+                    <z-col class="zen-body-bg-color right-2">
+                        <button class="btn-primary-outline left-2">Primary</button>
+                    </z-col>
 
-            </z-col>
+                    <z-col class="zen-body-bg-color right-2">
+                        <button class="btn-secondary-outline left-2">Secondary</button>
+                    </z-col>
+                    <z-col class="zen-body-bg-color right-2">
+                        <button class="btn-cta-outline left-2">CTA</button>
+                    </z-col>
+                    <z-col class="zen-dark">
+                        <button class="btn-accent-outline">Accent</button>
+                    </z-col>
+                    <z-col class="zen-body-bg-color right-2">
+                        <button class="btn-dark-outline left-2">Dark</button>
+                    </z-col>
+                    <z-col class="zen-dark right-2">
+                        <button class="btn-light-outline">Light</button>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div class="notice mb-3">
+                            <i class="zenicon-error-outline down-1"></i> Ensure sufficient
+                            background contrast when using outlined buttons.
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-            <z-col class="zen-body-bg-color right-2">
-                <button  class="btn-secondary-outline left-2">Secondary</button>
-
-            </z-col>
-            <z-col class="zen-body-bg-color right-2">
-                <button  class="btn-cta-outline left-2">CTA</button>
-
-            </z-col>
-            <z-col class="zen-dark">
-                <button  class="btn-accent-outline">Accent</button>
-            </z-col>
-            <z-col class="zen-body-bg-color right-2">
-                <button  class="btn-dark-outline left-2">Dark</button>
-            </z-col>
-            <z-col class="zen-dark right-2">
-                <button  class="btn-light-outline">Light</button>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <div class="notice mb-3"><i class="zenicon-error-outline down-1"></i> Ensure sufficient background contrast when using outlined buttons.</div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;button class="btn-primary-outline"&gt;Primary&lt;/button&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;button class="btn-primary-outline"&gt;Primary&lt;/button&gt;
 &lt;button class="btn-secondary-outline"&gt;Secondary&lt;/button&gt;
 &lt;button class="btn-cta-outline"&gt;CTA&lt;/button&gt;
 &lt;button class="btn-accent-outline"&gt;Accent&lt;/button&gt;
 &lt;button class="btn-dark-outline"&gt;Dark&lt;/button&gt;
 &lt;button class="btn-light-outline"&gt;Light&lt;/button&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-<z-container>
-    <z-row>
-        <z-col><hr></z-col>
-    </z-row>
-    <z-row>
-        <z-col>
-            <h2 class="headline">Links as buttons</h2>
+            <z-container>
+                <z-row>
+                    <z-col><hr /></z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <h2 class="headline">Links as buttons</h2>
+                    </z-col>
+                </z-row>
+                <z-row class="six-up">
+                    <z-col>
+                        <a class="btn btn-primary">Primary</a>
+                    </z-col>
 
-        </z-col>
-    </z-row>
-    <z-row class="six-up">
-        <z-col>
-            <a  class="btn btn-primary">Primary</a>
+                    <z-col>
+                        <a class="btn btn-secondary">Secondary</a>
+                    </z-col>
+                    <z-col>
+                        <a class="btn btn-cta">CTA</a>
+                    </z-col>
+                    <z-col>
+                        <a class="btn btn-accent">Accent</a>
+                    </z-col>
+                    <z-col>
+                        <a class="btn btn-dark">Dark</a>
+                    </z-col>
+                    <z-col>
+                        <a class="btn btn-light">Light</a>
+                    </z-col>
+                </z-row>
+                <z-row class="six-up">
+                    <z-col class="zen-body-bg-color">
+                        <a class="btn btn-primary-outline">Primary</a>
+                    </z-col>
 
-        </z-col>
+                    <z-col class="zen-body-bg-color">
+                        <a class="btn btn-secondary-outline">Secondary</a>
+                    </z-col>
+                    <z-col class="zen-body-bg-color">
+                        <a class="btn btn-cta-outline">CTA</a>
+                    </z-col>
+                    <z-col class="zen-dark">
+                        <a class="btn btn-accent-outline">Accent</a>
+                    </z-col>
+                    <z-col class="zen-body-bg-color">
+                        <a class="btn btn-dark-outline">Dark</a>
+                    </z-col>
+                    <z-col class="zen-dark">
+                        <a class="btn btn-light-outline">Light</a>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <z-col>
-            <a  class="btn btn-secondary">Secondary</a>
-        </z-col>
-        <z-col>
-            <a  class="btn btn-cta">CTA</a>
-
-        </z-col>
-        <z-col>
-            <a  class="btn btn-accent">Accent</a>
-
-
-        </z-col>
-        <z-col>
-            <a  class="btn btn-dark">Dark</a>
-
-        </z-col>
-        <z-col>
-            <a  class="btn btn-light">Light</a>
-
-        </z-col>
-    </z-row>
-    <z-row class="six-up">
-        <z-col class="zen-body-bg-color">
-            <a  class="btn btn-primary-outline">Primary</a>
-
-        </z-col>
-
-        <z-col class="zen-body-bg-color">
-            <a  class="btn btn-secondary-outline">Secondary</a>
-
-        </z-col>
-        <z-col class="zen-body-bg-color">
-            <a  class="btn btn-cta-outline">CTA</a>
-
-        </z-col>
-        <z-col class="zen-dark">
-            <a class="btn btn-accent-outline">Accent</a>
-        </z-col>
-        <z-col class="zen-body-bg-color">
-            <a  class="btn btn-dark-outline">Dark</a>
-
-        </z-col>
-        <z-col class="zen-dark">
-            <a  class="btn btn-light-outline">Light</a>
-
-
-        </z-col>
-    </z-row>
-    
-</z-container>
-
-<z-container>
-    <z-row>
-        <z-col>
-            <div class="accordion">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                <div id="content3" class="expanded-content p-0" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;a class="btn btn-primary"&gt;Primary&lt;/a&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content3"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content3" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;a class="btn btn-primary"&gt;Primary&lt;/a&gt;
 &lt;a class="btn btn-primary-outline"&gt;Primary&lt;/a&gt;
 
 &lt;a class="btn btn-secondary"&gt;Secondary&lt;/a&gt;
@@ -261,104 +265,112 @@
 
 &lt;a class="btn btn-light"&gt;Light&lt;/a&gt;
 &lt;a class="btn btn-light-outline"&gt;Light&lt;/a&gt;</code></pre>
-                </div>
-            </div>
-        </z-col>
-    </z-row>
-</z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <z-container>
+                <z-row>
+                    <z-col><hr /> </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div>
+                            <h2 class="headline">Button sizes</h2>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <button class="btn-sm">btn-sm</button>
+                    </z-col>
 
-<z-container>
-    <z-row>
-        <z-col><hr> </z-col>
-    </z-row>
-    <z-row>
-        <z-col>
-            <div>
-                <h2 class="headline"> Button sizes</h2>
-            </div>
-        </z-col>
-    </z-row>
-</z-container>
+                    <z-col>
+                        <button class="btn-md">btn-md</button>
+                    </z-col>
 
+                    <z-col>
+                        <button class="btn-lg">btn-lg</button>
+                    </z-col>
 
-<z-container>
-    <z-row>
-        <z-col>
-            <button  class="btn-sm">btn-sm</button>
-        </z-col>
+                    <z-col>
+                        <button class="btn-xl">btn-xl</button>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <z-col>
-            <button  class="btn-md">btn-md</button>
-        </z-col>
-
-        <z-col>
-            <button  class="btn-lg">btn-lg</button>
-        </z-col>
-
-
-        <z-col>
-            <button  class="btn-xl">btn-xl</button>
-        </z-col>
-    </z-row>
-</z-container>
-
-<z-container>
-    <z-row>
-        <z-col>
-            <div class="accordion">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                <div id="content4" class="expanded-content p-0" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;button class="btn-sm"&gt;btn-sm&lt;/button&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content4"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content4" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;button class="btn-sm"&gt;btn-sm&lt;/button&gt;
 &lt;button class="btn-md"&gt;btn-md&lt;/button&gt;
 &lt;button class="btn-lg"&gt;btn-lg&lt;/button&gt;
 &lt;button class="btn-xl"&gt;btn-xl&lt;/button&gt;</code></pre>
-                </div>
-            </div>
-        </z-col>
-    </z-row>
-</z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-                <div class="center">
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

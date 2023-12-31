@@ -63,13 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalOriginalSlides = originalSlides.length;
         const nextButton = slider.querySelector(".next");
         const prevButton = slider.querySelector(".prev");
-        const shouldAutoRotate =
-            slider.getAttribute("data-auto-rotate") === "true";
+        const shouldAutoRotate = slider.getAttribute("data-auto-rotate") === "true";
 
         // Clone the first and last slides to create an infinite loop effect
         const firstSlideClone = originalSlides[0].cloneNode(true);
-        const lastSlideClone =
-            originalSlides[totalOriginalSlides - 1].cloneNode(true);
+        const lastSlideClone = originalSlides[totalOriginalSlides - 1].cloneNode(true);
         slidesContainer.insertBefore(lastSlideClone, originalSlides[0]);
         slidesContainer.appendChild(firstSlideClone);
 
@@ -99,9 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 0);
 
         function updateSlidePosition() {
-            slidesContainer.style.transform = `translateX(-${
-                currentIndex * 100
-            }%)`;
+            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
         function moveToNext() {
@@ -122,18 +118,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentIndex >= totalOriginalSlides + 1) {
                 slidesContainer.style.transition = "none";
                 currentIndex = 1;
-                slidesContainer.style.transform = `translateX(-${
-                    currentIndex * 100
-                }%)`;
+                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);
             } else if (currentIndex === 0) {
                 slidesContainer.style.transition = "none";
                 currentIndex = totalOriginalSlides;
-                slidesContainer.style.transform = `translateX(-${
-                    currentIndex * 100
-                }%)`;
+                slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
                 setTimeout(() => {
                     slidesContainer.style.transition = "transform 0.5s ease";
                 }, 0);
@@ -171,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 
 //-------------------------------------
-// Dropdown 
+// Dropdown
 //-------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     var dropdownLinks = document.querySelectorAll(".dropdown .dropdown-link");
@@ -220,8 +212,6 @@ window.onclick = function (event) {
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
 
-
-
 //12/29 removing lazy load
 
 /*
@@ -252,11 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const clonedImg = img.cloneNode(true);
             clonedImg.addEventListener("click", () => {
                 currentModalIndex = index;
-                openModal(
-                    clonedImg.src,
-                    clonedImg.getAttribute("data-text"),
-                    index,
-                );
+                openModal(clonedImg.src, clonedImg.getAttribute("data-text"), index);
             });
             wrapper.appendChild(clonedImg);
             imageWrappers.push(wrapper);
@@ -268,27 +254,23 @@ document.addEventListener("DOMContentLoaded", function () {
             imageWrappers.forEach((wrapper, index) => {
                 const start = (pageNumber - 1) * imagesPerPage;
                 const end = start + imagesPerPage;
-                wrapper.style.display =
-                    index >= start && index < end ? "block" : "none";
+                wrapper.style.display = index >= start && index < end ? "block" : "none";
             });
         }
 
         function updatePaginationNav() {
-            paginationNav.innerHTML =
-                '<a href="#" class="item" data-page="prev">&laquo;</a>';
+            paginationNav.innerHTML = '<a href="#" class="item" data-page="prev">&laquo;</a>';
             for (let i = 1; i <= totalPages; i++) {
                 const classCurrent = i === currentPage ? "current" : "";
                 paginationNav.innerHTML += `<a href="#" class="item ${classCurrent}" data-page="${i}">${i}</a>`;
             }
-            paginationNav.innerHTML +=
-                '<a href="#" class="item" data-page="next">&raquo;</a>';
+            paginationNav.innerHTML += '<a href="#" class="item" data-page="next">&raquo;</a>';
         }
 
         function openModal(src, text, index) {
             currentModalIndex = index;
             const modalBody = modal.shadowRoot.querySelector(".modal-body");
-            const modalWrapper =
-                modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
             const modalHeader = modal.shadowRoot.querySelector(".modal-header");
 
             if (modalBody && modalWrapper && modalHeader) {
@@ -315,15 +297,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevArrow.style.transform = "translateY(-50%)";
                 prevArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex > 0
-                            ? currentModalIndex - 1
-                            : imageWrappers.length - 1;
+                        currentModalIndex > 0 ? currentModalIndex - 1 : imageWrappers.length - 1;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(
-                        newImg.src,
-                        newImg.getAttribute("data-text"),
-                        currentModalIndex,
-                    );
+                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
                 };
                 imageContainer.appendChild(prevArrow);
 
@@ -351,15 +327,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextArrow.style.transform = "translateY(-50%)";
                 nextArrow.onclick = function () {
                     currentModalIndex =
-                        currentModalIndex < imageWrappers.length - 1
-                            ? currentModalIndex + 1
-                            : 0;
+                        currentModalIndex < imageWrappers.length - 1 ? currentModalIndex + 1 : 0;
                     const newImg = imageWrappers[currentModalIndex].firstChild;
-                    openModal(
-                        newImg.src,
-                        newImg.getAttribute("data-text"),
-                        currentModalIndex,
-                    );
+                    openModal(newImg.src, newImg.getAttribute("data-text"), currentModalIndex);
                 };
                 imageContainer.appendChild(nextArrow);
 
@@ -374,12 +344,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 modalBody.style.maxHeight = "80vh";
                 modalHeader.style.display = "none";
 
-                modalWrapper.style.maxWidth =
-                    window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
 
                 const nextIndex = (index + 1) % imageWrappers.length;
-                const prevIndex =
-                    (index - 1 + imageWrappers.length) % imageWrappers.length;
+                const prevIndex = (index - 1 + imageWrappers.length) % imageWrappers.length;
                 preloadImage(imageWrappers[nextIndex].firstChild.src);
                 preloadImage(imageWrappers[prevIndex].firstChild.src);
 
@@ -409,11 +377,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         window.addEventListener("resize", function () {
-            const modalWrapper =
-                modal.shadowRoot.querySelector(".modal-wrapper");
+            const modalWrapper = modal.shadowRoot.querySelector(".modal-wrapper");
             if (modalWrapper) {
-                modalWrapper.style.maxWidth =
-                    window.innerWidth >= 1070 ? "860px" : "80%";
+                modalWrapper.style.maxWidth = window.innerWidth >= 1070 ? "860px" : "80%";
             }
         });
 
@@ -423,7 +389,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePaginationNav();
     }
 });
-
 
 // function preloadImage(src) {
 //     const img = new Image();
@@ -645,7 +610,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 otherToggle.classList.remove("active-toggle");
                 otherToggle.setAttribute("aria-expanded", "false");
 
-                var otherIcon = otherToggle.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
+                var otherIcon = otherToggle.querySelector(
+                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
+                );
                 if (otherIcon) {
                     otherIcon.classList.remove("zenicon-keyboard-arrow-down");
                     otherIcon.classList.add("zenicon-keyboard-arrow-right");
@@ -661,14 +628,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.classList.add("active-toggle");
                 this.setAttribute("aria-expanded", "true");
 
-                var icon = this.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
+                var icon = this.querySelector(
+                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
+                );
                 if (icon) {
                     icon.classList.remove("zenicon-keyboard-arrow-right");
                     icon.classList.add("zenicon-keyboard-arrow-down");
                 }
 
                 var panel = this.nextElementSibling;
-                panel.style.maxHeight = panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
+                panel.style.maxHeight =
+                    panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });
@@ -742,7 +712,7 @@ document.querySelectorAll(".accordion-toggle").forEach((item) => {
             } else {
                 content.style.overflowY = "hidden";
             }
-        }, 500); 
+        }, 500);
     });
 });
 
@@ -772,9 +742,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to apply data labels to a table
     function applyDataLabelsToTable(table) {
         // Get all the headers from the direct child thead of the table
-        const headers = Array.from(
-            table.querySelectorAll(":scope > thead > tr > th"),
-        ).map((th) => th.textContent.trim());
+        const headers = Array.from(table.querySelectorAll(":scope > thead > tr > th")).map((th) =>
+            th.textContent.trim(),
+        );
 
         // Iterate over each row in the direct child tbody of the table
         table.querySelectorAll(":scope > tbody > tr").forEach((row) => {
@@ -789,9 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Select all tables with class 'responsive-table' and apply data labels to each
-    document
-        .querySelectorAll(".responsive-table")
-        .forEach(applyDataLabelsToTable);
+    document.querySelectorAll(".responsive-table").forEach(applyDataLabelsToTable);
 });
 
 //-------------------------------------
@@ -1116,47 +1084,47 @@ document.addEventListener("DOMContentLoaded", () => {
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
-  
+
     if (lazyImages.length === 0) {
-      //console.log('No lazy-load images found.');
-      return;
+        //console.log('No lazy-load images found.');
+        return;
     }
-  
+
     if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            // Set onload before changing the src
-            lazyImage.onload = function() {
-              this.classList.remove("lazy-load");
-              //console.log('Lazy-load class removed:', this);
+        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    // Set onload before changing the src
+                    lazyImage.onload = function () {
+                        this.classList.remove("lazy-load");
+                        //console.log('Lazy-load class removed:', this);
+                    };
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+
+        lazyImages.forEach(function (lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+        });
+    } else {
+        lazyImages.forEach(function (lazyImage) {
+            lazyImage.onload = function () {
+                this.classList.remove("lazy-load");
+                //console.log('Lazy-load class removed:', this);
             };
             lazyImage.src = lazyImage.dataset.src;
-            lazyImageObserver.unobserve(lazyImage);
-          }
         });
-      });
-  
-      lazyImages.forEach(function(lazyImage) {
-        lazyImageObserver.observe(lazyImage);
-      });
-    } else {
-      lazyImages.forEach(function(lazyImage) {
-        lazyImage.onload = function() {
-          this.classList.remove("lazy-load");
-          //console.log('Lazy-load class removed:', this);
-        };
-        lazyImage.src = lazyImage.dataset.src;
-      });
     }
-  });
-  
-  //old depricated - leaving for now to reference to what was done for image gallery
+});
 
-  // document.addEventListener("DOMContentLoaded", function () {
+//old depricated - leaving for now to reference to what was done for image gallery
+
+// document.addEventListener("DOMContentLoaded", function () {
 //     const images = document.querySelectorAll(".lazy-load");
 
 //     if (images.length > 0) {
@@ -1253,9 +1221,9 @@ window.addEventListener("DOMContentLoaded", function () {
 // });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    const hamburgerButton = document.getElementById("hamburger-button-2"); 
+    const hamburgerButton = document.getElementById("hamburger-button-2");
     const closeButton = document.getElementById("close-button");
-    const nav = document.querySelector(".top-nav"); 
+    const nav = document.querySelector(".top-nav");
     const navLinks = document.querySelectorAll(".nav-link");
 
     const toggleMenu = () => {
@@ -1267,11 +1235,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         closeButton.addEventListener("click", toggleMenu);
 
         navLinks.forEach((link) => {
-            link.addEventListener("click", toggleMenu); 
+            link.addEventListener("click", toggleMenu);
         });
     }
 });
-
 
 })();
 
@@ -1298,18 +1265,14 @@ class ZModal extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot
-            .querySelector(".close")
-            .addEventListener("click", () => {
+        this.shadowRoot.querySelector(".close").addEventListener("click", () => {
+            this.close();
+        });
+        this.shadowRoot.querySelector(".modal").addEventListener("click", (event) => {
+            if (event.target === event.currentTarget) {
                 this.close();
-            });
-        this.shadowRoot
-            .querySelector(".modal")
-            .addEventListener("click", (event) => {
-                if (event.target === event.currentTarget) {
-                    this.close();
-                }
-            });
+            }
+        });
         document.addEventListener("click", (event) => {
             if (event.target.classList.contains("modal-close")) {
                 this.close();
@@ -1485,8 +1448,7 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
-            halfStarImg.src =
-                "../../img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.src = "../../img/icons/alerts/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);
@@ -1576,9 +1538,7 @@ function shouldShowModal() {
     var modalClosedTime = localStorage.getItem("modalClosed");
     if (modalClosedTime) {
         var now = new Date();
-        var daysPassed =
-            (now.getTime() - parseInt(modalClosedTime, 10)) /
-            (1000 * 3600 * 24);
+        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
         return daysPassed >= 7;
     }
     return true;
@@ -1622,8 +1582,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             steps.forEach((step) => {
                 step.style.display = "none"; // Hide all steps
             });
-            document.getElementById(`step-${stepNumber}`).style.display =
-                "block"; // Show the desired step
+            document.getElementById(`step-${stepNumber}`).style.display = "block"; // Show the desired step
 
             // Update the current class on pagination
             navItems.forEach((item) => {
@@ -1670,59 +1629,60 @@ document.addEventListener("DOMContentLoaded", (event) => {
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    const mswizard = document.querySelector('.mswizard');
+document.addEventListener("DOMContentLoaded", function () {
+    const mswizard = document.querySelector(".mswizard");
     if (!mswizard) return;
-    const progressBar = mswizard.querySelector('.mswizard-progress');
-    const currentStepSpan = mswizard.querySelector('#current-step');
-    const totalStepsSpan = mswizard.querySelector('#total-steps');
-    const progressPercentage = mswizard.querySelector('.progress-percentage');
-    const steps = mswizard.querySelectorAll('.mswizard-step');
+    const progressBar = mswizard.querySelector(".mswizard-progress");
+    const currentStepSpan = mswizard.querySelector("#current-step");
+    const totalStepsSpan = mswizard.querySelector("#total-steps");
+    const progressPercentage = mswizard.querySelector(".progress-percentage");
+    const steps = mswizard.querySelectorAll(".mswizard-step");
     const totalSteps = steps.length;
     totalStepsSpan.textContent = totalSteps;
     progressBar.max = 100;
 
     function updatemswizardStep(stepNumber) {
-        steps.forEach(step => step.style.display = 'none');
-        mswizard.querySelector(`#step-${stepNumber}`).style.display = 'block';
+        steps.forEach((step) => (step.style.display = "none"));
+        mswizard.querySelector(`#step-${stepNumber}`).style.display = "block";
         currentStepSpan.textContent = stepNumber;
         const progressValue = ((stepNumber - 1) / (totalSteps - 1)) * 100;
         progressBar.value = progressValue;
         progressPercentage.textContent = `${Math.round(progressValue)}%`;
-        const percentagePosition = progressBar.offsetWidth * (progressValue / 100) - progressPercentage.offsetWidth / 2;
+        const percentagePosition =
+            progressBar.offsetWidth * (progressValue / 100) - progressPercentage.offsetWidth / 2;
         progressPercentage.style.left = `${Math.max(0, percentagePosition)}px`;
-        progressPercentage.style.visibility = progressValue >= 5 ? 'visible' : 'hidden';
+        progressPercentage.style.visibility = progressValue >= 5 ? "visible" : "hidden";
     }
 
     steps.forEach((step, index) => {
         if (index === totalSteps - 1) return; // No buttons on the last step
 
-        const buttonContainer = document.createElement('div');
-        buttonContainer.className = 'button-container';
+        const buttonContainer = document.createElement("div");
+        buttonContainer.className = "button-container";
 
         // Always add the Previous button except on the last step
-        const prevButton = document.createElement('button');
-        prevButton.textContent = 'Previous';
-        prevButton.className = 'prev-btn';
-        prevButton.setAttribute('role', 'button');
-        prevButton.setAttribute('aria-label', `Go back to step ${index}`);
+        const prevButton = document.createElement("button");
+        prevButton.textContent = "Previous";
+        prevButton.className = "prev-btn";
+        prevButton.setAttribute("role", "button");
+        prevButton.setAttribute("aria-label", `Go back to step ${index}`);
         if (index === 0) {
             prevButton.disabled = true;
-            prevButton.classList.add('disabled');
+            prevButton.classList.add("disabled");
         } else {
-            prevButton.addEventListener('click', () => updatemswizardStep(index));
+            prevButton.addEventListener("click", () => updatemswizardStep(index));
         }
         buttonContainer.appendChild(prevButton);
 
         // Add the Next/Finish button to all steps except the last
-        const nextButton = document.createElement('button');
-        nextButton.textContent = index === totalSteps - 2 ? 'Finish' : 'Next';
-        nextButton.className = 'next-btn';
-        nextButton.setAttribute('role', 'button');
-        nextButton.setAttribute('aria-label', `Go to step ${index + 2}`);
-        nextButton.addEventListener('click', () => updatemswizardStep(index + 2));
+        const nextButton = document.createElement("button");
+        nextButton.textContent = index === totalSteps - 2 ? "Finish" : "Next";
+        nextButton.className = "next-btn";
+        nextButton.setAttribute("role", "button");
+        nextButton.setAttribute("aria-label", `Go to step ${index + 2}`);
+        nextButton.addEventListener("click", () => updatemswizardStep(index + 2));
         buttonContainer.appendChild(nextButton);
-        
+
         step.appendChild(buttonContainer);
     });
 
@@ -1857,9 +1817,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var resultElement = document.querySelector(
             '#result-types [data-result="' + mostChosen + '"]',
         );
-        var resultContent = resultElement
-            ? resultElement.innerHTML
-            : mostChosen;
+        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
 
         // Update the result div and make the result visible
         var resultDiv = document.getElementById("result-text");
@@ -1894,16 +1852,16 @@ document.addEventListener("DOMContentLoaded", function () {
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const anchors = document.querySelectorAll('a[href^="#"]');
 
     if (anchors.length > 0) {
-        anchors.forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const hrefAttribute = this.getAttribute('href');
+        anchors.forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                const hrefAttribute = this.getAttribute("href");
 
                 // Skip processing if href is only '#'
-                if (hrefAttribute === '#') {
+                if (hrefAttribute === "#") {
                     return;
                 }
 
@@ -1911,7 +1869,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const targetElement = document.querySelector(hrefAttribute);
 
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.scrollIntoView({ behavior: "smooth" });
                 }
             });
         });

@@ -4,10 +4,9 @@
     "description": "An intelligent web development framework, design system and toolkit.",
     "main": "index.js",
     "scripts": {
-        "compile-scss": "sass --style=compressed zen.scss ../css/zen.css --watch",
-        "build": "webpack",
-        "test": "jest"
-    },
+        "build-css": "sass scss/zen.scss dist/zen.css --source-map && sass scss/zen.scss dist/zen.min.css --style=compressed --source-map && postcss dist/zen.min.css --use autoprefixer cssnano --map --output dist/zen.min.css",
+        "build-js": "cd js && npx webpack"
+        },
     "repository": {
         "type": "git",
         "url": "https://github.com/zen-solutions/zencss.git"
@@ -25,17 +24,23 @@
     },
     "homepage": "https://zencss.com",
     "devDependencies": {
+        "autoprefixer": "^10.4.16",
+        "cssnano": "^6.0.2",
+        "postcss-cli": "^11.0.0",
         "prettier": "^3.1.0",
-        "sass": "^1.69.5",
+        "sass": "^1.69.6",
         "terser-webpack-plugin": "^5.3.10",
         "webpack": "^5.89.0",
         "webpack-cli": "^5.1.4"
     },
     "files": [
-        "css/",
+        "dist/",
         "scss/",
         "js/",
+        "img/",
         "docs/",
+        "index.html",
+        "LICENSE",
         "README.md"
     ],
     "engines": {

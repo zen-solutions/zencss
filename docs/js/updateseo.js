@@ -1,21 +1,21 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
-  * Copyright 2022-2024 Shaun Mackey
-  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
-  */
- 
+ * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * Copyright 2022-2024 Shaun Mackey
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+ */
+
 function updateSEO() {
-    const h1Element = document.querySelector('h1');
+    const h1Element = document.querySelector("h1");
     let descriptionContent;
 
     // Check if there's an element with class 'lead'
-    const leadElement = document.querySelector('.lead');
+    const leadElement = document.querySelector(".lead");
     if (leadElement) {
         descriptionContent = leadElement.textContent;
     } else if (h1Element) {
         // If no 'lead' class, use the first <p> element after the <h1>
         const nextPElement = h1Element.nextElementSibling;
-        if (nextPElement && nextPElement.tagName.toLowerCase() === 'p') {
+        if (nextPElement && nextPElement.tagName.toLowerCase() === "p") {
             descriptionContent = nextPElement.textContent;
         }
     }
@@ -29,15 +29,15 @@ function updateSEO() {
     if (descriptionContent) {
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', descriptionContent);
+            metaDescription.setAttribute("content", descriptionContent);
         } else {
             // Create a new meta description tag if it doesn't exist
-            const newMetaDescription = document.createElement('meta');
-            newMetaDescription.setAttribute('name', 'description');
-            newMetaDescription.setAttribute('content', descriptionContent);
+            const newMetaDescription = document.createElement("meta");
+            newMetaDescription.setAttribute("name", "description");
+            newMetaDescription.setAttribute("content", descriptionContent);
             document.head.appendChild(newMetaDescription);
         }
     }
 }
 
-document.addEventListener('DOMContentLoaded', updateSEO);
+document.addEventListener("DOMContentLoaded", updateSEO);

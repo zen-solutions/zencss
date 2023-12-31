@@ -1,156 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-<main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Button Styles and Sizes</h1>
 
+                            <p>These classes are tailored for styling and sizing buttons.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline">Button Styles and Sizes</h1>
-            
-                        <p>
-                            These classes are tailored for styling and sizing buttons.
-                        </p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="alert-primary" role="alert">
+                            This documentation is WIP and subject to change
+                        </div>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+                        <section id="button-styles-sizes">
+                            <h4>Button Classes:</h4>
 
-<z-container>
-    <z-row>
-        <z-col>
+                            <p>
+                                <code>.btn</code>
+                            </p>
+                            <p>
+                                <code>.btn-ghost</code>
+                            </p>
+                            <p>
+                                <code>.btn-ghost-light</code>
+                            </p>
+                            <p><code>.btn-ghost-dark</code></p>
+                            <p>
+                                <code>.btn-invert</code>
+                            </p>
 
-                <div class="alert-primary" role="alert">
-                        This documentation is WIP and subject to change
-                </div>
- 
-            <section id="button-styles-sizes">
+                            <h4>Button Sizes:</h4>
 
-              
-                <h4>Button Classes:</h4>
-                
-                    <p>
-                        <code>.btn</code>
-                    </p>
-                    <p>
-                        <code>.btn-ghost</code>
-                    </p>
-                    <p>
-                        <code>.btn-ghost-light</code> 
-                    </p>
-                    <p> <code>.btn-ghost-dark</code></p>
-                    <p>
-                        <code>.btn-invert</code>
-                    </p>
-            
-                <h4>Button Sizes:</h4>
-                
-                    <p>
-                        <code>.btn-xl:</code>
-                        Extra-large button with <code>width: 200px;</code>
-                    </p>
-                    <p>
-                        <code>.btn-lg:</code>
-                        Large button with <code>width: 150px;</code>.
-                    </p>
-                    <p>
-                        <code>.btn-md:</code>
-                        Medium button with <code>width: 120px;</code>.
-                    </p>
-                    <p>
-                        <code>.btn-sm:</code>
-                        Small button with <code>width: 75px;</code>.
-                    </p>
-            
-                <h4>Unique Button Styles:</h4>
-                
-                    <p>
-                        <code>.btn-square:</code>
-                        A square button with a 3D effect and arrow indicators. 
-                    </p>
-                    <p>
-                        <code>.disabled:</code>
-                        An disabled state style with <code>cursor: not-allowed;</code>, <code>opacity: 0.65;</code>, and <code>pointer-events: none;</code>.
-                    </p>
-            
-            </section>
-        </z-col>
-    </z-row>
-</z-container>
+                            <p>
+                                <code>.btn-xl:</code>
+                                Extra-large button with
+                                <code>width: 200px;</code>
+                            </p>
+                            <p>
+                                <code>.btn-lg:</code>
+                                Large button with <code>width: 150px;</code>.
+                            </p>
+                            <p>
+                                <code>.btn-md:</code>
+                                Medium button with <code>width: 120px;</code>.
+                            </p>
+                            <p>
+                                <code>.btn-sm:</code>
+                                Small button with <code>width: 75px;</code>.
+                            </p>
 
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+                            <h4>Unique Button Styles:</h4>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+                            <p>
+                                <code>.btn-square:</code>
+                                A square button with a 3D effect and arrow indicators.
+                            </p>
+                            <p>
+                                <code>.disabled:</code>
+                                An disabled state style with
+                                <code>cursor: not-allowed;</code>, <code>opacity: 0.65;</code>, and
+                                <code>pointer-events: none;</code>.
+                            </p>
+                        </section>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                <div class="center">
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-  <script src="../js/copy.js"></script>
-</body>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

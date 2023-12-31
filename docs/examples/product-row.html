@@ -1,175 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to zenCSS</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to zenCSS</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
-    </header>
-    <main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Hero --->
+            <!----------------------------------------------------------------------->
 
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Hero --->
-        <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Product Grids</h1>
+                            <p>Feature multiple products and product details</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Page Title  --->
-        <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col class="m-0 p-0 d-flex align-items-stretch">
+                        <img src="../../docs/images/misc/lifestyle-product/3.jpg" alt="" />
+                    </z-col>
+                    <z-container>
+                        <z-row class="p-0 mobile:two-up">
+                            <z-col class="m-0 p-0 d-flex align-items-stretch"
+                                ><img src="../../docs/images/misc/lifestyle-product/1.jpg" alt=""
+                            /></z-col>
+                            <z-col class="m-0 p-0 d-flex align-items-stretch"
+                                ><img src="../../docs/images/misc/lifestyle-product/2.jpg" alt=""
+                            /></z-col>
+                        </z-row>
+                        <z-row class="mt-2 mb-2">
+                            <z-col class="bg-grey-6-dark m-0 br-sm"
+                                ><span class="text-medium"
+                                    ><i class="zenicon-local-offer down-1"></i> NEW ARRIVALS:</span
+                                >
+                                Shop the sale&nbsp;<i class="zenicon-east down-2"></i
+                            ></z-col>
+                        </z-row>
+                        <z-row class="p-0 m-0">
+                            <z-col class="m-0 p-0 d-flex align-items-stretch"
+                                ><img src="../../docs/images/misc/lifestyle-product/4.jpg" alt=""
+                            /></z-col>
+                        </z-row>
+                    </z-container>
+                </z-row>
+            </z-container>
 
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <h1 class="headline">Product Grids</h1>
-                        <p>Feature multiple products and product details </p>
-                        <hr>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <!----------------------------------------------------------------------->
-        <!--- Component  --->
-        <!----------------------------------------------------------------------->
-
-        <z-container>
-            <z-row>
-                <z-col class="m-0 p-0 d-flex align-items-stretch">
-                    <img src="../../docs/images/misc/lifestyle-product/3.jpg" alt="">
-                </z-col>
-                <z-container>
-                    <z-row class="p-0 mobile:two-up">
-                        <z-col class="m-0 mb-4 p-0 d-flex align-items-stretch"><img src="../../docs/images/misc/lifestyle-product/1.jpg" alt=""></z-col>
-                        <z-col class="m-0  mb-4 p-0 d-flex align-items-stretch"><img src="../../docs/images/misc/lifestyle-product/2.jpg" alt=""></z-col>
-                    </z-row>
-                    <z-row class="mb-3 pt-0">
-                        <z-col class="bg-grey-6-dark m-0 br-sm"><span class="text-medium"><i class=" zenicon-local-offer down-1"></i> NEW ARRIVALS:</span> Shop the sale&nbsp;<i class="zenicon-east down-2"></i></z-col>
-                    </z-row>
-                    <z-row class="p-0 m-0">
-                        <z-col class="m-0 p-0  d-flex align-items-stretch"><img src="../../docs/images/misc/lifestyle-product/4.jpg" alt=""></z-col>
-                    </z-row>
-                </z-container>
-            </z-row>
-        </z-container>
-        </z-col>
-        </z-row>
-        </z-container>
-
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;z-container&gt;
   &lt;z-row&gt;
     &lt;z-col class="m-0 p-0 d-flex align-items-stretch"&gt;
       &lt;img src="../../docs/images/misc/lifestyle-product/3.jpg" alt=""&gt;
     &lt;/z-col&gt;
     &lt;z-container&gt;
       &lt;z-row class="p-0 mobile:two-up"&gt;
-        &lt;z-col class="m-0 mb-4 p-0 d-flex align-items-stretch"&gt;&lt;img src="../../docs/images/misc/lifestyle-product/1.jpg" alt=""&gt;&lt;/z-col&gt;
-        &lt;z-col class="m-0  mb-4 p-0 d-flex align-items-stretch"&gt;&lt;img src="../../docs/images/misc/lifestyle-product/2.jpg" alt=""&gt;&lt;/z-col&gt;
+        &lt;z-col class="m-0 p-0 d-flex align-items-stretch"&gt;
+          &lt;img src="../../docs/images/misc/lifestyle-product/1.jpg" alt=""&gt;
+        &lt;/z-col&gt;
+        &lt;z-col class="m-0 p-0 d-flex align-items-stretch"&gt;
+          &lt;img src="../../docs/images/misc/lifestyle-product/2.jpg" alt=""&gt;
+        &lt;/z-col&gt;
       &lt;/z-row&gt;
-      &lt;z-row class="mb-3 pt-0"&gt;
-        &lt;z-col class="bg-grey-6-dark m-0 br-sm"&gt;&lt;span class="text-medium"&gt;&lt;i class=" zenicon-local-offer down-1"&gt;&lt;/i&gt; NEW ARRIVALS:&lt;/span&gt; Shop the sale&nbsp;&lt;i class="zenicon-east down-2"&gt;&lt;/i&gt;&lt;/z-col&gt;
+      &lt;z-row class="mt-2 mb-2"&gt;
+        &lt;z-col class="bg-grey-6-dark m-0 br-sm"&gt;
+          &lt;span class="text-medium"&gt;
+            &lt;i class=" zenicon-local-offer down-1"&gt;&lt;/i&gt; NEW ARRIVALS:
+          &lt;/span&gt;
+          Shop the sale&nbsp;&lt;i class="zenicon-east down-2"&gt;&lt;/i&gt;
+        &lt;/z-col&gt;
       &lt;/z-row&gt;
       &lt;z-row class="p-0 m-0"&gt;
-        &lt;z-col class="m-0 p-0  d-flex align-items-stretch"&gt;&lt;img src="../../docs/images/misc/lifestyle-product/4.jpg" alt=""&gt;&lt;/z-col&gt;
+        &lt;z-col class="m-0 p-0  d-flex align-items-stretch"&gt;
+          &lt;img src="../../docs/images/misc/lifestyle-product/4.jpg" alt=""&gt;
+        &lt;/z-col&gt;
       &lt;/z-row&gt;
     &lt;/z-container&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <hr />
+            <z-container>
+                <z-row>
+                    <z-col class="pt-0">
+                        <div class="card pt-0">
+                            <span class="eyebrow up-1 text-cta-dual">BACK IN STOCK</span>
+                            <h2 class="h3 headline">Text + Product Row</h2>
+                            <p>Images switch to a grid when transitioning to mobile.</p>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row class="p-0">
+                    <z-col class="p-0">
+                        <z-container>
+                            <z-row class="mobile:two-up gap-0">
+                                <z-col class="p-2">
+                                    <img
+                                        src="../../docs/images/misc/lifestyle-product/3.jpg"
+                                        alt=""
+                                    />
+                                    <div class="card p-0 m-0">
+                                        <p class="headline mt-4">
+                                            Aatque &nbsp;<span class="bolder text-cta-dual"
+                                                >$27</span
+                                            >
+                                        </p>
+                                        <small
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Doloribus fuga officia asperiores.
+                                        </small>
+                                    </div>
+                                </z-col>
+                                <z-col class="p-2">
+                                    <img
+                                        src="../../docs/images/misc/lifestyle-product/2.jpg"
+                                        alt=""
+                                    />
+                                    <div class="card p-0 m-0">
+                                        <p class="headline mt-4">
+                                            Blanditis &nbsp;<span class="bolder text-cta-dual"
+                                                >$47</span
+                                            >
+                                        </p>
+                                        <small
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Doloribus fuga officia asperiores.
+                                        </small>
+                                    </div>
+                                </z-col>
 
-        <hr>
-        <z-container>
-            <z-row>
-                <z-col class="pt-0">
-                    <div class="card pt-0">
-                        <span class="eyebrow up-1 text-cta-dual">BACK IN STOCK</span>
-                        <h2 class="h3 headline">Text + Product Row </h2>
-                        <p> Images switch to a grid when transitioning to mobile. </p>
-                    </div>
-                </z-col>
-            </z-row>
-            <z-row class="p-0">
-                <z-col class="p-0">
-                    <z-container>
-                        <z-row class="mobile:two-up gap-0">
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/3.jpg" alt="">
-                                <div class="card  p-0 m-0">
-                                    <p class="headline mt-4">Aatque &nbsp;<span class="bolder text-cta-dual">$27</span>
+                                <z-col class="p-2">
+                                    <img
+                                        src="../../docs/images/misc/lifestyle-product/1.jpg"
+                                        alt=""
+                                    />
+                                    <div class="card p-0 m-0">
+                                        <p class="headline mt-4">
+                                            Adelorem &nbsp;<span class="bolder text-cta-dual"
+                                                >$67</span
+                                            >
+                                        </p>
+                                        <small
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Doloribus fuga officia asperiores.
+                                        </small>
+                                    </div>
+                                </z-col>
 
-                                    </p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/2.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Blanditis &nbsp;<span class="bolder text-cta-dual">$47</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
+                                <z-col class="p-2">
+                                    <img
+                                        src="../../docs/images/misc/lifestyle-product/4.jpg"
+                                        alt=""
+                                    />
+                                    <div class="card p-0 m-0">
+                                        <p class="headline mt-4">
+                                            Aatque blanditiis &nbsp;<span
+                                                class="bolder text-cta-dual"
+                                                >$97</span
+                                            >
+                                        </p>
+                                        <small
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Doloribus fuga officia asperiores.
+                                        </small>
+                                    </div>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/1.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Adelorem &nbsp;<span class="bolder text-cta-dual">$67</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-
-                            <z-col class="p-2">
-                                <img src="../../docs/images/misc/lifestyle-product/4.jpg" alt="">
-                                <div class="card p-0 m-0">
-                                    <p class="headline mt-4">Aatque blanditiis &nbsp;<span class="bolder text-cta-dual">$97</span></p>
-                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores. </small>
-                                </div>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-                </z-col>
-            </z-row>
-        </z-container>
-
-
-        <z-container>
-            <z-row>
-                <z-col class="pl-2 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;z-container class="page-section"&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-2 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;z-container class="page-section"&gt;
     &lt;z-row&gt;
       &lt;z-col&gt;
         &lt;div class="card"&gt;
@@ -187,28 +258,28 @@
               &lt;img src="image-1.jpg" alt=""&gt;
               &lt;div class="card p-0 m-0"&gt;
                 &lt;p class="headline mt-4"&gt;Aatque &nbsp;&lt;span class="bolder text-cta-dual"&gt;$27&lt;/span&gt;&lt;/p&gt;
-                &lt;small&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores.&lt;/small&gt;
+                &lt;small&gt;Lorem ipsum dolor...&lt;/small&gt;
               &lt;/div&gt;
             &lt;/z-col&gt;
             &lt;z-col class="p-2"&gt;
               &lt;img src="image-2.jpg" alt=""&gt;
               &lt;div class="card p-0 m-0"&gt;
                 &lt;p class="headline mt-4"&gt;Blanditis &nbsp;&lt;span class="bolder text-cta-dual"&gt;$47&lt;/span&gt;&lt;/p&gt;
-                &lt;small&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores.&lt;/small&gt;
+                &lt;small&gt;Lorem ipsum dolor...&lt;/small&gt;
               &lt;/div&gt;
             &lt;/z-col&gt;
             &lt;z-col class="p-2"&gt;
               &lt;img src="image-3.jpg" alt=""&gt;
               &lt;div class="card p-0 m-0"&gt;
                 &lt;p class="headline mt-4"&gt;Adelorem &nbsp;&lt;span class="bolder text-cta-dual"&gt;$67&lt;/span&gt;&lt;/p&gt;
-                &lt;small&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores.&lt;/small&gt;
+                &lt;small&gt;Lorem ipsum dolor...&lt;/small&gt;
               &lt;/div&gt;
             &lt;/z-col&gt;
             &lt;z-col class="p-2"&gt;
               &lt;img src="image-4.jpg" alt=""&gt;
               &lt;div class="card p-0 m-0"&gt;
                 &lt;p class="headline mt-4"&gt;Aatque blanditiis &nbsp;&lt;span class="bolder text-cta-dual"&gt;$97&lt;/span&gt;&lt;/p&gt;
-                &lt;small&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga officia asperiores.&lt;/small&gt;
+                &lt;small&gt;Lorem ipsum dolor...&lt;/small&gt;
               &lt;/div&gt;
             &lt;/z-col&gt;
           &lt;/z-row&gt;
@@ -216,21 +287,17 @@
       &lt;/z-col&gt;
     &lt;/z-row&gt;
   &lt;/z-container&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- End Component  --->
+            <!----------------------------------------------------------------------->
 
-
-
-
-        <!----------------------------------------------------------------------->
-        <!--- End Component  --->
-        <!----------------------------------------------------------------------->
-
-        <!--z-container class="page-section">
+            <!--z-container class="page-section">
             <z-row class="p-0">
                 <z-col>
                     <div class="center-vertical narrow-sm">
@@ -280,62 +347,63 @@
             </z-row>
         </z-container-->
 
+            <!----------------------------------------------------------------------->
+            <!--- End Component  --->
+            <!----------------------------------------------------------------------->
 
+            <br />
 
+            <!----------------------------------------------------------------------->
+            <!--- 2nd row text/img  --->
+            <!----------------------------------------------------------------------->
+
+            <!----------------------------------------------------------------------->
+            <!--- Zen Test --->
+            <!----------------------------------------------------------------------->
+
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
+                    </z-col>
+                </z-row>
+
+                <z-row>
+                    <z-col class="pt-0">
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
         <!----------------------------------------------------------------------->
-        <!--- End Component  --->
+        <!--- Footer  --->
         <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-        <br>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-        <!----------------------------------------------------------------------->
-        <!--- 2nd row text/img  --->
-        <!----------------------------------------------------------------------->
-
-
-
-        <!----------------------------------------------------------------------->
-        <!--- Zen Test --->
-        <!----------------------------------------------------------------------->
-
- <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <hr>
-                        <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                        <p> So you can be assured it "just works". Try it out below. </p>
-                    </div>
-                </z-col>
-            </z-row>
-
-            <z-row>
-                <z-col class="pt-0">
-                    <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

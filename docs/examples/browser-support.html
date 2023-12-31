@@ -1,137 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-<main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <section>
+                            <h1 class="headline">Browser and Device Compatibility</h1>
+                            <p>
+                                zenCSS is designed for optimal performance across a broad range of
+                                modern browsers and devices, ensuring a seamless experience with
+                                some minor variations due to browser-specific behaviors.
+                            </p>
+                            <!-- Compatibility Table -->
+                          
+                            <h3>Modern Browser Support</h3>
+                            <p> We focus on  </p>
+                                
+                                <ul>
+                                    <li><b>0.5%</b>: Browsers used by over 0.5% of global users.</li>
+                                    <li><b>last 2 versions</b>: The last 2 versions for each major browser.</li>
+                                    <li><b>Firefox ESR</b>: The latest Firefox Extended Support Release.</li>
+                                    <li><b>not dead</b>: Browsers that are not officially dead (i.e., they have been updated in the last 24 months).</li>
+                                </ul>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+                           
+                                <p>While not designed for legacy browsers like Internet Explorer, zenCSS will still work in some cases.
+                                </p>
 
+                                <table class="responsive-table zebra">
+                                    <thead>
+                                        <tr>
+                                            <th>Platform</th>
+                                            <th>Browser</th>
+                                            <th>Support Level</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Operating System">Mac</td>
+                                            <td data-label="Supported Browsers">
+                                                Chrome, Firefox, Safari
+                                            </td>
+                                            <td data-label="Support Level">
+                                                Last 2 versions Supported
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Operating System">Windows</td>
+                                            <td data-label="Supported Browsers">
+                                                Chrome, Firefox, Edge
+                                            </td>
+                                            <td data-label="Support Level">
+                                                Last 2 versions Supported
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Platform">iOS</td>
+                                            <td data-label="Browser">Safari</td>
+                                            <td data-label="Support Level">
+                                                Last 2 versions Supported
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Platform">Android</td>
+                                            <td data-label="Browser">Chrome, Firefox</td>
+                                            <td data-label="Support Level">
+                                                Last 2 versions Supported
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-<z-container>
-    <z-row>
-        <z-col>
+                            <h3>Mobile Responsiveness</h3>
+                            <p>
+                                zenCSS employs a mobile-optimized design, supporting Chrome for
+                                Android, Safari on iOS, Samsung Internet, and Edge on mobile
+                                devices. Proxy browsers may not be fully supported.
+                            </p>
 
-<section>
-    <h1 class="headline">Browser and Device Compatibility</h1>
-    <p>zenCSS is designed for optimal performance across a broad range of modern browsers and devices, ensuring a seamless experience with some minor variations due to browser-specific behaviors.</p>
-      <!-- Compatibility Table -->
-      <table class="responsive-table zebra">
-        <thead>
-            <tr>
-                <th>Platform</th>
-                <th>Browser</th>
-                <th>Support Level</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="Operating System">Mac</td>
-                <td data-label="Supported Browsers">Chrome, Firefox, Safari</td>
-                <td data-label="Support Level">Last 3 versions Supported</td>
+                            <h3>Desktop Browsers</h3>
+                            <p>
+                                For desktop environments, the latest stable releases of Chrome,
+                                Firefox, Safari, and Edge are supported. Community feedback is
+                                welcome to improve compatibility.
+                            </p>
+                        </section>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-            </tr>
-            <tr>
-                <td data-label="Operating System">Windows</td>
-                <td data-label="Supported Browsers">Chrome, Firefox, Edge</td>
-                <td data-label="Support Level">Last 3 versions Supported</td>
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-            </tr>
-            <tr>
-                <td data-label="Platform">iOS</td>
-                <td data-label="Browser">Safari</td>
-                <td data-label="Support Level">Last 3 versions Supported</td>
-            </tr>
-            <tr>
-                <td data-label="Platform">Android</td>
-                <td data-label="Browser">Chrome, Firefox</td>
-                <td data-label="Support Level">Last 3 versions Supported</td>
-            </tr>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center up-20">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        </tbody>
-    </table>
-    <h3>Modern Browser Support</h3>
-    <p>We focus on the latest versions of Chrome, Firefox, Safari, and Edge for the best experience. While not designed for legacy browsers like Internet Explorer, zenCSS may still work in some cases.</p>
-  
-    <h3>Mobile Responsiveness</h3>
-    <p>zenCSS employs a mobile-optimized design, supporting Chrome for Android, Safari on iOS, Samsung Internet, and Edge on mobile devices. Proxy browsers may not be fully supported.</p>
-  
-    <h3>Desktop Browsers</h3>
-    <p>For desktop environments, the latest stable releases of Chrome, Firefox, Safari, and Edge are supported. Community feedback is welcome to improve compatibility.</p>
-  
+            <z-container>
+                <z-row class="up-40">
+                    <z-col>
+                        <div class="center">
+                            <button
+                                id="toggleButton"
+                                class="btn-md"
+                                data-unread="1"
+                                data-animate="true"
+                            >
+                                Test
+                            </button>
+                            <button id="toggleDarkMode" class="btn-md">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-  </section>
-        </z-col>
-    </z-row>
-</z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-    <z-container>
-        <z-row >
-            <z-col>
-                <div class="center up-20">
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-    <z-container>
-        <z-row class="up-40">
-            <z-col>
-                <div class="center">
-
-                        <button id="toggleButton" class="btn-md" data-unread="1" data-animate="true">Test</button>
-                        <button id="toggleDarkMode" class="btn-md">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>
