@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="../help-desk/features.html">Features</a>
                 <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
                 <a href="../examples/zentax.html">Intro to Zentax</a>     
+                <a href="../help-desk/contributing.html">Contributing</a>     
                 <a href="../examples/about.html">About</a>     
 
 </div></div>
