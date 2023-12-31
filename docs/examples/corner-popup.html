@@ -1,111 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
- <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-<body class="zen">
-
-<main>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container class="mb-0">
+                <z-row>
+                    <z-col class="pb-0">
+                        <div class="center">
+                            <h1 class="headline">Corner Popup</h1>
+                            <p>
+                                A small, unobtrusive popup that appears in the corner of the screen
+                                with an optional message notofication.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-
-
-        <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container class="mb-0">
-        <z-row>
-            <z-col class="pb-0">
-                <div class="center">
-                    <h1 class="headline"> Corner Popup</h1>
-                    <p>A small, unobtrusive popup that appears in the corner of the screen with an optional message notofication.  </p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <p class="center">Click the button on the bottom right of your screen to open the popup. </p>
-                <p class="center">To add the message notification: Use  data-unread="1" on the button. (values are 1, 2 or 3) </p>
-                <p class="center">To add the notification bounce animation, add data-animate="true" to the button</p>
-                <p class="center">The notification alert will be hidden for 24 hours upon clicking the button</p>
-            </z-col>
-        </z-row>
-    </z-container>
-
-
-    <z-container>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="corner-popup">
-                    <button class="btn-circle"  data-unread="1" data-animate="true"><i class="zenicon-local-offer text-lg"></i></button>
-                    <div class="hidden">
-                        <h5>Pop Up Sale</h5>
-                        <p>Lorem ipsum, dolor sit amet consetur adipisicing elit. Incidunt consectetur. </div>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <p class="center">
+                            Click the button on the bottom right of your screen to open the popup.
                         </p>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+                        <p class="center">
+                            To add the message notification: Use data-unread="1" on the button.
+                            (values are 1, 2 or 3)
+                        </p>
+                        <p class="center">
+                            To add the notification bounce animation, add data-animate="true" to the
+                            button
+                        </p>
+                        <p class="center">
+                            The notification alert will be hidden for 24 hours upon clicking the
+                            button
+                        </p>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="corner-popup">
+                            <button class="btn-circle" data-unread="1" data-animate="true">
+                                <i class="zenicon-local-offer text-lg"></i>
+                            </button>
+                            <div class="hidden">
+                                <h5>Pop Up Sale</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consetur adipisicing elit. Incidunt
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <z-container>
-        <z-row>
-            <z-col class="h-500">
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="corner-popup"&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="h-500">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="corner-popup"&gt;
     &lt;button class="btn-circle" data-unread="1" data-animate="true"&gt;&lt;i class="zenicon-local-offer text-lg"&gt;&lt;/i&gt;&lt;/button&gt;
     &lt;div class="hidden"&gt;
         &lt;h5&gt;Pop Up Sale&lt;/h5&gt;
         &lt;p&gt;Lorem ipsum, dolor sit amet consetur adipisicing elit. Incidunt consectetur.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
 
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-</footer>
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

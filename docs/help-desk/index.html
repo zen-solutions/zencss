@@ -1,182 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/docs-icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/docs-icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
 
-        <div id="nav-placeholder"></div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-    </header>
+            <div id="nav-placeholder"></div>
+        </header>
 
-
-    <main>
-
-
-        <!----------------------------------------------------------------------->
-        <!--- Page Title  --->
-        <!----------------------------------------------------------------------->
-        <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
-            <z-container>
-                    <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="">
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+                <z-container>
+                    <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="" />
                     <z-row>
-                        <z-col class="card center">       
-                            <i class="zenicon-list-alt  text-xl"></i>
-
-                                     <h1 class="headline">Quick-Start Guide</h1>
-                                    <p class="lead">Begin your journey with zenCSS </p>
-                                </p>
-        
-                        </z-col>
+                        <z-col class="card center">
+                            <i class="zenicon-list-alt text-xl"></i>
+                            <h1 class="headline">Quick-Start Guide</h1>
+                            <p class="lead">Begin your journey with zenCSS</p></z-col
+                        >
                     </z-row>
                 </z-container>
             </z-container-fluid>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component  --->
+            <!----------------------------------------------------------------------->
 
-        <!----------------------------------------------------------------------->
-        <!--- Component  --->
-        <!----------------------------------------------------------------------->
-
-        <z-container>
-
-            <z-row class="pt-0">
-             <z-col class="card  bg-primary-lightest br-sm theme-primary feature"> 
+            <z-container>
+                <z-row class="pt-0">
+                    <z-col class="card bg-primary-lightest br-sm theme-primary feature">
                         <i class="zenicon-build-circle text-lg"></i>
-                    <div class="flex-bottom card">
-                        <h2 class="h4">How to install zenCSS</h2>
-                        <p>Integrate zenCSS into your workflow in minutes with our simple setup</p>
-                        <a href="installation.html">Get Started <i class="zenicon-east text-xs"></i>
-                    </div></a>
-                </z-col>
+                        <div class="flex-bottom card">
+                            <h2 class="h4">How to install zenCSS</h2>
+                            <p>
+                                Integrate zenCSS into your workflow in minutes with our simple setup
+                            </p>
+                            <a href="installation.html"
+                                >Get Started <i class="zenicon-east text-xs"></i
+                            ></a>
+                        </div>
+                    </z-col>
 
-                <z-col class="card bg-primary-lightest br-sm theme-primary">
-                    <i class="zenicon-info-1 text-lg"></i>
-                    <div class="flex-bottom card">
-                        <h3 class="h4">Basic Overview </h3>
-                        <p>New to zenCSS? Start here. Learn the core concepts and how to get started.</p>
-                        <a href="what-is-zencss.html">Learn More <i class="zenicon-east text-xs"></i></a>
-                    </div>
-                </z-col>
-            </z-row>
-        
-        </z-container>
+                    <z-col class="card bg-primary-lightest br-sm theme-primary">
+                        <i class="zenicon-info-1 text-lg"></i>
+                        <div class="flex-bottom card">
+                            <h3 class="h4">Basic Overview</h3>
+                            <p>
+                                New to zenCSS? Start here. Learn the core concepts and how to get
+                                started.
+                            </p>
+                            <a href="what-is-zencss.html"
+                                >Learn More <i class="zenicon-east text-xs"></i
+                            ></a>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <z-container>
+            <z-container>
+                <z-row>
+                    <z-col class="card p-0 theme-light mb-0">
+                        <z-container>
+                            <z-row>
+                                <z-col class="pt-4 pl-4">
+                                    <h4 class="h3">
+                                        <i class="zenicon-ind-in-page text-md text-cta down-1"></i>
+                                        Explore our Component Playground
+                                    </h4>
+                                    <p class="down-10 right-3">
+                                        Gain a deeper understanding of our site sections and
+                                        components.
+                                    </p>
+                                </z-col>
+                            </z-row>
 
-            <z-row>
-                <z-col class="card p-0 theme-light mb-0">
-                    
-                    <z-container>
-                        <z-row>
-                            <z-col class="pt-4 pl-4">
-                                <h4 class="h3"><i class="zenicon-ind-in-page text-md  text-cta down-1"></i> Explore our Component Playground</h4>
-                                <p class="down-10 right-3">Gain a deeper understanding of our site sections and components.</p>
+                            <z-row class="gap-1">
+                                <z-col class="card border-right">
+                                    <h4>Step 1</h4>
+                                    <p class="text-cta-dual text-bold up-5">
+                                        View Sections & Components
+                                    </p>
+                                    <p class="up-10">
+                                        Each site section and component is presented live on the
+                                        page, allowing you to examine them and explore the
+                                        functionality.
+                                    </p>
+                                </z-col>
+                                <z-col class="card border-right">
+                                    <h4>Step 2</h4>
+                                    <p class="text-cta-dual text-bold up-5">Copy the Code</p>
+                                    <p class="up-10">
+                                        Access the "Code Example" tab to view the component's code
+                                        and select the part you need, or quickly copy the whole
+                                        snippet.
+                                    </p>
+                                </z-col>
+                                <z-col class="card">
+                                    <h4>Step 3</h4>
+                                    <p class="text-cta-dual text-bold up-5">Paste & Customize</p>
+                                    <p class="up-10">
+                                        All components are constructed using the zenCSS library,
+                                        making it effortless to mix, match and personalize them.
+                                    </p>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                    <z-container class="mobile:two-up gap-4">
+                        <z-row class="mt-0 mb-0 pb-0 pt-0">
+                            <z-col class="card br-sm theme-light">
+                                <i class="zenicon-ind-in-page text-lg text-cta"></i>
+                                <div class="flex-bottom card">
+                                    <h4>Site Sections</h4>
+                                    <p>Individual sections of your webpage</p>
+                                    <a href="site-sections.html"
+                                        >View Sections <i class="zenicon-east text-xs"></i
+                                    ></a>
+                                </div>
                             </z-col>
                         </z-row>
 
-                        <z-row class="gap-1">
-                            <z-col class="card border-right">
-                                <h4>Step 1</h4>
-                                <p class="text-cta-dual text-bold up-5">View Sections & Components</p>
-                                <p class=" up-10">Each site section and component is presented live on the page, allowing you to examine them and explore the functionality.</p>
-                            </z-col>
-                            <z-col class="card border-right">
-
-                                <h4>Step 2</h4>
-                                <p class="text-cta-dual text-bold up-5">Copy the Code</p>
-                                <p class=" up-10">Access the "Code Example" tab to view the component's code and select the part you need, or quickly copy the whole snippet.</p>
-                            </z-col>
-                            <z-col class="card">
-                                <h4>Step 3</h4>
-                                <p class="text-cta-dual text-bold up-5">Paste & Customize </p>
-                                <p class="up-10">All components are constructed using the zenCSS library, making it effortless to mix, match and personalize them.</p>
+                        <z-row class="mt-0 pt-0 pb-0">
+                            <z-col class="card br-sm theme-light">
+                                <i class="zenicon-ind-in-page text-lg text-cta"></i>
+                                <div class="flex-bottom card">
+                                    <h4>Components</h4>
+                                    <p>Functional elements to build out site sections</p>
+                                    <a href="site-parts.html"
+                                        >Component Demos <i class="zenicon-east text-xs"></i
+                                    ></a>
+                                </div>
                             </z-col>
                         </z-row>
                     </z-container>
-                </z-col>
-                        <z-container class="mobile:two-up gap-4">
+                </z-row>
+            </z-container>
 
-                                <z-row class="mt-0 mb-0 pb-0 pt-0">
-                                    <z-col class="card  br-sm theme-light">
-                                        <i class="zenicon-ind-in-page text-lg  text-cta"></i>
-                                        <div class="flex-bottom card">
-                                            <h4>Site Sections</h4>
-                                            <p>Individual sections of your webpage</p>
-                                            <a href="site-sections.html">View Sections <i class="zenicon-east text-xs"></i>
-                                        </div></a>
-                                    </z-col>
-                                </z-row>
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-                                <z-row class="mt-0 pt-0 pb-0">
-                                    <z-col class="card br-sm theme-light">
-                                        <i class="zenicon-ind-in-page text-lg  text-cta"></i>
-                                        <div class="flex-bottom card">
-                                            <h4> Components </h4>
-                                            <p>Functional elements to build out site sections</p>
-                                            <a href="site-parts.html">Component Demos <i class="zenicon-east text-xs"></i></a>
-                                        </div>
-                                    </z-col>
-                                </z-row>
+            <z-container class="mb-3">
+                <z-row>
+                    <z-col class="card theme-primary shadow-2 br-sm">
+                        <i class="zenicon-bookmarks text-lg"></i>
 
-                        </z-container>
-            </z-row>
-        </z-container>
-
+                        <h3>Features</h3>
+                        <p>Learn zenCSS essentials</p>
+                        <a href="features.html" class="btn btn-md">Dive In</a>
+                    </z-col>
+                    <z-col class="card theme-primary shadow-2 br-sm">
+                        <i class="zenicon-highlight-alt text-lg"></i>
+                        <h3>Utilities</h3>
+                        <p>150+ modifier classes to style sections and components</p>
+                        <a href="utilities.html" class="btn btn-md">Learn More</a>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
         <!----------------------------------------------------------------------->
-        <!--- Component --->
+        <!--- Footer  --->
         <!----------------------------------------------------------------------->
+        <footer class="zen">
+            <p class="center smaller">&copy; 2023. Built using zenCSS.</p>
+        </footer>
 
-         
+        <script src="../../dist/zencss.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
 
-                <z-container class="mb-3">
-                    <z-row>
-                        <z-col class="card theme-primary shadow-2 br-sm">
-                            <i class="zenicon-bookmarks text-lg"></i>
-
-
-                            <h3>Features</h3>
-                            <p>Learn zenCSS essentials</p>
-                            <a href="features.html" class="btn btn-md">Dive In</a>
-                        </z-col>
-                        <z-col class="card theme-primary shadow-2 br-sm">
-                            <i class="zenicon-highlight-alt  text-lg"></i>
-                            <h3>Utilities</h3>
-                            <p>150+ modifier classes to style sections and components</p>
-                            <a href="utilities.html" class="btn btn-md">Learn More</a>
-                        </z-col>
-                    </z-row>
-
-                </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer class="zen">
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

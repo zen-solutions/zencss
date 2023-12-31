@@ -1,162 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
+            <div id="nav-placeholder"></div>
+        </header>
 
-    </header>
-   
-<main id="main-content">
-
-
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Multi-Step Wizard</h1>
-                    <p>A multi-step interface for guiding users through a process or workflow.
-                    </p>
-                    <p>Here's  an example "pricing calculator" that serves to collect user feedback and contact information.</p>
-                    <p> Note, the form fields are inactive and for illustrative purposes only. </p>
-
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <!----------------------------------------------------------------------->
-    <!---  Component  --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-                <z-col class=" narrow-xl">
-                    <div class="mswizard">
-                        <!-- Progress Bar -->
-                        <div class="step-info">Step <span id="current-step"><!--added dynamically--></span> of <span id="total-steps"><!--added dynamically--></span></div>
-                        <!-- Progress Bar -->
-                        <div class="progress-bar-container">
-                            <progress class="mswizard-progress" value="0" max="100"></progress>
-                            <div class="progress-percentage">0%</div>
-                        </div>
-                        <z-container>
-                            <z-row class="pb-0 down-5">
-                                <z-col class="bg-cta center" >
-                                   <h2> Instant Price Calculator</h2>
-                                    <p>Calculate your widget price <strong>in less than 60 seconds.</strong></p>
-
-                                </z-col>
-                            </z-row>
-
-                        </z-container>
-                        <div class="mswizard-step center narrow-xl theme-light mt-0 pt-5 pb-5 h-300" id="step-1">
-                            <p>Where is your business located? <span class="text-red">*</span></p>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Multi-Step Wizard</h1>
                             <p>
-                                <label>   
-                                  <select>
-                                    <optgroup label="Choose Location">
-                                      <option>United States</option>
-                                      <option>Canada</option>
-                                      <option>Other</option>
-                                    </optgroup>
-                                  </select>
-                                </label>
-                              </p>
-
-                        </div>
-
-
-
-                        <div class="mswizard-step center theme-light narrow-xl  mt-0 pt-5 pb-5 h-300" id="step-2">
-                            <p>Do you currently have a widget? <span class="text-red">*</span></p>
+                                A multi-step interface for guiding users through a process or
+                                workflow.
+                            </p>
                             <p>
-                             
-                            
-                                    <p>Yes:  <input type="radio"></p>
-                                    <p>&nbsp;No:  <input type="radio"></p>
+                                Here's an example "pricing calculator" that serves to collect user
+                                feedback and contact information.
+                            </p>
+                            <p>
+                                Note, the form fields are inactive and for illustrative purposes
+                                only.
+                            </p>
 
-                                
-                              </p>
-
+                            <hr />
                         </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                        <div class="mswizard-step center theme-light narrow-xl  mt-0 pt-5 pb-5 h-300" id="step-3">
-                            <p>How many widgets do you need? <span class="text-red">*</span></p>
-                           
-                                <p>&nbsp; > 10:  <input type="radio"></p>
-                                <p>&nbsp; &nbsp;10+:  <input type="radio"></p>
-                           
+            <!----------------------------------------------------------------------->
+            <!---  Component  --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col class="narrow-xl">
+                        <div class="mswizard">
+                            <!-- Progress Bar -->
+                            <div class="step-info">
+                                Step <span id="current-step"><!--added dynamically--></span> of
+                                <span id="total-steps"><!--added dynamically--></span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="progress-bar-container">
+                                <progress class="mswizard-progress" value="0" max="100"></progress>
+                                <div class="progress-percentage">0%</div>
+                            </div>
+                            <z-container>
+                                <z-row class="pb-0 down-5">
+                                    <z-col class="bg-cta center">
+                                        <h2>Instant Price Calculator</h2>
+                                        <p>
+                                            Calculate your widget price
+                                            <strong>in less than 60 seconds.</strong>
+                                        </p>
+                                    </z-col>
+                                </z-row>
+                            </z-container>
+                            <div
+                                class="mswizard-step center narrow-xl theme-light mt-0 pt-5 pb-5 h-300"
+                                id="step-1"
+                            >
+                                <p>
+                                    Where is your business located? <span class="text-red">*</span>
+                                </p>
+                                <p>
+                                    <label>
+                                        <select>
+                                            <optgroup label="Choose Location">
+                                                <option>United States</option>
+                                                <option>Canada</option>
+                                                <option>Other</option>
+                                            </optgroup>
+                                        </select>
+                                    </label>
+                                </p>
+                            </div>
 
-                           
-                           
+                            <div
+                                class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5 h-300"
+                                id="step-2"
+                            >
+                                <p>
+                                    Do you currently have a widget? <span class="text-red">*</span>
+                                </p>
+                                <p>Yes: <input type="radio" /></p>
+                                <p>&nbsp;No: <input type="radio" /></p>
+                            </div>
 
+                            <div
+                                class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5 h-300"
+                                id="step-3"
+                            >
+                                <p>How many widgets do you need? <span class="text-red">*</span></p>
+                                <p>&nbsp; > 10: <input type="radio" /></p>
+                                <p>&nbsp; &nbsp;10+: <input type="radio" /></p>
+                            </div>
+
+                            <div
+                                class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5"
+                                id="step-4"
+                            >
+                                <p>
+                                    What's the best email to contact you?
+                                    <span class="text-red">*</span>
+                                </p>
+
+                                <p class="text-left narrow-xl">
+                                    <label class="text-small">
+                                        Name<input type="text" class="mb-3"
+                                    /></label>
+                                    <label class="text-small"> Email<input type="email" /></label>
+                                </p>
+
+                                <div class="mb-3">
+                                    <strong class="text-small">
+                                        A valid email address is required to receive your price
+                                        quote via email. </strong
+                                    ><br />
+                                    <small>
+                                        <em
+                                            >We respect your privacy and are not actually collecting
+                                            your email address.
+                                        </em></small
+                                    >
+                                </div>
+                            </div>
+
+                            <div
+                                class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5 h-300"
+                                id="step-5"
+                            >
+                                <p><strong>Your Widget Pricing</strong></p>
+                                <p>Your widget is approximately $1,000 - $3,000.</p>
+                                <p class="mb-0">
+                                    Further call to action/upsell/other messaging goes here.
+                                </p>
+                            </div>
                         </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                        <div class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5" id="step-4">
-                            <p>What's the best email to contact you? <span class="text-red">*</span></p>
+            <!----------------------------------------------------------------------->
+            <!--- Code Block  --->
+            <!----------------------------------------------------------------------->
 
-                            <p class="text-left narrow-xl">
-                            <label class="text-small"> Name<input type="text" class="mb-3"></label>  
-                            <label class="text-small"> Email<input type="email"></label>  
-                        </p>
-                        
-                        <div class="mb-3">
-                        <strong class="text-small">
-                            A valid email address is required to receive your price quote via email.
-                        </strong><br>
-                       <small > <em>We respect your privacy and are not actually collecting your email address.
-                    </em></small>
-                </div>
-                        </div>
-
-                        <div class="mswizard-step center theme-light narrow-xl mt-0 pt-5 pb-5 h-300" id="step-5">
-                            <p><strong>Your Widget Pricing</strong></p>
-                            <p>Your widget is approximately $1,000 - $3,000.</p>
-                            <p class="mb-0"> Further call to action/upsell/other messaging goes here.</p>
-                        </div>
-                    </div>
-                    
-                </z-col>
-        </z-row>
-</z-container>
-
-    <!----------------------------------------------------------------------->
-    <!--- Code Block  --->
-    <!----------------------------------------------------------------------->
-
-<z-container>
-    <z-row>
-        <z-col>
-            <div class="accordion center">
-                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                    <pre class="copy-text square"><code class="language-html">&lt;div class="mswizard"&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="mswizard"&gt;
   &lt;div class="step-info"&gt;Step &lt;span id="current-step"&gt;&lt;!--added dynamically--&gt;&lt;/span&gt; of 
   &lt;span id="total-steps"&gt;&lt;!--added dynamically--&gt;&lt;/span&gt;&lt;/div&gt;
   &lt;div class="progress-bar-container"&gt;
@@ -179,52 +211,55 @@
     &lt;p&gt;Success content goes here&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                </div>
-            </div>
-        </z-col>
-    </z-row>
-</z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Zen Test  --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Zen Test  --->
-    <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-                <div class="center">
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-
-
-  </body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

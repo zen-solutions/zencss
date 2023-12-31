@@ -1,136 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
-    </header>
-    <main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Hero --->
+            <!----------------------------------------------------------------------->
 
+            <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+                <z-container>
+                    <img src="../../docs/images/website/smart-align.jpg" class="bg-img" alt="" />
+                    <z-row>
+                        <z-col class="card center">
+                            <img
+                                src="../../docs/images/logos/zencss/smartalign.png"
+                                class="center-me w-75"
+                                alt=""
+                            />
+                            <h1 class="headline">Smart-Align Framework</h1>
+                            <p class="lead">
+                                Dive into a world where shape and form align, and everything
+                                magically falls into place.
+                            </p>
+                        </z-col>
+                    </z-row>
+                </z-container>
+            </z-container-fluid>
 
-        <!----------------------------------------------------------------------->
-        <!--- Hero --->
-        <!----------------------------------------------------------------------->
-
-
-        <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
-            <z-container>
-                <img src="../../docs/images/website/smart-align.jpg" class="bg-img" alt="">
+            <z-container class="page-section">
                 <z-row>
-                    <z-col class="card center">
+                    <z-col>
+                        <z-container>
+                            <z-row>
+                                <z-col class="card theme-light">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        The zenCSS Smart-Align System uses a custom Flexbox grid
+                                        system to provide you with an advanced, responsive layout
+                                        solution for your web apps. Like most modern CSS frameworks'
+                                        grid systems, it is composed of three main components:
+                                    </p>
+                                </z-col>
+                            </z-row>
 
+                            <z-row>
+                                <z-col class="card theme-light">
+                                    <p class="h5">Containers</p>
+                                    <p>
+                                        The container is the outermost layer of the grid system and
+                                        serves as a nestable, responsive wrapper. Containers are the
+                                        basis for your layout.
+                                    </p>
+                                </z-col>
+                                <z-col class="card theme-light">
+                                    <p class="h5">Rows</p>
 
-                        <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-75" alt="">
-                        <h1 class="headline">Smart-Align Framework</h1>
-                        <p class="lead">Dive into a world where shape and form align, and everything magically falls into place.
+                                    <p>
+                                        Inside the container, you can add one or more rows , which
+                                        will in turn house the columns like these ones right here.
+                                    </p>
+                                </z-col>
+                                <z-col class="card theme-light feature-md">
+                                    <p class="h5">Columns</p>
+
+                                    <p>
+                                        Columns are placed inside rows and they can be customized to
+                                        display differently on different screen sizes, make use of
+                                        fluid layouts, use features and change ordering.
+                                    </p>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <h2>Experience Smart-Align</h2>
+
+                        <p>
+                            By default, in each row the Smart-Align System places four columns on
+                            desktop, two on tablet and one on mobile. You can modify this behavior,
+                            but the system is dynamic and will adjust to any amount of columns. Add
+                            or remove some columns using the buttons below, and watch as the content
+                            reflows automatically.
                         </p>
+                    </z-col>
+                </z-row>
 
+                <z-row>
+                    <z-col
+                        ><button id="addCol" class="m-0 p-0 btn-cta">
+                            <i class="zenicon-add-circle mr-1"></i> Add Column
+                        </button>
+                    </z-col>
+                    <z-col>
+                        <button id="removeCol" class="m-0 p-0 btn-cta">
+                            <i class="zenicon-do-not-disturb-on-1 mr-1"></i> Remove Column
+                        </button></z-col
+                    >
+                </z-row>
+
+                <z-row class="add-remove">
+                    <z-col class="center card theme-light">column 1</z-col>
+                    <z-col class="center card theme-light">column 2</z-col>
+                    <z-col class="center card theme-light">column 3</z-col>
+                    <z-col class="center card theme-light">column 4</z-col>
+                </z-row>
+            </z-container>
+
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <p>
+                            You may use "x-up" prefix to specify modifier classes that change the
+                            default alignment (where x is a number from two through eight). here we
+                            add the class <code>eight-up</code> to the row. We also target mobile
+                            with the <code>.mobile:two-up</code> class so devices smaller than
+                            tablet will display columns side by side.
+                        </p>
                     </z-col>
                 </z-row>
             </z-container>
-        </z-container-fluid>
+            <z-container>
+                <z-row class="eight-up mobile:two-up">
+                    <z-col class="center theme-light">1</z-col>
+                    <z-col class="center theme-light">2</z-col>
+                    <z-col class="center theme-light">3</z-col>
+                    <z-col class="center theme-light">4</z-col>
+                    <z-col class="center theme-light">5</z-col>
+                    <z-col class="center theme-light">6</z-col>
+                    <z-col class="center theme-light">7</z-col>
+                    <z-col class="center theme-light">8</z-col>
+                </z-row>
+            </z-container>
 
-
-
-        <z-container class="page-section">
-
-            <z-row>
-                <z-col>
-                    <z-container>
-                        <z-row>
-                            <z-col class="card theme-light">
-                                <h2>Overview</h2>
-                                <p>The zenCSS Smart-Align System uses a custom Flexbox grid system to provide you with an advanced, responsive layout solution for your web apps. Like most modern CSS frameworks' grid systems, it is composed of three main components:</p>
-                            </z-col>
-                        </z-row>
-
-                        <z-row>
-                            <z-col class="card theme-light">
-                                <p class="h5">Containers</p>
-                                        <p>The container is the outermost layer of the grid system and serves as a nestable, responsive wrapper. Containers are the basis for your layout. </p>
-                            </z-col>
-                            <z-col class="card theme-light">
-                                <p class="h5">Rows</p>
-
-                                <p>Inside the container, you can add one or more rows , which will in turn house the columns like these ones right here.</p>
-                    </z-col>
-                    <z-col class="card theme-light feature-md">
-                        <p class="h5">Columns</p>
-
-                        <p>Columns are placed inside rows and they can be customized to display differently on different screen sizes, make use of fluid layouts, use features and change ordering.</p>
-                  
-         
-                        </z-col>
-                        </z-row>
-
-                    </z-container>
-                </z-col>
-            </z-row>
-            <z-row>
-                <z-col>
-                    <h2>Experience Smart-Align</h2>
-
-                    <p>By default, in each row the Smart-Align System places four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the system is dynamic and will adjust to any amount of columns. Add or remove some columns using the buttons below, and watch as the content reflows automatically. </p>
-                </z-col>
-            </z-row>
-
-            <z-row>
-                <z-col><button id="addCol" class="m-0 p-0 btn-cta"><i class="zenicon-add-circle mr-1"></i> Add Column</button>
-                </z-col>
-                <z-col>
-                    <button id="removeCol" class="m-0 p-0 btn-cta"><i class="zenicon-do-not-disturb-on-1 mr-1"></i> Remove Column</button></z-col>
-            </z-row>
-
-            <z-row class="add-remove">
-                <z-col class="center card theme-light">column 1</z-col>
-                <z-col class="center card theme-light">column 2</z-col>
-                <z-col class="center card theme-light">column 3</z-col>
-                <z-col class="center card theme-light">column 4</z-col>
-
-            </z-row>
-        </z-container>
-
-        <z-container>
-            <z-row>
-                <z-col>
-                    <p>You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the class <code>eight-up</code> to the row. We also target mobile with the <code>.mobile:two-up</code> class so devices smaller than tablet will display columns side by side. </z-row> </p></z-col>
-
-            </z-row>
-        </z-container>
-        <z-container>
-            <z-row class="eight-up mobile:two-up">
-                <z-col class="center theme-light">1</z-col>
-                <z-col class="center theme-light">2</z-col>
-                <z-col class="center theme-light">3</z-col>
-                <z-col class="center theme-light ">4</z-col>
-                <z-col class="center theme-light">5</z-col>
-                <z-col class="center theme-light">6</z-col>
-                <z-col class="center theme-light">7</z-col>
-                <z-col class="center theme-light ">8</z-col>
-            </z-row>
-        </z-container>
-
-        <!-- WIP z-container class="page-section">
+            <!-- WIP z-container class="page-section">
             <z-row>
                 <z-col>
                     <p>And you can use containers in place of columns if you need more items per row. Everything will automatically align, beautifully.</p>
@@ -191,137 +220,119 @@
                     </z-container></z-col>
             </z-row>
         </z-container-->
-        <z-container>
-            <z-row>
-                <z-col class="mt-5 pt-5">
-                    <p>With 2/3 items in a row, you can "feature" them to take up more space in your design. You can also use -sm, -md, and -lg for extra emphasis. </p>
-                </z-col>
+            <z-container>
+                <z-row>
+                    <z-col class="mt-5 pt-5">
+                        <p>
+                            With 2/3 items in a row, you can "feature" them to take up more space in
+                            your design. You can also use -sm, -md, and -lg for extra emphasis.
+                        </p>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
 
-            </z-row>
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class=" theme-light">col</z-col>
-            </z-row>
+                <z-row>
+                    <z-col class="feature-lg theme-light">feature-lg</z-col>
+                    <z-col class="feature-md theme-light">feature-md</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="feature-lg theme-light">feature-lg</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="feature-md theme-light">feature-md</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="feature-sm theme-light">feature-sm</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="feature theme-light">feature</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
 
-            <z-row>
-                <z-col class="feature-lg theme-light">feature-lg</z-col>
-                <z-col class="feature-md theme-light">feature-md</z-col>
-                <z-col class=" theme-light">col</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="feature-lg theme-light">feature-lg</z-col>
-                <z-col class="theme-light">col</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="feature-md theme-light">feature-md</z-col>
-                <z-col class="theme-light">col</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="feature-sm theme-light">feature-sm</z-col>
-                <z-col class="theme-light">col</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="feature theme-light">feature</z-col>
-                <z-col class="theme-light">col</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class="theme-light">col</z-col>
-            </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="feature theme-light">feature</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="feature-sm theme-light">feature-sm</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="feature-md theme-light">feature-md</z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="theme-light">col</z-col>
+                    <z-col class="feature-lg theme-light">feature-lg</z-col>
+                </z-row>
+            </z-container>
 
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class="feature theme-light">feature</z-col>
-            </z-row>
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class="feature-sm theme-light">feature-sm</z-col>
-
-            </z-row>
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class="feature-md theme-light">feature-md</z-col>
-
-            </z-row>
-            <z-row>
-                <z-col class="theme-light">col</z-col>
-                <z-col class="feature-lg theme-light">feature-lg</z-col>
-            </z-row>
-
-
-        </z-container>
-
-
-        <!--z-container-fluid class="theme-dark mt-5">
+            <!--z-container-fluid class="theme-dark mt-5">
     <z-row>
         <z-col class="center card"><p>One more thing.. If you want to go full screen, you'd use container-fluid.  <b>Note:</b> We use a "z-" prefix for container, row and column class names.</p></z-col>
     </z-row>
 </z-container-fluid-->
 
-
-
-
-
-
-
-
-
-        <z-container>
-
-
-
-            <z-row class="mt-5">
-                <z-col>
-                    <h3 class="d-inline">HTML</h3>
-                    <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
+            <z-container>
+                <z-row class="mt-5">
+                    <z-col>
+                        <h3 class="d-inline">HTML</h3>
+                        <pre
+                            class="copy-text"
+                        ><code class="language-html">&lt;div class="z-container"&gt;
   &lt;div class="z-row"&gt;
     &lt;div class="z-col"&gt;
     ...
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                </z-col>
-                <z-col>
-                    <h3 class="d-inline">Zentax</h3> <small class="small"> <a href="zentax.html">What is zentax?</a></small>
-                    <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
+                    </z-col>
+                    <z-col>
+                        <h3 class="d-inline">Zentax</h3>
+                        <small class="small"> <a href="zentax.html">What is zentax?</a></small>
+                        <pre class="copy-text"><code class="language-html">&lt;z-container&gt;
     &lt;z-row&gt;
       &lt;z-col&gt;
       ...
       &lt;/z-col&gt;
     &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Zen Test --->
+            <!----------------------------------------------------------------------->
+        </main>
 
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-
-    <!----------------------------------------------------------------------->
-    <!--- Zen Test --->
-    <!----------------------------------------------------------------------->
-
-
-
-
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

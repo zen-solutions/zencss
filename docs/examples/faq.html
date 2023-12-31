@@ -1,95 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
+    <body class="zen">
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-<header class="header-sticky">
-    <div class="pl-2" id="header-logo">
-        <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-    </div>
+            <div id="nav-placeholder"></div>
+        </header>
 
-     <div id="nav-placeholder"></div>
-</header>
+        <!----------------------------------------------------------------------->
+        <!--- Page Title  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">FAQ</h1>
+                        <hr />
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> FAQ</h1>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+        <!----------------------------------------------------------------------->
+        <!--- Component --->
+        <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col class="center narrow-xl">
+                    <span class="label">Frequently Asked Questions</span>
+                    <h2>Everything you need to know</h2>
+                    <z-container class="text-left">
+                        <z-row>
+                            <z-col class="p-0">
+                                <div class="accordion">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item p-0">
+                                            <a
+                                                class="title accordion-toggle naked text-semibold"
+                                                aria-expanded="false"
+                                                aria-controls="content6"
+                                                ><i class="zenicon-keyboard-arrow-right down-3"></i
+                                                >How many CSS programmers does it take to change a
+                                                lightbulb?</a
+                                            >
+                                            <div
+                                                id="content6"
+                                                class="expanded-content naked"
+                                                aria-hidden="true"
+                                            >
+                                                <p class="pb-5 up-2">
+                                                    None, just add some "brightness" to the
+                                                    background color! 💀
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-0">
+                                            <a
+                                                class="title accordion-toggle naked text-semibold"
+                                                aria-expanded="false"
+                                                aria-controls="content4"
+                                                ><i class="zenicon-keyboard-arrow-right down-3"></i
+                                                >What do you call a group of CSS developers in a
+                                                room?</a
+                                            >
+                                            <div
+                                                id="content4"
+                                                class="expanded-content naked"
+                                                aria-hidden="true"
+                                            >
+                                                <p class="pb-5 up-2">
+                                                    A "div"erse assembly of "selectors"! 🤣
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-0">
+                                            <a
+                                                class="title accordion-toggle naked text-semibold"
+                                                aria-expanded="false"
+                                                aria-controls="content5"
+                                                ><i class="zenicon-keyboard-arrow-right down-3"></i
+                                                >Can CSS magically make my website compatible with
+                                                older browsers?</a
+                                            >
+                                            <div
+                                                id="content5"
+                                                class="expanded-content naked"
+                                                aria-hidden="true"
+                                            >
+                                                <p class="pb-5 up-2">
+                                                    CSS can help, but it won't turn an ancient
+                                                    browser into a modern one. Some things are best
+                                                    left to archaeologists. 🦕
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </z-col>
+                        </z-row>
+                    </z-container>
+                </z-col>
+            </z-row>
+        </z-container>
 
-
-    <z-container>
-        <z-row>
-            <z-col class="center narrow-xl">
-                <span class="label">Frequently Asked Questions</span>
-                <h2>Everything you need to know</h2>
-                <z-container class="text-left">
-                    <z-row>
-                        <z-col class="p-0">
-                            <div class="accordion">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item p-0">
-                                        <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content6"><i class="zenicon-keyboard-arrow-right down-3"></i>How many CSS programmers does it take to change a lightbulb?</a>
-                                        <div id="content6" class="expanded-content naked" aria-hidden="true">
-                                            <p class=" pb-5 up-2"> None, just add some "brightness" to the background color! 💀</p>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item p-0">
-                                        <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"><i class="zenicon-keyboard-arrow-right down-3"></i>What do you call a group of CSS developers in a room?</a>
-                                        <div id="content4" class="expanded-content naked" aria-hidden="true">
-                                            <p class=" pb-5 up-2">A "div"erse assembly of "selectors"! 🤣</p>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item p-0">
-                                        <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content5"><i class="zenicon-keyboard-arrow-right down-3"></i>Can CSS magically make my website compatible with older browsers?</a>
-                                        <div id="content5" class="expanded-content naked" aria-hidden="true">
-                                            <p class=" pb-5 up-2">CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists. 🦕</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </z-col>
-                    </z-row>
-                </z-container>
-            </z-col>
-        </z-row>
-    </z-container>
-    
-    
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="accordion center">
+                        <a
+                            href=""
+                            class="title accordion-toggle"
+                            aria-expanded="false"
+                            aria-controls="content1"
+                            ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                        >
+                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                            <pre
+                                class="copy-text square"
+                            ><code class="language-html">&lt;z-container&gt;
   &lt;z-row&gt;
     &lt;z-col class="center narrow-xl"&gt;
       &lt;span class="label"&gt;Frequently Asked Questions&lt;/span&gt;
@@ -125,49 +172,54 @@
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
+                        </div>
                     </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+        <!----------------------------------------------------------------------->
+        <!---  The Zen Test --->
+        <!----------------------------------------------------------------------->
 
-                <div class="center">
+        <z-container>
+            <z-row>
+                <z-col class="center">
+                    <div>
+                        <hr />
+                        <h3 class="h4">The Zen Test</h3>
+                        <p class="text-balance">
+                            Every component, section, and utility we ship will pass layout, color,
+                            and functional tests to ensure they perform flawlessly in today's modern
+                            browsers.
+                        </p>
+                        <p>So you can be assured it "just works". Try it out below.</p>
+                    </div>
 
+                    <div class="center">
                         <button id="toggleButton" class="btn-md m-0">Layout</button>
                         <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>
