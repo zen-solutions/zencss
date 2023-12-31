@@ -1,6 +1,6 @@
 const path = require("path");
-const TerserPlugin = require('terser-webpack-plugin');
-const Webpack = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
+const Webpack = require("webpack");
 
 // Common configuration
 const commonConfig = {

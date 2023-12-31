@@ -1,166 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Animations</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Animations</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-<main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Animation Utilities</h1>
+                            <p>
+                                The Animation Utilities in zenCSS provide a way to easily add
+                                animations to your elements. These utilities include predefined
+                                keyframes and classes for common animations such as blinking,
+                                sliding, and fading. Below is a list of the available animation
+                                utilities along with a brief explanation of each.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <!-- Slide Animations -->
+                        <section class="slide-up">
+                            <h2>Slide Animations</h2>
+                            <p>
+                                Slide animations can be applied to move elements up, down, left, or
+                                right. The corresponding classes are <code>.slide-up</code>,
+                                <code>.slide-down</code>, <code>.slide-left</code>, and
+                                <code>.slide-right</code>.
+                            </p>
+                        </section>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    
-                    <h1 class="headline"> Animation Utilities</h1>
-                    <p>
-                        The Animation Utilities in zenCSS provide a way to easily add animations to your elements. These utilities include predefined keyframes and classes for common animations such as blinking, sliding, and fading. Below is a list of the available animation utilities along with a brief explanation of each.
-                    </p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                        <!-- Fade Animations -->
+                        <section class="fade-in-2">
+                            <h3>Fade Animations</h3>
+                            <p>
+                                The fade animations create a series of classes with different
+                                animation delays. The classes range from <code>.fade-in-1</code> to
+                                <code>.fade-in-10</code>, each with increasing delay intervals.
+                            </p>
+                        </section>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+                        <!-- Button Hover Animation -->
+                        <section class="fade-in-3">
+                            <h3>Button Hover Animation</h3>
+                            <p>
+                                The <code>.btn-hover</code> class applies a slight upward
+                                translation to a button element when hovered.
+                            </p>
+                            <p><button class="btn-hover">Hover Me</button></p>
+                        </section>
+                        <!-- Blink Animation -->
+                        <section>
+                            <h3>Blink Animation</h3>
+                            <p>
+                                The <code class="blink">.blink</code> class applies a blinking
+                                animation to the element. The animation makes the element alternate
+                                between fully opaque and fully transparent.
+                            </p>
+                        </section>
 
-    <z-container>
-        <z-row>
-            <z-col >
+                        <section class="fade-in">
+                            <h3>Fade On View Animations</h3>
+                            <p>
+                                The fade on view animations create a fade in effect when the content
+                                becomes visable in the viewport. The class
+                                <code>.fade-in</code> will trigger the animation on any element.
+                            </p>
+                        </section>
 
+                        <section>
+                            <h3 class="breathe">Breathe Animations</h3>
+                            <p>
+                                The breathe animations create a expanding and contracting effect
+                                when applied to an element. The class <code>.breathe</code> will
+                                trigger the animation, as seen above or on the home page hero.
+                            </p>
+                        </section>
 
-    
-    <!-- Slide Animations -->
-    <section class="slide-up">
-        <h2>Slide Animations</h2>
-        <p>
-            Slide animations can be applied to move elements up, down, left, or right. The corresponding classes are <code>.slide-up</code>, <code>.slide-down</code>, <code>.slide-left</code>, and <code>.slide-right</code>.
-        </p>
-       
-    </section>
-    
-    <!-- Fade Animations -->
-    <section class="fade-in-2">
-        <h3>Fade Animations</h3>
-        <p>
-            The fade animations create a series of classes with different animation delays. The classes range from <code>.fade-in-1</code> to <code>.fade-in-10</code>, each with increasing delay intervals.
-        </p>
-       
-    </section>
-    
-    <!-- Button Hover Animation -->
-    <section class="fade-in-3">
-        <h3>Button Hover Animation</h3>
-        <p>
-            The <code>.btn-hover</code> class applies a slight upward translation to a button element when hovered.
-        </p>
-        <p><button class="btn-hover">Hover Me</button></p>
-      
-    </section>
-                       <!-- Blink Animation -->
-                       <section>
-                        <h3>Blink Animation</h3>
-                        <p>
-                            The <code class="blink">.blink</code> class applies a blinking animation to the element. The animation makes the element alternate between fully opaque and fully transparent.
-                        </p>
-    
-    
-                    </section>
+                        <section>
+                            <h3>Card Animations</h3>
+                            <p>
+                                The card animations provide a hover animation for cards. Use
+                                <code>card-hover</code> or <code>card-pan</code> on the column. See
+                                <a href="cards.html">Example</a>.
+                            </p>
+                        </section>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                    <section class="fade-in">
-                        <h3>Fade On View Animations</h3>
-                        <p>
-                            The fade on view animations create a fade in effect when the content becomes visable in the viewport. The class <code>.fade-in</code> will trigger the animation on any element.
-                        </p>
-                       
-                    </section>
-  
-                    <section >
-                        <h3 class="breathe">Breathe Animations</h3>
-                        <p>
-                            The breathe animations create a expanding and contracting effect when applied to an element. The class <code>.breathe</code> will trigger the animation, as seen above or on the home page hero.
-                        </p>
-                       
-                    </section>
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-                    <section >
-                        <h3>Card Animations</h3>
-                        <p>
-                            The card animations provide a hover animation for cards. Use <code>card-hover</code> or <code>card-pan</code> on the column.  See <a href="cards.html">Example</a>.
-                        </p>
-                       
-                    </section>
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-            </z-col>
-        </z-row>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-        
-    </z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-                <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

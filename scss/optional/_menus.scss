@@ -4,7 +4,7 @@
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
 
-  .nav-menu ul {
+.nav-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -24,10 +24,10 @@
     justify-content: unset;
     line-height: 1.5em;
     padding-left: 20px;
-    margin:0;
+    margin: 0;
 
-    i{
-        margin-top:3px;
+    i {
+        margin-top: 3px;
     }
 }
 
@@ -58,7 +58,7 @@
 
 .nav-menu li.active .menu-item .main-text,
 .nav-menu li.active .menu-item .sub-text {
-    color: white; 
+    color: white;
 }
 
 .nav-menu li .menu-item {
@@ -72,6 +72,5 @@
 
 .sub-text {
     font-size: 0.8em;
-    opacity:.7;
+    opacity: 0.7;
 }
- 

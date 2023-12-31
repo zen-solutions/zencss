@@ -58,7 +58,7 @@ document.querySelectorAll(".accordion-toggle").forEach((item) => {
             } else {
                 content.style.overflowY = "hidden";
             }
-        }, 500); 
+        }, 500);
     });
 });
 
@@ -88,9 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to apply data labels to a table
     function applyDataLabelsToTable(table) {
         // Get all the headers from the direct child thead of the table
-        const headers = Array.from(
-            table.querySelectorAll(":scope > thead > tr > th"),
-        ).map((th) => th.textContent.trim());
+        const headers = Array.from(table.querySelectorAll(":scope > thead > tr > th")).map((th) =>
+            th.textContent.trim(),
+        );
 
         // Iterate over each row in the direct child tbody of the table
         table.querySelectorAll(":scope > tbody > tr").forEach((row) => {
@@ -105,9 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Select all tables with class 'responsive-table' and apply data labels to each
-    document
-        .querySelectorAll(".responsive-table")
-        .forEach(applyDataLabelsToTable);
+    document.querySelectorAll(".responsive-table").forEach(applyDataLabelsToTable);
 });
 
 //-------------------------------------

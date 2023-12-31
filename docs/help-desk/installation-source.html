@@ -1,102 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <link rel="stylesheet" href="../css/documentation.css" />
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
+    <body class="zen">
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
-    <link rel="stylesheet" href="../css/documentation.css">
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-<body class="zen">
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-        </div>
+            <div id="nav-placeholder"></div>
+        </header>
 
-        <div id="nav-placeholder"></div>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
 
-    </header>
- 
+            <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
+                <z-container>
+                    <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="" />
+                    <z-row>
+                        <z-col class="card center">
+                            <h1 class="headline">Working with zenCSS Source Files</h1>
+                            <p>
+                                Get started with zenCSS, the world’s newest framework for building
+                                responsive, auto-formatting websites.
+                            </p>
+                        </z-col>
+                    </z-row>
+                </z-container>
+            </z-container-fluid>
 
-    <main id="main-content">
-
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-
-
-    <z-container-fluid class="theme-cta card hero-section m-0 mb-5">
-        <z-container>
-                <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="">
+            <z-container>
                 <z-row>
-                    <z-col class="card center">       
-                   
-                        <h1 class="headline">Working with zenCSS Source Files</h1>
-                        <p>Get started with zenCSS, the world’s newest framework for building responsive, auto-formatting websites.</p>
-                    </z-col>
-                </z-row>
-            </z-container>
-        </z-container-fluid>
+                    <z-col>
+                        <h3>Prerequisites</h3>
 
-<z-container>
-    <z-row>
-        <z-col>
-            <h3>Prerequisites</h3>
+                        <p>To work with these files, you will need the following tools:</p>
+                        <ul>
+                            <li>A SASS compiler for turning SASS into CSS.</li>
+                            <li>A JavaScript compiler for compiling our JavaScript modules.</li>
+                            <li>
+                                Autoprefixer for handling CSS vendor prefixes to ensure
+                                cross-browser compatibility.
+                            </li>
+                        </ul>
+                        <p>
+                            We'll also cover how to customize zenCSS with your brand
+                            colors/overrides. Follow the instructions below to dive in.
+                        </p>
 
+                        <p>
+                            This guide will help you set up the ZenCSS project environment on your
+                            system.
+                        </p>
 
+                        <h2>1. Clone the Repository</h2>
+                        <p>Clone the ZenCSS repository from GitHub:</p>
+                        <pre><code>git clone https://github.com/zen-solutions/zencss.git</code></pre>
+                        <p>Navigate into the cloned directory:</p>
+                        <pre><code>cd zencss</code></pre>
 
-            <p>To work with these files, you will need the following tools:</p>
-            <ul>
-                <li>A SASS compiler for turning SASS into CSS.</li>
-                <li>A JavaScript compiler for compiling our JavaScript modules.</li>
-                <li>Autoprefixer for handling CSS vendor prefixes to ensure cross-browser compatibility.</li>
-            </ul>
-            <p> We'll also cover how to customize zenCSS with your brand colors/overrides. Follow the instructions below to dive in.</p>
-            
-            <p>This guide will help you set up the ZenCSS project environment on your system.</p>
+                        <h2>2. Install Node.js</h2>
+                        <p>
+                            Ensure Node.js (version 12.0.0 or higher) is installed on your system.
+                            Download and install from
+                            <a href="https://nodejs.org/" target="_blank"
+                                >Node.js official website</a
+                            >.
+                        </p>
 
-            <h2>1. Clone the Repository</h2>
-            <p>Clone the ZenCSS repository from GitHub:</p>
-            <pre><code>git clone https://github.com/zen-solutions/zencss.git</code></pre>
-            <p>Navigate into the cloned directory:</p>
-            <pre><code>cd zencss</code></pre>
-        
-            <h2>2. Install Node.js</h2>
-            <p>Ensure Node.js (version 12.0.0 or higher) is installed on your system. Download and install from <a href="https://nodejs.org/" target="_blank">Node.js official website</a>.</p>
-        
-            <h2>3. Install Dependencies</h2>
-            <p>Install all necessary dependencies by running:</p>
-            <pre><code>npm install</code></pre>
-        
-            <h2>4. Compile SCSS to CSS</h2>
-            <p>Compile SCSS files to CSS using the build-css script:</p>
-            <pre><code>npm run build-css</code></pre>
-            <p>This compiles <code>zen.scss</code> into <code>zen.css</code> and <code>zen.min.css</code>.</p>
-        
-            <h2>5. JavaScript Compilation with Webpack</h2>
-            <p>Compile JS modules using Webpack:</p>
-            <p>Run the script with:</p>
-            <pre><code>npm run build-js</code></pre>
-            <p>This compiles <code>zencss.js</code> and <code>zencss.min.js</code>.</p>
+                        <h2>3. Install Dependencies</h2>
+                        <p>Install all necessary dependencies by running:</p>
+                        <pre><code>npm install</code></pre>
 
-            <h2>6. Using Prettier for Code Formatting</h2>
-            <p>To ensure consistent code formatting, use Prettier:</p>
-            <pre><code>npx prettier --write .</code></pre>
-            <p>This command formats your code according to the project's Prettier settings.</p>
-        
-            <h2>7. Development and Contributions</h2>
-            <p>For development, refer to the <code>README.md</code> and documentation in the <code>docs</code> folder. Contributions can be made via pull requests to the GitHub repository, adhering to the contribution guidelines.</p>
-        
-            <p><em>Note: The provided instructions assume basic familiarity with Git, Node.js, and npm.</em></p>
-        
-          
-             <!-- <section>
+                        <h2>4. Compile SCSS to CSS</h2>
+                        <p>Compile SCSS files to CSS using the build-css script:</p>
+                        <pre><code>npm run build-css</code></pre>
+                        <p>
+                            This compiles <code>zen.scss</code> into <code>zen.css</code> and
+                            <code>zen.min.css</code>.
+                        </p>
+
+                        <h2>5. JavaScript Compilation with Webpack</h2>
+                        <p>Compile JS modules using Webpack:</p>
+                        <p>Run the script with:</p>
+                        <pre><code>npm run build-js</code></pre>
+                        <p>This compiles <code>zencss.js</code> and <code>zencss.min.js</code>.</p>
+
+                        <h2>6. Using Prettier for Code Formatting</h2>
+                        <p>To ensure consistent code formatting, use Prettier:</p>
+                        <pre><code>npx prettier --write .</code></pre>
+                        <p>
+                            This command formats your code according to the project's Prettier
+                            settings.
+                        </p>
+
+                        <h2>7. Development and Contributions</h2>
+                        <p>
+                            For development, refer to the <code>README.md</code> and documentation
+                            in the <code>docs</code> folder. Contributions can be made via pull
+                            requests to the GitHub repository, adhering to the contribution
+                            guidelines.
+                        </p>
+
+                        <p>
+                            <em
+                                >Note: The provided instructions assume basic familiarity with Git,
+                                Node.js, and npm.</em
+                            >
+                        </p>
+
+                        <!-- <section>
                 <h3> Setup your SASS Compiler</h3>
                                 <p>zenCSS offers a robust way to customize your styles using SCSS, a preprocessor scripting language that is interpreted or compiled into CSS. To get started, you'll first need to set up SASS, the compiler for SCSS.</p>
                 
@@ -203,71 +231,86 @@ mode: 'development' // Change to 'production' for minified output
                     <p>Another option is <a href="https://autoprefixer.github.io/">https://autoprefixer.github.io/</a>.</p>
                 </div>
             </section> -->
-            
-        </z-col>
-    </z-row>
-</z-container>
-<hr>
- <z-container>
-     <z-row>
-         <z-col>
-            <section id="customizing-zenCSS">
-                <h3>Customizing zenCSS</h3>
-                
-                <div class="content">
-                    <p>zenCSS allows for extensive customization in two primary areas. This ensures your settings are preserved across framework updates and gives you control over foundational aspects like colors and initial variables.</p>
-                    
-                    <ol>
-                        <li>
-                            <strong>Update SCSS Core Config:</strong>
-                            Override the <code>scss/core/config.scss</code> file to define or override brand colors, universal/black and grey colors, among other settings. For example, to override user settings, modify this line:
-                            <pre class="copy-text"><code class="language-scss">// -- Optional: Add overrides for user-settings
+                    </z-col>
+                </z-row>
+            </z-container>
+            <hr />
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <section id="customizing-zenCSS">
+                            <h3>Customizing zenCSS</h3>
+
+                            <div class="content">
+                                <p>
+                                    zenCSS allows for extensive customization in two primary areas.
+                                    This ensures your settings are preserved across framework
+                                    updates and gives you control over foundational aspects like
+                                    colors and initial variables.
+                                </p>
+
+                                <ol>
+                                    <li>
+                                        <strong>Update SCSS Core Config:</strong>
+                                        Override the <code>scss/core/config.scss</code> file to
+                                        define or override brand colors, universal/black and grey
+                                        colors, among other settings. For example, to override user
+                                        settings, modify this line:
+                                        <pre
+                                            class="copy-text"
+                                        ><code class="language-scss">// -- Optional: Add overrides for user-settings
 @import "path-to-your-overrides-folder/user-settings-overrides";</code></pre>
-                            Duplicate or update user settings as needed right after this import.
-                        </li>
-                        <li>
-                            <strong>Update zen.css:</strong>
-                            In <code>zen.css</code>, add overrides as needed for initial variables that are defined earlier in the stylesheet. For instance:
-                            <pre class="copy-text"><code class="language-scss">// -- Optional: Add overrides for variables above
+                                        Duplicate or update user settings as needed right after this
+                                        import.
+                                    </li>
+                                    <li>
+                                        <strong>Update zen.css:</strong>
+                                        In <code>zen.css</code>, add overrides as needed for initial
+                                        variables that are defined earlier in the stylesheet. For
+                                        instance:
+                                        <pre
+                                            class="copy-text"
+                                        ><code class="language-scss">// -- Optional: Add overrides for variables above
 @import "path-to-your-overrides-folder/zen-variables-overrides";</code></pre>
-                        </li>
- 
+                                    </li>
+                                </ol>
 
-                    </ol>
-            
-                    <p>By following these steps, you can tailor the framework to meet your specific requirements, ensuring your changes remain intact through any updates.</p>
-                </div>
-                
-            </section>
-            
-            <section>
-                <h3>Community</h3>
-                <p>Stay up to date on the development of zenCSS and reach out to the community...</p>
-              </section>
-          
-        
-          
-              
-                <p class="mb-0">Follow <a href="https://twitter.com/tryzencss">@tryzencss</a> on Twitter for the latest updates.</p>
-              
-            
-         </z-col>
-     </z-row>
- </z-container>
+                                <p>
+                                    By following these steps, you can tailor the framework to meet
+                                    your specific requirements, ensuring your changes remain intact
+                                    through any updates.
+                                </p>
+                            </div>
+                        </section>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-</main>
-<footer class="zen">
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
-    </footer>
+                        <section>
+                            <h3>Community</h3>
+                            <p>
+                                Stay up to date on the development of zenCSS and reach out to the
+                                community...
+                            </p>
+                        </section>
 
-    <script src="../../dist/zencss.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
+                        <p class="mb-0">
+                            Follow <a href="https://twitter.com/tryzencss">@tryzencss</a> on Twitter
+                            for the latest updates.
+                        </p>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-  <script src="../js/copy.js"></script>
-</body>
+            <!----------------------------------------------------------------------->
+            <!--- Footer  --->
+            <!----------------------------------------------------------------------->
+        </main>
+        <footer class="zen">
+            <p class="center smaller">&copy; 2023. Built using zenCSS.</p>
+        </footer>
 
+        <script src="../../dist/zencss.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

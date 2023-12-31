@@ -51,9 +51,7 @@ function shouldShowModal() {
     var modalClosedTime = localStorage.getItem("modalClosed");
     if (modalClosedTime) {
         var now = new Date();
-        var daysPassed =
-            (now.getTime() - parseInt(modalClosedTime, 10)) /
-            (1000 * 3600 * 24);
+        var daysPassed = (now.getTime() - parseInt(modalClosedTime, 10)) / (1000 * 3600 * 24);
         return daysPassed >= 7;
     }
     return true;

@@ -30,8 +30,8 @@
 }
 
 form {
-    margin-top: .5em;
-    
+    margin-top: 0.5em;
+
     fieldset {
         margin-bottom: 20px;
         padding: 20px;
@@ -146,7 +146,7 @@ form input:not(:placeholder-shown) + label {
     top: 3px;
     left: 10px;
     font-size: 8px;
-   // color: #b9b9b9 !important;
+    // color: #b9b9b9 !important;
 }
 
 input[type="checkbox"],
@@ -156,21 +156,21 @@ input[type="radio"] {
     min-height: 12px;
 }
 
-
 //dropdown for MS wizard
-form select, select {
+form select,
+select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; /* Remove default arrow icon */
     border: 1px solid $border-color;
     padding: 10px 4px;
     width: 100%;
-    background-image: url('../img/icons/zenicon-arrow-down.svg'); /* Path to your custom dropdown icon */
+    background-image: url("../img/icons/zenicon-arrow-down.svg"); /* Path to your custom dropdown icon */
     background-repeat: no-repeat;
     background-position: right 10px center; /* Position for the background icon */
     background-repeat: no-repeat;
     background-position: right 7px center;
     cursor: pointer;
-    padding-right:20px;
+    padding-right: 20px;
     text-indent: 10px;
 }

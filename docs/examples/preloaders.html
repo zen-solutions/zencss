@@ -1,205 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
-    
-        <div id="nav-placeholder"></div>
-    </header>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
+
+            <div id="nav-placeholder"></div>
+        </header>
         <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Preloaders</h1>
+                            <p>
+                                A spinner and progress bars to keep users informed about application
+                                state.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline">
-                        Preloaders
-                    </h1>
-                    <p>
-                        A spinner and progress bars to keep users informed about application state.
-                    </p>
-                    <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <h2>Spinner</h2>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="card">
+                        <span aria-busy="true"
+                            >add aria-busy="true" to an element to add a spinner</span
+                        >
+                    </z-col>
+                </z-row>
+            </z-container>
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;span aria-busy="true"&gt;Loading&lt;/span&gt; </code></pre>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Progress Bar</h2>
+                    </z-col>
+                </z-row>
+                <z-row class="five-up">
+                    <z-col class="card"><progress></progress></z-col>
+                    <z-col class="card"><progress value="25" max="100"></progress></z-col>
+                    <z-col class="card"><progress value="100" max="100"></progress></z-col>
+                </z-row>
+            </z-container>
 
-    <z-container>
-        <z-row>
-            <z-col>
+            <!----------------------------------------------------------------------->
+            <!--- Code Example--->
+            <!----------------------------------------------------------------------->
 
-                <h2>Spinner</h2>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="card">
-                <span aria-busy="true">add aria-busy="true" to an element to add a spinner</span>
-            </z-col>
-        </z-row>
-    </z-container>
-    <z-container>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;span aria-busy="true"&gt;Loading&lt;/span&gt; </code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Progress Bar</h2>
-            </z-col>
-        </z-row>
-        <z-row class="five-up">
-            <z-col class="card"><progress></progress></z-col>
-            <z-col class="card"><progress value="25" max="100"></progress></z-col>
-            <z-col class="card"><progress value="100" max="100"></progress></z-col>
-        </z-row>
-    </z-container>
-
-
-
-    <!----------------------------------------------------------------------->
-    <!--- Code Example--->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-2"></i> Code Example</a>
-                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;progress&gt;&lt;/progress&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-2"></i> Code Example</a
+                            >
+                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;progress&gt;&lt;/progress&gt;
 &lt;progress value="25" max="100"&gt;&lt;/progress&gt;
 &lt;progress value="100" max="100"&gt;&lt;/progress&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Lazy Load</h1>
+                            <p>Images load as they come into view.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline">
-                        Lazy Load
-                    </h1>
-                    <p>
-                        Images load as they come into view. 
-                    </p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container class="single">
+                <z-row>
+                    <z-col>
+                        <img
+                            class="lazy-load"
+                            src="../../img/lazyload/lazyload-16x9.png"
+                            data-src="../../img/placeholder/16x9/bailey-burton.jpg"
+                            alt="description"
+                        />
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+            <!----------------------------------------------------------------------->
+            <!--- Code Example--->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content4"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content4" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html"> &lt;img class="lazy-load" src="../../img/lazyload/lazyload-16x9.png" data-src="your-image.jpg" alt="description"&gt;</code></pre>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-<z-container class="single">
-    <z-row>
-        <z-col>
-            <img class="lazy-load" src="../../img/lazyload/lazyload-16x9.png" data-src="../../img/placeholder/16x9/bailey-burton.jpg" alt="description">
-        </z-col>
-    </z-row>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center up-20">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-</z-container>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-    <!----------------------------------------------------------------------->
-    <!--- Code Example--->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content4" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html"> &lt;img class="lazy-load" src="../../img/lazyload/lazyload-16x9.png" data-src="your-image.jpg" alt="description"&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    
-
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center up-20">
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-                <div class="center">
-                    <button id="toggleButton" class="btn-md">Layout</button>
-                    <button id="toggleDarkMode" class="btn-md">Color</button>
-                    
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var resultElement = document.querySelector(
             '#result-types [data-result="' + mostChosen + '"]',
         );
-        var resultContent = resultElement
-            ? resultElement.innerHTML
-            : mostChosen;
+        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
 
         // Update the result div and make the result visible
         var resultDiv = document.getElementById("result-text");

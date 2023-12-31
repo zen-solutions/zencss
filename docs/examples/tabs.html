@@ -1,84 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <meta name="theme-color" content="#317EFB" />
 
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-   <meta name="theme-color" content="#317EFB"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+        </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-<header class="header-sticky">
-    <div class="pl-2" id="header-logo">
-        <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-    </div>
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Tabs</h1>
+                            <p>Components for organizing content in a tabbed interface.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <div id="nav-placeholder"></div>
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-</header>
-<main id="main-content">
+            <z-container class="center">
+                <z-row>
+                    <z-col>
+                        <h2>Round/Thin</h2>
+                        <p>use class <code>.tab-nav-round-thin</code></p>
+                        <div class="tab-nav-round-thin">
+                            <a class="item bg-ui-hover">item 1</a>
+                            <a class="item bg-ui-hover">item 2</a>
+                            <a class="item bg-ui-hover">item 3</a>
+                            <a class="item bg-ui-hover">item 4</a>
+                        </div>
 
-
-
-
-
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline"> Tabs </h1>
-                    <p>Components for organizing content in a tabbed interface.</p>
-                    <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
-
-<z-container class="center">
-
-        <z-row>
-            <z-col>
-                <h2>Round/Thin</h2>
-                <p>use class <code>.tab-nav-round-thin</code></p>
-                <div class="tab-nav-round-thin">
-                    <a class="item bg-ui-hover">item 1</a>
-                    <a class="item bg-ui-hover">item 2</a>
-                    <a class="item bg-ui-hover">item 3</a>
-                    <a class="item bg-ui-hover">item 4</a>
-                </div>
-
-                <div class="tab-nav-round-thin">
-                    <a class="item current">Left Item</a>
-                    <a class="item">Right Item</a>
-                </div>
-
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round-thin"&gt;
+                        <div class="tab-nav-round-thin">
+                            <a class="item current">Left Item</a>
+                            <a class="item">Right Item</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav-round-thin"&gt;
     &lt;a class="item bg-ui-hover"&gt;item 1&lt;/a&gt;
     &lt;a class="item bg-ui-hover"&gt;item 2&lt;/a&gt;
     &lt;a class="item bg-ui-hover"&gt;item 3&lt;/a&gt;
@@ -89,256 +91,307 @@
     &lt;a class="item current"&gt;Left Item&lt;/a&gt;
     &lt;a class="item"&gt;Right Item&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Thin</h2>
-                <p>use class <code>.tab-nav-thin</code></p>
-                <div class="tab-nav-thin">
-                    <a class="item">item 1</a>
-                    <a class="item">item 2</a>
-                    <a class="item current">item 3</a>
-                    <a class="item">item 4</a>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-thin"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Thin</h2>
+                        <p>use class <code>.tab-nav-thin</code></p>
+                        <div class="tab-nav-thin">
+                            <a class="item">item 1</a>
+                            <a class="item">item 2</a>
+                            <a class="item current">item 3</a>
+                            <a class="item">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav-thin"&gt;
     &lt;a class="item"&gt;item 1&lt;/a&gt;
     &lt;a class="item"&gt;item 2&lt;/a&gt;
     &lt;a class="item current"&gt;item 3&lt;/a&gt;
     &lt;a class="item"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Square</h2> 
-                <p>use class <code>.tab-nav</code></p>
-                <div class="tab-nav">
-                    <a class="item current">item 1</a>
-                    <a class="item">item 2</a>
-                    <a class="item">item 3</a>
-                    <a class="item">item 4</a>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content3" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Square</h2>
+                        <p>use class <code>.tab-nav</code></p>
+                        <div class="tab-nav">
+                            <a class="item current">item 1</a>
+                            <a class="item">item 2</a>
+                            <a class="item">item 3</a>
+                            <a class="item">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content3"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content3" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav"&gt;
     &lt;a class="item current"&gt;item 1&lt;/a&gt;
     &lt;a class="item"&gt;item 2&lt;/a&gt;
     &lt;a class="item"&gt;item 3&lt;/a&gt;
     &lt;a class="item"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Round</h2>
-                <p>use class <code>.tab-nav-round</code></p>
-                <div class="tab-nav-round">
-                    <a class="item">item 1</a>
-                    <a class="item current">item 2</a>
-                    <a class="item">item 3</a>
-                    <a class="item">item 4</a>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content4"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content4" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Round</h2>
+                        <p>use class <code>.tab-nav-round</code></p>
+                        <div class="tab-nav-round">
+                            <a class="item">item 1</a>
+                            <a class="item current">item 2</a>
+                            <a class="item">item 3</a>
+                            <a class="item">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content4"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content4" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav-round"&gt;
     &lt;a class="item"&gt;item 1&lt;/a&gt;
     &lt;a class="item current"&gt;item 2&lt;/a&gt;
     &lt;a class="item"&gt;item 3&lt;/a&gt;
     &lt;a class="item"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Themed</h2>
-                <p>Use any of our themes</p>
-                <div class="tab-nav-round">
-                    <a class="item bg-cta bg-cta-hover">item 1</a>
-                    <a class="item current bg-cta-dark bg-cta-hover">item 2</a>
-                    <a class="item bg-cta bg-cta-hover">item 3</a>
-                    <a class="item bg-cta bg-cta-hover">item 4</a>
-                </div>
-
-          
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content5" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav-round"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Themed</h2>
+                        <p>Use any of our themes</p>
+                        <div class="tab-nav-round">
+                            <a class="item bg-cta bg-cta-hover">item 1</a>
+                            <a class="item current bg-cta-dark bg-cta-hover">item 2</a>
+                            <a class="item bg-cta bg-cta-hover">item 3</a>
+                            <a class="item bg-cta bg-cta-hover">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content5"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content5" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav-round"&gt;
     &lt;a class="item bg-cta bg-cta-hover"&gt;item 1&lt;/a&gt;
     &lt;a class="item current bg-cta-dark bg-cta-hover"&gt;item 2&lt;/a&gt;
     &lt;a class="item bg-cta bg-cta-hover"&gt;item 3&lt;/a&gt;
     &lt;a class="item bg-cta bg-cta-hover"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Pills</h2> 
-                <p>use class <code>.item-minimal on the children</code></p>
-                <div class="tab-nav">
-                    <a class="item-minimal current">item 1</a>
-                    <a class="item-minimal">item 2</a>
-                    <a class="item-minimal">item 3</a>
-                    <a class="item-minimal">item 4</a>
-                </div>
-
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content6"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content6" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Pills</h2>
+                        <p>use class <code>.item-minimal on the children</code></p>
+                        <div class="tab-nav">
+                            <a class="item-minimal current">item 1</a>
+                            <a class="item-minimal">item 2</a>
+                            <a class="item-minimal">item 3</a>
+                            <a class="item-minimal">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content6"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content6" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav"&gt;
     &lt;a class="item-minimal current"&gt;item 1&lt;/a&gt;
     &lt;a class="item-minimal"&gt;item 2&lt;/a&gt;
     &lt;a class="item-minimal"&gt;item 3&lt;/a&gt;
     &lt;a class="item-minimal"&gt;item 4&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Themed Pills</h2> 
-                <p>use class <code>.item-minimal on the children</code></p>
-                <div class="tab-nav theme-cta">
-                    <a class="item-minimal current btn-cta">item 1</a>
-                    <a class="item-minimal btn-cta">item 2</a>
-                    <a class="item-minimal btn-cta">item 3</a>
-                    <a class="item-minimal btn-cta">item 4</a>
-                </div>
-    
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content7"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content7" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav theme-cta"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Themed Pills</h2>
+                        <p>use class <code>.item-minimal on the children</code></p>
+                        <div class="tab-nav theme-cta">
+                            <a class="item-minimal current btn-cta">item 1</a>
+                            <a class="item-minimal btn-cta">item 2</a>
+                            <a class="item-minimal btn-cta">item 3</a>
+                            <a class="item-minimal btn-cta">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content7"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content7" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav theme-cta"&gt;
     &lt;a class="item-minimal current btn-cta"&gt;item 1&lt;/a&gt;
     &lt;a class="item-minimal btn-cta"&gt;item 2&lt;/a&gt;
     &lt;a class="item-minimal btn-cta"&gt;item 3&lt;/a&gt;
     &lt;a class="item-minimal btn-cta"&gt;item 4&lt;/a&gt;
 &lt;/div&gt; </code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Themed Pills 2</h2> 
-                <div class="tab-nav">
-                    <a class="item-minimal current bg-cta bg-cta-hover">item 1</a>
-                    <a class="item-minimal text-cta-dual bg-cta-hover">item 2</a>
-                    <a class="item-minimal text-cta-dual bg-cta-hover">item 3</a>
-                    <a class="item-minimal text-cta-dual  bg-cta-hover">item 4</a>
-                </div>
-            </z-col>
-
-        </z-row>
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion center">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content8"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content8" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="tab-nav"&gt;
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Themed Pills 2</h2>
+                        <div class="tab-nav">
+                            <a class="item-minimal current bg-cta bg-cta-hover">item 1</a>
+                            <a class="item-minimal text-cta-dual bg-cta-hover">item 2</a>
+                            <a class="item-minimal text-cta-dual bg-cta-hover">item 3</a>
+                            <a class="item-minimal text-cta-dual bg-cta-hover">item 4</a>
+                        </div>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content8"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content8" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="tab-nav"&gt;
     &lt;a class="item-minimal current bg-cta bg-cta-hover"&gt;item 1&lt;/a&gt;
     &lt;a class="item-minimal text-cta bg-cta-hover"&gt;item 2&lt;/a&gt;
     &lt;a class="item-minimal text-cta bg-cta-hover"&gt;item 3&lt;/a&gt;
     &lt;a class="item-minimal text-cta bg-cta-hover"&gt;item 4&lt;/a&gt;
 &lt;/div&gt; </code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-          
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass alignment, styling, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass alignment,
+                                styling, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <p class="center smaller">&copy; 2023. Built using zenCSS.</p>
+        </footer>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <p class="center smaller">&copy; 2023. Built using zenCSS. </p>
-    </footer>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

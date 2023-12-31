@@ -51,20 +51,20 @@ $colors: (
 
 //line to left of content
 .left-line {
-    display: inline-block; 
-    position: relative; 
+    display: inline-block;
+    position: relative;
     padding-left: 10px;
 }
 
 .left-line::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    transform: translateX(-100%); 
+    transform: translateX(-100%);
     margin-left: -5px;
-    top:20%;
+    top: 20%;
     bottom: 0;
-    width: 5px; 
-    background-color: $cta-color; 
+    width: 5px;
+    background-color: $cta-color;
     height: 60%;
 }

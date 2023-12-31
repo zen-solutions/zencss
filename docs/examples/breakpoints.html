@@ -1,146 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-         <div id="nav-placeholder"></div>
-    </header>
-    <main>
+            <div id="nav-placeholder"></div>
+        </header>
+        <main>
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Breakpoints</h1>
+                            <p>Handling restructuring for different resolutions and devices.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline">Breakpoints</h1>
-                    <p>Handling restructuring for different resolutions and devices.</p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <section class="breakpoints-info">
+                            <section id="breakpoints">
+                                <h2 class="mt-0 pt-0">Breakpoints</h2>
+                                <p>
+                                    Breakpoints are customizable widths that determine how your
+                                    responsive layout behaves across different devices or viewport
+                                    sizes.
+                                </p>
 
-    <z-container>
-        <z-row>
+                                <h3>Core concepts</h3>
+                                <p>
+                                    Breakpoints form the foundation of responsive design, allowing
+                                    layouts to adapt at specific viewport or device sizes using CSS
+                                    media queries.
+                                </p>
 
-            <z-col >
-                <section class="breakpoints-info">
-                    <section id="breakpoints">
-                        <h2 class="mt-0 pt-0">Breakpoints</h2>
-                        <p>Breakpoints are customizable widths that determine how your responsive layout behaves across different devices or viewport sizes.</p>
-                      
-                        <h3>Core concepts</h3>
-                        <p>Breakpoints form the foundation of responsive design, allowing layouts to adapt at specific viewport or device sizes using CSS media queries.</p>
-                      
-                        <p>Embracing a desktop-first approach, the goal is to start styling for desktop screens and letting zenCSS format for tablet and mobile, improving development time, and enhancing user experience.</p>
-                      
-                        <h3>Available breakpoints</h3>
-                        <p>The framework includes default breakpoints that are used for building responsive designs. These are modifiable when using the source Sass files.</p>
-                      </section>
-                      
-                    <table class="responsive-table">
-                        <thead>
-                            <tr>
-                            <th>Breakpoint</th>
-                            <th>Dimensions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td data-label="Breakpoint">Extra small</td>
-                            <td data-label="Dimensions">&lt;576px</td>
-                            </tr>
-                            <tr>
-                            <td data-label="Breakpoint">Small</td>
-                            <td data-label="Dimensions">≥576px</td>
-                            </tr>
-                            <tr>
-                            <td data-label="Breakpoint">Medium</td>
-                            <td data-label="Dimensions">≥768px</td>
-                            </tr>
-                            <tr>
-                            <td data-label="Breakpoint">Large</td>
-                            <td data-label="Dimensions">≥992px</td>
-                            </tr>
-                            <tr>
-                            <td data-label="Breakpoint">Extra large</td>
-                            <td data-label="Dimensions">≥1200px</td>
-                            </tr>
-                            <tr>
-                            <td data-label="Breakpoint">Extra extra large</td>
-                            <td data-label="Dimensions">≥1400px</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                                <p>
+                                    Embracing a desktop-first approach, the goal is to start styling
+                                    for desktop screens and letting zenCSS format for tablet and
+                                    mobile, improving development time, and enhancing user
+                                    experience.
+                                </p>
 
-            </z-col>
-        </z-row>
-    </z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+                                <h3>Available breakpoints</h3>
+                                <p>
+                                    The framework includes default breakpoints that are used for
+                                    building responsive designs. These are modifiable when using the
+                                    source Sass files.
+                                </p>
+                            </section>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+                            <table class="responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Breakpoint</th>
+                                        <th>Dimensions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Breakpoint">Extra small</td>
+                                        <td data-label="Dimensions">&lt;576px</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Breakpoint">Small</td>
+                                        <td data-label="Dimensions">≥576px</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Breakpoint">Medium</td>
+                                        <td data-label="Dimensions">≥768px</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Breakpoint">Large</td>
+                                        <td data-label="Dimensions">≥992px</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Breakpoint">Extra large</td>
+                                        <td data-label="Dimensions">≥1200px</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Breakpoint">Extra extra large</td>
+                                        <td data-label="Dimensions">≥1400px</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-                <div class="center">
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-  <script src="../js/copy.js"></script>
-</body>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

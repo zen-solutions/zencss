@@ -39,8 +39,7 @@
 // generates x-1 - x-9 for each
 
 @for $i from 1 through 9 {
-    $value: $i *
-        1; // Multiply the loop variable by 10 to get the desired values
+    $value: $i * 1; // Multiply the loop variable by 10 to get the desired values
 
     // Generating classes for negative margin-top (moving up)
     .up-#{$value} {
@@ -66,7 +65,6 @@
         right: -#{$value}px !important;
     }
 }
-
 
 //----------------------------------------------------
 /* Width and height */
@@ -106,7 +104,6 @@ $sizes: (
 .h-full {
     height: 100% !important;
     max-height: 100% !important;
-
 }
 
 .w-full {
@@ -114,15 +111,15 @@ $sizes: (
     max-width: 100% !important;
 }
 
-.w-sm{
+.w-sm {
     width: 25% !important;
     max-width: 25% !important;
 }
-.w-md{
+.w-md {
     width: 50% !important;
     max-width: 50% !important;
 }
-.w-lg{
+.w-lg {
     width: 75% !important;
     max-width: 75% !important;
 }
@@ -137,7 +134,6 @@ $heights: 100 200 300 400 500;
         min-height: #{$height}px;
     }
 }
-
 
 //----------------------------------------------------
 //card//
@@ -201,7 +197,6 @@ $heights: 100 200 300 400 500;
     height: 100%;
     z-index: 0;
 }
-
 
 //----------------------------------------------------
 // Display values - d-block, d-flex, etc.
@@ -296,7 +291,6 @@ $d-values: (
     position: relative;
     z-index: 5;
 }
-
 
 //----------------------------------------------------
 /* Generate classes for gaps */

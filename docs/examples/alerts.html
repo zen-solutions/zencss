@@ -1,137 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS - Alerts</title>
+        <meta
+            name="description"
+            content="Learn how to create alerts in zenCSS with the alerts component documentation. "
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS - Alerts</title>
-    <meta name="description" content='Learn how to create alerts in zenCSS with the alerts component documentation. '>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <!-- <script src="../../docs/js/updateseo.js"></script> -->
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <!-- <script src="../../docs/js/updateseo.js"></script> -->
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-               <div id="nav-placeholder"></div>
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Alerts</h1>
 
-    </header>
-    <main id="main-content">
+                            <p>
+                                Provides feedback to users in the form of a brief, important
+                                message.
+                            </p>
 
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <!----------------------------------------------------------------------->
-        <!--- Page Title  --->
-        <!----------------------------------------------------------------------->
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        
-                        <h1 class="headline"> Alerts </h1>
-                        
-                        <p>Provides feedback to users in the form of a brief, important message.</p>
+            <!----------------------------------------------------------------------->
+            <!---  Component  --->
+            <!----------------------------------------------------------------------->
 
-                        <hr>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <!----------------------------------------------------------------------->
-        <!---  Component  --->
-        <!----------------------------------------------------------------------->
-
-        <z-container>
-            <z-row>
-                <z-col class="pb-0">
-                    <h2 class="pb-0 h3">General Alerts</h2>
-                </z-col>
-            </z-row>
-            <z-row>
-                <z-col>
-                    <div class="alert-primary" role="alert">
-                        <a class="close position-corner"></a>
-                       Primary (+ close example)
-                    </div>
-
-                    <div class="alert-primary-minimal" role="alert">
-                        Primary (minimal)
-                    </div>
-
-
-    
-
-                </z-col>
-
-                <z-col>
-                        <div class="alert-success" role="alert">
-                            Success
+            <z-container>
+                <z-row>
+                    <z-col class="pb-0">
+                        <h2 class="pb-0 h3">General Alerts</h2>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div class="alert-primary" role="alert">
+                            <a class="close position-corner"></a>
+                            Primary (+ close example)
                         </div>
 
-                        <div class="alert-success-minimal" role="alert">
-                            Success (minimal)
-                        </div>
+                        <div class="alert-primary-minimal" role="alert">Primary (minimal)</div>
+                    </z-col>
 
+                    <z-col>
+                        <div class="alert-success" role="alert">Success</div>
+
+                        <div class="alert-success-minimal" role="alert">Success (minimal)</div>
                     </z-col>
                     <z-col>
-                        <div class="alert-danger" role="alert">
-                            Danger
-                        </div>
-                        <div class="alert-danger-minimal" role="alert">
-                            Danger (minimal)
-                        </div>
-
+                        <div class="alert-danger" role="alert">Danger</div>
+                        <div class="alert-danger-minimal" role="alert">Danger (minimal)</div>
                     </z-col>
-            </z-row>
-            <z-row>
-                <z-col>
-                    <div class="alert-warning" role="alert">
-                       Warning
-                    </div>
-                    <div class="alert-warning-minimal" role="alert">
-                        Warning (minimal)
-                    </div>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div class="alert-warning" role="alert">Warning</div>
+                        <div class="alert-warning-minimal" role="alert">Warning (minimal)</div>
+                    </z-col>
+                    <z-col>
+                        <div class="alert-dark" role="alert">Dark</div>
+                        <div class="alert-dark-minimal" role="alert">Dark (minimal)</div>
+                    </z-col>
+                    <z-col>
+                        <div class="alert-light" role="alert">Light</div>
+                        <div class="alert-light-minimal" role="alert">Light (minimal)</div>
+                    </z-col>
+                </z-row>
 
-
-                </z-col>
-                <z-col>
-                    <div class="alert-dark" role="alert">
-                        Dark
-                    </div>
-                    <div class="alert-dark-minimal" role="alert">
-                        Dark (minimal)
-                    </div>
-                </z-col>
-                <z-col>
-                    <div class="alert-light" role="alert">
-                        Light
-                    </div>
-                    <div class="alert-light-minimal" role="alert">
-                        Light (minimal)
-                    </div>
-                </z-col>
-            </z-row>
-
-            <z-row>
-                <z-col>
-                    <z-container>
-                        <z-row>
-                            <z-col class="pl-0 pr-0">
-                                <div class="accordion">
-                                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                                    <div id="content1" class="expanded-content p-0" aria-hidden="true"><pre class="copy-text square"><code class="language-html">&lt;div class="alert-primary" role="alert"&gt;
+                <z-row>
+                    <z-col>
+                        <z-container>
+                            <z-row>
+                                <z-col class="pl-0 pr-0">
+                                    <div class="accordion">
+                                        <a
+                                            href=""
+                                            class="title accordion-toggle"
+                                            aria-expanded="false"
+                                            aria-controls="content1"
+                                            ><i class="zenicon-build-circle down-1"></i> Code
+                                            Example</a
+                                        >
+                                        <div
+                                            id="content1"
+                                            class="expanded-content p-0"
+                                            aria-hidden="true"
+                                        >
+                                            <pre
+                                                class="copy-text square"
+                                            ><code class="language-html">&lt;div class="alert-primary" role="alert"&gt;
     &lt;a class="close position-corner"&gt;&lt;/a&gt;
     primary alert—use alert-primary class
 &lt;/div&gt;
@@ -179,93 +167,102 @@
 &lt;div class="alert-light-minimal" role="alert"&gt;
     light alert
 &lt;/div&gt;</code></pre>
+                                        </div>
                                     </div>
-                                </div>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-                <hr>
-                </z-col>
-            </z-row>
-            <z-row>
-                <z-col>
-                    <h3>State Alerts</h3>
-                </z-col>
-            </z-row>
-            <z-row>
-                <z-col class="success">Success</z-col>
-<z-col class="warning">Warning</z-col>
-<z-col class="danger">Danger</z-col>
-<z-col class="notice">Notice</z-col>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                        <hr />
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <h3>State Alerts</h3>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col class="success">Success</z-col>
+                    <z-col class="warning">Warning</z-col>
+                    <z-col class="danger">Danger</z-col>
+                    <z-col class="notice">Notice</z-col>
+                </z-row>
+            </z-container>
 
-            </z-row>
+            <!----------------------------------------------------------------------->
+            <!--- Code Block  --->
+            <!----------------------------------------------------------------------->
 
-  
-        </z-container>
-
-        <!----------------------------------------------------------------------->
-        <!--- Code Block  --->
-        <!----------------------------------------------------------------------->
-
-        <z-container>
-            <z-row>
-                <z-col class="pl-0 pr-0">
-                    <div class="accordion">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="success"&gt;Success&lt;/div&gt;
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i> Code Example</a
+                            >
+                            <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                                <pre
+                                    class="copy-text square"
+                                ><code class="language-html">&lt;div class="success"&gt;Success&lt;/div&gt;
 &lt;div class="warning"&gt;Warning&lt;/div&gt;
 &lt;div class="danger"&gt;Danger&lt;/div&gt;
 &lt;div class="notice"&gt;Notice&lt;/div&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Zen Test  --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
+                    </z-col>
+                </z-row>
+
+                <z-row>
+                    <z-col class="pt-0">
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
         <!----------------------------------------------------------------------->
-        <!--- Zen Test  --->
+        <!--- Footer  --->
         <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <hr>
-                        <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                        <p> So you can be assured it "just works". Try it out below. </p>
-                    </div>
-                </z-col>
-            </z-row>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-            <z-row>
-                <z-col class="pt-0">
-                    <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
+        <script src="../js/copy.js"></script>
     </body>
-
 </html>

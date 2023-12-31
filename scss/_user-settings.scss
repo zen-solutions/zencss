@@ -13,7 +13,6 @@ $secondary-color: #0b6e09;
 $accent-color: #f7d62e;
 $cta-color: #2b66c5;
 
-
 //------------------------------------------
 //  Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
@@ -24,7 +23,6 @@ $yellow: rgb(251, 236, 67);
 $green: #48cc6b;
 $blue: #5394fc;
 $purple: #ab56f4;
-
 
 //------------------------------------------
 //  Grey Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
@@ -37,14 +35,12 @@ $grey-4: #838383;
 $grey-5: #6d6d6d;
 $grey-6: #585858;
 
-
 //------------------------------------------
 // Background colors for light and dark mode themes/buttons etc.
 //------------------------------------------
 
-$dark-mode-color: rgba(13, 17, 23, .8);
+$dark-mode-color: rgba(13, 17, 23, 0.8);
 $light-mode-color: rgba(255, 255, 255, 0.55);
-
 
 //------------------------------------------
 // Global Vars/misc - prolly some cleanup to be done here
@@ -67,7 +63,7 @@ $ui-button-size: 44px;
 $light-ui-hover-color: rgba(169, 169, 169, 0.35);
 $border-color: rgba(115, 130, 140, 0.2);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.06);
-$bg-ui-hover: hsla(0,0%,93%,0.3); // used for white bg for tabs/pagination, etc.
+$bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
 //------------------------------------------
@@ -76,10 +72,10 @@ $grey-ui-text-color: #727272;
 //------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color,2%);
-$primary-color-darker: darken($primary-color,5%);
+$primary-color-dark: darken($primary-color, 2%);
+$primary-color-darker: darken($primary-color, 5%);
 $primary-color-darkest: darken($primary-color, 8%);
-$secondary-color-dark: darken($secondary-color,2%);
+$secondary-color-dark: darken($secondary-color, 2%);
 $secondary-color-darker: darken($secondary-color, 5%);
 $secondary-color-darkest: darken($secondary-color, 8%);
 $cta-color-dark: darken($cta-color, 8%);
@@ -93,7 +89,7 @@ $accent-color-darkest: darken($accent-color, 10%);
 $primary-color-light: lighten($primary-color, 8%);
 $primary-color-lighter: lighten($primary-color, 12%);
 $primary-color-lightest: lighten($primary-color, 15%);
-$secondary-color-light: lighten($secondary-color,8%);
+$secondary-color-light: lighten($secondary-color, 8%);
 $secondary-color-lighter: lighten($secondary-color, 12%);
 $secondary-color-lightest: lighten($secondary-color, 15%);
 $cta-color-light: lighten($cta-color, 8%);
@@ -109,7 +105,7 @@ $orange-dark: darken($orange, 9%);
 $yellow-dark: darken($yellow, 9%);
 $green-dark: darken($green, 9%);
 $blue-dark: darken($blue, 9%);
-$purple-dark: darken($purple,9%);
+$purple-dark: darken($purple, 9%);
 
 $red-darker: darken($red, 7%);
 $orange-darker: darken($orange, 12%);
@@ -129,7 +125,7 @@ $purple-darkest: darken($purple, 15%);
 $red-light: lighten($red, 5%);
 $orange-light: lighten($orange, 9%);
 $yellow-light: lighten($yellow, 9%);
-$green-light: lighten($green,9%);
+$green-light: lighten($green, 9%);
 $blue-light: lighten($blue, 9%);
 $purple-light: lighten($purple, 9%);
 
@@ -188,7 +184,7 @@ $col-margin: 0.8em;
 //  Line height for base (p)
 //------------------------------------------
 
-$line-height: 1.650; 
+$line-height: 1.65;
 
 //------------------------------------------
 //  Below is experimental

@@ -12,11 +12,7 @@
 
 //vars
 
-$zen-font-family: "Inter",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
+$zen-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $zen-tablet-mobile-font-size: 14px;
 $zen-font-size: 15px;
@@ -49,8 +45,6 @@ $base-text-color: #444444;
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
-
 
     *::before,
     *::after {
@@ -127,7 +121,6 @@ $base-text-color: #444444;
             line-height: 1.4rem;
             letter-spacing: -0.2px;
         }
-
     }
 
     @media (min-width: 576px) and (max-width: 767.98px) {
@@ -206,7 +199,7 @@ $base-text-color: #444444;
     }
 
     .theme-light {
-        background: rgba(255, 255, 255, .10);
+        background: rgba(255, 255, 255, 0.1);
         color: $zen-dark-text-color;
 
         a {
@@ -215,12 +208,11 @@ $base-text-color: #444444;
 
         .btn-outline {
             color: $zen-dark-text-color;
-
         }
     }
 
     .theme-dark {
-        background: rgba(13, 17, 23, .25);
+        background: rgba(13, 17, 23, 0.25);
     }
 
     .dropdown-content {

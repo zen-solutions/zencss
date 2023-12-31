@@ -28,9 +28,9 @@
 // });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    const hamburgerButton = document.getElementById("hamburger-button-2"); 
+    const hamburgerButton = document.getElementById("hamburger-button-2");
     const closeButton = document.getElementById("close-button");
-    const nav = document.querySelector(".top-nav"); 
+    const nav = document.querySelector(".top-nav");
     const navLinks = document.querySelectorAll(".nav-link");
 
     const toggleMenu = () => {
@@ -42,8 +42,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         closeButton.addEventListener("click", toggleMenu);
 
         navLinks.forEach((link) => {
-            link.addEventListener("click", toggleMenu); 
+            link.addEventListener("click", toggleMenu);
         });
     }
 });
-

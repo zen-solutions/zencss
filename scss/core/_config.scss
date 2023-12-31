@@ -15,7 +15,6 @@ $error-color: #d33331; // used for color system not for UI -prolly wont be neede
 // -- Optional: Add overrides for user-settings
 // @import "path-to-your-overrides-folder/user-settings-overrides";
 
-
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 //  ✕ zenCSS Color Map System - Auto-WCAG Compliant color map generator
@@ -69,33 +68,24 @@ $text-default-colors: (
     $text-color: smart-text-color($color);
 
     // Lighten/darken the gradient a bit to make it more distinct
-    $gradient-end-color: if($text-color == black, lighten($color-light, 7%), darken($color-dark, 10%));
+    $gradient-end-color: if(
+        $text-color == black,
+        lighten($color-light, 7%),
+        darken($color-dark, 10%)
+    );
 
-    background: linear-gradient(
-        to bottom,
-        $color,
-        $gradient-end-color
-    ) !important;
+    background: linear-gradient(to bottom, $color, $gradient-end-color) !important;
 
     color: $text-color !important;
 }
 
-
 // Applying the mixin to each gradient class
 .bg-primary-gradient {
-    @include gradient-background(
-        $primary-color,
-        $primary-color-dark,
-        $primary-color-light
-    );
+    @include gradient-background($primary-color, $primary-color-dark, $primary-color-light);
 }
 
 .bg-secondary-gradient {
-    @include gradient-background(
-        $secondary-color,
-        $secondary-color-dark,
-        $secondary-color-light
-    );
+    @include gradient-background($secondary-color, $secondary-color-dark, $secondary-color-light);
 }
 
 .bg-cta-gradient {
@@ -103,11 +93,7 @@ $text-default-colors: (
 }
 
 .bg-accent-gradient {
-    @include gradient-background(
-        $accent-color,
-        $accent-color-dark,
-        $accent-color-light
-    );
+    @include gradient-background($accent-color, $accent-color-dark, $accent-color-light);
 }
 
 .bg-red-gradient {

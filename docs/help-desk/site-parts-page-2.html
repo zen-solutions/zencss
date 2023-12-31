@@ -1,94 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link rel="stylesheet" href="../../docs/css/docs-icons.css" />
 
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-<link rel="stylesheet" href="../../dist/icons.css">
-   <link rel="stylesheet" href="../../docs/css/documentation.css">
-   <link rel="stylesheet" href="../../docs/css/docs-icons.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo" /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
-
-    </header>
+            <div id="nav-placeholder"></div>
+        </header>
 
         <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container-fluid class="theme-cta card hero-section m-0">
+                <z-container>
+                    <img src="../../docs/images/website/components.jpg" class="bg-img" alt="" />
+                    <z-row>
+                        <z-col class="card center">
+                            <i class="zenicon-dashboard-customize text-xl"></i>
+                            <h1 class="headline">Components</h1>
+                            <p class="narrow lead center">
+                                50+ responsive components crafted with meticulous care and attention
+                                to detail.
+                            </p>
+                        </z-col>
+                    </z-row>
+                </z-container>
+            </z-container-fluid>
 
-                <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container-fluid class="theme-cta card hero-section m-0">
-        <z-container>
-            <img src="../../docs/images/website/components.jpg" class="bg-img" alt="">
-            <z-row>
-                    <z-col class="card center">       
-                   
-                        <i class="zenicon-dashboard-customize  text-xl"></i>
-                        <h1 class="headline">Components</h1>
-                        <p class="narrow lead center">50+ responsive components crafted with meticulous care and attention to detail. </p>
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
+
+            <z-container class="page-section">
+                <z-row>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>HTML Table</h5>
+                        <p>Organize data beautifully with customizable tables.</p>
+                        <a href="../../docs/examples/responsive-table.html">View&nbsp;Now</a>
                     </z-col>
-                </z-row>
-            </z-container>
-        </z-container-fluid>
 
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Icons</h5>
+                        <p>A wide range of icons to enhance user interface.</p>
+                        <a href="../../docs/examples/icons.html">View&nbsp;Now</a>
+                    </z-col>
 
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Icon Toggle</h5>
+                        <p>Interact with the icons to toggle them on and off.</p>
+                        <a href="../../docs/examples/icon-toggle.html">View&nbsp;Now</a>
+                    </z-col>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
-
-
-    <z-container class="page-section">
-        <z-row>
-
-        
-
-            <z-col class="card theme-light shadow-2">
-                <h5>HTML Table</h5>
-                <p>
-                    Organize data beautifully with customizable tables.
-                </p>
-                                 <a href="../../docs/examples/responsive-table.html">View&nbsp;Now</a>
-            </z-col>
-
-            <z-col class="card theme-light shadow-2">
-                <h5>Icons</h5>
-                <p>
-                    A wide range of icons to enhance user interface.
-                </p>
-                                 <a href="../../docs/examples/icons.html">View&nbsp;Now</a>
-            </z-col>
-
-            <z-col class="card theme-light shadow-2">
-                <h5>Icon Toggle</h5>
-                <p>
-                    Interact with the icons to toggle them on and off.
-                </p>
-                                 <a href="../../docs/examples/icon-toggle.html">View&nbsp;Now</a>
-            </z-col>
-
-            <!-- <z-col class="card theme-light shadow-2">
+                    <!-- <z-col class="card theme-light shadow-2">
                 <h5>Icon Container</h5>
                 <p>
                     Stylishly house your icons for maximum impact.
@@ -103,127 +93,113 @@
                                  <a href="../../docs/examples/image.html">View&nbsp;Now</a>
             </z-col> -->
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Image Carousel</h5>
-                <p>
-                    Showcase multiple images in a dynamic carousel.
-                </p>
-                                 <a href="../../docs/examples/image-carousel.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Image Carousel</h5>
+                        <p>Showcase multiple images in a dynamic carousel.</p>
+                        <a href="../../docs/examples/image-carousel.html">View&nbsp;Now</a>
+                    </z-col>
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Image Gallery</h5>
-                <p>
-                    Display collections elegantly with our galleries.
-                </p>
-                                 <a href="../../docs/examples/slider.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Image Gallery</h5>
+                        <p>Display collections elegantly with our galleries.</p>
+                        <a href="../../docs/examples/slider.html">View&nbsp;Now</a>
+                    </z-col>
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Labels</h5>
-                <p>
-                   Touts for your important information.
-                </p>
-                                 <a href="../../docs/examples/labels.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Labels</h5>
+                        <p>Touts for your important information.</p>
+                        <a href="../../docs/examples/labels.html">View&nbsp;Now</a>
+                    </z-col>
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Links</h5>
-                <p>
-                  Styling for links including rollovers, colors and more.
-                </p>
-                                 <a href="../../docs/examples/links.html">View&nbsp;Now</a>
-            </z-col>
-            <z-col class="card theme-light shadow-2">
-                <h5>List Groups</h5>
-                <p>
-                    Perfect for structuring content in a clear, digestible format.
-                </p>
-                                 <a href="../../docs/examples/list-group.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Links</h5>
+                        <p>Styling for links including rollovers, colors and more.</p>
+                        <a href="../../docs/examples/links.html">View&nbsp;Now</a>
+                    </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>List Groups</h5>
+                        <p>Perfect for structuring content in a clear, digestible format.</p>
+                        <a href="../../docs/examples/list-group.html">View&nbsp;Now</a>
+                    </z-col>
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Logo Bar</h5>
-                <p>
-                    Present brand identities with flair.
-                </p>
-                                 <a href="../../docs/examples/logos.html">View&nbsp;Now</a>
-            </z-col>
-            <z-col class="card theme-light shadow-2">
-                <h5>Menus</h5>
-                <p>
-                  Options for your users to choose.
-                </p>
-                                 <a href="../../docs/examples/menus.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Logo Bar</h5>
+                        <p>Present brand identities with flair.</p>
+                        <a href="../../docs/examples/logos.html">View&nbsp;Now</a>
+                    </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Menus</h5>
+                        <p>Options for your users to choose.</p>
+                        <a href="../../docs/examples/menus.html">View&nbsp;Now</a>
+                    </z-col>
 
-            <z-col class="card theme-light shadow-2">
-                <h5>Modal </h5>
-                <p>
-                    Grab attention with modal windows for important messages or content.
-                </p>
-                                 <a href="../../docs/examples/modal.html">View&nbsp;Now</a>
-            </z-col>
+                    <z-col class="card theme-light shadow-2">
+                        <h5>Modal</h5>
+                        <p>Grab attention with modal windows for important messages or content.</p>
+                        <a href="../../docs/examples/modal.html">View&nbsp;Now</a>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <!-- Pagination -->
+                        <div class="pagination-nav center-flex">
+                            <a href="site-parts.html" class="item">&laquo;</a>
+                            <a href="site-parts.html" class="item">1</a>
+                            <a href="" class="item current">2</a>
+                            <a href="site-parts-page-3.html" class="item">3</a>
+                            <a href="site-parts-page-3.html" class="item">&raquo;</a>
+                        </div></z-col
+                    >
+                </z-row>
+            </z-container>
 
-     
-        </z-row>
-        <z-row>
-            <z-col> <!-- Pagination -->
-                <div class="pagination-nav center-flex">
-                    <a href="site-parts.html" class="item">&laquo;</a>
-                    <a href="site-parts.html" class="item">1</a>
-                    <a href="" class="item current">2</a>
-                    <a href="site-parts-page-3.html" class="item">3</a>
-                    <a href="site-parts-page-3.html" class="item">&raquo;</a>
-                </div></z-col>
+            <!----------------------------------------------------------------------->
+            <!--- End Component --->
+            <!----------------------------------------------------------------------->
 
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship will pass layout,
+                                color, and functional tests to ensure they perform flawlessly in
+                                today's modern browsers.
+                            </p>
+                            <p>So you can be assured it "just works". Try it out below.</p>
+                        </div>
 
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">Layout</button>
+                            <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-        </z-row>
-    </z-container>
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-    <!----------------------------------------------------------------------->
-    <!--- End Component --->
-    <!----------------------------------------------------------------------->
+        <script src="../../dist/zencss.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
 
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
-
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
-
-                <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

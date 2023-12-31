@@ -236,13 +236,13 @@ z-col,
 
 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
     padding: 0;
     margin: 0;
     border-radius: $border-radius;
 }
 
-.image-left-fullbleed{
+.image-left-fullbleed {
     height: 100%;
     width: auto;
 }
@@ -281,7 +281,7 @@ figcaption {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-} 
+}
 
 small {
     line-height: 1.5;
@@ -326,7 +326,6 @@ input[type="submit"] {
     outline-width: 4px;
 }
 
-
 .br-sm {
     border-radius: 4px !important;
 }
@@ -356,22 +355,22 @@ input[type="submit"] {
     overflow: hidden;
 }
 
-.br-top-0{
+.br-top-0 {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
 
-.br-bottom-0{
+.br-bottom-0 {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-.br-left-0{
+.br-left-0 {
     border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
 }
 
-.br-right-0{
+.br-right-0 {
     border-bottom-right-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
@@ -385,7 +384,6 @@ input[type="submit"] {
 .circle-border {
     border-radius: 100%;
 }
-
 
 .border-0 {
     border: none !important;
@@ -733,7 +731,6 @@ If you need to override it, use:
     padding-bottom: 65px !important;
 }
 
-
 .code {
     margin-bottom: 1.5em;
 }
@@ -808,7 +805,7 @@ If you need to override it, use:
     background: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px; 
+    font-size: 16px;
     padding: 8px;
     color: $grey-3;
 }
@@ -831,32 +828,24 @@ If you need to override it, use:
 
 .overlay {
     position: absolute; /* Absolute position to overlay on top of the image */
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.7),
-        transparent
-    ); 
-    z-index: 1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
 }
-
-
 
 //lazy load take 2
 .lazy-load {
     background-color: grey;
-    width: 100%; 
-    height: auto; 
-  }
-
+    width: 100%;
+    height: auto;
+}
 
 // .hide-mobile{
 // //hide at media query for mobile. do one for tablet too
 // }
-
 
 .zen-body-bg-color {
     background: $zen-body-bg-color;
@@ -876,4 +865,3 @@ If you need to override it, use:
 // .clip-circle-left{
 //     clip-path: ellipse(44% 51% at 9% 50%);
 // }
-

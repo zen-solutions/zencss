@@ -135,7 +135,6 @@ $text-grey-dual: #5e5e5e;
     line-height: 1em;
 }
 
-
 //-----------------------------------------------------
 //breadcrumb
 //-----------------------------------------------------
@@ -388,7 +387,7 @@ $text-grey-dual: #5e5e5e;
 }
 
 .text-cta-dual {
-    color: darken($cta-color, 10%); // not smart color bc we dont know bg color. 
+    color: darken($cta-color, 10%); // not smart color bc we dont know bg color.
 }
 
 a.text-cta-dual {
