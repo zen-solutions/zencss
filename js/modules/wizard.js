@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             steps.forEach((step) => {
                 step.style.display = "none"; // Hide all steps
             });
-            document.getElementById(`step-${stepNumber}`).style.display = "block"; // Show the desired step
+            document.getElementById(`step-${stepNumber}`).style.display =
+                "block"; // Show the desired step
 
             // Update the current class on pagination
             navItems.forEach((item) => {

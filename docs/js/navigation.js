@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="../help-desk/features.html">Features</a>
                 <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
                 <a href="../examples/zentax.html">Intro to Zentax</a>     
+                <a href="../help-desk/contributing.html">Contributing</a>     
                 <a href="../examples/about.html">About</a>     
 
 </div></div>
@@ -138,10 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
                 event.stopPropagation();
                 var isCurrentDropdownOpen =
-                    link.nextElementSibling.nextElementSibling.style.display === "block";
+                    link.nextElementSibling.nextElementSibling.style.display ===
+                    "block";
                 closeAllDropdowns();
                 if (!isCurrentDropdownOpen) {
-                    toggleDropdown(link.nextElementSibling.nextElementSibling, caret);
+                    toggleDropdown(
+                        link.nextElementSibling.nextElementSibling,
+                        caret,
+                    );
                 }
             });
         });
@@ -156,7 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleDropdown(dropdownContent, caret) {
         dropdownContent.style.display =
             dropdownContent.style.display === "block" ? "none" : "block";
-        caret.style.display = caret.style.display === "block" ? "none" : "block";
+        caret.style.display =
+            caret.style.display === "block" ? "none" : "block";
     }
 
     function closeAllDropdowns() {
@@ -194,7 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var pages = Array.from(links).map((a) => a.href);
         var currentIndex = pages.findIndex((url) => url === currentUrl);
 
-        var prevNextHtml = '<z-container-fluid class="prev-next theme-light mt-5">';
+        var prevNextHtml =
+            '<z-container-fluid class="prev-next theme-light mt-5">';
         prevNextHtml +=
             '<z-row class="down-5"><z-col class="text-center"><p class="h3 p-0">You might also like..</p></z-col></z-row>';
         prevNextHtml += '<z-row class="gap-0">';

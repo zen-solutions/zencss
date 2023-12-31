@@ -1,5 +1,5 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * zenCSS v2.0.1-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
   */
@@ -63,7 +63,12 @@ $ui-button-size: 44px;
 $light-ui-hover-color: rgba(169, 169, 169, 0.35);
 $border-color: rgba(115, 130, 140, 0.2);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.06);
-$bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc.
+$bg-ui-hover: hsla(
+    0,
+    0%,
+    93%,
+    0.3
+); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
 
 //------------------------------------------

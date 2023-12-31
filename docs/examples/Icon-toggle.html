@@ -1,83 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet" />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only"
+                >Skip to main content</a
+            >
+        </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"
+                    ><img src="../../img/logo.png" alt="zenCSS logo"
+                /></a>
+            </div>
 
-<body class="zen">
-<div id="skip-navigation">
-    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-</div>
-<header class="header-sticky">
-    <div class="pl-2" id="header-logo">
-        <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
-    </div>
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">Icon Toggle</h1>
+                            <p>
+                                Combine 2 icons to toggle state. Interact with
+                                the icons below to toggle them on and off.
+                            </p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-     <div id="nav-placeholder"></div>
-</header>
-    <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
+            <z-container class="single center">
+                <z-row>
+                    <z-col>
+                        <h2>Click to toggle</h2>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <div class="icon-toggle mr-5 left-30">
+                            <i
+                                class="zenicon-favorite-border icon-off show text-sm"></i>
+                            <i class="zenicon-favorite icon-on text-sm"></i>
+                        </div>
 
-
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
-    <z-container>
-        <z-row>
-            <z-col>
-                <div class="center">
-                    <h1 class="headline">
-                        Icon Toggle
-                    </h1>
-                    <p>
-                       Combine 2 icons to toggle state. Interact with the icons below to toggle them on and off. 
-                    </p>
-                        <hr>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
-    <z-container class="single center">
-        <z-row>
-            <z-col>
-                <h2>Click to toggle</h2>
-            </z-col>
-        </z-row>
-        <z-row>
-        <z-row>
-            <z-col>
-                <div class="icon-toggle mr-5 left-30">
-                    <i class="zenicon-favorite-border icon-off show text-sm"></i>
-                    <i class="zenicon-favorite icon-on text-sm"></i>
-                </div>
-                
-                <div class="icon-toggle ml-5">
-                    <i class=" zenicon-add-circle-outline icon-off show text-sm"></i>
-                    <i class=" zenicon-add-circle icon-on text-sm"></i>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    <z-container class="center">
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;div class="icon-toggle mr-5 left-30"&gt;
+                        <div class="icon-toggle ml-5">
+                            <i
+                                class="zenicon-add-circle-outline icon-off show text-sm"></i>
+                            <i class="zenicon-add-circle icon-on text-sm"></i>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+            <z-container class="center">
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content1"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;div class="icon-toggle mr-5 left-30"&gt;
   &lt;i class="zenicon-favorite-border icon-off show text-sm"&gt;&lt;/i&gt;
   &lt;i class="zenicon-favorite icon-on text-sm"&gt;&lt;/i&gt;
 &lt;/div&gt;
@@ -86,86 +100,105 @@
   &lt;i class="zenicon-add-circle-outline icon-off show text-sm"&gt;&lt;/i&gt;
   &lt;i class="zenicon-add-circle icon-on text-sm"&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <z-container class="center">
+                <z-row>
+                    <z-col>
+                        <hr />
+                        <h2>Hover to toggle</h2>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
+                        <a class="close text-sm"></a>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Code Example--->
+            <!----------------------------------------------------------------------->
 
-    <z-container class="center">
-        <z-row>
-            <z-col>
-                <hr>
-                <h2>Hover to toggle</h2>
-            </z-col>
-        </z-row>
-        <z-row>
-            <z-col>
-                <a class="close text-sm"></a>
-            </z-col>
-        </z-row>
-    </z-container>
+            <z-container class="center">
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content2"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;a class="close text-sm"&gt;&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-   
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col class="center">
+                        <div>
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship
+                                will pass layout, color, and functional tests to
+                                ensure they perform flawlessly in today's modern
+                                browsers.
+                            </p>
+                            <p>
+                                So you can be assured it "just works". Try it
+                                out below.
+                            </p>
+                        </div>
 
-    <!----------------------------------------------------------------------->
-    <!--- Code Example--->
-    <!----------------------------------------------------------------------->
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">
+                                Layout
+                            </button>
+                            <button id="toggleDarkMode" class="btn-md m-0">
+                                Color
+                            </button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
-    <z-container class="center">
-        <z-row>
-            <z-col class="pl-0 pr-0">
-                <div class="accordion">
-                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <div id="content2" class="expanded-content p-0" aria-hidden="true">
-                        <pre class="copy-text square"><code class="language-html">&lt;a class="close text-sm"&gt;&lt;/a&gt;</code></pre>
-                    </div>
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
-    <z-container>
-        <z-row>
-            <z-col class="center">
-                <div>
-                    <hr>
-                    <h3 class="h4">The Zen Test</h3>
-                    <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>                    
-                    <p> So you can be assured it "just works". Try it out below. </p>
-                </div>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-                <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                </div>
-            </z-col>
-        </z-row>
-    </z-container>
-    </main> 
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-<script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-  <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>

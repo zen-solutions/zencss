@@ -1,5 +1,5 @@
 /*
-  * zenCSS Beta v2.0.0 (https://zencss.com/)
+  * zenCSS v2.0.1-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -31,8 +31,8 @@
         transform: translateY(-50%);
         width: 15px;
         height: 15px;
-        filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg) brightness(101%)
-            contrast(104%);
+        filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(25deg)
+            brightness(101%) contrast(104%);
     }
 
     // Override color for light alert
@@ -48,21 +48,29 @@
         border-left: 60px solid darken($background-color, 15%);
 
         &::before {
-            filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%)
-                contrast(77%);
+            filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg)
+                brightness(92%) contrast(77%);
         }
     }
 }
 
 // Apply the alert mixin to each alert class, passing the background color and icon url
 .alert-primary {
-    @include alert($blue-darkest, "../img/icons/alerts/thumbs-up-solid.svg", 60px);
+    @include alert(
+        $blue-darkest,
+        "../img/icons/alerts/thumbs-up-solid.svg",
+        60px
+    );
 }
 .alert-primary-minimal {
     @include alert($blue-darkest, "", 4px);
 }
 .alert-danger {
-    @include alert($red-darker, "../img/icons/alerts/triangle-exclamation-solid.svg", 60px);
+    @include alert(
+        $red-darker,
+        "../img/icons/alerts/triangle-exclamation-solid.svg",
+        60px
+    );
 }
 .alert-danger-minimal {
     @include alert($red-darker, "", 4px);
@@ -88,7 +96,11 @@
     @include alert(darken($yellow-light, 39%), "", 4px);
 }
 .alert-dark {
-    @include alert($dark-mode-color, "../img/icons/alerts/circle-check-regular.svg", 60px);
+    @include alert(
+        $dark-mode-color,
+        "../img/icons/alerts/circle-check-regular.svg",
+        60px
+    );
 }
 .alert-dark-minimal {
     @include alert($dark-mode-color, "", 4px);

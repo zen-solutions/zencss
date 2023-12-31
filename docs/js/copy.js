@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -35,7 +35,10 @@ preElements.forEach(function (textBox) {
                         'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
 
                     // Reset the tooltip text
-                    copyButton.setAttribute("data-tooltip", "Copy to clipboard");
+                    copyButton.setAttribute(
+                        "data-tooltip",
+                        "Copy to clipboard",
+                    );
                 }, 1500);
             })
             .catch((err) => {

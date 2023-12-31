@@ -1,5 +1,5 @@
 /*
- * zenCSS Beta v2.0.0 (https://zencss.com/)
+ * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -178,7 +178,8 @@ header {
 
 .icon-header {
     height: 20px;
-    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg) brightness(85%) contrast(91%);
+    filter: invert(81%) sepia(5%) saturate(13%) hue-rotate(315deg)
+        brightness(85%) contrast(91%);
     margin-right: 5px;
 }
 

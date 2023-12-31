@@ -1,93 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenCSS Components</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenCSS Components</title>
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="../../dist/zen.min.css" />
+        <link rel="stylesheet" href="../../dist/icons.css" />
+        <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet" />
+        <script src="../../docs/js/updateseo.js"></script>
+    </head>
 
-   <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="../../dist/zen.min.css">
-    <link rel="stylesheet" href="../../dist/icons.css">
-    <link rel="stylesheet" href="../../docs/css/documentation.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="../../docs/js/updateseo.js"></script>
-</head>
-
-<body class="zen">
-    <div id="skip-navigation">
-        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-    </div>
-    <header class="header-sticky">
-        <div class="pl-2" id="header-logo">
-            <a href="../../index.html"><img src="../../img/logo.png" alt="zenCSS logo"></a>
+    <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link sr-only"
+                >Skip to main content</a
+            >
         </div>
+        <header class="header-sticky">
+            <div class="pl-2" id="header-logo">
+                <a href="../../index.html"
+                    ><img src="../../img/logo.png" alt="zenCSS logo"
+                /></a>
+            </div>
 
-        <div id="nav-placeholder"></div>
-    </header>
-    <main id="main-content">
+            <div id="nav-placeholder"></div>
+        </header>
+        <main id="main-content">
+            <!----------------------------------------------------------------------->
+            <!--- Page Title  --->
+            <!----------------------------------------------------------------------->
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <h1 class="headline">User Forms</h1>
+                            <p>Forms designed for sign up and sign in.</p>
+                            <hr />
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!--- Component --->
+            <!----------------------------------------------------------------------->
 
+            <z-container class="single">
+                <z-row>
+                    <z-col class="align-items-center">
+                        <z-container>
+                            <z-row>
+                                <z-col>
+                                    <div
+                                        class="card form-container theme-light">
+                                        <h2 class="h5 headline center">
+                                            Sign Up for Updates
+                                        </h2>
+                                        <p class="center">
+                                            An amazing tagline goes here
+                                        </p>
+                                        <form>
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="name1"
+                                                    placeholder=" " />
+                                                <label for="name1">Name</label>
+                                            </div>
+                                            <div>
+                                                <input
+                                                    type="email"
+                                                    id="email1"
+                                                    placeholder=" " />
+                                                <label for="email1"
+                                                    >Email</label
+                                                >
+                                            </div>
+                                            <div class="mb-3">
+                                                <input
+                                                    type="tel"
+                                                    id="tel1"
+                                                    placeholder=" " />
+                                                <label for="tel1"
+                                                    >Your Phone Number</label
+                                                >
+                                            </div>
+                                            <button name="submit" type="submit">
+                                                Sign Up
+                                            </button>
+                                            <small class="form-footer mb-0"
+                                                ><a href="#">Privacy Policy</a>
+                                                and
+                                                <a href="#"
+                                                    >Terms of Service</a
+                                                ></small
+                                            >
+                                        </form>
+                                    </div>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-        <!----------------------------------------------------------------------->
-        <!--- Page Title  --->
-        <!----------------------------------------------------------------------->
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <h1 class="headline"> User Forms</h1>
-                        <p>Forms designed for sign up and sign in.</p>
-                        <hr>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <!----------------------------------------------------------------------->
-        <!--- Component --->
-        <!----------------------------------------------------------------------->
-
-        <z-container class="single">
-            <z-row>
-                <z-col class="align-items-center">
-                    <z-container>
-                        <z-row>
-                            <z-col>
-                                <div class="card form-container theme-light">
-                                    <h2 class="h5 headline center">Sign Up for Updates</h2>
-                                    <p class="center">An amazing tagline goes here</p>
-                                    <form>
-                                        <div>
-                                            <input type="text" id="name1" placeholder=" ">
-                                            <label for="name1">Name</label>
-                                        </div>
-                                        <div>
-                                            <input type="email" id="email1" placeholder=" ">
-                                            <label for="email1">Email</label>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="tel" id="tel1" placeholder=" ">
-                                            <label for="tel1">Your Phone Number</label>
-                                        </div>
-                                        <button name="submit" type="submit">Sign Up</button>
-                                        <small class="form-footer mb-0"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></small>
-                                    </form>
-                                </div>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-                </z-col>
-            </z-row>
-        </z-container>
-
-        <z-container>
-            <z-row>
-                <z-col>
-                    <div class="accordion center">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content1"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content1"
+                                class="expanded-content p-0"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
   &lt;h5 class="headline center"&gt;Sign Up for Updates&lt;/h5&gt;
   &lt;p class="center"&gt;An amazing tagline goes here&lt;/p&gt;
   &lt;form&gt;
@@ -107,51 +146,83 @@
     &lt;small class="form-footer mb-0"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="#"&gt;Terms of Service&lt;/a&gt;&lt;/small&gt;
   &lt;/form&gt;
 &lt;/div&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
-
-        <z-container class="single">
-            <z-row>
-                <z-col class="align-items-center">
-                    <hr>
-                    <z-container>
-                        <z-row>
-                            <z-col>
-                                <div class="card form-container theme-light">
-                                    <h2 class="h5 headline pb-0">Sign Into Your Account</h2>
-                                    <form>
-                                        <div>
-                                            <input type="email" id="email" placeholder=" ">
-                                            <label for="email">Email Address</label>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" id="pass" placeholder=" ">
-                                            <label for="pass">Password</label>
-                                        </div>
-                                        <button name="submit" type="submit">Sign In</button>
-                                        <small class="form-footer mb-0"><a href="#">Forgot Password?</a></a></small>
-                                    </form>
-                                </div>
-                                <small class="text-center d-block down-10">Not a member? <span class="text-cta text-semibold">Start a 14 day free trial</span></small>
-                            </z-col>
-                        </z-row>
-                    </z-container>
-
-                </z-col>
-            </z-row>
-        </z-container>
-        <z-container>
-            <z-row>
-                <z-col>
-
-                    <div class="accordion center">
-                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                        <div id="content2" class="expanded-content  full-height" aria-hidden="true">
-                            <pre class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
+            <z-container class="single">
+                <z-row>
+                    <z-col class="align-items-center">
+                        <hr />
+                        <z-container>
+                            <z-row>
+                                <z-col>
+                                    <div
+                                        class="card form-container theme-light">
+                                        <h2 class="h5 headline pb-0">
+                                            Sign Into Your Account
+                                        </h2>
+                                        <form>
+                                            <div>
+                                                <input
+                                                    type="email"
+                                                    id="email"
+                                                    placeholder=" " />
+                                                <label for="email"
+                                                    >Email Address</label
+                                                >
+                                            </div>
+                                            <div class="mb-3">
+                                                <input
+                                                    type="password"
+                                                    id="pass"
+                                                    placeholder=" " />
+                                                <label for="pass"
+                                                    >Password</label
+                                                >
+                                            </div>
+                                            <button name="submit" type="submit">
+                                                Sign In
+                                            </button>
+                                            <small class="form-footer mb-0"
+                                                ><a href="#"
+                                                    >Forgot Password?</a
+                                                ></small
+                                            >
+                                        </form>
+                                    </div>
+                                    <small class="text-center d-block down-10"
+                                        >Not a member?
+                                        <span class="text-cta text-semibold"
+                                            >Start a 14 day free trial</span
+                                        ></small
+                                    >
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="accordion center">
+                            <a
+                                href=""
+                                class="title accordion-toggle"
+                                aria-expanded="false"
+                                aria-controls="content2"
+                                ><i class="zenicon-build-circle down-1"></i>
+                                Code Example</a
+                            >
+                            <div
+                                id="content2"
+                                class="expanded-content full-height"
+                                aria-hidden="true">
+                                <pre
+                                    class="copy-text square"><code class="language-html">&lt;div class="card form-container theme-light"&gt;
     &lt;h5 class="h6 headline pb-0"&gt;Sign Into Your Account&lt;/h5&gt;
     &lt;form&gt;
       &lt;div&gt;
@@ -167,57 +238,67 @@
     &lt;/form&gt;
   &lt;/div&gt;
   &lt;small class="text-center d-block down-10"&gt;Not a member? &lt;span class="text-cta text-semibold"&gt;Start a 14 day free trial&lt;/span&gt;&lt;/small&gt;</code></pre>
+                            </div>
                         </div>
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
 
+            <!----------------------------------------------------------------------->
+            <!---  The Zen Test --->
+            <!----------------------------------------------------------------------->
 
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <div class="center">
+                            <hr />
+                            <h3 class="h4">The Zen Test</h3>
+                            <p class="text-balance">
+                                Every component, section, and utility we ship
+                                will pass layout, color, and functional tests to
+                                ensure they perform flawlessly in today's modern
+                                browsers.
+                            </p>
+                            <p>
+                                So you can be assured it "just works". Try it
+                                out below.
+                            </p>
+                        </div>
+                    </z-col>
+                </z-row>
 
-
+                <z-row>
+                    <z-col class="pt-0">
+                        <div class="center">
+                            <button id="toggleButton" class="btn-md m-0">
+                                Layout
+                            </button>
+                            <button id="toggleDarkMode" class="btn-md m-0">
+                                Color
+                            </button>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </main>
 
         <!----------------------------------------------------------------------->
-        <!---  The Zen Test --->
+        <!--- Footer  --->
         <!----------------------------------------------------------------------->
+        <footer>
+            <a href="https://zencss.com"
+                ><img
+                    src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png"
+                    class="w-150 center-me"
+                    alt="zenCSS"
+            /></a>
+        </footer>
 
- <z-container>
-            <z-row>
-                <z-col>
-                    <div class="center">
-                        <hr>
-                        <h3 class="h4">The Zen Test</h3>
-                        <p class="text-balance">Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern browsers.</p>
-                        <p> So you can be assured it "just works". Try it out below. </p>
-                    </div>
-                </z-col>
-            </z-row>
+        <script src="../../dist/zencss.js"></script>
+        <script src="../../docs/js/navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
-            <z-row>
-                <z-col class="pt-0">
-                    <div class="center">
-
-                        <button id="toggleButton" class="btn-md m-0">Layout</button>
-                        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-                        
-                    </div>
-                </z-col>
-            </z-row>
-        </z-container>
-    </main>
-
-    <!----------------------------------------------------------------------->
-    <!--- Footer  --->
-    <!----------------------------------------------------------------------->
-    <footer>
-        <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class=" w-150 center-me" alt="zenCSS"></a>
-    </footer>
-
-    <script src="../../dist/zencss.js"></script>
-    <script src="../../docs/js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-
-    <script src="../js/copy.js"></script>
-</body>
-
+        <script src="../js/copy.js"></script>
+    </body>
 </html>
