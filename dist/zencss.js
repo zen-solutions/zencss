@@ -1265,7 +1265,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /*
  * zenCSS v2.0.1-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/shaunmackey/zencss/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
 
 //--------------------------------------------------------
