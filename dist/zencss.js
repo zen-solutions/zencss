@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.0.1-beta (https://zencss.com/)
+  * zenCSS v2.0.2-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -52,7 +52,7 @@ customElements.define("z-col", ZCol);
   !*** ./modules/carousel.js ***!
   \*****************************/
 /*
- * zenCSS v2.0.1-beta (https://zencss.com/)
+ * zenCSS v2.0.2-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -213,7 +213,7 @@ window.onclick = function (event) {
   !*** ./modules/image-gallery.js ***!
   \**********************************/
 // /*
-//  * zenCSS v2.0.1-beta (https://zencss.com/)
+//  * zenCSS v2.0.2-beta (https://zencss.com/)
 //  * Copyright 2022-2024 Shaun Mackey
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/accordian.js ***!
   \******************************/
 /*
- * zenCSS v2.0.1-beta (https://zencss.com/)
+ * zenCSS v2.0.2-beta (https://zencss.com/)
  * Copyright 2022-2023 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1263,7 +1263,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   !*** ./modules/modal.js ***!
   \**************************/
 /*
- * zenCSS v2.0.1-beta (https://zencss.com/)
+ * zenCSS v2.0.2-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
