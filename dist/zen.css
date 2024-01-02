@@ -16,6 +16,234 @@
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Purpose: 
+     This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
+
+     It evaluates each color in each map against WCAG recommended color contrast ratio
+     of 4.5/1 (adds a small buffer) and chooses the appropriate text color that will pass compliance.
+
+     Finally, it autoassigns that color to the font color associated with that background, ensuring WCAG color compliance out of the box. 
+
+     Change colors, and this script will update the color value with a new compliant match for the font color. */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2023-2023 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Firefox */
+  /* Chrome, Edge, and Safari */
+  /*
+  border-box can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+  If you need to override it, use:
+  */
+  /* Styles for the tabbed card */
+  /* Styles for the tab header container */
+  /* Styles for individual tabs */
+  /* Styles for tab content */
+  /* Hide tab content by default */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+   * zenCSS v2.0.1-beta (https://zencss.com/)
+   * Copyright 2022-2024 Shaun Mackey
+   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+   */
+  /* Mobile & Tablet Styles */
+  /* Styling for navigation and links */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Shrink and move label on input focus or if there is content in the input field */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Variables */
+  /* Mixin for hover styles */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Width and height */
+  /* Generate classes for gaps */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Active Items */
+  /* Disabled Items */
+  /* Flush */
+  /* Horizontal */
+  /* Contextual Classes */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Generate border color classes */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Mobile Styles */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Color for the fill effect on click */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Additional styling for better visualization */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Image Gallery Styles */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* RTL Enhancements */
+  /* Logical Properties for automatic RTL adaptation */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Apply the mixin for each color */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Flex Container Classes */
+  /* Wrap and No-Wrap Classes */
+  /* Justify Content Classes */
+  /* Align Items Classes */
+  /* Align Content Classes */
+  /* Align Self Classes */
+  /* Flex Grow and Shrink Classes */
+  /* Order Classes */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Medium devices (tablets, 768px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* X-Large devices (large desktops, 1200px and up) */
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  /*
+    * zenCSS v2.0.1-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* ------------------------------------------------- */
+  /* ----- Padding & Margin 
+  /* ------------------------------------------------- */
+  /* ------------------------------------------------- */
+  /* -----  Top/Bottom/Left/Right Margins/Padding 
+  /* ------------------------------------------------- */
 }
 .zen *::before,
 .zen *::after {
@@ -2957,6 +3185,9 @@
 }
 .zen .link-classic:hover {
   color: #0061c2;
+  text-decoration: underline;
+}
+.zen .text-underline {
   text-decoration: underline;
 }
 .zen .border-1 {
