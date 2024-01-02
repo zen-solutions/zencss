@@ -55,9 +55,12 @@
                 <z-row>
                     <z-col>
                         <h3>Prerequisites</h3>
-
                         <p>
-                            To work with these files, you will need the
+                            This guide will help you set up the ZenCSS project
+                            environment on your system.
+                        </p>
+                        <p>
+                            To work with these files, we will setup the
                             following tools:
                         </p>
                         <ul>
@@ -77,36 +80,30 @@
                             below to dive in.
                         </p>
 
-                        <p>
-                            This guide will help you set up the ZenCSS project
-                            environment on your system.
-                        </p>
-
                         <h2>1. Clone the Repository</h2>
                         <p>Clone the ZenCSS repository from GitHub:</p>
-                        <pre><code>git clone https://github.com/zen-solutions/zencss.git</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">git clone https://github.com/zen-solutions/zencss.git</code></pre>
                         <p>Navigate into the cloned directory:</p>
-                        <pre><code>cd zencss</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">cd zencss</code></pre>
 
                         <h2>2. Install Node.js</h2>
                         <p>
                             Ensure Node.js (version 12.0.0 or higher) is
                             installed on your system. Download and install from
-                            <a href="https://nodejs.org/" target="_blank"
-                                >Node.js official website</a
+                            <a href="https://nodejs.org/" target="_blank">Node.js official website</a
                             >.
                         </p>
 
                         <h2>3. Install Dependencies</h2>
                         <p>Install all necessary dependencies by running:</p>
-                        <pre><code>npm install</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">npm install</code></pre>
 
                         <h2>4. Compile SCSS to CSS</h2>
                         <p>
                             Compile SCSS files to CSS using the build-css
                             script:
                         </p>
-                        <pre><code>npm run build-css</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">npm run build-css</code></pre>
                         <p>
                             This compiles <code>zen.scss</code> into
                             <code>zen.css</code> and <code>zen.min.css</code>,
@@ -117,7 +114,7 @@
                         <h2>5. JavaScript Compilation with Webpack</h2>
                         <p>Compile JS modules using Webpack:</p>
                         <p>Run the script with:</p>
-                        <pre><code>npm run build-js</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">npm run build-js</code></pre>
                         <p>
                             This compiles <code>zencss.js</code> and
                             <code>zencss.min.js</code> and map files.
@@ -127,7 +124,7 @@
                         <p>
                             To ensure consistent code formatting, use Prettier:
                         </p>
-                        <pre><code>npx prettier --write .</code></pre>
+                        <pre class="copy-text mt-3"><code class="language-javascript">npx prettier --write .</code></pre>
                         <p>
                             This command formats your code according to the
                             project's Prettier settings.
@@ -136,8 +133,7 @@
                         <h2>7. Development and Contributions</h2>
                         <p>
                             For development, refer to the
-                            <code>README.md</code> and documentation in the
-                            <code>docs</code> folder. Contributions can be made
+                            <code>README.md</code> and the <a href="../../docs/help-desk/contributing.html">Contribution Guidelines</a>. Contributions can be made
                             via pull requests to the GitHub repository, adhering
                             to the contribution guidelines.
                         </p>
@@ -305,6 +301,25 @@ mode: 'development' // Change to 'production' for minified output
                                     </li>
                                 </ol>
 
+                                <h3>Configure webpack.config.js</h3>
+<p>When configuring your <code>webpack.config.js</code>, you may consider seting up separate entry points for the zenCSS core modules and your custom modules.</p>
+<p>This approach would allow you to keep the original source intact and manage your custom scripts separately. Here's an example configuration:</p>
+<pre class="copy-text mt-3"><code class="language-javascript">
+const path = require('path');
+
+module.exports = {
+entry: {
+zenCore: ['./js/modules/core-module1.js', './js/modules/core-module2.js'], // Core zenCSS modules
+custom: ['./js/custom/custom-module1.js', './js/custom/custom-module2.js'] // Your custom modules
+},
+output: {
+filename: 'zencss.bundle.js', // This will create separate bundles for core and custom modules
+path: path.resolve(__dirname, 'dist/'),
+},
+mode: 'development' // Change to 'production' for minified output
+}</code></pre>
+
+
                                 <p>
                                     By following these steps, you can tailor the
                                     framework to meet your specific
@@ -324,8 +339,7 @@ mode: 'development' // Change to 'production' for minified output
 
                         <p class="mb-0">
                             Follow
-                            <a href="https://twitter.com/tryzencss"
-                                >@tryzencss</a
+                            <a href="https://twitter.com/tryzencss">@tryzencss</a
                             >
                             on Twitter for the latest updates.
                         </p>

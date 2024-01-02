@@ -9,6 +9,20 @@
     </head>
 
     <body class="zen">
+
+        <z-container class="theme-cta card hero-section m-0"> <!-- optional: use container-fluid for full width -->
+            <img src="../../docs/images/website/gradient.jpg" class="bg-img">  <!-- optional: use a background image -->
+            <z-row>
+                <z-col>       
+                    <div class="center">
+                        <h2 class="h1 headline">Background Image Version</h2>
+                        <p class="lead">Eos tenetur corrupti, minima doloribus quam eveniet libero.</p>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+        
+        <!------------ header ------------->
         <z-container-fluid>
             <z-row class="pt-0 pb-0">
                 <z-col class="m-0 p-0">
@@ -17,12 +31,12 @@
                             <img src="../../img/logo.png" alt="" />
                         </div>
                         <div>
-                            <a id="hamburger-button-2"
-                                ><img
+                            <a id="hamburger-button-2">
+                                <img
                                     src="../../img/icons/bars.svg"
                                     class="icon-header up-3"
-                                    alt="Menu"
-                            /></a>
+                                    alt="Menu"/>
+                            </a>
                         </div>
                         <nav class="top-nav">
                             <button id="close-button">
@@ -30,12 +44,8 @@
                             </button>
                             <ul>
                                 <li><a href="#" class="nav-link">Home</a></li>
-                                <li>
-                                    <a href="#" class="nav-link">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">Contact</a>
-                                </li>
+                                <li><a href="#" class="nav-link">Services</a></li>
+                                <li><a href="#" class="nav-link">Contact</a></li>
                             </ul>
                         </nav>
                     </header>
@@ -43,7 +53,9 @@
             </z-row>
         </z-container-fluid>
 
+        <!------------ a spot  ------------->
         <main class="container-fluid page-title-here">
+            
             <z-container-fluid class="theme-cta card hero-section m-0">
                 <z-container>
                     <z-row>
@@ -55,6 +67,7 @@
                 </z-container>
             </z-container-fluid>
 
+            <!------------ b spot  ------------->
             <z-container-fluid class="name-of-section bg-grey-2">
                 <z-container class="page-section">
                     <z-row>
@@ -63,6 +76,7 @@
                 </z-container>
             </z-container-fluid>
 
+            <!------------ c spot  ------------->
             <z-container-fluid class="name-of-section bg-grey-3">
                 <z-container class="page-section">
                     <z-row>
@@ -71,6 +85,7 @@
                 </z-container>
             </z-container-fluid>
 
+            <!------------ d spot  ------------->
             <z-container-fluid class="name-of-section bg-grey-4">
                 <z-container class="page-section">
                     <z-row>
@@ -78,12 +93,16 @@
                     </z-row>
                 </z-container>
             </z-container-fluid>
+
         </main>
+
+        <!------------ footer  ------------->
         <footer>
-            <small class="center"
-                >&copy; <span id="current-year"></span>. Built using zenCSS.
+            <small class="center">&copy; <span id="current-year"></span>. Built using zenCSS.
             </small>
         </footer>
+
         <script src="../../dist/zencss.min.js"></script>
+
     </body>
 </html>
