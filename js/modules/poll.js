@@ -46,12 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Take the first result if there's a tie
         var mostChosen = mostChosenResults[0];
-        var resultElement = document.querySelector(
-            '#result-types [data-result="' + mostChosen + '"]',
-        );
-        var resultContent = resultElement
-            ? resultElement.innerHTML
-            : mostChosen;
+        var resultElement = document.querySelector('#result-types [data-result="' + mostChosen + '"]');
+        var resultContent = resultElement ? resultElement.innerHTML : mostChosen;
 
         // Update the result div and make the result visible
         var resultDiv = document.getElementById("result-text");

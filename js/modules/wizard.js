@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             steps.forEach((step) => {
                 step.style.display = "none"; // Hide all steps
             });
-            document.getElementById(`step-${stepNumber}`).style.display =
-                "block"; // Show the desired step
+            document.getElementById(`step-${stepNumber}`).style.display = "block"; // Show the desired step
 
             // Update the current class on pagination
             navItems.forEach((item) => {

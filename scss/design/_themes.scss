@@ -9,14 +9,7 @@
     transition: $properties $duration $ease;
 }
 
-@mixin theme(
-    $bg-color,
-    $text-color,
-    $button-bg-color,
-    $button-text-color,
-    $label-bg-color,
-    $label-text-color
-) {
+@mixin theme($bg-color, $text-color, $button-bg-color, $button-text-color, $label-bg-color, $label-text-color) {
     background: $bg-color;
     color: $text-color;
     border-radius: $border-radius;
@@ -26,11 +19,7 @@
     .btn {
         background: $button-bg-color;
         color: $button-text-color;
-        @include transition(
-            background-color 0.3s,
-            color 0.3s,
-            border-color 0.3s
-        );
+        @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
 
         &:hover {
             background: darken($button-bg-color, 20%);
@@ -50,11 +39,7 @@
         border: 2px solid $button-bg-color;
 
         color: $button-bg-color;
-        @include transition(
-            background-color 0.3s,
-            color 0.3s,
-            border-color 0.3s
-        );
+        @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
 
         &:hover {
             background: $button-bg-color;
@@ -128,14 +113,7 @@ $themes: (
 // Iterate over each theme to apply styles
 @each $theme, $colors in $themes {
     .theme-#{$theme} {
-        @include theme(
-            nth($colors, 1),
-            nth($colors, 2),
-            nth($colors, 3),
-            nth($colors, 4),
-            nth($colors, 5),
-            nth($colors, 6)
-        );
+        @include theme(nth($colors, 1), nth($colors, 2), nth($colors, 3), nth($colors, 4), nth($colors, 5), nth($colors, 6));
     }
 }
 

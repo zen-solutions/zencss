@@ -23,12 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const progressValue = ((stepNumber - 1) / (totalSteps - 1)) * 100;
         progressBar.value = progressValue;
         progressPercentage.textContent = `${Math.round(progressValue)}%`;
-        const percentagePosition =
-            progressBar.offsetWidth * (progressValue / 100) -
-            progressPercentage.offsetWidth / 2;
+        const percentagePosition = progressBar.offsetWidth * (progressValue / 100) - progressPercentage.offsetWidth / 2;
         progressPercentage.style.left = `${Math.max(0, percentagePosition)}px`;
-        progressPercentage.style.visibility =
-            progressValue >= 5 ? "visible" : "hidden";
+        progressPercentage.style.visibility = progressValue >= 5 ? "visible" : "hidden";
     }
 
     steps.forEach((step, index) => {
@@ -47,9 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             prevButton.disabled = true;
             prevButton.classList.add("disabled");
         } else {
-            prevButton.addEventListener("click", () =>
-                updatemswizardStep(index),
-            );
+            prevButton.addEventListener("click", () => updatemswizardStep(index));
         }
         buttonContainer.appendChild(prevButton);
 
@@ -59,9 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextButton.className = "next-btn";
         nextButton.setAttribute("role", "button");
         nextButton.setAttribute("aria-label", `Go to step ${index + 2}`);
-        nextButton.addEventListener("click", () =>
-            updatemswizardStep(index + 2),
-        );
+        nextButton.addEventListener("click", () => updatemswizardStep(index + 2));
         buttonContainer.appendChild(nextButton);
 
         step.appendChild(buttonContainer);

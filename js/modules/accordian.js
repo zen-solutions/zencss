@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 otherToggle.classList.remove("active-toggle");
                 otherToggle.setAttribute("aria-expanded", "false");
 
-                var otherIcon = otherToggle.querySelector(
-                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
-                );
+                var otherIcon = otherToggle.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
                 if (otherIcon) {
                     otherIcon.classList.remove("zenicon-keyboard-arrow-down");
                     otherIcon.classList.add("zenicon-keyboard-arrow-right");
@@ -34,19 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.classList.add("active-toggle");
                 this.setAttribute("aria-expanded", "true");
 
-                var icon = this.querySelector(
-                    ".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down",
-                );
+                var icon = this.querySelector(".zenicon-keyboard-arrow-right, .zenicon-keyboard-arrow-down");
                 if (icon) {
                     icon.classList.remove("zenicon-keyboard-arrow-right");
                     icon.classList.add("zenicon-keyboard-arrow-down");
                 }
 
                 var panel = this.nextElementSibling;
-                panel.style.maxHeight =
-                    panel.scrollHeight > 200
-                        ? "1000px"
-                        : panel.scrollHeight + 10 + "px";
+                panel.style.maxHeight = panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
             }
         });

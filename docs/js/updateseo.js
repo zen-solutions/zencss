@@ -27,9 +27,7 @@ function updateSEO() {
 
     // Update the meta description
     if (descriptionContent) {
-        const metaDescription = document.querySelector(
-            'meta[name="description"]',
-        );
+        const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
             metaDescription.setAttribute("content", descriptionContent);
         } else {
