@@ -527,6 +527,12 @@
 //---------------------------------------------
 
 @media (max-width: 767px) {
+
+    .mobile\:gap-0 {
+       gap:0;
+    }
+
+
     .mobile\:thin {
         aspect-ratio: 16/9;
         object-fit: cover;
