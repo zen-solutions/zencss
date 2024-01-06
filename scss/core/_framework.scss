@@ -45,8 +45,8 @@ z-row,
     width: 100%;
     flex-wrap: wrap; //nowrap is interesting too
     gap: 1em;
-    padding-top: 0.5em; // removed via js when nesting logic applied
-    padding-bottom: 0.5em; // removed via js when nesting logic applied
+    padding-top: 0.5em; 
+    padding-bottom: 0.5em; 
     flex-grow: 1;
     border-radius: $border-radius;
 }

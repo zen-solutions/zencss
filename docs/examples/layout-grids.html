@@ -43,6 +43,9 @@
                 </z-row>
             </z-container>
 
+
+
+
             <!----------------------------------------------------------------------->
             <!--- Component --->
             <!----------------------------------------------------------------------->
@@ -226,6 +229,10 @@
             </z-container>
             <z-container>
                 <z-row>
+                    <z-col class="feature-xl theme-light">feature-xl</z-col>
+                    <z-col class="theme-light">col</z-col>
+                </z-row>
+                <z-row>
                     <z-col class="feature-lg theme-light">feature-lg</z-col>
                     <z-col class="theme-light">col</z-col>
                 </z-row>
@@ -250,6 +257,10 @@
                             <a href="#" class="title accordion-toggle" aria-expanded="false" aria-controls="content5"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                             <div id="content5" class="expanded-content full-height p-0" aria-hidden="true">
                                 <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="feature-xl theme-light"&gt;feature-xl&lt;/z-col&gt;
+    &lt;z-col class="theme-light"&gt;col&lt;/z-col&gt;
+  &lt;/z-row&gt;
   &lt;z-row&gt;
     &lt;z-col class="feature-lg theme-light"&gt;feature-lg&lt;/z-col&gt;
     &lt;z-col class="theme-light"&gt;col&lt;/z-col&gt;
@@ -334,7 +345,13 @@
             </z-container>
 
             <hr />
-
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <h3>Bento Box Style</h3>
+                    </z-col>
+                </z-row>
+            </z-container>
             <z-container>
                 <z-row>
                     <z-col class="feature-lg theme-light"> top bar </z-col>
@@ -401,6 +418,96 @@
             </z-container>
 
             <hr />
+
+
+            <z-container>
+                <z-row>
+                    <z-col>
+                        <h3>Multiple Containers as columns</h3>
+                    </z-col>
+                </z-row>
+            </z-container>
+
+            <z-container>
+                <z-row class="mobile:gap-0">
+                    <z-container>
+                        <z-row>
+                            <z-col class="theme-light">1</z-col>
+                        </z-row>
+                        <z-row>
+                            <z-col class="theme-light">2</z-col>
+                            <z-col class="theme-light">3</z-col>
+                        </z-row>
+                        <z-row>
+                            <z-col class="theme-light">4</z-col>
+                        </z-row>
+                    </z-container>
+
+                    <z-container>
+                        <z-row>
+                            <z-col class="theme-light h-305">5</z-col>
+                        </z-row>
+                        <z-row>
+                            <z-col class="theme-light h-145">6</z-col>
+                        </z-row>
+                    </z-container>
+
+                    <z-container>
+                        <z-row>
+                            <z-col class="theme-light h-150">7</z-col>
+                        </z-row>
+                        <z-row>
+                            <z-col class="theme-light h-300">8</z-col>
+                        </z-row>
+                    </z-container>
+                    
+                </z-row>
+            </z-container>
+            <z-container>
+                <z-row>
+                    <z-col class="pl-0 pr-0">
+                        <div class="accordion">
+                            <a href="#" class="title accordion-toggle" aria-expanded="false" aria-controls="content3a"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                            <div id="content3a" class="expanded-content full-height p-0" aria-hidden="true">
+                                <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+    &lt;z-row class="gap-0"&gt;
+      &lt;z-container&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light"&gt;1&lt;/z-col&gt;
+        &lt;/z-row&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light"&gt;1&lt;/z-col&gt;
+          &lt;z-col class="theme-light"&gt;2&lt;/z-col&gt;
+        &lt;/z-row&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light"&gt;1&lt;/z-col&gt;
+        &lt;/z-row&gt;
+      &lt;/z-container&gt;
+
+      &lt;z-container&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light h-305"&gt;1&lt;/z-col&gt;
+        &lt;/z-row&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light h-145"&gt;2&lt;/z-col&gt;
+        &lt;/z-row&gt;
+      &lt;/z-container&gt;
+
+      &lt;z-container&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light h-150"&gt;1&lt;/z-col&gt;
+        &lt;/z-row&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="theme-light h-300"&gt;2&lt;/z-col&gt;
+        &lt;/z-row&gt;
+      &lt;/z-container&gt;
+    &lt;/z-row&gt;
+  &lt;/z-container&gt;</code></pre>
+                            </div>
+                        </div>
+                    </z-col>
+                </z-row>
+            </z-container>
             <!----------------------------------------------------------------------->
             <!---  The Zen Test --->
             <!----------------------------------------------------------------------->
