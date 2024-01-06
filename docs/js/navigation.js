@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var navHtml = `
         <div class="docs-nav">
-        <a id="hamburger-button"><img src="../../img/icons/bars.svg" class="icon-header" alt="Menu"></a>
+        <a id="hamburger-button"><img src="../../dist/img/icons/bars.svg" class="icon-header" alt="Menu"></a>
         </div>
         <nav class="top-nav sticky-nav">
         <button id="close-button" aria-label="Close"><a class="close"></a></button>

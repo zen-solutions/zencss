@@ -57,7 +57,7 @@ pre[class*="language-"] {
 } */
 
 /* .accordion .title::before {
-  background-image: url('../../img/general-icons/essential/code-solid.svg') !important;
+  background-image: url('../../dist/img/general-icons/essential/code-solid.svg') !important;
   width: 14px !important;
   height: 14px !important;
   opacity: 1 !important;
