@@ -61,13 +61,7 @@
     $dark-contrast: contrast-ratio($bg-color, $dark-color);
 
     // Check if both contrasts meet the minimum requirement
-    @if $light-contrast >=
-        $minimum-contrast +
-        $buffer and
-        $dark-contrast >=
-        $minimum-contrast +
-        $buffer
-    {
+    @if $light-contrast >= $minimum-contrast + $buffer and $dark-contrast >= $minimum-contrast + $buffer {
         // if there's support for both, pick the color with better contrast
         @if $light-contrast >= $dark-contrast {
             @return $light-color;

@@ -20,16 +20,19 @@ function updateSEO() {
         }
     }
 
+    // Normalize spaces in descriptionContent
+    if (descriptionContent) {
+        descriptionContent = descriptionContent.trim().replace(/\s+/g, ' ');
+    }
+
     // Update the title tag to "zenCSS - [h1 content]"
     if (h1Element) {
-        document.title = `zenCSS - ${h1Element.textContent}`;
+        document.title = `zenCSS - ${h1Element.textContent.trim()}`;
     }
 
     // Update the meta description
     if (descriptionContent) {
-        const metaDescription = document.querySelector(
-            'meta[name="description"]',
-        );
+        const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
             metaDescription.setAttribute("content", descriptionContent);
         } else {

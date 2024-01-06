@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             element.classList.toggle("zen-dark");
         });
 
-        const isDarkModeEnabled = Array.from(zenElements).some((element) =>
-            element.classList.contains("zen-dark"),
-        );
+        const isDarkModeEnabled = Array.from(zenElements).some((element) => element.classList.contains("zen-dark"));
         localStorage.setItem("darkMode", isDarkModeEnabled);
     }
 

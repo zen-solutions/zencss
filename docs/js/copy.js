@@ -11,9 +11,8 @@ preElements.forEach(function (textBox) {
     var copyText = textBox.innerText;
 
     var srOnlySpan = document.createElement("span");
-    srOnlySpan.textContent = "Copy Text"; // Include your desired text here
-    srOnlySpan.style.cssText =
-        "position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);";
+    srOnlySpan.textContent = "Copy Text";
+    srOnlySpan.style.cssText = "position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);";
     copyButton.appendChild(srOnlySpan);
 
     copyButton.setAttribute("data-tooltip", "Copy to clipboard");
@@ -28,17 +27,12 @@ preElements.forEach(function (textBox) {
                 // Change tooltip to 'Copied'
                 copyButton.setAttribute("data-tooltip", "Copied");
 
-                copyButton.style.cssText =
-                    'background-color: #343434 !important; background-image: url("../images/ui/copied.png") !important;';
+                copyButton.style.cssText = 'background-color: #343434 !important; background-image: url("../images/ui/copied.png") !important;';
                 setTimeout(function unCopy() {
-                    copyButton.style.cssText =
-                        'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
+                    copyButton.style.cssText = 'background-color: #ccc !important; background-image: url("../images/ui/copy.png") !important;';
 
                     // Reset the tooltip text
-                    copyButton.setAttribute(
-                        "data-tooltip",
-                        "Copy to clipboard",
-                    );
+                    copyButton.setAttribute("data-tooltip", "Copy to clipboard");
                 }, 1500);
             })
             .catch((err) => {
