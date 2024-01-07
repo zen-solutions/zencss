@@ -532,6 +532,20 @@
        gap:0;
     }
 
+    .mobile\:h-300 {
+        height:300px;
+        max-height: 300px;
+     }
+
+     .mobile\:h-600 {
+        height:600px;
+        max-height: 600px;
+     }
+ 
+     .mobile\:h-1200 {
+        height:1200px;
+        max-height: 1200px;
+     }
 
     .mobile\:thin {
         aspect-ratio: 16/9;

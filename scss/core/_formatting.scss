@@ -8,7 +8,7 @@
 // Directional modifiers
 //----------------------------------------------
 // generates x-10 - x-100 for each
-@for $i from 1 through 10 {
+@for $i from 1 through 15 {
     $value: $i * 10;
 
     // Generating classes for negative margin-top (moving up)

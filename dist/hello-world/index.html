@@ -1,96 +1,99 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>zenCSS - Hello World</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zenCSS - Hello World</title>
 
-        <!------------ include zenCSS CSS files  ------------->
-        <link rel="stylesheet" href="../../dist/zen.min.css" />
-        <link rel="stylesheet" href="../../dist/icons.min.css" />
-    </head>
+    <!------------ include zenCSS CSS files  ------------->
+    <link rel="stylesheet" href="../../dist/zen.min.css" />
+    <link rel="stylesheet" href="../../dist/icons.min.css" />
+</head>
 
-    <!------------ Declare zen class on the body to use zenCSS on the page ------------->
-    <body class="zen">
-        <!------------ Header/A spot/Hero ------------->
-        <z-container-fluid>
-            <z-row class="pt-0 pb-0">
-                <z-col class="m-0 p-0">
-                    <header class="header-sticky zindex-override">
-                        <div class="pl-2" id="header-logo">
-                            <img src="../../dist/img/logo.png" alt="" />
-                        </div>
-                        <div>
-                            <a id="hamburger-button-2">
-                                <img src="../../dist/img/icons/bars.svg" class="icon-header up-3" alt="Menu" />
-                            </a>
-                        </div>
-                        <nav class="top-nav">
-                            <button id="close-button">
-                                <a class="close"></a>
-                            </button>
-                            <ul>
-                                <li><a href="#" class="nav-link">Home</a></li>
-                                <li>
-                                    <a href="#" class="nav-link">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </header>
-                </z-col>
-            </z-row>
+<!------------ Declare zen class on the body to use zenCSS on the page ------------->
+
+<body class="zen">
+    
+    <!------------ Header/A spot/Hero ------------->
+
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <img src="../../dist/img/logo.png" alt="" />
+        </div>
+        <div>
+            <a id="hamburger-button-2">
+                <img src="../../dist/img/icons/bars.svg" class="icon-header up-3" alt="Menu" />
+            </a>
+        </div>
+        <nav class="top-nav">
+            <button id="close-button">
+                <a class="close"></a>
+            </button>
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li>
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!------------ B spot  ------------->
+    <main class="container-fluid page-title-here">
+        <z-container-fluid class="theme-cta card hero-section m-0">
+            <z-container>
+                <z-row>
+                    <z-col class="card center">
+                        <h1 class="headline">👋 Hello World</h1>
+                        <p class="lead">What will you create from here?</p>
+                    </z-col>
+                </z-row>
+            </z-container>
         </z-container-fluid>
 
-        <!------------ B spot  ------------->
-        <main class="container-fluid page-title-here">
-            <z-container-fluid class="theme-cta card hero-section m-0">
-                <z-container>
-                    <z-row>
-                        <z-col class="card center">
-                            <h1 class="headline">👋 Hello World</h1>
-                            <p class="lead">What will you create from here?</p>
-                        </z-col>
-                    </z-row>
-                </z-container>
-            </z-container-fluid>
+        <!------------ C spot  ------------->
 
-            <!------------ C spot  ------------->
-            <z-container-fluid class="name-of-section bg-grey-2">
-                <z-container class="page-section">
-                    <z-row>
-                        <z-col>Another Section</z-col>
-                    </z-row>
-                </z-container>
-            </z-container-fluid>
+        <z-container-fluid class="name-of-section bg-grey-2">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col>Another Section</z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
 
-            <!------------ D spot  ------------->
-            <z-container-fluid class="name-of-section bg-grey-3">
-                <z-container class="page-section">
-                    <z-row>
-                        <z-col>Another Section </z-col>
-                    </z-row>
-                </z-container>
-            </z-container-fluid>
+        <!------------ D spot  ------------->
 
-            <!------------ E spot  ------------->
-            <z-container-fluid class="name-of-section bg-grey-4">
-                <z-container class="page-section">
-                    <z-row>
-                        <z-col> Another Section</z-col>
-                    </z-row>
-                </z-container>
-            </z-container-fluid>
-        </main>
+        <z-container-fluid class="name-of-section bg-grey-3">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col>Another Section </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
 
-        <!------------ Footer  ------------->
-        <footer>
-            <small class="center">&copy; <span id="current-year"></span>. Built using zenCSS. </small>
-        </footer>
+        <!------------ E spot  ------------->
 
-        <!------------ Include zenCSS JS  ------------->
-        <script src="../../dist/zencss.min.js"></script>
-    </body>
+        <z-container-fluid class="name-of-section bg-grey-4">
+            <z-container class="page-section">
+                <z-row>
+                    <z-col> Another Section</z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
+
+    </main>
+
+    <!------------ Footer  ------------->
+
+    <footer>
+        <small class="center">&copy; <span id="current-year"></span>. Built using zenCSS. </small>
+    </footer>
+
+    <!------------ Include zenCSS JS  ------------->
+    <script src="../../dist/zencss.min.js"></script>
+</body>
 </html>
