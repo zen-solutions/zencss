@@ -3739,6 +3739,12 @@
 .zen .overlay-container:hover::after, .zen .overlay-container:hover .overlay-text {
   opacity: 1;
 }
+.zen .link-reverse {
+  text-decoration: none;
+}
+.zen .link-reverse:hover {
+  text-decoration: underline;
+}
 .zen .border-1 {
   border: 1px solid #f7f7f7;
   border-bottom-color: #f7f7f7 !important;

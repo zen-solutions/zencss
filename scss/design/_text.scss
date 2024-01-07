@@ -474,3 +474,11 @@ a.text-cta-dual {
 .overlay-container:hover::after, .overlay-container:hover .overlay-text {
     opacity: 1;
 }
+
+.link-reverse{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
