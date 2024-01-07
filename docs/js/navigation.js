@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var currentIndex = pages.findIndex((url) => url === currentUrl);
 
         var prevNextHtml = '<z-container-fluid class="prev-next theme-light mt-5">';
-        prevNextHtml += '<z-row class="down-5"><z-col class="text-center"><p class="h3 p-0">You might also like..</p></z-col></z-row>';
+        prevNextHtml += '<z-row class="down-5"><z-col class="text-center"><p class="p-0 mb-0">You might also like..</p></z-col></z-row>';
         prevNextHtml += '<z-row class="gap-0">';
 
         var hasPrev = currentIndex > 0;
