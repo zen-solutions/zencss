@@ -32,10 +32,10 @@
                 <z-row>
                     <z-col>
                         <div class="center">
-                            <h1 class="headline">Website Footer</h1>
+                            <h1 class="headline">Website Footers</h1>
                             <p>
                                 Terms and conditions, social links? We have a spot for that. Images are in
-                                <code>dist/img/general-icons/social-icons/</code>. Zen Test link included for rapid troubleshooting during development. The copyright year updates
+                                <code>docs/images/general-icons/social-icons/</code>. Zen Test link included for rapid troubleshooting during development. The copyright year updates
                                 automatically.
                             </p>
                             <hr />
@@ -47,6 +47,80 @@
             <!----------------------------------------------------------------------->
             <!--- Component --->
             <!----------------------------------------------------------------------->
+
+<z-container class="footer square">
+    <z-row class="mobile:two-up">
+        <z-col class="text-left">
+            <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+            <p class="text-xs text-grey-2 ml-1">&copy; <span id="current-year"></span>, your company here</p>
+            <img src="../../docs/images/general-icons/social-icons/facebook.png" class="w-20 m-1" alt="Facebook" />
+            <img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Facebook" />
+            <img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Facebook" />
+
+        </z-col>
+        <z-col class="text-left squeeze">
+            <p class="eyebrow">PAGES</p>
+            <p><a href="" class="link-reverse text-sm">Red Widgets</a></p>
+            <p><a href="" class="link-reverse text-sm">Green Widgets</a></p>
+            <p><a href="" class="link-reverse text-sm">Blue Widgets</a></p>
+        </z-col>
+        <z-col class="text-left squeeze">
+            <p class="eyebrow">LINKS</p>
+            <p><a href="" class="link-reverse text-sm">Orange Widgets</a></p>
+            <p><a href="" class="link-reverse text-sm">Yellow Widgets</a></p>
+            <p><a href="" class="link-reverse text-sm">Purple Widgets</a></p>
+        </z-col>
+        <z-col class="text-left squeeze">
+            <p class="eyebrow">SUMMARY</p>
+            <p class="text-xs">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Minus dolor qui architecto, optio eos, molestias.</p>
+            <p><a id="toggleButton" class="text-grey-2 text-xs link-reverse">Toggle Zen Test</a></p>
+        </z-col>
+    </z-row>
+</z-container>
+
+
+<z-container>
+    <z-row>
+        <z-col>
+            <div class="accordion">
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                    <pre class="copy-text square"><code class="language-html">&lt;footer class="z-container square"&gt;
+    &lt;z-row class="mobile:two-up"&gt;
+      &lt;z-col class="text-left"&gt;
+        &lt;img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" /&gt;
+        &lt;p class="text-xs text-grey-2 ml-1"&gt;&copy; &lt;span id="current-year"&gt;&lt;/span&gt;, your company here&lt;/p&gt;
+        &lt;img src="../../docs/images/general-icons/social-icons/facebook.png" class="w-20 m-1" alt="Facebook" /&gt;
+        &lt;img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Facebook" /&gt;
+        &lt;img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Facebook" /&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="text-left squeeze"&gt;
+        &lt;p class="eyebrow"&gt;PAGES&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Red Widgets&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Green Widgets&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Blue Widgets&lt;/a&gt;&lt;/p&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="text-left squeeze"&gt;
+        &lt;p class="eyebrow"&gt;LINKS&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Orange Widgets&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Yellow Widgets&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href="" class="link-reverse text-sm"&gt;Purple Widgets&lt;/a&gt;&lt;/p&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="text-left squeeze"&gt;
+        &lt;p class="eyebrow"&gt;SUMMARY&lt;/p&gt;
+        &lt;p class="text-xs"&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Minus dolor qui architecto, optio eos, molestias.&lt;/p&gt;
+        &lt;p&gt;&lt;a id="toggleButton" class="text-grey-2 text-xs link-reverse"&gt;Toggle Zen Test&lt;/a&gt;&lt;/p&gt;
+      &lt;/z-col&gt;
+    &lt;/z-row&gt;
+  &lt;/footer&gt;</code></pre>
+                </div>
+            </div>
+        </z-col>
+    </z-row>
+</z-container>
+
+<hr>
+
             <z-container>
                 <z-row>
                     <z-col class="m-0 p-0 zindex-override">
