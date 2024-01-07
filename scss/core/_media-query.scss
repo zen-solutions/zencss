@@ -160,7 +160,7 @@
         display: none;
     }
 
-    & .tablet-reverse {
+    & .mobile\:reverse {
         flex-direction: column;
     }
 
@@ -249,7 +249,7 @@
 //---------------------------------------------
 
 // Need to expand on this class. why is it here also.
-.tablet-reverse {
+.mobile\:reverse {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -280,11 +280,11 @@
         font-size: 1em;
     }
 
-    .tablet-reverse > :nth-z-col(1) {
+    .mobile\:reverse > :nth-z-col(1) {
         order: 2;
     }
 
-    .tablet-reverse > :nth-z-col(2) {
+    .mobile\:reverse > :nth-z-col(2) {
         order: 1;
     }
 
@@ -431,11 +431,11 @@
         padding-right: 1em;
     }
 
-    .tablet-reverse > :nth-z-col(1) {
+    .mobile\:reverse > :nth-z-col(1) {
         order: 2;
     }
 
-    .tablet-reverse > :nth-z-col(2) {
+    .mobile\:reverse > :nth-z-col(2) {
         order: 1;
     }
 

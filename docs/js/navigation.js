@@ -40,11 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="../examples/header.html">Header</a>
                     <a href="../examples/jumbotron.html">Hero Sections</a>
                     <a href="../examples/image-text.html">Image/Text Sections</a>
-                    <a href="../examples/text-content-row.html">Text/Content Row</a>
+                    <a href="../examples/text-content-row.html">Text/Content Rows</a>
                     <a href="../examples/layout-grids.html">Layout Grids</a>
                     <a href="../examples/product-row.html">Product Grids</a>
                     <a href="../examples/faq.html">FAQs</a>
                     <a href="../examples/text-card-carousel.html">Text/Carousels</a>
+                    <a href="../examples/accordion-content.html">Accordion/Content</a> 
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
                     <a href="../examples/footer.html">Footer</a> 
                 </div>

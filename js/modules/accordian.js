@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 var otherPanel = otherToggle.nextElementSibling;
+                otherPanel.style.overflow = "hidden"; // Set overflow to hidden during transition
                 otherPanel.style.maxHeight = null;
                 otherPanel.setAttribute("aria-hidden", "true"); // Hide other panels
             });
@@ -41,6 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 var panel = this.nextElementSibling;
                 panel.style.maxHeight = panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
+
+                // Wait for the transition to end before setting overflow to auto
+                setTimeout(function() {
+                    panel.style.overflow = "auto";
+                }, 300); // Replace 300 with the duration of your transition
             }
         });
     });
