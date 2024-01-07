@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="../examples/product-row.html">Product Grids</a>
                     <a href="../examples/faq.html">FAQs</a>
                     <a href="../examples/text-card-carousel.html">Text/Carousels</a>
-                    <a href="../examples/accordian-content.html">Accordian/Content</a> 
+                    <a href="../examples/accordion-content.html">Accordion/Content</a> 
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
                     <a href="../examples/footer.html">Footer</a> 
                 </div>
