@@ -20,7 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 const targetElement = document.querySelector(hrefAttribute);
 
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    // Get the target element's top position relative to the document
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                    // Scroll to the position minus 100 pixels
+                    window.scrollTo({
+                        top: targetPosition - 100,
+                        behavior: "smooth"
+                    });
                 }
             });
         });
