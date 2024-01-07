@@ -6,7 +6,7 @@ var __webpack_exports__ = {};
   !*** ./modules/custom-elements.js ***!
   \************************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -50,7 +50,7 @@ customElements.define("z-col", ZCol);
   !*** ./modules/carousel.js ***!
   \*****************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   !*** ./modules/dropdown.js ***!
   \*****************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -207,7 +207,7 @@ window.onclick = function (event) {
   !*** ./modules/image-gallery.js ***!
   \**********************************/
 // /*
-//  * zenCSS v2.0.2-beta (https://zencss.com/)
+//  * zenCSS v2.1.0-beta (https://zencss.com/)
 //  * Copyright 2022-2024 Shaun Mackey
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
@@ -215,7 +215,7 @@ window.onclick = function (event) {
 //12/29 removing lazy load
 
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -591,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/accordian.js ***!
   \******************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -646,7 +646,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/misc.js ***!
   \*************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1026,7 +1026,7 @@ document.addEventListener("DOMContentLoaded", () => {
   !*** ./modules/dark-mode.js ***!
   \******************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1068,7 +1068,7 @@ document.addEventListener("DOMContentLoaded", () => {
   !*** ./modules/lazy-load.js ***!
   \******************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1152,7 +1152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/background-image.js ***!
   \*************************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1181,7 +1181,7 @@ window.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/mobile-nav.js ***!
   \*******************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1237,7 +1237,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   !*** ./modules/modal.js ***!
   \**************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1399,7 +1399,7 @@ customElements.define("z-modal", ZModal);
   !*** ./modules/star-component.js ***!
   \***********************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1475,7 +1475,7 @@ customElements.define("star-component", StarComponent);
   !*** ./modules/exit-intent.js ***!
   \********************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1550,7 +1550,7 @@ setTimeout(function () {
   !*** ./modules/wizard.js ***!
   \***************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1613,7 +1613,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   !*** ./modules/multistep-wizard.js ***!
   \*************************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1685,7 +1685,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/tabs.js ***!
   \*************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1723,7 +1723,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/poll.js ***!
   \*************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1802,7 +1802,7 @@ document.addEventListener("DOMContentLoaded", function () {
   !*** ./modules/link-scroll.js ***!
   \********************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1838,7 +1838,7 @@ document.addEventListener("DOMContentLoaded", () => {
   !*** ./modules/cookie-consent.js ***!
   \***********************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -1874,7 +1874,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   !*** ./modules/test-mode.js ***!
   \******************************/
 /*
- * zenCSS v2.0.2-beta (https://zencss.com/)
+ * zenCSS v2.1.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */

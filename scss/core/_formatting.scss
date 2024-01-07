@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.0.2-beta (https://zencss.com/)
+  * zenCSS v2.1.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -8,7 +8,7 @@
 // Directional modifiers
 //----------------------------------------------
 // generates x-10 - x-100 for each
-@for $i from 1 through 10 {
+@for $i from 1 through 15 {
     $value: $i * 10;
 
     // Generating classes for negative margin-top (moving up)
@@ -184,6 +184,7 @@ $heights: 100 200 300 400 500;
     width: 100%;
     height: 100%;
     z-index: 0;
+    object-position: top left;
 }
 
 //----------------------------------------------------

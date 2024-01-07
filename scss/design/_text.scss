@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.0.2-beta (https://zencss.com/)
+  * zenCSS v2.1.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -440,3 +440,37 @@ a.text-cta-dual {
 // .link-classic:active {
 //     color: #ff0000;
 // }
+
+//new overlay from sm site
+.overlay-container::after, .overlay-text {
+    opacity: 0;
+    transition: opacity 0.2s;
+    
+}
+
+.overlay-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: $border-radius;
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+.overlay-container:hover::after, .overlay-container:hover .overlay-text {
+    opacity: 1;
+}
