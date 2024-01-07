@@ -172,6 +172,11 @@
     * Copyright 2022-2024 Shaun Mackey
     * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
     */
+  /*
+    * zenCSS v2.1.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
   /* Image Gallery Styles */
   /*
     * zenCSS v2.1.0-beta (https://zencss.com/)
@@ -4534,6 +4539,93 @@
 }
 .zen .card-pan:hover .bg-img {
   transform: scale(1.1) translateY(-5%);
+}
+.zen .sidebar-content-off {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.zen #sidebar {
+  width: 250px;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 5;
+  height: 100%;
+  overflow: auto;
+  transition: left 0.3s;
+}
+.zen #sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.zen #sidebar ul li {
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.zen #sidebar ul li a {
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 10px;
+  margin-left: 0;
+}
+.zen #sidebar ul li.active {
+  font-weight: bold;
+}
+.zen #tab-button {
+  display: none;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  cursor: pointer;
+  z-index: 10;
+  color: #999999;
+  padding: 10px;
+}
+.zen #tab-button:hover {
+  color: #6d6d6d;
+}
+.zen #sidebar ul li:not(.active):hover:hover {
+  background: rgba(173, 173, 173, 0.3);
+}
+.zen #rail {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 27px;
+  width: 5px;
+  background-color: grey;
+  z-index: 0;
+}
+.zen #activeIndicator {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 5px;
+  background-color: #585858;
+  transition: top 0.3s;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .zen .sidebar-content {
+    padding-left: 275px;
+    padding-right: 25px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .zen #sidebar {
+    top: 50px;
+    transition: left 0.3s;
+  }
 }
 .zen .image-gallery {
   display: grid;

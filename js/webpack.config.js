@@ -19,6 +19,7 @@ const commonConfig = {
             "./modules/modal.js",
             "./modules/star-component.js",
             "./modules/exit-intent.js",
+            "./modules/sidebar.js",
             "./modules/wizard.js",
             "./modules/multistep-wizard.js",
             "./modules/tabs.js",

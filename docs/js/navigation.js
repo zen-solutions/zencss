@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
                                 <a href="../examples/promo-bars.html">Promo Bars</a>
                                 <a href="../examples/quiz.html">Quiz</a>
-                                <a href="../examples/sidebars.html">Side Bars</a>
+                                <a href="../examples/sidebars.html">Sidebar</a>
                                 <a href="../examples/testimonials.html">Testimonials</a>
                                 <a href="../examples/tooltip.html">Tool Tips</a>
                                 <a href="../examples/tabs.html">Tabs</a>
