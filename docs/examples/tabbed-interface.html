@@ -50,19 +50,10 @@
                 <z-row>
                     <z-col>
                         <div class="wizard">
-                            <!-- <div class="pagination-nav pagination-nav-alt center-flex">
-                            <a href="#" class="item wizard-nav" data-direction="prev">&laquo;</a>
-                            <a href="#" class="item wizard-nav" data-step="1">1</a>
-                            <a href="#" class="item wizard-nav current" data-step="2">2</a>
-                            <a href="#" class="item wizard-nav" data-step="3">3</a>
-                            <a href="#" class="item wizard-nav" data-direction="next">&raquo;</a> </div> -->
-
                             <div class="pagination-nav center-flex">
-                                <!-- <a class="item-minimal wizard-nav" data-direction="prev">← Prev</a> -->
                                 <a class="item-minimal wizard-nav" data-step="1">Section 1</a>
                                 <a class="item-minimal wizard-nav" data-step="2">Section 2</a>
                                 <a class="item-minimal wizard-nav" data-step="3">Section 3</a>
-                                <!-- <a class="item-minimal wizard-nav" data-direction="next">Next →</a> -->
                             </div>
 
                             <div class="wizard-step card bg-grey-1-dark" id="step-1">Section 1 Content</div>
@@ -83,25 +74,17 @@
                         <div class="accordion">
                             <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
                             <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                                <pre class="copy-text square"><code class="language-html">&lt;div class="wizard"&gt;
-    &lt;div class="pagination-nav pagination-nav-alt center-flex"&gt;
-        &lt;a href="#" class="item wizard-nav" data-direction="prev"&gt;&laquo;&lt;/a&gt;
-        &lt;!-- Links for direct navigation (optional) --&gt;
-        &lt;a href="#" class="item wizard-nav" data-step="1"&gt;1&lt;/a&gt;
-        &lt;a href="#" class="item wizard-nav current" data-step="2"&gt;2&lt;/a&gt;
-        &lt;a href="#" class="item wizard-nav" data-step="3"&gt;3&lt;/a&gt;
-        &lt;a href="#" class="item wizard-nav" data-direction="next"&gt;&raquo;&lt;/a&gt;
+                                <pre class="copy-text square"><code class="language-html">  &lt;div class="wizard"&gt;
+    &lt;div class="pagination-nav center-flex"&gt;
+      &lt;a class="item-minimal wizard-nav" data-step="1"&gt;Section 1&lt;/a&gt;
+      &lt;a class="item-minimal wizard-nav" data-step="2"&gt;Section 2&lt;/a&gt;
+      &lt;a class="item-minimal wizard-nav" data-step="3"&gt;Section 3&lt;/a&gt;
     &lt;/div&gt;
-    &lt;div class="wizard-step" id="step-1"&gt;
-        Step 1 Content
-    &lt;/div&gt;
-    &lt;div class="wizard-step" id="step-2"&gt;
-        Step 2 Content
-    &lt;/div&gt;
-    &lt;div class="wizard-step" id="step-3"&gt;
-       Step 3 Content
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+
+    &lt;div class="wizard-step card bg-grey-1-dark" id="step-1"&gt;Section 1 Content&lt;/div&gt;
+    &lt;div class="wizard-step card bg-grey-2" id="step-2"&gt;Section 2 Content&lt;/div&gt;
+    &lt;div class="wizard-step card bg-grey-2-dark" id="step-3"&gt;Section 3 Content&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
                             </div>
                         </div>
                     </z-col>

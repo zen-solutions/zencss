@@ -6307,7 +6307,7 @@
   .zen .hide-tablet {
     display: none;
   }
-  .zen .tablet-reverse {
+  .zen .mobile\:reverse {
     flex-direction: column;
   }
   .zen .z-col,
@@ -6358,7 +6358,7 @@
     flex-direction: column;
   }
 }
-.zen .tablet-reverse {
+.zen .mobile\:reverse {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
@@ -6377,10 +6377,10 @@
   .zen .card {
     font-size: 1em;
   }
-  .zen .tablet-reverse > :nth-z-col(1) {
+  .zen .mobile\:reverse > :nth-z-col(1) {
     order: 2;
   }
-  .zen .tablet-reverse > :nth-z-col(2) {
+  .zen .mobile\:reverse > :nth-z-col(2) {
     order: 1;
   }
   .zen z-container-fluid z-col,
@@ -6489,10 +6489,10 @@
     padding-left: 1em;
     padding-right: 1em;
   }
-  .zen .tablet-reverse > :nth-z-col(1) {
+  .zen .mobile\:reverse > :nth-z-col(1) {
     order: 2;
   }
-  .zen .tablet-reverse > :nth-z-col(2) {
+  .zen .mobile\:reverse > :nth-z-col(2) {
     order: 1;
   }
   .zen .center-tablet {
