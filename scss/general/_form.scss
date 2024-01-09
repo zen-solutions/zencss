@@ -129,8 +129,15 @@ input {
     font-size: 13px;
     //border: 1px solid $border-color;
     //color: $border-color;
+    padding-top:4px;
 }
 
+.form-container{
+
+    input{
+        padding-top: 5px !important;
+    }
+}
 .form-container form label {
     position: absolute;
     left: 10px;
