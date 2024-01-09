@@ -184,7 +184,7 @@ $heights: 100 200 300 400 500;
     width: 100%;
     height: 100%;
     z-index: 0;
-    object-position: top left;
+    // object-position: top left; //consider a flag for this
 }
 
 //----------------------------------------------------
@@ -309,4 +309,8 @@ $gaps: (0.25em, 0.5em, 0.75em, 1em, 1.5em, 2em);
     float: right;
     margin-left: 15px;
     margin-bottom: 7px;
+}
+
+.position-absolute{
+    position:absolute !important;
 }

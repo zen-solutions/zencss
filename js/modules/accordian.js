@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Wait for the transition to end before setting overflow to auto
                 setTimeout(function() {
                     panel.style.overflow = "auto";
-                }, 300); // Replace 300 with the duration of your transition
+                }, 300); // transition duration
             }
         });
     });

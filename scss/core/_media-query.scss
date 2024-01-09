@@ -431,6 +431,11 @@
         padding-right: 1em;
     }
 
+    .tablet\:stack {
+        flex-direction: column !important;
+     }
+ 
+
     .mobile\:reverse > :nth-z-col(1) {
         order: 2;
     }

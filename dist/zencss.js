@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Function to start auto-rotating
         function startAutoRotate() {
             if (shouldAutoRotate) {
-                autoRotate = setInterval(moveToNext, 4000);
+                autoRotate = setInterval(moveToNext, 5000);
             }
         }
 
