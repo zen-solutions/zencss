@@ -36,7 +36,7 @@
                         <z-col class="card center">
                             <img src="../../docs/images/logos/zencss/smartalign.png" class="center-me w-75" alt="" />
                             <h1 class="headline">Smart-Align Framework</h1>
-                            <p class="lead">Dive into a world where shape and form align, and everything magically falls into place.</p>
+                            <p class="lead">Enter the realm of Smart-Align, where shape and form seamlessly unite, creating a harmonious web layout experience.</p>
                         </z-col>
                     </z-row>
                 </z-container>
@@ -50,8 +50,7 @@
                                 <z-col class="card theme-light">
                                     <h2>Overview</h2>
                                     <p>
-                                        The zenCSS Smart-Align System uses a custom Flexbox grid system to provide you with an advanced, responsive layout solution for your web
-                                        apps. Like most modern CSS frameworks' grid systems, it is composed of three main components:
+                                        Smart-Align, a feature of zenCSS, leverages a custom Flexbox grid layout, offering a sophisticated and adaptable framework for your websites and applications. It comprises three integral elements:
                                     </p>
                                 </z-col>
                             </z-row>
@@ -60,21 +59,19 @@
                                 <z-col class="card theme-light">
                                     <p class="h5">Containers</p>
                                     <p>
-                                        The container is the outermost layer of the grid system and serves as a nestable, responsive wrapper. Containers are the basis for your
-                                        layout.
+                                        These are the foundational blocks of the Smart-Align grid. They act as responsive, nestable shells that form the backbone of your layout.
                                     </p>
                                 </z-col>
                                 <z-col class="card theme-light">
                                     <p class="h5">Rows</p>
 
-                                    <p>Inside the container, you can add one or more rows , which will in turn house the columns like these ones right here.</p>
+                                    <p>Within containers, rows are the structural units that host columns. They play a pivotal role in organizing and aligning your content.</p>
                                 </z-col>
                                 <z-col class="card theme-light feature-md">
                                     <p class="h5">Columns</p>
 
                                     <p>
-                                        Columns are placed inside rows and they can be customized to display differently on different screen sizes, make use of fluid layouts, use
-                                        features and change ordering.
+                                        Nested inside rows, columns are the dynamic elements of this system. They offer versatility in display across different devices, embracing fluidity, feature-rich layouts, and often marrying form and function.
                                     </p>
                                 </z-col>
                             </z-row>
@@ -83,12 +80,10 @@
                 </z-row>
                 <z-row>
                     <z-col>
-                        <h2>Experience Smart-Align</h2>
+                        <h2>Smart-Align in Action</h2>
 
                         <p>
-                            By default, in each row the Smart-Align System places four columns on desktop, two on tablet and one on mobile. You can modify this behavior, but the
-                            system is dynamic and will adjust to any amount of columns. Add or remove some columns using the buttons below, and watch as the content reflows
-                            automatically.
+                            Smart-Align is intuitively designed to cater to various devices. The default setting places four columns on a desktop view, two on a tablet, and one on mobile. This fluid system allows for customization, adapting seamlessly to any column configuration. Experiment with adding or removing columns and observe the auto-reflow of content.
                         </p>
                     </z-col>
                 </z-row>
@@ -116,11 +111,13 @@
             <z-container>
                 <z-row>
                     <z-col>
+                        <h3>Advanced Customization</h3>
+                    </z-col>
+                </z-row>
+                <z-row>
+                    <z-col>
                         <p>
-                            You may use "x-up" prefix to specify modifier classes that change the default alignment (where x is a number from two through eight). here we add the
-                            class
-                            <code>eight-up</code> to the row. We also target mobile with the <code>.mobile:two-up</code> class so devices smaller than tablet will display columns
-                            side by side.
+                            Use the "x-up" prefix in modifier classes for altering default alignments, with 'x' ranging from two to eight. For instance, applying 'eight-up' to a row changes its structure. The <code>.mobile:two-up</code> class is specifically for mobile devices, enabling a two-column view on smaller screens.
                         </p>
                     </z-col>
                 </z-row>
@@ -202,7 +199,7 @@
             <z-container>
                 <z-row>
                     <z-col class="mt-5 pt-5">
-                        <p>With 2/3 items in a row, you can "feature" them to take up more space in your design. You can also use -sm, -md, and -lg for extra emphasis.</p>
+                        <p>For rows with 2 or 3 columns, the "feature" option allows columns to occupy more space, making them stand out. Additional size modifiers like -sm, -md,, -lg and -xl offer further emphasis options.</p>
                     </z-col>
                 </z-row>
                 <z-row>
@@ -267,7 +264,13 @@
 </z-container-fluid-->
 
             <z-container>
-                <z-row class="mt-5">
+                <z-row>
+                    <z-col>
+                        <h3>Code Examples</h3>
+                        <p>Here, we'll provide detailed examples of semantic HTML and zenCSS's unique syntax, demonstrating the practical implementation of the Smart-Align System.</p>
+                    </z-col>
+                </z-row>
+                <z-row>
                     <z-col>
                         <h3 class="d-inline">HTML</h3>
                         <pre class="copy-text"><code class="language-html">&lt;div class="z-container"&gt;
@@ -300,9 +303,45 @@
         <!----------------------------------------------------------------------->
         <!--- Footer  --->
         <!----------------------------------------------------------------------->
-        <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt="zenCSS" /></a>
-        </footer>
+    <footer class="z-container-fluid square">
+        <z-container>
+            <z-row class="mobile:two-up">
+                <z-col class="text-left">
+                    <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                    <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
+                    <a href="https://github.com/zen-solutions/zencss"><img src="../../docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
+                    <a href="https://twitter.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
+                    <a href="https://instagram.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Instagram" /></a>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">HELP DESK</p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/index.html">Quick-Start Guide</a></p>
+                    <p> <a class="link-reverse text-sm" href="../help-desk/what-is-zencss.html">What is zenCSS?</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/installation.html">Installation</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zen-system.html">The ZEN Ideology</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zentax.html">Intro to Zentax</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/contributing.html">Contributing</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../examples/about.html">About</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">FEATURES</p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-align-framework.html">Smart-Align Framework</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-color-system.html">Smart-Color System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-text.html">Smart-Text System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/themes.html">Themes & Modes</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-sections.html">Site Sections</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-parts.html">Components</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/utilities.html">Utilities</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">SUMMARY</p>
+                    <p class="text-xs">zenCSS is a free & open source framework for rapid front-end development</p>
+                </z-col>
+            </z-row>
+        </z-container>
+    </footer>
 
         <script src="../../dist/zencss.js"></script>
         <script src="../../docs/js/navigation.js"></script>
