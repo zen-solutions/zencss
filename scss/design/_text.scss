@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.1.0-beta (https://zencss.com/)
+  * zenCSS v2.2.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -473,4 +473,19 @@ a.text-cta-dual {
 
 .overlay-container:hover::after, .overlay-container:hover .overlay-text {
     opacity: 1;
+}
+
+.link-reverse{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.icon-top-right{
+    position: absolute !important;
+    right: 10px !important;
+    top: 10px !important;
+    left: unset !important;
 }

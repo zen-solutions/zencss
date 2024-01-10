@@ -1,5 +1,5 @@
 /*
- * zenCSS v2.1.0-beta (https://zencss.com/)
+ * zenCSS v2.2.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -20,7 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 const targetElement = document.querySelector(hrefAttribute);
 
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    // Get the target element's top position relative to the document
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                    // Scroll to the position minus 100 pixels
+                    window.scrollTo({
+                        top: targetPosition - 100,
+                        behavior: "smooth"
+                    });
                 }
             });
         });

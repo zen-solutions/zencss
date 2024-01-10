@@ -53,8 +53,7 @@
                     <z-col>
                         <h2>Introduction to ZEN</h2>
                         <p>
-                            ZEN (Zero Effort Notation) blends the best of BEM, utility-first CSS, and atomic design into a singular, effortless approach to styling web
-                            applications. This innovative ideology streamlines UI development, ensuring a seamless, consistent design flow. ZEN is more than a styling framework;
+                            ZEN (Zero Effort Notation) blends the best of BEM, utility-first CSS, and atomic design into a singular, effortless approach to styling websites. This innovative ideology streamlines UI development, ensuring a seamless, consistent design flow. ZEN is more than a styling framework;
                             it's a philosophy that values intuitive structure, adaptability, and clarity, making it a quintessential choice for developers and teams seeking an
                             elegant balance in web design.
                         </p>
@@ -134,9 +133,45 @@
         <!----------------------------------------------------------------------->
         <!--- Footer  --->
         <!----------------------------------------------------------------------->
-        <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt="zenCSS" /></a>
-        </footer>
+    <footer class="z-container-fluid square">
+        <z-container>
+            <z-row class="mobile:two-up">
+                <z-col class="text-left">
+                    <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                    <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
+                    <a href="https://github.com/zen-solutions/zencss"><img src="../../docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
+                    <a href="https://twitter.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
+                    <a href="https://instagram.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Instagram" /></a>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">HELP DESK</p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/index.html">Quick-Start Guide</a></p>
+                    <p> <a class="link-reverse text-sm" href="../help-desk/what-is-zencss.html">What is zenCSS?</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/installation.html">Installation</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zen-system.html">The ZEN Ideology</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zentax.html">Intro to Zentax</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/contributing.html">Contributing</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../examples/about.html">About</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">FEATURES</p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-align-framework.html">Smart-Align Framework</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-color-system.html">Smart-Color System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-text.html">Smart-Text System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/themes.html">Themes & Modes</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-sections.html">Site Sections</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-parts.html">Components</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/utilities.html">Utilities</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">SUMMARY</p>
+                    <p class="text-xs">zenCSS is a free & open source framework for rapid front-end development</p>
+                </z-col>
+            </z-row>
+        </z-container>
+    </footer>
 
         <script src="../js/copy.js"></script>
         <script src="../../dist/zencss.js"></script>

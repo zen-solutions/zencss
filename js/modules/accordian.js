@@ -1,5 +1,5 @@
 /*
- * zenCSS v2.1.0-beta (https://zencss.com/)
+ * zenCSS v2.2.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 var otherPanel = otherToggle.nextElementSibling;
+                otherPanel.style.overflow = "hidden"; // Set overflow to hidden during transition
                 otherPanel.style.maxHeight = null;
                 otherPanel.setAttribute("aria-hidden", "true"); // Hide other panels
             });
@@ -41,6 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 var panel = this.nextElementSibling;
                 panel.style.maxHeight = panel.scrollHeight > 200 ? "1000px" : panel.scrollHeight + 10 + "px";
                 panel.setAttribute("aria-hidden", "false"); // Show the current panel
+
+                // Wait for the transition to end before setting overflow to auto
+                setTimeout(function() {
+                    panel.style.overflow = "auto";
+                }, 300); // transition duration
             }
         });
     });

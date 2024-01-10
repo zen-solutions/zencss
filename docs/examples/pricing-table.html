@@ -43,7 +43,7 @@
             <!----------------------------------------------------------------------->
             <!--- Component --->
             <!----------------------------------------------------------------------->
-             <z-container class="center-flex">
+             <!-- <z-container class="center-flex">
             <z-row>
                 <z-col class="theme-cta card ">
                     <img src="../../docs/images/website/gradient.jpg" class="bg-img" alt="">
@@ -154,6 +154,7 @@
                 <z-col class="pl-0 pr-0">
                     <div class="accordion">
                         <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i>Code Example</a>
+<i class="zenicon-code down-1 ml-3"></i> Shortcut: breadcrumbs
                         <div id="content1" class="expanded-content p-0" aria-hidden="true">
                             <pre class="copy-text square"><code class="language-html">&lt;z-container class="center-flex"&gt;
   &lt;z-row&gt;
@@ -207,7 +208,7 @@
                     </div>
                 </z-col>
             </z-row>
-        </z-container> 
+        </z-container>  -->
 
             <z-container>
                 <z-row>
@@ -299,6 +300,7 @@
                     <z-col>
                         <div class="accordion">
                             <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i>Code Example</a>
+<i class="zenicon-code down-1 ml-3"></i> Shortcut: pricing-table-1
                             <div id="content2" class="expanded-content p-0" aria-hidden="true">
                                 <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row&gt;
@@ -340,7 +342,7 @@
                     </z-col>
                 </z-row>
             </z-container>
-
+<hr>
             <z-container>
                 <z-row>
                     <z-col class="card border-3 align-items-center">
@@ -432,6 +434,7 @@
                     <z-col>
                         <div class="accordion">
                             <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+<i class="zenicon-code down-1 ml-3"></i> Shortcut: pricing-table-2
                             <div id="content3" class="expanded-content p-0" aria-hidden="true">
                                 <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row&gt;
@@ -506,9 +509,45 @@
         <!----------------------------------------------------------------------->
         <!--- Footer  --->
         <!----------------------------------------------------------------------->
-        <footer>
-            <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt="zenCSS" /></a>
-        </footer>
+    <footer class="z-container-fluid square">
+        <z-container>
+            <z-row class="mobile:two-up">
+                <z-col class="text-left">
+                    <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                    <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
+                    <a href="https://github.com/zen-solutions/zencss"><img src="../../docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
+                    <a href="https://twitter.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
+                    <a href="https://instagram.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Instagram" /></a>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">HELP DESK</p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/index.html">Quick-Start Guide</a></p>
+                    <p> <a class="link-reverse text-sm" href="../help-desk/what-is-zencss.html">What is zenCSS?</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/installation.html">Installation</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zen-system.html">The ZEN Ideology</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zentax.html">Intro to Zentax</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/contributing.html">Contributing</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../examples/about.html">About</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">FEATURES</p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-align-framework.html">Smart-Align Framework</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-color-system.html">Smart-Color System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-text.html">Smart-Text System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/themes.html">Themes & Modes</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-sections.html">Site Sections</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-parts.html">Components</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/utilities.html">Utilities</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">SUMMARY</p>
+                    <p class="text-xs">zenCSS is a free & open source framework for rapid front-end development</p>
+                </z-col>
+            </z-row>
+        </z-container>
+    </footer>
 
         <script src="../../dist/zencss.js"></script>
         <script src="../../docs/js/navigation.js"></script>

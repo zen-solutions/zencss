@@ -40,11 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="../examples/header.html">Header</a>
                     <a href="../examples/jumbotron.html">Hero Sections</a>
                     <a href="../examples/image-text.html">Image/Text Sections</a>
-                    <a href="../examples/text-content-row.html">Text/Content Row</a>
+                    <a href="../examples/text-content-row.html">Text/Content Rows</a>
                     <a href="../examples/layout-grids.html">Layout Grids</a>
                     <a href="../examples/product-row.html">Product Grids</a>
                     <a href="../examples/faq.html">FAQs</a>
                     <a href="../examples/text-card-carousel.html">Text/Carousels</a>
+                    <a href="../examples/card-carousel.html">Card Carousel</a>
+                    <a href="../examples/accordion-content.html">Accordion/Content</a> 
                     <a href="../examples/optin-form.html">Optin-Form/Text Section</a>
                     <a href="../examples/footer.html">Footer</a> 
                 </div>
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <a href="../examples/pricing-table.html">Pricing Tables</a>
                                 <a href="../examples/promo-bars.html">Promo Bars</a>
                                 <a href="../examples/quiz.html">Quiz</a>
-                                <a href="../examples/sidebars.html">Side Bars</a>
+                                <a href="../examples/sidebars.html">Sidebar</a>
                                 <a href="../examples/testimonials.html">Testimonials</a>
                                 <a href="../examples/tooltip.html">Tool Tips</a>
                                 <a href="../examples/tabs.html">Tabs</a>
@@ -194,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var currentIndex = pages.findIndex((url) => url === currentUrl);
 
         var prevNextHtml = '<z-container-fluid class="prev-next theme-light mt-5">';
-        prevNextHtml += '<z-row class="down-5"><z-col class="text-center"><p class="h3 p-0">You might also like..</p></z-col></z-row>';
+        prevNextHtml += '<z-row class="down-5"><z-col class="text-center"><p class="p-0 mb-0">You might also like..</p></z-col></z-row>';
         prevNextHtml += '<z-row class="gap-0">';
 
         var hasPrev = currentIndex > 0;
