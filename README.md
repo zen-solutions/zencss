@@ -4,7 +4,7 @@ An open-source, website authoring and design toolkit that helps you build, style
 
 ### Pre-Launch Installation
 
--   Download or clone the latest files [from the zencss repository](https://github.com/zen-solutions/zencss).
+-   Download the latest release or clone the latest files [from the zencss repository](https://github.com/zen-solutions/zencss).
 -   Follow the instructions in the [zenCSS setup documentation](https://zencss.com/docs/help-desk/installation.html).
 
 ## Features
