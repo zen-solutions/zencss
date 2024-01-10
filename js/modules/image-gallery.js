@@ -1,5 +1,5 @@
 // /*
-//  * zenCSS v2.1.0-beta (https://zencss.com/)
+//  * zenCSS v2.2.0-beta (https://zencss.com/)
 //  * Copyright 2022-2024 Shaun Mackey
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
@@ -7,7 +7,7 @@
 //12/29 removing lazy load
 
 /*
- * zenCSS v2.1.0-beta (https://zencss.com/)
+ * zenCSS v2.2.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
