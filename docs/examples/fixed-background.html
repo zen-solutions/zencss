@@ -30,7 +30,7 @@
         <z-row>
             <z-col>
                 <div class="center">
-                    <h1 class="headline">Fixed Background</h1>
+                    <h1 class="headline">Fixed Background Image</h1>
                     <p>Scrollable content areas with fixed background images</p>
                     <hr />
                 </div>
@@ -42,30 +42,24 @@
     <!--- Component --->
     <!----------------------------------------------------------------------->
     <z-container>
-
-
-        <z-row class="fixed-background h-350">
+        <z-row class="fixed-background h-350 square">
             <z-col class="center-vertical">
-                <img src="../../dist/img/placeholder/16x9/MaevaVigier.jpg" alt="Background Image">
-                
-                <h2 class="center text-white">Content Area w fixed background image</h2>
-                <!-- Add more content as needed -->
-               
+                <img src="../../dist/img/placeholder/16x9/MaevaVigier.jpg" alt="Background Image">      
+                <h2 class="center text-white">Content Area + fixed background image</h2>               
             </z-col>
         </z-row>
 
-        <z-row class="theme-light h-350">
+        <z-row class="theme-light h-350 square">
             <z-col class="center-vertical">
                 <p class="center">This is a placeholder content area</p>
             </z-col>
         </z-row>
 
-        <z-row class="fixed-background h-350">
+        <z-row class="fixed-background h-350 square">
             <z-col class="center-vertical">
                 <img src="../../dist/img/placeholder/16x9/haotain-zheng.jpg" alt="Background Image">
                 <div class="content">
-                    <h2 class="center text-white">Content Area w fixed background image</h2>
-                    <!-- Add more content as needed -->
+                    <h2 class="center text-white">Content Area + fixed background image</h2>
                 </div>
             </z-col>
         </z-row>
@@ -77,41 +71,13 @@
             <z-col>
                 <div class="accordion center">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <i class="zenicon-code down-1 ml-3"></i> Shortcut: faq
+                    <i class="zenicon-code down-1 ml-3"></i> Shortcut: fixed-background
                     <div id="content1" class="expanded-content p-0" aria-hidden="true">
                         <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
-  &lt;z-row&gt;
-    &lt;z-col class="center narrow-xl"&gt;
-      &lt;span class="label"&gt;Frequently Asked Questions&lt;/span&gt;
-      &lt;h2&gt;Everything you need to know&lt;/h2&gt;
-      &lt;z-container class="text-left"&gt;
-        &lt;z-row&gt;
-          &lt;z-col class="p-0"&gt;
-            &lt;div class="accordion"&gt;
-              &lt;ul class="list-group list-group-flush"&gt;
-                &lt;li class="list-group-item p-0"&gt;
-                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content6"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;How many CSS programmers does it take to change a lightbulb?&lt;/a&gt;
-                  &lt;div id="content6" class="expanded-content naked" aria-hidden="true"&gt;
-                    &lt;p class=" pb-5 up-2"&gt; None, just add some "brightness" to the background color! 💀&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/li&gt;
-                &lt;li class="list-group-item p-0"&gt;
-                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;What do you call a group of CSS developers in a room?&lt;/a&gt;
-                  &lt;div id="content4" class="expanded-content naked" aria-hidden="true"&gt;
-                    &lt;p class=" pb-5 up-2"&gt;A "div"erse assembly of "selectors"! 🤣&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/li&gt;
-                &lt;li class="list-group-item p-0"&gt;
-                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content5"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;Can CSS magically make my website compatible with older browsers?&lt;/a&gt;
-                  &lt;div id="content5" class="expanded-content naked" aria-hidden="true"&gt;
-                    &lt;p class=" pb-5 up-2"&gt;CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists. 🦕&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/div&gt;
-          &lt;/z-col&gt;
-        &lt;/z-row&gt;
-      &lt;/z-container&gt;
+  &lt;z-row class="fixed-background h-350"&gt;
+    &lt;z-col class="text-center-vertical"&gt;
+      &lt;img src="../../dist/img/placeholder/16x9/MaevaVigier.jpg" alt="Background Image"&gt;
+      &lt;h2 class="text-center text-white"&gt;Content Area w fixed background image&lt;/h2&gt;
     &lt;/z-col&gt;
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
