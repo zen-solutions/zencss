@@ -16,6 +16,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   /*
     * zenCSS v2.2.0-beta (https://zencss.com/)
     * Copyright 2022-2024 Shaun Mackey
@@ -3375,7 +3378,7 @@
   padding: 1rem 0;
   margin-top: 0;
   padding-top: 0;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75em;
 }
 .zen .text-balance {
@@ -3413,6 +3416,10 @@
   text-align: center !important;
 }
 .zen .text-center-vertical, .zen .center-vertical {
+  margin: auto;
+  width: 100%;
+}
+.zen .flex-center-vertical {
   display: flex;
   align-items: center;
 }

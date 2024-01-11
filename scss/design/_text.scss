@@ -18,7 +18,7 @@
     @include font-spacing;
     margin-top: 0;
     padding-top: 0;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75em;
 }
 
@@ -78,8 +78,11 @@ $text-grey-dual: #5e5e5e;
 }
 
 .text-center-vertical, .center-vertical {
-    // margin: auto;
-    // width: 100%;
+     margin: auto;
+     width: 100%;
+}
+
+.flex-center-vertical{
     display: flex;
     align-items: center;
 }

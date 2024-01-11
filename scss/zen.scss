@@ -45,6 +45,9 @@ $base-text-color: #444444;
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 
     *::before,
     *::after {
