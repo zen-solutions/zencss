@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zenCSS Components</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../../dist/zen.min.css" />
+    <link rel="stylesheet" href="../../dist/icons.css" />
+    <link rel="stylesheet" href="../../docs/css/documentation.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="../../docs/js/updateseo.js"></script>
+</head>
+
+<body class="zen">
+    <header class="header-sticky">
+        <div class="pl-2" id="header-logo">
+            <a href="../../index.html"><img src="../../dist/img/logo.png" alt="zenCSS logo" /></a>
+        </div>
+
+        <div id="nav-placeholder"></div>
+    </header>
+
+    <!----------------------------------------------------------------------->
+    <!--- Page Title  --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="center">
+                    <h1 class="headline">Fixed Background</h1>
+                    <p>Scrollable content areas with fixed background images</p>
+                    <hr />
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Component --->
+    <!----------------------------------------------------------------------->
+    <z-container>
+
+
+        <z-row class="fixed-background h-350">
+            <z-col class="center-vertical">
+                <img src="../../dist/img/placeholder/16x9/MaevaVigier.jpg" alt="Background Image">
+                
+                <h2 class="center text-white">Content Area w fixed background image</h2>
+                <!-- Add more content as needed -->
+               
+            </z-col>
+        </z-row>
+
+        <z-row class="theme-light h-350">
+            <z-col class="center-vertical">
+                <p class="center">This is a placeholder content area</p>
+            </z-col>
+        </z-row>
+
+        <z-row class="fixed-background h-350">
+            <z-col class="center-vertical">
+                <img src="../../dist/img/placeholder/16x9/haotain-zheng.jpg" alt="Background Image">
+                <div class="content">
+                    <h2 class="center text-white">Content Area w fixed background image</h2>
+                    <!-- Add more content as needed -->
+                </div>
+            </z-col>
+        </z-row>
+
+    </z-container>
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="accordion center">
+                    <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
+                    <i class="zenicon-code down-1 ml-3"></i> Shortcut: faq
+                    <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                        <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
+  &lt;z-row&gt;
+    &lt;z-col class="center narrow-xl"&gt;
+      &lt;span class="label"&gt;Frequently Asked Questions&lt;/span&gt;
+      &lt;h2&gt;Everything you need to know&lt;/h2&gt;
+      &lt;z-container class="text-left"&gt;
+        &lt;z-row&gt;
+          &lt;z-col class="p-0"&gt;
+            &lt;div class="accordion"&gt;
+              &lt;ul class="list-group list-group-flush"&gt;
+                &lt;li class="list-group-item p-0"&gt;
+                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content6"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;How many CSS programmers does it take to change a lightbulb?&lt;/a&gt;
+                  &lt;div id="content6" class="expanded-content naked" aria-hidden="true"&gt;
+                    &lt;p class=" pb-5 up-2"&gt; None, just add some "brightness" to the background color! 💀&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="list-group-item p-0"&gt;
+                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;What do you call a group of CSS developers in a room?&lt;/a&gt;
+                  &lt;div id="content4" class="expanded-content naked" aria-hidden="true"&gt;
+                    &lt;p class=" pb-5 up-2"&gt;A "div"erse assembly of "selectors"! 🤣&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="list-group-item p-0"&gt;
+                  &lt;a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content5"&gt;&lt;i class="zenicon-keyboard-arrow-right down-3"&gt;&lt;/i&gt;Can CSS magically make my website compatible with older browsers?&lt;/a&gt;
+                  &lt;div id="content5" class="expanded-content naked" aria-hidden="true"&gt;
+                    &lt;p class=" pb-5 up-2"&gt;CSS can help, but it won't turn an ancient browser into a modern one. Some things are best left to archaeologists. 🦕&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/z-col&gt;
+        &lt;/z-row&gt;
+      &lt;/z-container&gt;
+    &lt;/z-col&gt;
+  &lt;/z-row&gt;
+&lt;/z-container&gt;</code></pre>
+                    </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!---  The Zen Test --->
+    <!----------------------------------------------------------------------->
+
+    <z-container>
+        <z-row>
+            <z-col class="center">
+                <div>
+                    <hr />
+                    <h3 class="h4">The Zen Test</h3>
+                    <p class="text-balance">
+                        Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern
+                        browsers.
+                    </p>
+                    <p>So you can be assured it "just works". Try it out below.</p>
+                </div>
+
+                <div class="center">
+                    <button id="toggleButton" class="btn-md m-0">Layout</button>
+                    <button id="toggleDarkMode" class="btn-md m-0">Color</button>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <!----------------------------------------------------------------------->
+    <!--- Footer  --->
+    <!----------------------------------------------------------------------->
+    <footer class="z-container-fluid square">
+        <z-container>
+            <z-row class="mobile:two-up">
+                <z-col class="text-left">
+                    <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                    <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
+                    <a href="https://github.com/zen-solutions/zencss"><img src="../../docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
+                    <a href="https://twitter.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
+                    <a href="https://instagram.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/instagram.png" class="w-20 m-1" alt="Instagram" /></a>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">HELP DESK</p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/index.html">Quick-Start Guide</a></p>
+                    <p> <a class="link-reverse text-sm" href="../help-desk/what-is-zencss.html">What is zenCSS?</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/installation.html">Installation</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zen-system.html">The ZEN Ideology</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/zentax.html">Intro to Zentax</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/contributing.html">Contributing</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../examples/about.html">About</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">FEATURES</p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-align-framework.html">Smart-Align Framework</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-color-system.html">Smart-Color System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/smart-text.html">Smart-Text System</a></p>
+                    <p><a class="link-reverse text-sm" href="../examples/themes.html">Themes & Modes</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-sections.html">Site Sections</a></p>
+
+                    <p><a class="link-reverse text-sm" href="../help-desk/site-parts.html">Components</a></p>
+                    <p><a class="link-reverse text-sm" href="../help-desk/utilities.html">Utilities</a></p>
+                </z-col>
+                <z-col class="text-left squeeze">
+                    <p class="eyebrow">SUMMARY</p>
+                    <p class="text-xs">zenCSS is a free & open source framework for rapid front-end development</p>
+                </z-col>
+            </z-row>
+        </z-container>
+    </footer>
+
+    <script src="../../dist/zencss.js"></script>
+    <script src="../../docs/js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+
+    <script src="../js/copy.js"></script>
+</body>
+
+</html>

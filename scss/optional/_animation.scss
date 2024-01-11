@@ -152,3 +152,22 @@ $steps: 8;
 .card-pan:hover .bg-img {
     transform: scale(1.1) translateY(-5%);
 }
+
+
+//-------------------------------------------
+// fixed background
+//-------------------------------------------
+
+.fixed-background {
+    position: relative;
+    overflow: hidden;
+    .content {
+        position: relative;
+        z-index: 2; 
+    }
+}
+
+.fixed-background img {
+    display: none; 
+}
+
