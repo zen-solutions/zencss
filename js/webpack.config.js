@@ -23,6 +23,7 @@ const commonConfig = {
             "./modules/wizard.js",
             "./modules/multistep-wizard.js",
             "./modules/tabs.js",
+            "./modules/fixed-background.js",
             "./modules/poll.js",
             "./modules/link-scroll.js",
             "./modules/cookie-consent.js",
