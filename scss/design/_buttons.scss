@@ -31,7 +31,7 @@ button,
     cursor: pointer;
     border-radius: $border-radius;
     text-decoration: none;
-    color: $light-color !important;
+    color: $light-color;
     background: lighten($bg-header-footer, 20%);
     padding: 10px 16px;
     margin: 10px 3px;

@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Desk</a>
                 <div class="dropdown-content">
-                <a href="../help-desk/index.html">Quick-Start Guide</a>
-                <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
-                <a href="../help-desk/installation.html">Installation</a>
-                <a href="../help-desk/features.html">Features</a>
-                <a href="../examples/zentax.html">Intro to Zentax</a>     
-                <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
-                <a href="../help-desk/contributing.html">Contributing</a>     
-                <a href="../examples/about.html">About</a>     
-
-</div></div>
+                    <a href="../help-desk/index.html">Quick-Start Guide</a>
+                    <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
+                    <a href="../help-desk/installation.html">Installation</a>
+                    <a href="../help-desk/features.html">Features</a>
+                    <a href="../examples/zentax.html">Intro to Zentax</a>     
+                    <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
+                    <a href="../help-desk/contributing.html">Contributing</a>     
+                    <a href="../examples/about.html">About</a>     
+                </div>
+            </div>
 
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Features</a>

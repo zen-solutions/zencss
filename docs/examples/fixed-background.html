@@ -71,7 +71,7 @@
             <z-col>
                 <div class="accordion center">
                     <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-                    <i class="zenicon-code down-1 ml-3"></i> Shortcut: fixed-background
+                    <i class="zenicon-code down-1 ml-3"></i> Shortcut: z-fixed-background
                     <div id="content1" class="expanded-content p-0" aria-hidden="true">
                         <pre class="copy-text square"><code class="language-html">&lt;z-container&gt;
   &lt;z-row class="fixed-background h-350"&gt;
@@ -82,6 +82,16 @@
   &lt;/z-row&gt;
 &lt;/z-container&gt;</code></pre>
                     </div>
+                </div>
+            </z-col>
+        </z-row>
+    </z-container>
+
+    <z-container>
+        <z-row>
+            <z-col>
+                <div class="alert-danger" role="alert">
+                  <p class="m-0">IMPORTANT: This effect relies on background-attachment: fixed which is not widely supported in mobile browsers. More information:  <a href="https://caniuse.com/background-attachment">https://caniuse.com/background-attachment</a></p>
                 </div>
             </z-col>
         </z-row>

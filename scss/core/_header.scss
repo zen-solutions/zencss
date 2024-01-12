@@ -120,6 +120,11 @@ header {
     transition: color 0.3s;
 }
 
+.top-nav a.btn {
+margin:0;
+min-height:unset;
+}
+
 @media (min-width: 768px) {
     #hamburger-button {
         display: none;
