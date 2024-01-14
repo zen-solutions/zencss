@@ -1,9 +1,9 @@
 /*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
-
+  * zenCSS v2.3.0-beta (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
@@ -200,6 +200,14 @@ window.onclick = function (event) {
 /*!**********************************!*\
   !*** ./modules/image-gallery.js ***!
   \**********************************/
+// /*
+//  * zenCSS v2.3.0-beta (https://zencss.com/)
+//  * Copyright 2022-2024 Shaun Mackey
+//  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+//  */
+
+//12/29 removing lazy load
+
 
 
 function preloadImage(src) {
@@ -616,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Wait for the transition to end before setting overflow to auto
                 setTimeout(function() {
                     panel.style.overflow = "auto";
-                }, 300); // Replace 300 with the duration of your transition
+                }, 300); // transition duration
             }
         });
     });
@@ -1686,6 +1694,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 (() => {
+/*!*************************!*\
+  !*** ./modules/fade.js ***!
+  \*************************/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeDivs = document.querySelectorAll('.fade > div');
+    let currentIndex = 0;
+
+    setInterval(() => {
+        // Determine the next index
+        const nextIndex = (currentIndex + 1) % fadeDivs.length;
+
+        // Fade in the next div
+        fadeDivs[nextIndex].style.opacity = 1;
+
+        // Fade out the current div
+        fadeDivs[currentIndex].style.opacity = 0;
+
+        // Update the current index
+        currentIndex = nextIndex;
+    }, 4000); // Interval for each transition
+});
+
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
 /*!*************************************!*\
   !*** ./modules/multistep-wizard.js ***!
   \*************************************/
@@ -1784,6 +1819,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!*************************************!*\
+  !*** ./modules/fixed-background.js ***!
+  \*************************************/
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var fixedBgElems = document.querySelectorAll('.fixed-background');
+
+    fixedBgElems.forEach(function (elem) {
+        var img = elem.querySelector('img');
+        if (img && img.src) {
+            elem.style.backgroundImage = 'url(' + img.src + ')';
+            elem.style.backgroundAttachment = 'fixed';
+            elem.style.backgroundPosition = 'center';
+            elem.style.backgroundRepeat = 'no-repeat';
+            elem.style.backgroundSize = 'cover';
+        }
+    });
+});
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.

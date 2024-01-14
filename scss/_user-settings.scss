@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.2.0-beta (https://zencss.com/)
+  * zenCSS v2.3.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -8,10 +8,12 @@
 //   Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$primary-color: #094394;
+$primary-color: #1c519c;
 $secondary-color: #0b6e09;
 $accent-color: #f7d62e;
-$cta-color: #2b66c5;
+$cta-color: #236cd3;
+
+
 
 //------------------------------------------
 //  Universal Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
@@ -40,7 +42,7 @@ $grey-6: #585858;
 //------------------------------------------
 
 $dark-mode-color: rgba(13, 17, 23, 0.8);
-$light-mode-color: rgba(255, 255, 255, 0.80);
+$light-mode-color: rgba(255, 255, 255, 0.60);
 
 //------------------------------------------
 // Global Vars/misc - prolly some cleanup to be done here

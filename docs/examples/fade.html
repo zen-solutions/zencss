@@ -4,19 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>zenCSS Components</title>
-
         <meta name="robots" content="index, follow" />
         <link rel="stylesheet" href="../../dist/zen.min.css" />
         <link rel="stylesheet" href="../../dist/icons.css" />
         <link rel="stylesheet" href="../../docs/css/documentation.css" />
+
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
         <script src="../../docs/js/updateseo.js"></script>
+
     </head>
 
     <body class="zen">
-        <div id="skip-navigation">
-            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-        </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
                 <a href="../../index.html"><img src="../../dist/img/logo.png" alt="zenCSS logo" /></a>
@@ -24,64 +22,61 @@
 
             <div id="nav-placeholder"></div>
         </header>
-        <main id="main-content">
-            <!----------------------------------------------------------------------->
-            <!--- Page Title  --->
-            <!----------------------------------------------------------------------->
-            <z-container>
-                <z-row>
-                    <z-col>
-                        <div class="center">
-                            <h1 class="headline">Cookie consent</h1>
-                            <p>A tool for obtaining user consent for cookies, helping support compliance with privacy laws.</p>
-                            <hr />
-                        </div>
-                    </z-col>
-                </z-row>
-            </z-container>
 
-            <!----------------------------------------------------------------------->
-            <!--- Component --->
-            <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Page Title  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">Element fade</h1>
+                        <p>Fade multiple items in a series.</p>
+                        <hr />
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-            <z-container>
-                <z-row>
-                    <z-col>
-                        <p class="center">
-                            Consent form will display at the bottom of the page. Upon acceptance, a local storage object is created and the value is saved for them automatically.
-                        </p>
 
-                        <p class="center"></p>
-                        <div class="cookie-consent-banner">
-                            <p>
-                                Our website uses cookies to enhance your browsing experience. By continuing to use our site, you agree to our use of cookies. Learn more in our
-                                <a href="#">Privacy & Cookie Policy</a>
-                            </p>
-                            <button class="accept-cookies btn-sm">Accept</button>
-                        </div>
-                    </z-col>
-                </z-row>
-            </z-container>
+<z-container>
+    <z-row>
+        <z-col class="d-flex justify-content-center">
+            <div class="fade w-350">
+                <div class="fade-item"><img src="../../dist/img/placeholder/fernando-jorge.jpg" alt=""></div>
+                <div class="fade-item"><img  src="../../dist/img/placeholder/CesarCouto.png" alt=""></div>
+                <div class="fade-item"><img  src="../../dist/img/placeholder/scottwebb.png" alt=""></div>
+            </div>              
+        </z-col>
+    </z-row>
+</z-container>
 
-            <z-container>
-                <z-row>
-                    <z-col class="pl-0 pr-0 center">
-                        <div class="accordion">
-                            <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-<i class="zenicon-code down-1 ml-3"></i> Shortcut: z-cookie-consent
-                            <div id="content1" class="expanded-content p-0" aria-hidden="true">
-                                <pre class="copy-text square"><code class="language-html">&lt;div class="cookie-consent-banner"&gt;
-    &lt;p&gt; Our website uses cookies to ... Learn more in our 
-      &lt;a href="#"&gt;Privacy &amp; Cookie Policy&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;button class="accept-cookies btn-md"&gt;Accept&lt;/button&gt;
+<z-container class="center">
+    <z-row>
+        <z-col class="pl-0 pr-0">
+            <div class="accordion">
+                <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i>
+                    Code Example</a><i class="zenicon-code down-1 ml-3"></i>Shortcut: z-fade
+                <div id="content3" class="expanded-content p-0" aria-hidden="true">
+                    <pre class="copy-text square"><code class="language-html">&lt;div class="fade"&gt;
+  &lt;div class="fade-item"&gt;&lt;img src="../../dist/img/placeholder/fernando-jorge.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div class="fade-item"&gt;&lt;img src="../../dist/img/placeholder/CesarCouto.png" alt=""&gt;&lt;/div&gt;
+  &lt;div class="fade-item"&gt;&lt;img src="../../dist/img/placeholder/scottwebb.png" alt=""&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                            </div>
-                        </div>
-                    </z-col>
-                </z-row>
-            </z-container>
-        </main>
+                </div>
+            </div>
+        </z-col>
+    </z-row>
+    <z-row>
+        <z-col>
+            <hr />
+        </z-col>
+    </z-row>
+</z-container>
+       
+        <!----------------------------------------------------------------------->
+        <!--- Footer  --->
+        <!----------------------------------------------------------------------->
     <footer class="z-container-fluid square">
         <z-container>
             <z-row class="mobile:two-up">
@@ -121,11 +116,12 @@
             </z-row>
         </z-container>
     </footer>
+
         <script src="../../dist/zencss.js"></script>
         <script src="../../docs/js/navigation.js"></script>
-        <script src="/js/optional/cookie-consent.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 
         <script src="../js/copy.js"></script>
+
     </body>
 </html>
