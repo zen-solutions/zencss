@@ -1,6 +1,6 @@
 {
     "name": "zencss",
-    "version": "2.2.0-beta",
+    "version": "2.3.0-beta",
     "description": "An intelligent web development framework, design system and toolkit.",
     "main": "index.html",
     "scripts": {
