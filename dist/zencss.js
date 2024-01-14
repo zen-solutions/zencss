@@ -1,3 +1,9 @@
+/*
+  * zenCSS v2.3.0-beta (https://zencss.com/)
+  * Copyright 2022-2024 Shaun Mackey
+  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+  */
+ 
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
@@ -5,11 +11,7 @@ var __webpack_exports__ = {};
 /*!************************************!*\
   !*** ./modules/custom-elements.js ***!
   \************************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Define zenCSS elements for use in JS
@@ -49,11 +51,7 @@ customElements.define("z-col", ZCol);
 /*!*****************************!*\
   !*** ./modules/carousel.js ***!
   \*****************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 document.addEventListener("DOMContentLoaded", () => {
     const sliders = document.querySelectorAll(".slider");
 
@@ -156,11 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!*****************************!*\
   !*** ./modules/dropdown.js ***!
   \*****************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 // Dropdown
@@ -207,18 +201,14 @@ window.onclick = function (event) {
   !*** ./modules/image-gallery.js ***!
   \**********************************/
 // /*
-//  * zenCSS v2.2.0-beta (https://zencss.com/)
+//  * zenCSS v2.3.0-beta (https://zencss.com/)
 //  * Copyright 2022-2024 Shaun Mackey
 //  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
 //  */
 
 //12/29 removing lazy load
 
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 function preloadImage(src) {
     const img = new Image();
@@ -590,11 +580,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!******************************!*\
   !*** ./modules/accordian.js ***!
   \******************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 document.addEventListener("DOMContentLoaded", function () {
     var accordionToggles = document.querySelectorAll(".accordion-toggle");
 
@@ -651,11 +637,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************!*\
   !*** ./modules/misc.js ***!
   \*************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 // Dynamic year in footer
@@ -1031,11 +1013,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!******************************!*\
   !*** ./modules/dark-mode.js ***!
   \******************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //  Toggle Dark Mode Option
@@ -1073,11 +1051,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!******************************!*\
   !*** ./modules/lazy-load.js ***!
   \******************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var lazyImages = [].slice.call(document.querySelectorAll(".zen img.lazy-load"));
@@ -1157,11 +1131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************************!*\
   !*** ./modules/background-image.js ***!
   \*************************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //Background image
@@ -1186,11 +1156,7 @@ window.addEventListener("DOMContentLoaded", function () {
 /*!*******************************!*\
   !*** ./modules/mobile-nav.js ***!
   \*******************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // //--------------------------------------------------------
 // // Mobile Nav
@@ -1242,11 +1208,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /*!**************************!*\
   !*** ./modules/modal.js ***!
   \**************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 // Modal
@@ -1404,11 +1366,7 @@ customElements.define("z-modal", ZModal);
 /*!***********************************!*\
   !*** ./modules/star-component.js ***!
   \***********************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Star component
@@ -1480,11 +1438,7 @@ customElements.define("star-component", StarComponent);
 /*!********************************!*\
   !*** ./modules/exit-intent.js ***!
   \********************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Exit Intent
@@ -1555,11 +1509,7 @@ setTimeout(function () {
 /*!****************************!*\
   !*** ./modules/sidebar.js ***!
   \****************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.getElementById("sidebar");
     const activeIndicator = document.getElementById("activeIndicator");
@@ -1688,11 +1638,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!***************************!*\
   !*** ./modules/wizard.js ***!
   \***************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Wizard
@@ -1748,14 +1694,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 (() => {
+/*!*************************!*\
+  !*** ./modules/fade.js ***!
+  \*************************/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeDivs = document.querySelectorAll('.fade > div');
+    let currentIndex = 0;
+
+    setInterval(() => {
+        // Determine the next index
+        const nextIndex = (currentIndex + 1) % fadeDivs.length;
+
+        // Fade in the next div
+        fadeDivs[nextIndex].style.opacity = 1;
+
+        // Fade out the current div
+        fadeDivs[currentIndex].style.opacity = 0;
+
+        // Update the current index
+        currentIndex = nextIndex;
+    }, 4000); // Interval for each transition
+});
+
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
 /*!*************************************!*\
   !*** ./modules/multistep-wizard.js ***!
   \*************************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const mswizard = document.querySelector(".mswizard");
@@ -1823,11 +1792,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************!*\
   !*** ./modules/tabs.js ***!
   \*************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 // ----------------------------------------
 // Tabs
@@ -1861,11 +1826,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*************************************!*\
   !*** ./modules/fixed-background.js ***!
   \*************************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var fixedBgElems = document.querySelectorAll('.fixed-background');
@@ -1888,11 +1849,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /*!*************************!*\
   !*** ./modules/poll.js ***!
   \*************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //-------------------------------------
 //Poll
@@ -1967,11 +1924,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!********************************!*\
   !*** ./modules/link-scroll.js ***!
   \********************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 document.addEventListener("DOMContentLoaded", () => {
     const anchors = document.querySelectorAll('a[href^="#"]');
 
@@ -2010,11 +1963,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*!***********************************!*\
   !*** ./modules/cookie-consent.js ***!
   \***********************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const banner = document.querySelector(".cookie-consent-banner");
@@ -2046,11 +1995,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 /*!******************************!*\
   !*** ./modules/test-mode.js ***!
   \******************************/
-/*
- * zenCSS v2.2.0-beta (https://zencss.com/)
- * Copyright 2022-2024 Shaun Mackey
- * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
- */
+
 
 //--------------------------------------------------------
 //Toggle  test mode

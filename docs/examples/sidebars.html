@@ -15,6 +15,9 @@
 </head>
 
 <body class="zen">
+    <div id="skip-navigation">
+        <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    </div>
     <header class="header-sticky">
         <div class="pl-2" id="header-logo">
             <a href="../../index.html"><img src="../../dist/img/logo.png" alt="zenCSS logo" /></a>
@@ -22,151 +25,437 @@
 
         <div id="nav-placeholder"></div>
     </header>
+    <main id="main-content">
+        <!----------------------------------------------------------------------->
+        <!--- Page Title  --->
+        <!----------------------------------------------------------------------->
+        <z-container>
+            <z-row>
+                <z-col>
+                    <div class="center">
+                        <h1 class="headline">Sidebars</h1>
+                        <p>
+                            Content areas paired with a left and/or right
+                            sidebar.
+                        </p>
+                        <hr />
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <!----------------------------------------------------------------------->
-    <!--- Page Title  --->
-    <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+        <!--- Component --->
+        <!----------------------------------------------------------------------->
 
-    <div class="center sidebar-content">
-        <h1 class="headline">Sidebar</h1>
-        <p>A page with a left sidebar and scrolling content</p>
-        <hr />
-    </div>
+        <z-container-fluid>
+            <z-container>
+                <z-row class="tablet-reverse">
+                    <z-col class="flex align-items-stretch theme-light">
+                        <z-container>
+                            <z-row>
+                                <z-col class="card gap-0">
+                                    <h2 class="h5 pb-3">Meet The Team</h2>
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            Jane Doe
+                                        </p>
+                                        <small>Co-Founder/CEO</small>
+                                    </div>
+                                    <hr />
 
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            John Smith
+                                        </p>
+                                        <small>Product Development</small>
+                                    </div>
+                                    <hr />
 
-    <!----------------------------------------------------------------------->
-    <!--- Component --->
-    <!----------------------------------------------------------------------->
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            Bill Franklin
+                                        </p>
+                                        <small>Web Development</small>
+                                    </div>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                    <z-col class="card feature-xl">
+                        <h2>Content area + Left Sidebar</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Delectus, laudantium numquam
+                            odit soluta iusto maiores voluptatibus
+                            voluptatum rerum laborum assumenda debitis
+                            ducimus quibusdam recusandae similique quia iste
+                            nam perferendis reprehenderit?
+                        </p>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
 
+        <z-container class="center">
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i>
+                            Code Example</a>
+                        <div id="content1" class="expanded-content p-0" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">&lt;z-container-fluid&gt;
+  &lt;z-container&gt;
+    &lt;z-row class="tablet-reverse"&gt;
+      &lt;z-col class="flex align-items-stretch theme-light"&gt;
+        &lt;z-container&gt;
+          &lt;z-row&gt;
+            &lt;z-col class="card gap-0"&gt;
+              &lt;h2 class="h5 pb-3"&gt;Meet The Team&lt;/h2&gt;
+              &lt;div class="image-group"&gt;
+              &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+              &lt;p class="headline semibold"&gt;Jane Doe&lt;/p&gt;
+                &lt;small&gt;Co-Founder/CEO&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
 
-    <aside>
-        <div id="sidebar" class="zen">
-            <nav role="navigation">
-                <a class="close position-corner up-5 left-10"></a>
-                <ul role="menu">
-                    <li><a href="#section1" class="text-decoration-none">Section 1</a></li>
-                    <li><a href="#section2" class="text-decoration-none">Section 2</a></li>
-                    <li><a href="#section3" class="text-decoration-none">Section 3</a></li>
-                    <li><a href="#section4" class="text-decoration-none">Section 4</a></li>
-                    <li><a href="#section5" class="text-decoration-none">Section 5</a></li>
-                </ul>
-            </nav>
-            <div id="rail"></div>
-            <div id="activeIndicator"></div>
-        </div>
-    </aside>
+              &lt;div class="image-group"&gt;
+              &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+              &lt;p class="headline semibold"&gt;John Smith&lt;/p&gt;
+                &lt;small&gt;Product Development&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
 
-    <div id="tab-button">
-        <i class="zenicon-control-point"></i>
-    </div>
-    <section id="section1" class="sidebar-content">
-        <h2 class="headline">Section 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?</p>
-    </section>
+              &lt;div class="image-group"&gt;
+                &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+                &lt;p class="headline semibold"&gt;Bill Franklin&lt;/p&gt;
+                &lt;small&gt;Web Development&lt;/small&gt;
+              &lt;/div&gt;
+            &lt;/z-col&gt;
+          &lt;/z-row&gt;
+        &lt;/z-container&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="card feature-xl"&gt;
+        &lt;h2&gt;Content area + Left Sidebar&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor... &lt;/p&gt;
+      &lt;/z-col&gt;
+    &lt;/z-row&gt;
+  &lt;/z-container&gt;
+&lt;/z-container-fluid&gt;
+ </code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <hr />
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <section id="section2" class="sidebar-content">
-        <h2 class="headline">Section 2</h2>
+        <z-container-fluid>
+            <z-container>
+                <z-row>
+                    <z-col class="card feature-xl">
+                        <h2>Content Area + Right Sidebar</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Delectus, laudantium numquam
+                            odit soluta iusto maiores voluptatibus
+                            voluptatum rerum laborum assumenda debitis
+                            ducimus quibusdam recusandae similique quia iste
+                            nam perferendis reprehenderit?
+                        </p>
+                    </z-col>
+                    <z-col class="flex align-items-stretch">
+                        <z-container>
+                            <z-row>
+                                <z-col class="card p-0">
+                                    <nav class="nav-menu theme-light">
+                                        <ul class="flex-grow-1">
+                                            <li class="active">
+                                                <i class="icon zenicon-person"></i>
+                                                Account
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-shield"></i>
+                                                Billing
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-https"></i>
+                                                Security
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-notifications-off"></i>
+                                                Notifications
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-ind-in-page"></i>
+                                                Preferences
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-settings"></i>
+                                                Settings
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?</p>
-    </section>
+        <z-container class="center">
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content2"><i class="zenicon-build-circle down-1"></i>
+                            Code Example</a>
+                        <div id="content2" class="expanded-content p-0" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">&lt;z-container-fluid&gt;
+  &lt;z-container&gt;
+    &lt;z-row&gt;
+      &lt;z-col class="card feature-xl"&gt;
+        &lt;h2&gt;Content Area + Right Sidebar&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum ... &lt;/p&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="flex align-items-stretch"&gt;
+        &lt;z-container&gt;
+          &lt;z-row&gt;
+            &lt;z-col class="card p-0"&gt;
+              &lt;nav class="nav-menu theme-light"&gt;
+                &lt;ul class="flex-grow-1"&gt;
+                  &lt;li class="active"&gt;&lt;i class="icon zenicon-person"&gt;&lt;/i&gt; Account&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-shield"&gt;&lt;/i&gt; Billing&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-https"&gt;&lt;/i&gt; Security&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-notifications-off"&gt;&lt;/i&gt; Notifications&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-ind-in-page"&gt;&lt;/i&gt; Preferences&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-settings"&gt;&lt;/i&gt; Settings&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/z-col&gt;
+          &lt;/z-row&gt;
+        &lt;/z-container&gt;
+      &lt;/z-col&gt;
+    &lt;/z-row&gt;
+  &lt;/z-container&gt;
+&lt;/z-container-fluid&gt; </code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <hr />
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <section id="section3" class="sidebar-content">
-        <h2 class="headline">Section 3</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?</p>
-    </section>
+        <z-container-fluid>
+            <z-container>
+                <z-row>
+                    <z-col class="flex align-items-stretch theme-light tablet-order-2">
+                        <z-container>
+                            <z-row>
+                                <z-col class="card gap-0">
+                                    <h2 class="h5 pb-3">Meet The Team</h2>
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            Jane Doe
+                                        </p>
+                                        <small>Co-Founder/CEO</small>
+                                    </div>
+                                    <hr />
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/5.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            John Smith
+                                        </p>
+                                        <small>Product Development</small>
+                                    </div>
+                                    <hr />
+                                    <div class="image-group">
+                                        <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/1.jpg" alt="" class="w-40 img-left" />
+                                        <p class="headline semibold">
+                                            Bill Franklin
+                                        </p>
+                                        <small>Web Development</small>
+                                    </div>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                    <z-col class="card feature-xl tablet-order-0">
+                        <h2>Content + Left/Right Sidebars</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Delectus, laudantium numquam
+                            odit soluta iusto maiores voluptatibus
+                            voluptatum rerum laborum assumenda debitis
+                            ducimus quibusdam recusandae similique quia iste
+                            nam perferendis reprehenderit?
+                        </p>
+                    </z-col>
+                    <z-col class="flex align-items-stretch p-0 tablet-order-1">
+                        <z-container>
+                            <z-row>
+                                <z-col class="card p-0">
+                                    <nav class="nav-menu theme-light">
+                                        <ul class="flex-grow-1">
+                                            <li>
+                                                <i class="icon zenicon-person pr-2"></i>
+                                                Account
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-shield"></i>
+                                                Billing
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-https"></i>
+                                                Security
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-notifications-off"></i>
+                                                Notifications
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-ind-in-page"></i>
+                                                Preferences
+                                            </li>
+                                            <li>
+                                                <i class="icon zenicon-settings"></i>
+                                                Settings
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </z-col>
+                            </z-row>
+                        </z-container>
+                    </z-col>
+                </z-row>
+            </z-container>
+        </z-container-fluid>
 
-    <section id="section4" class="sidebar-content">
-        <h2 class="headline">Section 4</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?</p>
-    </section>
+        <z-container class="center">
+            <z-row>
+                <z-col class="pl-0 pr-0">
+                    <div class="accordion">
+                        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content3"><i class="zenicon-build-circle down-1"></i>
+                            Code Example</a>
+                        <div id="content3" class="expanded-content p-0" aria-hidden="true">
+                            <pre class="copy-text square"><code class="language-html">&lt;z-container-fluid&gt;
+  &lt;z-container&gt;
+    &lt;z-row&gt;
+      &lt;z-col class="flex align-items-stretch theme-light tablet-order-2"&gt;
+        &lt;z-container&gt;
+          &lt;z-row&gt;
+            &lt;z-col class="card gap-0"&gt;
+              &lt;h2 class="h5 pb-3"&gt;Meet The Team&lt;/h2&gt;
+              &lt;div class="image-group"&gt;
+                &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+                &lt;p class="headline semibold"&gt;Jane Doe&lt;/p&gt;
+                &lt;small&gt;Co-Founder/CEO&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
+              &lt;div class="image-group"&gt;
+                &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+                &lt;p class="headline semibold"&gt;John Smith&lt;/p&gt;
+                &lt;small&gt;Product Development&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
+              &lt;div class="image-group"&gt;
+                &lt;img src="your-image.jpg" alt="" class="w-40 img-left"&gt;
+                &lt;p class="headline semibold"&gt;Bill Franklin&lt;/p&gt;
+                &lt;small&gt;Web Development&lt;/small&gt;
+              &lt;/div&gt;
+            &lt;/z-col&gt;
+          &lt;/z-row&gt;
+        &lt;/z-container&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="card feature-xl tablet-order-0"&gt;
+        &lt;h2&gt;Content + Left/Right Sidebars&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum ... &lt;/p&gt;
+      &lt;/z-col&gt;
+      &lt;z-col class="flex align-items-stretch p-0 tablet-order-1 "&gt;
+        &lt;z-container&gt;
+          &lt;z-row&gt;
+            &lt;z-col class="card p-0"&gt;
+              &lt;nav class="nav-menu theme-light"&gt;
+                &lt;ul class=" flex-grow-1"&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-person pr-2"&gt;&lt;/i&gt; Account&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-shield"&gt;&lt;/i&gt; Billing&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-https"&gt;&lt;/i&gt; Security&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-notifications-off"&gt;&lt;/i&gt; Notifications&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-ind-in-page"&gt;&lt;/i&gt; Preferences&lt;/li&gt;
+                  &lt;li&gt;&lt;i class="icon zenicon-settings"&gt;&lt;/i&gt; Settings&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/z-col&gt;
+          &lt;/z-row&gt;
+        &lt;/z-container&gt;
+      &lt;/z-col&gt;
+    &lt;/z-row&gt;
+  &lt;/z-container&gt;
+&lt;/z-container-fluid&gt;</code></pre>
+                        </div>
+                    </div>
+                </z-col>
+            </z-row>
+            <z-row>
+                <z-col>
+                    <hr />
+                </z-col>
+            </z-row>
+        </z-container>
 
-    <section id="section5" class="sidebar-content">
-        <h2 class="headline">Section 5</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?</p>
-    </section>
+        <!----------------------------------------------------------------------->
+        <!---  The Zen Test --->
+        <!----------------------------------------------------------------------->
 
+        <z-container>
+            <z-row>
+                <z-col class="center">
+                    <div>
+                        <hr />
+                        <h3 class="h4">The Zen Test</h3>
+                        <p class="text-balance">
+                            Every component, section, and utility we ship
+                            will pass layout, color, and functional tests to
+                            ensure they perform flawlessly in today's modern
+                            browsers.
+                        </p>
+                        <p>
+                            So you can be assured it "just works". Try it
+                            out below.
+                        </p>
+                    </div>
 
-
-
-
-
-
-
-
-
-    <div class="accordion sidebar-content">
-        <a href="" class="title accordion-toggle" aria-expanded="false" aria-controls="content1"><i class="zenicon-build-circle down-1"></i> Code Example</a>
-<i class="zenicon-code down-1 ml-3"></i> Shortcut: sidebar
-        <div id="content1" class="expanded-content p-0" aria-hidden="true">
-            <pre class="copy-text square"><code class="language-html">&lt;aside&gt;
-  &lt;div id="sidebar" class="zen"&gt;
-    &lt;nav role="navigation"&gt;
-      &lt;a class="close position-corner up-5 left-10"&gt;&lt;/a&gt;
-      &lt;ul role="menu"&gt;
-        &lt;li&gt;&lt;a href="#section1" class="text-decoration-none"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#section2" class="text-decoration-none"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#section3" class="text-decoration-none"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-    &lt;div id="rail"&gt;&lt;/div&gt;
-    &lt;div id="activeIndicator"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/aside&gt;
-
-&lt;div id="tab-button"&gt;
-  &lt;i class="zenicon-control-point"&gt;&lt;/i&gt;
-&lt;/div&gt;
-
-&lt;section id="section1" class="sidebar-content"&gt;
-  &lt;h2 class="headline"&gt;Section 1&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section id="section2" class="sidebar-content"&gt;
-  &lt;h2 class="headline"&gt;Section 2&lt;/h2&gt;
-
-  &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section id="section3" class="sidebar-content"&gt;
-  &lt;h2 class="headline"&gt;Section 3&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta labore minima expedita. Aliquam enim totam qui id, quas, perferendis perspiciatis cumque modi laboriosam nostrum rem quos dolorum ipsum, placeat explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolor quaerat explicabo voluptatem inventore laudantium sunt dicta doloribus soluta iure corporis voluptates, tempora voluptatibus dignissimos non distinctio atque ad tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit quo delectus, velit harum accusantium culpa quaerat libero saepe eligendi suscipit ducimus non, praesentium vitae, cumque ad dolore laboriosam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus ea enim dolore quidem nulla dolorum aliquid libero fuga, harum sequi vero, odio dignissimos, dicta ipsa cupiditate rerum ut non?&lt;/p&gt;
-&lt;/section&gt;</code></pre>
-        </div>
-    </div>
-
-
-    <!----------------------------------------------------------------------->
-    <!---  The Zen Test --->
-    <!----------------------------------------------------------------------->
-
-
-    <div class="center sidebar-content">
-        <hr />
-        <h3 class="h4">The Zen Test</h3>
-        <p class="text-balance">
-            Every component, section, and utility we ship will pass layout, color, and functional tests to ensure they perform flawlessly in today's modern
-            browsers.
-        </p>
-        <p>So you can be assured it "just works". Try it out below.</p>
-    </div>
-
-    <div class="center sidebar-content mb-5">
-        <button id="toggleButton" class="btn-md m-0">Layout</button>
-        <button id="toggleDarkMode" class="btn-md m-0">Color</button>
-    </div>
+                    <div class="center">
+                        <button id="toggleButton" class="btn-md m-0">
+                            Layout
+                        </button>
+                        <button id="toggleDarkMode" class="btn-md m-0">
+                            Color
+                        </button>
+                    </div>
+                </z-col>
+            </z-row>
+        </z-container>
+    </main>
 
     <!----------------------------------------------------------------------->
     <!--- Footer  --->
     <!----------------------------------------------------------------------->
-    <div class="footer sidebar-content">
+    <footer>
         <a href="https://zencss.com"><img src="../../docs/images/misc/powered-by-zencss-badge-filled-on-light.png" class="w-150 center-me" alt="zenCSS" /></a>
-    </div>
+    </footer>
 
     <script src="../../dist/zencss.js"></script>
     <script src="../../docs/js/navigation.js"></script>
