@@ -39,3 +39,27 @@
 .zenicon-favorite.icon-on.show {
     color: $red;
 }
+
+//fade
+.fade {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.fade > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Start with divs hidden */
+    transition: opacity 2s ease-in-out;
+}
+
+/* Show the first image initially */
+.fade > div:first-child {
+    opacity: 1;
+}
+

@@ -304,13 +304,12 @@ $text-cta: $cta-color;
 .btn-outline {
     @extend %button-basic;
     background-color: transparent;
-    border: 2px solid lighten($bg-header-footer, 25%);
-    color: lighten($bg-header-footer, 20%);
-    padding: 11px;
+    border: 1px solid lighten($bg-header-footer, 25%);
+    color: $bg-header-footer;
 
     &:hover {
         background: darken($light-color, 15%);
-        border: 2px solid darken($light-color, 50%);
+        border: 1px solid darken($light-color, 50%);
     }
 }
 

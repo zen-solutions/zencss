@@ -21,6 +21,7 @@ const commonConfig = {
             "./modules/exit-intent.js",
             "./modules/sidebar.js",
             "./modules/wizard.js",
+            "./modules/fade.js",
             "./modules/multistep-wizard.js",
             "./modules/tabs.js",
             "./modules/fixed-background.js",

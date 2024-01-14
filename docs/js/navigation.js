@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <a href="../examples/corner-popup.html">Corner Popup</a>
                                 <!--a href="../examples/dropdown.html">Dropdown</a-->
                                 <a href="../examples/exit-intent.html">Exit Popup</a>
+                                <a href="../examples/fade.html">Fade</a>
                                 <a href="../examples/form-elements.html">Form Elements</a>
                                 <a href="../examples/sign-in-form.html">Forms (sign up/opt in)</a>
                                 <a href="../examples/responsive-table.html">HTML Table</a>
