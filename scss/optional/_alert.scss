@@ -9,7 +9,7 @@
     border-spacing: 1px;
     padding: 1em 1em 1em 16px;
     filter: grayscale(10%);
-    color: $background-color;
+    color: $grey-6-dark;
     width: 100%;
     box-sizing: border-box;
     border-radius: $border-radius;
@@ -90,10 +90,7 @@
     @include alert(darken($light-mode-color, 10%), "", 4px);
 }
 
-.alert-warning,
-.alert-warning-minimal {
-    color: #947100;
-}
+
 
 //override
 
