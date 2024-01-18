@@ -35,7 +35,7 @@ button,
     background: lighten($bg-header-footer, 20%);
     padding: 10px 16px;
     margin: 10px 3px;
-    //font-size: 0.9em;
+    font-weight: 500;
     font-family: $zen-font-family;
     z-index: 3;
 
@@ -308,9 +308,14 @@ $text-cta: $cta-color;
     color: $bg-header-footer;
 
     &:hover {
-        background: darken($light-color, 15%);
+        background: lighten($bg-header-footer, 30%);
         border: 1px solid darken($light-color, 50%);
+        color: white;
     }
+}
+
+.btn:hover{
+    color: white;
 }
 
 //--------------------------
