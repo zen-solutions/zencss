@@ -7,6 +7,7 @@
     <title>zenCSS - Build Better Websites Faster</title>
     <meta name="description" content="zenCSS is an open source framework for rapid front-end development. Get started free." />
     <link rel="stylesheet" href="dist/zen.min.css" />
+    <link rel="stylesheet" href="docs/css/hp.css" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://zencss.com" />
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="docs/apple-touch-icon.png">
@@ -21,7 +22,7 @@
 <body class="zen zen-light">
     <header class="header-sticky slide-down">
         <div class="pl-2" id="header-logo">
-            <img src="dist/img/logo.png" alt="zenCSS logo" />
+            <img src="docs/images/logo.png" alt="zenCSS logo" />
         </div>
         <div class="docs-nav">
             <a id="hamburger-button-2"><img src="dist/img/icons/bars.svg" class="icon-header up-4 left-5" alt="Menu" /></a>
@@ -30,7 +31,7 @@
             <button id="close-button" aria-label="Close">
                 <a class="close"></a>
             </button>
-            <div class="pr-2">
+            <div class="pr-2" id="hp-nav">
                 <div class="dropdown nav-dropdown">
                     <a href="#" class="dropdown-link">Help Desk</a>
                     <div class="dropdown-content" style="display: none">
@@ -144,26 +145,35 @@
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         <z-container-fluid class="card hero-section overflow-hidden br-xxl br-top-0 m-0 p-0 fade-in">
-            <z-container class="hero-section">
+            <z-container class="hero-section pb-0 down-30">
                 <!-- <img src="docs/images/website/zencss.jpg" class="bg-img" alt="" /> -->
                 <z-row>
                     <z-col class="card center gap-3 pb-0">
-
 
 
                         <p class="headline text-xxl fade-in-1">
                             Build
                             <span class="text-cta">Better</span>
                             Websites Faster
-                            <!-- <span class="underline-handdrawn icon-invert">Faster</span> -->
                         </p>
-                        <h1 class="lead fade-in-2 text-balance text-grey-6">zenCSS is a free & open source framework for rapid front-end development</h1>
+                        <h1 class="lead fade-in-2 text-balance">zenCSS is a free & open source framework for rapid front-end development</h1>
                         <div class="pt-2 fade-in-3 down-5">
-                            <a href="#ai-powered-solutions" class="btn btn-lg btn-cta btn-hover">Learn More </a>
-                            <a href="docs/help-desk/installation.html" class="btn  btn-hover btn-outline bg-none">Start Your Journey</a>
-                            <p class="text-xs down-5">Current Version: 2.3.0-beta</p>
+                            <a href="#ai-powered-solutions" class="btn btn-xl btn-cta btn-hover">Start Your Journey</a>
+                            <!-- <a href="docs/help-desk/installation.html" class="btn  btn-hover btn-cta-outline">Start Your Journey</a> -->
+                            <!-- <p class="text-xs down-5">Current Version: 2.3.0-beta</p> -->
+
+                          <z-container-fluid class="page-section pb-0">
+                            <div class="video-container shadow-5 br-md">
+                                <video poster="docs/images/website/hp/hero-video.jpg" autoplay muted loop playsinline>
+                                    <source src="docs/images/website/hp/new.mp4" type="video/mp4">
+                                    <source src="docs/images/website/hp/hero-video.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                          </z-container-fluid>
+
                         </div>
                     </z-col>
                 </z-row>
@@ -171,7 +181,7 @@
             </z-container>
         </z-container-fluid>
 
-      
+
         <z-container-fluid class="page-section theme-light fade-in-4">
             <z-container>
                 <z-row>
@@ -184,54 +194,23 @@
 
                     </z-col>
                 </z-row>
-                <z-row class="center fade-in-4">
-                    <z-col>
-                        <z-container class="theme-light card p-0 shadow-3">
-                            <z-row class="p-0">
-                                <z-col class="p-0">
-                                    <img src="docs/images/website/hp-tout-1.jpg" class="br-bottom-0" alt="" />
-                                </z-col>
-                            </z-row>
-                            <z-row class="pt-0">
-                                <z-col class="card pt-4">
-                                    <p>Flawless display on every screen. The Smart-Align Framework guarantees your content always looks its best, regardless of the device.</p>
-                                    <a href="docs/examples/smart-align-framework.html" class="btn btn-xl btn-cta btn-hover center-me">Smart-Align Demo</a>
-                                </z-col>
-                            </z-row>
-                        </z-container>
+
+                <z-row class="gap-6 fade-in-4">
+                    <z-col class="card p-0 theme-light shadow-3">
+                        <img src="docs/images/website/hp-tout-1.jpg" class="br-bottom-0" alt="" />
+                        <p class="p-5 center">Flawless display on every screen. The Smart-Align Framework guarantees your content always looks its best, regardless of the device.</p>
+                        <p class="p-5 pt-0 center"><a href="docs/examples/smart-align-framework.html" class="btn btn-xl btn-cta btn-hover center-me">Smart-Align Demo</a></p>
                     </z-col>
-
-                    <z-col class="d-flex align-items-stretch">
-                        <z-container class="theme-light card p-0 shadow-3">
-                            <z-row class="p-0">
-                                <z-col class="p-0">
-                                    <img src="docs/images/website/hp-tout-2.jpg" class="br-bottom-0" alt="" />
-                                </z-col>
-                            </z-row>
-                            <z-row class="pt-0">
-                                <z-col class="card pt-4">
-                                    <p>Automatically generated color palettes and WCAG-compliant schemes ensure your brand stands out, beautifully and inclusively.</p>
-                                    <a href="docs/examples/smart-color-system.html" class="btn btn-xl btn-cta btn-hover center-me">Experience Smart-Color</a>
-                                </z-col>
-                            </z-row>
-                        </z-container>
+                    <z-col class="card p-0 theme-light shadow-3">
+                        <img src="docs/images/website/hp-tout-2.jpg" class="br-bottom-0" alt="" />
+                        <p class="p-5 center">Automatically generated color palettes and WCAG-compliant schemes ensure your brand stands out, beautifully and inclusively.</p>
+                        <p class="p-5 pt-0 center"><a href="docs/examples/smart-color-system.html" class="btn btn-xl btn-cta btn-hover center-me">Experience Smart-Color</a></p>
+                      </p>
                     </z-col>
-
-                    <z-col class="d-flex align-items-stretch">
-                        <z-container class="theme-light card p-0 shadow-3">
-
-                            <z-row class="p-0">
-                                <z-col class="p-0">
-                                    <img src="docs/images/website/hp-tout-3.jpg" class="br-bottom-0" alt="" />
-                                </z-col>
-                            </z-row>
-                            <z-row class="pt-0">
-                                <z-col class="card pt-3">
-                                    <p>Sharp, responsive typography that speaks volumes. Eliminate font-size guesswork, ensuring readability and style on every screen.</p>
-                                    <a href="docs/examples/smart-text.html" class="btn btn-xl btn-cta btn-hover center-me">Smart-Text In Action</a>
-                                </z-col>
-                            </z-row>
-                        </z-container>
+                    <z-col class="card p-0 theme-light shadow-3">
+                        <img src="docs/images/website/hp-tout-3.jpg" class="br-bottom-0" alt="" />
+                        <p class="p-5 center">Sharp, responsive typography that speaks volumes. Eliminate font-size guesswork, ensuring readability and style on every screen.</p>
+                        <a href="docs/examples/smart-text.html" class="btn btn-xl btn-cta btn-hover center-me">Smart-Text In Action</a>
                     </z-col>
                 </z-row>
             </z-container>
@@ -320,7 +299,7 @@
                                         <li class="list-group-item p-0">
                                             <a class="title accordion-toggle naked text-semibold" aria-expanded="false" aria-controls="content4"><i class="zenicon-keyboard-arrow-right down-3"></i>How does zenCSS save development time?</a>
                                             <div id="content4" class="expanded-content naked" aria-hidden="true">
-                                                <p class="pb-5 up-2"> zenCSS saves time by providing AI-Powered logic for layout, color and typography, as well as over 80 ready-to-use components and shortcuts. These tools allow developers to implement complex web elements quickly without writing extensive code from scratch, leading to faster project turnaround.</p>
+                                                <p class="pb-5 up-2"> zenCSS saves time by providing AI-Powered logic for layout, color and typography, as well as over 80 ready-to-use components and shortcuts. These tools allow developers to implement complex web elements quickly without writing extensive code from scratch, leading to faster project turnaround and reduced testing cycles.</p>
                                             </div>
                                         </li>
                                         <li class="list-group-item p-0">
@@ -421,7 +400,7 @@
             <z-container>
                 <z-row class="mobile:two-up">
                     <z-col class="text-left">
-                        <img src="dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                        <img src="docs/images/logo.png" class="w-140" alt="zenCSS logo" />
                         <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
                         <a href="https://github.com/zen-solutions/zencss"><img src="docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
                         <a href="https://twitter.com/tryzencss"><img src="docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
@@ -461,6 +440,7 @@
     <link rel="stylesheet" href="docs/css/documentation.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="docs/js/copy.js"></script>
+    <script src="docs/js/skip-nav.js"></script>
     <script src="dist/zencss.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 </body>

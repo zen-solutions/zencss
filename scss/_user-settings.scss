@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.3.0-beta (https://zencss.com/)
+  * zenCSS v2.4.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -8,10 +8,10 @@
 //   Your Brand Color Palette  - Override these colors as needed, zenCSS will auto-configure WCAG compliance and update text colors accordingly
 //------------------------------------------
 
-$primary-color: #1c519c;
+$primary-color: #154282;
 $secondary-color: #0b6e09;
 $accent-color: #f7d62e;
-$cta-color: #236cd3;
+$cta-color: #1e62c1;
 
 
 
@@ -39,7 +39,7 @@ $grey-5: #6d6d6d;
 $grey-6: #585858;
 
 //------------------------------------------
-// Background colors for light and dark mode themes/buttons etc.
+// Background colors for light and dark themes/buttons etc.
 //------------------------------------------
 
 $dark-mode-color: rgba(13, 17, 23, 0.8);

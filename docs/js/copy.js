@@ -1,5 +1,5 @@
 /*
- * zenCSS v2.3.0-beta (https://zencss.com/)
+ * zenCSS v2.4.0-beta (https://zencss.com/)
  * Copyright 2022-2024 Shaun Mackey
  * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
  */
@@ -99,3 +99,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial numbering update for existing z-cols
     updateZColNumbers();
 });
+
