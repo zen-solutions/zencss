@@ -15,16 +15,16 @@
 
     <body class="zen">
         <div id="skip-navigation">
-            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
         </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
-                <a href="../../index.html"><img src="../../dist/img/logo.png" alt="zenCSS logo" /></a>
+                <a href="../../index.html"><img src="../../docs/images/logo.png" alt="zenCSS logo" /></a>
             </div>
 
             <div id="nav-placeholder"></div>
         </header>
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <!----------------------------------------------------------------------->
             <!--- Page Title  --->
             <!----------------------------------------------------------------------->
@@ -48,8 +48,8 @@
                 <z-row>
                     <z-col>
                         <section>
-                            <span class="label">label</span>
-                            <span class="eyebrow">Eyebrow</span>
+                            <div class="label">label</div>
+                            <div class="eyebrow">Eyebrow</div>
                             <h2 class="h1 headline pb-0">Headline</h2>
                             <h2 class="h1">Heading 1</h2>
                             <h2>Heading 2</h2>
@@ -67,7 +67,7 @@
                             <p class="lead pt-2">line of lead copy</p>
                             <blockquote>Blockquote</blockquote>
                             <div class="image-group">
-                                <img src="../../dist/img/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="image of person" class="w-40 img-left" />
+                                <img src="../../docs/images/placeholder/placeholders/unsplash/headshots/150x150/4.jpg" alt="image of person" class="w-40 img-left" />
                                 <p class="text-bold mb-1">Description of image</p>
                                 <small class="up-8 sub text">Line of supporting copy</small>
                             </div>
@@ -100,7 +100,7 @@
                             <h2>Images with Descriptions</h2>
                             <p>Images can be included using the "img" tag and can be described using "figcaption" within a "figure".</p>
                             <figure>
-                                <img src="../../dist/img/placeholder/16x9/MaevaVigier.jpg" alt="" />
+                                <img src="../../docs/images/placeholder/16x9/MaevaVigier.jpg" alt="" />
                                 <figcaption>This is a description of the image.</figcaption>
                             </figure>
                         </section>
@@ -290,7 +290,7 @@
         <z-container>
             <z-row class="mobile:two-up">
                 <z-col class="text-left">
-                    <img src="../../dist/img/logo.png" class="w-140" alt="zenCSS logo" />
+                    <img src="../../docs/images/logo.png" class="w-140" alt="zenCSS logo" />
                     <p class="text-xs text-grey-2 ml-1">© <span id="current-year"></span>, Shaun Mackey</p>
                     <a href="https://github.com/zen-solutions/zencss"><img src="../../docs/images/general-icons/social-icons/github.png" class="w-20 m-1" alt="Github" /></a>
                     <a href="https://twitter.com/tryzencss"><img src="../../docs/images/general-icons/social-icons/x-twitter.png" class="w-20 m-1" alt="Twitter" /></a>
