@@ -227,3 +227,23 @@ document.addEventListener("DOMContentLoaded", function () {
         footer.insertAdjacentHTML("beforebegin", prevNextHtml);
     }
 });
+
+
+
+//---------------------------------
+// Skip Navigation tab functionality
+//---------------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+      skipLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = document.querySelector('#main-content');
+        if (target) {
+          target.setAttribute('tabindex', '-1');
+          target.focus();
+        }
+      });
+    }
+  });

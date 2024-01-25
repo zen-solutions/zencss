@@ -3,16 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>zenCSS Components</title>
+        <title>zenCSS - How to install zenCSS</title>
         <link rel="stylesheet" href="../css/documentation.css" />
         <meta name="robots" content="index, follow" />
         <link rel="stylesheet" href="../../dist/zen.min.css" />
         <link rel="stylesheet" href="../../dist/icons.css" />
         <link rel="stylesheet" href="../../docs/css/documentation.css" />
+        <meta name="description" content="Get started with zenCSS — the best framework for building responsive, auto-formatting websites.">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-        <script src="../../docs/js/updateseo.js"></script>
+        <!-- <script src="../../docs/js/updateseo.js"></script> -->
     </head>
     <body class="zen">
+        <div id="skip-navigation">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+        </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
                 <a href="../../index.html"><img src="../../docs/images/logo.png" alt="zenCSS logo" /></a>
@@ -21,7 +25,7 @@
             <div id="nav-placeholder"></div>
         </header>
 
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <!----------------------------------------------------------------------->
             <!--- Page Title  --->
             <!----------------------------------------------------------------------->
@@ -64,13 +68,14 @@
                         <div class="page-section">
                             <h3>File Structure Overview</h3>
                             <p>Familiarize yourself with the core files:</p>
-                            <pre class="mt-3"><code class="language-html">index.html (main website)
-                
+                            <pre class="mt-3"><code class="language-html">index.html (docs website) 
+
+hello-world.html
+                                
 dist/ (source files)
      ├── zencss.min.css
      ├── icons.min.css
      ├── zencss.min.js
-     ├── /hello-world (start here)
      ├── /img
 
      (optional)
@@ -103,8 +108,8 @@ scss/ (optional: if you want to compile your own CSS)
                         <section>
                             <h2>Starter Template</h2>
                             <p>
-                                Our starter template at
-                                <code>dist/hello-world</code> contains a header, hero area, 3 content sections and a footer.
+                                Our starter template (
+                                <code>hello-world.html</code>) contains a header, hero area, 3 content sections and a footer.
                             </p>
                             <p>
                                Simply copy/paste the code from our docs, or use the shortcuts to begin experiementing with our components and site sections in this sandbox.

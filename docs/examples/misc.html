@@ -15,7 +15,7 @@
 
     <body class="zen">
         <div id="skip-navigation">
-            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
         </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
@@ -24,7 +24,7 @@
 
             <div id="nav-placeholder"></div>
         </header>
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <!----------------------------------------------------------------------->
             <!--- Page Title  --->
             <!----------------------------------------------------------------------->
@@ -303,6 +303,12 @@
                                             <td>.hero-section</td>
                                             <td>Hero section padding</td>
                                             <td>padding-top: 65px; padding-bottom: 65px;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>.page-section</td>
+                                            <td>Page section padding</td>
+                                            <td>padding-top: 50px; padding-bottom: 50px;</td>
                                         </tr>
                                         <tr>
                                             <td>.border-top-0</td>

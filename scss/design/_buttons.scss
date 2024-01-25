@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.3.0-beta (https://zencss.com/)
+  * zenCSS v2.4.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -75,13 +75,10 @@ button,
 
 .eyebrow {
     overflow: hidden;
-    display: inline-block;
-    line-height: 10px;
     position: relative;
     //color: smart-text-color($primary-color);
-    font-size: 11px;
     font-weight: 700;
-    //@include font-spacing;
+    @include font-spacing;
 }
 
 //labels
@@ -173,7 +170,7 @@ button,
 
 // Define mixin for button outlines
 @mixin outline-button($color, $bg-color: white) {
-    border: 2px solid $color !important;
+    border: 1px solid $color !important;
     background: none;
     color: $color !important;
     @include hover-outline($color, smart-text-color($color));

@@ -1,5 +1,5 @@
 /*
-  * zenCSS v2.3.0-beta (https://zencss.com/)
+  * zenCSS v2.4.0-beta (https://zencss.com/)
   * Copyright 2022-2024 Shaun Mackey
   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
   */
@@ -585,16 +585,18 @@ header :link:hover {
     left: -9999px;
 }
 
-.skip-link:focus {
-    left: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    padding: 5px;
-    z-index: 999;
-    background-color: #fff;
-    text-align: center;
-    font-weight: bold;
+#skip-navigation .skip-link:focus {
+    left: 50%;
+    top:7px;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 3000;
+    background: $cta-color;
+    color: #fff;
+    height:25px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:1px;
 }
 
 .video-container {

@@ -15,7 +15,7 @@
 
     <body class="zen">
         <div id="skip-navigation">
-            <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
         </div>
         <header class="header-sticky">
             <div class="pl-2" id="header-logo">
@@ -24,7 +24,7 @@
 
             <div id="nav-placeholder"></div>
         </header>
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <!----------------------------------------------------------------------->
             <!--- Page Title  --->
             <!----------------------------------------------------------------------->
@@ -46,22 +46,22 @@
 
             <z-container class="bg-opaque">
                 <z-row class="six-up mobile:max-up">
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/3.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/7.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/1.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/2.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/5.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
-                    <z-col>
+                    <z-col class="center">
                         <img src="../../docs/images/logos/6.svg" class="flex-grow-1 w-125 h-50 center-me logo-bar-logo" alt="" />
                     </z-col>
                 </z-row>
@@ -80,14 +80,14 @@
                             <div id="content1" class="expanded-content p-0" aria-hidden="true">
                                 <pre class="copy-text square"><code class="language-html">&lt;z-container class="bg-opaque"&gt;
     &lt;z-row class="six-up mobile:max-up"&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
+        &lt;z-col class="center"&gt;
+            &lt;img src="docs/images/logos/3.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
         &lt;/z-col&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
+        &lt;z-col class="center"&gt;
+            &lt;img src="docs/images/logos/7.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
         &lt;/z-col&gt;
-        &lt;z-col&gt;
-            &lt;img src="your-logo.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
+        &lt;z-col class="center"&gt;
+            &lt;img src="docs/images/logos/1.svg" class="flex-grow-1 w-125 h-50 center-me" alt=""&gt;
         &lt;/z-col&gt;
         &lt;!-- three more logos here --&gt;
     &lt;/z-row&gt;

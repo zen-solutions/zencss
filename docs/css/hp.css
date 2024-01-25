@@ -1,0 +1,12 @@
+.video-container video {
+    width: 100.5% !important;
+}
+
+@media (max-width: 768px) {
+#hp-nav{
+    display: flex;
+    flex-direction: column;
+    padding-top:20px;
+}
+
+}
