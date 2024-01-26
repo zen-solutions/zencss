@@ -5,7 +5,7 @@
   */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 .zen {
-  background: #e2e2e2;
+  background: #eeeeee;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #444444;
@@ -19,6 +19,240 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Purpose: 
+     This file checks the color contrast of color maps for brand palette, universal color palette, and shades of grey palette
+
+     It evaluates each color in each map against WCAG recommended color contrast ratio
+     of 4.5/1 (adds a small buffer) and chooses the appropriate text color that will pass compliance.
+
+     Finally, it autoassigns that color to the font color associated with that background, ensuring WCAG color compliance out of the box. 
+
+     Change colors, and this script will update the color value with a new compliant match for the font color. */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2024-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Firefox */
+  /* Chrome, Edge, and Safari */
+  /*
+  border-box can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+  If you need to override it, use:
+  */
+  /* Styles for the tabbed card */
+  /* Styles for the tab header container */
+  /* Styles for individual tabs */
+  /* Styles for tab content */
+  /* Hide tab content by default */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+   * zenCSS v2.4.0-beta (https://zencss.com/)
+   * Copyright 2022-2024 Shaun Mackey
+   * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+   */
+  /* Mobile & Tablet Styles */
+  /* Styling for navigation and links */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Shrink and move label on input focus or if there is content in the input field */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Variables */
+  /* Mixin for hover styles */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Width and height */
+  /* Generate classes for gaps */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Active Items */
+  /* Disabled Items */
+  /* Flush */
+  /* Horizontal */
+  /* Contextual Classes */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Generate border color classes */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Mobile Styles */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Color for the fill effect on click */
+  /* Show the first image initially */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Additional styling for better visualization */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Image Gallery Styles */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* RTL Enhancements */
+  /* Logical Properties for automatic RTL adaptation */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Apply the mixin for each color */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Flex Container Classes */
+  /* Wrap and No-Wrap Classes */
+  /* Justify Content Classes */
+  /* Align Items Classes */
+  /* Align Content Classes */
+  /* Align Self Classes */
+  /* Flex Grow and Shrink Classes */
+  /* Order Classes */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* Medium devices (tablets, 768px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* X-Large devices (large desktops, 1200px and up) */
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  /*
+    * zenCSS v2.4.0-beta (https://zencss.com/)
+    * Copyright 2022-2024 Shaun Mackey
+    * Licensed under MIT (https://github.com/zen-solutions/zencss/blob/main/LICENSE)
+    */
+  /* ------------------------------------------------- */
+  /* ----- Padding & Margin 
+  /* ------------------------------------------------- */
+  /* ------------------------------------------------- */
+  /* -----  Top/Bottom/Left/Right Margins/Padding 
+  /* ------------------------------------------------- */
 }
 .zen *::before,
 .zen *::after {
@@ -787,7 +1021,7 @@
   height: auto;
 }
 .zen .zen-body-bg-color {
-  background: #e2e2e2;
+  background: #eeeeee;
 }
 .zen .underline-handdrawn {
   background-image: url("../docs/images/placeholder/underline.svg");
@@ -3078,7 +3312,7 @@
   margin: 1rem 0;
   position: relative;
   opacity: 0.9;
-  border-left: 60px solid rgba(255, 255, 255, 0.6);
+  border-left: 60px solid rgba(255, 255, 255, 0.8);
   font-size: 0.8em;
 }
 .zen .alert-light::before {
@@ -3096,11 +3330,11 @@
 }
 .zen .alert-light.alert-light-minimal {
   color: black;
-  border-left: 4px solid rgba(191, 191, 191, 0.6);
+  border-left: 4px solid rgba(191, 191, 191, 0.8);
 }
 .zen .alert-light.alert-light {
   color: black;
-  border-left: 60px solid rgba(191, 191, 191, 0.6);
+  border-left: 60px solid rgba(191, 191, 191, 0.8);
 }
 .zen .alert-light.alert-light::before {
   filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
@@ -3117,7 +3351,7 @@
   margin: 1rem 0;
   position: relative;
   opacity: 0.9;
-  border-left: 4px solid rgba(255, 255, 255, 0.6);
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
   font-size: 0.8em;
 }
 .zen .alert-light-minimal::before {
@@ -3135,11 +3369,11 @@
 }
 .zen .alert-light-minimal.alert-light-minimal {
   color: black;
-  border-left: 4px solid rgba(191, 191, 191, 0.6);
+  border-left: 4px solid rgba(191, 191, 191, 0.8);
 }
 .zen .alert-light-minimal.alert-light {
   color: black;
-  border-left: 60px solid rgba(191, 191, 191, 0.6);
+  border-left: 60px solid rgba(191, 191, 191, 0.8);
 }
 .zen .alert-light-minimal.alert-light::before {
   filter: invert(20%) sepia(8%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(77%);
@@ -4865,7 +5099,7 @@
   color: black;
 }
 .zen .theme-light {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   color: rgba(13, 17, 23, 0.8);
   border-radius: 6px;
 }

@@ -43,15 +43,13 @@ $grey-6: #585858;
 //------------------------------------------
 
 $dark-mode-color: rgba(13, 17, 23, 0.8);
-$light-mode-color: rgba(255, 255, 255, 0.60);
+$light-mode-color: rgba(255, 255, 255, 0.80);
 
 //------------------------------------------
 // Global Vars/misc - prolly some cleanup to be done here
 //------------------------------------------
 
 $text-danger: #a23737; // text color for warning messages in light mode
-$var-white-text: white; // Default font colors for smart-color system - likely obsolete once WCAG functionality is in place and fully tested
-$var-black-text: black;
 $text-white: #eee;
 $text-black: #070707;
 $light-color: white; // changed to white for wcag compliance needs
@@ -68,6 +66,8 @@ $border-color: rgba(115, 130, 140, 0.2);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.06);
 $bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
+$var-white-text: white; // Default font colors for smart-color system
+$var-black-text: black;
 
 //------------------------------------------
 //  Light and Dark Color Variables for zenCSS color system
