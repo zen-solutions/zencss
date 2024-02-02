@@ -35,7 +35,7 @@ $grey-1: #c6c6c6;
 $grey-2: #b0b0b0;
 $grey-3: #999999;
 $grey-4: #838383;
-$grey-5: #6d6d6d;
+$grey-5: #6a6a6a;
 $grey-6: #585858;
 
 //------------------------------------------
@@ -66,7 +66,7 @@ $border-color: rgba(115, 130, 140, 0.2);
 $dual-mode-bg-color: rgba(79, 78, 78, 0.06);
 $bg-ui-hover: hsla(0, 0%, 93%, 0.3); // used for white bg for tabs/pagination, etc.
 $grey-ui-text-color: #727272;
-$var-white-text: white; // Default font colors for smart-color system
+$var-white-text: white; // Default font colors for smart-color system -
 $var-black-text: black;
 
 //------------------------------------------
@@ -75,9 +75,9 @@ $var-black-text: black;
 //------------------------------------------
 
 //brand palette dark
-$primary-color-dark: darken($primary-color, 2%);
-$primary-color-darker: darken($primary-color, 5%);
-$primary-color-darkest: darken($primary-color, 8%);
+$primary-color-dark: darken($primary-color, 3%);
+$primary-color-darker: darken($primary-color, 6%);
+$primary-color-darkest: darken($primary-color, 9%);
 $secondary-color-dark: darken($secondary-color, 2%);
 $secondary-color-darker: darken($secondary-color, 5%);
 $secondary-color-darkest: darken($secondary-color, 8%);

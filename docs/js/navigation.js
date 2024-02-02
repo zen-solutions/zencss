@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown nav-dropdown">
                 <a href="#" class="dropdown-link">Help Desk</a>
                 <div class="dropdown-content">
-                    <a href="../help-desk/index.html">Quick-Start Guide</a>
                     <a href="../help-desk/what-is-zencss.html">What is zenCSS?</a>
-                    <a href="../help-desk/installation.html">Installation</a>
                     <a href="../help-desk/features.html">Features</a>
                     <a href="../examples/zentax.html">Intro to Zentax</a>     
                     <a href="../examples/zen-system.html">The ZEN Ideology</a>                      
@@ -221,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }"><a class="btn btn-cta btn-xl text-xs" href="${nextUrl}">Next: ${nextTitle}</a></z-col>`;
         }
 
-        prevNextHtml += "</z-row></z-container-fluid>";
+        prevNextHtml += '</z-row></z-container-fluid>';
 
         var footer = document.querySelector("footer");
         footer.insertAdjacentHTML("beforebegin", prevNextHtml);
