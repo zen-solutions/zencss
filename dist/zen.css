@@ -262,7 +262,7 @@
   text-rendering: optimizeLegibility;
 }
 .zen .bg-primary-gradient {
-  background: linear-gradient(to bottom, #154282, #0c274d) !important;
+  background: linear-gradient(to bottom, #154282, #0c2549) !important;
   color: white !important;
 }
 .zen .bg-secondary-gradient {
@@ -1409,7 +1409,7 @@
   border-radius: 6px;
   text-decoration: none;
   color: white;
-  background: #545454;
+  background: #444444;
   padding: 10px 16px;
   margin: 10px 3px;
   font-weight: 500;
@@ -1434,7 +1434,7 @@
   padding: 3px 15px;
   overflow: hidden;
   display: inline;
-  background: #545454;
+  background: #444444;
   color: white;
   position: relative;
   font-size: 11px;
@@ -4262,6 +4262,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 2000;
 }
 .zen .corner-popup > div {
   width: 300px;
@@ -4665,7 +4666,7 @@
   padding: 10px;
 }
 .zen #tab-button:hover {
-  color: #6d6d6d;
+  color: #6a6a6a;
 }
 .zen #sidebar ul li:not(.active):hover:hover {
   background: rgba(173, 173, 173, 0.3);
@@ -5269,21 +5270,21 @@
   color: white !important;
 }
 .zen .bg-primary-dark {
-  background: #143e79 !important;
+  background: #133b75 !important;
   color: white !important;
 }
 .zen .bg-primary-dark a {
   color: white !important;
 }
 .zen .bg-primary-darker {
-  background: #11376c !important;
+  background: #113568 !important;
   color: white !important;
 }
 .zen .bg-primary-darker a {
   color: white !important;
 }
 .zen .bg-primary-darkest {
-  background: #0f305f !important;
+  background: #0f2e5a !important;
   color: white !important;
 }
 .zen .bg-primary-darkest a {
@@ -5773,15 +5774,15 @@
   color: black !important;
 }
 .zen .bg-grey-5 {
-  background: #6d6d6d !important;
+  background: #6a6a6a !important;
   color: white !important;
 }
 .zen .bg-grey-5-dark {
-  background: #545454 !important;
+  background: #515151 !important;
   color: white !important;
 }
 .zen .bg-grey-5-light {
-  background: #878787 !important;
+  background: #848484 !important;
   color: black !important;
 }
 .zen .bg-grey-6 {
@@ -6009,7 +6010,7 @@
   color: #838383 !important;
 }
 .zen .text-grey-5 {
-  color: #6d6d6d !important;
+  color: #6a6a6a !important;
 }
 .zen .text-grey-6 {
   color: #585858 !important;

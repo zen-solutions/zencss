@@ -29,7 +29,7 @@ class StarComponent extends HTMLElement {
 
         for (let i = 0; i < starCount; i++) {
             const starImg = document.createElement("img");
-            starImg.src = "../../dist/img/icons/alerts/star-solid.svg";
+            starImg.src = "/dist/img/icons/alerts/star-solid.svg";
             starImg.alt = "";
             starImg.className = "icon icon-gold";
             fragment.appendChild(starImg);
@@ -37,7 +37,7 @@ class StarComponent extends HTMLElement {
 
         if (half && starCount < 5) {
             const halfStarImg = document.createElement("img");
-            halfStarImg.src = "../../dist/img/icons/alerts/star-half-stroke-regular.svg";
+            halfStarImg.src = "/dist/img/icons/alerts/star-half-stroke-regular.svg";
             halfStarImg.alt = "";
             halfStarImg.className = "icon icon-gold";
             fragment.appendChild(halfStarImg);

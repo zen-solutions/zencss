@@ -11,7 +11,7 @@ $colors: (
     3: $border-color,
     4: #8a8a8a,
     5: #404040,
-);
+); 
 
 @for $i from 1 through 5 {
     .border-#{$i} {
